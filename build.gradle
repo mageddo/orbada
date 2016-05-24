@@ -1,12 +1,8 @@
-apply plugin: 'java' // needle for the dependency scope (pre-configure on this plugin)
 
-sourceSets {
-    main {
-        java {
-            srcDir 'src'
-        }
-    }
+allprojects {
+    apply plugin: 'java'
 }
+
 
 repositories {
     mavenCentral()
@@ -20,19 +16,5 @@ task hello << {
     println personDetails
 }
 
-project(':json') {
-
-    sourceSets {
-        main {
-            java {
-                srcDir './'
-            }
-        }
-    }
-
-    task hello << {
-        println("hellow from submodule")
-    }
 
 
-}
