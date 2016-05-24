@@ -1,0 +1,1631 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.5" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmExit">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmExit"/>
+        <Property name="shortCut" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+          <KeyStroke key="Alt+F4"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmexit-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmexit-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmExitActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmNewConnection">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmNewConnection"/>
+        <Property name="shortCut" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+          <KeyStroke key="Shift+Alt+N"/>
+        </Property>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/connection.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmNewConnection-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmNewConnection-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmNewConnectionActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="MainFrame_cmNewConnection"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmDrivers">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmDrivers"/>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/driverproperties.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmDrivers-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmDrivers-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmDriversActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmNewPerspective">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmNewPerspective"/>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/new_window_perspective16.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmNewPerspective-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmNewPerspective-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmNewPerspectiveActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmCustomizeConnection">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmCustomizeConnection" noResource="true"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmCustomizeConnection-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmCustomizeConnectionActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmResetPerspective">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmResetPerspective"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmResetPerspective-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmResetPerspectiveActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmCloseAllPerspectives">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmCloseAllPerspectives"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmCloseAllPerspectives-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmCloseAllPerspectivesActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmClosePerspective">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmClosePerspective"/>
+        <Property name="shortCut" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+          <KeyStroke key="Shift+Ctrl+F4"/>
+        </Property>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/stop10.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmClosePerspective-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmClosePerspective-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmClosePerspectiveActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmDbCommit">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmDbCommit"/>
+        <Property name="enabled" type="boolean" value="false"/>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/commit.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmDbCommit-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmDbCommit-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmDbCommitActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmDbRollback">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmDbRollback"/>
+        <Property name="enabled" type="boolean" value="false"/>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/rollback.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmDbRollback-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmDbRollback-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmDbRollbackActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmDbReconnect">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmDbReconnect"/>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/connect16.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmDbReconnect-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmDbReconnect-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmDbReconnectActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmDbDisconnect">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmDbDisconnect"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmDbDisconnect-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmDbDisconnect-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmDbDisconnectActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmSelectPerspective">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmSelectPerspective" noResource="true"/>
+        <Property name="shortCut" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+          <KeyStroke key="Alt+0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmSelectPerspective-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmSelectPerspective-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmSelectPerspectiveActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmSpecialPerspective">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmSpecialPerspective" noResource="true"/>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/new_tools_perspective16.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmSpecialPerspective-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmSpecialPerspective-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmSpecialPerspectiveActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmMoveViewRight">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmMoveViewRight"/>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/right10.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmMoveViewRight-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmMoveViewRight-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmMoveViewRightActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmMoveViewLeft">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmMoveViewLeft"/>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/left10.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmMoveViewLeft-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmMoveViewLeft-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmMoveViewLeftActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmOrbadaSettings">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmOrbadaSettings" noResource="true"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmOrbadaSettings-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmOrbadaSettingsActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmMaximizeSplitView">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmMaximizeSplitView"/>
+        <Property name="shortCut" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+          <KeyStroke key="Ctrl+F2"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmMaximizeSplitView-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmMaximizeSplitViewActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmDatabaseInfo">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmDatabaseInfo" noResource="true"/>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/db_info16.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmDatabaseInfo-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmDatabaseInfo-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmDatabaseInfoActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmPluginSettings">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmPluginSettings" noResource="true"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmPluginSettings-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmPluginSettingsActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmOrbadaConfigFile">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmOrbadaConfigFile" noResource="true"/>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/save16.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmOrbadaConfigFile-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmOrbadaConfigFileActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmToolsSettings">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmToolsSettings" noResource="true"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmToolsSettings-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmToolsSettingsActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmPluginManager">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmPluginManager" noResource="true"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmPluginManager-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmPluginManagerActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmChangeUserPassword">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmChangeUserPassword" noResource="true"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmChangeUserPassword-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmChangeUserPassword-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmChangeUserPasswordActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmUserProperties">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmUserProperties" noResource="true"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmUserProperties-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmUserProperties-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmUserPropertiesActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmOrbadaLogFile">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmOrbadaLogFile" noResource="true"/>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/save16.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmOrbadaLogFile-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmOrbadaLogFileActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmOrbadaLogErrorFile">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmOrbadaLogErrorFile" noResource="true"/>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/save16.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmOrbadaLogErrorFile-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmOrbadaLogErrorFileActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JPopupMenu" name="menuPerspectives">
+      <Events>
+        <EventHandler event="popupMenuWillBecomeVisible" listener="javax.swing.event.PopupMenuListener" parameters="javax.swing.event.PopupMenuEvent" handler="menuPerspectivesPopupMenuWillBecomeVisible"/>
+      </Events>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <MenuItem class="javax.swing.JMenuItem" name="menuNewPerspective">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection component="cmNewPerspective" type="bean"/>
+            </Property>
+          </Properties>
+        </MenuItem>
+        <Component class="javax.swing.JSeparator" name="sepMenuPerspective">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmSelectNewPerspective">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmSelectNewPerspective" noResource="true"/>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/new_window_perspective16.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmSelectNewPerspective-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmSelectNewPerspectiveActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmDeletePerspective">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmDeletePerspective" noResource="true"/>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/trash.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmDeletePerspective-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmDeletePerspectiveActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmSelectView">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmSelectView" noResource="true"/>
+        <Property name="shortCut" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+          <KeyStroke key="Alt+MINUS"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmSelectView-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmSelectView-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmSelectViewActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmTemplateSettings">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmTemplateSettings"/>
+        <Property name="shortCut" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+          <KeyStroke key="Alt+F8"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmTemplateSettings-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmTemplateSettingsActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmViewProperites">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmViewProperites"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmViewProperites-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmViewProperites-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmViewProperitesActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmSelectTab">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmSelectTab"/>
+        <Property name="shortCut" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+          <KeyStroke key="Alt+EQUALS"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmSelectTab-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmSelectTab-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmSelectTabActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmCloseView">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmCloseView"/>
+        <Property name="shortCut" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+          <KeyStroke key="Ctrl+F4"/>
+        </Property>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/close10.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmCloseView-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmCloseViewActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JPopupMenu" name="menuViewPopup">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <MenuItem class="javax.swing.JMenuItem" name="ppmViewProperties">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection component="cmViewProperites" type="bean"/>
+            </Property>
+          </Properties>
+        </MenuItem>
+        <MenuItem class="javax.swing.JMenuItem" name="ppmMoveViewLeft">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection component="cmMoveViewLeft" type="bean"/>
+            </Property>
+          </Properties>
+        </MenuItem>
+        <MenuItem class="javax.swing.JMenuItem" name="ppmMoveViewRight">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection component="cmMoveViewRight" type="bean"/>
+            </Property>
+          </Properties>
+        </MenuItem>
+        <Component class="javax.swing.JSeparator" name="jSeparator15">
+        </Component>
+        <MenuItem class="javax.swing.JMenuItem" name="ppmCloseView">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection component="cmCloseView" type="bean"/>
+            </Property>
+          </Properties>
+        </MenuItem>
+      </SubComponents>
+    </Container>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmSuggestionRequest">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmSuggestionRequest"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmSuggestionRequest-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmSuggestionRequestActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmProblemRequest">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmProblemRequest"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmProblemRequest-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmProblemRequestActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmComponentShortcut">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmComponentShortcut"/>
+        <Property name="shortCut" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+          <KeyStroke key="Shift+F1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmComponentShortcut-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmComponentShortcut-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmComponentShortcutActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmUserGuide">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmUserGuide"/>
+        <Property name="shortCut" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+          <KeyStroke key="F1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmUserGuide-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmUserGuideActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmGetUpdate">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmGenUpdate"/>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/search-commercial.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmGetUpdate-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmGetUpdate-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmGetUpdateActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmOrbadaLastChanges">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmOrbadaLastChanges"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmOrbadaLastChanges-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmOrbadaLastChangesActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmUserList">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmUserList"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmUserList-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmUserList-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmUserListActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmAboutOrbada">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmAboutOrbada"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmAboutOrbada-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmAboutOrbadaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmOrbadaLog4jFile">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmOrbadaLog4jFile" noResource="true"/>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/save16.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmOrbadaLog4jFile-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmOrbadaLog4jFileActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmDocumentation">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmDocumentation"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-cmDocumentation-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmDocumentationActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmPageProjectHome">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmPageProjectHome"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="cmPageProjectHome-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmPageProjectHomeActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmPageReviews">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmPageReviews"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="cmPageReviews-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmPageReviewsActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmPageDonations">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmPageDonations"/>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="cmPageDonations-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmPageDonationsActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmFullScreen">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmFullScreen"/>
+        <Property name="shortCut" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+          <KeyStroke key="F11"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="cmFullScreen-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmFullScreenActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmDBStartTransaction">
+      <Properties>
+        <Property name="actionCommandKey" type="java.lang.String" value="cmDBStartTransaction"/>
+        <Property name="enabled" type="boolean" value="false"/>
+        <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/pl/mpak/res/icons/start_transaction.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n_pl_PL.properties" key="cmDBStartTransaction-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n_pl_PL.properties" key="cmDBStartTransaction-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmDBStartTransactionActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="pl.mpak.sky.gui.swing.Action" name="cmClonePerspectiveViews">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="main-cmClonePerspectiveViews-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+        <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="main-cmClonePerspectiveViews-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmClonePerspectiveViewsActionPerformed"/>
+      </Events>
+    </Component>
+    <Menu class="javax.swing.JMenuBar" name="menuBarMain">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+            <MatteColorBorder bottom="1" left="0" right="0" top="0">
+              <Color PropertyName="color" blue="80" green="80" id="Button.shadow" palette="3" red="80" type="palette"/>
+            </MatteColorBorder>
+          </Border>
+        </Property>
+        <Property name="focusable" type="boolean" value="false"/>
+      </Properties>
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="menuProgram">
+          <Properties>
+            <Property name="mnemonic" type="int" value="80"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-menuProgram-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="menuSelected" listener="javax.swing.event.MenuListener" parameters="javax.swing.event.MenuEvent" handler="menuProgramMenuSelected"/>
+          </Events>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="menuNewConnection">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmNewConnection" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuDrivers">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmDrivers" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JSeparator" name="jSeparator1">
+            </MenuItem>
+            <Menu class="javax.swing.JMenu" name="menuSettings">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ustawienia" noResource="true"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="menuOrbadaSettings">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection component="cmOrbadaSettings" type="bean"/>
+                    </Property>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="menuPluginSettings">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection component="cmPluginSettings" type="bean"/>
+                    </Property>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="menuPluginManager">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection component="cmPluginManager" type="bean"/>
+                    </Property>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JSeparator" name="jSeparator9">
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="menuOrbadaConfigFile">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection component="cmOrbadaConfigFile" type="bean"/>
+                    </Property>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="menuOrbadaLog4jFile">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection component="cmOrbadaLog4jFile" type="bean"/>
+                    </Property>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="menuSpecialFiles">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Specjalne pliki" noResource="true"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="menuOrbadaLogFile">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection component="cmOrbadaLogFile" type="bean"/>
+                    </Property>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="menuOrbadaLogErrorFile">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection component="cmOrbadaLogErrorFile" type="bean"/>
+                    </Property>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <MenuItem class="javax.swing.JSeparator" name="jSeparator18">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuFullScreen">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmFullScreen" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JSeparator" name="jSeparator13">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuUserProperties">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmUserProperties" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuChangeUserPassword">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmChangeUserPassword" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuUserList">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmUserList" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JSeparator" name="sepRequests">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuSuggestionRequest">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmSuggestionRequest" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuProblemRequest">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmProblemRequest" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JSeparator" name="jSeparator2">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuExit">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmExit" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menuConnection">
+          <Properties>
+            <Property name="mnemonic" type="int" value="79"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-menuConnection-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+            </Property>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="menuDBStartTransaction">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmDBStartTransaction" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator19">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuDbCommit">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmDbCommit" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuDbRollback">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmDbRollback" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JSeparator" name="jSeparator7">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuDbDisconnect">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmDbDisconnect" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuDbReconnect">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmDbReconnect" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JSeparator" name="jSeparator11">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuCustomizeConnection">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmCustomizeConnection" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuDatabaseInfo">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmDatabaseInfo" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menuEdit">
+          <Properties>
+            <Property name="mnemonic" type="int" value="69"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-menuEdit-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+            </Property>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menuTools">
+          <Properties>
+            <Property name="mnemonic" type="int" value="78"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-menuTools-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+            </Property>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JSeparator" name="jSeparator12">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmToolsSettings" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuTemplatesSettings">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmTemplateSettings" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <Menu class="javax.swing.JMenu" name="jMenu1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jMenu1"/>
+              </Properties>
+            </Menu>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menuPerspective">
+          <Properties>
+            <Property name="mnemonic" type="int" value="75"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-menuPerspective-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+            </Property>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="menuToolsPerspective">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmSpecialPerspective" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <Menu class="javax.swing.JMenu" name="menuSelectNewPerspective">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Choose a new perspective for the connection" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="menuSelected" listener="javax.swing.event.MenuListener" parameters="javax.swing.event.MenuEvent" handler="menuSelectNewPerspectiveMenuSelected"/>
+              </Events>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="menuWindowNewPerspective">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection component="cmNewPerspective" type="bean"/>
+                    </Property>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JSeparator" name="sepMenuWindowPerspective">
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="menuPerspectiveGadgets">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Narz&#x119;dzia perspektywy" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="menuSelected" listener="javax.swing.event.MenuListener" parameters="javax.swing.event.MenuEvent" handler="menuPerspectiveGadgetsMenuSelected"/>
+              </Events>
+            </Menu>
+            <MenuItem class="javax.swing.JSeparator" name="jSeparator3">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuClosePerspective">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmClosePerspective" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuCloseAllPerspectives">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmCloseAllPerspectives" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JSeparator" name="jSeparator5">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuResetPerspective">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmResetPerspective" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuPerspectiveProperties">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="! w&#x142;a&#x15b;ciwo&#x15b;ci perspektywy"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="menuPerspectiveProperties.setAction(cmPerspectiveProperties = new PerspectivePropertiesAction());"/>
+              </AuxValues>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuMovePerspectiveLeft">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="! przesu&#x144; w lewo"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="menuMovePerspectiveLeft.setAction(cmMovePerspectiveLeft = new MovePerspectiveLeftAction());"/>
+              </AuxValues>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuMovePerspectiveRight">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="! przesu&#x144; w prawo"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="menuMovePerspectiveRight.setAction(cmMovePerspectiveRight = new MovePerspectiveRightAction());"/>
+              </AuxValues>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuClonePerspectiveViews">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmClonePerspectiveViews" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JSeparator" name="jSeparator4">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuViewProperites">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmViewProperites" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuMoveViewLeft">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmMoveViewLeft" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuMoveViewRight">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmMoveViewRight" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JSeparator" name="jSeparator10">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuCloseView">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmCloseView" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JSeparator" name="jSeparator14">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuMaximizeSplitView">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmMaximizeSplitView" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <Menu class="javax.swing.JMenu" name="menuNavigation">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Navigation" noResource="true"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="menuSelectPerspective">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection component="cmSelectPerspective" type="bean"/>
+                    </Property>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="menuSelectView">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection component="cmSelectView" type="bean"/>
+                    </Property>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="menuSelectTab">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection component="cmSelectTab" type="bean"/>
+                    </Property>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menuPerspectiveView">
+          <Properties>
+            <Property name="mnemonic" type="int" value="87"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-menuPerspectiveView-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="menuSelected" listener="javax.swing.event.MenuListener" parameters="javax.swing.event.MenuEvent" handler="menuPerspectiveViewMenuSelected"/>
+          </Events>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menuHelp">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+              <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="mf-menuHelp-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+            </Property>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="menuUserGuide">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmUserGuide" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuComponentShortcut">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmComponentShortcut" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuDocumentation">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmDocumentation" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JSeparator" name="jSeparator17">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuPageProjectHome">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmPageProjectHome" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuPageReviews">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmPageReviews" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuPageDonations">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmPageDonations" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JSeparator" name="jSeparator16">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuLastChanges">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmOrbadaLastChanges" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuGetUpdates">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmGetUpdate" type="bean"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Pobierz aktualizacje..."/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuAboutOrbada">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection component="cmAboutOrbada" type="bean"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="0"/>
+    <Property name="title" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+      <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="MainFrame-title" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="menuBarMain"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowClosing" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowClosing"/>
+    <EventHandler event="componentShown" listener="java.awt.event.ComponentListener" parameters="java.awt.event.ComponentEvent" handler="formComponentShown"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,74,0,0,2,110"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="panelMain">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="Center"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="First"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="panelPerspectiveTools">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="East"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                <Property name="horizontalGap" type="int" value="2"/>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="panelToolTip">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="horizontalGap" type="int" value="0"/>
+                    <Property name="verticalGap" type="int" value="0"/>
+                  </Layout>
+                </Container>
+                <Component class="pl.mpak.sky.gui.swing.comp.ToolButton" name="buttonMoveViewLeft">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection component="cmMoveViewLeft" type="bean"/>
+                    </Property>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[18, 18]"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="pl.mpak.sky.gui.swing.comp.ToolButton" name="buttonMoveViewRight">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection component="cmMoveViewRight" type="bean"/>
+                    </Property>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[18, 18]"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSeparator" name="jSeparator8">
+                  <Properties>
+                    <Property name="orientation" type="int" value="1"/>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[4, 0]"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="pl.mpak.sky.gui.swing.comp.ToolButton" name="buttonClosePerspective">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection component="cmClosePerspective" type="bean"/>
+                    </Property>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[18, 18]"/>
+                    </Property>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="panelToolBars">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="West"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                <Property name="alignment" type="int" value="0"/>
+                <Property name="horizontalGap" type="int" value="0"/>
+                <Property name="verticalGap" type="int" value="0"/>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JToolBar" name="toolBarMain">
+                  <Properties>
+                    <Property name="floatable" type="boolean" value="false"/>
+                    <Property name="rollover" type="boolean" value="true"/>
+                  </Properties>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                  <SubComponents>
+                    <Component class="pl.mpak.sky.gui.swing.comp.ToolButton" name="tbConnection">
+                      <Properties>
+                        <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                          <Connection component="cmNewConnection" type="bean"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                    <Component class="pl.mpak.sky.gui.swing.comp.ToolButton" name="buttonSelectNewPerspective">
+                      <Properties>
+                        <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                          <Connection component="cmSelectNewPerspective" type="bean"/>
+                        </Property>
+                        <Property name="horizontalTextPosition" type="int" value="0"/>
+                        <Property name="verticalTextPosition" type="int" value="3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="pl.mpak.sky.gui.swing.comp.ToolButton" name="buttonNewToolsPerspective">
+                      <Properties>
+                        <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                          <Connection component="cmSpecialPerspective" type="bean"/>
+                        </Property>
+                        <Property name="horizontalTextPosition" type="int" value="0"/>
+                        <Property name="verticalTextPosition" type="int" value="3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="pl.mpak.sky.gui.swing.comp.ToolButton" name="buttonDatabaseInfo">
+                      <Properties>
+                        <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                          <Connection component="cmDatabaseInfo" type="bean"/>
+                        </Property>
+                        <Property name="horizontalTextPosition" type="int" value="0"/>
+                        <Property name="verticalTextPosition" type="int" value="3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator6">
+                      <Properties>
+                        <Property name="orientation" type="int" value="1"/>
+                      </Properties>
+                    </Component>
+                    <Component class="pl.mpak.sky.gui.swing.comp.ToolButton" name="toolButton1">
+                      <Properties>
+                        <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                          <Connection component="cmDBStartTransaction" type="bean"/>
+                        </Property>
+                        <Property name="horizontalTextPosition" type="int" value="0"/>
+                      </Properties>
+                    </Component>
+                    <Component class="pl.mpak.sky.gui.swing.comp.ToolButton" name="buttonDbCommit">
+                      <Properties>
+                        <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                          <Connection component="cmDbCommit" type="bean"/>
+                        </Property>
+                        <Property name="horizontalTextPosition" type="int" value="0"/>
+                        <Property name="verticalTextPosition" type="int" value="3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="pl.mpak.sky.gui.swing.comp.ToolButton" name="buttonDbRollback">
+                      <Properties>
+                        <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                          <Connection component="cmDbRollback" type="bean"/>
+                        </Property>
+                        <Property name="horizontalTextPosition" type="int" value="0"/>
+                        <Property name="verticalTextPosition" type="int" value="3"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JToolBar" name="toolBarTools">
+                  <Properties>
+                    <Property name="rollover" type="boolean" value="true"/>
+                  </Properties>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel2">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="Center"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                <Property name="alignment" type="int" value="2"/>
+                <Property name="horizontalGap" type="int" value="0"/>
+                <Property name="verticalGap" type="int" value="0"/>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JToolBar" name="toolBarUpdates">
+                  <Properties>
+                    <Property name="floatable" type="boolean" value="false"/>
+                    <Property name="rollover" type="boolean" value="true"/>
+                  </Properties>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                  <SubComponents>
+                    <Component class="pl.mpak.sky.gui.swing.comp.ToolButton" name="buttonDonation">
+                      <Properties>
+                        <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                          <Connection component="cmPageDonations" type="bean"/>
+                        </Property>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="12" style="1"/>
+                        </Property>
+                        <Property name="hideActionText" type="boolean" value="false"/>
+                        <Property name="horizontalTextPosition" type="int" value="0"/>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[140, 26]"/>
+                        </Property>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[140, 26]"/>
+                        </Property>
+                        <Property name="verticalTextPosition" type="int" value="3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="pl.mpak.sky.gui.swing.comp.ToolButton" name="buttonGetUpdate">
+                      <Properties>
+                        <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                          <Connection component="cmGetUpdate" type="bean"/>
+                        </Property>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="0" green="0" id="red" palette="1" red="ff" type="palette"/>
+                        </Property>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="10" style="0"/>
+                        </Property>
+                        <Property name="hideActionText" type="boolean" value="false"/>
+                        <Property name="horizontalTextPosition" type="int" value="4"/>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[120, 26]"/>
+                        </Property>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[120, 26]"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="panelPerspectives">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="Center"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+          <SubComponents>
+            <Container class="javax.swing.JTabbedPane" name="tabbedPerpectives">
+              <Properties>
+                <Property name="tabPlacement" type="int" value="3"/>
+                <Property name="focusable" type="boolean" value="false"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="Center"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="panelStatus">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="South"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="columns" type="int" value="0"/>
+        <Property name="rows" type="int" value="1"/>
+      </Layout>
+    </Container>
+  </SubComponents>
+</Form>

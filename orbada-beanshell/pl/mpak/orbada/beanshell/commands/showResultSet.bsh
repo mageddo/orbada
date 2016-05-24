@@ -1,0 +1,33 @@
+import pl.mpak.util.ExceptionUtil;
+import javax.swing.JDialog;
+import javax.swing.JScrollPane;
+import pl.mpak.orbada.gui.comps.table.DataTable;
+import pl.mpak.sky.gui.swing.MessageBox;
+import pl.mpak.sky.gui.swing.SwingUtil;
+import pl.mpak.sky.gui.mr.ModalResult;
+import java.sql.ResultSet;
+
+void showResultSet(ResultSet resultSet) {
+  if (database == null) {
+    MessageBox.show("Baza danych", "Obiekt bazy danych nie jest dostêpny w tym widoku!", ModalResult.OK);
+    return;
+  }
+  JDialog dialog = new JDialog();
+  DataTable table = new DataTable();
+  try {
+    table.getQuery().setDatabase(database);
+    dialog.setTitle("ResultSet");
+    dialog.setModal(true);
+    dialog.setContentPane(new JScrollPane(table));
+    table.getQuery().setResultSet(resultSet);
+    dialog.setSize(700, 400);
+    SwingUtil.centerWithinScreen(dialog);
+    dialog.setVisible(true);
+  }
+  catch(Exception ex) {
+    ExceptionUtil.processException(ex);
+  }
+  finally {
+    table.getQuery().close();
+  }
+}

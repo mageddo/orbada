@@ -1,0 +1,38 @@
+apply plugin: 'java' // needle for the dependency scope (pre-configure on this plugin)
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile 'com.google.code.gson:gson:2.6.2' // is only example this dependency is not used
+}
+
+task hello << {
+    def personDetails = [firstName:'John', lastName:'Doe', age:25] // a hashmap example
+    println personDetails
+}
+
+project(':json') {
+
+    sourceSets {
+        main {
+            java {
+                srcDir './'
+            }
+        }
+    }
+
+    task hello << {
+        println("hellow from submodule")
+    }
+
+
+}

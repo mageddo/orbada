@@ -1,0 +1,32 @@
+import pl.mpak.usedb.core.Query;
+import pl.mpak.util.ExceptionUtil;
+import javax.swing.JDialog;
+import javax.swing.JScrollPane;
+import pl.mpak.orbada.gui.comps.table.DataTable;
+import pl.mpak.sky.gui.swing.MessageBox;
+import pl.mpak.sky.gui.swing.SwingUtil;
+import pl.mpak.sky.gui.mr.ModalResult;
+
+void showQuery(String sqlText) {
+  if (database == null) {
+    MessageBox.show("Baza danych", "Obiekt bazy danych nie jest dostêpny w tym widoku!", ModalResult.OK);
+    return;
+  }
+  Query query = database.createQuery();
+  try {
+    JDialog dialog = new JDialog();
+    dialog.setTitle(sqlText.substring(0, Math.min(100, sqlText.length())));
+    dialog.setModal(true);
+    dialog.setContentPane(new JScrollPane(new DataTable(query)));
+    query.open(sqlText);
+    dialog.setSize(700, 400);
+    SwingUtil.centerWithinScreen(dialog);
+    dialog.setVisible(true);
+  }
+  catch(Exception ex) {
+    ExceptionUtil.processException(ex);
+  }
+  finally {
+    query.close();
+  }
+}

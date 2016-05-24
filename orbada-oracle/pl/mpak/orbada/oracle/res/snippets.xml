@@ -1,0 +1,681 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<snippets>
+
+  <group category="Aggregate Functions" language="PLSQL">
+
+    <snippet name="COUNT(*)" description="Returns the number of rows returned by the query.">
+      <code><![CDATA[COUNT(*)]]></code>
+    </snippet>
+
+    <snippet name="COUNT([ALL | DISTINCT] expr)" description="Returns the number of rows returned by the query.">
+      <code><![CDATA[COUNT([ALL | DISTINCT] expr)]]></code>
+    </snippet>
+
+    <snippet name="MAX(expr)" description="Returns maximum value of expr.">
+      <code><![CDATA[MAX(expr)]]></code>
+    </snippet>
+
+    <snippet name="MEDIAN(expr)" description="Returns the middle value or an interpolated value that would be the middle value once the values are sorted.">
+      <code><![CDATA[MEDIAN(expr)]]></code>
+    </snippet>
+
+    <snippet name="MIN(expr)" description="Returns minimum value of expr.">
+      <code><![CDATA[MIN(expr)]]></code>
+    </snippet>
+
+    <snippet name="STDDEV(expr)" description="Returns the sample standard deviation of expr, a set of numbers.">
+      <code><![CDATA[STDDEV(expr)]]></code>
+    </snippet>
+
+    <snippet name="SUM(expr)" description="Returns the sum of values of expr.">
+      <code><![CDATA[SUM(expr)]]></code>
+    </snippet>
+
+    <snippet name="VARIANCE(expr)" description="Returns the variance of expr.">
+      <code><![CDATA[VARIANCE(expr)]]></code>
+    </snippet>
+
+  </group>
+
+  <group category="Character Functions" language="PLSQL">
+
+    <snippet name="CHR(n)" description="Returns the character having the binary equivalent to n as a VARCHAR2 value in either the database character set or, if you specify USING NCHAR_CS, the national character set.">
+      <code><![CDATA[CHR(n)]]></code>
+    </snippet>
+
+    <snippet name="CONCAT(char1, char2)" description="Returns char1 concatenated with char2.">
+      <code><![CDATA[CONCAT(char1, char2)]]></code>
+    </snippet>
+
+    <snippet name="INITCAP(char)" description="Returns char, with the first letter of each word in uppercase, all other letters in lowercase.">
+      <code><![CDATA[INITCAP(char)]]></code>
+    </snippet>
+
+    <snippet name="LOWER(char)" description="Returns char, with all letters lowercase.">
+      <code><![CDATA[LOWER(char)]]></code>
+    </snippet>
+
+    <snippet name="LPAD(expr1, n, expr2)" description="Returns expr1, left-padded to length n characters with the sequence of characters in expr2.">
+      <code><![CDATA[LPAD(expr1, n, expr2)]]></code>
+    </snippet>
+
+    <snippet name="LTRIM(char, set)" description="Removes from the left end of char all of the characters contained in set.">
+      <code><![CDATA[LTRIM(char, set)]]></code>
+    </snippet>
+
+    <snippet name="NLS_INITCAP(char, 'NLS_SORT = lang')" description="Returns char, with the first letter of each word in uppercase, all other letters in lowercase.">
+      <code><![CDATA[NLS_INITCAP(char, 'NLS_SORT = lang')]]></code>
+    </snippet>
+
+    <snippet name="NLS_LOWER(char, 'NLS_SORT = lang')" description="Returns char, with all letters lowercase.">
+      <code><![CDATA[NLS_LOWER(char, 'NLS_SORT = lang')]]></code>
+    </snippet>
+
+    <snippet name="NLS_UPPER(char, 'NLS_SORT = lang')" description="Returns char, with all letters uppercase.">
+      <code><![CDATA[NLS_UPPER(char, 'NLS_SORT = lang')]]></code>
+    </snippet>
+
+    <snippet name="NLSSORT(char, 'NLS_SORT = lang')" description="Returns the string of bytes used to sort char.">
+      <code><![CDATA[NLSSORT(char, 'NLS_SORT = lang')]]></code>
+    </snippet>
+
+    <snippet name="RPAD(expr1, n, expr2)" description="Returns expr1, right-padded to length n characters with the sequence of characters in expr2.">
+      <code><![CDATA[RPAD(expr1, n, expr2)]]></code>
+    </snippet>
+
+    <snippet name="RTRIM(char, set)" description="Removes from the right end of char all of the characters contained in set.">
+      <code><![CDATA[RTRIM(char, set)]]></code>
+    </snippet>
+
+    <snippet name="SOUNDEX(char)" description="Returns a character string containing the phonetic representation of char.">
+      <code><![CDATA[SOUNDEX(char)]]></code>
+    </snippet>
+
+    <snippet name="SUBSTR(char, position, substring_length)" description="Returns a portion of char, beginning at character position, substring_length characters long.">
+      <code><![CDATA[SUBSTR(char, position, substring_length)]]></code>
+    </snippet>
+
+    <snippet name="TRANSLATE(expr, from_string, to_string)" description="Returns expr with all occurrences of each character in from_string replaced by its corresponding character in to_string.">
+      <code><![CDATA[TRANSLATE(expr, from_string, to_string)]]></code>
+    </snippet>
+
+    <snippet name="TRIM([LEADING | TRAILING | BOTH] trim_character FROM trim_source)" description="Trims leading or trailing characters (or both) from a character string. If trim_character or trim_source is a character literal, enclose it in single quotes.">
+      <code><![CDATA[TRIM([LEADING | TRAILING | BOTH] trim_character FROM trim_source)]]></code>
+    </snippet>
+
+    <snippet name="UPPER(char)" description="Returns char, with all letters uppercase.">
+      <code><![CDATA[UPPER(char)]]></code>
+    </snippet>
+
+  </group>
+
+  <group category="Conversion Functions" language="PLSQL">
+
+    <snippet name="TO_CHAR (nchar | clob | nclob)" description="Converts NCHAR, NVARCHAR2, CLOB, or NCLOB data to the database character set.">
+      <code><![CDATA[TO_CHAR (nchar | clob | nclob)]]></code>
+    </snippet>
+
+    <snippet name="TO_CHAR(datetime, fmt, nlsparam)" description="Converts a datetime or interval value of DATE, TIMESTAMP, TIMESTAMP WITH TIME ZONE, or TIMESTAMP WITH LOCAL TIME ZONE datatype to a value of VARCHAR2 datatype in the format specified by the date format fmt.">
+      <code><![CDATA[TO_CHAR(datetime, fmt, nlsparam)]]></code>
+    </snippet>
+
+    <snippet name="TO_CHAR (n, fmt, nlsparam)" description="Converts n to a value of VARCHAR2 datatype, using the optional number format fmt.">
+      <code><![CDATA[TO_CHAR (n, fmt, nlsparam)]]></code>
+    </snippet>
+
+    <snippet name="TO_CLOB(lob_column | char)" description="Converts NCLOB values in a LOB column or other character strings to CLOB values.">
+      <code><![CDATA[TO_CLOB(lob_column | char)]]></code>
+    </snippet>
+
+    <snippet name="TO_DATE(datetime, fmt, nlsparam)" description="Converts char of CHAR, VARCHAR2, NCHAR, or NVARCHAR2 datatype to a value of DATE datatype.">
+      <code><![CDATA[TO_DATE(datetime, fmt, nlsparam)]]></code>
+    </snippet>
+
+    <snippet name="TO_TIMESTAMP(char, fmt, nlsparam)" description="Converts char of CHAR, VARCHAR2, NCHAR, or NVARCHAR2 datatype to a value of TIMESTAMP datatype.">
+      <code><![CDATA[TO_TIMESTAMP(char, fmt, nlsparam)]]></code>
+    </snippet>
+
+    <snippet name="NVL(value, default)" description="NVL lets you replace a null with a value.">
+      <code><![CDATA[NVL(value, default)]]></code>
+    </snippet>
+
+  </group>
+
+  <group category="Date Formats" language="PLSQL">
+
+    <snippet name="DD-MON-YYYY HH24:MI:SS" description="Example: 10-OCT-2005 17:58:01">
+      <code><![CDATA[TO_CHAR(sysdate, 'DD-MON-YYYY HH24:MI:SS')]]></code>
+    </snippet>
+
+    <snippet name="DD-MON-YYYY HH12:MI:SS PM" description="Example: 10-OCT-2005 05:58:01 PM">
+      <code><![CDATA[TO_CHAR(sysdate, 'DD-MON-YYYY HH12:MI:SS PM')]]></code>
+    </snippet>
+
+    <snippet name="DD-MON-YYYY HH24:MI:SS.FF" description="Example: 10-OCT-2005 17:58:01.983755">
+      <code><![CDATA[TO_CHAR(systimestamp, 'DD-MON-YYYY HH24:MI:SS.FF')]]></code>
+    </snippet>
+
+    <snippet name="DY, DD-MON-YYYY" description="Example: MON, 10-OCT-2005">
+      <code><![CDATA[TO_CHAR(sysdate, 'DY, DD-MON-YYYY')]]></code>
+    </snippet>
+       <snippet name="Month DDth, YYYY" description="Example: June 10TH, 2005">
+      <code><![CDATA[to_char(sysdate,'Month DDth, YYYY') ]]></code>
+    </snippet>
+
+    <snippet name="DD-MON-YYYY HH24:MI:SS TZH:TZM" description="Example: 10-OCT-2005 17:58:01 -07:00">
+      <code><![CDATA[TO_CHAR(systimestamp, 'DD-MON-YYYY HH24:MI:SS TZH:TZM')]]></code>
+    </snippet>
+
+    <snippet name="MM/DD/YYYY HH24:MI:SS" description="Example: 10/13/2005 18:10:25">
+      <code><![CDATA[TO_CHAR(sysdate, 'MM/DD/YYYY HH24:MI:SS')]]></code>
+    </snippet>
+
+    <snippet name="MM/DD/YY HH24:MI:SS" description="Example: 10/13/05 18:10:25">
+      <code><![CDATA[TO_CHAR(sysdate, 'MM/DD/YY HH24:MI:SS')]]></code>
+    </snippet>
+
+    <snippet name="MM/DD/RRRR HH12:MI:SS PM" description="Example: 10/13/2005 06:10:25 PM">
+      <code><![CDATA[TO_CHAR(sysdate, 'MM/DD/RRRR HH12:MI:SS PM')]]></code>
+    </snippet>
+
+    <snippet name="MM/DD/RR HH12:MI:SS PM" description="Example: 10/13/05 06:10:25 PM">
+      <code><![CDATA[TO_CHAR(sysdate, 'MM/DD/RR HH12:MI:SS PM')]]></code>
+    </snippet>
+
+ </group>
+
+  <group category="Date/Time Functions" language="PLSQL">
+
+    <snippet name="ADD_MONTHS(date, integer)" description="Returns the date date plus integer months.">
+      <code><![CDATA[ADD_MONTHS(date, integer)]]></code>
+    </snippet>
+
+    <snippet name="CURRENT_DATE" description="Returns the current date in the session time zone, in a value in the Gregorian calendar of datatype DATE.">
+      <code><![CDATA[CURRENT_DATE]]></code>
+    </snippet>
+
+    <snippet name="CURRENT_TIMESTAMP" description="Returns the current date and time in the session time zone, in a value of datatype TIMESTAMP WITH TIME ZONE.">
+      <code><![CDATA[CURRENT_TIMESTAMP]]></code>
+    </snippet>
+
+    <snippet name="SYSDATE" description="Returns the current date and time set for the operating system on which the database resides.">
+      <code><![CDATA[SYSDATE]]></code>
+    </snippet>
+
+    <snippet name="SYSTIMESTAMP" description="Returns the system date, including fractional seconds and time zone, of the system on which the database resides.">
+      <code><![CDATA[SYSTIMESTAMP]]></code>
+    </snippet>
+
+    <snippet name="TO_CHAR(datetime, fmt, nlsparam)" description="Converts a datetime or interval value of DATE, TIMESTAMP, TIMESTAMP WITH TIME ZONE, or TIMESTAMP WITH LOCAL TIME ZONE datatype to a value of VARCHAR2 datatype in the format specified by the date format fmt.">
+      <code><![CDATA[TO_CHAR(datetime, fmt, nlsparam)]]></code>
+    </snippet>
+
+    <snippet name="TO_CHAR(sysdate, 'DD-MON-YYYY HH24:MI:SS')" description="Converts timestamp [example].">
+      <code><![CDATA[TO_CHAR(sysdate, 'DD-MON-YYYY HH24:MI:SS')]]></code>
+    </snippet>
+
+    <snippet name="TO_TIMESTAMP(char, fmt, nlsparam)" description="Converts char of CHAR, VARCHAR2, NCHAR, or NVARCHAR2 datatype to a value of TIMESTAMP datatype.">
+      <code><![CDATA[TO_TIMESTAMP(char, fmt, nlsparam)]]></code>
+    </snippet>
+
+    <snippet name="TRUNC(date, fmt)" description="Returns date with the time portion of the day truncated to the unit specified by the format model fmt.">
+      <code><![CDATA[TRUNC(date, fmt)]]></code>
+    </snippet>
+
+    <snippet name="MONTHS_BETWEEN(date, date)" description="Returns the number of months between two dates.">
+      <code><![CDATA[MONTHS_BETWEEN(date, date)]]></code>
+    </snippet>
+    
+  </group>
+
+  <group category="Number Formats" language="PLSQL">
+
+    <snippet name="999,999.99" description="Example: 123,456.78">
+      <code><![CDATA[TO_CHAR(123456.78, '999,999.99')]]></code>
+    </snippet>
+
+    <snippet name="S999,999.99" description="Example: +123,456.78">
+      <code><![CDATA[TO_CHAR(123456.78, 'S999,999.99')]]></code>
+    </snippet>
+
+    <snippet name="$999,999.99" description="Example: $123,456.78">
+      <code><![CDATA[TO_CHAR(123456.78, '$999,999.99')]]></code>
+    </snippet>
+
+    <snippet name="C999,999.99" description="Example: USD123,456.78">
+      <code><![CDATA[TO_CHAR(123456.78, 'C999,999.99')]]></code>
+    </snippet>
+
+    <snippet name="9.9EEEE" description="Example: 1.2E+05">
+      <code><![CDATA[TO_CHAR(123456.78, '9.9EEEE')]]></code>
+    </snippet>
+
+    <snippet name="999,999.99PR" description="Negative value in angle brackets; positive value with a leading and trailing blank.">
+      <code><![CDATA[TO_CHAR(-123456.78, '999,999.99PR')]]></code>
+    </snippet>
+
+  </group>
+
+  <group category="Numeric Functions" language="PLSQL">
+
+    <snippet name="ABS(n)" description="Returns the absolute value of n.">
+      <code><![CDATA[ABS(n)]]></code>
+    </snippet>
+
+    <snippet name="CEIL(n)" description="Returns smallest integer greater than or equal to n.">
+      <code><![CDATA[CEIL(n)]]></code>
+    </snippet>
+
+    <snippet name="EXP(n)" description="Returns e raised to the nth power, where e = 2.71828183.">
+      <code><![CDATA[EXP(n)]]></code>
+    </snippet>
+
+    <snippet name="FLOOR(n)" description="Returns largest integer equal to or less than n.">
+      <code><![CDATA[FLOOR(n)]]></code>
+    </snippet>
+
+    <snippet name="LOG(n2, n1)" description="Returns the logarithm, base n2, of n1.">
+      <code><![CDATA[LOG(n2, n1)]]></code>
+    </snippet>
+
+    <snippet name="MOD(n2, n1)" description="Returns the remainder of n2 divided by n1. Returns n2 if n1 is 0.">
+      <code><![CDATA[MOD(n2, n1)]]></code>
+    </snippet>
+
+    <snippet name="POWER(n2, n1)" description="Returns n2 raised to the n1 power.">
+      <code><![CDATA[POWER(n2, n1)]]></code>
+    </snippet>
+
+    <snippet name="REMAINDER(n2, n1)" description="Returns the remainder of n2 divided by n1.">
+      <code><![CDATA[REMAINDER(n2, n1)]]></code>
+    </snippet>
+
+    <snippet name="ROUND(n, integer)" description="Returns n rounded to integer places to the right of the decimal point.">
+      <code><![CDATA[ROUND(n, integer)]]></code>
+    </snippet>
+
+    <snippet name="TRUNC(n1, n2)" description="Returns n1 truncated to n2 decimal places.">
+      <code><![CDATA[TRUNC(n1, n2)]]></code>
+    </snippet>
+
+  </group>
+
+  <group category="Optimizer Hints" language="PLSQL">
+
+    <snippet name="ALL_ROWS" description="Optimizes a statement block with a goal of best throughput, that is, minimum total resource consumption.">
+      <code><![CDATA[/*+ ALL_ROWS */]]></code>
+    </snippet>
+
+    <snippet name="APPEND" description="Uses direct-path INSERT if your database is running in serial mode.">
+      <code><![CDATA[/*+ APPEND */]]></code>
+    </snippet>
+
+    <snippet name="CACHE(table-name)" description="Places the blocks retrieved for the table at the most recently used end of the LRU list in the buffer cache when a full table scan is performed.">
+      <code><![CDATA[/*+ CACHE(table-name) */]]></code>
+    </snippet>
+
+    <snippet name="CLUSTER(table-name)" description="Uses a cluster scan to access the specified table.">
+      <code><![CDATA[/*+ CLUSTER(table-name) */]]></code>
+    </snippet>
+
+    <snippet name="CURSOR_SHARING_EXACT " description="Executes the SQL statement without any attempt to replace literals with bind variables.">
+      <code><![CDATA[/*+ CURSOR_SHARING_EXACT  */]]></code>
+    </snippet>
+
+    <snippet name="DRIVING_SITE(table-name)" description="Executes the query at a different site than that selected by the database.">
+      <code><![CDATA[/*+ DRIVING_SITE(table-name) */]]></code>
+    </snippet>
+
+    <snippet name="DYNAMIC_SAMPLING(table-name integer)" description="Controls dynamic sampling to improve server performance by determining more accurate predicate selectivity and statistics for tables and indexes.">
+      <code><![CDATA[/*+ DYNAMIC_SAMPLING(table-name integer) */]]></code>
+    </snippet>
+
+    <snippet name="FACT(table-name)" description="Makes the table specified in tablespec a fact table in the star transformation.">
+      <code><![CDATA[/*+ FACT(table-name) */]]></code>
+    </snippet>
+
+    <snippet name="FIRST_ROWS(n)" description="Optimizes an individual SQL statement for fast response, choosing the plan that returns the first n rows most efficiently.">
+      <code><![CDATA[/*+ FIRST_ROWS(n) */]]></code>
+    </snippet>
+
+    <snippet name="FULL(table-name)" description="Performs a full table scan for the specified table.">
+      <code><![CDATA[/*+ FULL(table-name) */]]></code>
+    </snippet>
+
+    <snippet name="HASH(table-name)" description="Uses a hash scan to access the specified table.">
+      <code><![CDATA[/*+ HASH(table-name) */]]></code>
+    </snippet>
+
+    <snippet name="INDEX(table-name index-name)" description="Uses an index scan for the specified table.">
+      <code><![CDATA[/*+ INDEX(table-name index-name) */]]></code>
+    </snippet>
+
+    <snippet name="INDEX_COMBINE(table-name index-name)" description="Uses a bitmap access path for the table. If index-name is omitted, the optimizer uses whatever Boolean combination of indexes has the best cost estimate for the table.">
+      <code><![CDATA[/*+ INDEX_COMBINE(table-name index-name) */]]></code>
+    </snippet>
+
+    <snippet name="INDEX_FFS(table-name index-name)" description="Performs a fast full index scan rather than a full table scan.">
+      <code><![CDATA[/*+ INDEX_FFS(table-name index-name) */]]></code>
+    </snippet>
+
+    <snippet name="INDEX_JOIN(table-name index-name)" description="Uses an index join as an access path.">
+      <code><![CDATA[/*+ INDEX_JOIN(table-name index-name) */]]></code>
+    </snippet>
+
+    <snippet name="INDEX_SS(table-name index-name)" description="Performs an index skip scan for the specified table.">
+      <code><![CDATA[/*+ INDEX_SS(table-name index-name) */]]></code>
+    </snippet>
+
+    <snippet name="LEADING(table-name, ...)" description="Uses the specified set of tables as the prefix in the execution plan.">
+      <code><![CDATA[/*+ LEADING(table-name, ...) */]]></code>
+    </snippet>
+
+    <snippet name="MERGE(v)" description="Lets you merge views in a query.">
+      <code><![CDATA[/*+ MERGE(v) */]]></code>
+    </snippet>
+
+    <snippet name="MODEL_MIN_ANALYSIS" description="Omits some compile-time optimizations of spreadsheet rules -- primarily detailed dependency graph analysis.">
+      <code><![CDATA[/*+ MODEL_MIN_ANALYSIS */]]></code>
+    </snippet>
+
+    <snippet name="NOAPPEND" description="Uses conventional INSERT by disabling parallel mode for the duration of the INSERT statement.">
+      <code><![CDATA[/*+ NOAPPEND */]]></code>
+    </snippet>
+
+    <snippet name="NOCACHE(table-name)" description="Places the blocks retrieved for the table at the least recently used end of the LRU list in the buffer cache when a full table scan is performed. This is the normal behavior of blocks in the buffer cache.">
+      <code><![CDATA[/*+ NOCACHE(table-name) */]]></code>
+    </snippet>
+
+    <snippet name="NO_EXPAND(table-name)" description="Does not consider OR-expansion for queries having OR conditions or IN-lists in the WHERE clause. Usually, the optimizer considers using OR expansion and uses this method if it decides that the cost is lower than not using it.">
+      <code><![CDATA[/*+ NO_EXPAND(table-name) */]]></code>
+    </snippet>
+
+    <snippet name="NO_FACT(table-name)" description="Makes the table specified in tablespec not a fact table in the star transformation.">
+      <code><![CDATA[/*+ NO_FACT(table-name) */]]></code>
+    </snippet>
+
+    <snippet name="NO_INDEX(table-name index-name)" description="Does not use one or more indexes for the specified table.">
+      <code><![CDATA[/*+ NO_INDEX(table-name index-name) */]]></code>
+    </snippet>
+
+    <snippet name="NO_INDEX_FFS(table-name index-name)" description="Excludes a fast full index scan of the specified indexes on the specified table.">
+      <code><![CDATA[/*+ NO_INDEX_FFS(table-name index-name) */]]></code>
+    </snippet>
+
+    <snippet name="NO_INDEX_SS(table-name index-name)" description="Excludes a skip scan of the specified indexes on the specified table.">
+      <code><![CDATA[/*+ NO_INDEX_SS(table-name index-name) */]]></code>
+    </snippet>
+
+    <snippet name="NO_MERGE(table-name)" description="Does not combine the outer query and any inline view queries into a single query.">
+      <code><![CDATA[/*+ NO_MERGE(table-name) */]]></code>
+    </snippet>
+
+    <snippet name="NO_PARALLEL(table-name)" description="Overrides a PARALLEL parameter in the DDL that created or altered the table.">
+      <code><![CDATA[/*+ NO_PARALLEL(table-name) */]]></code>
+    </snippet>
+
+    <snippet name="NO_PARALLEL_INDEX(table-name index-name)" description="Overrides a PARALLEL parameter in the DDL that created or altered the index, thus avoiding a parallel index scan operation.">
+      <code><![CDATA[/*+ NO_PARALLEL_INDEX(table-name index-name) */]]></code>
+    </snippet>
+
+    <snippet name="NO_PUSH_PRED(v)" description="Does not push a join predicate into the view.">
+      <code><![CDATA[/*+ NO_PUSH_PRED(v) */]]></code>
+    </snippet>
+
+    <snippet name="NO_PUSH_SUBQ" description="Evaluates nonmerged subqueries as the last step in the execution plan. Can improve performance if the subquery is relatively expensive or does not reduce the number of rows significantly.">
+      <code><![CDATA[/*+ NO_PUSH_SUBQ */]]></code>
+    </snippet>
+
+    <snippet name="NO_PX_JOIN_FILTER(table-name)" description="Prevents the optimizer from using parallel join bitmap filtering.">
+      <code><![CDATA[/*+ NO_PX_JOIN_FILTER(table-name) */]]></code>
+    </snippet>
+
+    <snippet name="NO_REWRITE" description="Disables query rewrite for the query block, overriding the setting of the parameter QUERY_REWRITE_ENABLED.">
+      <code><![CDATA[/*+ NO_REWRITE */]]></code>
+    </snippet>
+
+    <snippet name="NO_QUERY_TRANSFORMATION" description="Skips all query transformations, including but not limited to OR-expansion, view merging, subquery unnesting, star transformation, and materialized view rewrite.">
+      <code><![CDATA[/*+ NO_QUERY_TRANSFORMATION */]]></code>
+    </snippet>
+
+    <snippet name="NO_STAR_TRANSFORMATION" description="Does not perform star query transformation.">
+      <code><![CDATA[/*+ NO_STAR_TRANSFORMATION */]]></code>
+    </snippet>
+
+    <snippet name="NO_UNNEST" description="Turns off unnesting.">
+      <code><![CDATA[/*+ NO_UNNEST */]]></code>
+    </snippet>
+ 
+    <snippet name="NO_USE_HASH(table-name ...)" description="Excludes hash joins when joining each specified table to another row source using the specified table as the inner table.">
+      <code><![CDATA[/*+ NO_USE_HASH(table-name ...) */]]></code>
+    </snippet>
+
+    <snippet name="NO_USE_MERGE(table-name ...)" description="Excludes sort-merge joins when joining each specified table to another row source using the specified table as the inner table.">
+      <code><![CDATA[/*+ NO_USE_MERGE(table-name ...) */]]></code>
+    </snippet>
+
+    <snippet name="NO_USE_NL(table-name ...)" description="Excludes nested loops joins when joining each specified table to another row source using the specified table as the inner table.">
+      <code><![CDATA[/*+ NO_USE_NL(table-name ...) */]]></code>
+    </snippet>
+
+    <snippet name="NO_XML_QUERY_REWRITE" description="Prohibits the rewriting of XPath expressions in SQL statements.">
+      <code><![CDATA[/*+ NO_XML_QUERY_REWRITE */]]></code>
+    </snippet>
+
+    <snippet name="ORDERED" description="Joins tables in the order in which they appear in the FROM clause. (Tip: Use the LEADING hint, which is more versatile than the ORDERED hint.)">
+      <code><![CDATA[/*+ ORDERED */]]></code>
+    </snippet>
+
+    <snippet name="PARALLEL(table-name integer)" description="Uses the specified number of concurrent servers for a parallel operation.">
+      <code><![CDATA[/*+ PARALLEL(table-name integer) */]]></code>
+    </snippet>
+
+    <snippet name="PARALLEL_INDEX(table-name index-name integer)" description="Uses the specified number of concurrent servers to parallelize index range scans for partitioned indexes.">
+      <code><![CDATA[/*+ PARALLEL_INDEX(table-name index-name integer) */]]></code>
+    </snippet>
+
+    <snippet name="PQ_DISTRIBUTE(table-name outer-distr inner-distr)" description="Affects how to distribute rows of joined tables among producer and consumer query servers. Can improve the performance of parallel join operations.">
+      <code><![CDATA[/*+ PQ_DISTRIBUTE(table-name outer-distr inner-distr) */]]></code>
+    </snippet>
+
+    <snippet name="PUSH_PRED(v)" description="Pushes a join predicate into the view.">
+      <code><![CDATA[/*+ PUSH_PRED(v) */]]></code>
+    </snippet>
+
+    <snippet name="PUSH_SUBQ" description="Evaluates nonmerged subqueries at the earliest possible step in the execution plan Can improve performance ff the subquery is relatively inexpensive and reduces the number of rows significantly.">
+      <code><![CDATA[/*+ PUSH_SUBQ */]]></code>
+    </snippet>
+
+    <snippet name="PX_JOIN_FILTER(table-name)" description="Forces the optimizer to use parallel join bitmap filtering.">
+      <code><![CDATA[/*+ PX_JOIN_FILTER(table-name) */]]></code>
+    </snippet>
+
+    <snippet name="QB_NAME" description="Defines a name for a query block. This name can then be used in a hint in the outer query or even in a hint in an inline view to affect query execution on the tables appearing in the named query block.">
+      <code><![CDATA[/*+ QB_NAME */]]></code>
+    </snippet>
+
+    <snippet name="REWRITE" description="Rewrites a query in terms of materialized views, when possible, without cost consideration. Use this hint with or without a view list">
+      <code><![CDATA[/*+ REWRITE */]]></code>
+    </snippet>
+
+    <snippet name="STAR_TRANSFORMATION" description="Uses the best plan in which the transformation has been used.">
+      <code><![CDATA[/*+ STAR_TRANSFORMATION */]]></code>
+    </snippet>
+
+    <snippet name="UNNEST" description="Unnests and merges the body of the subquery into the body of the query block that contains it, allowing the optimizer to consider them together when evaluating access paths and joins.">
+      <code><![CDATA[/*+ UNNEST */]]></code>
+    </snippet>
+ 
+    <snippet name="USE_CONCAT" description="Transforms combined OR-conditions in the WHERE clause of a query into a compound query using the UNION ALL set operator.">
+      <code><![CDATA[/*+ USE_CONCAT */]]></code>
+    </snippet>
+ 
+    <snippet name="USE_HASH(table-name ...)" description="Joins each specified table with another row source using a hash join.">
+      <code><![CDATA[/*+ USE_HASH(table-name ...) */]]></code>
+    </snippet>
+
+    <snippet name="USE_MERGE(table-name ...)" description="Joins each specified table with another row source using a sort-merge join.">
+      <code><![CDATA[/*+ USE_MERGE(table-name ...) */]]></code>
+    </snippet>
+
+    <snippet name="USE_NL(table-name ...)" description="Joins each specified table to another row source with a nested loops join, using the specified table as the inner table.">
+      <code><![CDATA[/*+ USE_NL(table-name ...) */]]></code>
+    </snippet>
+
+    <snippet name="USE_NL_WITH_INDEX(table-name index-name)" description="Joins the specified table to another row source with a nested loops join using the specified table as the inner table.">
+      <code><![CDATA[/*+ USE_NL_WITH_INDEX(table-name index-name) */]]></code>
+    </snippet>
+
+  </group>
+
+  <group category="PL/SQL Programming Techniques" language="PLSQL">
+
+    <snippet name="CASE" description="Selects a result from one or more alternatives, and returns the result.">
+      <code><![CDATA[CASE grade
+  WHEN 'A' THEN 'Excellent'
+  WHEN 'B' THEN 'Very Good'
+  WHEN 'C' THEN 'Good'
+  WHEN 'D' THEN 'Fair'
+  WHEN 'F' THEN 'Poor'
+  ELSE 'No such grade'
+END;]]></code>
+    </snippet>
+
+    <snippet name="Cursor" description="Cursor variable points to the current row in the result set of a multi-row query.">
+      <code><![CDATA[DECLARE
+  ...
+  TYPE my_cursor IS REF CURSOR;
+  the_cursor my_cursor;
+BEGIN
+  OPEN the_cursor FOR '...' ;
+  LOOP
+    FETCH the_cursor INTO ...;
+    EXIT WHEN the_cursor%NOTFOUND;
+    ...
+  END LOOP;
+  CLOSE the_cursor;
+END;
+/]]></code>
+    </snippet>
+
+    <snippet name="DBMS_OUTPUT.PUT_LINE" description="Displays output from PL/SQL blocks, subprograms, packages, and triggers.">
+      <code><![CDATA[DBMS_OUTPUT.PUT_LINE('There are ' || in_stock || ' items in stock.');]]></code>
+    </snippet>
+
+    <snippet name="IF-THEN-ELSE" description="Condition with alternative sequence of statements.">
+      <code><![CDATA[IF sales > (quota + 200) THEN
+  bonus := (sales - quota)/4;
+ELSE
+  bonus := 50;
+END IF;]]></code>
+    </snippet>
+
+    <snippet name="IF-THEN-ELSEIF" description="Condition with several alternatives.">
+      <code><![CDATA[IF sales > 50000 THEN
+  bonus := 1500;
+ELSIF sales > 35000 THEN
+  bonus := 500;
+ELSE
+  bonus := 100;
+END IF;]]></code>
+    </snippet>
+
+     <snippet name="Loop: FOR LOOP" description="Iterates over a range of integers.">
+      <code><![CDATA[FOR x IN 1..n LOOP
+  ...;
+END LOOP;]]></code>
+    </snippet>
+
+     <snippet name="Loop: WHILE LOOP" description="Executes the statements in the loop body as long as a condition is true.">
+      <code><![CDATA[WHILE condition LOOP
+  sequence_of_statements
+END LOOP;]]></code>
+    </snippet>
+
+     <snippet name="RAISE_APPLICATION_ERROR(-number, 'error-text')" description="Issues user-defined ORA- error message from a stored subprogram.">
+      <code><![CDATA[RAISE_APPLICATION_ERROR(-number, 'error-text');]]></code>
+    </snippet>
+
+     <snippet name="RAISE_APPLICATION_ERROR [example]" description="Example of RAISE_APPLICATION_ERROR.">
+      <code><![CDATA[RAISE_APPLICATION_ERROR(-20101, 'Salary below minimum for position');]]></code>
+    </snippet>
+
+     <snippet name="Random number: NORMAL()" description="Returns random numbers in a standard normal distribution. Example: .693962661">
+      <code><![CDATA[DBMS_RANDOM.NORMAL()]]></code>
+    </snippet>
+
+     <snippet name="Random number: VALUE()" description="Returns a random number, greater than or equal to 0 and less than 1, with 38 digits to the right of the decimal.">
+      <code><![CDATA[DBMS_RANDOM.VALUE()]]></code>
+    </snippet>
+
+     <snippet name="Random number: VALUE(low, high)" description="Returns a random number between low and high values. Example: 82.7931995 (between 1 and 100)">
+      <code><![CDATA[DBMS_RANDOM.VALUE(1, 100)]]></code>
+    </snippet>
+
+     <snippet name="Random string: STRING('X', 10)" description="Returns uppercase alphanumeric characters of specified length. Example: Z71AHSQNA3">
+      <code><![CDATA[DBMS_RANDOM.STRING('X', 10)]]></code>
+    </snippet>
+
+     <snippet name="Random string: STRING('A', 10)" description="Returns mixed-case alphabetic characters of specified length. Example: jqKbPnwVql">
+      <code><![CDATA[DBMS_RANDOM.STRING('A', 10)]]></code>
+    </snippet>
+
+     <snippet name="Random string: STRING('P', 10)" description="Returns any printable characters of specified length. Example: SZ(X$]+42B">
+      <code><![CDATA[DBMS_RANDOM.STRING('P', 10)]]></code>
+    </snippet>
+
+  </group>
+
+  <group category="Pseudocolumns" language="PLSQL">
+
+    <snippet name="COLUMN_VALUE" description="An XMLTable construct without the COLUMNS clause, or the result of the TABLE function to refer to a scalar nested table type.">
+      <code><![CDATA[COLUMN_VALUE]]></code>
+    </snippet>
+
+    <snippet name="CONNECT_BY_ISCYCLE" description="Returns 1 if the current row has a child which is also its ancestor, otherwise 0.">
+      <code><![CDATA[CONNECT_BY_ISCYCLE]]></code>
+    </snippet>
+
+    <snippet name="CONNECT_BY_ISLEAF" description="Returns 1 if the current row is a leaf of the tree defined by the CONNECT BY condition, otherwise 0. Indicates whether a given row can be further expanded to show more of the hierarchy.">
+      <code><![CDATA[CONNECT_BY_ISLEAF]]></code>
+    </snippet>
+
+    <snippet name="CURRVAL" description="Returns the current value of a sequence.">
+      <code><![CDATA[sequence.CURRVAL]]></code>
+    </snippet>
+
+    <snippet name="LEVEL" description="For each row returned by a hierarchical query, returns 1 for a root row, 2 for a child of a root, and so on.">
+      <code><![CDATA[LEVEL]]></code>
+    </snippet>
+
+    <snippet name="NEXTVAL" description="Increments the sequence and returns the next value.">
+      <code><![CDATA[sequence.NEXTVAL]]></code>
+    </snippet>
+
+    <snippet name="OBJECT_ID" description="Returns the object identifier of a column of an object table or view.">
+      <code><![CDATA[OBJECT_ID]]></code>
+    </snippet>
+
+    <snippet name="OBJECT_VALUE" description="Returns system-generated names for the columns of an object table, XMLType table, object view, or XMLType view.">
+      <code><![CDATA[OBJECT_VALUE]]></code>
+    </snippet>
+
+    <snippet name="ORA_ROWSCN" description="For each row, returns the conservative upper bound system change number (SCN) of the most recent change to the row. Useful for determining approximately when a row was last updated.">
+      <code><![CDATA[ORA_ROWSCN]]></code>
+    </snippet>
+
+    <snippet name="ROWID" description="For each row in the database, returns the address of the row.">
+      <code><![CDATA[ROWID]]></code>
+    </snippet>
+
+    <snippet name="ROWNUM" description="For each row returned by a query, returns a number indicating the order in which Oracle selects the row from a table or set of joined rows.">
+      <code><![CDATA[ROWNUM]]></code>
+    </snippet>
+
+    <snippet name="XMLDATA" description="For XMLType data, lets you access the underlying LOB or object relational column to specify additional storage clause parameters, constraints, indexes, and so on.">
+      <code><![CDATA[XMLDATA]]></code>
+    </snippet>
+
+  </group>
+
+</snippets>

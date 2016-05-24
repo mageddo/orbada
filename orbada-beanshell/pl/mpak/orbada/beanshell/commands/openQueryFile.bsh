@@ -1,0 +1,14 @@
+import pl.mpak.orbada.universal.gui.SqlQueryPanelView;
+import pl.mpak.orbada.universal.gui.SqlQueryResultPanel;
+import pl.mpak.sky.gui.swing.SwingUtil;
+import javax.swing.FocusManager;
+
+void openQueryFile(String fileName) {
+  SqlQueryPanelView queryPanel = (SqlQueryPanelView)SwingUtil.getOwnerComponent(SqlQueryPanelView.class, FocusManager.getCurrentManager().getFocusOwner());
+  if (queryPanel != null) {
+    SqlQueryResultPanel resultPanel = queryPanel.getResultPanel();
+    if (resultPanel != null) {
+      resultPanel.getQuery().openQueryFile(fileName);
+    }
+  }
+}
