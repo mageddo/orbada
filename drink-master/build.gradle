@@ -1,8 +1,0 @@
-sourceSets {
-    main {
-        java {
-            srcDir projectDir
-        }
-    }
-}
-
