@@ -2,6 +2,9 @@
 allprojects {
     apply plugin: 'java'
     compileJava.options.encoding = 'ISO-8859-1'
+    sourceCompatibility 1.6
+    targetCompatibility 1.6
+
     sourceSets {
         main {
             java {

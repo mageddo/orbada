@@ -1,11 +1,9 @@
 package pl.mpak.sky.gui.swing;
 
-import java.awt.EventQueue;
+import java.awt.*;
 import java.util.Vector;
 
-import javax.swing.AbstractListModel;
-import javax.swing.JList;
-import javax.swing.ListModel;
+import javax.swing.*;
 
 import pl.mpak.util.StringUtil;
 
@@ -92,15 +90,15 @@ public class FormatedList extends JList {
     });
   }
   
-  public void setListData(Vector<?> listData) {
-    if (this.listData != listData) {
-      this.listData = listData;
-      if (this.listData != null && this.listData.size() > 0) {
-        setSelectedIndex(0);
-      }
-      refresh();
-    }
-  }
+//  public void setListData(Vector<?> listData) {
+//    if (this.listData != listData) {
+//      this.listData = listData;
+//      if (this.listData != null && this.listData.size() > 0) {
+//        setSelectedIndex(0);
+//      }
+//      refresh();
+//    }
+//  }
   
   public Vector<?> getListData() {
     return listData;
