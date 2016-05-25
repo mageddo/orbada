@@ -67,6 +67,7 @@ allprojects {
         compile project(':orbada-tray')
         compile project(':orbada-universal')
         compile project(':orbada-universal')
+        compile project(':orbada-userdb')
         compile project(':orbada-util')
         compile project(':orbada-xml-data-view')
         compile project(':startup')
