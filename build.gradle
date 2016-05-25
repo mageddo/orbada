@@ -16,7 +16,8 @@ allprojects {
 
         // external dependencies
         compile group: 'log4j', name: 'log4j', version: '1.2.17'
-
+        compile group: 'org.firebirdsql.jdbc', name: 'jaybird', version: '2.1.6'
+        compile group: 'com.lowagie', name: 'itext', version: '2.1.3'
 
         // modules
         compile project(':drink-master')
