@@ -57,6 +57,7 @@ allprojects {
         compile project(':orbada-programmers')
         compile project(':orbada-reports')
         compile project(':orbada-reports-db')
+        compile project(':orbada-sky')
         compile project(':orbada-snippets')
         compile project(':orbada-sqlite')
         compile project(':orbada-sql-macro')
