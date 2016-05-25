@@ -35,6 +35,7 @@ allprojects {
         compile project(':orbada-gadgets')
         compile project(':orbada-hsqldb')
         compile project(':orbada-import-csv')
+        compile project(':orbada-id')
         compile project(':orbada-jaybird')
         compile project(':orbada-json-data-view')
         compile project(':orbada-laf-jgoodies')
