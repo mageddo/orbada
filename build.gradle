@@ -11,6 +11,11 @@ allprojects {
     }
     repositories {
         mavenCentral()
+        mavenLocal()
+        maven {
+            url uri("${projectDir}/libs/maven")
+        }
+
     }
     dependencies {
 
@@ -23,7 +28,7 @@ allprojects {
         compile group: 'org.firebirdsql.jdbc', name: 'jaybird', version: '2.1.6'
         compile group: 'log4j', name: 'log4j', version: '1.2.17'
 
-        compile fileTree("${projectDir}/libs/")
+        compile fileTree("${projectDir}/libs/bin/")
 
         // modules
         compile project(':drink-master')
