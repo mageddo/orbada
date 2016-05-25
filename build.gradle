@@ -63,6 +63,7 @@ allprojects {
         compile project(':orbada-sql-macro')
         compile project(':orbada-sql-scripts')
         compile project(':orbada-system')
+        compile project(':orbada-task')
         compile project(':orbada-todo')
         compile project(':orbada-tray')
         compile project(':orbada-universal')

@@ -1,3 +1,5 @@
+rootProject.name = "orbada"
+
 include ':drink-master'
 include ':json'
 include ':orbada'
@@ -48,6 +50,7 @@ include ':orbada-sqlite'
 include ':orbada-sql-macro'
 include ':orbada-sql-scripts'
 include ':orbada-system'
+include ':orbada-task'
 include ':orbada-todo'
 include ':orbada-tray'
 include ':orbada-universal'
