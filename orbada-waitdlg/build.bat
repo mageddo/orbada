@@ -1,0 +1,1 @@
+jar -cf ..\..\Lib\pl.mpak.waitdlg.jar .

@@ -13,6 +13,12 @@ allprojects {
         mavenCentral()
     }
     dependencies {
+
+        // external dependencies
+        compile group: 'log4j', name: 'log4j', version: '1.2.17'
+
+
+        // modules
         compile project(':drink-master')
         compile project(':json')
         compile project(':orbada')
@@ -71,6 +77,7 @@ allprojects {
         compile project(':orbada-userdb')
         compile project(':orbada-util')
         compile project(':orbada-xml-data-view')
+        compile project(':orbada-waitdlg')
         compile project(':startup')
     }
 }
