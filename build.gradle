@@ -15,9 +15,11 @@ allprojects {
     dependencies {
 
         // external dependencies
-        compile group: 'log4j', name: 'log4j', version: '1.2.17'
-        compile group: 'org.firebirdsql.jdbc', name: 'jaybird', version: '2.1.6'
         compile group: 'com.lowagie', name: 'itext', version: '2.1.3'
+        compile group: 'com.linuxense', name: 'javadbf', version: '0.4.0'
+        compile group: 'org.firebirdsql.jdbc', name: 'jaybird', version: '2.1.6'
+        compile group: 'log4j', name: 'log4j', version: '1.2.17'
+        compile fileTree("${projectDir}/libs/")
 
         // modules
         compile project(':drink-master')
@@ -82,5 +84,15 @@ allprojects {
         compile project(':orbada-xml-data-view')
         compile project(':orbada-waitdlg')
         compile project(':startup')
+    }
+}
+
+subprojects {
+    sourceSets {
+        main {
+            java {
+                srcDir projectDir
+            }
+        }
     }
 }
