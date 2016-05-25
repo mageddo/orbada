@@ -1,0 +1,6 @@
+Extension-Name: g2
+Specification-Vendor: Andrzej Ka³u¿a
+Specification-Version: 1.0.0.0
+Implementation-Vendor-Id: pl.mpak
+Implementation-Vendor: Andrzej Ka³u¿a
+Implementation-Version: 1.0.0.4

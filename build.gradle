@@ -38,6 +38,7 @@ allprojects {
         compile project(':orbada-export-pdf')
         compile project(':orbada-firebird')
         compile project(':orbada-firebird-autocomplete')
+        compile project(':orbada-g2')
         compile project(':orbada-gadgets')
         compile project(':orbada-hsqldb')
         compile project(':orbada-import-csv')
