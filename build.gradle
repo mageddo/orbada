@@ -44,6 +44,7 @@ allprojects {
         compile project(':orbada-beanshell')
         compile project(':orbada-dancer-pw')
         compile project(':orbada-data-move')
+        compile project(':orbada-datatext')
         compile project(':orbada-db-objects')
         compile project(':orbada-derbydb')
         compile project(':orbada-dml-format')
