@@ -60,6 +60,7 @@ allprojects {
         compile project(':orbada-oracle-dba')
         compile project(':orbada-oracle-edt')
         compile project(':orbada-oracle-tune')
+        compile project(':orbada-parser')
         compile project(':orbada-plugins')
         compile project(':orbada-postgresql')
         compile project(':orbada-programmers')
