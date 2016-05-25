@@ -30,6 +30,8 @@ allprojects {
         compile group: 'net.sf.nimrod', name: 'nimrod-laf', version: '1.2'
         compile group: 'org.apache.poi', name: 'poi', version: '3.13'
         compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.13'
+        compile group: 'net.sf.squirrel-sql.thirdparty-non-maven', name: 'tinylaf', version: '1.4.0'
+
 
 
         compile fileTree("${rootProject.projectDir}/libs/bin/")
