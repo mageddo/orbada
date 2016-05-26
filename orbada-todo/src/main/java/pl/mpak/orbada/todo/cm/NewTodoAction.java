@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class NewTodoAction extends Action {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaTodoPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("todo");
 
   private String td_sch_id;
   

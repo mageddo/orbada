@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ExplainPlanPanel extends javax.swing.JPanel implements Closeable {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSQLitePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sqlite");
 
   private Database database;
   

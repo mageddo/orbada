@@ -10,6 +10,7 @@
 package pl.mpak.orbada.plugins;
 
 import java.util.ArrayList;
+
 import pl.mpak.plugins.spi.IPlugin;
 import pl.mpak.util.StringManager;
 import pl.mpak.util.StringManagerFactory;
@@ -20,7 +21,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public abstract class OrbadaPlugin implements IPlugin, IProcessMessagable {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("plugins");
 
   protected IApplication application;
   protected String lastVersion;

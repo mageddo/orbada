@@ -28,7 +28,7 @@ import pl.mpak.util.StringUtil;
  */
 public class DatabaseSettingsPanel extends javax.swing.JPanel implements ISettingsComponent {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   private IApplication application;
   private Database database;

@@ -38,7 +38,7 @@ import pl.mpak.util.patt.Resolvers;
  */
 public class ImportTodoDialog extends javax.swing.JDialog {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaTodoPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("todo");
 
   private int modalResult = ModalResult.NONE;
   private File[] files;

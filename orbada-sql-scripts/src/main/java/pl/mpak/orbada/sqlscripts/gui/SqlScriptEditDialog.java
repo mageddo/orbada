@@ -23,7 +23,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class SqlScriptEditDialog extends javax.swing.JDialog {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSqlScriptsPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sql-scripts");
 
   private String oss_id;
   private String dtp_id;

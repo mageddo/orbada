@@ -17,7 +17,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaDancerPleaseWaitPlugin extends OrbadaPlugin {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaDancerPleaseWaitPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("dancer-pw");
   public final static String groupName = "Orbada Please Wait";
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();
   

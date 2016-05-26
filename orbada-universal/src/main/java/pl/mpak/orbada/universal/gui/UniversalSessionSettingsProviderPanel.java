@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class UniversalSessionSettingsProviderPanel extends javax.swing.JPanel implements Closeable, ISettingsComponent {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   private IApplication application;
   private ISettings settings;

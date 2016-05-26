@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class SqlMacrosSettingsProvider extends SettingsProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSqlMacrosPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sql-macro");
 
   @Override
   public String getSettingsPath() {

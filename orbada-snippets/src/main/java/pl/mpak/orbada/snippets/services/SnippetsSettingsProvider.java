@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class SnippetsSettingsProvider extends SettingsProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSnippetsPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("snippets");
 
   @Override
   public String getSettingsPath() {

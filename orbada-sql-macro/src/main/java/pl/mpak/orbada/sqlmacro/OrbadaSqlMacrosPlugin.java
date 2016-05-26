@@ -21,7 +21,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OrbadaSqlMacrosPlugin extends OrbadaPlugin {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSqlMacrosPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sql-macro");
 
   public final static String pluginGroupName = "Orbada Tools";
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();

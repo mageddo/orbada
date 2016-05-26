@@ -26,7 +26,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public abstract class UniversalSourceTab extends javax.swing.JPanel implements ITabObjectInfo {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   protected IViewAccesibilities accesibilities;
   protected String currentSchemaName = "";

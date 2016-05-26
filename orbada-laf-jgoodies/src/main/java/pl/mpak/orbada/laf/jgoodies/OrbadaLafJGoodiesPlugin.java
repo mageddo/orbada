@@ -31,7 +31,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaLafJGoodiesPlugin extends OrbadaPlugin {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLafJGoodiesPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("laf-jgoodies");
 
   public final static String jgoodiesName = "JGoodies";
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();

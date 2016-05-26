@@ -17,7 +17,7 @@ import pl.mpak.util.files.FileExtensionFilter;
  */
 public class AttachDatabaseWizard extends SqlCodeWizardPanel {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSQLitePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sqlite");
 
   private Database database;
   

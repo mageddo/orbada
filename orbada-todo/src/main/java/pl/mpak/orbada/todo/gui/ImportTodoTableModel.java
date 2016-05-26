@@ -17,7 +17,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ImportTodoTableModel extends AbstractTableModel {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaTodoPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("todo");
 
   private ImportTodoItem[] items;
   

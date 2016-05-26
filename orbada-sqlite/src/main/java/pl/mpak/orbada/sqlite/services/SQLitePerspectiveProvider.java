@@ -29,7 +29,7 @@ import pl.mpak.util.StringUtil;
  */
 public class SQLitePerspectiveProvider extends PerspectiveProvider {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSQLitePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sqlite");
 
   public boolean isForDatabase(Database database) {
     if (database == null) {

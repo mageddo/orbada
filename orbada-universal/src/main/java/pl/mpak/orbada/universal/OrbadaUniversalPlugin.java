@@ -39,7 +39,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OrbadaUniversalPlugin extends OrbadaPlugin {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   public final static String version = new VersionID(1, 2, 0, 53).toString();
   public final static String universalGroupName = stringManager.getString("universal-group-name");

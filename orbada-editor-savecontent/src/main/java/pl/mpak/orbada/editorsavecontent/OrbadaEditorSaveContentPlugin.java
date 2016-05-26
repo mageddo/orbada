@@ -16,7 +16,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OrbadaEditorSaveContentPlugin extends OrbadaPlugin {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaEditorSaveContentPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("editor-savercontent");
 
   public final static String pluginGroupName = "Orbada Tools";
   

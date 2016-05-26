@@ -40,7 +40,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class CommandParametersPanel extends javax.swing.JPanel implements Closeable, Titleable {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   private ParameterList parameterList;
   private String schemaId;

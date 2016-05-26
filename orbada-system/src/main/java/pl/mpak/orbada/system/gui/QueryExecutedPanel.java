@@ -32,7 +32,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class QueryExecutedPanel extends javax.swing.JPanel {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSystemPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("system");
   
   private DatabaseManagerListener databaseManagerListener;
   private DatabaseQueryListener databaseQueryListener;

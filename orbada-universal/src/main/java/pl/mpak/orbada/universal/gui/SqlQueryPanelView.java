@@ -81,7 +81,7 @@ import pl.mpak.util.timer.Timer;
  */
 public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, IProcessMessagable {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   public final static String PANEL_STATUS = "editor.status";
   public final static String settingsName = "universal-query-panel";

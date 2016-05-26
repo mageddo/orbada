@@ -13,7 +13,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class FilterTurnOffAction extends Action {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   private SqlFilter sqlFilter;
   

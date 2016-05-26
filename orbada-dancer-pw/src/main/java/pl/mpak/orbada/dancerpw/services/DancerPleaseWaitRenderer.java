@@ -23,7 +23,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class DancerPleaseWaitRenderer extends PleaseWaitRendererProvider {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaDancerPleaseWaitPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("dancer-pw");
 
   public final static String uniqueId = "orbada-dancer-please-wait-renderer";
 

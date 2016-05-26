@@ -31,7 +31,7 @@ import pl.mpak.util.variant.VariantType;
  */
 public class TodoEditDialog extends javax.swing.JDialog {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaTodoPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("todo");
 
   private String td_id;
   private String td_sch_id;

@@ -21,7 +21,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class UniversalPerspectiveProvider extends PerspectiveProvider {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   public boolean isForDatabase(Database database) {
     return database != null;

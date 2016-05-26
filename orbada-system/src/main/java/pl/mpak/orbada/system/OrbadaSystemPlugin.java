@@ -27,7 +27,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OrbadaSystemPlugin extends OrbadaPlugin {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSystemPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("system");
   public final static String systemGroupName = "System Orbada";
 
   public final static String msgStatusText = "status-text";

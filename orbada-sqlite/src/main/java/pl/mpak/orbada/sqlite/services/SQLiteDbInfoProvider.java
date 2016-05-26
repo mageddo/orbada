@@ -31,7 +31,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class SQLiteDbInfoProvider extends DatabaseInfoProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSQLitePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sqlite");
 
   public static SQLiteDbInfoProvider instance;
 

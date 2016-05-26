@@ -57,7 +57,7 @@ import pl.mpak.util.StringTokenizer;
  */
 public class SqlQueryResultPanel extends javax.swing.JPanel implements Closeable {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   private final static ArrayList<ArrayList<String>> storedColumnList = new ArrayList<ArrayList<String>>();
 

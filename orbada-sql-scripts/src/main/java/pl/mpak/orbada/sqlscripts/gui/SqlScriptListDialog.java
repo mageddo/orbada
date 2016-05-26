@@ -29,7 +29,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class SqlScriptListDialog extends javax.swing.JDialog {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSqlScriptsPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sql-scripts");
 
   private ISettings settings;
   private String dtp_id;

@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class XmlDataViewService extends ViewValueProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaXmlDataViewPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("xml-data-view");
 
   @Override
   public Component createComponent(Object value) {

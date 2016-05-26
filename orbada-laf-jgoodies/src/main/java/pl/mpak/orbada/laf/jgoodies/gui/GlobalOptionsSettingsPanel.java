@@ -38,7 +38,7 @@ import pl.mpak.util.StringUtil;
  */
 public class GlobalOptionsSettingsPanel extends javax.swing.JPanel implements ISettingsComponent {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLafJGoodiesPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("laf-jgoodies");
 
   private IApplication application;
   private File propFile;

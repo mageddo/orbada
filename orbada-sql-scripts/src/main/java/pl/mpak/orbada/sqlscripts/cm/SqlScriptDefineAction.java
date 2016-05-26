@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class SqlScriptDefineAction extends Action {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSqlScriptsPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sql-scripts");
 
   private SqlScriptPerspectiveProvider service;
   

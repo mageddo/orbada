@@ -23,7 +23,7 @@ import pl.mpak.util.StringUtil;
  */
 public class UniversalSqlTextTransformProvider extends pl.mpak.orbada.universal.providers.UniversalSqlTextTransformProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   public boolean isForDatabase(Database database) {
     return database != null;

@@ -21,7 +21,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class SystemSettingsPanel extends javax.swing.JPanel implements ISettingsComponent {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSystemPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("system");
   private IApplication application;
   private ISettings settings;
   

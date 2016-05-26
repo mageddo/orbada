@@ -19,7 +19,7 @@ import pl.mpak.util.timer.TimerManager;
  */
 public class TaskPanel extends javax.swing.JPanel {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSystemPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("system");
   private Task task;
   private Timer timer;
   

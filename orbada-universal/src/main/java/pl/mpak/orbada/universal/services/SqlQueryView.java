@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class SqlQueryView extends ViewProvider {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   public Component createView(IViewAccesibilities accesibilities) {
     return new SqlQueryPanelView(accesibilities);

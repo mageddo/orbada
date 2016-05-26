@@ -24,7 +24,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class QueryPanel extends javax.swing.JPanel {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSystemPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("system");
   private Query query;
   private Color orgColor;
   

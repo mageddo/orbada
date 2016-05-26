@@ -60,7 +60,7 @@ import pl.mpak.util.task.TaskPoolManager;
  */
 public class SystemStatusBarProvider extends StatusBarProvider {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSystemPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("system");
   public static SystemStatusBarProvider instance;
   //private PanelmPakLogo panelmPakLogo;
   private javax.swing.JPanel panelSystemStatus;

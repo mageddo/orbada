@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OrbadaSqlScriptsPlugin extends OrbadaPlugin {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSqlScriptsPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sql-scripts");
 
   public final static String pluginGroupName = "Orbada Tools";
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();

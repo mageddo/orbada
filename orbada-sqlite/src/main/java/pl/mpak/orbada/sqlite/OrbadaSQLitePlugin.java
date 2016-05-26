@@ -38,7 +38,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaSQLitePlugin extends OrbadaPlugin {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSQLitePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sqlite");
 
   public final static String driverType = "SQLite";
   public final static VersionID version = new VersionID(2, 0, 0, 15);

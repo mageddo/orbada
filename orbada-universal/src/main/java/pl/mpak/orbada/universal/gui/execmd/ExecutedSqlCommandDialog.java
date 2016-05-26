@@ -39,7 +39,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class ExecutedSqlCommandDialog extends javax.swing.JDialog {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   private int modalResult = ModalResult.NONE;
   private String sqlText;

@@ -27,7 +27,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class PragmaDatabaseIntegrityCheckAction extends ComponentActionProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSQLitePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sqlite");
 
   public PragmaDatabaseIntegrityCheckAction() {
     super();

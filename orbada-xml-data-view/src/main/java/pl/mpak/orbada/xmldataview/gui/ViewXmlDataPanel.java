@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ViewXmlDataPanel extends javax.swing.JPanel implements Closeable {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaXmlDataViewPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("xml-data-view");
 
   private Object value;
   

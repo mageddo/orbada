@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ErrorBox extends javax.swing.JDialog {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   private Throwable exception;
   private String extInfo;

@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class UniversalSettingsProvider extends SettingsProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   public static String settingsName = "orbada-universal";
   public static String setDeleteAfterDays = "delete-after-days";

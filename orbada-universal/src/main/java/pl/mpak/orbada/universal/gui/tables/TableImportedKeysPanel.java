@@ -22,7 +22,7 @@ import pl.mpak.util.StringUtil;
  */
 public class TableImportedKeysPanel extends javax.swing.JPanel implements ITabObjectInfo {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   private IViewAccesibilities accesibilities;
   private String currentCatalogName;

@@ -22,7 +22,7 @@ import pl.mpak.util.task.Task;
  */
 public class MacroSqlTextTransform extends UniversalSqlTextTransformProvider implements IProcessMessagable {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSqlMacrosPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sql-macro");
 
   private final ArrayList<SqlMacroRecordForTransform> macroList;
   private boolean inited = false;

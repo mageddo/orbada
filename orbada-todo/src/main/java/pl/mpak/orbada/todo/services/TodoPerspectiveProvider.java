@@ -13,7 +13,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TodoPerspectiveProvider extends PerspectiveProvider {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaTodoPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("todo");
 
   public boolean isForDatabase(Database database) {
     return true;

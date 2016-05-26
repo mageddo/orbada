@@ -23,7 +23,7 @@ import pl.mpak.util.patt.Resolvers;
  */
 public class OrbadaTodoPlugin extends OrbadaPlugin {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaTodoPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("todo");
 
   public final static String todoGroupName = "Orbada Tools";
   

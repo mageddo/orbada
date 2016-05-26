@@ -22,7 +22,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class WelcomeViewPanel extends javax.swing.JPanel {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaWelcomePlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("welcome");
 
   private IViewAccesibilities accesibilities;
   private ISettings settings;

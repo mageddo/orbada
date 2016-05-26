@@ -16,7 +16,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class SQLiteTriggersView extends ViewProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSQLitePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sqlite");
 
   public Component createView(IViewAccesibilities accesibilities) {
     return new TriggersPanelView(accesibilities);

@@ -23,7 +23,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class GeneralSettingsPanel extends javax.swing.JPanel implements ISettingsComponent {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   private IApplication application;
   private ISettings settings;

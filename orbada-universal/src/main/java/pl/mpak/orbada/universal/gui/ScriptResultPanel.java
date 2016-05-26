@@ -48,7 +48,7 @@ import pl.mpak.util.task.Task;
  */
 public class ScriptResultPanel extends javax.swing.JPanel implements Closeable {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   private Task scriptTask;
   private ArrayList<Integer> errorList;

@@ -22,7 +22,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaSnippetsPlugin extends OrbadaPlugin {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSnippetsPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("snippets");
 
   public final static VersionID version = new VersionID(0, 0, 1, 3);
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();

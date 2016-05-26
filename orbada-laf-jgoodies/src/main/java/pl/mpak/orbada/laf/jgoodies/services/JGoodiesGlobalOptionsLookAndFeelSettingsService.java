@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class JGoodiesGlobalOptionsLookAndFeelSettingsService extends SettingsProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLafJGoodiesPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("laf-jgoodies");
 
   @Override
   public Component getSettingsComponent() {

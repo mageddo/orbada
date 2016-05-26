@@ -44,7 +44,7 @@ import pl.mpak.util.variant.VariantException;
  */
 public class ProceduresPanelView extends javax.swing.JPanel implements Closeable {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   private IViewAccesibilities accesibilities;
   private String currentCatalogName;

@@ -39,7 +39,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class SnippetsSettingsPanel extends javax.swing.JPanel implements ISettingsComponent, Closeable {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSnippetsPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("snippets");
 
   private IApplication application;
   private ISettings settings;

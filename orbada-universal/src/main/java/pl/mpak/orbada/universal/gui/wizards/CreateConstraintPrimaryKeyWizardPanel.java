@@ -27,7 +27,7 @@ import pl.mpak.util.StringUtil;
  */
 public class CreateConstraintPrimaryKeyWizardPanel extends SqlCodeWizardPanel {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   private Database database;
   private String schemaName;

@@ -25,7 +25,7 @@ import pl.mpak.util.StringUtil;
  */
 public class SqlFilterDialog extends javax.swing.JDialog {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   private int modalResult = ModalResult.NONE;
   private SqlFilter sqlFilter;

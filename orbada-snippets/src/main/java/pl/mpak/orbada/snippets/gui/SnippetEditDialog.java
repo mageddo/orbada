@@ -24,7 +24,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class SnippetEditDialog extends javax.swing.JDialog {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSnippetsPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("snippets");
 
   private IApplication application;
   private int modalResult = ModalResult.NONE;

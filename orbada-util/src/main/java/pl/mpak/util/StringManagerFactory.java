@@ -18,14 +18,15 @@ public class StringManagerFactory {
     return mgr;
   }
 
-  public static synchronized StringManager getStringManager(Class<?> clazz) {
-    if (clazz == null) {
-      throw new IllegalArgumentException("clazz == null");
-    }
-
-    final String packageName = getPackageName(clazz);
-    return getStringManager(packageName, clazz.getClassLoader());
-  }
+//  FIXME VOLTAR
+//  public static synchronized StringManager getStringManager(Class<?> clazz) {
+//    if (clazz == null) {
+//      throw new IllegalArgumentException("clazz == null");
+//    }
+//
+//    final String packageName = getPackageName(clazz);
+//    return getStringManager(packageName, clazz.getClassLoader());
+//  }
 
   public static synchronized StringManager getStringManager(Class<?> clazz, String packageName) {
     if (packageName == null) {

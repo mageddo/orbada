@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TriggersPanelView extends UniversalViewTabs {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSQLitePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sqlite");
 
   public TriggersPanelView(IViewAccesibilities accesibilities) {
     super(accesibilities);

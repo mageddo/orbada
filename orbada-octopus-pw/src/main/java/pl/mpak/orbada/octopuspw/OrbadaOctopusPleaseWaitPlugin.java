@@ -17,7 +17,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaOctopusPleaseWaitPlugin extends OrbadaPlugin {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOctopusPleaseWaitPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("octopus-pw");
 
   public final static String groupName = "Orbada Please Wait";
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();

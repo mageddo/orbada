@@ -21,7 +21,7 @@ import pl.mpak.util.timer.Timer;
  */
 public class CommandPanel extends javax.swing.JPanel {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSystemPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("system");
   private Command command;
   private Timer timer;
   

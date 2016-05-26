@@ -21,7 +21,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class UniversalDatabaseProvider extends DatabaseProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   public static UniversalDatabaseProvider instance;
 

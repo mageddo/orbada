@@ -13,7 +13,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TraySettingsPanel extends javax.swing.JPanel implements ISettingsComponent {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaTrayPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("tray");
 
   public static String settingsName = "orbada-tray-settings";
   public static String setTrayOn = "tray-on";

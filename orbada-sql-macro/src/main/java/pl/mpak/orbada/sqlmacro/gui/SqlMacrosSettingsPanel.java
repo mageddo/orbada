@@ -36,7 +36,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class SqlMacrosSettingsPanel extends javax.swing.JPanel implements ISettingsComponent, Closeable {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSqlMacrosPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sql-macro");
 
   private IApplication application;
   

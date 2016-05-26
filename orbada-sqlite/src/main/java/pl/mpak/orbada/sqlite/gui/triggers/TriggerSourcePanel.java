@@ -14,7 +14,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TriggerSourcePanel extends UniversalSourceTab {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSQLitePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sqlite");
 
   public TriggerSourcePanel(IViewAccesibilities accesibilities) {
     super(accesibilities);

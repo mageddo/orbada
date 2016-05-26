@@ -22,7 +22,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OctopusPleaseWaitRenderer extends PleaseWaitRendererProvider {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOctopusPleaseWaitPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("octopus-pw");
 
   private final static int WAIT_X_SHIFT = 40;
   private final static int WAIT_Y_SHIFT = 10;

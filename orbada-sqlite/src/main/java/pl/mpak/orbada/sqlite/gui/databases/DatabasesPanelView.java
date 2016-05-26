@@ -28,7 +28,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class DatabasesPanelView extends javax.swing.JPanel implements IRootTabObjectInfo {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSQLitePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sqlite");
 
   private IViewAccesibilities accesibilities;
   private String tabTitle;

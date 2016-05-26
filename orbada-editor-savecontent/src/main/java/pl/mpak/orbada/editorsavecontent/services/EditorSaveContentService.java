@@ -18,7 +18,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class EditorSaveContentService extends OrbadaSyntaxTextAreaProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaEditorSaveContentPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("editor-savercontent");
 
   public String getDescription() {
     return stringManager.getString("EditorSaveContentService.description");

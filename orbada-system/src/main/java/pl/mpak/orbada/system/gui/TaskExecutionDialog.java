@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TaskExecutionDialog extends javax.swing.JDialog {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSystemPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("system");
   private TaskExecutionPanel taskPanel;
   public static boolean showed = false;
   private ISettings settings;

@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class SqlScriptPerspectiveProvider extends PerspectiveProvider {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSqlScriptsPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sql-scripts");
 
   private JMenu scripts;
   

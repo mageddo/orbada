@@ -27,7 +27,7 @@ import pl.mpak.util.files.FileExtensionFilter;
 public class EditorSaveContentAction extends Action {
 
   private SyntaxTextArea syntaxTextArea;
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaEditorSaveContentPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("editor-savercontent");
   private File lastFile;
   
   public EditorSaveContentAction(SyntaxTextArea syntaxTextArea) {

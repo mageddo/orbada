@@ -34,7 +34,7 @@ import pl.mpak.util.variant.Variant;
  */
 public abstract class UniversalPropSourceTab extends javax.swing.JPanel implements ITabObjectInfo {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   protected IViewAccesibilities accesibilities;
   protected String currentSchemaName = "";

@@ -28,7 +28,7 @@ import pl.mpak.util.variant.VariantType;
  */
 public class SqlMacroEditDialog extends javax.swing.JDialog {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSqlMacrosPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sql-macro");
 
   private IApplication application;
   private int modalResult = ModalResult.NONE;

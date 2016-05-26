@@ -18,7 +18,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OrbadaXmlDataViewPlugin extends OrbadaPlugin {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaXmlDataViewPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("xml-data-view");
 
   public final static String pluginGroupName = "Orbada Tools";
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();

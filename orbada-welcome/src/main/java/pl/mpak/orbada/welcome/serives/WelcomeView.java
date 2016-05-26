@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class WelcomeView extends ViewProvider {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaWelcomePlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("welcome");
 
   public Component createView(IViewAccesibilities accesibilities) {
     return new WelcomeViewPanel(accesibilities);

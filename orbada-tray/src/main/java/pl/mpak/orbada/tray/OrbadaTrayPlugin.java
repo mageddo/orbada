@@ -37,7 +37,7 @@ import pl.mpak.util.SystemUtil;
  */
 public class OrbadaTrayPlugin extends OrbadaPlugin {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaTrayPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("tray");
 
   public final static String pluginGroupName = "Orbada Tools";
   public final ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();

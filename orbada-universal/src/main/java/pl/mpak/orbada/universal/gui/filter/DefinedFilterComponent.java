@@ -14,7 +14,7 @@ import pl.mpak.util.StringManagerFactory;
  * @author akaluza
  */
 public class DefinedFilterComponent {
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   private String name;
   private SqlFilterComponent[] filterComponent;

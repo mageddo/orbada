@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TodoView extends ViewProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaTodoPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("todo");
 
   public Component createView(IViewAccesibilities accesibilities) {
     return new TodoPanelView(accesibilities);

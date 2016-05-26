@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OrbadaWelcomePlugin extends OrbadaPlugin {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaWelcomePlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("welcome");
 
   public final static String todoGroupName = "Orbada Welcome";
   

@@ -16,7 +16,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OrbadaSnippetsSyntaxService extends OrbadaSyntaxTextAreaProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSnippetsPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("snippets");
   
   @Override
   public String getDescription() {

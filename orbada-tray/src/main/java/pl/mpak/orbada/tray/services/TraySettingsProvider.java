@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TraySettingsProvider extends SettingsProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaTrayPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("tray");
 
   @Override
   public String getSettingsPath() {

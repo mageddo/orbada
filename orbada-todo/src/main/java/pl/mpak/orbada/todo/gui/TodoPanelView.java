@@ -43,7 +43,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class TodoPanelView extends javax.swing.JPanel implements Closeable {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaTodoPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("todo");
 
   private IViewAccesibilities accesibilities;
   private String td_sch_id;

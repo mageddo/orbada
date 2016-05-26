@@ -29,7 +29,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class SqlFilter {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   public static Icon filterOnIcon = null;
   public static Icon filterOffIcon = null;

@@ -24,7 +24,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public abstract class UniversalViewTableAction extends ComponentAction {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   public UniversalViewTableAction() {
     super();

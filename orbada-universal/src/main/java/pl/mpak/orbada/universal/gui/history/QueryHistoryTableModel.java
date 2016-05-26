@@ -16,7 +16,7 @@ import pl.mpak.util.StringUtil;
 
 public class QueryHistoryTableModel extends AbstractTableModel {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaUniversalPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("universal");
 
   private QueryHistory history;
   

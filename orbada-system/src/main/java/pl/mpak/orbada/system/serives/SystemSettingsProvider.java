@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class SystemSettingsProvider extends SettingsProvider {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSystemPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("system");
   public static String settingsName = "orbada-system";
   public static String hideTime = "hide-time";
   public static String hideRunTime = "hide-run-time";

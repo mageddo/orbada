@@ -18,7 +18,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TableColumnsPanel extends UniversalPropTab {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaSQLitePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("sqlite");
 
   public TableColumnsPanel(IViewAccesibilities accesibilities) {
     super(accesibilities);
