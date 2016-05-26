@@ -11,13 +11,13 @@
 
 package pl.mpak.orbada.laf.jgoodies.gui;
 
+import javax.swing.plaf.metal.MetalTheme;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.Properties;
-import javax.swing.plaf.metal.MetalTheme;
+
 import pl.mpak.orbada.Consts;
-import pl.mpak.orbada.laf.jgoodies.OrbadaLafJGoodiesPlugin;
 import pl.mpak.orbada.laf.jgoodies.services.Plastic3DLookAndFeelService;
 import pl.mpak.orbada.laf.jgoodies.services.PlasticLookAndFeelService;
 import pl.mpak.orbada.laf.jgoodies.services.PlasticXPLookAndFeelService;

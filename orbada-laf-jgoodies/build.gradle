@@ -1,4 +1,9 @@
 dependencies {
 	compile project(':orbada-util')
-	compile project(':orbada')
+	compile project(':orbada-plugins')
+	compile project(':orbada-db-objects')
+	compile project(':orbada-waitdlg')
+	compile project(':json')
+	compile project(':orbada-g2')
+	compile project(':orbada-prop')
 }
