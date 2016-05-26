@@ -1,0 +1,7 @@
+dependencies {
+	compile project(':orbada-sky')
+	compile project(':orbada-plugins')
+	compile project(':orbada')
+	compile project(':orbada-universal')
+	compile project(':orbada-parser')
+}

@@ -1,4 +1,3 @@
 dependencies {
-//    compile (':orbada')
-//    compile (':plugins')
+    compile project(':orbada-util')
 }
