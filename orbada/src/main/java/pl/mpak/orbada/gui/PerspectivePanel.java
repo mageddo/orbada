@@ -53,7 +53,7 @@ import pl.mpak.util.StringUtil;
  */
 public class PerspectivePanel extends javax.swing.JPanel implements Closeable {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private Database database;
   private LinkedList<ViewAccesibilities> viewList = new LinkedList<ViewAccesibilities>();
@@ -135,7 +135,7 @@ public class PerspectivePanel extends javax.swing.JPanel implements Closeable {
         }
       }
     }
-    // domyœlnie otwierane widoki
+    // domyï¿½lnie otwierane widoki
     if (count == 0 && viewCount == 0 && vps != null && vps.length > 0) {
       for (ViewProvider vp : vps) {
         if (vp.isForDatabase(getDatabase()) && vp.isDefaultView()) {

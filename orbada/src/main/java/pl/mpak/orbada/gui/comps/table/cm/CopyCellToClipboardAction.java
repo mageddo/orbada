@@ -29,7 +29,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class CopyCellToClipboardAction extends Action {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private JTable table;
   

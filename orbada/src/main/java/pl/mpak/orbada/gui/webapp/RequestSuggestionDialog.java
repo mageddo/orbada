@@ -28,7 +28,7 @@ import pl.mpak.waitdlg.WaitDialog;
  */
 public class RequestSuggestionDialog extends javax.swing.JDialog {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   /** Creates new form RequestSuggestionDialog */
   public RequestSuggestionDialog() {

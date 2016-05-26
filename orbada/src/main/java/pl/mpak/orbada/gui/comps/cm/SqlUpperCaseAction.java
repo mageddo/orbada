@@ -18,7 +18,7 @@ import pl.mpak.util.StringUtil;
  */
 public class SqlUpperCaseAction extends Action {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   public SqlUpperCaseAction() {
     setText(stringManager.getString("SqlUpperCaseAction-text"));

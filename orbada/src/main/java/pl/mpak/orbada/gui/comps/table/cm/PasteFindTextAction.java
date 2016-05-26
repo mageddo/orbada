@@ -30,7 +30,7 @@ import pl.mpak.util.TextTransfer;
  */
 public class PasteFindTextAction extends Action {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private ViewTable table;
   

@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class CrossPlatformLookAndFeelSettingsService extends SettingsProvider {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   @Override
   public Component getSettingsComponent() {

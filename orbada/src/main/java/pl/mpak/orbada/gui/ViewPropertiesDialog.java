@@ -13,7 +13,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ViewPropertiesDialog extends javax.swing.JDialog {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private ViewAccesibilities accessibilities;
 

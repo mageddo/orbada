@@ -1,7 +1,7 @@
 /*
  * Consts.java
  *
- * Created on 20 styczeñ 2007, 13:28
+ * Created on 20 styczeï¿½ 2007, 13:28
  *
  * To change this template, choose Tools | Template Manager
  * and open the template in the editor.
@@ -19,14 +19,14 @@ import pl.mpak.util.id.VersionID;
  */
 public class Consts {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   public final static VersionID orbadaVersion = new VersionID(1, 2, 4, 369);
   public final static String orbadaReleaseDate = "2015-04-02";
   public final static String orbadaSubname = "Dzianisz, Polska";
   
   public final static String orbadaUserId = "20080808194053-00000D1B617B0B5A-EBA871AB";
-  public final static String orbadaAutor = "Andrzej Ka³u¿a";
+  public final static String orbadaAutor = "Andrzej Kaï¿½uï¿½a";
   public final static String orbadaYears = "2007-2015";
   public final static String orbadaCopyrights = "All interested";
   public final static String orbadaFirstRun = stringManager.getString("splash-orbada-first-run-3d");
@@ -38,7 +38,7 @@ public class Consts {
   public final static int splashscreenBottomShift = 20;
   
   /**
-   * <p>Identyfikatory standardowych wtyczek - do ró¿nych zastosowañ
+   * <p>Identyfikatory standardowych wtyczek - do rï¿½nych zastosowaï¿½
    */
   public final static String orbadaSystemPluginId = "orbada-system-plugin";
 
@@ -96,7 +96,7 @@ public class Consts {
   public final static String globalMessageFreezeObject = "freeze-object";
   public final static String globalMessageTransactionStateChange = "transaction-state-change";
   /**
-   * <p>Nast¹pi³o usuniêcie, edycja lub wstawienie schematu po³¹czenia
+   * <p>Nastï¿½piï¿½o usuniï¿½cie, edycja lub wstawienie schematu poï¿½ï¿½czenia
    * <p>W parametrze zostanie przekazany id schematu
    */
   public final static String globalMessageSchemaDeleted = "schema-deleted";

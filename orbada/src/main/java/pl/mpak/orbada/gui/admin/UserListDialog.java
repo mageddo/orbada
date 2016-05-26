@@ -39,7 +39,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class UserListDialog extends javax.swing.JDialog {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private ISettings settings;
 

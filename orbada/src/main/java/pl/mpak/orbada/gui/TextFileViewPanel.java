@@ -28,7 +28,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TextFileViewPanel extends javax.swing.JPanel {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private IViewAccesibilities accesibilities;
   private File file;

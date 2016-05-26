@@ -9,7 +9,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 
-import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.util.Utils;
 import pl.mpak.sky.gui.swing.Action;
 import pl.mpak.util.StringManager;
@@ -21,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class HelpAction extends Action {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   public HelpAction() {
     super();

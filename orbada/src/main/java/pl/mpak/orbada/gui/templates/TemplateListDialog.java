@@ -33,7 +33,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class TemplateListDialog extends javax.swing.JDialog {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private ISettings settings;
   private int modalResult = ModalResult.NONE;

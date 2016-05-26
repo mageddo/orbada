@@ -46,7 +46,7 @@ import pl.mpak.util.patt.Resolvers;
  */
 public class PluginManagerDialog extends javax.swing.JDialog {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private ISettings settings;
   private InstalledTableModel installedModel;

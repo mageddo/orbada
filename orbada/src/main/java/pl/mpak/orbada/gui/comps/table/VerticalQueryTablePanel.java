@@ -28,7 +28,7 @@ import pl.mpak.util.Titleable;
  */
 public class VerticalQueryTablePanel extends javax.swing.JPanel implements Titleable, Closeable {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private Database database;
   private String title;

@@ -25,7 +25,7 @@ import pl.mpak.waitdlg.WaitDialog;
  */
 public class RequestErrorDialog extends javax.swing.JDialog {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private Throwable exception;
   

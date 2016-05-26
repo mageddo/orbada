@@ -1,16 +1,12 @@
 package pl.mpak.orbada.db;
 
+import org.apache.log4j.Logger;
 import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.ErrorMessages;
 import pl.mpak.orbada.OrbadaException;
 import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.gui.LoginDialog;
 import pl.mpak.orbada.gui.LoginInfo;
-import org.apache.log4j.Logger;
-import pl.mpak.orbada.db.Orbada;
-import pl.mpak.orbada.db.User;
-import pl.mpak.orbada.util.ScriptUtil;
-import pl.mpak.orbada.gui.LoginDialog;
 import pl.mpak.orbada.util.ScriptUtil;
 import pl.mpak.sky.gui.swing.MessageBox;
 import pl.mpak.usedb.core.Command;
@@ -31,7 +27,7 @@ import pl.mpak.util.patt.Resolvers;
  */
 public class InternalDatabase extends OrbadaDatabase {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private static InternalDatabase orbadaDatabase;
   

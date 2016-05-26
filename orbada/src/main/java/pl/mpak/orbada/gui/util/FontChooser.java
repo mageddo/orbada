@@ -23,7 +23,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class FontChooser extends javax.swing.JDialog {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private String[] fontFamilies;
   private boolean updatingGroup;

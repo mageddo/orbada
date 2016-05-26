@@ -39,7 +39,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ComponentActionsAction extends Action {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private Database database;
   private JComponent component;

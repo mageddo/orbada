@@ -34,7 +34,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class CrossPlatformLookAndFeelSettingsPanel extends javax.swing.JPanel implements ISettingsComponent {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private IApplication application;
   private File propFile;

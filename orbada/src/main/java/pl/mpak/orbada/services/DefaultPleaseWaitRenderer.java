@@ -24,7 +24,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class DefaultPleaseWaitRenderer extends PleaseWaitRendererProvider {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private final static int WAIT_X_SHIFT = 10;
   private final static int WAIT_Y_SHIFT = 10;

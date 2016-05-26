@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ComponentActionMapDialog extends javax.swing.JDialog {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   /** Creates new form ComponentActionMapDialog */
   public ComponentActionMapDialog() {

@@ -10,7 +10,7 @@ public class StringManager {
 
   StringManager(String packageName, ClassLoader loader) {
     super();
-    resourceBundle = ResourceBundle.getBundle("i18n", Locale.getDefault(), loader);
+    resourceBundle = ResourceBundle.getBundle("i18n-" + packageName, Locale.getDefault(), loader);
   }
 
   public String getString(String key) {

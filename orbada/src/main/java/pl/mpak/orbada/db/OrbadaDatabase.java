@@ -14,8 +14,6 @@ import java.util.Date;
 
 import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.core.Application;
-import pl.mpak.orbada.core.Application;
-import pl.mpak.orbada.db.SchemaSession;
 import pl.mpak.orbada.plugins.providers.IDatabaseProvider;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
 import pl.mpak.usedb.core.Database;
@@ -29,7 +27,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OrbadaDatabase extends Database {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private SchemaSession schemaSession;
   

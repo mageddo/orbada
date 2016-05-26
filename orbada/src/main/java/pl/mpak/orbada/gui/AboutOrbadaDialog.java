@@ -34,7 +34,7 @@ import pl.mpak.util.StringUtil;
  */
 public class AboutOrbadaDialog extends javax.swing.JDialog {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   public final static String[] orbadaTranlateHelp = {
     "Piotr Ró¿nicki"};

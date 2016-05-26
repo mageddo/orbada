@@ -26,7 +26,7 @@ import pl.mpak.util.patt.ResolvableModel;
  */
 public class SHA1_Password_AESResolver implements ResolvableModel {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   @Override
   public String getModel() {

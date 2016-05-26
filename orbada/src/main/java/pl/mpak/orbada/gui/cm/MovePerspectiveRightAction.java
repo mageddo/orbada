@@ -8,7 +8,6 @@ package pl.mpak.orbada.gui.cm;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.core.Application;
 import pl.mpak.sky.gui.swing.Action;
 import pl.mpak.util.StringManager;
@@ -20,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class MovePerspectiveRightAction extends Action {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   public MovePerspectiveRightAction() {
     super();

@@ -18,7 +18,7 @@ import pl.mpak.util.StringUtil;
  */
 public class SqlLowerCaseAction extends Action {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   public SqlLowerCaseAction() {
     setText(stringManager.getString("SqlLowerCaseAction-text"));

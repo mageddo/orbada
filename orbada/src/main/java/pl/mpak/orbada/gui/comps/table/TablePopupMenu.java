@@ -54,7 +54,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TablePopupMenu extends PopupMenu {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   public TablePopupMenu(JTable popupComponent) {
     super(popupComponent);

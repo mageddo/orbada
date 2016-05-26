@@ -54,7 +54,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class SchemaListDialog extends javax.swing.JDialog {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private ISettings settings;
   private Query queryDrivers;

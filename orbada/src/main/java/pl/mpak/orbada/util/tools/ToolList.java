@@ -6,7 +6,7 @@
 package pl.mpak.orbada.util.tools;
 
 import java.util.HashMap;
-import pl.mpak.orbada.Consts;
+
 import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.db.Tool;
@@ -23,7 +23,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ToolList {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private HashMap<String, Tool> toolMap;
   

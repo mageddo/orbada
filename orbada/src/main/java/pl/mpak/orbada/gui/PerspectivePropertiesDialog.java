@@ -29,7 +29,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class PerspectivePropertiesDialog extends javax.swing.JDialog {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private RecordLink perspectiveLink;
   private PerspectivePanel perspective;

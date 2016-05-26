@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class GeneralSchemaSettingsService extends SchemaSettingsProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   @Override
   public boolean isForDriverType(String driverTypeName) {

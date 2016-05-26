@@ -30,7 +30,7 @@ import pl.mpak.util.Titleable;
  */
 public class GadgetPanel extends javax.swing.JPanel implements Closeable {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private int lastHeight;
   private PerspectivePanel perspectivePanel;

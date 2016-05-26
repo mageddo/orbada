@@ -9,18 +9,12 @@
 
 package pl.mpak.orbada.core;
 
-import pl.mpak.orbada.Consts;
 import org.apache.log4j.Logger;
-import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.plugins.OrbadaPlugin;
 import pl.mpak.orbada.plugins.providers.abs.IOrbadaPluginProvider;
 import pl.mpak.orbada.plugins.queue.PluginQueue;
-import pl.mpak.plugins.CallMethod;
-import pl.mpak.plugins.Plugin;
-import pl.mpak.plugins.PluginFound;
-import pl.mpak.plugins.PluginManager;
-import pl.mpak.plugins.PluginManagerListener;
+import pl.mpak.plugins.*;
 import pl.mpak.plugins.spi.IPlugin;
 import pl.mpak.plugins.spi.IPluginProvider;
 import pl.mpak.usedb.core.Command;
@@ -37,7 +31,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class OrbadaPluginManager extends PluginManager {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private Logger logger;
   private PluginQueue queue;

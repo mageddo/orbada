@@ -23,7 +23,7 @@ import pl.mpak.util.StringUtil;
  */
 public class SelectUrlTemplateDialog extends javax.swing.JDialog {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private int modalResult = ModalResult.NONE;
   private String driverName;

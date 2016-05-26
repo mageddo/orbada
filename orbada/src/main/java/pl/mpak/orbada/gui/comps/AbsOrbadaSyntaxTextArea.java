@@ -37,7 +37,7 @@ import pl.mpak.util.StringUtil;
  */
 public class AbsOrbadaSyntaxTextArea extends SyntaxTextArea implements CloseAbilitable {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private static HashMap<String, CaretPosition> positionList = new HashMap<String, CaretPosition>();
 

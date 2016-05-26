@@ -26,7 +26,7 @@ import pl.mpak.util.StringUtil;
  */
 public class ContentPanel extends javax.swing.JPanel implements ITabObjectInfo {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   protected IViewAccesibilities accesibilities;
   protected String currentCatalogName = "";
