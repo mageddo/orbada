@@ -14,11 +14,11 @@ for i in `ls -d */`; do
 	mkdir -p $JAVA_FOLDER
 
 	# movendo o resources 
-	mv -f `find -name "res"` $RESOURCES_FOLDER
-	mv -f `find -name "*.properties"` $RESOURCES_FOLDER
+	mv -b -f `find -name "res"` $RESOURCES_FOLDER
+	mv -b -f `find -name "*.properties"` $RESOURCES_FOLDER
 
 	# movendo o java
-	mv -f pl $JAVA_FOLDER
+	mv -b -f pl $JAVA_FOLDER
 
 	echo "finished module"	
 

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+        
+  <appender name="file-appender" class="org.apache.log4j.RollingFileAppender">
+    <param name="File" value="${user.home}/.orbada/log/orbada.txt"/>
+    <param name="Append" value="true" />
+    <param name="MaxFileSize" value="1MB"/>
+    <param name="MaxBackupIndex" value="10"/>
+    <param name="Append" value="true"/>
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d [%t] %p - %m%n"/>
+    </layout>
+  </appender>
+
+  <appender name="appender-error" class="org.apache.log4j.RollingFileAppender">
+    <param name="File" value="${user.home}/.orbada/log/orbada-error.txt"/>
+    <param name="Append" value="true" />
+    <param name="MaxFileSize" value="10MB"/>
+    <param name="MaxBackupIndex" value="10"/>
+    <param name="Append" value="true"/>
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d [%t] %p - %m%n"/>
+    </layout>
+  </appender>
+
+  <appender name="console-appender" class="org.apache.log4j.ConsoleAppender">
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d [%t] %p - %m%n"/>
+    </layout>
+  </appender>      
+
+  <logger name="orbada">
+    <level value="info"/>
+    <appender-ref ref="file-appender"/>
+    <appender-ref ref="console-appender"/>
+  </logger>
+
+  <logger name="error-logger">
+    <level value="error"/>
+    <appender-ref ref="appender-error"/>
+  </logger>
+
+</log4j:configuration>
