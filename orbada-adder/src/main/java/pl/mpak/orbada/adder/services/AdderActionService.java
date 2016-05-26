@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class AdderActionService extends TableActionProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaAdderPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("adder");
 
   public AdderActionService() {
     setText(stringManager.getString("AdderActionService-text"));

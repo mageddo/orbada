@@ -16,7 +16,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaExportExcelPlugin extends OrbadaPlugin {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaExportExcelPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("export-excel");
 
   public final static String exportGroupName = "Export tools";
   

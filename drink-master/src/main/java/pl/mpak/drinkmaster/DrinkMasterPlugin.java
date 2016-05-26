@@ -18,7 +18,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class DrinkMasterPlugin extends OrbadaPlugin {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(DrinkMasterPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("drink-master");
   public final static String pluginGroupName = "Pleasure";
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();
     

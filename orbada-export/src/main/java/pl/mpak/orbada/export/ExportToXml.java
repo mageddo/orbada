@@ -30,7 +30,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class ExportToXml extends ExportTableActionProvider {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaExportPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("export");
 
   private String resultsCode;
   private String rowCode;

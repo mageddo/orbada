@@ -27,7 +27,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class DerbyDbPerspectiveProvider extends PerspectiveProvider {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaDerbyDbPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("derbydb");
 
   public boolean isForDatabase(Database database) {
     if (database == null) {

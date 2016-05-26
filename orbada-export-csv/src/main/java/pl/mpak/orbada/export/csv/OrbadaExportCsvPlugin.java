@@ -16,7 +16,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaExportCsvPlugin extends OrbadaPlugin {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaExportCsvPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("export-csv");
 
   public final static String exportGroupName = "Export tools";
   

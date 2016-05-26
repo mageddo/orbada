@@ -25,7 +25,7 @@ import pl.mpak.util.StringUtil;
  */
 public class BshComponentAction extends ComponentAction {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaBeanshellPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("beanshell");
 
   private BshActionRecord action;
   

@@ -16,7 +16,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class DrinkView extends ViewProvider {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(DrinkMasterPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("drink-master");
 
   public Component createView(IViewAccesibilities accesibilities) {
     return new DrinkViewPanel(accesibilities);

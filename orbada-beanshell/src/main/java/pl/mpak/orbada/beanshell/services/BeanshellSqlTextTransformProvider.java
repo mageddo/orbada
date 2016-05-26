@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class BeanshellSqlTextTransformProvider extends UniversalSqlTextTransformProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaBeanshellPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("beanshell");
 
   private BeanShellInterpreter interpreter;
   

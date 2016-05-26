@@ -16,7 +16,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaExportDbfPlugin extends OrbadaPlugin {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaExportDbfPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("export-dbf");
 
   public final static String exportGroupName = "Export tools";
   

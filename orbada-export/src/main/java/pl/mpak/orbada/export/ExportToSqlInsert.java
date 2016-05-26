@@ -34,7 +34,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ExportToSqlInsert extends ExportTableActionProvider {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaExportPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("export");
 
   private String fileName;
   private String charset;

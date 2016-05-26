@@ -23,7 +23,7 @@ import pl.mpak.util.task.Task;
  */
 public class BshComponentActionsProvider extends ComponentActionsProvider implements IProcessMessagable {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaBeanshellPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("beanshell");
 
   private ArrayList<BshActionRecord> actionList;
   private boolean inited = false;

@@ -32,7 +32,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class ExportToHtml extends ExportTableActionProvider {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaExportPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("export");
 
   private String metaCode;
   private String title;

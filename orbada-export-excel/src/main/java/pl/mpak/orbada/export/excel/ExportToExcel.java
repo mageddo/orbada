@@ -35,7 +35,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class ExportToExcel extends ExportTableActionProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaExportExcelPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("export-excel");
 
   private String nullDataValue;
   private String fileName;

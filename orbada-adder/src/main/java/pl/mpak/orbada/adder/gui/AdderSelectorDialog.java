@@ -40,7 +40,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class AdderSelectorDialog extends javax.swing.JDialog {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaAdderPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("adder");
 
   private QueryTable table;
   private Query query;

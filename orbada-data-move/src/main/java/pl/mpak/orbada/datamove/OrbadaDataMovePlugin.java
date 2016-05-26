@@ -20,7 +20,7 @@ import pl.mpak.util.patt.Resolvers;
  */
 public class OrbadaDataMovePlugin extends OrbadaPlugin {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaDataMovePlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("data-move");
 
   public final static String pluginGroupName = "Orbada Tools";
   

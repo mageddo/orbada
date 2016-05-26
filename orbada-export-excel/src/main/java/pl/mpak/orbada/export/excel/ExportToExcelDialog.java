@@ -27,7 +27,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class ExportToExcelDialog extends javax.swing.JDialog {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaExportExcelPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("export-excel");
 
   private ISettings config;
   private int modalResult = pl.mpak.sky.gui.mr.ModalResult.NONE;

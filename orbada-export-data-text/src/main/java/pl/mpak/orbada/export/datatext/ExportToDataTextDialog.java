@@ -15,7 +15,7 @@ import pl.mpak.util.variant.Variant;
 
 public class ExportToDataTextDialog extends javax.swing.JDialog {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaExportDataTextPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("export-data-text");
 
   private ISettings config;
   private int modalResult = pl.mpak.sky.gui.mr.ModalResult.NONE;

@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class DerbyDbSearchObjectAction extends Action {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaDerbyDbPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("derbydb");
 
   private IPerspectiveAccesibilities accesibilities;
   

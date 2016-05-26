@@ -32,7 +32,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class ExportToDbf extends ExportTableActionProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaExportDbfPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("export-dbf");
 
   private String nullDataValue;
   private String fileName;

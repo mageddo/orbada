@@ -40,7 +40,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class DrinkViewPanel extends javax.swing.JPanel implements Closeable {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(DrinkMasterPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("drink-master");
 
   private IViewAccesibilities accesibilities;
   private boolean requestRefresh = false;

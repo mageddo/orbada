@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class QueryCreateTableService extends ExportTableActionProvider {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaDataMovePlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("data-move");
 
   public QueryCreateTableService() {
     setText(stringManager.getString("qcts-text"));

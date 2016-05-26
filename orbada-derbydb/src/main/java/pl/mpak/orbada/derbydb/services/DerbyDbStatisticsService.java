@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class DerbyDbStatisticsService extends UniversalActionProvider {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaDerbyDbPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("derbydb");
 
   public DerbyDbStatisticsService() {
     super();

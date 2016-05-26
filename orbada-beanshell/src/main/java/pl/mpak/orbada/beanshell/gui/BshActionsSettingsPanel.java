@@ -42,7 +42,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class BshActionsSettingsPanel extends javax.swing.JPanel implements ISettingsComponent, Closeable {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaBeanshellPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("beanshell");
 
   private IApplication application;
   

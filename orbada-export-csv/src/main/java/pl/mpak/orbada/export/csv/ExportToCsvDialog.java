@@ -20,7 +20,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class ExportToCsvDialog extends javax.swing.JDialog {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaExportCsvPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("export-csv");
 
   private ISettings config;
   private int modalResult = pl.mpak.sky.gui.mr.ModalResult.NONE;

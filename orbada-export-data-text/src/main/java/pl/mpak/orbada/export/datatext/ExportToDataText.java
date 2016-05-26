@@ -34,7 +34,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class ExportToDataText extends ExportTableActionProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaExportDataTextPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("export-data-text");
 
   private String fileName;
   private String charset;

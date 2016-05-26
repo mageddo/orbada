@@ -43,7 +43,7 @@ import pl.mpak.util.timer.Timer;
  */
 public class TableConstraintsPanel extends javax.swing.JPanel implements ITabObjectInfo {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaDerbyDbPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("derbydb");
 
   private IViewAccesibilities accesibilities;
   private String currentSchemaName = "";

@@ -26,7 +26,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaDerbyDbPlugin extends OrbadaPlugin {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaDerbyDbPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("derbydb");
 
   public final static String apacheDerbyDriverType = "Apache Derby";
   private static pl.mpak.util.timer.TimerQueue refreshQueue;

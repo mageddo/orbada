@@ -61,7 +61,7 @@ import pl.mpak.util.task.TaskPool;
  */
 public class MoveDataDialog extends javax.swing.JDialog {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaDataMovePlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("data-move");
 
   private Query query;
   private ISettings settings;

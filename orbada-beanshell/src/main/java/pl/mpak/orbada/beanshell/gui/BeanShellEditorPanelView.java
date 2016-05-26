@@ -43,7 +43,7 @@ import pl.mpak.util.id.UniqueID;
  */
 public class BeanShellEditorPanelView extends javax.swing.JPanel implements Closeable {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaBeanshellPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("beanshell");
 
   private IViewAccesibilities accesibilities;
   private BeanShellInterpreter interpreter;

@@ -22,7 +22,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class ExportToClipboardDialog extends javax.swing.JDialog {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaExportPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("export");
 
   private ISettings config;
   private int modalResult = pl.mpak.sky.gui.mr.ModalResult.NONE;

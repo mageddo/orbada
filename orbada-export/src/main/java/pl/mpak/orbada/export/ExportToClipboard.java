@@ -34,7 +34,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class ExportToClipboard extends ExportTableActionProvider {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaExportPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("export");
 
   public final static int RANGE_CURRENT = 0;
   public final static int RANGE_ALL = 1;

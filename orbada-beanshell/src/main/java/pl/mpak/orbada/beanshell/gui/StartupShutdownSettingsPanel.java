@@ -18,7 +18,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class StartupShutdownSettingsPanel extends javax.swing.JPanel implements ISettingsComponent {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaBeanshellPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("beanshell");
 
   private IApplication application;
   private File startupFile = OrbadaBeanshellPlugin.getStartupFile();

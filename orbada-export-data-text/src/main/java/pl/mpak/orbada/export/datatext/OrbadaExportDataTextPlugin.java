@@ -16,7 +16,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaExportDataTextPlugin extends OrbadaPlugin {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaExportDataTextPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("export-data-text");
 
   public final static String exportGroupName = "Export tools";
   

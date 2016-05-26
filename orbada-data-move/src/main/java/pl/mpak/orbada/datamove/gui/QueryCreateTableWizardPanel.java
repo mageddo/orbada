@@ -34,7 +34,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class QueryCreateTableWizardPanel extends SqlCodeWizardPanel {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaDataMovePlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("data-move");
 
   private Query query;
 

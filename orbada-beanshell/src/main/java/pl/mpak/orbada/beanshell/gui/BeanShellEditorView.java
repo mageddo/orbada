@@ -24,7 +24,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class BeanShellEditorView extends ViewProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaBeanshellPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("beanshell");
 
   public Component createView(IViewAccesibilities accesibilities) {
     return new BeanShellEditorPanelView(accesibilities);

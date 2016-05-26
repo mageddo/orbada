@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class DerbyDbTablesView extends ViewProvider {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaDerbyDbPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("derbydb");
 
   public Component createView(IViewAccesibilities accesibilities) {
     return new TablesPanelView(accesibilities);

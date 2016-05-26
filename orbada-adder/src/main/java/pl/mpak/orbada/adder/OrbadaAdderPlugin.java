@@ -17,7 +17,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaAdderPlugin extends OrbadaPlugin {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaAdderPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("adder");
 
   /**
    * Funkcja powinna zwracaæ nazwê wewnêtrzn¹ wtyczki

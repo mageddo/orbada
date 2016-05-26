@@ -32,7 +32,7 @@ import pl.mpak.util.array.StringList;
  */
 public class DrinkEditDialog extends javax.swing.JDialog {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(DrinkMasterPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("drink-master");
 
   private String dnk_id;
   private Database database;

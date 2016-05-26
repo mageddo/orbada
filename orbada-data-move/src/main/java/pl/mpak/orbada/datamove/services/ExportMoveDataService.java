@@ -24,7 +24,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ExportMoveDataService extends ExportTableActionProvider {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaDataMovePlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("data-move");
 
   public ExportMoveDataService() {
     setText(stringManager.getString("emds-text"));

@@ -37,7 +37,7 @@ import pl.mpak.util.patt.Resolvers;
  */
 public class OrbadaBeanshellPlugin extends OrbadaPlugin {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaBeanshellPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("beanshell");
 
   public final static String beanshellGroupName = "Orbada Tools";
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();

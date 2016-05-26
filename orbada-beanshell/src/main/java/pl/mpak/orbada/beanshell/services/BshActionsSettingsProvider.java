@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class BshActionsSettingsProvider extends SettingsProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaBeanshellPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("beanshell");
 
   @Override
   public String getSettingsPath() {

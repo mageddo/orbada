@@ -34,7 +34,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class BshActionEditDialog extends javax.swing.JDialog {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaBeanshellPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("beanshell");
 
   private IApplication application;
   private int modalResult = ModalResult.NONE;

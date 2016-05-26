@@ -23,7 +23,7 @@ import pl.mpak.util.StringUtil;
  */
 public class DataMoveConfig {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaDataMovePlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("data-move");
 
   private String tableName;
   private String insertCommand;

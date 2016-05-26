@@ -40,7 +40,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class ProceduresPanelView extends javax.swing.JPanel implements IRootTabObjectInfo {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaDerbyDbPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("derbydb");
 
   private IViewAccesibilities accesibilities;
   private String currentSchemaName;

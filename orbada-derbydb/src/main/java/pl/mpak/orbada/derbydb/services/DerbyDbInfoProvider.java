@@ -31,7 +31,7 @@ import pl.mpak.util.StringUtil;
  */
 public class DerbyDbInfoProvider extends DatabaseInfoProvider {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaDerbyDbPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("derbydb");
 
   public static DerbyDbInfoProvider instance;
   
