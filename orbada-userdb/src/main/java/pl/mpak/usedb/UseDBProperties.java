@@ -5,7 +5,7 @@ import java.util.ResourceBundle;
 
 public class UseDBProperties {
 
-  private static ResourceBundle properties = ResourceBundle.getBundle("pl/mpak/usedb/usedb");
+  private static ResourceBundle properties = ResourceBundle.getBundle("usedb");
   
   public static String getAttribute(String name) {
     try {
