@@ -9,17 +9,7 @@
 
 package orbada.core;
 
-import java.awt.AWTEvent;
-import java.awt.AlphaComposite;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Composite;
-import java.awt.Graphics2D;
-import java.awt.Image;
-import java.awt.Rectangle;
-import java.awt.SplashScreen;
-import java.awt.Toolkit;
-import java.awt.Window;
+import java.awt.*;
 import java.awt.event.AWTEventListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
@@ -31,63 +21,63 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.math.BigInteger;
+import java.net.URL;
+import java.net.URLClassLoader;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.EventObject;
 import java.util.HashMap;
 import java.util.Properties;
+
 import javax.swing.FocusManager;
-import javax.swing.JDialog;
-import javax.swing.SwingUtilities;
-import javax.swing.UIManager;
+import javax.swing.*;
 import javax.swing.event.EventListenerList;
 
 import orbada.Consts;
+import orbada.ErrorMessages;
 import orbada.OrbadaCancelCloseException;
+import orbada.OrbadaException;
+import orbada.db.InternalDatabase;
 import orbada.gui.LoginDialog;
 import orbada.gui.LoginInfo;
+import orbada.gui.MainFrame;
+import orbada.gui.PerspectivePanel;
+import orbada.gui.cm.HelpAction;
+import orbada.util.Generator;
+import orbada.util.patt.CurrDateResolver;
+import orbada.util.patt.CurrTimeResolver;
+import orbada.util.patt.JvmPIDResolver;
 import orbada.util.patt.OrbadaConfigPath;
+import orbada.util.patt.OrbadaHomePath;
+import orbada.util.patt.OrbadaUserIdResolver;
 import orbada.util.patt.OrbadaUserNameResolver;
 import orbada.util.patt.SHA1_Password_AESResolver;
+import orbada.util.patt.UniqueIdResolver;
+import orbada.util.settings.SettingsFactory;
 import orbada.util.tools.ToolList;
+import orbada.webapp.WebAppAccessibilities;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import pl.mpak.g2.G2Util;
 import pl.mpak.g2.RasterFont;
-import orbada.ErrorMessages;
-import orbada.OrbadaException;
-import orbada.db.InternalDatabase;
 import pl.mpak.orbada.db.Orbada;
 import pl.mpak.orbada.db.OrbadaSession;
 import pl.mpak.orbada.db.User;
-import orbada.gui.MainFrame;
-import orbada.gui.PerspectivePanel;
-import orbada.gui.cm.HelpAction;
 import pl.mpak.orbada.plugins.ApplicationListener;
 import pl.mpak.orbada.plugins.GeneratorException;
-import pl.mpak.orbada.plugins.IPerspectiveAccesibilities;
-import pl.mpak.orbada.plugins.IProcessMessagable;
-import pl.mpak.sky.gui.swing.Action;
-import pl.mpak.util.ExceptionUtil;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.plugins.IGenerator;
+import pl.mpak.orbada.plugins.IPerspectiveAccesibilities;
+import pl.mpak.orbada.plugins.IProcessMessagable;
 import pl.mpak.orbada.plugins.ISettings;
-import orbada.util.Generator;
-import orbada.util.patt.CurrDateResolver;
-import orbada.util.patt.CurrTimeResolver;
-import orbada.util.patt.OrbadaHomePath;
-import orbada.util.patt.UniqueIdResolver;
 import pl.mpak.orbada.plugins.IWebAppAccessibilities;
 import pl.mpak.orbada.plugins.PleaseWait;
 import pl.mpak.orbada.plugins.providers.ILookAndFeelStarter;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
-import orbada.util.patt.JvmPIDResolver;
-import orbada.util.patt.OrbadaUserIdResolver;
-import orbada.util.settings.SettingsFactory;
-import orbada.webapp.WebAppAccessibilities;
 import pl.mpak.plugins.spi.IPluginProvider;
 import pl.mpak.sky.gui.mr.ModalResult;
+import pl.mpak.sky.gui.swing.Action;
 import pl.mpak.sky.gui.swing.ActionGlobalEvent;
 import pl.mpak.sky.gui.swing.ActionGlobalListener;
 import pl.mpak.sky.gui.swing.ImageManager;
@@ -97,6 +87,7 @@ import pl.mpak.usedb.UseDBException;
 import pl.mpak.usedb.core.Command;
 import pl.mpak.usedb.core.Database;
 import pl.mpak.usedb.core.Query;
+import pl.mpak.util.ExceptionUtil;
 import pl.mpak.util.ProcessExceptionListener;
 import pl.mpak.util.StringManager;
 import pl.mpak.util.StringManagerFactory;
@@ -1021,6 +1012,28 @@ public class Application implements IApplication, WindowListener {
   
   public void setLastVersion(VersionID lastVersion) {
     this.lastVersion = lastVersion;
+  }
+
+  public static String listClasspathClasses(){
+    return listClasspathClasses(ClassLoader.getSystemClassLoader());
+  }
+
+  private static String listClasspathClasses(ClassLoader cl) {
+    StringBuilder str = new StringBuilder();
+    URL[] urls = ((URLClassLoader) cl).getURLs();
+    for (URL url: urls) {
+      System.out.println(url.getFile());
+      str.append(url.getFile());
+      str.append('\n');
+    }
+    return str.toString();
+  }
+
+  public static String listClasspathClasses(Object o){
+    return listClasspathClasses(o.getClass().getClassLoader());
+  }
+  public static String listClasspathClasses(Class app){
+    return listClasspathClasses(app.getClassLoader());
   }
 
 }
