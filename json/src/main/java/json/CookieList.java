@@ -1,4 +1,4 @@
-package org.json;
+package json;
 
 /*
 Copyright (c) 2002 JSON.org
@@ -46,13 +46,13 @@ public class CookieList {
      * @return A JSONObject
      * @throws JSONException
      */
-    public static JSONObject toJSONObject(String string) throws JSONException {
-        JSONObject jo = new JSONObject();
+    public static json.JSONObject toJSONObject(String string) throws JSONException {
+        json.JSONObject jo = new json.JSONObject();
         JSONTokener x = new JSONTokener(string);
         while (x.more()) {
-            String name = Cookie.unescape(x.nextTo('='));
+            String name = json.Cookie.unescape(x.nextTo('='));
             x.next('=');
-            jo.put(name, Cookie.unescape(x.nextTo(';')));
+            jo.put(name, json.Cookie.unescape(x.nextTo(';')));
             x.next();
         }
         return jo;
@@ -68,7 +68,7 @@ public class CookieList {
      * @return A cookie list string
      * @throws JSONException
      */
-    public static String toString(JSONObject jo) throws JSONException {
+    public static String toString(json.JSONObject jo) throws JSONException {
         boolean      b = false;
         Iterator     keys = jo.keys();
         String       string;
@@ -79,9 +79,9 @@ public class CookieList {
                 if (b) {
                     sb.append(';');
                 }
-                sb.append(Cookie.escape(string));
+                sb.append(json.Cookie.escape(string));
                 sb.append("=");
-                sb.append(Cookie.escape(jo.getString(string)));
+                sb.append(json.Cookie.escape(jo.getString(string)));
                 b = true;
             }
         }

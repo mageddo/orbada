@@ -73,7 +73,7 @@ import javax.swing.JTabbedPane;
 import javax.swing.JToolBar;
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.Logger;
-import org.json.JSONObject;
+import json.JSONObject;
 import pl.mpak.orbada.db.Perspective;
 import pl.mpak.orbada.db.Schema;
 import pl.mpak.orbada.db.Tool;

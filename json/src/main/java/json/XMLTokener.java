@@ -1,4 +1,4 @@
-package org.json;
+package json;
 
 /*
 Copyright (c) 2002 JSON.org
@@ -40,11 +40,11 @@ public class XMLTokener extends JSONTokener {
 
    static {
        entity = new java.util.HashMap(8);
-       entity.put("amp",  XML.AMP);
-       entity.put("apos", XML.APOS);
-       entity.put("gt",   XML.GT);
-       entity.put("lt",   XML.LT);
-       entity.put("quot", XML.QUOT);
+       entity.put("amp",  json.XML.AMP);
+       entity.put("apos", json.XML.APOS);
+       entity.put("gt",   json.XML.GT);
+       entity.put("lt",   json.XML.LT);
+       entity.put("quot", json.XML.QUOT);
    }
 
     /**
@@ -99,7 +99,7 @@ public class XMLTokener extends JSONTokener {
             return null;
         }
         if (c == '<') {
-            return XML.LT;
+            return json.XML.LT;
         }
         sb = new StringBuffer();
         for (;;) {
@@ -161,17 +161,17 @@ public class XMLTokener extends JSONTokener {
         case 0:
             throw syntaxError("Misshaped meta tag");
         case '<':
-            return XML.LT;
+            return json.XML.LT;
         case '>':
-            return XML.GT;
+            return json.XML.GT;
         case '/':
-            return XML.SLASH;
+            return json.XML.SLASH;
         case '=':
-            return XML.EQ;
+            return json.XML.EQ;
         case '!':
-            return XML.BANG;
+            return json.XML.BANG;
         case '?':
-            return XML.QUEST;
+            return json.XML.QUEST;
         case '"':
         case '\'':
             q = c;
@@ -229,15 +229,15 @@ public class XMLTokener extends JSONTokener {
         case '<':
             throw syntaxError("Misplaced '<'");
         case '>':
-            return XML.GT;
+            return json.XML.GT;
         case '/':
-            return XML.SLASH;
+            return json.XML.SLASH;
         case '=':
-            return XML.EQ;
+            return json.XML.EQ;
         case '!':
-            return XML.BANG;
+            return json.XML.BANG;
         case '?':
-            return XML.QUEST;
+            return json.XML.QUEST;
 
 // Quoted string
 

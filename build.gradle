@@ -10,11 +10,11 @@ allprojects {
     targetCompatibility = 1.6
 
     sourceSets {
-        main {
-            java {
-                srcDir projectDir
-            }
-        }
+//        main {
+//            java {
+//                srcDir projectDir
+//            }
+//        }
     }
     repositories {
         mavenCentral()

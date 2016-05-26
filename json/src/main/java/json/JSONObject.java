@@ -1,4 +1,4 @@
-package org.json;
+package json;
 
 /*
 Copyright (c) 2002 JSON.org
@@ -369,12 +369,12 @@ public class JSONObject {
         testValidity(value);
         Object object = opt(key);
         if (object == null) {
-            put(key, value instanceof JSONArray ?
-                    new JSONArray().put(value) : value);
-        } else if (object instanceof JSONArray) {
-            ((JSONArray)object).put(value);
+            put(key, value instanceof json.JSONArray ?
+                    new json.JSONArray().put(value) : value);
+        } else if (object instanceof json.JSONArray) {
+            ((json.JSONArray)object).put(value);
         } else {
-            put(key, new JSONArray().put(object).put(value));
+            put(key, new json.JSONArray().put(object).put(value));
         }
         return this;
     }
@@ -395,9 +395,9 @@ public class JSONObject {
         testValidity(value);
         Object object = opt(key);
         if (object == null) {
-            put(key, new JSONArray().put(value));
-        } else if (object instanceof JSONArray) {
-            put(key, ((JSONArray)object).put(value));
+            put(key, new json.JSONArray().put(value));
+        } else if (object instanceof json.JSONArray) {
+            put(key, ((json.JSONArray)object).put(value));
         } else {
             throw new JSONException("JSONObject[" + key +
                     "] is not a JSONArray.");
@@ -526,10 +526,10 @@ public class JSONObject {
      * @throws      JSONException if the key is not found or
      *  if the value is not a JSONArray.
      */
-    public JSONArray getJSONArray(String key) throws JSONException {
+    public json.JSONArray getJSONArray(String key) throws JSONException {
         Object object = get(key);
-        if (object instanceof JSONArray) {
-            return (JSONArray)object;
+        if (object instanceof json.JSONArray) {
+            return (json.JSONArray)object;
         }
         throw new JSONException("JSONObject[" + quote(key) +
                 "] is not a JSONArray.");
@@ -708,8 +708,8 @@ public class JSONObject {
      * @return A JSONArray containing the key strings, or null if the JSONObject
      * is empty.
      */
-    public JSONArray names() {
-        JSONArray ja = new JSONArray();
+    public json.JSONArray names() {
+        json.JSONArray ja = new json.JSONArray();
         Iterator  keys = keys();
         while (keys.hasNext()) {
             ja.put(keys.next());
@@ -861,9 +861,9 @@ public class JSONObject {
      * @param key   A key string.
      * @return      A JSONArray which is the value.
      */
-    public JSONArray optJSONArray(String key) {
+    public json.JSONArray optJSONArray(String key) {
         Object o = opt(key);
-        return o instanceof JSONArray ? (JSONArray)o : null;
+        return o instanceof json.JSONArray ? (json.JSONArray)o : null;
     }
 
 
@@ -1011,7 +1011,7 @@ public class JSONObject {
      * @throws JSONException
      */
     public JSONObject put(String key, Collection value) throws JSONException {
-        put(key, new JSONArray(value));
+        put(key, new json.JSONArray(value));
         return this;
     }
 
@@ -1307,11 +1307,11 @@ public class JSONObject {
      * @return A JSONArray of values.
      * @throws JSONException If any of the values are non-finite numbers.
      */
-    public JSONArray toJSONArray(JSONArray names) throws JSONException {
+    public json.JSONArray toJSONArray(json.JSONArray names) throws JSONException {
         if (names == null || names.length() == 0) {
             return null;
         }
-        JSONArray ja = new JSONArray();
+        json.JSONArray ja = new json.JSONArray();
         for (int i = 0; i < names.length(); i += 1) {
             ja.put(this.opt(names.getString(i)));
         }
@@ -1451,10 +1451,10 @@ public class JSONObject {
         if (value == null || value.equals(null)) {
             return "null";
         }
-        if (value instanceof JSONString) {
+        if (value instanceof json.JSONString) {
             Object object;
             try {
-                object = ((JSONString)value).toJSONString();
+                object = ((json.JSONString)value).toJSONString();
             } catch (Exception e) {
                 throw new JSONException(e);
             }
@@ -1467,17 +1467,17 @@ public class JSONObject {
             return numberToString((Number) value);
         }
         if (value instanceof Boolean || value instanceof JSONObject ||
-                value instanceof JSONArray) {
+                value instanceof json.JSONArray) {
             return value.toString();
         }
         if (value instanceof Map) {
             return new JSONObject((Map)value).toString();
         }
         if (value instanceof Collection) {
-            return new JSONArray((Collection)value).toString();
+            return new json.JSONArray((Collection)value).toString();
         }
         if (value.getClass().isArray()) {
-            return new JSONArray(value).toString();
+            return new json.JSONArray(value).toString();
         }
         return quote(value.toString());
     }
@@ -1503,8 +1503,8 @@ public class JSONObject {
             return "null";
         }
         try {
-            if (value instanceof JSONString) {
-                Object o = ((JSONString)value).toJSONString();
+            if (value instanceof json.JSONString) {
+                Object o = ((json.JSONString)value).toJSONString();
                 if (o instanceof String) {
                     return (String)o;
                 }
@@ -1520,17 +1520,17 @@ public class JSONObject {
         if (value instanceof JSONObject) {
             return ((JSONObject)value).toString(indentFactor, indent);
         }
-        if (value instanceof JSONArray) {
-            return ((JSONArray)value).toString(indentFactor, indent);
+        if (value instanceof json.JSONArray) {
+            return ((json.JSONArray)value).toString(indentFactor, indent);
         }
         if (value instanceof Map) {
             return new JSONObject((Map)value).toString(indentFactor, indent);
         }
         if (value instanceof Collection) {
-            return new JSONArray((Collection)value).toString(indentFactor, indent);
+            return new json.JSONArray((Collection)value).toString(indentFactor, indent);
         }
         if (value.getClass().isArray()) {
-            return new JSONArray(value).toString(indentFactor, indent);
+            return new json.JSONArray(value).toString(indentFactor, indent);
         }
         return quote(value.toString());
     }
@@ -1553,8 +1553,8 @@ public class JSONObject {
              if (object == null) {
                  return NULL;
              }
-             if (object instanceof JSONObject || object instanceof JSONArray  || 
-                     NULL.equals(object)      || object instanceof JSONString || 
+             if (object instanceof JSONObject || object instanceof json.JSONArray ||
+                     NULL.equals(object)      || object instanceof json.JSONString ||
                      object instanceof Byte   || object instanceof Character  ||
                      object instanceof Short  || object instanceof Integer    ||
                      object instanceof Long   || object instanceof Boolean    || 
@@ -1564,10 +1564,10 @@ public class JSONObject {
              }
              
              if (object instanceof Collection) {
-                 return new JSONArray((Collection)object);
+                 return new json.JSONArray((Collection)object);
              }
              if (object.getClass().isArray()) {
-                 return new JSONArray(object);
+                 return new json.JSONArray(object);
              }
              if (object instanceof Map) {
                  return new JSONObject((Map)object);
@@ -1611,8 +1611,8 @@ public class JSONObject {
                 Object value = this.map.get(key);
                 if (value instanceof JSONObject) {
                     ((JSONObject)value).write(writer);
-                } else if (value instanceof JSONArray) {
-                    ((JSONArray)value).write(writer);
+                } else if (value instanceof json.JSONArray) {
+                    ((json.JSONArray)value).write(writer);
                 } else {
                     writer.write(valueToString(value));
                 }

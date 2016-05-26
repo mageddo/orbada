@@ -20,9 +20,9 @@ import javax.swing.event.HyperlinkEvent;
 
 import orbada.Consts;
 import orbada.core.Application;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import json.JSONArray;
+import json.JSONException;
+import json.JSONObject;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.util.ExceptionUtil;
 import pl.mpak.util.StringManager;

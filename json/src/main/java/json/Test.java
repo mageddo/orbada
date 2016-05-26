@@ -1,4 +1,4 @@
-package org.json;
+package json;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -60,14 +60,14 @@ public class Test extends TestCase {
         JSONObject jsonobject;
         String string;
 
-        jsonobject = XML.toJSONObject("<![CDATA[This is a collection of test patterns and examples for org.json.]]>  Ignore the stuff past the end.  ");
+        jsonobject = json.XML.toJSONObject("<![CDATA[This is a collection of test patterns and examples for org.json.]]>  Ignore the stuff past the end.  ");
         assertEquals("{\"content\":\"This is a collection of test patterns and examples for org.json.\"}", jsonobject.toString());
         assertEquals("This is a collection of test patterns and examples for org.json.", jsonobject.getString("content"));
 
         string = "<test><blank></blank><empty/></test>";
-        jsonobject = XML.toJSONObject(string);
+        jsonobject = json.XML.toJSONObject(string);
         assertEquals("{\"test\": {\n  \"blank\": \"\",\n  \"empty\": \"\"\n}}", jsonobject.toString(2));
-        assertEquals("<test><blank/><empty/></test>", XML.toString(jsonobject));
+        assertEquals("<test><blank/><empty/></test>", json.XML.toString(jsonobject));
     }
 
     public void testNull() throws Exception {
@@ -85,16 +85,16 @@ public class Test extends TestCase {
     public void testJSON() throws Exception {
     	double       eps = 2.220446049250313e-16;
         Iterator     iterator;
-        JSONArray    jsonarray;
+        json.JSONArray jsonarray;
         JSONObject   jsonobject;
-        JSONStringer jsonstringer;
+        json.JSONStringer jsonstringer;
         Object       object;
         String       string;
 
         Beany beanie = new Beany("A beany object", 42, true);
 
         string = "[0.1]";
-        jsonarray = new JSONArray(string);
+        jsonarray = new json.JSONArray(string);
         assertEquals("[0.1]", jsonarray.toString());
 
         jsonobject = new JSONObject();
@@ -125,10 +125,10 @@ public class Test extends TestCase {
                 "    ]\n" +
                 "]}", jsonobject.toString(4));
         assertEquals("<list of lists><array>1</array><array>2</array><array>3</array></list of lists><list of lists><array>4</array><array>5</array><array>6</array></list of lists>",
-                XML.toString(jsonobject));
+                json.XML.toString(jsonobject));
 
         string = "<recipe name=\"bread\" prep_time=\"5 mins\" cook_time=\"3 hours\"> <title>Basic bread</title> <ingredient amount=\"8\" unit=\"dL\">Flour</ingredient> <ingredient amount=\"10\" unit=\"grams\">Yeast</ingredient> <ingredient amount=\"4\" unit=\"dL\" state=\"warm\">Water</ingredient> <ingredient amount=\"1\" unit=\"teaspoon\">Salt</ingredient> <instructions> <step>Mix all ingredients together.</step> <step>Knead thoroughly.</step> <step>Cover with a cloth, and leave for one hour in warm room.</step> <step>Knead again.</step> <step>Place in a bread baking tin.</step> <step>Cover with a cloth, and leave for one hour in warm room.</step> <step>Bake in the oven at 180(degrees)C for 30 minutes.</step> </instructions> </recipe> ";
-        jsonobject = XML.toJSONObject(string);
+        jsonobject = json.XML.toJSONObject(string);
         assertEquals("{\"recipe\": {\n" +
                 "    \"cook_time\": \"3 hours\",\n" +
                 "    \"ingredient\": [\n" +
@@ -334,7 +334,7 @@ public class Test extends TestCase {
                 JSONML.toString(jsonarray));
 
         string = "<person created=\"2006-11-11T19:23\" modified=\"2006-12-31T23:59\">\n <firstName>Robert</firstName>\n <lastName>Smith</lastName>\n <address type=\"home\">\n <street>12345 Sixth Ave</street>\n <city>Anytown</city>\n <state>CA</state>\n <postalCode>98765-4321</postalCode>\n </address>\n </person>";
-        jsonobject = XML.toJSONObject(string);
+        jsonobject = json.XML.toJSONObject(string);
         assertEquals("{\"person\": {\n" +
                 "    \"address\": {\n" +
                 "        \"city\": \"Anytown\",\n" +
@@ -364,7 +364,7 @@ public class Test extends TestCase {
                 "}}",
                 jsonobject.toString(2));
 
-        jsonstringer = new JSONStringer();
+        jsonstringer = new json.JSONStringer();
         string = jsonstringer
                 .object()
                 .key("single")
@@ -388,7 +388,7 @@ public class Test extends TestCase {
                 , string);
 
         assertEquals("{\"a\":[[[\"b\"]]]}"
-                , new JSONStringer()
+                , new json.JSONStringer()
                 .object()
                 .key("a")
                 .array()
@@ -401,7 +401,7 @@ public class Test extends TestCase {
                 .endObject()
                 .toString());
 
-        jsonstringer = new JSONStringer();
+        jsonstringer = new json.JSONStringer();
         jsonstringer.array();
         jsonstringer.value(1);
         jsonstringer.array();
@@ -460,10 +460,10 @@ public class Test extends TestCase {
                 "    {},\n" +
                 "    {\"one\": 1},\n" +
                 "    {\"A beany object\": 42}\n" +
-                "]", new JSONArray(jsonstringer.toString()).toString(4));
+                "]", new json.JSONArray(jsonstringer.toString()).toString(4));
 
         int ar[] = {1, 2, 3};
-        JSONArray ja = new JSONArray(ar);
+        json.JSONArray ja = new json.JSONArray(ar);
         assertEquals("[1,2,3]", ja.toString());
 
         String sa[] = {"aString", "aNumber", "aBoolean"};
@@ -492,7 +492,7 @@ public class Test extends TestCase {
                 "  \"slashes\": \"///\"\n" +
                 "}", jsonobject.toString(2));
         assertEquals("<quotes>'</quotes><quotes>&quot;</quotes><slashes>///</slashes><ei><quotes>&quot;'</quotes></ei><eo><b>don't</b><a>&quot;quoted&quot;</a></eo><closetag>&lt;/script&gt;</closetag><backslash>\\</backslash>",
-                XML.toString(jsonobject));
+                json.XML.toString(jsonobject));
 
         jsonobject = new JSONObject(
                 "{foo: [true, false,9876543210,    0.0, 1.00000001,  1.000000000001, 1.00000000000000001," +
@@ -501,7 +501,7 @@ public class Test extends TestCase {
                         "ten:10} postfix comment");
         jsonobject.put("String", "98.6");
         jsonobject.put("JSONObject", new JSONObject());
-        jsonobject.put("JSONArray", new JSONArray());
+        jsonobject.put("JSONArray", new json.JSONArray());
         jsonobject.put("int", 57);
         jsonobject.put("double", 123456789012345678901234567890.);
         jsonobject.put("true", true);
@@ -518,7 +518,7 @@ public class Test extends TestCase {
         jsonarray.put("so <fine>.");
         jsonarray.put(true);
         jsonarray.put(false);
-        jsonarray.put(new JSONArray());
+        jsonarray.put(new json.JSONArray());
         jsonarray.put(new JSONObject());
         jsonobject.put("keys", JSONObject.getNames(jsonobject));
         assertEquals("{\n" +
@@ -594,7 +594,7 @@ public class Test extends TestCase {
         assertFalse(jsonobject.optBoolean("oops"));
 
         string = "<xml one = 1 two=' \"2\" '><five></five>First \u0009&lt;content&gt;<five></five> This is \"content\". <three>  3  </three>JSON does not preserve the sequencing of elements and contents.<three>  III  </three>  <three>  T H R E E</three><four/>Content text is an implied structure in XML. <six content=\"6\"/>JSON does not have implied structure:<seven>7</seven>everything is explicit.<![CDATA[CDATA blocks<are><supported>!]]></xml>";
-        jsonobject = XML.toJSONObject(string);
+        jsonobject = json.XML.toJSONObject(string);
         assertEquals("{\"xml\": {\n" +
                 "  \"content\": [\n" +
                 "    \"First \\t<content>\",\n" +
@@ -627,7 +627,7 @@ public class Test extends TestCase {
                 "JSON does not have implied structure:\n" +
                 "everything is explicit.\n" +
                 "CDATA blocks&lt;are&gt;&lt;supported&gt;!<two> &quot;2&quot; </two><seven>7</seven><five/><five/><one>1</one><three>3</three><three>III</three><three>T H R E E</three><four/><six>6</six></xml>",
-                XML.toString(jsonobject));
+                json.XML.toString(jsonobject));
 
         ja = JSONML.toJSONArray(string);
         assertEquals("[\n" +
@@ -705,7 +705,7 @@ public class Test extends TestCase {
                 JSONML.toString(ja));
 
         string = "<mapping><empty/>   <class name = \"Customer\">      <field name = \"ID\" type = \"string\">         <bind-xml name=\"ID\" node=\"attribute\"/>      </field>      <field name = \"FirstName\" type = \"FirstName\"/>      <field name = \"MI\" type = \"MI\"/>      <field name = \"LastName\" type = \"LastName\"/>   </class>   <class name = \"FirstName\">      <field name = \"text\">         <bind-xml name = \"text\" node = \"text\"/>      </field>   </class>   <class name = \"MI\">      <field name = \"text\">         <bind-xml name = \"text\" node = \"text\"/>      </field>   </class>   <class name = \"LastName\">      <field name = \"text\">         <bind-xml name = \"text\" node = \"text\"/>      </field>   </class></mapping>";
-        jsonobject = XML.toJSONObject(string);
+        jsonobject = json.XML.toJSONObject(string);
 
         assertEquals("{\"mapping\": {\n" +
                 "  \"class\": [\n" +
@@ -768,7 +768,7 @@ public class Test extends TestCase {
                 "  \"empty\": \"\"\n" +
                 "}}", jsonobject.toString(2));
         assertEquals("<mapping><empty/><class><field><bind-xml><node>attribute</node><name>ID</name></bind-xml><name>ID</name><type>string</type></field><field><name>FirstName</name><type>FirstName</type></field><field><name>MI</name><type>MI</type></field><field><name>LastName</name><type>LastName</type></field><name>Customer</name></class><class><field><bind-xml><node>text</node><name>text</name></bind-xml><name>text</name></field><name>FirstName</name></class><class><field><bind-xml><node>text</node><name>text</name></bind-xml><name>text</name></field><name>MI</name></class><class><field><bind-xml><node>text</node><name>text</name></bind-xml><name>text</name></field><name>LastName</name></class></mapping>",
-                XML.toString(jsonobject));
+                json.XML.toString(jsonobject));
         ja = JSONML.toJSONArray(string);
         assertEquals("[\n" +
                 "    \"mapping\",\n" +
@@ -861,7 +861,7 @@ public class Test extends TestCase {
         assertEquals("<mapping><empty/><class name=\"Customer\"><field name=\"ID\" type=\"string\"><bind-xml node=\"attribute\" name=\"ID\"/></field><field name=\"FirstName\" type=\"FirstName\"/><field name=\"MI\" type=\"MI\"/><field name=\"LastName\" type=\"LastName\"/></class><class name=\"FirstName\"><field name=\"text\"><bind-xml node=\"text\" name=\"text\"/></field></class><class name=\"MI\"><field name=\"text\"><bind-xml node=\"text\" name=\"text\"/></field></class><class name=\"LastName\"><field name=\"text\"><bind-xml node=\"text\" name=\"text\"/></field></class></mapping>",
                 JSONML.toString(ja));
 
-        jsonobject = XML.toJSONObject("<?xml version=\"1.0\" ?><Book Author=\"Anonymous\"><Title>Sample Book</Title><Chapter id=\"1\">This is chapter 1. It is not very long or interesting.</Chapter><Chapter id=\"2\">This is chapter 2. Although it is longer than chapter 1, it is not any more interesting.</Chapter></Book>");
+        jsonobject = json.XML.toJSONObject("<?xml version=\"1.0\" ?><Book Author=\"Anonymous\"><Title>Sample Book</Title><Chapter id=\"1\">This is chapter 1. It is not very long or interesting.</Chapter><Chapter id=\"2\">This is chapter 2. Although it is longer than chapter 1, it is not any more interesting.</Chapter></Book>");
         assertEquals("{\"Book\": {\n" +
                 "  \"Author\": \"Anonymous\",\n" +
                 "  \"Chapter\": [\n" +
@@ -877,9 +877,9 @@ public class Test extends TestCase {
                 "  \"Title\": \"Sample Book\"\n" +
                 "}}", jsonobject.toString(2));
         assertEquals("<Book><Chapter>This is chapter 1. It is not very long or interesting.<id>1</id></Chapter><Chapter>This is chapter 2. Although it is longer than chapter 1, it is not any more interesting.<id>2</id></Chapter><Author>Anonymous</Author><Title>Sample Book</Title></Book>",
-                XML.toString(jsonobject));
+                json.XML.toString(jsonobject));
 
-        jsonobject = XML.toJSONObject("<!DOCTYPE bCard 'http://www.cs.caltech.edu/~adam/schemas/bCard'><bCard><?xml default bCard        firstname = ''        lastname  = '' company   = '' email = '' homepage  = ''?><bCard        firstname = 'Rohit'        lastname  = 'Khare'        company   = 'MCI'        email     = 'khare@mci.net'        homepage  = 'http://pest.w3.org/'/><bCard        firstname = 'Adam'        lastname  = 'Rifkin'        company   = 'Caltech Infospheres Project'        email     = 'adam@cs.caltech.edu'        homepage  = 'http://www.cs.caltech.edu/~adam/'/></bCard>");
+        jsonobject = json.XML.toJSONObject("<!DOCTYPE bCard 'http://www.cs.caltech.edu/~adam/schemas/bCard'><bCard><?xml default bCard        firstname = ''        lastname  = '' company   = '' email = '' homepage  = ''?><bCard        firstname = 'Rohit'        lastname  = 'Khare'        company   = 'MCI'        email     = 'khare@mci.net'        homepage  = 'http://pest.w3.org/'/><bCard        firstname = 'Adam'        lastname  = 'Rifkin'        company   = 'Caltech Infospheres Project'        email     = 'adam@cs.caltech.edu'        homepage  = 'http://www.cs.caltech.edu/~adam/'/></bCard>");
         assertEquals("{\"bCard\": {\"bCard\": [\n" +
                 "  {\n" +
                 "    \"company\": \"MCI\",\n" +
@@ -897,9 +897,9 @@ public class Test extends TestCase {
                 "  }\n" +
                 "]}}", jsonobject.toString(2));
         assertEquals("<bCard><bCard><email>khare@mci.net</email><company>MCI</company><lastname>Khare</lastname><firstname>Rohit</firstname><homepage>http://pest.w3.org/</homepage></bCard><bCard><email>adam@cs.caltech.edu</email><company>Caltech Infospheres Project</company><lastname>Rifkin</lastname><firstname>Adam</firstname><homepage>http://www.cs.caltech.edu/~adam/</homepage></bCard></bCard>",
-                XML.toString(jsonobject));
+                json.XML.toString(jsonobject));
 
-        jsonobject = XML.toJSONObject("<?xml version=\"1.0\"?><customer>    <firstName>        <text>Fred</text>    </firstName>    <ID>fbs0001</ID>    <lastName> <text>Scerbo</text>    </lastName>    <MI>        <text>B</text>    </MI></customer>");
+        jsonobject = json.XML.toJSONObject("<?xml version=\"1.0\"?><customer>    <firstName>        <text>Fred</text>    </firstName>    <ID>fbs0001</ID>    <lastName> <text>Scerbo</text>    </lastName>    <MI>        <text>B</text>    </MI></customer>");
         assertEquals("{\"customer\": {\n" +
                 "  \"ID\": \"fbs0001\",\n" +
                 "  \"MI\": {\"text\": \"B\"},\n" +
@@ -907,15 +907,15 @@ public class Test extends TestCase {
                 "  \"lastName\": {\"text\": \"Scerbo\"}\n" +
                 "}}", jsonobject.toString(2));
         assertEquals("<customer><lastName><text>Scerbo</text></lastName><MI><text>B</text></MI><ID>fbs0001</ID><firstName><text>Fred</text></firstName></customer>",
-                XML.toString(jsonobject));
+                json.XML.toString(jsonobject));
 
-        jsonobject = XML.toJSONObject("<!ENTITY tp-address PUBLIC '-//ABC University::Special Collections Library//TEXT (titlepage: name and address)//EN' 'tpspcoll.sgm'><list type='simple'><head>Repository Address </head><item>Special Collections Library</item><item>ABC University</item><item>Main Library, 40 Circle Drive</item><item>Ourtown, Pennsylvania</item><item>17654 USA</item></list>");
+        jsonobject = json.XML.toJSONObject("<!ENTITY tp-address PUBLIC '-//ABC University::Special Collections Library//TEXT (titlepage: name and address)//EN' 'tpspcoll.sgm'><list type='simple'><head>Repository Address </head><item>Special Collections Library</item><item>ABC University</item><item>Main Library, 40 Circle Drive</item><item>Ourtown, Pennsylvania</item><item>17654 USA</item></list>");
         assertEquals("{\"list\":{\"item\":[\"Special Collections Library\",\"ABC University\",\"Main Library, 40 Circle Drive\",\"Ourtown, Pennsylvania\",\"17654 USA\"],\"head\":\"Repository Address\",\"type\":\"simple\"}}",
                 jsonobject.toString());
         assertEquals("<list><item>Special Collections Library</item><item>ABC University</item><item>Main Library, 40 Circle Drive</item><item>Ourtown, Pennsylvania</item><item>17654 USA</item><head>Repository Address</head><type>simple</type></list>",
-                XML.toString(jsonobject));
+                json.XML.toString(jsonobject));
 
-        jsonobject = XML.toJSONObject("<test intertag status=ok><empty/>deluxe<blip sweet=true>&amp;&quot;toot&quot;&toot;&#x41;</blip><x>eks</x><w>bonus</w><w>bonus2</w></test>");
+        jsonobject = json.XML.toJSONObject("<test intertag status=ok><empty/>deluxe<blip sweet=true>&amp;&quot;toot&quot;&toot;&#x41;</blip><x>eks</x><w>bonus</w><w>bonus2</w></test>");
         assertEquals("{\"test\": {\n" +
                 "  \"blip\": {\n" +
                 "    \"content\": \"&\\\"toot\\\"&toot;&#x41;\",\n" +
@@ -932,7 +932,7 @@ public class Test extends TestCase {
                 "  \"x\": \"eks\"\n" +
                 "}}", jsonobject.toString(2));
         assertEquals("<test><w>bonus</w><w>bonus2</w>deluxe<intertag/><status>ok</status><blip>&amp;&quot;toot&quot;&amp;toot;&amp;#x41;<sweet>true</sweet></blip><empty/><x>eks</x></test>",
-                XML.toString(jsonobject));
+                json.XML.toString(jsonobject));
 
         jsonobject = HTTP.toJSONObject("GET / HTTP/1.0\nAccept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/vnd.ms-powerpoint, application/vnd.ms-excel, application/msword, */*\nAccept-Language: en-us\nUser-Agent: Mozilla/4.0 (compatible; MSIE 5.5; Windows 98; Win 9x 4.90; T312461; Q312461)\nHost: www.nokko.com\nConnection: keep-alive\nAccept-encoding: gzip, deflate\n");
         assertEquals("{\n" +
@@ -988,12 +988,12 @@ public class Test extends TestCase {
         assertTrue(jsonobject.isNull("nix"));
         assertTrue(jsonobject.has("nix"));
         assertEquals("<Request-URI>/</Request-URI><nix>null</nix><nux>false</nux><Method>GET</Method><HTTP-Version>HTTP/1.0</HTTP-Version><null>null</null>",
-                XML.toString(jsonobject));
+                json.XML.toString(jsonobject));
         assertEquals("GET \"/\" HTTP/1.0\r\n" +
                 "nux: false\r\n" +
                 "null: null\r\n\r\n", HTTP.toString(jsonobject));
 
-        jsonobject = XML.toJSONObject("<?xml version='1.0' encoding='UTF-8'?>" + "\n\n" + "<SOAP-ENV:Envelope" +
+        jsonobject = json.XML.toJSONObject("<?xml version='1.0' encoding='UTF-8'?>" + "\n\n" + "<SOAP-ENV:Envelope" +
                 " xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"" +
                 " xmlns:xsi=\"http://www.w3.org/1999/XMLSchema-instance\"" +
                 " xmlns:xsd=\"http://www.w3.org/1999/XMLSchema\">" +
@@ -1058,7 +1058,7 @@ public class Test extends TestCase {
                 "}}", jsonobject.toString(2));
 
         assertEquals("<SOAP-ENV:Envelope><SOAP-ENV:Body><ns1:doGoogleSearch><oe>latin1<xsi:type>xsd:string</xsi:type></oe><SOAP-ENV:encodingStyle>http://schemas.xmlsoap.org/soap/encoding/</SOAP-ENV:encodingStyle><lr><xsi:type>xsd:string</xsi:type></lr><start>0<xsi:type>xsd:int</xsi:type></start><q>'+search+'<xsi:type>xsd:string</xsi:type></q><ie>latin1<xsi:type>xsd:string</xsi:type></ie><safeSearch>false<xsi:type>xsd:boolean</xsi:type></safeSearch><xmlns:ns1>urn:GoogleSearch</xmlns:ns1><restrict><xsi:type>xsd:string</xsi:type></restrict><filter>true<xsi:type>xsd:boolean</xsi:type></filter><maxResults>10<xsi:type>xsd:int</xsi:type></maxResults><key>GOOGLEKEY<xsi:type>xsd:string</xsi:type></key></ns1:doGoogleSearch></SOAP-ENV:Body><xmlns:xsd>http://www.w3.org/1999/XMLSchema</xmlns:xsd><xmlns:xsi>http://www.w3.org/1999/XMLSchema-instance</xmlns:xsi><xmlns:SOAP-ENV>http://schemas.xmlsoap.org/soap/envelope/</xmlns:SOAP-ENV></SOAP-ENV:Envelope>",
-                XML.toString(jsonobject));
+                json.XML.toString(jsonobject));
 
         jsonobject = new JSONObject("{Envelope: {Body: {\"ns1:doGoogleSearch\": {oe: \"latin1\", filter: true, q: \"'+search+'\", key: \"GOOGLEKEY\", maxResults: 10, \"SOAP-ENV:encodingStyle\": \"http://schemas.xmlsoap.org/soap/encoding/\", start: 0, ie: \"latin1\", safeSearch:false, \"xmlns:ns1\": \"urn:GoogleSearch\"}}}}");
         assertEquals("{\"Envelope\": {\"Body\": {\"ns1:doGoogleSearch\": {\n" +
@@ -1074,7 +1074,7 @@ public class Test extends TestCase {
                 "  \"xmlns:ns1\": \"urn:GoogleSearch\"\n" +
                 "}}}}", jsonobject.toString(2));
         assertEquals("<Envelope><Body><ns1:doGoogleSearch><oe>latin1</oe><SOAP-ENV:encodingStyle>http://schemas.xmlsoap.org/soap/encoding/</SOAP-ENV:encodingStyle><start>0</start><q>'+search+'</q><ie>latin1</ie><safeSearch>false</safeSearch><xmlns:ns1>urn:GoogleSearch</xmlns:ns1><maxResults>10</maxResults><key>GOOGLEKEY</key><filter>true</filter></ns1:doGoogleSearch></Body></Envelope>",
-                XML.toString(jsonobject));
+                json.XML.toString(jsonobject));
 
         jsonobject = CookieList.toJSONObject("  f%oo = b+l=ah  ; o;n%40e = t.wo ");
         assertEquals("{\n" +
@@ -1084,7 +1084,7 @@ public class Test extends TestCase {
         assertEquals("o%3bn@e=t.wo;f%25oo=b l%3dah",
                 CookieList.toString(jsonobject));
 
-        jsonobject = Cookie.toJSONObject("f%oo=blah; secure ;expires = April 24, 2002");
+        jsonobject = json.Cookie.toJSONObject("f%oo=blah; secure ;expires = April 24, 2002");
         assertEquals("{\n" +
                 "  \"expires\": \"April 24, 2002\",\n" +
                 "  \"name\": \"f%oo\",\n" +
@@ -1092,13 +1092,13 @@ public class Test extends TestCase {
                 "  \"value\": \"blah\"\n" +
                 "}", jsonobject.toString(2));
         assertEquals("f%25oo=blah;expires=April 24, 2002;secure",
-                Cookie.toString(jsonobject));
+                json.Cookie.toString(jsonobject));
 
         jsonobject = new JSONObject("{script: 'It is not allowed in HTML to send a close script tag in a string<script>because it confuses browsers</script>so we insert a backslash before the /'}");
         assertEquals("{\"script\":\"It is not allowed in HTML to send a close script tag in a string<script>because it confuses browsers<\\/script>so we insert a backslash before the /\"}",
                 jsonobject.toString());
 
-        JSONTokener jsontokener = new JSONTokener("{op:'test', to:'session', pre:1}{op:'test', to:'session', pre:2}");
+        json.JSONTokener jsontokener = new json.JSONTokener("{op:'test', to:'session', pre:1}{op:'test', to:'session', pre:2}");
         jsonobject = new JSONObject(jsontokener);
         assertEquals("{\"to\":\"session\",\"op\":\"test\",\"pre\":1}",
                 jsonobject.toString());
@@ -1109,9 +1109,9 @@ public class Test extends TestCase {
         assertEquals("{\"to\":\"session\",\"op\":\"test\",\"pre\":2}",
                 jsonobject.toString());
 
-        jsonarray = CDL.toJSONArray("Comma delimited list test, '\"Strip\"Quotes', 'quote, comma', No quotes, 'Single Quotes', \"Double Quotes\"\n1,'2',\"3\"\n,'It is \"good,\"', \"It works.\"\n\n");
+        jsonarray = json.CDL.toJSONArray("Comma delimited list test, '\"Strip\"Quotes', 'quote, comma', No quotes, 'Single Quotes', \"Double Quotes\"\n1,'2',\"3\"\n,'It is \"good,\"', \"It works.\"\n\n");
 
-        string = CDL.toString(jsonarray);
+        string = json.CDL.toString(jsonarray);
         assertEquals("\"quote, comma\",\"StripQuotes\",Comma delimited list test\n" +
                 "3,2,1\n" +
                 "It works.,\"It is good,\",\n",
@@ -1128,7 +1128,7 @@ public class Test extends TestCase {
                 "        \"quote, comma\": \"It works.\"\n" +
                 "    }\n" +
                 "]", jsonarray.toString(4));
-        jsonarray = CDL.toJSONArray(string);
+        jsonarray = json.CDL.toJSONArray(string);
         assertEquals("[\n" +
                 "    {\n" +
                 "        \"Comma delimited list test\": \"1\",\n" +
@@ -1142,11 +1142,11 @@ public class Test extends TestCase {
                 "    }\n" +
                 "]", jsonarray.toString(4));
 
-        jsonarray = new JSONArray(" [\"<escape>\", next is an implied null , , ok,] ");
+        jsonarray = new json.JSONArray(" [\"<escape>\", next is an implied null , , ok,] ");
         assertEquals("[\"<escape>\",\"next is an implied null\",null,\"ok\"]",
                 jsonarray.toString());
         assertEquals("<array>&lt;escape&gt;</array><array>next is an implied null</array><array>null</array><array>ok</array>",
-                XML.toString(jsonarray));
+                json.XML.toString(jsonarray));
 
         jsonobject = new JSONObject("{ fun => with non-standard forms ; forgiving => This package can be used to parse formats that are similar to but not stricting conforming to JSON; why=To make it easier to migrate existing data to JSON,one = [[1.00]]; uno=[[{1=>1}]];'+':+6e66 ;pluses=+++;empty = '' , 'double':0.666,true: TRUE, false: FALSE, null=NULL;[true] = [[!,@;*]]; string=>  o. k. ; \r oct=0666; hex=0x666; dec=666; o=0999; noh=0x0x}");
         assertEquals("{\n" +
@@ -1185,7 +1185,7 @@ public class Test extends TestCase {
                 "}", jsonobject.toString(4));
 
         assertEquals("[[\"<escape>\",\"next is an implied null\",null,\"ok\"],{\"oct\":666,\"dec\":666,\"hex\":1638}]",
-                new JSONStringer().array().value(jsonarray).value(jsonobject).endArray().toString());
+                new json.JSONStringer().array().value(jsonarray).value(jsonobject).endArray().toString());
 
         jsonobject = new JSONObject("{string: \"98.6\", long: 2147483648, int: 2147483647, longer: 9223372036854775807, double: 9223372036854775808}");
         assertEquals("{\n" +
@@ -1243,7 +1243,7 @@ public class Test extends TestCase {
                 "    \"string\": \"98.6\"\n" +
                 "}", jsonobject.toString(4));
 
-        jsonarray = new JSONArray("[2147483647, 2147483648, 9223372036854775807, 9223372036854775808]");
+        jsonarray = new json.JSONArray("[2147483647, 2147483648, 9223372036854775807, 9223372036854775808]");
         assertEquals("[\n" +
                 "    2147483647,\n" +
                 "    2147483648,\n" +
@@ -1288,7 +1288,7 @@ public class Test extends TestCase {
                 jsonobject.write(new StringWriter()).toString());
 
         string = "<xml empty><a></a><a>1</a><a>22</a><a>333</a></xml>";
-        jsonobject = XML.toJSONObject(string);
+        jsonobject = json.XML.toJSONObject(string);
         assertEquals("{\"xml\": {\n" +
                 "    \"a\": [\n" +
                 "        \"\",\n" +
@@ -1299,10 +1299,10 @@ public class Test extends TestCase {
                 "    \"empty\": \"\"\n" +
                 "}}", jsonobject.toString(4));
         assertEquals("<xml><a/><a>1</a><a>22</a><a>333</a><empty/></xml>",
-                XML.toString(jsonobject));
+                json.XML.toString(jsonobject));
 
         string = "<book><chapter>Content of the first chapter</chapter><chapter>Content of the second chapter      <chapter>Content of the first subchapter</chapter>      <chapter>Content of the second subchapter</chapter></chapter><chapter>Third Chapter</chapter></book>";
-        jsonobject = XML.toJSONObject(string);
+        jsonobject = json.XML.toJSONObject(string);
         assertEquals("{\"book\": {\"chapter\": [\n" +
                 "    \"Content of the first chapter\",\n" +
                 "    {\n" +
@@ -1315,7 +1315,7 @@ public class Test extends TestCase {
                 "    \"Third Chapter\"\n" +
                 "]}}", jsonobject.toString(4));
         assertEquals("<book><chapter>Content of the first chapter</chapter><chapter>Content of the second chapter<chapter>Content of the first subchapter</chapter><chapter>Content of the second subchapter</chapter></chapter><chapter>Third Chapter</chapter></book>",
-                XML.toString(jsonobject));
+                json.XML.toString(jsonobject));
 
         jsonarray = JSONML.toJSONArray(string);
         assertEquals("[\n" +
@@ -1348,7 +1348,7 @@ public class Test extends TestCase {
         Map map = null;
 
         jsonobject = new JSONObject(map);
-        jsonarray = new JSONArray(collection);
+        jsonarray = new json.JSONArray(collection);
         jsonobject.append("stooge", "Joe DeRita");
         jsonobject.append("stooge", "Shemp");
         jsonobject.accumulate("stooges", "Curly");
@@ -1406,12 +1406,12 @@ public class Test extends TestCase {
                 "}", jsonobject.toString(4));
 
         string = " [\"San Francisco\", \"New York\", \"Seoul\", \"London\", \"Seattle\", \"Shanghai\"]";
-        jsonarray = new JSONArray(string);
+        jsonarray = new json.JSONArray(string);
         assertEquals("[\"San Francisco\",\"New York\",\"Seoul\",\"London\",\"Seattle\",\"Shanghai\"]",
                 jsonarray.toString());
 
         string = "<a ichi='1' ni='2'><b>The content of b</b> and <c san='3'>The content of c</c><d>do</d><e></e><d>re</d><f/><d>mi</d></a>";
-        jsonobject = XML.toJSONObject(string);
+        jsonobject = json.XML.toJSONObject(string);
         assertEquals("{\"a\": {\n" +
                 "  \"b\": \"The content of b\",\n" +
                 "  \"c\": {\n" +
@@ -1430,7 +1430,7 @@ public class Test extends TestCase {
                 "  \"ni\": 2\n" +
                 "}}", jsonobject.toString(2));
         assertEquals("<a><f/>and<d>do</d><d>re</d><d>mi</d><ichi>1</ichi><e/><b>The content of b</b><c>The content of c<san>3</san></c><ni>2</ni></a>",
-                XML.toString(jsonobject));
+                json.XML.toString(jsonobject));
         ja = JSONML.toJSONArray(string);
         assertEquals("[\n" +
                 "    \"a\",\n" +
@@ -1476,12 +1476,12 @@ public class Test extends TestCase {
     }
 
     public void testExceptions() throws Exception {
-        JSONArray jsonarray = null;
+        json.JSONArray jsonarray = null;
         JSONObject jsonobject;
         String string;
 
         try {
-            jsonarray = new JSONArray("[\n\r\n\r}");
+            jsonarray = new json.JSONArray("[\n\r\n\r}");
             System.out.println(jsonarray.toString());
             fail("expecting JSONException here.");
         } catch (JSONException jsone) {
@@ -1489,7 +1489,7 @@ public class Test extends TestCase {
         }
 
         try {
-            jsonarray = new JSONArray("<\n\r\n\r      ");
+            jsonarray = new json.JSONArray("<\n\r\n\r      ");
             System.out.println(jsonarray.toString());
             fail("expecting JSONException here.");
         } catch (JSONException jsone) {
@@ -1497,7 +1497,7 @@ public class Test extends TestCase {
         }
 
         try {
-            jsonarray = new JSONArray();
+            jsonarray = new json.JSONArray();
             jsonarray.put(Double.NEGATIVE_INFINITY);
             jsonarray.put(Double.NaN);
             System.out.println(jsonarray.toString());
@@ -1550,28 +1550,28 @@ public class Test extends TestCase {
         }
 
         try {
-            jsonobject = XML.toJSONObject("<a><b>    ");
+            jsonobject = json.XML.toJSONObject("<a><b>    ");
             fail("expecting JSONException here.");
         } catch (JSONException jsone) {
             assertEquals("Unclosed tag b at 11 [character 12 line 1]", jsone.getMessage());
         }
 
         try {
-            jsonobject = XML.toJSONObject("<a></b>    ");
+            jsonobject = json.XML.toJSONObject("<a></b>    ");
             fail("expecting JSONException here.");
         } catch (JSONException jsone) {
             assertEquals("Mismatched a and b at 6 [character 7 line 1]", jsone.getMessage());
         }
 
         try {
-            jsonobject = XML.toJSONObject("<a></a    ");
+            jsonobject = json.XML.toJSONObject("<a></a    ");
             fail("expecting JSONException here.");
         } catch (JSONException jsone) {
             assertEquals("Misshaped element at 11 [character 12 line 1]", jsone.getMessage());
         }
 
         try {
-            jsonarray = new JSONArray(new Object());
+            jsonarray = new json.JSONArray(new Object());
             System.out.println(jsonarray.toString());
             fail("expecting JSONException here.");
         } catch (JSONException jsone) {
@@ -1580,7 +1580,7 @@ public class Test extends TestCase {
 
         try {
             string = "[)";
-            jsonarray = new JSONArray(string);
+            jsonarray = new json.JSONArray(string);
             System.out.println(jsonarray.toString());
             fail("expecting JSONException here.");
         } catch (JSONException jsone) {
@@ -1615,7 +1615,7 @@ public class Test extends TestCase {
         }
 
         try {
-            JSONStringer jj = new JSONStringer();
+            json.JSONStringer jj = new json.JSONStringer();
             string = jj
                     .object()
                     .key("bosanda")
@@ -1637,7 +1637,7 @@ public class Test extends TestCase {
      * construct a JSONObject. It also demonstrates constructing
      * a JSONObject with an array of names.
      */
-    class Beany implements JSONString {
+    class Beany implements json.JSONString {
         public String aString;
         public double aNumber;
         public boolean aBoolean;

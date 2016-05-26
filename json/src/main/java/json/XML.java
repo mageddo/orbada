@@ -1,4 +1,4 @@
-package org.json;
+package json;
 
 /*
 Copyright (c) 2002 JSON.org
@@ -25,7 +25,6 @@ SOFTWARE.
 */
 
 import java.util.Iterator;
-
 
 /**
  * This provides static methods to convert an XML text into a JSONObject,
@@ -388,7 +387,7 @@ public class XML {
             throws JSONException {
         StringBuffer sb = new StringBuffer();
         int          i;
-        JSONArray    ja;
+        JSONArray ja;
         JSONObject   jo;
         String       key;
         Iterator     keys;

@@ -31,7 +31,7 @@ public class DrinkView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/drinkmaster/res/drink.gif"));
+    return new javax.swing.ImageIcon(getClass().getResource("/res/drink.gif"));
   }
 
   public boolean isForDatabase(Database database) {
