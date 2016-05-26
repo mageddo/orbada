@@ -1,0 +1,8 @@
+dependencies {
+	compile project(':orbada-sky')
+	compile project(':json')
+	compile project(':orbada')
+	compile project(':orbada-id')
+	compile project(':orbada-plugins')
+	compile project(':orbada-util')
+}

@@ -9,13 +9,6 @@ allprojects {
     sourceCompatibility = 1.6
     targetCompatibility = 1.6
 
-    sourceSets {
-//        main {
-//            java {
-//                srcDir projectDir
-//            }
-//        }
-    }
     repositories {
         mavenCentral()
         mavenLocal()
@@ -38,84 +31,8 @@ allprojects {
         compile group: 'org.apache.poi', name: 'poi', version: '3.13'
         compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.13'
         compile group: 'net.sf.squirrel-sql.thirdparty-non-maven', name: 'tinylaf', version: '1.4.0'
-
-
+        compile group: 'com.jgoodies', name: 'looks', version: '2.1.4'
 
         compile fileTree("${rootProject.projectDir}/libs/bin/")
-
-        // modules
-//        compile project(':drink-master')
-//        compile project(':json')
-//        compile project(':orbada')
-//        compile project(':orbada-adder')
-//        compile project(':orbada-beanshell')
-//        compile project(':orbada-dancer-pw')
-//        compile project(':orbada-data-move')
-//        compile project(':orbada-datatext')
-//        compile project(':orbada-db-objects')
-//        compile project(':orbada-derbydb')
-//        compile project(':orbada-dml-format')
-//        compile project(':orbada-editor-savecontent')
-//        compile project(':orbada-export')
-//        compile project(':orbada-export-csv')
-//        compile project(':orbada-export-data-text')
-//        compile project(':orbada-export-dbf')
-//        compile project(':orbada-export-excel')
-//        compile project(':orbada-export-pdf')
-//        compile project(':orbada-firebird')
-//        compile project(':orbada-firebird-autocomplete')
-//        compile project(':orbada-g2')
-//        compile project(':orbada-gadgets')
-//        compile project(':orbada-hsqldb')
-//        compile project(':orbada-import-csv')
-//        compile project(':orbada-id')
-//        compile project(':orbada-jaybird')
-//        compile project(':orbada-json-data-view')
-//        compile project(':orbada-laf-jgoodies')
-//        compile project(':orbada-laf-jtatoo')
-//        compile project(':orbada-laf-nimrod')
-//        compile project(':orbada-laf-substance')
-//        compile project(':orbada-laf-tinylaf')
-//        compile project(':orbada-local-history')
-//        compile project(':orbada-meld-diff')
-//        compile project(':orbada-mysql')
-//        compile project(':orbada-mysql-autocomplete')
-//        compile project(':orbada-octopus-pw')
-//        compile project(':orbada-oracle')
-//        compile project(':orbada-oracle-dba')
-//        compile project(':orbada-oracle-edt')
-//        compile project(':orbada-oracle-tune')
-//        compile project(':orbada-parser')
-//        compile project(':orbada-plugins')
-//        compile project(':orbada-postgresql')
-//        compile project(':orbada-programmers')
-//        compile project(':orbada-reports')
-//        compile project(':orbada-reports-db')
-//        compile project(':orbada-sky')
-//        compile project(':orbada-snippets')
-//        compile project(':orbada-sqlite')
-//        compile project(':orbada-sql-macro')
-//        compile project(':orbada-sql-scripts')
-//        compile project(':orbada-system')
-//        compile project(':orbada-task')
-//        compile project(':orbada-todo')
-//        compile project(':orbada-tray')
-//        compile project(':orbada-universal')
-//        compile project(':orbada-universal')
-//        compile project(':orbada-userdb')
-//        compile project(':orbada-util')
-//        compile project(':orbada-xml-data-view')
-//        compile project(':orbada-waitdlg')
-//        compile project(':startup')
     }
 }
-
-//subprojects {
-//    sourceSets {
-//        main {
-//            java {
-//                srcDir projectDir
-//            }
-//        }
-//    }
-//}

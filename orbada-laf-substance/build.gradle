@@ -1,0 +1,5 @@
+dependencies {
+	compile project(':orbada-util')
+	compile project(':orbada')
+	compile project(':orbada-plugins')
+}

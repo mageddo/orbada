@@ -1,0 +1,4 @@
+dependencies {
+	compile project(':orbada-util')
+	compile project(':orbada-oracle')
+}
