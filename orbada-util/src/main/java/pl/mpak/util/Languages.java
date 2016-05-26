@@ -32,7 +32,8 @@ public class Languages {
   }
 
   public Languages(Class<?> clazz) {
-    this(clazz.getName());
+    this(clazz.getSimpleName());
+//    this(clazz.getName());
   }
 
   public Languages() {

@@ -1,21 +1,16 @@
 package pl.mpak.util;
 
+import javax.swing.*;
+import javax.swing.table.AbstractTableModel;
+import javax.swing.table.JTableHeader;
+import javax.swing.table.TableCellRenderer;
+import javax.swing.table.TableColumnModel;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
-
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.JTable;
-import javax.swing.SwingConstants;
-import javax.swing.UIManager;
-import javax.swing.table.AbstractTableModel;
-import javax.swing.table.JTableHeader;
-import javax.swing.table.TableCellRenderer;
-import javax.swing.table.TableColumnModel;
 
 /**
  * @author Andrzej Ka³u¿a
@@ -56,10 +51,10 @@ public class ButtonTableHeader extends JTableHeader {
 
   private void init() {
     if (ascendingIcon == null) {
-      ascendingIcon = new ImageIcon(getClass().getResource("/pl/mpak/util/res/ascending.gif"));
+      ascendingIcon = new ImageIcon(getClass().getResource("/res/ascending.gif"));
     }
     if (descendingIcon == null) {
-      descendingIcon = new ImageIcon(getClass().getResource("/pl/mpak/util/res/descending.gif"));
+      descendingIcon = new ImageIcon(getClass().getResource("/res/descending.gif"));
     }
     setDefaultRenderer(new ButtonTableHeaderRenderer(getFont()));
   }
