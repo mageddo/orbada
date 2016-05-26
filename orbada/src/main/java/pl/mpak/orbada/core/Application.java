@@ -61,12 +61,9 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import pl.mpak.g2.G2Util;
 import pl.mpak.g2.RasterFont;
-import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.db.Orbada;
 import pl.mpak.orbada.db.OrbadaSession;
 import pl.mpak.orbada.db.User;
-import pl.mpak.orbada.gui.LoginDialog;
-import pl.mpak.orbada.gui.cm.HelpAction;
 import pl.mpak.orbada.plugins.ApplicationListener;
 import pl.mpak.orbada.plugins.GeneratorException;
 import pl.mpak.orbada.plugins.IApplication;
@@ -78,9 +75,6 @@ import pl.mpak.orbada.plugins.IWebAppAccessibilities;
 import pl.mpak.orbada.plugins.PleaseWait;
 import pl.mpak.orbada.plugins.providers.ILookAndFeelStarter;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
-import pl.mpak.orbada.util.patt.CurrDateResolver;
-import pl.mpak.orbada.util.patt.OrbadaConfigPath;
-import pl.mpak.orbada.util.tools.ToolList;
 import pl.mpak.plugins.spi.IPluginProvider;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.Action;
@@ -301,7 +295,7 @@ public class Application implements IApplication, WindowListener {
     File file = new File(configFile);
     if (!file.exists()) {
       copyFile("/res/orbada.properties", file);
-      File filejgoodies = new File(getConfigPath() +"/laf-jgoodies.properties");
+      File filejgoodies = new File(getConfigPath() + "/res/laf-jgoodies.properties");
       if (!filejgoodies.exists()) {
         copyFile("/res/laf-jgoodies.properties", filejgoodies);
       }

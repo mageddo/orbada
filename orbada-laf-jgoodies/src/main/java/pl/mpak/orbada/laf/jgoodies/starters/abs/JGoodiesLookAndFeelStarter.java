@@ -20,7 +20,7 @@ import pl.mpak.util.StringUtil;
  */
 public abstract class JGoodiesLookAndFeelStarter implements ILookAndFeelStarter {
 
-  public static final String jgoodiesConfigFileName = "laf-jgoodies.properties";
+  public static final String jgoodiesConfigFileName = "res/laf-jgoodies.properties";
   
   public static final String set_PopupDropShadowEnabled = "popup-drop-shadow-enabled";
   public static final String set_TabIconsEnabled = "tab-icons-enabled";

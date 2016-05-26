@@ -1,7 +1,7 @@
 /*
  * MainFrame.java
  *
- * Created on 18 styczeñ 2007, 19:38
+ * Created on 18 styczeï¿½ 2007, 19:38
  */
 
 package pl.mpak.orbada.gui;
@@ -74,34 +74,10 @@ import javax.swing.JToolBar;
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.Logger;
 import json.JSONObject;
-import pl.mpak.orbada.Consts;
-import pl.mpak.orbada.OrbadaCancelCloseException;
-import pl.mpak.orbada.core.Application;
-import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.db.Perspective;
 import pl.mpak.orbada.db.Schema;
 import pl.mpak.orbada.db.Tool;
 import pl.mpak.orbada.gui.cm.CreateViewAction;
-import pl.mpak.orbada.gui.admin.UserListDialog;
-import pl.mpak.orbada.gui.cm.CreatePerspectiveAction;
-import pl.mpak.orbada.gui.cm.CreateViewAction;
-import pl.mpak.orbada.gui.cm.MovePerspectiveLeftAction;
-import pl.mpak.orbada.gui.cm.MovePerspectiveRightAction;
-import pl.mpak.orbada.gui.cm.PerspectivePropertiesAction;
-import pl.mpak.orbada.gui.comps.OrbadaSQLSyntaxDocument;
-import pl.mpak.orbada.gui.comps.PerspectiveContextMenu;
-import pl.mpak.orbada.gui.laf.services.CrossPlatformLookAndFeelService;
-import pl.mpak.orbada.gui.laf.services.CrossPlatformLookAndFeelSettingsService;
-import pl.mpak.orbada.gui.laf.services.MotifLookAndFeelService;
-import pl.mpak.orbada.gui.laf.services.NimbusLookAndFeelService;
-import pl.mpak.orbada.gui.schemas.DriverListDialog;
-import pl.mpak.orbada.gui.schemas.SchemaListDialog;
-import pl.mpak.orbada.gui.services.GeneralSchemaSettingsService;
-import pl.mpak.orbada.gui.services.TextFileViewService;
-import pl.mpak.orbada.gui.templates.TemplateListDialog;
-import pl.mpak.orbada.gui.tools.ToolListDialog;
-import pl.mpak.orbada.gui.webapp.RequestProblemDialog;
-import pl.mpak.orbada.gui.webapp.RequestSuggestionDialog;
 import pl.mpak.orbada.plugins.IProcessMessagable;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.providers.DatabaseInfoProvider;
@@ -116,10 +92,6 @@ import pl.mpak.orbada.plugins.providers.StatusBarProvider;
 import pl.mpak.orbada.plugins.providers.ToolConfigurationActionProvider;
 import pl.mpak.orbada.plugins.providers.ViewProvider;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
-import pl.mpak.orbada.services.DefaultPleaseWaitRenderer;
-import pl.mpak.orbada.services.TimeOrbadaFontPleaseWaitRenderer;
-import pl.mpak.orbada.util.Utils;
-import pl.mpak.orbada.util.tools.ToolAction;
 import pl.mpak.sky.SkySetting;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.Action;
@@ -243,7 +215,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
   }
 
   /**
-   * Funkcja s³u¿y do sprawdzania czy dostêpna jest aktualizacja.
+   * Funkcja sï¿½uï¿½y do sprawdzania czy dostï¿½pna jest aktualizacja.
    */
   public void checkUpdates() {
     lastCheckUpdates = System.currentTimeMillis();
@@ -1905,7 +1877,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
 
         menuPerspective.add(menuSelectNewPerspective);
 
-        menuPerspectiveGadgets.setText("Narzêdzia perspektywy"); // NOI18N
+        menuPerspectiveGadgets.setText("Narzï¿½dzia perspektywy"); // NOI18N
         menuPerspectiveGadgets.addMenuListener(new javax.swing.event.MenuListener() {
             public void menuCanceled(javax.swing.event.MenuEvent evt) {
             }
@@ -1928,15 +1900,15 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
         menuResetPerspective.setAction(cmResetPerspective);
         menuPerspective.add(menuResetPerspective);
 
-        menuPerspectiveProperties.setText("! w³aœciwoœci perspektywy");
+        menuPerspectiveProperties.setText("! wï¿½aï¿½ciwoï¿½ci perspektywy");
         menuPerspectiveProperties.setAction(cmPerspectiveProperties = new PerspectivePropertiesAction());
         menuPerspective.add(menuPerspectiveProperties);
 
-        menuMovePerspectiveLeft.setText("! przesuñ w lewo");
+        menuMovePerspectiveLeft.setText("! przesuï¿½ w lewo");
         menuMovePerspectiveLeft.setAction(cmMovePerspectiveLeft = new MovePerspectiveLeftAction());
         menuPerspective.add(menuMovePerspectiveLeft);
 
-        menuMovePerspectiveRight.setText("! przesuñ w prawo");
+        menuMovePerspectiveRight.setText("! przesuï¿½ w prawo");
         menuMovePerspectiveRight.setAction(cmMovePerspectiveRight = new MovePerspectiveRightAction());
         menuPerspective.add(menuMovePerspectiveRight);
 
@@ -2296,7 +2268,7 @@ private void cmDriversActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
       @Override
       public void run() {
         tabbedPerpectives.setSelectedComponent(getToolsPerspective());
-        getToolsPerspective().createView(new TextFileViewService(new File(Application.get().getConfigPath() +"/orbada.properties")), false, false);
+        getToolsPerspective().createView(new TextFileViewService(new File(Application.get().getConfigPath() + "/res/orbada.properties")), false, false);
       }
     });
     //Application.get().execTool("notepad", new Object[] {Application.get().getConfigPath() +"/orbada.properties"});
