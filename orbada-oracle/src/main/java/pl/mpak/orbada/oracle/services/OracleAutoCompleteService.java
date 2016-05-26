@@ -6,8 +6,8 @@
 package pl.mpak.orbada.oracle.services;
 
 import java.util.ArrayList;
-import orbada.Consts;
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.plugins.providers.SyntaxEditorAutoCompleteProvider;
 import pl.mpak.orbada.plugins.queue.PluginMessage;

@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.actionstats;
+package pl.mpak.orbada.gui.actionstats;
 
 import java.awt.Component;
 import java.io.Serializable;

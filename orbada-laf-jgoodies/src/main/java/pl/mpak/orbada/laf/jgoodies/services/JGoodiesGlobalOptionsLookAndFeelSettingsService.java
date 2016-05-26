@@ -7,7 +7,7 @@ package pl.mpak.orbada.laf.jgoodies.services;
 
 import java.awt.Component;
 import javax.swing.Icon;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.laf.jgoodies.OrbadaLafJGoodiesPlugin;
 import pl.mpak.orbada.laf.jgoodies.gui.GlobalOptionsSettingsPanel;
 import pl.mpak.orbada.plugins.providers.SettingsProvider;

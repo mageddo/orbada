@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.laf;
+package pl.mpak.orbada.gui.laf;
 
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;

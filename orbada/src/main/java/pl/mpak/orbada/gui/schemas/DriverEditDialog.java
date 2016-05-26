@@ -1,4 +1,4 @@
-package orbada.gui.schemas;
+package pl.mpak.orbada.gui.schemas;
 
 import java.beans.IntrospectionException;
 import java.io.File;
@@ -13,10 +13,10 @@ import javax.swing.JTextField;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import orbada.Consts;
-import orbada.core.Application;
-import orbada.db.DriverClassLoaderManager;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.db.DriverClassLoaderManager;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.db.Driver;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;

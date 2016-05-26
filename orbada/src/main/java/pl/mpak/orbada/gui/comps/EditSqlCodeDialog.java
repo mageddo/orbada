@@ -4,11 +4,11 @@
  * Created on 4 grudzieñ 2007, 19:22
  */
 
-package orbada.gui.comps;
+package pl.mpak.orbada.gui.comps;
 
 import javax.swing.JComponent;
-import orbada.Consts;
-import orbada.core.Application;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.SwingUtil;

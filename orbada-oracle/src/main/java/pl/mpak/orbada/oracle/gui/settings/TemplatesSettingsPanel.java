@@ -2,7 +2,7 @@ package pl.mpak.orbada.oracle.gui.settings;
 
 import java.util.ArrayList;
 import javax.swing.DefaultComboBoxModel;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.services.OracleTemplatesSettingsProvider;
 import pl.mpak.orbada.plugins.IApplication;

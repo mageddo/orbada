@@ -5,9 +5,9 @@
 
 package pl.mpak.orbada.oracle.util;
 
-import orbada.core.Application;
-import orbada.gui.comps.OrbadaJavaSyntaxTextArea;
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.oracle.gui.settings.SourceCreatorSettingsPanel;
 import pl.mpak.orbada.plugins.ISettings;

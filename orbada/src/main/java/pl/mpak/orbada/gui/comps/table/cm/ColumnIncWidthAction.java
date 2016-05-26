@@ -7,7 +7,7 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.comps.table.cm;
+package pl.mpak.orbada.gui.comps.table.cm;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,7 +15,7 @@ import java.awt.event.KeyEvent;
 import javax.swing.JTable;
 import javax.swing.table.TableColumn;
 
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.sky.gui.swing.Action;
 import pl.mpak.util.StringManager;
 import pl.mpak.util.StringManagerFactory;

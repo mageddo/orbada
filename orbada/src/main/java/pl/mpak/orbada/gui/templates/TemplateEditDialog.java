@@ -1,12 +1,12 @@
-package orbada.gui.templates;
+package pl.mpak.orbada.gui.templates;
 
 import java.beans.IntrospectionException;
 import javax.swing.JComponent;
-import orbada.Consts;
-import orbada.core.Application;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.db.Template;
-import orbada.gui.editor.EditorPopupMenu;
+import pl.mpak.orbada.gui.editor.EditorPopupMenu;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;
 import pl.mpak.sky.gui.swing.SwingUtil;

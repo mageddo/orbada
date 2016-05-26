@@ -11,7 +11,7 @@ package pl.mpak.orbada.laf.jgoodies;
 
 import java.util.ArrayList;
 import java.util.List;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.laf.jgoodies.services.JGoodiesGlobalOptionsLookAndFeelSettingsService;
 import pl.mpak.orbada.laf.jgoodies.services.Plastic3DLookAndFeelService;
 import pl.mpak.orbada.laf.jgoodies.services.PlasticLookAndFeelService;

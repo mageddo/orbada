@@ -7,16 +7,16 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.comps.table;
+package pl.mpak.orbada.gui.comps.table;
 
 import java.util.ArrayList;
 import java.util.EventObject;
 import java.util.StringTokenizer;
 import javax.swing.table.TableColumn;
 
-import orbada.Consts;
-import orbada.util.Utils;
-import orbada.core.Application;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.util.Utils;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.usedb.core.DefaultQueryListener;
 import pl.mpak.usedb.core.Query;

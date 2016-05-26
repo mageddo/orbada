@@ -3,9 +3,9 @@ package pl.mpak.orbada.hsqldb.gui.views;
 import java.awt.Frame;
 import java.io.IOException;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
-import orbada.gui.ITabObjectInfo;
-import orbada.gui.cm.ComponentActionsAction;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.ITabObjectInfo;
+import pl.mpak.orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.hsqldb.OrbadaHSqlDbPlugin;
 import pl.mpak.orbada.hsqldb.Sql;
 import pl.mpak.orbada.hsqldb.services.HSqlDbInfoProvider;

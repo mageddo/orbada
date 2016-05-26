@@ -9,7 +9,7 @@
  * Created on 2011-02-03, 15:10:25
  */
 
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
 import java.awt.Desktop;
 import java.awt.Font;
@@ -18,11 +18,12 @@ import javax.swing.AbstractButton;
 import javax.swing.JComponent;
 import javax.swing.event.HyperlinkEvent;
 
-import orbada.Consts;
-import orbada.core.Application;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
 import json.JSONArray;
 import json.JSONException;
 import json.JSONObject;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.util.ExceptionUtil;
 import pl.mpak.util.StringManager;

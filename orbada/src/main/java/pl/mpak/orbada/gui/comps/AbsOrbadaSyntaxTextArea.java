@@ -3,17 +3,18 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.comps;
+package pl.mpak.orbada.gui.comps;
 
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.util.EventObject;
 import java.util.HashMap;
 import javax.swing.event.EventListenerList;
-import orbada.Consts;
-import orbada.OrbadaException;
-import orbada.core.Application;
-import orbada.gui.editor.EditorPopupMenu;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.OrbadaException;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.editor.EditorPopupMenu;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.providers.OrbadaSyntaxTextAreaProvider;
 import pl.mpak.orbada.plugins.providers.SyntaxEditorActionProvider;
 import pl.mpak.orbada.plugins.providers.SyntaxEditorAutoCompleteProvider;

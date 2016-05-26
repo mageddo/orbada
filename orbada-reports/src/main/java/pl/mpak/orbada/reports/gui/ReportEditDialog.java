@@ -10,9 +10,9 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableModel;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
-import orbada.gui.comps.table.Table;
-import orbada.core.Application;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.table.Table;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.reports.Sql;
 import pl.mpak.orbada.reports.db.ReportRecord;

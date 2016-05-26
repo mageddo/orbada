@@ -3,9 +3,10 @@
  * and open the template in the editor.
  */
 
-package orbada.util.patt;
+package pl.mpak.orbada.util.patt;
 
-import orbada.core.Application;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.util.patt.ResolvableModel;
 
 /**

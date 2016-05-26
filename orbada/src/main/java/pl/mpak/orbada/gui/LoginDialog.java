@@ -4,11 +4,11 @@
  * Created on 27 grudzieñ 2007, 21:54
  */
 
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
 import java.util.concurrent.Callable;
 import javax.swing.JComponent;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.util.StringManager;

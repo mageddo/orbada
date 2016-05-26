@@ -6,7 +6,7 @@
 package pl.mpak.orbada.xmldataview.services;
 
 import java.awt.Component;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.plugins.providers.ViewValueProvider;
 import pl.mpak.orbada.xmldataview.OrbadaXmlDataViewPlugin;
 import pl.mpak.orbada.xmldataview.gui.ViewXmlDataPanel;

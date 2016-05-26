@@ -4,7 +4,7 @@
  */
 package pl.mpak.orbada.postgresql.gui.views;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.postgresql.OrbadaPostgreSQLPlugin;
 import pl.mpak.orbada.postgresql.Sql;

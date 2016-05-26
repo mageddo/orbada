@@ -6,7 +6,7 @@ import javax.swing.DefaultCellEditor;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 
-import orbada.gui.comps.table.Table;
+import pl.mpak.orbada.gui.comps.table.Table;
 import pl.mpak.orbada.plugins.dbinfo.jdbc.JdbcDbSchemaInfo;
 import pl.mpak.orbada.plugins.dbinfo.jdbc.JdbcDbTableInfo;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;

@@ -2,7 +2,7 @@ package pl.mpak.orbada.mysql.gui.settings;
 
 import java.util.ArrayList;
 import javax.swing.DefaultComboBoxModel;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.mysql.OrbadaMySQLPlugin;
 import pl.mpak.orbada.mysql.services.MySQLTemplatesSettingsProvider;
 import pl.mpak.orbada.plugins.IApplication;

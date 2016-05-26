@@ -17,7 +17,7 @@ import java.util.Arrays;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.imports.csv.OrbadaImportCsvPlugin;
 import pl.mpak.orbada.imports.csv.engine.CsvImport;
 import pl.mpak.orbada.imports.csv.engine.CsvImportColumn;

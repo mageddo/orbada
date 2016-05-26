@@ -7,7 +7,7 @@
  * and open the template in the editor.
  */
 
-package orbada.util.settings;
+package pl.mpak.orbada.util.settings;
 
 import pl.mpak.util.variant.Variant;
 

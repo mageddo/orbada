@@ -1,4 +1,4 @@
-package orbada.gui.cm;
+package pl.mpak.orbada.gui.cm;
 
 import java.awt.Component;
 import java.awt.event.ActionEvent;
@@ -15,10 +15,13 @@ import javax.swing.JPopupMenu;
 import javax.swing.JSeparator;
 import javax.swing.JToolBar;
 
-import orbada.Consts;
-import orbada.gui.IRootTabObjectInfo;
-import orbada.core.Application;
-import orbada.gui.ITabObjectInfo;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.gui.IRootTabObjectInfo;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.ITabObjectInfo;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.IRootTabObjectInfo;
+import pl.mpak.orbada.gui.ITabObjectInfo;
 import pl.mpak.orbada.plugins.ComponentAction;
 import pl.mpak.orbada.plugins.providers.ComponentActionProvider;
 import pl.mpak.orbada.plugins.providers.ComponentActionsProvider;

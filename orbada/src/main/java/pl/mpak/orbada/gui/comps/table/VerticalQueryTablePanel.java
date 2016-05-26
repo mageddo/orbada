@@ -4,7 +4,7 @@
  * Created on 21 styczeñ 2008, 20:32
  */
 
-package orbada.gui.comps.table;
+package pl.mpak.orbada.gui.comps.table;
 
 import java.io.Closeable;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import java.util.Vector;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;
 import pl.mpak.usedb.core.Database;

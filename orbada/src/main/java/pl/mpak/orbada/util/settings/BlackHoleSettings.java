@@ -1,4 +1,4 @@
-package orbada.util.settings;
+package pl.mpak.orbada.util.settings;
 
 import java.util.Properties;
 import pl.mpak.util.variant.Variant;

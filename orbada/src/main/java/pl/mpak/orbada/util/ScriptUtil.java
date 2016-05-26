@@ -3,13 +3,13 @@
  * and open the template in the editor.
  */
 
-package orbada.util;
+package pl.mpak.orbada.util;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-import orbada.core.Application;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.db.InternalDatabase;
 import org.apache.log4j.Logger;
 import pl.mpak.usedb.script.SimpleSQLScript;
 import pl.mpak.util.ExceptionUtil;

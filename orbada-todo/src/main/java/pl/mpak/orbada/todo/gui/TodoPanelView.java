@@ -18,8 +18,8 @@ import javax.swing.JTable;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import orbada.gui.comps.table.ViewTable;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.todo.OrbadaTodoPlugin;
 import pl.mpak.orbada.todo.db.Todo;

@@ -15,12 +15,12 @@ import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreeNode;
 import javax.swing.tree.TreePath;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
-import orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
 import pl.mpak.mpak.oracle.tune.OrbadaOracleTunePlugin;
 import pl.mpak.mpak.oracle.tune.Sql;
-import orbada.gui.cm.ComponentActionsAction;
-import orbada.gui.util.SimpleSelectDialog;
+import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import pl.mpak.orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.gui.freezing.FreezeFactory;
 import pl.mpak.orbada.oracle.gui.freezing.FreezeViewService;

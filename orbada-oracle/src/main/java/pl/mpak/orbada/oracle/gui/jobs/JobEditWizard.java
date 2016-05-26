@@ -7,7 +7,7 @@ import javax.swing.DefaultListCellRenderer;
 import javax.swing.JList;
 import javax.swing.JTextField;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.universal.gui.wizards.SqlCodeWizardPanel;
 import pl.mpak.sky.gui.mr.ModalResult;

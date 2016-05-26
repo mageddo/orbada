@@ -4,15 +4,16 @@
  * Created on 25 listopad 2008, 11:12
  */
 
-package orbada.gui.templates;
+package pl.mpak.orbada.gui.templates;
 
 import java.awt.Component;
 import java.util.HashMap;
 import java.util.List;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
-import orbada.Consts;
-import orbada.core.Application;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.db.Template;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;

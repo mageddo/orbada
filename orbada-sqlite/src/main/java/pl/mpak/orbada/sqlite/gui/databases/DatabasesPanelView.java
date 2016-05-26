@@ -5,10 +5,10 @@ import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import orbada.gui.comps.table.DataTable;
-import orbada.gui.comps.table.ViewTable;
-import orbada.gui.IRootTabObjectInfo;
-import orbada.gui.cm.ComponentActionsAction;
+import pl.mpak.orbada.gui.comps.table.DataTable;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.gui.IRootTabObjectInfo;
+import pl.mpak.orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.sqlite.OrbadaSQLitePlugin;

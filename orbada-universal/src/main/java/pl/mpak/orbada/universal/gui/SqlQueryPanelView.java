@@ -33,10 +33,10 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.text.BadLocationException;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
-import orbada.Consts;
-import orbada.db.ConnectionFactory;
-import orbada.gui.cm.ComponentActionsAction;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.db.ConnectionFactory;
+import pl.mpak.orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.plugins.IProcessMessagable;
 import pl.mpak.orbada.plugins.ISettings;

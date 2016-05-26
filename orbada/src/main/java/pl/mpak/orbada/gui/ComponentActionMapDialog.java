@@ -4,7 +4,7 @@
  * Created on 1 luty 2009, 15:18
  */
 
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
 import java.awt.Component;
 import javax.swing.Action;
@@ -13,7 +13,7 @@ import javax.swing.DefaultListModel;
 import javax.swing.FocusManager;
 import javax.swing.JComponent;
 
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.sky.gui.swing.ActionListCellRenderer;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.util.StringManager;

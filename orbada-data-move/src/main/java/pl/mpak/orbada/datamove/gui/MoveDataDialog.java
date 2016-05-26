@@ -26,10 +26,10 @@ import javax.swing.JTextField;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
-import orbada.core.Application;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.datamove.OrbadaDataMovePlugin;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.PleaseWait;
 import pl.mpak.sky.gui.mr.ModalResult;

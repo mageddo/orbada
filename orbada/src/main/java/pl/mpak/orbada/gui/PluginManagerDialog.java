@@ -4,7 +4,7 @@
  * Created on 5 styczeñ 2008, 17:31
  */
 
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
 import java.awt.Desktop;
 import java.io.File;
@@ -20,10 +20,13 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.table.AbstractTableModel;
 
-import orbada.Consts;
-import orbada.core.Application;
-import orbada.db.InternalDatabase;
-import orbada.gui.comps.table.Table;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.db.InternalDatabase;
+import pl.mpak.orbada.gui.comps.table.Table;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.db.InternalDatabase;
+import pl.mpak.orbada.gui.comps.table.Table;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.plugins.Plugin;
 import pl.mpak.sky.gui.mr.ModalResult;

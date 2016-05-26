@@ -16,9 +16,9 @@ import javax.swing.JOptionPane;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
 import org.jmeld.ui.JMeldPanel;
-import orbada.gui.cm.ComponentActionsAction;
+import pl.mpak.orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.localhistory.OrbadaLocalHistoryPlugin;
 import pl.mpak.orbada.localhistory.Sql;
 import pl.mpak.orbada.localhistory.core.SchemaObjects;

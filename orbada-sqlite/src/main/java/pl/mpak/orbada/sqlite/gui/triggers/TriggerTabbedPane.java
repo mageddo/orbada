@@ -1,7 +1,7 @@
 package pl.mpak.orbada.sqlite.gui.triggers;
 
 import java.awt.Component;
-import orbada.gui.OrbadaTabbedPane;
+import pl.mpak.orbada.gui.OrbadaTabbedPane;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 
 /**

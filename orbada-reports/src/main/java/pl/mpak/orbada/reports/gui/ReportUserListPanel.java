@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.AbstractTableModel;
 
-import orbada.gui.comps.table.Table;
+import pl.mpak.orbada.gui.comps.table.Table;
 import pl.mpak.orbada.reports.db.ReportUsersUpdater;
 import pl.mpak.orbada.reports.util.Applyable;
 import pl.mpak.sky.gui.mr.ModalResult;

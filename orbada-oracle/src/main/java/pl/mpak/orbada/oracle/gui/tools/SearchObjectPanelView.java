@@ -13,9 +13,9 @@ import javax.swing.JTable;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import orbada.gui.comps.table.ViewTable;
-import orbada.gui.cm.ComponentActionsAction;
-import orbada.gui.util.SimpleSelectDialog;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import pl.mpak.orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.oracle.gui.freezing.FreezeFactory;

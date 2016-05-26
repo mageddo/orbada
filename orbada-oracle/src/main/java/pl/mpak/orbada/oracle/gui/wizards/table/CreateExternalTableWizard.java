@@ -4,7 +4,7 @@ import javax.swing.DefaultCellEditor;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
-import orbada.gui.comps.table.Table;
+import pl.mpak.orbada.gui.comps.table.Table;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.gui.util.DirectoryComboBoxModel;
 import pl.mpak.orbada.oracle.gui.wizards.TableColumnDefinitionWizard;

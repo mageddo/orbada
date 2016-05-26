@@ -3,10 +3,10 @@
  * and open the template in the editor.
  */
 
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
 import java.io.Closeable;
-import orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.plugins.IGadgetAccesibilities;
 import pl.mpak.orbada.plugins.IPerspectiveAccesibilities;

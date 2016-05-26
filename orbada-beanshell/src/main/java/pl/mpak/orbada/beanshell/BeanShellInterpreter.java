@@ -11,7 +11,7 @@ package pl.mpak.orbada.beanshell;
 
 import bsh.EvalError;
 import bsh.Interpreter;
-import orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.usedb.core.Database;
 import pl.mpak.util.ExceptionUtil;

@@ -5,9 +5,9 @@ import javax.swing.JComponent;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import orbada.gui.comps.table.ViewTable;
-import orbada.core.Application;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.sqlscripts.OrbadaSqlScriptsPlugin;
 import pl.mpak.orbada.sqlscripts.db.SqlScriptRecord;

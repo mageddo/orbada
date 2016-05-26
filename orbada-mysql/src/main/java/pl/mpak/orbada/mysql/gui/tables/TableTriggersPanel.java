@@ -1,6 +1,6 @@
 package pl.mpak.orbada.mysql.gui.tables;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.mysql.OrbadaMySQLPlugin;
 import pl.mpak.orbada.mysql.Sql;

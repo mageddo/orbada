@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.laf;
+package pl.mpak.orbada.gui.laf;
 
 import java.io.File;
 import java.io.FileInputStream;

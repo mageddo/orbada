@@ -1,9 +1,9 @@
 package pl.mpak.orbada.firebird.gui.tables;
 
 import java.awt.Component;
-import orbada.gui.OrbadaTabbedPane;
+import pl.mpak.orbada.gui.OrbadaTabbedPane;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import orbada.gui.ContentPanel;
+import pl.mpak.orbada.gui.ContentPanel;
 
 /**
  *

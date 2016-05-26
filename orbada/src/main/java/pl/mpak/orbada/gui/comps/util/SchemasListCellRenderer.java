@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.comps.util;
+package pl.mpak.orbada.gui.comps.util;
 
 import java.awt.Component;
 import javax.swing.DefaultListCellRenderer;

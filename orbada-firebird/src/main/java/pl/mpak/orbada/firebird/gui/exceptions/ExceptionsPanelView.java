@@ -3,14 +3,14 @@ package pl.mpak.orbada.firebird.gui.exceptions;
 import java.awt.Dialog;
 import java.io.IOException;
 
-import orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.firebird.OrbadaFirebirdPlugin;
 import pl.mpak.orbada.firebird.Sql;
 import pl.mpak.orbada.firebird.gui.wizards.AlterExceptionWizard;
 import pl.mpak.orbada.firebird.gui.wizards.CommentWizard;
 import pl.mpak.orbada.firebird.gui.wizards.CreateExceptionWizard;
-import orbada.gui.IRootTabObjectInfo;
-import orbada.gui.cm.ComponentActionsAction;
+import pl.mpak.orbada.gui.IRootTabObjectInfo;
+import pl.mpak.orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;

@@ -7,11 +7,12 @@
  * and open the template in the editor.
  */
 
-package orbada.core;
+package pl.mpak.orbada.core;
 
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import org.apache.log4j.Logger;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.db.InternalDatabase;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.plugins.OrbadaPlugin;
 import pl.mpak.orbada.plugins.providers.abs.IOrbadaPluginProvider;
 import pl.mpak.orbada.plugins.queue.PluginQueue;

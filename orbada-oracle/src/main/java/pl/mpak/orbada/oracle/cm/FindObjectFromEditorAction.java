@@ -9,7 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import javax.swing.text.BadLocationException;
-import orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.gui.freezing.FreezeFactory;
 import pl.mpak.orbada.oracle.gui.freezing.FreezeViewService;

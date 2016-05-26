@@ -4,9 +4,10 @@
  * Created on 28 paüdziernik 2007, 12:09
  */
 
-package orbada.gui.comps.table.view;
+package pl.mpak.orbada.gui.comps.table.view;
 
-import orbada.gui.comps.table.Table;
+import pl.mpak.orbada.gui.comps.table.Table;
+import pl.mpak.orbada.gui.comps.table.Table;
 import pl.mpak.sky.gui.swing.BeanPropertyTableModel;
 import pl.mpak.util.variant.Variant;
 

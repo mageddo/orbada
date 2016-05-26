@@ -4,7 +4,7 @@
  * Created on 6 grudzieñ 2007, 18:42
  */
 
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
 import java.util.StringTokenizer;
 import javax.swing.AbstractButton;
@@ -12,13 +12,16 @@ import javax.swing.JComponent;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreeSelectionModel;
-import orbada.Consts;
-import orbada.core.Application;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.providers.PerspectiveSettingsProvider;
 import pl.mpak.orbada.plugins.providers.SettingsProvider;
 import pl.mpak.orbada.plugins.providers.abs.AbstractSettingsProvider;
-import orbada.util.Utils;
+import pl.mpak.orbada.util.Utils;
+import pl.mpak.orbada.util.Utils;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.usedb.core.Database;
 import pl.mpak.util.StringManager;

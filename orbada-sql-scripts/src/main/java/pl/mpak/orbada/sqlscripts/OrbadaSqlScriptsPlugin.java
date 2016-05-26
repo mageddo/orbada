@@ -2,11 +2,11 @@ package pl.mpak.orbada.sqlscripts;
 
 import java.util.ArrayList;
 import java.util.List;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.plugins.OrbadaPlugin;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
 import pl.mpak.orbada.sqlscripts.services.SqlScriptPerspectiveProvider;
-import orbada.util.ScriptUtil;
+import pl.mpak.orbada.util.ScriptUtil;
 import pl.mpak.util.id.VersionID;
 import pl.mpak.plugins.spi.IPlugin;
 import pl.mpak.plugins.spi.IPluginProvider;

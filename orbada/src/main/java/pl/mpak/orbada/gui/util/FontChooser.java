@@ -4,12 +4,12 @@
  * Created on 11 listopad 2007, 15:16
  */
 
-package orbada.gui.util;
+package pl.mpak.orbada.gui.util;
 
 import java.awt.Font;
 import java.awt.GraphicsEnvironment;
 import javax.swing.AbstractButton;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;
 import pl.mpak.sky.gui.swing.SwingUtil;

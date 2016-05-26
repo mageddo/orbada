@@ -1,7 +1,7 @@
 package pl.mpak.orbada.export.excel;
 
 import java.util.List;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.plugins.OrbadaPlugin;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
 import pl.mpak.plugins.spi.IPlugin;

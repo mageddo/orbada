@@ -9,13 +9,13 @@
  * Created on 2009-04-28, 19:05:15
  */
 
-package orbada.gui.schemas;
+package pl.mpak.orbada.gui.schemas;
 
 import javax.swing.AbstractButton;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JComponent;
 
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.util.StringManager;

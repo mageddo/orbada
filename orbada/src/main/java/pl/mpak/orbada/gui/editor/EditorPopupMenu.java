@@ -7,7 +7,7 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.editor;
+package pl.mpak.orbada.gui.editor;
 
 import pl.mpak.sky.gui.swing.comp.PopupMenuText;
 import pl.mpak.sky.gui.swing.syntax.SyntaxTextArea;

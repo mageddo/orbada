@@ -1,4 +1,4 @@
-package orbada.db;
+package pl.mpak.orbada.db;
 
 import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
@@ -6,9 +6,11 @@ import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.Properties;
 
-import orbada.ErrorMessages;
-import orbada.OrbadaException;
-import orbada.core.Application;
+import pl.mpak.orbada.ErrorMessages;
+import pl.mpak.orbada.OrbadaException;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.ErrorMessages;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.db.Driver;
 import pl.mpak.orbada.db.DriverType;
 import pl.mpak.orbada.db.Schema;

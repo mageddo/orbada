@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 import javax.swing.JComponent;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.sqlmacro.OrbadaSqlMacrosPlugin;
 import pl.mpak.orbada.sqlmacro.db.SqlMacroRecord;

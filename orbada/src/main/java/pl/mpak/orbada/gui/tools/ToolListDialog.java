@@ -1,15 +1,16 @@
-package orbada.gui.tools;
+package pl.mpak.orbada.gui.tools;
 
 import java.util.EventObject;
 import javax.swing.JComponent;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import orbada.gui.comps.table.ViewTable;
-import orbada.Consts;
-import orbada.core.Application;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.db.Tool;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;

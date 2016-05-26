@@ -1,4 +1,4 @@
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
 public class LoginInfo {
 

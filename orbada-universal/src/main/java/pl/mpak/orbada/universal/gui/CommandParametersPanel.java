@@ -13,8 +13,8 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import orbada.gui.comps.table.Table;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.gui.comps.table.Table;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
 import pl.mpak.sky.gui.swing.TableRowChangeKeyListener;
 import pl.mpak.usedb.core.ParametrizedCommand;

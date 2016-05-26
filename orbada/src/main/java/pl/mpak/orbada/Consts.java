@@ -7,7 +7,7 @@
  * and open the template in the editor.
  */
 
-package orbada;
+package pl.mpak.orbada;
 
 import pl.mpak.util.StringManager;
 import pl.mpak.util.StringManagerFactory;

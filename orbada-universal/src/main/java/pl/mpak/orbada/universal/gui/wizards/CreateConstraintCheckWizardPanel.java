@@ -6,7 +6,7 @@
 
 package pl.mpak.orbada.universal.gui.wizards;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
 import pl.mpak.orbada.universal.gui.util.TableComboBoxModel;
 import pl.mpak.sky.gui.mr.ModalResult;

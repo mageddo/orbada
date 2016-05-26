@@ -3,16 +3,17 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.comps;
+package pl.mpak.orbada.gui.comps;
 
 import javax.swing.JComponent;
 
-import orbada.core.Application;
-import orbada.gui.cm.MovePerspectiveLeftAction;
-import orbada.gui.cm.MovePerspectiveRightAction;
-import orbada.gui.MainFrame;
-import orbada.gui.cm.ClosePerspectiveAction;
-import orbada.gui.cm.PerspectivePropertiesAction;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.cm.MovePerspectiveLeftAction;
+import pl.mpak.orbada.gui.cm.MovePerspectiveRightAction;
+import pl.mpak.orbada.gui.MainFrame;
+import pl.mpak.orbada.gui.cm.ClosePerspectiveAction;
+import pl.mpak.orbada.gui.cm.PerspectivePropertiesAction;
+import pl.mpak.orbada.gui.cm.MovePerspectiveRightAction;
 import pl.mpak.sky.gui.swing.comp.PopupMenu;
 
 /**

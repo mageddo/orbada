@@ -3,9 +3,9 @@ package pl.mpak.orbada.sqlscripts.gui;
 import java.beans.IntrospectionException;
 import javax.swing.JComponent;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
-import orbada.core.Application;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.sqlscripts.OrbadaSqlScriptsPlugin;
 import pl.mpak.orbada.sqlscripts.db.SqlScriptRecord;
 import pl.mpak.sky.gui.mr.ModalResult;

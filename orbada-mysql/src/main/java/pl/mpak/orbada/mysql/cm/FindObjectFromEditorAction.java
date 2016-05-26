@@ -9,7 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import javax.swing.text.BadLocationException;
-import orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.mysql.OrbadaMySQLPlugin;
 import pl.mpak.orbada.mysql.Sql;
 import pl.mpak.orbada.mysql.gui.freezing.FreezeFactory;

@@ -5,7 +5,7 @@
 
 package pl.mpak.orbada.laf.jtatoo.services;
 
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.laf.jtatoo.starters.JTatooAcrylLookAndFeelStarter;
 import pl.mpak.orbada.plugins.providers.ILookAndFeelStarter;
 import pl.mpak.orbada.plugins.providers.LookAndFeelProvider;

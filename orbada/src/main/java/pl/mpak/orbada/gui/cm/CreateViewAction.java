@@ -7,14 +7,14 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.cm;
+package pl.mpak.orbada.gui.cm;
 
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import orbada.Consts;
-import orbada.gui.PerspectivePanel;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.gui.PerspectivePanel;
 import pl.mpak.orbada.plugins.providers.ViewProvider;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.Action;

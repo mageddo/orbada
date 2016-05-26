@@ -6,7 +6,7 @@
 package pl.mpak.orbada.firebird.gui.procedures;
 
 import java.awt.Component;
-import orbada.gui.OrbadaTabbedPane;
+import pl.mpak.orbada.gui.OrbadaTabbedPane;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 
 /**

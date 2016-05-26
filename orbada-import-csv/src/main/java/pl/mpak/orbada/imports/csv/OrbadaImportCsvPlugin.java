@@ -3,7 +3,7 @@ package pl.mpak.orbada.imports.csv;
 import java.util.ArrayList;
 import pl.mpak.orbada.imports.csv.services.ImportFromCsv;
 import java.util.List;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.plugins.OrbadaPlugin;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
 import pl.mpak.plugins.spi.IPlugin;

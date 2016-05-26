@@ -7,7 +7,7 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.comps.table;
+package pl.mpak.orbada.gui.comps.table;
 
 import java.awt.Font;
 import java.awt.FontMetrics;
@@ -16,9 +16,12 @@ import java.util.EventObject;
 import java.util.concurrent.Callable;
 import javax.swing.table.TableColumnModel;
 
-import orbada.Consts;
-import orbada.core.Application;
-import orbada.gui.comps.table.cm.ColumnFitWidthAction;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.comps.table.cm.ColumnFitWidthAction;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.comps.table.cm.ColumnFitWidthAction;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.usedb.core.DefaultQueryListener;

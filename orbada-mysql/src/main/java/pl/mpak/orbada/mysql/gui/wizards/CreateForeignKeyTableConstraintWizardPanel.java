@@ -7,7 +7,7 @@ import javax.swing.JComboBox;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 
-import orbada.gui.comps.table.Table;
+import pl.mpak.orbada.gui.comps.table.Table;
 import pl.mpak.orbada.mysql.OrbadaMySQLPlugin;
 import pl.mpak.orbada.mysql.gui.util.TableColumnComboBoxModel;
 import pl.mpak.orbada.mysql.gui.util.TableComboBoxModel;

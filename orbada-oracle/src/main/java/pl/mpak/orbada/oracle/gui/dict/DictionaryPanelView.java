@@ -5,14 +5,14 @@ import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import orbada.gui.comps.table.ViewTable;
-import orbada.gui.ContentPanel;
-import orbada.gui.IRootTabObjectInfo;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.gui.ContentPanel;
+import pl.mpak.orbada.gui.IRootTabObjectInfo;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import orbada.gui.OrbadaTabbedPane;
+import pl.mpak.orbada.gui.OrbadaTabbedPane;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDefComponent;

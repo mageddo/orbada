@@ -1,6 +1,6 @@
 package pl.mpak.orbada.mysql.gui.wizards;
 
-import orbada.gui.comps.table.Table;
+import pl.mpak.orbada.gui.comps.table.Table;
 import pl.mpak.orbada.universal.gui.wizards.SqlCodeWizardPanel;
 import javax.swing.DefaultCellEditor;
 import javax.swing.table.DefaultTableModel;

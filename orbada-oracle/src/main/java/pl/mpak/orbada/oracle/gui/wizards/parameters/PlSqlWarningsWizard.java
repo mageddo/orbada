@@ -2,7 +2,7 @@ package pl.mpak.orbada.oracle.gui.wizards.parameters;
 
 import javax.swing.DefaultCellEditor;
 
-import orbada.gui.comps.table.Table;
+import pl.mpak.orbada.gui.comps.table.Table;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.services.OracleDbInfoProvider;
 import pl.mpak.orbada.universal.gui.wizards.SqlCodeWizardPanel;

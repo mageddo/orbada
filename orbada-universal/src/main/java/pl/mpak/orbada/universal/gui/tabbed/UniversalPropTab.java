@@ -4,10 +4,10 @@ import java.io.IOException;
 import java.sql.ResultSet;
 import javax.swing.JToolBar;
 
-import orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import orbada.gui.ITabObjectInfo;
-import orbada.gui.cm.ComponentActionsAction;
+import pl.mpak.orbada.gui.ITabObjectInfo;
+import pl.mpak.orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;

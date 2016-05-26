@@ -5,7 +5,7 @@
 
 package pl.mpak.orbada.laf.jgoodies.services;
 
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.laf.jgoodies.starters.Plastic3DLookAndFeelStarter;
 import pl.mpak.orbada.plugins.providers.ILookAndFeelStarter;
 import pl.mpak.orbada.plugins.providers.LookAndFeelProvider;

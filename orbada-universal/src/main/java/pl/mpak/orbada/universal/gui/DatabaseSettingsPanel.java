@@ -9,7 +9,7 @@ package pl.mpak.orbada.universal.gui;
 import java.io.File;
 import java.io.IOException;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.plugins.ISettingsComponent;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;

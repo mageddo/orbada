@@ -7,7 +7,7 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.comps;
+package pl.mpak.orbada.gui.comps;
 
 import java.util.EventListener;
 import java.util.EventObject;

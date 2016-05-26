@@ -14,7 +14,7 @@ import java.util.Map;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.AbstractTableModel;
 
-import orbada.gui.comps.table.Table;
+import pl.mpak.orbada.gui.comps.table.Table;
 import pl.mpak.mpak.oracle.tune.OrbadaOracleTunePlugin;
 import pl.mpak.mpak.oracle.tune.Sql;
 import pl.mpak.usedb.core.Database;

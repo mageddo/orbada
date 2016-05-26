@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.StringTokenizer;
-import orbada.gui.comps.table.QueryTablePanel;
+import pl.mpak.orbada.gui.comps.table.QueryTablePanel;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.oracle.dbinfo.OracleDatabaseInfo;

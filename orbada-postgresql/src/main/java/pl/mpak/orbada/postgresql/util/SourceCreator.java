@@ -1,7 +1,7 @@
 package pl.mpak.orbada.postgresql.util;
 
-import orbada.core.Application;
-import orbada.gui.comps.AbsOrbadaSyntaxTextArea;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.comps.AbsOrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.PleaseWait;
 import pl.mpak.orbada.postgresql.OrbadaPostgreSQLPlugin;
 import pl.mpak.orbada.postgresql.Sql;

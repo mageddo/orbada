@@ -6,13 +6,14 @@
  * To change this template, choose Tools | Template Manager
  * and open the template in the editor.
  */
-package orbada.gui.comps.table;
+package pl.mpak.orbada.gui.comps.table;
 
 import javax.swing.JTable;
 
-import orbada.gui.comps.table.cm.RestoreOryginalViewTableColumnPropsAction;
-import orbada.gui.comps.table.cm.PasteFindTextAction;
-import orbada.gui.comps.table.cm.SelectTableColumnAction;
+import pl.mpak.orbada.gui.comps.table.cm.RestoreOryginalViewTableColumnPropsAction;
+import pl.mpak.orbada.gui.comps.table.cm.PasteFindTextAction;
+import pl.mpak.orbada.gui.comps.table.cm.SelectTableColumnAction;
+import pl.mpak.orbada.gui.comps.table.cm.SelectTableColumnAction;
 
 /**
  *

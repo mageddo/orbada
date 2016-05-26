@@ -1,4 +1,4 @@
-package orbada.gui.schemas;
+package pl.mpak.orbada.gui.schemas;
 
 import java.awt.Component;
 import javax.swing.DefaultListCellRenderer;
@@ -7,8 +7,8 @@ import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JList;
 
-import orbada.Consts;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.usedb.core.Query;

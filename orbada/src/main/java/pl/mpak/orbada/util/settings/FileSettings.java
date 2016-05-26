@@ -7,14 +7,15 @@
  * and open the template in the editor.
  */
 
-package orbada.util.settings;
+package pl.mpak.orbada.util.settings;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.Properties;
 
-import orbada.core.Application;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.util.variant.Variant;
 
 /**

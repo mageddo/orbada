@@ -4,10 +4,10 @@
  * Created on 27 grudzieñ 2007, 21:54
  */
 
-package orbada.gui.patt;
+package pl.mpak.orbada.gui.patt;
 
-import orbada.Consts;
-import orbada.gui.LoginInfo;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.gui.LoginInfo;
 
 import java.util.concurrent.Callable;
 import javax.swing.JComponent;

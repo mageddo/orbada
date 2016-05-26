@@ -10,7 +10,7 @@ import javax.swing.AbstractButton;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.plugins.ISettingsComponent;
 import pl.mpak.orbada.plugins.queue.PluginMessage;

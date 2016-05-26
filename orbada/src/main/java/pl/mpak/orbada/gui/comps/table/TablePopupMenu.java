@@ -6,7 +6,7 @@
  * To change this template, choose Tools | Template Manager
  * and open the template in the editor.
  */
-package orbada.gui.comps.table;
+package pl.mpak.orbada.gui.comps.table;
 
 import java.awt.Component;
 import javax.swing.JComponent;
@@ -18,19 +18,28 @@ import javax.swing.event.MenuListener;
 import javax.swing.event.PopupMenuEvent;
 import javax.swing.event.PopupMenuListener;
 
-import orbada.Consts;
-import orbada.core.Application;
-import orbada.gui.comps.table.cm.ColumnMoveToCurrentAction;
-import orbada.gui.comps.table.cm.ColumnMoveToEndAction;
-import orbada.gui.comps.table.cm.RowDecHeightAction;
-import orbada.gui.comps.table.cm.RowIncHeightAction;
-import orbada.gui.comps.table.cm.ColumnDecWidthAction;
-import orbada.gui.comps.table.cm.ColumnFitWidthAction;
-import orbada.gui.comps.table.cm.ColumnIncWidthAction;
-import orbada.gui.comps.table.cm.CopyCellToClipboardAction;
-import orbada.gui.comps.table.cm.RefreshAction;
-import orbada.gui.comps.table.cm.ViewQueryFieldAction;
-import orbada.gui.comps.table.cm.ViewValueAction;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.comps.table.cm.ColumnMoveToCurrentAction;
+import pl.mpak.orbada.gui.comps.table.cm.ColumnMoveToEndAction;
+import pl.mpak.orbada.gui.comps.table.cm.RowDecHeightAction;
+import pl.mpak.orbada.gui.comps.table.cm.RowIncHeightAction;
+import pl.mpak.orbada.gui.comps.table.cm.ColumnDecWidthAction;
+import pl.mpak.orbada.gui.comps.table.cm.ColumnFitWidthAction;
+import pl.mpak.orbada.gui.comps.table.cm.ColumnIncWidthAction;
+import pl.mpak.orbada.gui.comps.table.cm.CopyCellToClipboardAction;
+import pl.mpak.orbada.gui.comps.table.cm.RefreshAction;
+import pl.mpak.orbada.gui.comps.table.cm.ViewQueryFieldAction;
+import pl.mpak.orbada.gui.comps.table.cm.ViewValueAction;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.comps.table.cm.ColumnDecWidthAction;
+import pl.mpak.orbada.gui.comps.table.cm.ColumnIncWidthAction;
+import pl.mpak.orbada.gui.comps.table.cm.ColumnMoveToCurrentAction;
+import pl.mpak.orbada.gui.comps.table.cm.CopyCellToClipboardAction;
+import pl.mpak.orbada.gui.comps.table.cm.RowDecHeightAction;
+import pl.mpak.orbada.gui.comps.table.cm.RowIncHeightAction;
+import pl.mpak.orbada.gui.comps.table.cm.ViewQueryFieldAction;
+import pl.mpak.orbada.gui.comps.table.cm.ViewValueAction;
 import pl.mpak.orbada.plugins.providers.ExportTableActionProvider;
 import pl.mpak.orbada.plugins.providers.TableActionProvider;
 import pl.mpak.sky.gui.swing.SwingUtil;

@@ -1,4 +1,4 @@
-package orbada.gui.schemas;
+package pl.mpak.orbada.gui.schemas;
 
 import java.awt.Component;
 import java.awt.event.ItemEvent;
@@ -14,12 +14,14 @@ import javax.swing.AbstractButton;
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 
-import orbada.db.DriverClassLoaderManager;
-import orbada.Consts;
-import orbada.core.Application;
-import orbada.db.ConnectionFactory;
+import pl.mpak.orbada.db.DriverClassLoaderManager;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.db.ConnectionFactory;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.db.Driver;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.db.InternalDatabase;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.db.Schema;
 import pl.mpak.orbada.plugins.ISettingsComponent;
 import pl.mpak.orbada.plugins.providers.SchemaSettingsProvider;

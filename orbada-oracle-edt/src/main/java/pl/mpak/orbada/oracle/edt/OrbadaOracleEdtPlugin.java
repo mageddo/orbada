@@ -2,7 +2,7 @@ package pl.mpak.orbada.oracle.edt;
 
 import java.util.ArrayList;
 import java.util.List;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.oracle.edt.services.OracleDatabaseProvider;
 import pl.mpak.orbada.plugins.OrbadaPlugin;
 import pl.mpak.orbada.plugins.queue.PluginMessage;

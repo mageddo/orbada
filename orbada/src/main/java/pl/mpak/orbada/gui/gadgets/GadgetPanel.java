@@ -4,16 +4,19 @@
  * Created on 12 wrzesieñ 2008, 18:14
  */
 
-package orbada.gui.gadgets;
+package pl.mpak.orbada.gui.gadgets;
 
 import java.awt.Component;
 import java.awt.Dimension;
 import java.io.Closeable;
 import java.io.IOException;
 
-import orbada.Consts;
-import orbada.gui.GadgetAccesibilities;
-import orbada.gui.PerspectivePanel;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.gui.GadgetAccesibilities;
+import pl.mpak.orbada.gui.PerspectivePanel;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.gui.GadgetAccesibilities;
+import pl.mpak.orbada.gui.PerspectivePanel;
 import pl.mpak.orbada.plugins.providers.PerpectiveGadgetProvider;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.util.Configurable;

@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package orbada.services;
+package pl.mpak.orbada.services;
 
 import java.awt.FontMetrics;
 import java.awt.Graphics2D;
@@ -11,7 +11,7 @@ import java.awt.Image;
 import java.awt.Rectangle;
 import java.util.ArrayList;
 
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.plugins.PleaseWait;
 import pl.mpak.orbada.plugins.providers.PleaseWaitRendererProvider;
 import pl.mpak.sky.gui.swing.ImageManager;

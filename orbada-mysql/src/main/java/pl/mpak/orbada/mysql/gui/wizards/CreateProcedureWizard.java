@@ -1,7 +1,7 @@
 package pl.mpak.orbada.mysql.gui.wizards;
 
 import java.util.HashMap;
-import orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.db.Template;
 import pl.mpak.orbada.mysql.OrbadaMySQLPlugin;
 import pl.mpak.orbada.mysql.services.MySQLTemplatesSettingsProvider;

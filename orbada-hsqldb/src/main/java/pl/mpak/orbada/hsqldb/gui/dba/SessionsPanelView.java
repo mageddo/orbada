@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import javax.swing.JLabel;
 import javax.swing.JTable;
-import orbada.gui.OrbadaTabbedPane;
+import pl.mpak.orbada.gui.OrbadaTabbedPane;
 import pl.mpak.orbada.hsqldb.OrbadaHSqlDbPlugin;
 import pl.mpak.orbada.hsqldb.Sql;
 import pl.mpak.orbada.hsqldb.services.HSqlDbInfoProvider;

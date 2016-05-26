@@ -1,12 +1,13 @@
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
 import java.io.IOException;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JTextField;
 
-import orbada.Consts;
-import orbada.gui.cm.ComponentActionsAction;
-import orbada.gui.comps.table.DataTable;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import pl.mpak.orbada.gui.comps.table.DataTable;
+import pl.mpak.orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;

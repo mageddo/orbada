@@ -3,10 +3,11 @@
  * and open the template in the editor.
  */
 
-package orbada.util;
+package pl.mpak.orbada.util;
 
 import java.math.BigInteger;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.db.InternalDatabase;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.plugins.GeneratorErrorMessages;
 import pl.mpak.orbada.plugins.GeneratorException;
 import pl.mpak.orbada.plugins.IGenerator;

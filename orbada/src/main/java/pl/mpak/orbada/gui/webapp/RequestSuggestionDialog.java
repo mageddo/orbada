@@ -4,12 +4,13 @@
  * Created on 11 styczeñ 2009, 15:19
  */
 
-package orbada.gui.webapp;
+package pl.mpak.orbada.gui.webapp;
 
 import javax.swing.JComponent;
 
-import orbada.Consts;
-import orbada.core.Application;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.IWebAppAccessibilities;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;

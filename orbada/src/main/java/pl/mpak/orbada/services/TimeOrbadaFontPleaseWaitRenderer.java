@@ -3,13 +3,14 @@
  * and open the template in the editor.
  */
 
-package orbada.services;
+package pl.mpak.orbada.services;
 
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 
-import orbada.Consts;
-import orbada.core.Application;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.PleaseWait;
 import pl.mpak.orbada.plugins.providers.PleaseWaitRendererProvider;
 import pl.mpak.util.StringManager;

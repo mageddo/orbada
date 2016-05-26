@@ -1,11 +1,11 @@
-package orbada.util.settings;
+package pl.mpak.orbada.util.settings;
 
 import java.util.HashMap;
 import java.util.Iterator;
 
-import orbada.core.Application;
-import orbada.db.InternalDatabase;
-import orbada.db.OrbadaDatabase;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.db.InternalDatabase;
+import pl.mpak.orbada.db.OrbadaDatabase;
 import pl.mpak.usedb.core.Command;
 import pl.mpak.usedb.core.Query;
 import pl.mpak.util.ExceptionUtil;

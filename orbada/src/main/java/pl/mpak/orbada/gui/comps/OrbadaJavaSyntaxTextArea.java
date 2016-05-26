@@ -1,6 +1,7 @@
-package orbada.gui.comps;
+package pl.mpak.orbada.gui.comps;
 
-import orbada.core.Application;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.providers.OrbadaJavaSyntaxTextAreaProvider;
 
 /**

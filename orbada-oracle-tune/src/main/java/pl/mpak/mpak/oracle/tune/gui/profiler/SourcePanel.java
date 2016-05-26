@@ -14,7 +14,7 @@ import java.awt.Color;
 import java.io.Closeable;
 import java.io.IOException;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.oracle.util.SourceCreator;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.sky.gui.swing.syntax.SyntaxDocument.LineMark;

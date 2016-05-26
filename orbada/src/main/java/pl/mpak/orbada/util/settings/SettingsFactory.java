@@ -7,9 +7,10 @@
  * and open the template in the editor.
  */
 
-package orbada.util.settings;
+package pl.mpak.orbada.util.settings;
 
-import orbada.core.Application;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.util.ExceptionUtil;
 

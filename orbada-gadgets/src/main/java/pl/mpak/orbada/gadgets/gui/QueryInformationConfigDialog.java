@@ -11,7 +11,7 @@ import javax.swing.JComponent;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.AbstractTableModel;
 
-import orbada.gui.comps.table.Table;
+import pl.mpak.orbada.gui.comps.table.Table;
 import pl.mpak.orbada.db.DriverType;
 import pl.mpak.orbada.gadgets.OrbadaGadgetsPlugin;
 import pl.mpak.orbada.gadgets.db.OgQueryInfoPerspectiveUpdater;

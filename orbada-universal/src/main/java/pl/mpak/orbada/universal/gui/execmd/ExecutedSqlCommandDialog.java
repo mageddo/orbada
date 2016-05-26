@@ -13,9 +13,9 @@ import javax.swing.JTable;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
-import orbada.gui.comps.table.DataTable;
-import orbada.core.Application;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.table.DataTable;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
 import pl.mpak.sky.gui.mr.ModalResult;

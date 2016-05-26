@@ -2,7 +2,7 @@ package pl.mpak.orbada.firebird.services;
 
 import javax.swing.JMenu;
 import javax.swing.JToolBar;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.firebird.OrbadaFirebirdPlugin;
 import pl.mpak.orbada.firebird.cm.CreateDomainAction;
 import pl.mpak.orbada.firebird.cm.CreateExceptionAction;

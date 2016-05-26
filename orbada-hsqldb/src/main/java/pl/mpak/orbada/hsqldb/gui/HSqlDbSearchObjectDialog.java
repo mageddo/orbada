@@ -8,7 +8,7 @@ package pl.mpak.orbada.hsqldb.gui;
 
 import javax.swing.JComponent;
 
-import orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.hsqldb.OrbadaHSqlDbPlugin;
 import pl.mpak.orbada.hsqldb.Sql;
 import pl.mpak.orbada.hsqldb.gui.aliases.AliasesPanelView;

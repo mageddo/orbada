@@ -9,7 +9,7 @@ package pl.mpak.orbada.universal.gui.history;
 import java.io.Closeable;
 import java.io.IOException;
 
-import orbada.gui.comps.table.Table;
+import pl.mpak.orbada.gui.comps.table.Table;
 import pl.mpak.usedb.core.Command;
 import pl.mpak.usedb.core.Query;
 

@@ -8,7 +8,7 @@ package pl.mpak.orbada.todo.gui;
 
 import java.beans.IntrospectionException;
 import javax.swing.JComponent;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.todo.OrbadaTodoPlugin;
 import pl.mpak.orbada.todo.db.Todo;
 import pl.mpak.sky.gui.mr.ModalResult;

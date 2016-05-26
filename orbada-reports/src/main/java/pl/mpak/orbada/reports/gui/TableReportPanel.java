@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import orbada.gui.comps.table.DataTable;
+import pl.mpak.orbada.gui.comps.table.DataTable;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.reports.Sql;
 import pl.mpak.orbada.reports.db.ReportRecord;

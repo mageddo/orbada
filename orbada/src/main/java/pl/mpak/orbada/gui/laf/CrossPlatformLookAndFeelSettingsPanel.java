@@ -9,15 +9,17 @@
  * Created on 2010-10-31, 18:33:36
  */
 
-package orbada.gui.laf;
+package pl.mpak.orbada.gui.laf;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.Properties;
 
-import orbada.Consts;
-import orbada.gui.laf.services.CrossPlatformLookAndFeelService;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.gui.laf.services.CrossPlatformLookAndFeelService;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.gui.laf.services.CrossPlatformLookAndFeelService;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.plugins.ISettingsComponent;
 import pl.mpak.sky.gui.mr.ModalResult;

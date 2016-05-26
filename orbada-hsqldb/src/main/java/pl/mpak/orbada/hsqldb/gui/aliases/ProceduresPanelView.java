@@ -11,11 +11,11 @@ import javax.swing.JPanel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import orbada.gui.comps.table.ViewTable;
-import orbada.gui.IRootTabObjectInfo;
-import orbada.gui.ITabObjectInfo;
-import orbada.gui.cm.ComponentActionsAction;
-import orbada.gui.util.SimpleSelectDialog;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.gui.IRootTabObjectInfo;
+import pl.mpak.orbada.gui.ITabObjectInfo;
+import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import pl.mpak.orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.hsqldb.OrbadaHSqlDbPlugin;
 import pl.mpak.orbada.hsqldb.Sql;
 import pl.mpak.orbada.hsqldb.cm.GrantClassWizardAction;

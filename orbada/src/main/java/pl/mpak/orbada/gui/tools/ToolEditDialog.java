@@ -4,7 +4,7 @@
  * Created on 11 paüdziernik 2007, 22:33
  */
 
-package orbada.gui.tools;
+package pl.mpak.orbada.gui.tools;
 
 import java.beans.IntrospectionException;
 import java.io.File;
@@ -13,10 +13,11 @@ import java.io.IOException;
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 
-import orbada.Consts;
-import orbada.core.Application;
-import orbada.gui.comps.OrbadaJavaSyntaxTextArea;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea;
+import pl.mpak.orbada.db.InternalDatabase;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.db.Tool;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;

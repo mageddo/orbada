@@ -21,7 +21,7 @@ import javax.swing.text.BadLocationException;
 import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyleConstants;
 
-import orbada.gui.comps.OrbadaJavaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea;
 import pl.mpak.orbada.beanshell.BeanShellInterpreter;
 import pl.mpak.orbada.beanshell.OrbadaBeanshellPlugin;
 import pl.mpak.orbada.plugins.IApplication;

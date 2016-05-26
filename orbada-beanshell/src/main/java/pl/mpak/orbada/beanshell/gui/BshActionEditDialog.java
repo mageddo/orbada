@@ -10,10 +10,10 @@ import java.awt.event.KeyEvent;
 import java.beans.IntrospectionException;
 import javax.swing.JComponent;
 
-import orbada.gui.comps.OrbadaJavaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea;
 import pl.mpak.orbada.beanshell.OrbadaBeanshellPlugin;
 import pl.mpak.orbada.beanshell.db.BshActionRecord;
-import orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.sky.gui.mr.ModalResult;

@@ -8,7 +8,7 @@ package pl.mpak.orbada.derbydb.util;
 
 import javax.swing.JComponent;
 
-import orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.derbydb.DerbyDbSql;
 import pl.mpak.orbada.derbydb.OrbadaDerbyDbPlugin;
 import pl.mpak.orbada.derbydb.procedures.FunctionsPanelView;

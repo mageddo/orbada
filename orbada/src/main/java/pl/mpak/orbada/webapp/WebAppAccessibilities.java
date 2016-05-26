@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package orbada.webapp;
+package pl.mpak.orbada.webapp;
 
 import java.awt.Desktop;
 import java.awt.Toolkit;
@@ -11,7 +11,8 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.net.URI;
 
-import orbada.core.Application;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.IWebAppAccessibilities;
 import pl.mpak.util.ExceptionUtil;
 import pl.mpak.util.StringUtil;

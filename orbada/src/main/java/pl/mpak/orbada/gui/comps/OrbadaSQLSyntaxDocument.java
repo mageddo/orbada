@@ -7,13 +7,13 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.comps;
+package pl.mpak.orbada.gui.comps;
 
 import java.sql.ResultSet;
 
-import orbada.Consts;
-import orbada.core.Application;
-import orbada.db.OrbadaDatabase;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.db.OrbadaDatabase;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.providers.DatabaseInfoProvider;
 import pl.mpak.sky.gui.swing.syntax.SQLSyntaxDocument;

@@ -9,7 +9,7 @@ package pl.mpak.orbada.universal.gui;
 import java.util.concurrent.Callable;
 import javax.swing.AbstractButton;
 import javax.swing.JComponent;
-import orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
 import pl.mpak.sky.gui.mr.ModalResult;

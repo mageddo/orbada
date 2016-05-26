@@ -3,7 +3,7 @@ package pl.mpak.orbada.snippets.gui;
 import java.beans.IntrospectionException;
 import javax.swing.JComponent;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.snippets.OrbadaSnippetsPlugin;
 import pl.mpak.orbada.snippets.db.SnippetRecord;

@@ -1,15 +1,17 @@
-package orbada.db;
+package pl.mpak.orbada.db;
 
-import orbada.Consts;
-import orbada.ErrorMessages;
-import orbada.OrbadaException;
-import orbada.core.Application;
-import orbada.gui.LoginDialog;
-import orbada.gui.LoginInfo;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.ErrorMessages;
+import pl.mpak.orbada.OrbadaException;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.LoginDialog;
+import pl.mpak.orbada.gui.LoginInfo;
 import org.apache.log4j.Logger;
 import pl.mpak.orbada.db.Orbada;
 import pl.mpak.orbada.db.User;
-import orbada.util.ScriptUtil;
+import pl.mpak.orbada.util.ScriptUtil;
+import pl.mpak.orbada.gui.LoginDialog;
+import pl.mpak.orbada.util.ScriptUtil;
 import pl.mpak.sky.gui.swing.MessageBox;
 import pl.mpak.usedb.core.Command;
 import pl.mpak.usedb.core.Database;
@@ -72,7 +74,7 @@ public class InternalDatabase extends OrbadaDatabase {
       orbadaDatabase.setPublicName("Orbada Internal Connection");
       orbadaDatabase.setAutoCommit(true);
       orbadaDatabase.setAutoConnect(true);
-      for (String par : Database.useDbParameters) {
+      for (String par : useDbParameters) {
         String value = Application.get().getProperty(par);
         if (!StringUtil.isEmpty(value)) {
           orbadaDatabase.getUserProperties().put(par, value);

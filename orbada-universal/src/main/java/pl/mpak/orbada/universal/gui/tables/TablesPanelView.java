@@ -13,12 +13,12 @@ import javax.swing.JPanel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import orbada.gui.comps.table.ViewTable;
-import orbada.gui.ContentPanel;
-import orbada.gui.util.SimpleSelectDialog;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.gui.ContentPanel;
+import pl.mpak.orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
-import orbada.gui.ITabObjectInfo;
+import pl.mpak.orbada.gui.ITabObjectInfo;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.sky.gui.swing.TabCloseComponent;
 import pl.mpak.usedb.UseDBException;

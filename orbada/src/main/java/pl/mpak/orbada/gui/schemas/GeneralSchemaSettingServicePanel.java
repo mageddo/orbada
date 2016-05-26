@@ -9,10 +9,11 @@
  * Created on 2011-06-04, 17:29:43
  */
 
-package orbada.gui.schemas;
+package pl.mpak.orbada.gui.schemas;
 
-import orbada.Consts;
-import orbada.core.Application;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.ISettingsComponent;
 import pl.mpak.util.StringManager;

@@ -9,9 +9,9 @@
 
 package pl.mpak.orbada.todo.db;
 
-import orbada.Consts;
-import orbada.core.Application;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.usedb.UseDBException;
 import pl.mpak.usedb.br.BufferedRecord;
 import pl.mpak.usedb.core.Command;

@@ -10,7 +10,7 @@ import java.util.Iterator;
 import javax.swing.JComponent;
 import javax.swing.table.DefaultTableModel;
 
-import orbada.gui.comps.table.Table;
+import pl.mpak.orbada.gui.comps.table.Table;
 import pl.mpak.orbada.programmers.OrbadaProgrammersPlugin;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.util.StringManager;

@@ -11,7 +11,7 @@ import java.io.FileOutputStream;
 import java.util.HashMap;
 import java.util.Properties;
 import javax.swing.DefaultComboBoxModel;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.laf.jtatoo.OrbadaLafJTatooPlugin;
 import pl.mpak.orbada.laf.jtatoo.services.JTatooAcrylLookAndFeelService;
 import pl.mpak.orbada.laf.jtatoo.services.JTatooAeroLookAndFeelService;

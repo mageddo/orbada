@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package orbada.util;
+package pl.mpak.orbada.util;
 
 import java.awt.Component;
 import java.io.File;
@@ -16,7 +16,7 @@ import javax.swing.FocusManager;
 import javax.swing.Icon;
 import javax.swing.JSplitPane;
 import javax.swing.JTabbedPane;
-import orbada.gui.PerspectivePanel;
+import pl.mpak.orbada.gui.PerspectivePanel;
 import pl.mpak.orbada.plugins.providers.ViewProvider;
 import pl.mpak.util.ExceptionUtil;
 

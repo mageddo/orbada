@@ -6,14 +6,14 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.io.IOException;
 
-import orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.firebird.OrbadaFirebirdPlugin;
 import pl.mpak.orbada.firebird.Sql;
 import pl.mpak.orbada.firebird.gui.wizards.CommentWizard;
 import pl.mpak.orbada.firebird.gui.wizards.RenameTableColumnWizard;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import orbada.gui.ITabObjectInfo;
-import orbada.gui.cm.ComponentActionsAction;
+import pl.mpak.orbada.gui.ITabObjectInfo;
+import pl.mpak.orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDefComponent;

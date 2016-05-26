@@ -15,7 +15,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.Properties;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.laf.nimrod.OrbadaLafNimRODPlugin;
 import pl.mpak.orbada.laf.nimrod.services.NimRODLookAndFeelService;
 import pl.mpak.orbada.laf.nimrod.starters.NimRODLookAndFeelStarter;

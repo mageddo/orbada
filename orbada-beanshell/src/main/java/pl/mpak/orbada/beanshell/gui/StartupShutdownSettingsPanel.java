@@ -1,6 +1,6 @@
 package pl.mpak.orbada.beanshell.gui;
 
-import orbada.gui.comps.OrbadaJavaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea;
 import pl.mpak.orbada.beanshell.*;
 import java.io.File;
 import java.io.IOException;

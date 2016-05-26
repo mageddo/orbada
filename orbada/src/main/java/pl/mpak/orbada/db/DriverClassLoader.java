@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package orbada.db;
+package pl.mpak.orbada.db;
 
 import java.io.File;
 import java.net.MalformedURLException;

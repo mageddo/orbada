@@ -8,7 +8,7 @@ import java.awt.Color;
 import java.awt.Component;
 import javax.swing.JLabel;
 import javax.swing.JTable;
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.postgresql.OrbadaPostgreSQLPlugin;
 import pl.mpak.orbada.postgresql.Sql;

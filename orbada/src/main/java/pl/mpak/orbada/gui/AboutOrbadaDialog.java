@@ -9,7 +9,7 @@
  * Created on 2009-05-12, 18:19:55
  */
 
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
 import java.awt.Dimension;
 import java.awt.Graphics2D;
@@ -19,9 +19,10 @@ import javax.swing.AbstractButton;
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.g2.G2Util;
-import orbada.core.Application;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.util.StringManager;
 import pl.mpak.util.StringManagerFactory;

@@ -1,4 +1,4 @@
-package orbada;
+package pl.mpak.orbada;
 
 public class ErrorMessages extends pl.mpak.util.ErrorMessages {
   

@@ -26,10 +26,10 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableModel;
 
-import orbada.gui.comps.table.Table;
-import orbada.db.ConnectionFactory;
-import orbada.gui.cm.ComponentActionsAction;
-import orbada.gui.comps.table.SearchOnTable;
+import pl.mpak.orbada.gui.comps.table.Table;
+import pl.mpak.orbada.db.ConnectionFactory;
+import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import pl.mpak.orbada.gui.comps.table.SearchOnTable;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.dba.OrbadaOracleDbaPlugin;
 import pl.mpak.orbada.oracle.dba.Sql;

@@ -5,7 +5,7 @@ import java.util.List;
 import pl.mpak.drinkmaster.services.DrinkView;
 import pl.mpak.orbada.plugins.OrbadaPlugin;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
-import orbada.util.ScriptUtil;
+import pl.mpak.orbada.util.ScriptUtil;
 import pl.mpak.plugins.spi.IPlugin;
 import pl.mpak.plugins.spi.IPluginProvider;
 import pl.mpak.util.StringManager;

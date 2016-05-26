@@ -7,7 +7,7 @@ package pl.mpak.orbada.laf.tinylaf.services;
 
 import java.awt.Component;
 import javax.swing.Icon;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.laf.tinylaf.OrbadaLafTinyLaFPlugin;
 import pl.mpak.orbada.laf.tinylaf.gui.GlobalOptionsSettingsPanel;
 import pl.mpak.orbada.plugins.providers.SettingsProvider;

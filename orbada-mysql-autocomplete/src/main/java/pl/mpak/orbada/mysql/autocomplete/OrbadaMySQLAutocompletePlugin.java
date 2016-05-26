@@ -2,8 +2,8 @@ package pl.mpak.orbada.mysql.autocomplete;
 
 import java.util.ArrayList;
 import java.util.List;
-import orbada.Consts;
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.mysql.autocomplete.services.MySQLAutoCompleteDatabaseService;
 import pl.mpak.orbada.mysql.autocomplete.services.MySQLAutoCompleteService;
 import pl.mpak.orbada.plugins.OrbadaPlugin;

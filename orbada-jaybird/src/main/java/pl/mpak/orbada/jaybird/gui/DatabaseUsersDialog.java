@@ -20,10 +20,10 @@ import javax.swing.JComponent;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableModel;
 
-import orbada.gui.comps.table.Table;
+import pl.mpak.orbada.gui.comps.table.Table;
 import org.firebirdsql.management.FBUserManager;
 import org.firebirdsql.management.User;
-import orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.jaybird.OrbadaJaybirdPlugin;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.sky.gui.mr.ModalResult;

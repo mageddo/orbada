@@ -1,8 +1,8 @@
 package pl.mpak.orbada.firebird.util;
 
 import pl.mpak.orbada.firebird.Sql;
-import orbada.gui.comps.OrbadaJavaSyntaxTextArea;
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.sky.gui.swing.syntax.SyntaxTextArea;
 import pl.mpak.usedb.core.Database;
 import pl.mpak.usedb.core.Query;

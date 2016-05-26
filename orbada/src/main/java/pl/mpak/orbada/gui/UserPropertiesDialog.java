@@ -4,14 +4,15 @@
  * Created on 9 styczeñ 2008, 18:00
  */
 
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
 import java.beans.IntrospectionException;
 import javax.swing.AbstractButton;
 import javax.swing.JComponent;
 
-import orbada.Consts;
-import orbada.core.Application;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;
 import pl.mpak.sky.gui.swing.SwingUtil;

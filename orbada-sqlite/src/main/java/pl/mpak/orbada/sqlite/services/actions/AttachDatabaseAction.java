@@ -7,8 +7,8 @@ package pl.mpak.orbada.sqlite.services.actions;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import orbada.core.Application;
-import orbada.gui.IRootTabObjectInfo;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.IRootTabObjectInfo;
 import pl.mpak.orbada.plugins.providers.ComponentActionProvider;
 import pl.mpak.orbada.sqlite.OrbadaSQLitePlugin;
 import pl.mpak.orbada.sqlite.gui.wizards.AttachDatabaseWizard;

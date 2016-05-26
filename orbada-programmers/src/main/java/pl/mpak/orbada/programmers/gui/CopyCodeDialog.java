@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.programmers.OrbadaProgrammersPlugin;

@@ -3,13 +3,13 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.services;
+package pl.mpak.orbada.gui.services;
 
 import java.awt.Component;
 import javax.swing.Icon;
 
-import orbada.Consts;
-import orbada.gui.schemas.GeneralSchemaSettingServicePanel;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.gui.schemas.GeneralSchemaSettingServicePanel;
 import pl.mpak.orbada.plugins.providers.SchemaSettingsProvider;
 import pl.mpak.util.StringManager;
 import pl.mpak.util.StringManagerFactory;

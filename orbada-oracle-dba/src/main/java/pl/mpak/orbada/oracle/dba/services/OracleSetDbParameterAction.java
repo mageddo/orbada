@@ -7,8 +7,8 @@ package pl.mpak.orbada.oracle.dba.services;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import orbada.gui.IRootTabObjectInfo;
-import orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.gui.IRootTabObjectInfo;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.dba.OrbadaOracleDbaPlugin;
 import pl.mpak.orbada.oracle.dba.gui.wizards.AlterSetParameterWizard;

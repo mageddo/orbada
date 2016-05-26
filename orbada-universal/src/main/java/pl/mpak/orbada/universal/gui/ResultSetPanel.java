@@ -10,7 +10,7 @@ import java.io.Closeable;
 import java.io.IOException;
 import java.sql.ResultSet;
 
-import orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
 import pl.mpak.usedb.core.Database;
 
 /**

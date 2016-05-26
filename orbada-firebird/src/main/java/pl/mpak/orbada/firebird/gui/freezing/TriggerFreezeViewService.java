@@ -3,7 +3,7 @@ package pl.mpak.orbada.firebird.gui.freezing;
 import java.awt.Component;
 import javax.swing.Icon;
 import pl.mpak.orbada.firebird.gui.triggers.TriggerTabbedPane;
-import orbada.gui.OrbadaTabbedPane;
+import pl.mpak.orbada.gui.OrbadaTabbedPane;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 
 /**

@@ -4,13 +4,13 @@
  * Created on 10 listopad 2007, 20:19
  */
 
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
-import orbada.Consts;
-import orbada.core.Application;
-import orbada.gui.comps.OrbadaSQLSyntaxDocument;
-import orbada.gui.util.FontChooser;
-import orbada.services.DefaultPleaseWaitRenderer;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.comps.OrbadaSQLSyntaxDocument;
+import pl.mpak.orbada.gui.util.FontChooser;
+import pl.mpak.orbada.services.DefaultPleaseWaitRenderer;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -33,12 +33,16 @@ import javax.swing.JPanel;
 import javax.swing.ListCellRenderer;
 import javax.swing.SpinnerNumberModel;
 
-import orbada.gui.comps.OrbadaJavaSyntaxDocument;
-import orbada.gui.comps.table.DataTable;
+import pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxDocument;
+import pl.mpak.orbada.gui.comps.table.DataTable;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.comps.OrbadaSQLSyntaxDocument;
+import pl.mpak.orbada.gui.util.FontChooser;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.PleaseWait;
 import pl.mpak.orbada.plugins.providers.LookAndFeelProvider;
 import pl.mpak.orbada.plugins.providers.PleaseWaitRendererProvider;
+import pl.mpak.orbada.services.DefaultPleaseWaitRenderer;
 import pl.mpak.sky.SkySetting;
 import pl.mpak.sky.gui.swing.ImageManager;
 import pl.mpak.sky.gui.swing.SwingUtil;

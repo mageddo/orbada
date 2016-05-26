@@ -7,7 +7,7 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.comps.table;
+package pl.mpak.orbada.gui.comps.table;
 
 import java.awt.Rectangle;
 import javax.swing.JTable;

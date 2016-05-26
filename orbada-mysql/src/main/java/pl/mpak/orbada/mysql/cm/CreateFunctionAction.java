@@ -7,7 +7,7 @@ package pl.mpak.orbada.mysql.cm;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.mysql.OrbadaMySQLPlugin;
 import pl.mpak.orbada.mysql.gui.functions.FunctionsPanelView;
 import pl.mpak.orbada.mysql.gui.wizards.CreateFunctionWizard;

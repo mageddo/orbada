@@ -2,7 +2,7 @@ package pl.mpak.orbada.sqlite.services;
 
 import javax.swing.JMenu;
 import javax.swing.JToolBar;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.plugins.IDatabaseObject;
 import pl.mpak.orbada.plugins.IPerspectiveAccesibilities;
 import pl.mpak.orbada.plugins.providers.PerspectiveProvider;

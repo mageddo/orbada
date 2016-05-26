@@ -2,11 +2,11 @@ package pl.mpak.orbada.derbydb.procedures;
 
 import java.io.IOException;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.derbydb.DerbyDbSql;
 import pl.mpak.orbada.derbydb.OrbadaDerbyDbPlugin;
-import orbada.gui.ITabObjectInfo;
-import orbada.gui.cm.ComponentActionsAction;
+import pl.mpak.orbada.gui.ITabObjectInfo;
+import pl.mpak.orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.usedb.core.Database;
 import pl.mpak.usedb.core.Query;

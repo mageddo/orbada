@@ -7,12 +7,12 @@ import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
 import pl.mpak.drinkmaster.DrinkMasterPlugin;
 import pl.mpak.drinkmaster.Sql;
 import pl.mpak.drinkmaster.db.DrinkRecord;
 import pl.mpak.drinkmaster.gui.cm.DrinkLetterAction;
-import orbada.gui.cm.ComponentActionsAction;
+import pl.mpak.orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;

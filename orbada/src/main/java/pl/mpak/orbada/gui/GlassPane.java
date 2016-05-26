@@ -2,11 +2,11 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
-import orbada.Consts;
-import orbada.core.Application;
-import orbada.services.DefaultPleaseWaitRenderer;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.services.DefaultPleaseWaitRenderer;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -18,8 +18,10 @@ import java.awt.Toolkit;
 import java.util.ArrayList;
 import javax.swing.JComponent;
 
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.PleaseWait;
 import pl.mpak.orbada.plugins.providers.PleaseWaitRendererProvider;
+import pl.mpak.orbada.services.DefaultPleaseWaitRenderer;
 import pl.mpak.util.timer.Timer;
 import pl.mpak.util.timer.TimerManager;
 

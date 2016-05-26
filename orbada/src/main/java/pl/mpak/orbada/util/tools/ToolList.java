@@ -3,12 +3,12 @@
  * and open the template in the editor.
  */
 
-package orbada.util.tools;
+package pl.mpak.orbada.util.tools;
 
 import java.util.HashMap;
-import orbada.Consts;
-import orbada.core.Application;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.db.Tool;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;

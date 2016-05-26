@@ -25,8 +25,8 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 
-import orbada.gui.comps.table.DataTable;
-import orbada.gui.cm.ComponentActionsAction;
+import pl.mpak.orbada.gui.comps.table.DataTable;
+import pl.mpak.orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.providers.DatabaseInfoProvider;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;

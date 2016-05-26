@@ -11,8 +11,8 @@ import java.util.concurrent.Callable;
 import javax.swing.AbstractButton;
 import javax.swing.JComponent;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
-import orbada.core.Application;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
 import pl.mpak.sky.gui.mr.ModalResult;

@@ -7,12 +7,13 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.cm;
+package pl.mpak.orbada.gui.cm;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import orbada.gui.PerspectivePanel;
-import orbada.gui.gadgets.GadgetPanel;
+import pl.mpak.orbada.gui.PerspectivePanel;
+import pl.mpak.orbada.gui.gadgets.GadgetPanel;
+import pl.mpak.orbada.gui.PerspectivePanel;
 import pl.mpak.orbada.plugins.providers.PerpectiveGadgetProvider;
 import pl.mpak.sky.gui.swing.Action;
 import pl.mpak.util.ExceptionUtil;

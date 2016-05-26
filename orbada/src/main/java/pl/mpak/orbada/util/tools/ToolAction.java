@@ -3,12 +3,13 @@
  * and open the template in the editor.
  */
 
-package orbada.util.tools;
+package pl.mpak.orbada.util.tools;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import orbada.core.Application;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.db.Tool;
 import pl.mpak.sky.gui.swing.Action;
 

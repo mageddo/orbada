@@ -2,8 +2,8 @@ package pl.mpak.orbada.sqlite;
 
 import java.util.ArrayList;
 import java.util.List;
-import orbada.Consts;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.plugins.OrbadaPlugin;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
 import pl.mpak.orbada.sqlite.services.ExplainPlanProvider;

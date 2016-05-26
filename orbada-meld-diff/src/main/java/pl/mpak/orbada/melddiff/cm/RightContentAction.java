@@ -8,7 +8,7 @@ package pl.mpak.orbada.melddiff.cm;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.InputEvent;
-import orbada.gui.PerspectivePanel;
+import pl.mpak.orbada.gui.PerspectivePanel;
 import pl.mpak.orbada.melddiff.OrbadaMeldDiffPlugin;
 import pl.mpak.orbada.melddiff.services.MeldSyntaxService;
 import pl.mpak.sky.gui.swing.Action;

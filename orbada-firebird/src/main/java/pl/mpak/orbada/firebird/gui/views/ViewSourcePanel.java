@@ -2,12 +2,12 @@ package pl.mpak.orbada.firebird.gui.views;
 
 import java.io.IOException;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.firebird.OrbadaFirebirdPlugin;
 import pl.mpak.orbada.firebird.util.SourceCreator;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import orbada.gui.ITabObjectInfo;
-import orbada.gui.cm.ComponentActionsAction;
+import pl.mpak.orbada.gui.ITabObjectInfo;
+import pl.mpak.orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;
 import pl.mpak.sky.gui.swing.SwingUtil;

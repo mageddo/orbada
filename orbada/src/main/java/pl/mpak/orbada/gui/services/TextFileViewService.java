@@ -1,10 +1,11 @@
-package orbada.gui.services;
+package pl.mpak.orbada.gui.services;
 
 import java.awt.Component;
 import java.io.File;
 import javax.swing.Icon;
-import orbada.Consts;
-import orbada.gui.TextFileViewPanel;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.gui.TextFileViewPanel;
+import pl.mpak.orbada.gui.TextFileViewPanel;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.plugins.providers.ViewProvider;
 import pl.mpak.usedb.core.Database;

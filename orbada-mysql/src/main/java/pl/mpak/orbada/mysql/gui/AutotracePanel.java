@@ -13,7 +13,7 @@ import java.util.HashMap;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.AbstractTableModel;
 
-import orbada.gui.comps.table.Table;
+import pl.mpak.orbada.gui.comps.table.Table;
 import pl.mpak.orbada.mysql.OrbadaMySQLPlugin;
 import pl.mpak.orbada.mysql.Sql;
 import pl.mpak.usedb.core.Database;

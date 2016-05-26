@@ -2,7 +2,7 @@ package pl.mpak.orbada.oracle.gui.wizards;
 
 import java.util.HashMap;
 import javax.swing.JTextField;
-import orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.db.Template;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.services.OracleTemplatesSettingsProvider;

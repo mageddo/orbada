@@ -7,7 +7,7 @@ import pl.mpak.orbada.derbydb.services.DerbyDbProceduresView;
 import pl.mpak.orbada.derbydb.services.DerbyDbInfoProvider;
 import pl.mpak.orbada.derbydb.services.DerbyDbFunctionsView;
 import java.util.List;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.derbydb.services.DerbyDbJarFilesView;
 import pl.mpak.orbada.derbydb.services.DerbyDbPerspectiveProvider;
 import pl.mpak.orbada.derbydb.services.DerbyDbStatisticsService;

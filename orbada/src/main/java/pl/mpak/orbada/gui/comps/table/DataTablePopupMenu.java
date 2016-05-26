@@ -7,9 +7,10 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.comps.table;
+package pl.mpak.orbada.gui.comps.table;
 
-import orbada.gui.comps.table.cm.SelectTableColumnAction;
+import pl.mpak.orbada.gui.comps.table.cm.SelectTableColumnAction;
+import pl.mpak.orbada.gui.comps.table.cm.SelectTableColumnAction;
 import pl.mpak.usedb.gui.swing.QueryTable;
 
 /**

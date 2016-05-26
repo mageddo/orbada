@@ -1,9 +1,10 @@
-package orbada.gui.comps;
+package pl.mpak.orbada.gui.comps;
 
-import orbada.core.Application;
-import orbada.gui.comps.cm.RefreshDatabaseInfoAction;
-import orbada.gui.comps.cm.SqlUpperCaseAction;
-import orbada.gui.comps.cm.SqlLowerCaseAction;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.comps.cm.RefreshDatabaseInfoAction;
+import pl.mpak.orbada.gui.comps.cm.SqlUpperCaseAction;
+import pl.mpak.orbada.gui.comps.cm.SqlLowerCaseAction;
+import pl.mpak.orbada.gui.comps.cm.SqlLowerCaseAction;
 import pl.mpak.usedb.core.Database;
 
 /**

@@ -2,7 +2,7 @@ package pl.mpak.orbada.firebird.gui;
 
 import java.util.ArrayList;
 import javax.swing.DefaultComboBoxModel;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.firebird.OrbadaFirebirdPlugin;
 import pl.mpak.orbada.firebird.services.FirebirdTemplatesSettingsProvider;
 import pl.mpak.orbada.plugins.IApplication;

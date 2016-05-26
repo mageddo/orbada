@@ -3,10 +3,11 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.laf.services;
+package pl.mpak.orbada.gui.laf.services;
 
-import orbada.Consts;
-import orbada.gui.laf.NimbusLookAndFeelStarter;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.gui.laf.NimbusLookAndFeelStarter;
+import pl.mpak.orbada.gui.laf.NimbusLookAndFeelStarter;
 import pl.mpak.orbada.plugins.providers.ILookAndFeelStarter;
 import pl.mpak.orbada.plugins.providers.LookAndFeelProvider;
 

@@ -18,8 +18,8 @@ import javax.swing.table.DefaultTableColumnModel;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
 
-import orbada.gui.comps.table.Table;
-import orbada.core.Application;
+import pl.mpak.orbada.gui.comps.table.Table;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.todo.OrbadaTodoPlugin;
 import pl.mpak.orbada.todo.db.Todo;
 import pl.mpak.sky.gui.mr.ModalResult;

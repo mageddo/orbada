@@ -1,4 +1,4 @@
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -13,10 +13,12 @@ import javax.swing.UIManager;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
-import orbada.Consts;
-import orbada.core.Application;
-import orbada.util.Utils;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.util.Utils;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.providers.ViewProvider;
+import pl.mpak.orbada.util.Utils;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.ListRowChangeKeyListener;
 import pl.mpak.sky.gui.swing.SwingUtil;

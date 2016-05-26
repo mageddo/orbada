@@ -7,7 +7,7 @@ package pl.mpak.orbada.laf.jtatoo.services;
 
 import java.awt.Component;
 import javax.swing.Icon;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.laf.jtatoo.OrbadaLafJTatooPlugin;
 import pl.mpak.orbada.laf.jtatoo.gui.GlobalOptionsSettingsPanel;
 import pl.mpak.orbada.plugins.providers.SettingsProvider;

@@ -1,4 +1,4 @@
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
 import java.awt.Component;
 import java.awt.Dimension;
@@ -9,8 +9,9 @@ import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JToolBar;
 
-import orbada.Consts;
-import orbada.core.Application;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.plugins.IPerspectiveAccesibilities;
 import pl.mpak.orbada.plugins.IViewAccesibilities;

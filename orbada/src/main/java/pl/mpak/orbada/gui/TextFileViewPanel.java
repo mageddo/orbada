@@ -8,13 +8,14 @@
  *
  * Created on 2009-03-29, 20:11:34
  */
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
 import java.io.File;
 import java.io.IOException;
 
-import orbada.Consts;
-import orbada.gui.editor.EditorPopupMenu;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.gui.editor.EditorPopupMenu;
+import pl.mpak.orbada.gui.editor.EditorPopupMenu;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;

@@ -4,7 +4,7 @@
  * Created on 21 styczeñ 2008, 20:32
  */
 
-package orbada.gui.comps.table;
+package pl.mpak.orbada.gui.comps.table;
 
 import java.io.Closeable;
 import java.io.IOException;

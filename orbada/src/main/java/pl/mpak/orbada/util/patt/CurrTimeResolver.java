@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package orbada.util.patt;
+package pl.mpak.orbada.util.patt;
 
 import java.util.Date;
 import pl.mpak.util.patt.ResolvableModel;

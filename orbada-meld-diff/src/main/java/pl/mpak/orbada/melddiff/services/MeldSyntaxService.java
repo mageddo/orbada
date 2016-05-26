@@ -8,7 +8,7 @@ package pl.mpak.orbada.melddiff.services;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import javax.swing.JMenu;
-import orbada.gui.PerspectivePanel;
+import pl.mpak.orbada.gui.PerspectivePanel;
 import pl.mpak.orbada.melddiff.OrbadaMeldDiffPlugin;
 import pl.mpak.orbada.melddiff.cm.LeftContentAction;
 import pl.mpak.orbada.melddiff.cm.RightContentAction;

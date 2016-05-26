@@ -9,7 +9,7 @@ package pl.mpak.orbada.sqlite.gui;
 import java.io.Closeable;
 import java.io.IOException;
 
-import orbada.gui.comps.table.DataTable;
+import pl.mpak.orbada.gui.comps.table.DataTable;
 import pl.mpak.orbada.sqlite.OrbadaSQLitePlugin;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;

@@ -2,7 +2,7 @@ package pl.mpak.orbada.datamove;
 
 import java.io.File;
 import java.util.List;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.datamove.services.ExportMoveDataService;
 import pl.mpak.orbada.datamove.services.QueryCreateTableService;
 import pl.mpak.orbada.plugins.OrbadaPlugin;

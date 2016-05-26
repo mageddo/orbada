@@ -4,7 +4,7 @@
  * Created on 9 paŸdziernik 2007, 16:30
  */
 
-package orbada.gui.util;
+package pl.mpak.orbada.gui.util;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;

@@ -4,14 +4,14 @@
  * Created on 9 styczeñ 2008, 17:24
  */
 
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
 import javax.swing.AbstractButton;
 import javax.swing.JComponent;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.util.StringManager;

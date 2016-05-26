@@ -7,8 +7,8 @@ package pl.mpak.orbada.localhistory.services;
 
 import java.util.EventObject;
 import javax.swing.JMenu;
-import orbada.gui.comps.AbsOrbadaSyntaxTextArea;
-import orbada.gui.comps.SyntaxDatabaseObjectListener;
+import pl.mpak.orbada.gui.comps.AbsOrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.SyntaxDatabaseObjectListener;
 import pl.mpak.orbada.localhistory.OrbadaLocalHistoryPlugin;
 import pl.mpak.orbada.localhistory.cm.LastChangeObjectDescriptionAction;
 import pl.mpak.orbada.localhistory.cm.LocalHistoryObjectAction;

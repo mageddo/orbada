@@ -9,7 +9,7 @@ package pl.mpak.orbada.gadgets.gui;
 import java.beans.IntrospectionException;
 import javax.swing.JComponent;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.gadgets.OrbadaGadgetsPlugin;
 import pl.mpak.orbada.gadgets.db.OgQueryInfo;
 import pl.mpak.orbada.plugins.IApplication;

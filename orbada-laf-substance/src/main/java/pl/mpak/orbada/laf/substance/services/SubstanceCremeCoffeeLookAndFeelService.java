@@ -5,7 +5,7 @@
 
 package pl.mpak.orbada.laf.substance.services;
 
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.laf.substance.OrbadaLafSubstancePlugin;
 import pl.mpak.orbada.laf.substance.starters.SubstanceCremeCoffeeLookAndFeelStarter;
 import pl.mpak.orbada.plugins.providers.ILookAndFeelStarter;

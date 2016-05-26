@@ -7,14 +7,15 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.comps.table.cm;
+package pl.mpak.orbada.gui.comps.table.cm;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.table.TableColumn;
 
-import orbada.Consts;
-import orbada.gui.comps.ViewValueDialog;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.gui.comps.ViewValueDialog;
+import pl.mpak.orbada.gui.comps.ViewValueDialog;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.Action;
 import pl.mpak.sky.gui.swing.MessageBox;

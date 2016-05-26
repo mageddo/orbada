@@ -3,11 +3,12 @@
  * and open the template in the editor.
  */
 
-package orbada.gui.comps.util;
+package pl.mpak.orbada.gui.comps.util;
 
 import javax.swing.DefaultComboBoxModel;
 
-import orbada.core.Application;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.db.Schema;
 import pl.mpak.usedb.core.Query;
 import pl.mpak.util.ExceptionUtil;

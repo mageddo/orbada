@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
 import java.io.Closeable;
 import pl.mpak.util.CloseAbilitable;

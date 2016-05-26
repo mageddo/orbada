@@ -4,7 +4,7 @@
  * Created on 26 listopad 2007, 18:28
  */
 
-package orbada.gui.comps;
+package pl.mpak.orbada.gui.comps;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -15,15 +15,18 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import javax.swing.JRadioButtonMenuItem;
-import orbada.Consts;
-import orbada.core.Application;
-import orbada.gui.comps.table.view.BeanPropertyPanel;
-import orbada.gui.comps.table.view.ViewAsBinaryPanel;
-import orbada.gui.comps.table.view.ViewAsHexPanel;
-import orbada.gui.comps.table.view.ViewAsPicturePanel;
-import orbada.gui.comps.table.view.ViewAsStringPanel;
-import orbada.gui.comps.table.view.ViewHtmlPanel;
-import orbada.gui.comps.table.view.cm.ViewValueServiceAction;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.comps.table.view.BeanPropertyPanel;
+import pl.mpak.orbada.gui.comps.table.view.ViewAsBinaryPanel;
+import pl.mpak.orbada.gui.comps.table.view.ViewAsHexPanel;
+import pl.mpak.orbada.gui.comps.table.view.ViewAsPicturePanel;
+import pl.mpak.orbada.gui.comps.table.view.ViewAsStringPanel;
+import pl.mpak.orbada.gui.comps.table.view.ViewHtmlPanel;
+import pl.mpak.orbada.gui.comps.table.view.cm.ViewValueServiceAction;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.comps.table.view.ViewAsPicturePanel;
+import pl.mpak.orbada.gui.comps.table.view.cm.ViewValueServiceAction;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.providers.ViewValueProvider;
 import pl.mpak.sky.gui.mr.ModalResult;

@@ -3,13 +3,16 @@
  * and open the template in the editor.
  */
 
-package orbada.util.patt;
+package pl.mpak.orbada.util.patt;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import orbada.Consts;
-import orbada.gui.LoginInfo;
-import orbada.gui.patt.PasswordDialog;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.gui.LoginInfo;
+import pl.mpak.orbada.gui.patt.PasswordDialog;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.gui.LoginInfo;
+import pl.mpak.orbada.gui.patt.PasswordDialog;
 import pl.mpak.util.ExceptionUtil;
 import pl.mpak.util.HexUtils;
 import pl.mpak.util.StringManager;

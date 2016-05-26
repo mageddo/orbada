@@ -1,4 +1,4 @@
-package orbada.gui.schemas;
+package pl.mpak.orbada.gui.schemas;
 
 import java.awt.Font;
 import java.io.File;
@@ -10,11 +10,11 @@ import javax.swing.JComponent;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import orbada.Consts;
-import orbada.core.Application;
-import orbada.gui.comps.table.ViewTable;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.db.Driver;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;

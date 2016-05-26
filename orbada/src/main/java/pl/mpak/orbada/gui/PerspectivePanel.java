@@ -1,4 +1,4 @@
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -12,14 +12,17 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import javax.swing.Icon;
 
-import orbada.Consts;
-import orbada.core.Application;
-import orbada.db.InternalDatabase;
-import orbada.gui.gadgets.GadgetPanel;
-import orbada.util.Utils;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.db.InternalDatabase;
+import pl.mpak.orbada.gui.gadgets.GadgetPanel;
+import pl.mpak.orbada.util.Utils;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.plugins.providers.PerspectiveProvider;
 import pl.mpak.orbada.plugins.providers.ViewProvider;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
+import pl.mpak.orbada.util.Utils;
 import pl.mpak.sky.gui.swing.TabCloseComponent;
 import pl.mpak.usedb.core.Database;
 import java.util.Iterator;

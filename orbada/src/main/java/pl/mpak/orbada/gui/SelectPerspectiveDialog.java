@@ -1,4 +1,4 @@
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
 import java.awt.Component;
 import javax.swing.AbstractButton;
@@ -9,7 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JTabbedPane;
 
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.util.StringManager;

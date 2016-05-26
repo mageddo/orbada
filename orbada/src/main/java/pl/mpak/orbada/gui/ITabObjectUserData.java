@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package orbada.gui;
+package pl.mpak.orbada.gui;
 
 import java.util.HashMap;
 import pl.mpak.util.variant.Variant;

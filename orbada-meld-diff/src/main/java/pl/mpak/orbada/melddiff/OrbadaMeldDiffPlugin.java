@@ -1,7 +1,7 @@
 package pl.mpak.orbada.melddiff;
 
 import java.util.List;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.melddiff.services.DiffPerspectiveService;
 import pl.mpak.orbada.melddiff.services.DiffViewService;
 import pl.mpak.orbada.melddiff.services.MeldSyntaxService;

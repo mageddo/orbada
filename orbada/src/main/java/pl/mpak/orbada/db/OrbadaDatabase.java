@@ -7,13 +7,14 @@
  * and open the template in the editor.
  */
 
-package orbada.db;
+package pl.mpak.orbada.db;
 
 import java.sql.SQLException;
 import java.util.Date;
 
-import orbada.Consts;
-import orbada.core.Application;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.db.SchemaSession;
 import pl.mpak.orbada.plugins.providers.IDatabaseProvider;
 import pl.mpak.orbada.plugins.queue.PluginMessage;

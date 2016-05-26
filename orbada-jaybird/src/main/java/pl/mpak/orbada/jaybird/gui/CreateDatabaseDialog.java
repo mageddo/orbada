@@ -14,7 +14,7 @@ package pl.mpak.orbada.jaybird.gui;
 import javax.swing.AbstractButton;
 import javax.swing.JComponent;
 import org.firebirdsql.management.FBManager;
-import orbada.core.Application;
+import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.jaybird.OrbadaJaybirdPlugin;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.sky.gui.mr.ModalResult;

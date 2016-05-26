@@ -1,4 +1,4 @@
-package orbada;
+package pl.mpak.orbada;
 
 import pl.mpak.util.UtilException;
 

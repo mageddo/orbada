@@ -2,9 +2,9 @@ package pl.mpak.orbada.oracle;
 
 import java.util.ArrayList;
 import java.util.List;
-import orbada.Consts;
-import orbada.core.Application;
-import orbada.db.InternalDatabase;
+import pl.mpak.orbada.Consts;
+import pl.mpak.orbada.core.Application;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.db.Template;
 import pl.mpak.orbada.oracle.cm.CallObjectFromEditorAction;
 import pl.mpak.orbada.oracle.cm.FindObjectFromEditorAction;

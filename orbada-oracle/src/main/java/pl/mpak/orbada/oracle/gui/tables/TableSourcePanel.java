@@ -2,10 +2,10 @@ package pl.mpak.orbada.oracle.gui.tables;
 
 import java.io.IOException;
 
-import orbada.gui.comps.OrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.oracle.util.SourceCreator;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import orbada.gui.ITabObjectInfo;
+import pl.mpak.orbada.gui.ITabObjectInfo;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.usedb.core.Database;
 import pl.mpak.util.StringManager;

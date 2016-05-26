@@ -11,7 +11,7 @@ package pl.mpak.orbada.laf.tinylaf;
 
 import java.util.ArrayList;
 import java.util.List;
-import orbada.Consts;
+import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.laf.tinylaf.services.TinyLaFGlobalOptionsSettingsService;
 import pl.mpak.orbada.laf.tinylaf.services.TinyLookAndFeelService;
 import pl.mpak.orbada.plugins.OrbadaPlugin;
