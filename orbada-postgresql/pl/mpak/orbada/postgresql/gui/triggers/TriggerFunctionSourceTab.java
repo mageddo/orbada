@@ -5,8 +5,8 @@
 package pl.mpak.orbada.postgresql.gui.triggers;
 
 import java.util.HashMap;
-import pl.mpak.orbada.gui.ITabObjectUserData;
-import pl.mpak.orbada.gui.comps.AbsOrbadaSyntaxTextArea;
+import orbada.gui.ITabObjectUserData;
+import orbada.gui.comps.AbsOrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.postgresql.OrbadaPostgreSQLPlugin;
 import pl.mpak.orbada.postgresql.util.SourceCreator;

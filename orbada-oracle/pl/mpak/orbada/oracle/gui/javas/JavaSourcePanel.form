@@ -107,7 +107,7 @@
         </Container>
       </SubComponents>
     </Container>
-    <Component class="pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea" name="syntaxSource">
+    <Component class="OrbadaJavaSyntaxTextArea" name="syntaxSource">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
           <BorderConstraints direction="Center"/>

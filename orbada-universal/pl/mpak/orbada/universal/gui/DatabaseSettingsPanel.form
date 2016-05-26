@@ -52,7 +52,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="textAfterConnect">
+    <Component class="OrbadaSyntaxTextArea" name="textAfterConnect">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
@@ -61,7 +61,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="textBeforeDisconnect">
+    <Component class="OrbadaSyntaxTextArea" name="textBeforeDisconnect">
     </Component>
   </SubComponents>
 </Form>

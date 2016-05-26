@@ -84,7 +84,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="pl.mpak.orbada.gui.comps.table.Table" name="tableResolvers">
+        <Component class="Table" name="tableResolvers">
         </Component>
       </SubComponents>
     </Container>

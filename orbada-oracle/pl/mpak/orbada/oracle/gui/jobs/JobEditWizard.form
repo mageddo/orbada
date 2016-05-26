@@ -163,7 +163,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="textWhat">
+    <Component class="OrbadaSyntaxTextArea" name="textWhat">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>

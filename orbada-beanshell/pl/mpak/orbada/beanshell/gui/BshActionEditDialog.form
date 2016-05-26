@@ -244,7 +244,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea" name="editScript">
+    <Component class="OrbadaJavaSyntaxTextArea" name="editScript">
     </Component>
     <Component class="pl.mpak.sky.gui.swing.comp.TextField" name="textShortcut">
       <Events>

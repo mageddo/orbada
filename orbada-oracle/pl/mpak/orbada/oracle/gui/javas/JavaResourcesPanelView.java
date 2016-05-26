@@ -4,9 +4,11 @@ import java.awt.Point;
 import java.awt.Window;
 import java.io.IOException;
 import java.util.Vector;
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
-import pl.mpak.orbada.gui.util.SimpleSelectDialog;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.gui.IRootTabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.oracle.gui.wizards.java.DropJavaResourceWizard;
@@ -155,7 +157,7 @@ public class JavaResourcesPanelView extends javax.swing.JPanel implements IRootT
     cmDropJavaResource = new pl.mpak.sky.gui.swing.Action();
     jPanel1 = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableResources = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableResources = new ViewTable();
     statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel2 = new javax.swing.JPanel();
     toolBar = new javax.swing.JToolBar();
@@ -316,7 +318,7 @@ private void cmDropJavaResourceActionPerformed(java.awt.event.ActionEvent evt) {
   private javax.swing.JPopupMenu menuActions;
   private javax.swing.JMenuItem menuDropJavaResource;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBar;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableResources;
+  private ViewTable tableResources;
   private javax.swing.JToolBar toolBar;
   // End of variables declaration//GEN-END:variables
 

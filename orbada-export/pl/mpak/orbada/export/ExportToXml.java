@@ -13,7 +13,7 @@ import java.io.PrintWriter;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import javax.swing.JTable;
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.providers.ExportTableActionProvider;
 import pl.mpak.sky.gui.mr.ModalResult;

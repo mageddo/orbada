@@ -3,10 +3,12 @@ package pl.mpak.orbada.universal.gui.tabbed;
 import java.awt.Color;
 import java.io.IOException;
 import javax.swing.JToolBar;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
-import pl.mpak.orbada.gui.comps.AbsOrbadaSyntaxTextArea;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.comps.AbsOrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
 import pl.mpak.sky.gui.mr.ModalResult;
@@ -189,7 +191,7 @@ public abstract class UniversalSourceTab extends javax.swing.JPanel implements I
         jSeparator1 = new javax.swing.JToolBar.Separator();
         buttonStore = new pl.mpak.sky.gui.swing.comp.ToolButton();
         buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
-        textProp = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+        textProp = new OrbadaSyntaxTextArea();
 
         cmRefreshSource.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
         cmRefreshSource.setText(stringManager.getString("cmRefreshSource-text")); // NOI18N
@@ -286,7 +288,7 @@ private void cmStoreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
     private pl.mpak.sky.gui.swing.Action cmStore;
     private javax.swing.JToolBar.Separator jSeparator1;
     private javax.swing.JPopupMenu menuActions;
-    private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea textProp;
+    private OrbadaSyntaxTextArea textProp;
     private javax.swing.JToolBar toolBarContent;
     private javax.swing.JPanel toolBarPanel;
     // End of variables declaration//GEN-END:variables

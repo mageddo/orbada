@@ -5,8 +5,8 @@
 
 package pl.mpak.orbada.mysql.util;
 
-import pl.mpak.orbada.core.Application;
-import pl.mpak.orbada.gui.comps.AbsOrbadaSyntaxTextArea;
+import orbada.core.Application;
+import orbada.gui.comps.AbsOrbadaSyntaxTextArea;
 import pl.mpak.orbada.mysql.Sql;
 import pl.mpak.orbada.plugins.PleaseWait;
 import pl.mpak.sky.gui.swing.syntax.SyntaxTextArea;

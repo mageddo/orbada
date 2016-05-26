@@ -1,5 +1,6 @@
 package pl.mpak.orbada.beanshell.gui;
 
+import orbada.gui.comps.OrbadaJavaSyntaxTextArea;
 import pl.mpak.orbada.beanshell.*;
 import java.io.File;
 import java.io.IOException;
@@ -82,9 +83,9 @@ public class StartupShutdownSettingsPanel extends javax.swing.JPanel implements 
   private void initComponents() {
 
     jLabel1 = new javax.swing.JLabel();
-    textStartup = new pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea();
+    textStartup = new OrbadaJavaSyntaxTextArea();
     jLabel2 = new javax.swing.JLabel();
-    textShutdown = new pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea();
+    textShutdown = new OrbadaJavaSyntaxTextArea();
 
     jLabel1.setText(stringManager.getString("bsh-startup-dd")); // NOI18N
 
@@ -122,8 +123,8 @@ public class StartupShutdownSettingsPanel extends javax.swing.JPanel implements 
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel2;
-  private pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea textShutdown;
-  private pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea textStartup;
+  private OrbadaJavaSyntaxTextArea textShutdown;
+  private OrbadaJavaSyntaxTextArea textStartup;
   // End of variables declaration//GEN-END:variables
   
 }

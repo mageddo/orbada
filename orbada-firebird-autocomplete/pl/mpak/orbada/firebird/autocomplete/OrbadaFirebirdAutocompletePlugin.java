@@ -2,10 +2,10 @@ package pl.mpak.orbada.firebird.autocomplete;
 
 import java.util.ArrayList;
 import java.util.List;
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.firebird.autocomplete.services.FirebirdAutoCompleteService;
 import pl.mpak.orbada.firebird.autocomplete.services.FirebirdAutoCompleteDatabaseService;
-import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.OrbadaPlugin;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
 import pl.mpak.plugins.spi.IPlugin;

@@ -295,7 +295,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="pl.mpak.orbada.gui.comps.table.ViewTable" name="tableObjects">
+                <Component class="ViewTable" name="tableObjects">
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tableObjectsMouseClicked"/>
                   </Events>
@@ -318,7 +318,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="syntaxSource">
+        <Component class="OrbadaSyntaxTextArea" name="syntaxSource">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
           </Properties>

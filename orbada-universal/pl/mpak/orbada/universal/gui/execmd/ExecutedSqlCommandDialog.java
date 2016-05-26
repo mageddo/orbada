@@ -12,7 +12,10 @@ import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.core.Application;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
+import orbada.gui.comps.table.DataTable;
+import orbada.core.Application;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
 import pl.mpak.sky.gui.mr.ModalResult;
@@ -193,8 +196,8 @@ public class ExecutedSqlCommandDialog extends javax.swing.JDialog {
     toolButton1 = new pl.mpak.sky.gui.swing.comp.ToolButton();
     split = new javax.swing.JSplitPane();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableSqlCommands = new pl.mpak.orbada.gui.comps.table.DataTable();
-    textSqlCommand = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    tableSqlCommands = new DataTable();
+    textSqlCommand = new OrbadaSyntaxTextArea();
 
     cmCancel.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0));
     cmCancel.setText(stringManager.getString("cmCancel-text")); // NOI18N
@@ -323,9 +326,9 @@ private void cmSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
   private javax.swing.JScrollPane jScrollPane1;
   private javax.swing.JLabel labelInfo;
   private javax.swing.JSplitPane split;
-  private pl.mpak.orbada.gui.comps.table.DataTable tableSqlCommands;
+  private DataTable tableSqlCommands;
   private pl.mpak.sky.gui.swing.comp.TextField textFind;
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea textSqlCommand;
+  private OrbadaSyntaxTextArea textSqlCommand;
   private pl.mpak.sky.gui.swing.comp.ToolButton toolButton1;
   // End of variables declaration//GEN-END:variables
   

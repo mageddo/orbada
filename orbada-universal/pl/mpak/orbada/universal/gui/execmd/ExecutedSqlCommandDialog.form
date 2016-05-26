@@ -189,11 +189,11 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="pl.mpak.orbada.gui.comps.table.DataTable" name="tableSqlCommands">
+            <Component class="DataTable" name="tableSqlCommands">
             </Component>
           </SubComponents>
         </Container>
-        <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="textSqlCommand">
+        <Component class="OrbadaSyntaxTextArea" name="textSqlCommand">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
               <JSplitPaneConstraints position="right"/>

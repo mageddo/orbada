@@ -6,13 +6,15 @@ import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.firebird.OrbadaFirebirdPlugin;
 import pl.mpak.orbada.firebird.Sql;
 import pl.mpak.orbada.firebird.gui.wizards.GrantTablePrivilegesWizard;
 import pl.mpak.orbada.firebird.gui.wizards.RevokeTablePrivilegesWizard;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDefComponent;
@@ -171,7 +173,7 @@ public class ViewGrantsPanel extends javax.swing.JPanel implements ITabObjectInf
     jSeparator1 = new javax.swing.JToolBar.Separator();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableGrants = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableGrants = new ViewTable();
 
     cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
@@ -294,7 +296,7 @@ private void cmRevokeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
   private javax.swing.JMenuItem menuGrant;
   private javax.swing.JMenuItem menuRevoke;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarIndexes;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableGrants;
+  private ViewTable tableGrants;
   private javax.swing.JToolBar toolBarIndexes;
   // End of variables declaration//GEN-END:variables
   

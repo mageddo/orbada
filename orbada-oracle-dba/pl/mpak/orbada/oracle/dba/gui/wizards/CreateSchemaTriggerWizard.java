@@ -2,7 +2,7 @@ package pl.mpak.orbada.oracle.dba.gui.wizards;
 
 import java.util.HashMap;
 import javax.swing.DefaultListModel;
-import pl.mpak.orbada.core.Application;
+import orbada.core.Application;
 import pl.mpak.orbada.db.Template;
 import pl.mpak.orbada.oracle.dba.OrbadaOracleDbaPlugin;
 import pl.mpak.orbada.oracle.gui.util.SchemaComboBoxModel;

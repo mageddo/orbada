@@ -5,10 +5,8 @@
 
 package pl.mpak.orbada.oracle.gui.procedures;
 
-import pl.mpak.orbada.oracle.gui.triggers.*;
-import pl.mpak.orbada.oracle.gui.tables.*;
 import java.awt.Component;
-import pl.mpak.orbada.gui.OrbadaTabbedPane;
+import orbada.gui.OrbadaTabbedPane;
 import pl.mpak.orbada.oracle.gui.ObjectUsedByPanel;
 import pl.mpak.orbada.oracle.gui.ObjectUsingPanel;
 import pl.mpak.orbada.oracle.gui.StoredParametersPanel;

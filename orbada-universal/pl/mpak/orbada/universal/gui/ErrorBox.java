@@ -7,7 +7,7 @@
 package pl.mpak.orbada.universal.gui;
 
 import javax.swing.JComponent;
-import pl.mpak.orbada.gui.webapp.RequestErrorDialog;
+import orbada.gui.webapp.RequestErrorDialog;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.util.ExceptionUtil;

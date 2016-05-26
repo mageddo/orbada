@@ -4,8 +4,11 @@ import java.io.File;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+
+import orbada.gui.comps.table.DataTable;
+import orbada.gui.comps.table.ViewTable;
+import orbada.gui.IRootTabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.sqlite.OrbadaSQLitePlugin;
@@ -168,11 +171,11 @@ public class DatabasesPanelView extends javax.swing.JPanel implements IRootTabOb
     split = new javax.swing.JSplitPane();
     jPanel3 = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableDatabases = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableDatabases = new ViewTable();
     statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel4 = new javax.swing.JPanel();
     jScrollPane2 = new javax.swing.JScrollPane();
-    tableDetails = new pl.mpak.orbada.gui.comps.table.DataTable();
+    tableDetails = new DataTable();
     statusBarDetails = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel2 = new javax.swing.JPanel();
     toolBar = new javax.swing.JToolBar();
@@ -277,8 +280,8 @@ private void cmRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
   private javax.swing.JSplitPane split;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBar;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarDetails;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableDatabases;
-  private pl.mpak.orbada.gui.comps.table.DataTable tableDetails;
+  private ViewTable tableDatabases;
+  private DataTable tableDetails;
   private javax.swing.JToolBar toolBar;
   // End of variables declaration//GEN-END:variables
 

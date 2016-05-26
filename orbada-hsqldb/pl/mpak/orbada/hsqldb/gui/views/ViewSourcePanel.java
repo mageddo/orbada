@@ -2,8 +2,10 @@ package pl.mpak.orbada.hsqldb.gui.views;
 
 import java.awt.Frame;
 import java.io.IOException;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.hsqldb.OrbadaHSqlDbPlugin;
 import pl.mpak.orbada.hsqldb.Sql;
 import pl.mpak.orbada.hsqldb.services.HSqlDbInfoProvider;
@@ -141,7 +143,7 @@ public class ViewSourcePanel extends javax.swing.JPanel implements ITabObjectInf
     buttonCompile = new pl.mpak.sky.gui.swing.comp.ToolButton();
     jSeparator1 = new javax.swing.JToolBar.Separator();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
-    syntaxViewSource = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    syntaxViewSource = new OrbadaSyntaxTextArea();
 
     cmRefreshSource.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
     cmRefreshSource.setText(stringManager.getString("cmRefreshSource-text")); // NOI18N
@@ -220,7 +222,7 @@ private void cmRefreshSourceActionPerformed(java.awt.event.ActionEvent evt) {//G
   private pl.mpak.sky.gui.swing.Action cmRefreshSource;
   private javax.swing.JToolBar.Separator jSeparator1;
   private javax.swing.JPopupMenu menuActions;
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea syntaxViewSource;
+  private OrbadaSyntaxTextArea syntaxViewSource;
   private javax.swing.JToolBar toolBarContent;
   // End of variables declaration//GEN-END:variables
   

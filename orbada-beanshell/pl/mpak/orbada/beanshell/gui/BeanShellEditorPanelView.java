@@ -20,6 +20,8 @@ import javax.swing.JFileChooser;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyleConstants;
+
+import orbada.gui.comps.OrbadaJavaSyntaxTextArea;
 import pl.mpak.orbada.beanshell.BeanShellInterpreter;
 import pl.mpak.orbada.beanshell.OrbadaBeanshellPlugin;
 import pl.mpak.orbada.plugins.IApplication;
@@ -286,7 +288,7 @@ public class BeanShellEditorPanelView extends javax.swing.JPanel implements Clos
     jSplitPane1 = new javax.swing.JSplitPane();
     jScrollPane1 = new javax.swing.JScrollPane();
     textResult = new javax.swing.JTextArea();
-    syntaxBeanShell = new pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea();
+    syntaxBeanShell = new OrbadaJavaSyntaxTextArea();
     jPanel1 = new javax.swing.JPanel();
     jToolBar1 = new javax.swing.JToolBar();
     buttonOpenFile = new pl.mpak.sky.gui.swing.comp.ToolButton();
@@ -608,7 +610,7 @@ private void cmRunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
   private javax.swing.JMenuItem menuSaveFile;
   private javax.swing.JMenuItem menuSaveFileAs;
   private javax.swing.JMenu menuView;
-  private pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea syntaxBeanShell;
+  private OrbadaJavaSyntaxTextArea syntaxBeanShell;
   private javax.swing.JTextArea textResult;
   private pl.mpak.sky.gui.swing.comp.ToolButton toolButton1;
   // End of variables declaration//GEN-END:variables

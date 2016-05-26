@@ -7,7 +7,7 @@ package pl.mpak.orbada.laf.nimrod.services;
 
 import java.awt.Component;
 import javax.swing.Icon;
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.laf.nimrod.OrbadaLafNimRODPlugin;
 import pl.mpak.orbada.laf.nimrod.gui.GlobalOptionsSettingsPanel;
 import pl.mpak.orbada.plugins.providers.SettingsProvider;

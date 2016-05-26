@@ -7,8 +7,8 @@ package pl.mpak.orbada.localhistory.cm;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import pl.mpak.orbada.gui.PerspectivePanel;
-import pl.mpak.orbada.gui.comps.AbsOrbadaSyntaxTextArea;
+import orbada.gui.PerspectivePanel;
+import orbada.gui.comps.AbsOrbadaSyntaxTextArea;
 import pl.mpak.orbada.localhistory.OrbadaLocalHistoryPlugin;
 import pl.mpak.orbada.localhistory.core.SchemaObjects;
 import pl.mpak.orbada.localhistory.db.OlhObjectRecord;

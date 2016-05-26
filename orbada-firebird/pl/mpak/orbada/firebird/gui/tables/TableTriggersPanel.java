@@ -7,6 +7,9 @@ import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.firebird.OrbadaFirebirdPlugin;
 import pl.mpak.orbada.firebird.Sql;
 import pl.mpak.orbada.firebird.gui.freezing.TriggerFreezeViewService;
@@ -15,8 +18,8 @@ import pl.mpak.orbada.firebird.syntax.parser.FirebirdPSqlStructureParser;
 import pl.mpak.orbada.firebird.util.SourceCreator;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDefComponent;
@@ -221,9 +224,9 @@ public class TableTriggersPanel extends javax.swing.JPanel implements ITabObject
     splitTriggers = new javax.swing.JSplitPane();
     jPanel1 = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableTriggers = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableTriggers = new ViewTable();
     statusBarTriggers = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
-    textTrigger = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    textTrigger = new OrbadaSyntaxTextArea();
 
     cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
@@ -460,8 +463,8 @@ private void cmActiveTriggerActionPerformed(java.awt.event.ActionEvent evt) {//G
   private javax.swing.JPopupMenu menuActions;
   private javax.swing.JSplitPane splitTriggers;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarTriggers;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableTriggers;
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea textTrigger;
+  private ViewTable tableTriggers;
+  private OrbadaSyntaxTextArea textTrigger;
   private javax.swing.JToolBar toolBarTriggers;
   private pl.mpak.sky.gui.swing.comp.ToolButton toolButton1;
   private pl.mpak.sky.gui.swing.comp.ToolButton toolButton2;

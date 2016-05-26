@@ -8,15 +8,16 @@ import java.io.IOException;
 import java.util.Vector;
 import javax.swing.JLabel;
 import javax.swing.JTable;
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
-import pl.mpak.orbada.gui.util.SimpleSelectDialog;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.gui.IRootTabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.oracle.gui.wizards.CreateDirectoryWizard;
 import pl.mpak.orbada.oracle.gui.wizards.DropDirectoryWizard;
 import pl.mpak.orbada.oracle.services.OracleDbInfoProvider;
-import pl.mpak.orbada.oracle.util.OracleUtil;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;
@@ -179,7 +180,7 @@ public class DirectoriesPanelView extends javax.swing.JPanel implements IRootTab
     cmDropDirectory = new pl.mpak.sky.gui.swing.Action();
     jPanel1 = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableDirs = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableDirs = new ViewTable();
     statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel2 = new javax.swing.JPanel();
     toolBar = new javax.swing.JToolBar();
@@ -363,7 +364,7 @@ private void cmDropDirectoryActionPerformed(java.awt.event.ActionEvent evt) {//G
   private javax.swing.JMenuItem menuCreateDirectory;
   private javax.swing.JMenuItem menuDropDirectory;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBar;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableDirs;
+  private ViewTable tableDirs;
   private javax.swing.JToolBar toolBar;
   // End of variables declaration//GEN-END:variables
 

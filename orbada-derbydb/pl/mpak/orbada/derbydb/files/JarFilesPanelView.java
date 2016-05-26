@@ -14,11 +14,13 @@ import java.util.Vector;
 import javax.swing.JOptionPane;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.derbydb.DerbyDbSql;
 import pl.mpak.orbada.derbydb.OrbadaDerbyDbPlugin;
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
-import pl.mpak.orbada.gui.util.SimpleSelectDialog;
+import orbada.gui.IRootTabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;
@@ -173,7 +175,7 @@ public class JarFilesPanelView extends javax.swing.JPanel implements IRootTabObj
     menuActions = new javax.swing.JPopupMenu();
     panelTables = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableFiles = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableFiles = new ViewTable();
     statusBarTables = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel1 = new javax.swing.JPanel();
     toolBarTables = new javax.swing.JToolBar();
@@ -389,7 +391,7 @@ private void cmAddFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
   private javax.swing.JPopupMenu menuActions;
   private javax.swing.JPanel panelTables;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarTables;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableFiles;
+  private ViewTable tableFiles;
   private javax.swing.JToolBar toolBarTables;
   // End of variables declaration//GEN-END:variables
 

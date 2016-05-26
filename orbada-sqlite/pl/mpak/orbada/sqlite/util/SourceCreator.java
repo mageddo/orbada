@@ -1,7 +1,7 @@
 package pl.mpak.orbada.sqlite.util;
 
-import pl.mpak.orbada.gui.comps.AbsOrbadaSyntaxTextArea;
-import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
+import orbada.gui.comps.AbsOrbadaSyntaxTextArea;
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.sqlite.Sql;
 import pl.mpak.sky.gui.swing.syntax.SyntaxTextArea;
 import pl.mpak.usedb.core.Database;

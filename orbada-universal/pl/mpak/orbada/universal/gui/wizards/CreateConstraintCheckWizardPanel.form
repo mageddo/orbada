@@ -77,7 +77,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="textCheck">
+    <Component class="OrbadaSyntaxTextArea" name="textCheck">
       <Properties>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[81, 80]"/>

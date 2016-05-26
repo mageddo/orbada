@@ -3,8 +3,10 @@ package pl.mpak.orbada.universal.gui.tables;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
+import orbada.gui.ITabObjectInfo;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;
@@ -123,7 +125,7 @@ public class TableIndexesPanel extends javax.swing.JPanel implements ITabObjectI
 
     cmRefresh = new pl.mpak.sky.gui.swing.Action();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableIndexes = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableIndexes = new ViewTable();
     statusBarIndexes = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     toolBarIndexes = new javax.swing.JToolBar();
     buttonRefresh = new pl.mpak.sky.gui.swing.comp.ToolButton();
@@ -180,7 +182,7 @@ private void cmRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
   private pl.mpak.sky.gui.swing.Action cmRefresh;
   private javax.swing.JScrollPane jScrollPane1;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarIndexes;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableIndexes;
+  private ViewTable tableIndexes;
   private javax.swing.JToolBar toolBarIndexes;
   // End of variables declaration//GEN-END:variables
   

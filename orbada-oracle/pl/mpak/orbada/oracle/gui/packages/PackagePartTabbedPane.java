@@ -11,7 +11,7 @@ import pl.mpak.orbada.oracle.gui.ObjectUsedByPanel;
 import pl.mpak.orbada.oracle.gui.StoredParametersPanel;
 import java.awt.Component;
 import java.awt.event.ComponentListener;
-import pl.mpak.orbada.gui.OrbadaTabbedPane;
+import orbada.gui.OrbadaTabbedPane;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 
 /**

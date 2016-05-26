@@ -10,15 +10,17 @@ import java.util.Vector;
 import javax.swing.JLabel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
-import pl.mpak.orbada.gui.util.SimpleSelectDialog;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.gui.IRootTabObjectInfo;
+import orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.oracle.services.OracleDbInfoProvider;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.OrbadaTabbedPane;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.OrbadaTabbedPane;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.oracle.gui.freezing.FunctionFreezeViewService;
 import pl.mpak.orbada.oracle.gui.wizards.CallObjectWizard;
 import pl.mpak.orbada.oracle.gui.wizards.CompileAllObjectsWizard;
@@ -261,7 +263,7 @@ public class FunctionsPanelView extends javax.swing.JPanel implements IRootTabOb
     split = new javax.swing.JSplitPane();
     panelTables = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableFunctions = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableFunctions = new ViewTable();
     jPanel1 = new javax.swing.JPanel();
     toolBarTables = new javax.swing.JToolBar();
     buttonRefresh = new pl.mpak.sky.gui.swing.comp.ToolButton();
@@ -596,7 +598,7 @@ private void cmCallFunctionActionPerformed(java.awt.event.ActionEvent evt) {//GE
   private javax.swing.JPanel panelTables;
   private javax.swing.JSplitPane split;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarTables;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableFunctions;
+  private ViewTable tableFunctions;
   private javax.swing.JToolBar toolBarTables;
   // End of variables declaration//GEN-END:variables
 

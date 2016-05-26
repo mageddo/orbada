@@ -7,16 +7,18 @@ import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.firebird.OrbadaFirebirdPlugin;
 import pl.mpak.orbada.firebird.Sql;
 import pl.mpak.orbada.firebird.gui.freezing.TriggerFreezeViewService;
 import pl.mpak.orbada.firebird.gui.wizards.CreateTriggerWizard;
 import pl.mpak.orbada.firebird.util.SourceCreator;
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
+import orbada.gui.IRootTabObjectInfo;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.OrbadaTabbedPane;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.OrbadaTabbedPane;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDefComponent;
@@ -248,7 +250,7 @@ public class TriggersPanelView extends javax.swing.JPanel implements IRootTabObj
     splitTables = new javax.swing.JSplitPane();
     panelTables = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableTriggers = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableTriggers = new ViewTable();
     jPanel1 = new javax.swing.JPanel();
     toolBarTables = new javax.swing.JToolBar();
     buttonRefresh = new pl.mpak.sky.gui.swing.comp.ToolButton();
@@ -511,7 +513,7 @@ private void cmActiveTriggerActionPerformed(java.awt.event.ActionEvent evt) {//G
   private javax.swing.JPanel panelTables;
   private javax.swing.JSplitPane splitTables;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarTables;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableTriggers;
+  private ViewTable tableTriggers;
   private javax.swing.JToolBar toolBarTables;
   // End of variables declaration//GEN-END:variables
   

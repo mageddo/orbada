@@ -2,7 +2,7 @@ package pl.mpak.orbada.xmldataview;
 
 import java.util.ArrayList;
 import java.util.List;
-import pl.mpak.orbada.Consts;
+
 import pl.mpak.orbada.plugins.OrbadaPlugin;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
 import pl.mpak.orbada.xmldataview.services.XmlDataViewService;

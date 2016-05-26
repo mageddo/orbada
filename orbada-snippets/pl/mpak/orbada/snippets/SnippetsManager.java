@@ -6,9 +6,9 @@ package pl.mpak.orbada.snippets;
 
 import java.util.ArrayList;
 import java.util.List;
-import pl.mpak.orbada.Consts;
-import pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea;
-import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
+import orbada.Consts;
+import orbada.gui.comps.OrbadaJavaSyntaxTextArea;
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.sky.gui.swing.syntax.ApplySyntaxTextAreaEvent;

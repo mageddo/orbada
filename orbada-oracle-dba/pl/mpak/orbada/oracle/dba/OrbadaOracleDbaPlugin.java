@@ -2,7 +2,7 @@ package pl.mpak.orbada.oracle.dba;
 
 import java.util.ArrayList;
 import java.util.List;
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.oracle.cm.FindObjectFromEditorAction;
 import pl.mpak.orbada.oracle.dba.services.OracleCacheTableAction;
 import pl.mpak.orbada.oracle.dba.services.OracleCompressTableAction;

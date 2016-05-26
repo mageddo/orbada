@@ -9,7 +9,10 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableModel;
-import pl.mpak.orbada.core.Application;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
+import orbada.gui.comps.table.Table;
+import orbada.core.Application;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.reports.Sql;
 import pl.mpak.orbada.reports.db.ReportRecord;
@@ -24,7 +27,6 @@ import pl.mpak.usedb.core.Query;
 import pl.mpak.usedb.gui.RecordLink;
 import pl.mpak.usedb.gui.linkreq.FieldRequeiredNotNull;
 import pl.mpak.util.ExceptionUtil;
-import pl.mpak.util.variant.Variant;
 
 /**
  *
@@ -275,10 +277,10 @@ public class ReportEditDialog extends javax.swing.JDialog {
     jScrollPane1 = new javax.swing.JScrollPane();
     textDescription = new pl.mpak.sky.gui.swing.comp.TextArea();
     jPanel3 = new javax.swing.JPanel();
-    textSql = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    textSql = new OrbadaSyntaxTextArea();
     panelDetailReports = new javax.swing.JPanel();
     jScrollPane2 = new javax.swing.JScrollPane();
-    tableDetails = new pl.mpak.orbada.gui.comps.table.Table();
+    tableDetails = new Table();
     buttonNewDetail = new javax.swing.JButton();
     buttonEditDetail = new javax.swing.JButton();
     buttonDeleteDetail = new javax.swing.JButton();
@@ -605,11 +607,11 @@ private void cmDeleteDetailActionPerformed(java.awt.event.ActionEvent evt) {//GE
   private javax.swing.JScrollPane jScrollPane2;
   private javax.swing.JPanel panelDetailReports;
   private javax.swing.JTabbedPane tabbedReport;
-  private pl.mpak.orbada.gui.comps.table.Table tableDetails;
+  private Table tableDetails;
   private pl.mpak.sky.gui.swing.comp.TextArea textDescription;
   private pl.mpak.sky.gui.swing.comp.TextField textId;
   private pl.mpak.sky.gui.swing.comp.TextField textName;
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea textSql;
+  private OrbadaSyntaxTextArea textSql;
   private pl.mpak.sky.gui.swing.comp.TextField textTooltip;
   // End of variables declaration//GEN-END:variables
 

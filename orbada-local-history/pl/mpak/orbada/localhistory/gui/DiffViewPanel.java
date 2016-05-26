@@ -15,8 +15,10 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import org.jmeld.ui.JMeldPanel;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.localhistory.OrbadaLocalHistoryPlugin;
 import pl.mpak.orbada.localhistory.Sql;
 import pl.mpak.orbada.localhistory.core.SchemaObjects;
@@ -204,7 +206,7 @@ public class DiffViewPanel extends javax.swing.JPanel implements Closeable {
     buttonCommentChange = new pl.mpak.sky.gui.swing.comp.ToolButton();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableHistory = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableHistory = new ViewTable();
 
     cmRefresh.setActionCommandKey("cmRefresh");
     cmRefresh.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/refresh16.gif"))); // NOI18N
@@ -328,7 +330,7 @@ private void cmCommentChangeActionPerformed(java.awt.event.ActionEvent evt) {//G
   private javax.swing.JToolBar.Separator jSeparator1;
   private javax.swing.JPopupMenu menuActions;
   private javax.swing.JSplitPane split;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableHistory;
+  private ViewTable tableHistory;
   private javax.swing.JToolBar toolBar;
   // End of variables declaration//GEN-END:variables
 

@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import javax.swing.JComponent;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.AbstractTableModel;
+
+import orbada.gui.comps.table.Table;
 import pl.mpak.orbada.db.DriverType;
 import pl.mpak.orbada.gadgets.OrbadaGadgetsPlugin;
 import pl.mpak.orbada.gadgets.db.OgQueryInfoPerspectiveUpdater;
@@ -182,7 +184,7 @@ public class QueryInformationConfigDialog extends javax.swing.JDialog {
     buttonOk = new javax.swing.JButton();
     buttonCancel = new javax.swing.JButton();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableQueryInfo = new pl.mpak.orbada.gui.comps.table.Table();
+    tableQueryInfo = new Table();
 
     cmOk.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, 0));
     cmOk.setText(stringManager.getString("cmOk-text")); // NOI18N
@@ -267,7 +269,7 @@ private void cmCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
   private pl.mpak.sky.gui.swing.Action cmCancel;
   private pl.mpak.sky.gui.swing.Action cmOk;
   private javax.swing.JScrollPane jScrollPane1;
-  private pl.mpak.orbada.gui.comps.table.Table tableQueryInfo;
+  private Table tableQueryInfo;
   // End of variables declaration//GEN-END:variables
 
 }

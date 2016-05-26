@@ -1,10 +1,12 @@
 package pl.mpak.orbada.oracle.gui.types;
 
 import java.io.IOException;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.gui.types.cm.PageDownAction;
 import pl.mpak.orbada.oracle.gui.types.cm.PageUpAction;
@@ -152,7 +154,7 @@ public class TypeAttrsPanel extends javax.swing.JPanel implements ITabObjectInfo
     cmFilter = new pl.mpak.sky.gui.swing.Action();
     menuActions = new javax.swing.JPopupMenu();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableAttrs = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableAttrs = new ViewTable();
     statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel1 = new javax.swing.JPanel();
     toolBarColumns = new javax.swing.JToolBar();
@@ -244,7 +246,7 @@ private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:
   private javax.swing.JToolBar.Separator jSeparator1;
   private javax.swing.JPopupMenu menuActions;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBar;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableAttrs;
+  private ViewTable tableAttrs;
   private javax.swing.JToolBar toolBarColumns;
   // End of variables declaration//GEN-END:variables
   

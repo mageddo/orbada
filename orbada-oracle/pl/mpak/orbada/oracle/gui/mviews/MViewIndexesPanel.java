@@ -3,12 +3,13 @@ package pl.mpak.orbada.oracle.gui.mviews;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.gui.comps.table.VerticalQueryTablePanel;
+import orbada.gui.comps.table.VerticalQueryTablePanel;
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.gui.wizards.mview.CreateMViewIndexWizard;
 import pl.mpak.orbada.oracle.gui.wizards.mview.DropMViewIndexWizard;
@@ -205,7 +206,7 @@ public class MViewIndexesPanel extends javax.swing.JPanel implements ITabObjectI
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
     splitIndex = new javax.swing.JSplitPane();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableIndexes = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableIndexes = new ViewTable();
 
     cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
@@ -430,7 +431,7 @@ private void cmRenameIndexActionPerformed(java.awt.event.ActionEvent evt) {//GEN
   private javax.swing.JMenuItem menuRenameIndex;
   private javax.swing.JSplitPane splitIndex;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarIndexes;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableIndexes;
+  private ViewTable tableIndexes;
   private javax.swing.JToolBar toolBarIndexes;
   // End of variables declaration//GEN-END:variables
   

@@ -6,6 +6,8 @@ import javax.swing.DefaultCellEditor;
 import javax.swing.JComboBox;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
+
+import orbada.gui.comps.table.Table;
 import pl.mpak.orbada.mysql.OrbadaMySQLPlugin;
 import pl.mpak.orbada.mysql.gui.util.TableColumnComboBoxModel;
 import pl.mpak.orbada.mysql.gui.util.TableComboBoxModel;
@@ -160,7 +162,7 @@ public class CreateForeignKeyTableConstraintWizardPanel extends SqlCodeWizardPan
     jLabel4 = new javax.swing.JLabel();
     jLabel1 = new javax.swing.JLabel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableColumns = new pl.mpak.orbada.gui.comps.table.Table();
+    tableColumns = new Table();
     jLabel6 = new javax.swing.JLabel();
     comboOnDelete = new javax.swing.JComboBox();
     jLabel7 = new javax.swing.JLabel();
@@ -328,7 +330,7 @@ private void cmAddRowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
   private javax.swing.JLabel jLabel6;
   private javax.swing.JLabel jLabel7;
   private javax.swing.JScrollPane jScrollPane1;
-  private pl.mpak.orbada.gui.comps.table.Table tableColumns;
+  private Table tableColumns;
   private pl.mpak.sky.gui.swing.comp.TextField textName;
   private pl.mpak.sky.gui.swing.comp.TextField textTableName;
   // End of variables declaration//GEN-END:variables

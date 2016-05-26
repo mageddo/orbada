@@ -24,7 +24,9 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+
+import orbada.gui.comps.table.DataTable;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.providers.DatabaseInfoProvider;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
@@ -440,7 +442,7 @@ public class SqlQueryResultPanel extends javax.swing.JPanel implements Closeable
     menuRecordCount = new javax.swing.JMenuItem();
     jPanel2 = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    dataTable = new pl.mpak.orbada.gui.comps.table.DataTable();
+    dataTable = new DataTable();
     statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel1 = new javax.swing.JPanel();
     toolBar = new javax.swing.JToolBar();
@@ -756,7 +758,7 @@ private void cmRecordCountActionPerformed(java.awt.event.ActionEvent evt) {//GEN
   private pl.mpak.sky.gui.swing.Action cmRecordCount;
   private pl.mpak.sky.gui.swing.Action cmRollbackRecord;
   private pl.mpak.sky.gui.swing.Action cmStopExecuting;
-  private pl.mpak.orbada.gui.comps.table.DataTable dataTable;
+  private DataTable dataTable;
   private javax.swing.JPanel jPanel1;
   private javax.swing.JPanel jPanel2;
   private javax.swing.JScrollPane jScrollPane1;

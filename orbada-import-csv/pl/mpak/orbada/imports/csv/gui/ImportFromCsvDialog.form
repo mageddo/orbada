@@ -669,7 +669,7 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="textTableCreatCode">
+            <Component class="OrbadaSyntaxTextArea" name="textTableCreatCode">
             </Component>
           </SubComponents>
         </Container>

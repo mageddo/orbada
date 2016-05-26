@@ -6,6 +6,7 @@
 
 package pl.mpak.orbada.universal.gui.wizards;
 
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
 import pl.mpak.orbada.universal.gui.util.TableComboBoxModel;
 import pl.mpak.sky.gui.mr.ModalResult;
@@ -86,7 +87,7 @@ public class CreateConstraintCheckWizardPanel extends SqlCodeWizardPanel {
     jLabel2 = new javax.swing.JLabel();
     comboTables = new javax.swing.JComboBox();
     jLabel1 = new javax.swing.JLabel();
-    textCheck = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    textCheck = new OrbadaSyntaxTextArea();
     jLabel3 = new javax.swing.JLabel();
     textName = new pl.mpak.sky.gui.swing.comp.TextField();
 
@@ -144,7 +145,7 @@ public class CreateConstraintCheckWizardPanel extends SqlCodeWizardPanel {
   private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel2;
   private javax.swing.JLabel jLabel3;
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea textCheck;
+  private OrbadaSyntaxTextArea textCheck;
   private pl.mpak.sky.gui.swing.comp.TextField textName;
   // End of variables declaration//GEN-END:variables
   

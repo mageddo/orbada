@@ -9,9 +9,11 @@ package pl.mpak.orbada.hsqldb.gui.aliases;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.hsqldb.OrbadaHSqlDbPlugin;
 import pl.mpak.orbada.hsqldb.Sql;
-import pl.mpak.orbada.gui.ITabObjectInfo;
+import orbada.gui.ITabObjectInfo;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.usedb.core.Database;
@@ -151,7 +153,7 @@ public class ProcedureParametersPanel extends javax.swing.JPanel implements ITab
   private void initComponents() {
 
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableParameters = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableParameters = new ViewTable();
     statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel1 = new javax.swing.JPanel();
     toolBar = new javax.swing.JToolBar();
@@ -190,7 +192,7 @@ private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:
   private javax.swing.JPanel jPanel1;
   private javax.swing.JScrollPane jScrollPane1;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBar;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableParameters;
+  private ViewTable tableParameters;
   private javax.swing.JToolBar toolBar;
   // End of variables declaration//GEN-END:variables
 

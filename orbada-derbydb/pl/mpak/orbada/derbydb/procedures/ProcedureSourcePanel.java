@@ -1,10 +1,12 @@
 package pl.mpak.orbada.derbydb.procedures;
 
 import java.io.IOException;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.derbydb.DerbyDbSql;
 import pl.mpak.orbada.derbydb.OrbadaDerbyDbPlugin;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.usedb.core.Database;
 import pl.mpak.usedb.core.Query;
@@ -132,7 +134,7 @@ public class ProcedureSourcePanel extends javax.swing.JPanel implements ITabObje
     buttonRefresh = new pl.mpak.sky.gui.swing.comp.ToolButton();
     jSeparator1 = new javax.swing.JToolBar.Separator();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
-    syntaxProcSource = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    syntaxProcSource = new OrbadaSyntaxTextArea();
 
     cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
@@ -182,7 +184,7 @@ private void cmRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
   private pl.mpak.sky.gui.swing.Action cmRefresh;
   private javax.swing.JToolBar.Separator jSeparator1;
   private javax.swing.JPopupMenu menuActions;
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea syntaxProcSource;
+  private OrbadaSyntaxTextArea syntaxProcSource;
   private javax.swing.JToolBar toolBarContent;
   // End of variables declaration//GEN-END:variables
   

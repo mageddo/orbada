@@ -91,7 +91,7 @@
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                   <SubComponents>
-                    <Component class="pl.mpak.orbada.gui.comps.table.ViewTable" name="tableDatabases">
+                    <Component class="ViewTable" name="tableDatabases">
                     </Component>
                   </SubComponents>
                 </Container>
@@ -132,7 +132,7 @@
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                   <SubComponents>
-                    <Component class="pl.mpak.orbada.gui.comps.table.DataTable" name="tableDetails">
+                    <Component class="DataTable" name="tableDetails">
                     </Component>
                   </SubComponents>
                 </Container>

@@ -15,14 +15,17 @@ import javax.swing.JList;
 import javax.swing.JTable;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.DataTable;
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.oracle.gui.wizards.DropConstraintWizard;
 import pl.mpak.orbada.oracle.gui.wizards.table.EnableAllTableConstraintWizard;
 import pl.mpak.orbada.oracle.gui.wizards.table.EnableTableConstraintWizard;
 import pl.mpak.orbada.oracle.gui.wizards.table.EnableTableRelatedConstraintWizard;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.dbinfo.OracleExceptionTableInfo;
 import pl.mpak.orbada.oracle.gui.util.ExceptionTableComboBoxModel;
@@ -332,7 +335,7 @@ public class TableConstraintsPanel extends javax.swing.JPanel implements ITabObj
     jSeparator1 = new javax.swing.JToolBar.Separator();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableConstraints = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableConstraints = new ViewTable();
     statusBarConstraints = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     panelExceptions = new javax.swing.JPanel();
     jPanel3 = new javax.swing.JPanel();
@@ -349,7 +352,7 @@ public class TableConstraintsPanel extends javax.swing.JPanel implements ITabObj
     jSeparator5 = new javax.swing.JToolBar.Separator();
     buttonDeleteExceptedRecords = new pl.mpak.sky.gui.swing.comp.ToolButton();
     jScrollPane2 = new javax.swing.JScrollPane();
-    tableExceptions = new pl.mpak.orbada.gui.comps.table.DataTable();
+    tableExceptions = new DataTable();
     statusBarExceptions = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
 
     cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
@@ -863,8 +866,8 @@ private void cmCreateIndexesFromConstraintsActionPerformed(java.awt.event.Action
   private javax.swing.JSplitPane split;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarConstraints;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarExceptions;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableConstraints;
-  private pl.mpak.orbada.gui.comps.table.DataTable tableExceptions;
+  private ViewTable tableConstraints;
+  private DataTable tableExceptions;
   private javax.swing.JToolBar toolBarConstraints;
   private javax.swing.JToolBar toolBarConstraints1;
   private pl.mpak.sky.gui.swing.comp.ToolButton toolButton1;

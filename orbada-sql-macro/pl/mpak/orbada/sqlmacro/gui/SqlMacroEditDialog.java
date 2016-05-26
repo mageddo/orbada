@@ -5,6 +5,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 import javax.swing.JComponent;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.sqlmacro.OrbadaSqlMacrosPlugin;
 import pl.mpak.orbada.sqlmacro.db.SqlMacroRecord;
@@ -116,7 +118,7 @@ public class SqlMacroEditDialog extends javax.swing.JDialog {
         editName = new pl.mpak.sky.gui.swing.comp.TextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        editResolve = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+        editResolve = new OrbadaSyntaxTextArea();
         checkAllUsers = new javax.swing.JCheckBox();
         editRegexp = new pl.mpak.sky.gui.swing.comp.TextField();
         jLabel4 = new javax.swing.JLabel();
@@ -125,7 +127,7 @@ public class SqlMacroEditDialog extends javax.swing.JDialog {
         editTestCommand = new pl.mpak.sky.gui.swing.comp.TextField();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        editTestResolve = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+        editTestResolve = new OrbadaSyntaxTextArea();
         buttonResolve = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         comboDriverType = new pl.mpak.usedb.gui.swing.QueryComboBox();
@@ -369,9 +371,9 @@ private void cmResolveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     private pl.mpak.sky.gui.swing.comp.TextField editName;
     private pl.mpak.sky.gui.swing.comp.TextField editOrder;
     private pl.mpak.sky.gui.swing.comp.TextField editRegexp;
-    private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea editResolve;
+    private OrbadaSyntaxTextArea editResolve;
     private pl.mpak.sky.gui.swing.comp.TextField editTestCommand;
-    private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea editTestResolve;
+    private OrbadaSyntaxTextArea editTestResolve;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

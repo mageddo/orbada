@@ -8,9 +8,11 @@ import java.io.IOException;
 import java.util.Vector;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
-import pl.mpak.orbada.gui.util.SimpleSelectDialog;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.gui.IRootTabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.hsqldb.OrbadaHSqlDbPlugin;
 import pl.mpak.orbada.hsqldb.Sql;
 import pl.mpak.orbada.hsqldb.cm.CreateSequenceWizardAction;
@@ -183,7 +185,7 @@ public class SequencesPanelView extends javax.swing.JPanel implements IRootTabOb
     menuActions = new javax.swing.JPopupMenu();
     jPanel1 = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableSequences = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableSequences = new ViewTable();
     statusBarSequences = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel2 = new javax.swing.JPanel();
     toolBarTriggers = new javax.swing.JToolBar();
@@ -384,7 +386,7 @@ private void cmAlterSequenceActionPerformed(java.awt.event.ActionEvent evt) {//G
   private javax.swing.JPopupMenu menuActions;
   private javax.swing.JToolBar.Separator separator;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarSequences;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableSequences;
+  private ViewTable tableSequences;
   private javax.swing.JToolBar toolBarTriggers;
   // End of variables declaration//GEN-END:variables
 

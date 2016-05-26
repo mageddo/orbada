@@ -2,7 +2,7 @@ package pl.mpak.orbada.mysql.gui.freezing;
 
 import java.awt.Component;
 import javax.swing.Icon;
-import pl.mpak.orbada.gui.OrbadaTabbedPane;
+import orbada.gui.OrbadaTabbedPane;
 import pl.mpak.orbada.mysql.gui.tables.TableTabbedPane;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 

@@ -2,7 +2,7 @@ package pl.mpak.orbada.jaybird;
 
 import java.util.ArrayList;
 import java.util.List;
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.jaybird.services.JaybirdExplainPlanService;
 import pl.mpak.orbada.jaybird.services.JaybirdGeneralSettingsService;
 import pl.mpak.orbada.jaybird.services.JaybirdMenuService;

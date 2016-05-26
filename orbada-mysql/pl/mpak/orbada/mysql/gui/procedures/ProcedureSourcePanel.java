@@ -1,6 +1,6 @@
 package pl.mpak.orbada.mysql.gui.procedures;
 
-import pl.mpak.orbada.gui.comps.AbsOrbadaSyntaxTextArea;
+import orbada.gui.comps.AbsOrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.mysql.OrbadaMySQLPlugin;
 import pl.mpak.orbada.mysql.util.SourceCreator;

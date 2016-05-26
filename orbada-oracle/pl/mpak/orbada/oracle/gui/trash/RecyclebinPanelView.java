@@ -1,8 +1,10 @@
 package pl.mpak.orbada.oracle.gui.trash;
 
 import java.io.IOException;
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.gui.IRootTabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.oracle.gui.wizards.FlashbackObjectWizard;
@@ -151,7 +153,7 @@ public class RecyclebinPanelView extends javax.swing.JPanel implements IRootTabO
     cmPurgeRecyclebin = new pl.mpak.sky.gui.swing.Action();
     jPanel1 = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableRecyclebin = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableRecyclebin = new ViewTable();
     statusBarSequences = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel2 = new javax.swing.JPanel();
     toolBar = new javax.swing.JToolBar();
@@ -336,7 +338,7 @@ private void cmPurgeRecyclebinActionPerformed(java.awt.event.ActionEvent evt) {/
   private javax.swing.JMenuItem menuPurgeObject;
   private javax.swing.JMenuItem menuPurgeRecyclebin;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarSequences;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableRecyclebin;
+  private ViewTable tableRecyclebin;
   private javax.swing.JToolBar toolBar;
   // End of variables declaration//GEN-END:variables
 

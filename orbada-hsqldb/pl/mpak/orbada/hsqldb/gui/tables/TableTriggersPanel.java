@@ -4,8 +4,11 @@ import java.awt.Dialog;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
+import orbada.gui.comps.table.ViewTable;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.hsqldb.OrbadaHSqlDbPlugin;
 import pl.mpak.orbada.hsqldb.Sql;
 import pl.mpak.orbada.hsqldb.services.HSqlDbInfoProvider;
@@ -175,9 +178,9 @@ public class TableTriggersPanel extends javax.swing.JPanel implements ITabObject
     menuActions = new javax.swing.JPopupMenu();
     jPanel1 = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableTriggers = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableTriggers = new ViewTable();
     statusBarTriggers = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
-    syntaxTrigger = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    syntaxTrigger = new OrbadaSyntaxTextArea();
     jPanel2 = new javax.swing.JPanel();
     toolBarTriggers = new javax.swing.JToolBar();
     buttonRefresh = new pl.mpak.sky.gui.swing.comp.ToolButton();
@@ -314,8 +317,8 @@ private void cmRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
   private javax.swing.JSeparator jSeparator2;
   private javax.swing.JPopupMenu menuActions;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarTriggers;
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea syntaxTrigger;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableTriggers;
+  private OrbadaSyntaxTextArea syntaxTrigger;
+  private ViewTable tableTriggers;
   private javax.swing.JToolBar toolBarTriggers;
   // End of variables declaration//GEN-END:variables
   

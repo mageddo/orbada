@@ -1,9 +1,11 @@
 package pl.mpak.orbada.oracle.gui.tables;
 
 import java.io.IOException;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.oracle.util.SourceCreator;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
+import orbada.gui.ITabObjectInfo;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.usedb.core.Database;
 import pl.mpak.util.StringManager;
@@ -104,7 +106,7 @@ public class TableSourcePanel extends javax.swing.JPanel implements ITabObjectIn
     cmRefreshSource = new pl.mpak.sky.gui.swing.Action();
     toolBarContent = new javax.swing.JToolBar();
     buttonRefresh = new pl.mpak.sky.gui.swing.comp.ToolButton();
-    syntaxSource = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    syntaxSource = new OrbadaSyntaxTextArea();
 
     cmRefreshSource.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
     cmRefreshSource.setText(stringManager.getString("cmRefreshSource-text")); // NOI18N
@@ -148,7 +150,7 @@ private void cmRefreshSourceActionPerformed(java.awt.event.ActionEvent evt) {//G
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private pl.mpak.sky.gui.swing.comp.ToolButton buttonRefresh;
   private pl.mpak.sky.gui.swing.Action cmRefreshSource;
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea syntaxSource;
+  private OrbadaSyntaxTextArea syntaxSource;
   private javax.swing.JToolBar toolBarContent;
   // End of variables declaration//GEN-END:variables
   

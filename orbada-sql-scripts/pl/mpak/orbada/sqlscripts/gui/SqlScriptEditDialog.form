@@ -140,7 +140,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="textSqlScript">
+    <Component class="OrbadaSyntaxTextArea" name="textSqlScript">
     </Component>
   </SubComponents>
 </Form>

@@ -3,12 +3,15 @@ package pl.mpak.orbada.oracle.gui.mviews;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.oracle.util.SourceCreator;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.gui.wizards.mview.CreateMViewTriggerWizard;
 import pl.mpak.orbada.oracle.gui.wizards.mview.DropMViewTriggerWizard;
@@ -195,9 +198,9 @@ public class MViewTriggersPanel extends javax.swing.JPanel implements ITabObject
     splitTriggers = new javax.swing.JSplitPane();
     jPanel1 = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableTriggers = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableTriggers = new ViewTable();
     statusBarTriggers = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
-    textTrigger = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    textTrigger = new OrbadaSyntaxTextArea();
 
     cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
@@ -379,8 +382,8 @@ private void cmCreateTriggerActionPerformed(java.awt.event.ActionEvent evt) {//G
   private javax.swing.JMenuItem menuEnable;
   private javax.swing.JSplitPane splitTriggers;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarTriggers;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableTriggers;
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea textTrigger;
+  private ViewTable tableTriggers;
+  private OrbadaSyntaxTextArea textTrigger;
   private javax.swing.JToolBar toolBarTriggers;
   // End of variables declaration//GEN-END:variables
   

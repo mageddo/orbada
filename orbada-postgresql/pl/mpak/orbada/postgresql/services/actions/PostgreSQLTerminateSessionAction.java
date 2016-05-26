@@ -7,7 +7,7 @@ package pl.mpak.orbada.postgresql.services.actions;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import pl.mpak.orbada.gui.comps.table.ViewTable;
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.plugins.providers.ComponentActionProvider;
 import pl.mpak.orbada.postgresql.OrbadaPostgreSQLPlugin;
 import pl.mpak.orbada.postgresql.gui.admin.SessionsPanelView;

@@ -6,6 +6,8 @@ import javax.swing.DefaultCellEditor;
 import javax.swing.JComboBox;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
+
+import orbada.gui.comps.table.Table;
 import pl.mpak.orbada.plugins.dbinfo.jdbc.JdbcDbSchemaInfo;
 import pl.mpak.orbada.plugins.dbinfo.jdbc.JdbcDbTableInfo;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
@@ -141,7 +143,7 @@ public class CreateConstraintPrimaryKeyWizardPanel extends SqlCodeWizardPanel {
     textName = new pl.mpak.sky.gui.swing.comp.TextField();
     jLabel1 = new javax.swing.JLabel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableColumns = new pl.mpak.orbada.gui.comps.table.Table();
+    tableColumns = new Table();
     buttonAddRow = new javax.swing.JButton();
     buttonRemoveRow = new javax.swing.JButton();
 
@@ -254,7 +256,7 @@ private void cmAddRowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
   private javax.swing.JLabel jLabel2;
   private javax.swing.JLabel jLabel3;
   private javax.swing.JScrollPane jScrollPane1;
-  private pl.mpak.orbada.gui.comps.table.Table tableColumns;
+  private Table tableColumns;
   private pl.mpak.sky.gui.swing.comp.TextField textName;
   // End of variables declaration//GEN-END:variables
   

@@ -179,7 +179,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="editSql">
+    <Component class="OrbadaSyntaxTextArea" name="editSql">
     </Component>
     <Component class="javax.swing.JCheckBox" name="checkAllUsers">
       <Properties>

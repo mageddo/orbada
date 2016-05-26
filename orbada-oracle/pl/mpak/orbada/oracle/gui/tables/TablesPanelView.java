@@ -6,8 +6,10 @@ import java.io.IOException;
 import java.util.Vector;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
-import pl.mpak.orbada.gui.util.SimpleSelectDialog;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.gui.IRootTabObjectInfo;
+import orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.oracle.gui.wizards.table.CommentTableWizard;
@@ -20,8 +22,8 @@ import pl.mpak.orbada.oracle.gui.wizards.table.TruncateTableWizard;
 import pl.mpak.orbada.oracle.services.OracleDbInfoProvider;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.OrbadaTabbedPane;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.OrbadaTabbedPane;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.oracle.gui.freezing.TableFreezeViewService;
 import pl.mpak.orbada.oracle.gui.wizards.table.CreateExternalTableWizard;
 import pl.mpak.orbada.oracle.gui.wizards.table.CreateNormalTableWizard;
@@ -279,7 +281,7 @@ public class TablesPanelView extends javax.swing.JPanel implements IRootTabObjec
         jSeparator1 = new javax.swing.JSeparator();
         buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tableTables = new pl.mpak.orbada.gui.comps.table.ViewTable();
+        tableTables = new ViewTable();
         jPanel2 = new javax.swing.JPanel();
         statusBarTables = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -757,7 +759,7 @@ private void cmCreateTemporaryTableActionPerformed(java.awt.event.ActionEvent ev
     private javax.swing.JPanel panelTables;
     private javax.swing.JSplitPane splitTables;
     private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarTables;
-    private pl.mpak.orbada.gui.comps.table.ViewTable tableTables;
+    private ViewTable tableTables;
     private pl.mpak.sky.gui.swing.comp.TextArea textRemarks;
     private javax.swing.JToolBar toolBarTables;
     // End of variables declaration//GEN-END:variables

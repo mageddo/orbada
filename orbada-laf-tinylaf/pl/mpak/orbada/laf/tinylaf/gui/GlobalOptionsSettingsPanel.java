@@ -17,7 +17,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.Properties;
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.laf.tinylaf.OrbadaLafTinyLaFPlugin;
 import pl.mpak.orbada.laf.tinylaf.services.TinyLookAndFeelService;
 import pl.mpak.orbada.laf.tinylaf.starters.TinyLookAndFeelStarter;

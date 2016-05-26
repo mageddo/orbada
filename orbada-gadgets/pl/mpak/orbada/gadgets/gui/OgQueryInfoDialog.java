@@ -8,6 +8,8 @@ package pl.mpak.orbada.gadgets.gui;
 
 import java.beans.IntrospectionException;
 import javax.swing.JComponent;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.gadgets.OrbadaGadgetsPlugin;
 import pl.mpak.orbada.gadgets.db.OgQueryInfo;
 import pl.mpak.orbada.plugins.IApplication;
@@ -106,7 +108,7 @@ public class OgQueryInfoDialog extends javax.swing.JDialog {
     jLabel2 = new javax.swing.JLabel();
     comboDriverType = new pl.mpak.usedb.gui.swing.QueryComboBox();
     jLabel3 = new javax.swing.JLabel();
-    editSql = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    editSql = new OrbadaSyntaxTextArea();
     checkAllUsers = new javax.swing.JCheckBox();
 
     cmOk.setActionCommandKey("cmOk");
@@ -248,7 +250,7 @@ private void cmCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
   private pl.mpak.sky.gui.swing.Action cmOk;
   private pl.mpak.usedb.gui.swing.QueryComboBox comboDriverType;
   private pl.mpak.sky.gui.swing.comp.TextField editName;
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea editSql;
+  private OrbadaSyntaxTextArea editSql;
   private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel2;
   private javax.swing.JLabel jLabel3;

@@ -12,6 +12,8 @@ import java.io.IOException;
 import java.sql.SQLException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.DataTable;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.reports.Sql;
 import pl.mpak.orbada.reports.db.ReportRecord;
@@ -258,7 +260,7 @@ public class TableReportPanel extends javax.swing.JPanel implements Titleable, C
         jPanel1 = new javax.swing.JPanel();
         statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tableReport = new pl.mpak.orbada.gui.comps.table.DataTable();
+        tableReport = new DataTable();
         tabbedDetails = new javax.swing.JTabbedPane();
 
         cmRefresh.setActionCommandKey("cmRefresh");
@@ -385,7 +387,7 @@ private void cmCancelReportActionPerformed(java.awt.event.ActionEvent evt) {
     private javax.swing.JSplitPane split;
     private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBar;
     private javax.swing.JTabbedPane tabbedDetails;
-    private pl.mpak.orbada.gui.comps.table.DataTable tableReport;
+    private DataTable tableReport;
     private javax.swing.JToolBar toolBar;
     // End of variables declaration//GEN-END:variables
 

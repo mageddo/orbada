@@ -9,7 +9,9 @@ import java.util.EventObject;
 import javax.swing.AbstractButton;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.Consts;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.Consts;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.ISettingsComponent;
@@ -185,7 +187,7 @@ public class SnippetsSettingsPanel extends javax.swing.JPanel implements ISettin
         buttonDelete = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tableSnippets = new pl.mpak.orbada.gui.comps.table.ViewTable();
+        tableSnippets = new ViewTable();
         buttonExport = new javax.swing.JButton();
         buttonImport = new javax.swing.JButton();
         checkSnippetsEnabled = new javax.swing.JCheckBox();
@@ -407,7 +409,7 @@ try {
     private pl.mpak.sky.gui.swing.Action cmNew;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private pl.mpak.orbada.gui.comps.table.ViewTable tableSnippets;
+    private ViewTable tableSnippets;
     // End of variables declaration//GEN-END:variables
 
 }

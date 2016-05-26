@@ -52,7 +52,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea" name="textStartup">
+    <Component class="OrbadaJavaSyntaxTextArea" name="textStartup">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
@@ -61,7 +61,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea" name="textShutdown">
+    <Component class="OrbadaJavaSyntaxTextArea" name="textShutdown">
     </Component>
   </SubComponents>
 </Form>

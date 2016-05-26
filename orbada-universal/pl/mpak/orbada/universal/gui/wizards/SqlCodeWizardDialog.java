@@ -10,7 +10,9 @@ import java.util.Map;
 import java.util.concurrent.Callable;
 import javax.swing.AbstractButton;
 import javax.swing.JComponent;
-import pl.mpak.orbada.core.Application;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
+import orbada.core.Application;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
 import pl.mpak.sky.gui.mr.ModalResult;
@@ -130,7 +132,7 @@ public class SqlCodeWizardDialog extends javax.swing.JDialog {
     buttonCancel = new javax.swing.JButton();
     tabbedWizard = new javax.swing.JTabbedPane();
     panelSqlCode = new javax.swing.JPanel();
-    textSqlCode = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    textSqlCode = new OrbadaSyntaxTextArea();
     checkClipoard = new javax.swing.JCheckBox();
     checkBackground = new javax.swing.JCheckBox();
     buttonScriptInfo = new pl.mpak.sky.gui.swing.comp.ToolButton();
@@ -317,7 +319,7 @@ private void cmScriptInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
   private pl.mpak.sky.gui.swing.Action cmScriptInfo;
   private javax.swing.JPanel panelSqlCode;
   private javax.swing.JTabbedPane tabbedWizard;
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea textSqlCode;
+  private OrbadaSyntaxTextArea textSqlCode;
   // End of variables declaration//GEN-END:variables
   
 }

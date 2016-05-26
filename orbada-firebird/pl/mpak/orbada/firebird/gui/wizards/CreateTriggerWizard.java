@@ -1,7 +1,7 @@
 package pl.mpak.orbada.firebird.gui.wizards;
 
 import java.util.HashMap;
-import pl.mpak.orbada.core.Application;
+import orbada.core.Application;
 import pl.mpak.orbada.db.Template;
 import pl.mpak.orbada.firebird.OrbadaFirebirdPlugin;
 import pl.mpak.orbada.firebird.services.FirebirdTemplatesSettingsProvider;

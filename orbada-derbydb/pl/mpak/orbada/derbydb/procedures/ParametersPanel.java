@@ -3,9 +3,11 @@ package pl.mpak.orbada.derbydb.procedures;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.derbydb.DerbyDbSql;
 import pl.mpak.orbada.derbydb.OrbadaDerbyDbPlugin;
-import pl.mpak.orbada.gui.ITabObjectInfo;
+import orbada.gui.ITabObjectInfo;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.usedb.core.Database;
@@ -268,7 +270,7 @@ public class ParametersPanel extends javax.swing.JPanel implements ITabObjectInf
 
     cmRefresh = new pl.mpak.sky.gui.swing.Action();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableParams = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableParams = new ViewTable();
     statusBarParams = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     toolBarParams = new javax.swing.JToolBar();
     buttonRefresh = new pl.mpak.sky.gui.swing.comp.ToolButton();
@@ -323,7 +325,7 @@ private void cmRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
   private pl.mpak.sky.gui.swing.Action cmRefresh;
   private javax.swing.JScrollPane jScrollPane1;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarParams;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableParams;
+  private ViewTable tableParams;
   private javax.swing.JToolBar toolBarParams;
   // End of variables declaration//GEN-END:variables
 

@@ -3,9 +3,11 @@ package pl.mpak.orbada.universal.gui.tabbed;
 import java.io.IOException;
 import java.sql.ResultSet;
 import javax.swing.JToolBar;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
@@ -260,7 +262,7 @@ public abstract class UniversalPropTab extends javax.swing.JPanel implements ITa
         cmFilter = new pl.mpak.sky.gui.swing.Action();
         menuActions = new javax.swing.JPopupMenu();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tableProps = new pl.mpak.orbada.gui.comps.table.ViewTable();
+        tableProps = new ViewTable();
         statusBarProps = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
         jPanel1 = new javax.swing.JPanel();
         toolBar = new javax.swing.JToolBar();
@@ -351,7 +353,7 @@ private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:
     private javax.swing.JToolBar.Separator jSeparator1;
     private javax.swing.JPopupMenu menuActions;
     private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarProps;
-    private pl.mpak.orbada.gui.comps.table.ViewTable tableProps;
+    private ViewTable tableProps;
     private javax.swing.JToolBar toolBar;
     // End of variables declaration//GEN-END:variables
   

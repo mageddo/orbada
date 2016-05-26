@@ -14,10 +14,12 @@ import javax.swing.JPanel;
 import javax.swing.JTable;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.gui.util.SimpleSelectDialog;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
-import pl.mpak.orbada.gui.ITabObjectInfo;
+import orbada.gui.ITabObjectInfo;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.sky.gui.swing.TabCloseComponent;
 import pl.mpak.usedb.UseDBException;
@@ -275,7 +277,7 @@ public class ProceduresPanelView extends javax.swing.JPanel implements Closeable
     buttonSelectSchema = new pl.mpak.sky.gui.swing.comp.ToolButton();
     textSchema = new pl.mpak.sky.gui.swing.comp.TextField();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableTables = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableTables = new ViewTable();
     statusBarTables = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     tabbedTableInfo = new javax.swing.JTabbedPane();
 
@@ -408,7 +410,7 @@ private void cmRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
   private javax.swing.JSplitPane splinPane;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarTables;
   private javax.swing.JTabbedPane tabbedTableInfo;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableTables;
+  private ViewTable tableTables;
   private pl.mpak.sky.gui.swing.comp.TextField textSchema;
   private javax.swing.JToolBar toolBarTables;
   // End of variables declaration//GEN-END:variables

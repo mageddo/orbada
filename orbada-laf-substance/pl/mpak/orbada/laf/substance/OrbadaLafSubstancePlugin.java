@@ -11,7 +11,7 @@ package pl.mpak.orbada.laf.substance;
 
 import java.util.ArrayList;
 import java.util.List;
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.laf.substance.services.SubstanceAutumnLookAndFeelService;
 import pl.mpak.orbada.laf.substance.services.SubstanceBusinessBlackSteelLookAndFeelService;
 import pl.mpak.orbada.laf.substance.services.SubstanceBusinessBlueSteelLookAndFeelService;

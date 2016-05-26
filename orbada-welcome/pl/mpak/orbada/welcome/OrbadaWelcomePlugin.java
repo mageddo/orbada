@@ -1,9 +1,9 @@
 package pl.mpak.orbada.welcome;
 
 import java.util.List;
-import pl.mpak.orbada.Consts;
-import pl.mpak.orbada.core.Application;
-import pl.mpak.orbada.gui.MainFrame;
+import orbada.Consts;
+import orbada.core.Application;
+import orbada.gui.MainFrame;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.OrbadaPlugin;
 import pl.mpak.orbada.plugins.queue.PluginMessage;

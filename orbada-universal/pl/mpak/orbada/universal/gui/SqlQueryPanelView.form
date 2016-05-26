@@ -769,7 +769,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
           <SubComponents>
-            <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="textSqlEditor">
+            <Component class="OrbadaSyntaxTextArea" name="textSqlEditor">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
                   <BorderConstraints direction="Center"/>

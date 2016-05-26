@@ -3,8 +3,10 @@ package pl.mpak.orbada.universal.gui.tables;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
+import orbada.gui.ITabObjectInfo;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
 import pl.mpak.usedb.core.Database;
 import pl.mpak.usedb.gui.swing.QueryTableCellRenderer;
@@ -125,7 +127,7 @@ public class TableExportedKeysPanel extends javax.swing.JPanel implements ITabOb
 
     cmRefresh = new pl.mpak.sky.gui.swing.Action();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableExportedKeys = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableExportedKeys = new ViewTable();
     statusBarColumns = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     toolBarColumns = new javax.swing.JToolBar();
     buttonRefresh = new pl.mpak.sky.gui.swing.comp.ToolButton();
@@ -182,7 +184,7 @@ private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:
   private pl.mpak.sky.gui.swing.Action cmRefresh;
   private javax.swing.JScrollPane jScrollPane1;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarColumns;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableExportedKeys;
+  private ViewTable tableExportedKeys;
   private javax.swing.JToolBar toolBarColumns;
   // End of variables declaration//GEN-END:variables
   

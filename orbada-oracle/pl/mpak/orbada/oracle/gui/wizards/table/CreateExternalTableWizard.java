@@ -3,6 +3,8 @@ package pl.mpak.orbada.oracle.gui.wizards.table;
 import javax.swing.DefaultCellEditor;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
+
+import orbada.gui.comps.table.Table;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.gui.util.DirectoryComboBoxModel;
 import pl.mpak.orbada.oracle.gui.wizards.TableColumnDefinitionWizard;
@@ -146,7 +148,7 @@ public class CreateExternalTableWizard extends SqlCodeWizardPanel {
     textParameters = new pl.mpak.sky.gui.swing.comp.TextArea();
     checkUsingCLOB = new javax.swing.JCheckBox();
     jScrollPane2 = new javax.swing.JScrollPane();
-    tableLocalizations = new pl.mpak.orbada.gui.comps.table.Table();
+    tableLocalizations = new Table();
     buttonAddRow = new javax.swing.JButton();
     buttonRemoveRow = new javax.swing.JButton();
     jLabel7 = new javax.swing.JLabel();
@@ -330,7 +332,7 @@ public class CreateExternalTableWizard extends SqlCodeWizardPanel {
   private javax.swing.JScrollPane jScrollPane1;
   private javax.swing.JScrollPane jScrollPane2;
   private javax.swing.JTabbedPane tab;
-  private pl.mpak.orbada.gui.comps.table.Table tableLocalizations;
+  private Table tableLocalizations;
   private pl.mpak.sky.gui.swing.comp.TextField textName;
   private pl.mpak.sky.gui.swing.comp.TextArea textParameters;
   // End of variables declaration//GEN-END:variables

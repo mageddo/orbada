@@ -1,6 +1,8 @@
 package pl.mpak.orbada.oracle.gui.wizards.parameters;
 
 import javax.swing.DefaultCellEditor;
+
+import orbada.gui.comps.table.Table;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.services.OracleDbInfoProvider;
 import pl.mpak.orbada.universal.gui.wizards.SqlCodeWizardPanel;
@@ -108,7 +110,7 @@ public class PlSqlWarningsWizard extends SqlCodeWizardPanel {
     jLabel3 = new javax.swing.JLabel();
     checkSystem = new javax.swing.JCheckBox();
     jScrollPane1 = new javax.swing.JScrollPane();
-    table = new pl.mpak.orbada.gui.comps.table.Table();
+    table = new Table();
 
     comboState.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "ENABLE", "DISABLE", "ERROR" }));
 
@@ -155,7 +157,7 @@ public class PlSqlWarningsWizard extends SqlCodeWizardPanel {
   private javax.swing.JComboBox comboState;
   private javax.swing.JLabel jLabel3;
   private javax.swing.JScrollPane jScrollPane1;
-  private pl.mpak.orbada.gui.comps.table.Table table;
+  private Table table;
   // End of variables declaration//GEN-END:variables
   
 }

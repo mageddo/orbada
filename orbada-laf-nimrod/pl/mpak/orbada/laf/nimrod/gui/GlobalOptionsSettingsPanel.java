@@ -15,7 +15,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.Properties;
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.laf.nimrod.OrbadaLafNimRODPlugin;
 import pl.mpak.orbada.laf.nimrod.services.NimRODLookAndFeelService;
 import pl.mpak.orbada.laf.nimrod.starters.NimRODLookAndFeelStarter;
@@ -28,9 +28,6 @@ import pl.mpak.util.StreamUtil;
 import pl.mpak.util.StringManager;
 import pl.mpak.util.StringManagerFactory;
 import pl.mpak.util.StringUtil;
-import pl.mpak.util.array.StringList;
-import pl.mpak.util.files.PatternFileFilter;
-import pl.mpak.util.files.WildCard;
 
 /**
  *

@@ -10,10 +10,12 @@ import java.util.Vector;
 import javax.swing.JPanel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
-import pl.mpak.orbada.gui.util.SimpleSelectDialog;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.gui.IRootTabObjectInfo;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.hsqldb.OrbadaHSqlDbPlugin;
 import pl.mpak.orbada.hsqldb.Sql;
 import pl.mpak.orbada.hsqldb.cm.GrantClassWizardAction;
@@ -226,7 +228,7 @@ public class ProceduresPanelView extends javax.swing.JPanel implements IRootTabO
     splinPane = new javax.swing.JSplitPane();
     panelProcedures = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableProcedures = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableProcedures = new ViewTable();
     statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel1 = new javax.swing.JPanel();
     toolBar = new javax.swing.JToolBar();
@@ -382,7 +384,7 @@ private void cmRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
   private javax.swing.JSplitPane splinPane;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBar;
   private javax.swing.JTabbedPane tabbedTableInfo;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableProcedures;
+  private ViewTable tableProcedures;
   private javax.swing.JToolBar toolBar;
   // End of variables declaration//GEN-END:variables
 

@@ -245,7 +245,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea" name="syntaxBeanShell">
+        <Component class="OrbadaJavaSyntaxTextArea" name="syntaxBeanShell">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
               <JSplitPaneConstraints position="left"/>

@@ -1,5 +1,6 @@
 package pl.mpak.orbada.oracle.gui.wizards;
 
+import orbada.gui.comps.table.Table;
 import pl.mpak.orbada.universal.gui.wizards.SqlCodeWizardPanel;
 import javax.swing.DefaultCellEditor;
 import javax.swing.table.DefaultTableModel;
@@ -127,7 +128,7 @@ public class FunctionParameterDefinitionWizard extends SqlCodeWizardPanel {
         comboInOut = new javax.swing.JComboBox();
         textParamName = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tableParameters = new pl.mpak.orbada.gui.comps.table.Table();
+        tableParameters = new Table();
         buttonAddRow = new javax.swing.JButton();
         buttonRemoveRow = new javax.swing.JButton();
         buttonMoveUp = new javax.swing.JButton();
@@ -286,7 +287,7 @@ private void cmMoveUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     private javax.swing.JComboBox comboDefaultValue;
     private javax.swing.JComboBox comboInOut;
     private javax.swing.JScrollPane jScrollPane1;
-    private pl.mpak.orbada.gui.comps.table.Table tableParameters;
+    private Table tableParameters;
     private javax.swing.JTextField textParamName;
     // End of variables declaration//GEN-END:variables
 }

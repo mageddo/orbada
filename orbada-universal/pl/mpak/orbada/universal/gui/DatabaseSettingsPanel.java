@@ -8,6 +8,8 @@ package pl.mpak.orbada.universal.gui;
 
 import java.io.File;
 import java.io.IOException;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.plugins.ISettingsComponent;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
@@ -100,9 +102,9 @@ public class DatabaseSettingsPanel extends javax.swing.JPanel implements ISettin
   private void initComponents() {
 
     jLabel1 = new javax.swing.JLabel();
-    textAfterConnect = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    textAfterConnect = new OrbadaSyntaxTextArea();
     jLabel2 = new javax.swing.JLabel();
-    textBeforeDisconnect = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    textBeforeDisconnect = new OrbadaSyntaxTextArea();
 
     jLabel1.setText(stringManager.getString("DatabaseSettingsPanel-after-connect-dd")); // NOI18N
 
@@ -140,8 +142,8 @@ public class DatabaseSettingsPanel extends javax.swing.JPanel implements ISettin
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel2;
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea textAfterConnect;
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea textBeforeDisconnect;
+  private OrbadaSyntaxTextArea textAfterConnect;
+  private OrbadaSyntaxTextArea textBeforeDisconnect;
   // End of variables declaration//GEN-END:variables
   
 }

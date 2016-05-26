@@ -9,6 +9,8 @@ package pl.mpak.orbada.programmers.gui;
 import java.util.Iterator;
 import javax.swing.JComponent;
 import javax.swing.table.DefaultTableModel;
+
+import orbada.gui.comps.table.Table;
 import pl.mpak.orbada.programmers.OrbadaProgrammersPlugin;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.util.StringManager;
@@ -77,7 +79,7 @@ public class ResolversDialog extends javax.swing.JDialog {
     cmClose = new pl.mpak.sky.gui.swing.Action();
     buttonCancel = new javax.swing.JButton();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableResolvers = new pl.mpak.orbada.gui.comps.table.Table();
+    tableResolvers = new Table();
 
     cmClose.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0));
     cmClose.setText(stringManager.getString("cmClose-text")); // NOI18N
@@ -129,7 +131,7 @@ public class ResolversDialog extends javax.swing.JDialog {
   private javax.swing.JButton buttonCancel;
   private pl.mpak.sky.gui.swing.Action cmClose;
   private javax.swing.JScrollPane jScrollPane1;
-  private pl.mpak.orbada.gui.comps.table.Table tableResolvers;
+  private Table tableResolvers;
   // End of variables declaration//GEN-END:variables
   
 }

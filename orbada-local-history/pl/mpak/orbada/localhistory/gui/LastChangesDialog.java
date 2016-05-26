@@ -18,8 +18,10 @@ import javax.swing.AbstractButton;
 import javax.swing.JComponent;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.Consts;
-import pl.mpak.orbada.db.InternalDatabase;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.Consts;
+import orbada.db.InternalDatabase;
 import pl.mpak.orbada.localhistory.OrbadaLocalHistoryPlugin;
 import pl.mpak.orbada.plugins.DatabaseObject;
 import pl.mpak.orbada.plugins.IPerspectiveAccesibilities;
@@ -176,7 +178,7 @@ public class LastChangesDialog extends javax.swing.JDialog {
     cmCancel = new pl.mpak.sky.gui.swing.Action();
     cmSearch = new pl.mpak.sky.gui.swing.Action();
     jScrollPane1 = new javax.swing.JScrollPane();
-    table = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    table = new ViewTable();
     buttonShow = new javax.swing.JButton();
     buttonCancel = new javax.swing.JButton();
     textSearch = new pl.mpak.sky.gui.swing.comp.TextField();
@@ -314,7 +316,7 @@ public class LastChangesDialog extends javax.swing.JDialog {
   private pl.mpak.sky.gui.swing.Action cmShow;
   private javax.swing.JLabel jLabel1;
   private javax.swing.JScrollPane jScrollPane1;
-  private pl.mpak.orbada.gui.comps.table.ViewTable table;
+  private ViewTable table;
   private pl.mpak.sky.gui.swing.comp.TextField textSearch;
   private pl.mpak.sky.gui.swing.comp.ToolButton toolButton1;
   // End of variables declaration//GEN-END:variables

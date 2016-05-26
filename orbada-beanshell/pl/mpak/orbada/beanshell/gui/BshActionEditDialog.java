@@ -9,9 +9,11 @@ package pl.mpak.orbada.beanshell.gui;
 import java.awt.event.KeyEvent;
 import java.beans.IntrospectionException;
 import javax.swing.JComponent;
+
+import orbada.gui.comps.OrbadaJavaSyntaxTextArea;
 import pl.mpak.orbada.beanshell.OrbadaBeanshellPlugin;
 import pl.mpak.orbada.beanshell.db.BshActionRecord;
-import pl.mpak.orbada.core.Application;
+import orbada.core.Application;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.sky.gui.mr.ModalResult;
@@ -140,7 +142,7 @@ public class BshActionEditDialog extends javax.swing.JDialog {
     jLabel5 = new javax.swing.JLabel();
     editTooltip = new pl.mpak.sky.gui.swing.comp.TextField();
     jLabel6 = new javax.swing.JLabel();
-    editScript = new pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea();
+    editScript = new OrbadaJavaSyntaxTextArea();
     textShortcut = new pl.mpak.sky.gui.swing.comp.TextField();
 
     cmOk.setActionCommandKey("cmOk");
@@ -335,7 +337,7 @@ private void textShortcutKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:ev
   private pl.mpak.usedb.gui.swing.QueryComboBox comboDriverType;
   private pl.mpak.sky.gui.swing.comp.TextField editKey;
   private pl.mpak.sky.gui.swing.comp.TextField editName;
-  private pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea editScript;
+  private OrbadaJavaSyntaxTextArea editScript;
   private pl.mpak.sky.gui.swing.comp.TextField editTooltip;
   private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel2;

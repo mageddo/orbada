@@ -8,6 +8,8 @@ package pl.mpak.orbada.universal.gui.history;
 
 import java.io.Closeable;
 import java.io.IOException;
+
+import orbada.gui.comps.table.Table;
 import pl.mpak.usedb.core.Command;
 import pl.mpak.usedb.core.Query;
 
@@ -75,7 +77,7 @@ public class QueryHistoryPanel extends javax.swing.JPanel implements Closeable {
   private void initComponents() {
 
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableHistory = new pl.mpak.orbada.gui.comps.table.Table();
+    tableHistory = new Table();
 
     setLayout(new java.awt.BorderLayout());
 
@@ -87,7 +89,7 @@ public class QueryHistoryPanel extends javax.swing.JPanel implements Closeable {
   
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JScrollPane jScrollPane1;
-  private pl.mpak.orbada.gui.comps.table.Table tableHistory;
+  private Table tableHistory;
   // End of variables declaration//GEN-END:variables
 
 }

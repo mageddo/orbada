@@ -25,9 +25,11 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableModel;
-import pl.mpak.orbada.db.ConnectionFactory;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
-import pl.mpak.orbada.gui.comps.table.SearchOnTable;
+
+import orbada.gui.comps.table.Table;
+import orbada.db.ConnectionFactory;
+import orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.comps.table.SearchOnTable;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.dba.OrbadaOracleDbaPlugin;
 import pl.mpak.orbada.oracle.dba.Sql;
@@ -812,14 +814,14 @@ public class VisualDataFilePanelView extends javax.swing.JPanel implements Close
     jPanel1 = new javax.swing.JPanel();
     jSplitPane2 = new javax.swing.JSplitPane();
     jScrollPane2 = new javax.swing.JScrollPane();
-    tableDataFiles = new pl.mpak.orbada.gui.comps.table.Table();
+    tableDataFiles = new Table();
     jSplitPane1 = new javax.swing.JSplitPane();
     jPanel3 = new javax.swing.JPanel();
     jLabel4 = new javax.swing.JLabel();
     comboGroup = new pl.mpak.sky.gui.swing.comp.ComboBox();
     jLabel5 = new javax.swing.JLabel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableLegend = new pl.mpak.orbada.gui.comps.table.Table();
+    tableLegend = new Table();
     jPanel4 = new javax.swing.JPanel();
     scrollBlocks = new javax.swing.JScrollPane();
     jPanel6 = new javax.swing.JPanel();
@@ -1075,8 +1077,8 @@ private void comboGroupItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIR
   private javax.swing.JPopupMenu menuActions;
   private javax.swing.JPanel panelProgress;
   private javax.swing.JScrollPane scrollBlocks;
-  private pl.mpak.orbada.gui.comps.table.Table tableDataFiles;
-  private pl.mpak.orbada.gui.comps.table.Table tableLegend;
+  private Table tableDataFiles;
+  private Table tableLegend;
   private javax.swing.JToolBar toolBar;
   // End of variables declaration//GEN-END:variables
   

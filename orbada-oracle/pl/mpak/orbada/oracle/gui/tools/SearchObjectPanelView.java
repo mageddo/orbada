@@ -12,8 +12,10 @@ import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
-import pl.mpak.orbada.gui.util.SimpleSelectDialog;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.oracle.gui.freezing.FreezeFactory;
@@ -214,7 +216,7 @@ public class SearchObjectPanelView extends javax.swing.JPanel implements Closeab
         cmCompile = new pl.mpak.sky.gui.swing.Action();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tableObjects = new pl.mpak.orbada.gui.comps.table.ViewTable();
+        tableObjects = new ViewTable();
         statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
         jPanel2 = new javax.swing.JPanel();
         toolBar = new javax.swing.JToolBar();
@@ -482,7 +484,7 @@ private void cmCompileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     private javax.swing.JPopupMenu menuActions;
     private javax.swing.JPanel panelSearch;
     private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBar;
-    private pl.mpak.orbada.gui.comps.table.ViewTable tableObjects;
+    private ViewTable tableObjects;
     private pl.mpak.sky.gui.swing.comp.TextField textSearch;
     private javax.swing.JToolBar toolBar;
     // End of variables declaration//GEN-END:variables

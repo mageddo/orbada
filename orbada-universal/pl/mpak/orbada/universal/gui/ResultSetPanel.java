@@ -9,6 +9,8 @@ package pl.mpak.orbada.universal.gui;
 import java.io.Closeable;
 import java.io.IOException;
 import java.sql.ResultSet;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.usedb.core.Database;
 
 /**
@@ -42,7 +44,7 @@ public class ResultSetPanel extends javax.swing.JPanel implements Closeable {
   private void initComponents() {
 
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableResultSet = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableResultSet = new ViewTable();
 
     setLayout(new java.awt.BorderLayout());
 
@@ -54,7 +56,7 @@ public class ResultSetPanel extends javax.swing.JPanel implements Closeable {
   
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JScrollPane jScrollPane1;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableResultSet;
+  private ViewTable tableResultSet;
   // End of variables declaration//GEN-END:variables
   
 }

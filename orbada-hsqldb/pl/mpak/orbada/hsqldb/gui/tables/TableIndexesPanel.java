@@ -4,8 +4,10 @@ import java.awt.Dialog;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.hsqldb.OrbadaHSqlDbPlugin;
 import pl.mpak.orbada.hsqldb.Sql;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
@@ -161,7 +163,7 @@ public class TableIndexesPanel extends javax.swing.JPanel implements ITabObjectI
     cmCreateIndex = new pl.mpak.sky.gui.swing.Action();
     menuActions = new javax.swing.JPopupMenu();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableIndexes = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableIndexes = new ViewTable();
     statusBarIndexes = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel1 = new javax.swing.JPanel();
     toolBarIndexes = new javax.swing.JToolBar();
@@ -318,7 +320,7 @@ private void cmRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
   private javax.swing.JToolBar.Separator jSeparator3;
   private javax.swing.JPopupMenu menuActions;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarIndexes;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableIndexes;
+  private ViewTable tableIndexes;
   private javax.swing.JToolBar toolBarIndexes;
   // End of variables declaration//GEN-END:variables
   

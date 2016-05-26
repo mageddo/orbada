@@ -2,8 +2,8 @@ package pl.mpak.orbada.firebird;
 
 import java.util.ArrayList;
 import java.util.List;
-import pl.mpak.orbada.Consts;
-import pl.mpak.orbada.db.InternalDatabase;
+import orbada.Consts;
+import orbada.db.InternalDatabase;
 import pl.mpak.orbada.db.Template;
 import pl.mpak.orbada.firebird.cm.FindObjectFromEditorAction;
 import pl.mpak.orbada.firebird.services.FirebirdDatabaseProvider;

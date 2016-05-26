@@ -9,9 +9,11 @@ package pl.mpak.orbada.oracle.gui.dict;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
+import orbada.gui.ITabObjectInfo;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;
@@ -153,7 +155,7 @@ public class DictionaryColumnsPanel extends javax.swing.JPanel implements ITabOb
     cmRefresh = new pl.mpak.sky.gui.swing.Action();
     cmFilter = new pl.mpak.sky.gui.swing.Action();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableColumns = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableColumns = new ViewTable();
     statusBarColumns = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel1 = new javax.swing.JPanel();
     toolBarColumns = new javax.swing.JToolBar();
@@ -238,7 +240,7 @@ private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:
   private javax.swing.JPanel jPanel1;
   private javax.swing.JScrollPane jScrollPane1;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarColumns;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableColumns;
+  private ViewTable tableColumns;
   private javax.swing.JToolBar toolBarColumns;
   // End of variables declaration//GEN-END:variables
   

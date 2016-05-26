@@ -322,7 +322,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="textSql">
+            <Component class="OrbadaSyntaxTextArea" name="textSql">
             </Component>
           </SubComponents>
         </Container>
@@ -380,7 +380,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="pl.mpak.orbada.gui.comps.table.Table" name="tableDetails">
+                <Component class="Table" name="tableDetails">
                   <Properties>
                     <Property name="autoCreateRowSorter" type="boolean" value="true"/>
                     <Property name="rowHeight" type="int" value="18"/>

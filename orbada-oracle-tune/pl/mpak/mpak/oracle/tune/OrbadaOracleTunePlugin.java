@@ -6,7 +6,7 @@ import pl.mpak.mpak.oracle.tune.services.OracleAutotraceProvider;
 import pl.mpak.mpak.oracle.tune.services.OracleSqlProfilerView;
 import pl.mpak.mpak.oracle.tune.services.OracleTuneDatabaseProvider;
 import pl.mpak.mpak.oracle.tune.services.OracleTuneSqlPlanView;
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.plugins.OrbadaPlugin;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
 import pl.mpak.plugins.spi.IPlugin;

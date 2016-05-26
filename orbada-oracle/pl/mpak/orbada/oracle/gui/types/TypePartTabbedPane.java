@@ -3,7 +3,7 @@ package pl.mpak.orbada.oracle.gui.types;
 import java.awt.Component;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
-import pl.mpak.orbada.gui.OrbadaTabbedPane;
+import orbada.gui.OrbadaTabbedPane;
 import pl.mpak.orbada.oracle.gui.ObjectUsedByPanel;
 import pl.mpak.orbada.oracle.gui.ObjectUsingPanel;
 import pl.mpak.orbada.oracle.gui.StoredParametersPanel;

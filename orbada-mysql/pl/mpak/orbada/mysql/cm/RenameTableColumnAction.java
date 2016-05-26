@@ -7,8 +7,8 @@ package pl.mpak.orbada.mysql.cm;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.comps.table.ViewTable;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.mysql.OrbadaMySQLPlugin;
 import pl.mpak.orbada.mysql.gui.wizards.RenameTableColumnWizard;
 import pl.mpak.orbada.plugins.ComponentAction;

@@ -2,13 +2,15 @@ package pl.mpak.orbada.firebird.gui.exceptions;
 
 import java.awt.Dialog;
 import java.io.IOException;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.firebird.OrbadaFirebirdPlugin;
 import pl.mpak.orbada.firebird.Sql;
 import pl.mpak.orbada.firebird.gui.wizards.AlterExceptionWizard;
 import pl.mpak.orbada.firebird.gui.wizards.CommentWizard;
 import pl.mpak.orbada.firebird.gui.wizards.CreateExceptionWizard;
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.IRootTabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;
@@ -161,7 +163,7 @@ public class ExceptionsPanelView extends javax.swing.JPanel implements IRootTabO
     cmAlterException = new pl.mpak.sky.gui.swing.Action();
     jPanel1 = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableExceptions = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableExceptions = new ViewTable();
     statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel2 = new javax.swing.JPanel();
     toolBar = new javax.swing.JToolBar();
@@ -404,7 +406,7 @@ private void cmAlterExceptionActionPerformed(java.awt.event.ActionEvent evt) {//
   private javax.swing.JPopupMenu menuActions;
   private javax.swing.JMenuItem menuDropSequence;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBar;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableExceptions;
+  private ViewTable tableExceptions;
   private javax.swing.JToolBar toolBar;
   private pl.mpak.sky.gui.swing.comp.ToolButton toolButton2;
   private pl.mpak.sky.gui.swing.comp.ToolButton toolButton3;

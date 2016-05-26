@@ -9,6 +9,8 @@ import java.util.EventObject;
 import javax.swing.AbstractButton;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.plugins.ISettingsComponent;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
@@ -162,7 +164,7 @@ public class SqlMacrosSettingsPanel extends javax.swing.JPanel implements ISetti
     buttonDelete = new javax.swing.JButton();
     jLabel1 = new javax.swing.JLabel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableMacros = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableMacros = new ViewTable();
     buttonExport = new javax.swing.JButton();
     buttonImport = new javax.swing.JButton();
 
@@ -371,7 +373,7 @@ try {
   private pl.mpak.sky.gui.swing.Action cmNew;
   private javax.swing.JLabel jLabel1;
   private javax.swing.JScrollPane jScrollPane1;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableMacros;
+  private ViewTable tableMacros;
   // End of variables declaration//GEN-END:variables
 
 }

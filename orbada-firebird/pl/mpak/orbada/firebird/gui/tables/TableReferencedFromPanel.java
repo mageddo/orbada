@@ -3,11 +3,13 @@ package pl.mpak.orbada.firebird.gui.tables;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.firebird.OrbadaFirebirdPlugin;
 import pl.mpak.orbada.firebird.Sql;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDefComponent;
@@ -153,7 +155,7 @@ public class TableReferencedFromPanel extends javax.swing.JPanel implements ITab
     jSeparator1 = new javax.swing.JToolBar.Separator();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableReferencedFrom = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableReferencedFrom = new ViewTable();
 
     cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
@@ -238,7 +240,7 @@ private void cmRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
   private javax.swing.JToolBar.Separator jSeparator1;
   private javax.swing.JPopupMenu menuActions;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarIndexes;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableReferencedFrom;
+  private ViewTable tableReferencedFrom;
   private javax.swing.JToolBar toolBarIndexes;
   // End of variables declaration//GEN-END:variables
   

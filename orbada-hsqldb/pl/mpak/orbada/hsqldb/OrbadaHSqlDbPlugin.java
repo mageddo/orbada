@@ -11,7 +11,7 @@ package pl.mpak.orbada.hsqldb;
 
 import java.util.ArrayList;
 import java.util.List;
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.hsqldb.services.HSqlDbAliasesView;
 import pl.mpak.orbada.hsqldb.services.HSqlDbInfoProvider;
 import pl.mpak.orbada.hsqldb.services.HSqlDbPerspectiveProvider;

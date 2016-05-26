@@ -40,7 +40,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="pl.mpak.orbada.gui.comps.table.DataTable" name="data">
+        <Component class="DataTable" name="data">
         </Component>
       </SubComponents>
     </Container>

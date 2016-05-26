@@ -2,12 +2,14 @@ package pl.mpak.orbada.firebird.gui.tables;
 
 import java.awt.Dialog;
 import java.io.IOException;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.firebird.OrbadaFirebirdPlugin;
 import pl.mpak.orbada.firebird.Sql;
 import pl.mpak.orbada.firebird.gui.wizards.CommentWizard;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDefComponent;
@@ -154,7 +156,7 @@ public class TableIndexesPanel extends javax.swing.JPanel implements ITabObjectI
     jSeparator1 = new javax.swing.JToolBar.Separator();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableIndexes = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableIndexes = new ViewTable();
 
     cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
@@ -339,7 +341,7 @@ if (tableIndexes.getSelectionModel().getLeadSelectionIndex() >= 0) {
   private javax.swing.JMenuItem menuDropIndex;
   private javax.swing.JMenuItem menuSimpleCreateIndex;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarIndexes;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableIndexes;
+  private ViewTable tableIndexes;
   private javax.swing.JToolBar toolBarIndexes;
   private pl.mpak.sky.gui.swing.comp.ToolButton toolButton1;
   private pl.mpak.sky.gui.swing.comp.ToolButton toolButton2;

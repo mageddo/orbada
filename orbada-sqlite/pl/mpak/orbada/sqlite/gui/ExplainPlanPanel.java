@@ -8,6 +8,8 @@ package pl.mpak.orbada.sqlite.gui;
 
 import java.io.Closeable;
 import java.io.IOException;
+
+import orbada.gui.comps.table.DataTable;
 import pl.mpak.orbada.sqlite.OrbadaSQLitePlugin;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;
@@ -77,11 +79,11 @@ public class ExplainPlanPanel extends javax.swing.JPanel implements Closeable {
         jPanel1 = new javax.swing.JPanel();
         statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
         jScrollPane1 = new javax.swing.JScrollPane();
-        data = new pl.mpak.orbada.gui.comps.table.DataTable();
+        data = new DataTable();
         jPanel2 = new javax.swing.JPanel();
         statusBarStats = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
         jScrollPane2 = new javax.swing.JScrollPane();
-        dataStats = new pl.mpak.orbada.gui.comps.table.DataTable();
+        dataStats = new DataTable();
 
         setLayout(new java.awt.BorderLayout());
 
@@ -113,8 +115,8 @@ public class ExplainPlanPanel extends javax.swing.JPanel implements Closeable {
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private pl.mpak.orbada.gui.comps.table.DataTable data;
-    private pl.mpak.orbada.gui.comps.table.DataTable dataStats;
+    private DataTable data;
+    private DataTable dataStats;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;

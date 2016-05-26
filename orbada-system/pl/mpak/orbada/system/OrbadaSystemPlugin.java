@@ -12,7 +12,7 @@ package pl.mpak.orbada.system;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
 import pl.mpak.orbada.system.serives.SystemStatusBarProvider;
 import java.util.List;
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.plugins.OrbadaPlugin;
 import pl.mpak.orbada.system.serives.SystemSettingsProvider;
 import pl.mpak.plugins.spi.IPlugin;

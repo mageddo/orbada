@@ -7,7 +7,7 @@ package pl.mpak.orbada.oracle.gui.freezing;
 
 import java.awt.Component;
 import javax.swing.Icon;
-import pl.mpak.orbada.gui.OrbadaTabbedPane;
+import orbada.gui.OrbadaTabbedPane;
 import pl.mpak.orbada.oracle.gui.mviews.MViewTabbedPane;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 

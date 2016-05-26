@@ -189,7 +189,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="editCode">
+    <Component class="OrbadaSyntaxTextArea" name="editCode">
     </Component>
     <Component class="javax.swing.JCheckBox" name="checkAllUsers">
       <Properties>

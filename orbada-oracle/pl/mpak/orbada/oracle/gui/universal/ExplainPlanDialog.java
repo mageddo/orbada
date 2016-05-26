@@ -14,7 +14,7 @@ package pl.mpak.orbada.oracle.gui.universal;
 import java.io.IOException;
 import javax.swing.AbstractButton;
 import javax.swing.JComponent;
-import pl.mpak.orbada.core.Application;
+import orbada.core.Application;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.sky.gui.swing.SwingUtil;

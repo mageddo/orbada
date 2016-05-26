@@ -11,7 +11,7 @@ import java.io.Closeable;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import pl.mpak.orbada.gui.comps.table.view.BeanPropertyPanel;
+import orbada.gui.comps.table.view.BeanPropertyPanel;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.plugins.providers.DatabaseInfoProvider;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;

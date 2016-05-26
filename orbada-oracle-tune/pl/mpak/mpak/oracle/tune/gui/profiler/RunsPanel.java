@@ -11,9 +11,11 @@ import java.sql.ParameterMetaData;
 import java.sql.Types;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.mpak.oracle.tune.OrbadaOracleTunePlugin;
 import pl.mpak.mpak.oracle.tune.Sql;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
@@ -266,7 +268,7 @@ public class RunsPanel extends javax.swing.JPanel implements Closeable {
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
     toolButton1 = new pl.mpak.sky.gui.swing.comp.ToolButton();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableRuns = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableRuns = new ViewTable();
     queryTableStatusBar1 = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
 
     cmRefresh.setActionCommandKey("cmRefresh");
@@ -641,7 +643,7 @@ public class RunsPanel extends javax.swing.JPanel implements Closeable {
   private javax.swing.JMenu menuProfiler;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar queryTableStatusBar1;
   private javax.swing.JSplitPane split;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableRuns;
+  private ViewTable tableRuns;
   private pl.mpak.sky.gui.swing.comp.ToolButton toolButton1;
   private pl.mpak.sky.gui.swing.comp.ToolButton toolButton2;
   private pl.mpak.sky.gui.swing.comp.ToolButton toolButton3;

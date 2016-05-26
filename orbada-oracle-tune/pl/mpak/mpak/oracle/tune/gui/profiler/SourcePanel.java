@@ -13,9 +13,10 @@ package pl.mpak.mpak.oracle.tune.gui.profiler;
 import java.awt.Color;
 import java.io.Closeable;
 import java.io.IOException;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.oracle.util.SourceCreator;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.sky.gui.swing.syntax.SyntaxDocument.LineMark;
 import pl.mpak.util.StringUtil;
 
@@ -87,7 +88,7 @@ public class SourcePanel extends javax.swing.JPanel implements Closeable {
   // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
   private void initComponents() {
 
-    source = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    source = new OrbadaSyntaxTextArea();
 
     setLayout(new java.awt.BorderLayout());
 
@@ -96,6 +97,6 @@ public class SourcePanel extends javax.swing.JPanel implements Closeable {
   }// </editor-fold>//GEN-END:initComponents
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea source;
+  private OrbadaSyntaxTextArea source;
   // End of variables declaration//GEN-END:variables
 }

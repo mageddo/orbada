@@ -2,7 +2,7 @@ package pl.mpak.orbada.postgresql.services;
 
 import javax.swing.JMenu;
 import javax.swing.JToolBar;
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.plugins.providers.PerspectiveProvider;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
 import pl.mpak.orbada.postgresql.OrbadaPostgreSQLPlugin;

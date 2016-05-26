@@ -4,12 +4,14 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.io.IOException;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.oracle.gui.wizards.table.CommentTableColumnWizard;
 import pl.mpak.orbada.oracle.gui.wizards.table.DropTableColumnWizard;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.gui.wizards.table.RenameTableColumnWizard;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
@@ -181,7 +183,7 @@ public class TableColumnsPanel extends javax.swing.JPanel implements ITabObjectI
     cmCreateConstraintFK = new pl.mpak.sky.gui.swing.Action();
     cmCreateConstraintPK = new pl.mpak.sky.gui.swing.Action();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableColumns = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableColumns = new ViewTable();
     statusBarColumns = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel1 = new javax.swing.JPanel();
     toolBarColumns = new javax.swing.JToolBar();
@@ -571,7 +573,7 @@ private void cmCreateConstraintPKActionPerformed(java.awt.event.ActionEvent evt)
   private javax.swing.JMenuItem menuDropColumn;
   private javax.swing.JMenuItem menuRenameColumn;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarColumns;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableColumns;
+  private ViewTable tableColumns;
   private javax.swing.JToolBar toolBarColumns;
   private pl.mpak.sky.gui.swing.comp.ToolButton toolButton1;
   private pl.mpak.sky.gui.swing.comp.ToolButton toolButton2;

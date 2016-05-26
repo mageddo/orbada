@@ -32,9 +32,11 @@ import javax.swing.JSplitPane;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.text.BadLocationException;
-import pl.mpak.orbada.Consts;
-import pl.mpak.orbada.db.ConnectionFactory;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
+import orbada.Consts;
+import orbada.db.ConnectionFactory;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.plugins.IProcessMessagable;
 import pl.mpak.orbada.plugins.ISettings;
@@ -935,7 +937,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
         labelFileName = new javax.swing.JLabel();
         splitPanel = new javax.swing.JSplitPane();
         panelSqlEditor = new javax.swing.JPanel();
-        textSqlEditor = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+        textSqlEditor = new OrbadaSyntaxTextArea();
         scrollSqlError = new javax.swing.JScrollPane();
         textSqlError = new javax.swing.JTextArea();
         tabbedViews = new javax.swing.JTabbedPane();
@@ -1823,7 +1825,7 @@ private void cmDbRollbackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
     private javax.swing.JScrollPane scrollSqlError;
     private javax.swing.JSplitPane splitPanel;
     private javax.swing.JTabbedPane tabbedViews;
-    private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea textSqlEditor;
+    private OrbadaSyntaxTextArea textSqlEditor;
     private javax.swing.JTextArea textSqlError;
     private javax.swing.JToolBar toolBar;
     private pl.mpak.sky.gui.swing.comp.ToolButton toolButton1;

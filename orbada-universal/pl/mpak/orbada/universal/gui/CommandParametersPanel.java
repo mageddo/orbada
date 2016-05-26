@@ -12,7 +12,9 @@ import java.io.IOException;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.db.InternalDatabase;
+
+import orbada.gui.comps.table.Table;
+import orbada.db.InternalDatabase;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
 import pl.mpak.sky.gui.swing.TableRowChangeKeyListener;
 import pl.mpak.usedb.core.ParametrizedCommand;
@@ -265,7 +267,7 @@ public class CommandParametersPanel extends javax.swing.JPanel implements Closea
 
         cmOpenFile = new pl.mpak.sky.gui.swing.Action();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tableParameters = new pl.mpak.orbada.gui.comps.table.Table();
+        tableParameters = new Table();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         textParamName = new javax.swing.JTextField();
@@ -397,7 +399,7 @@ public class CommandParametersPanel extends javax.swing.JPanel implements Closea
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private pl.mpak.orbada.gui.comps.table.Table tableParameters;
+    private Table tableParameters;
     private javax.swing.JTextField textParamName;
     private pl.mpak.sky.gui.swing.comp.TextField textParamValue;
     // End of variables declaration//GEN-END:variables

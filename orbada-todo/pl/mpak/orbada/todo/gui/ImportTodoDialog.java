@@ -17,7 +17,9 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableColumnModel;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
-import pl.mpak.orbada.core.Application;
+
+import orbada.gui.comps.table.Table;
+import orbada.core.Application;
 import pl.mpak.orbada.todo.OrbadaTodoPlugin;
 import pl.mpak.orbada.todo.db.Todo;
 import pl.mpak.sky.gui.mr.ModalResult;
@@ -121,7 +123,7 @@ public class ImportTodoDialog extends javax.swing.JDialog {
     buttonOk = new javax.swing.JButton();
     buttonCancel = new javax.swing.JButton();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableTodos = new pl.mpak.orbada.gui.comps.table.Table();
+    tableTodos = new Table();
     buttonView = new javax.swing.JButton();
 
     cmOk.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, 0));
@@ -233,7 +235,7 @@ private void cmViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:
   private pl.mpak.sky.gui.swing.Action cmOk;
   private pl.mpak.sky.gui.swing.Action cmView;
   private javax.swing.JScrollPane jScrollPane1;
-  private pl.mpak.orbada.gui.comps.table.Table tableTodos;
+  private Table tableTodos;
   // End of variables declaration//GEN-END:variables
 
 }

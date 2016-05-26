@@ -4,15 +4,17 @@ import java.awt.Dialog;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.firebird.OrbadaFirebirdPlugin;
 import pl.mpak.orbada.firebird.Sql;
 import pl.mpak.orbada.firebird.gui.freezing.TableFreezeViewService;
 import pl.mpak.orbada.firebird.gui.wizards.CommentWizard;
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
+import orbada.gui.IRootTabObjectInfo;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.OrbadaTabbedPane;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.OrbadaTabbedPane;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDefComponent;
@@ -214,7 +216,7 @@ public class TablesPanelView extends javax.swing.JPanel implements IRootTabObjec
     splitTables = new javax.swing.JSplitPane();
     panelTables = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableTables = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableTables = new ViewTable();
     jPanel1 = new javax.swing.JPanel();
     toolBarTables = new javax.swing.JToolBar();
     buttonRefresh = new pl.mpak.sky.gui.swing.comp.ToolButton();
@@ -474,7 +476,7 @@ if (tableTables.getSelectedRow() >= 0) {
   private javax.swing.JPanel panelTables;
   private javax.swing.JSplitPane splitTables;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarTables;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableTables;
+  private ViewTable tableTables;
   private javax.swing.JToolBar toolBarTables;
   // End of variables declaration//GEN-END:variables
   

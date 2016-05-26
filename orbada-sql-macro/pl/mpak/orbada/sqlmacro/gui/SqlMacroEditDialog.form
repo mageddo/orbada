@@ -208,7 +208,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="editResolve">
+    <Component class="OrbadaSyntaxTextArea" name="editResolve">
     </Component>
     <Component class="javax.swing.JCheckBox" name="checkAllUsers">
       <Properties>
@@ -295,7 +295,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="editTestResolve">
+        <Component class="OrbadaSyntaxTextArea" name="editTestResolve">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
           </Properties>

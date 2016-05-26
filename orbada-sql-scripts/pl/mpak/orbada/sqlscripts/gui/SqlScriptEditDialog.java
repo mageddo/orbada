@@ -2,8 +2,10 @@ package pl.mpak.orbada.sqlscripts.gui;
 
 import java.beans.IntrospectionException;
 import javax.swing.JComponent;
-import pl.mpak.orbada.core.Application;
-import pl.mpak.orbada.db.InternalDatabase;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
+import orbada.core.Application;
+import orbada.db.InternalDatabase;
 import pl.mpak.orbada.sqlscripts.OrbadaSqlScriptsPlugin;
 import pl.mpak.orbada.sqlscripts.db.SqlScriptRecord;
 import pl.mpak.sky.gui.mr.ModalResult;
@@ -93,7 +95,7 @@ public class SqlScriptEditDialog extends javax.swing.JDialog {
     buttonOk = new javax.swing.JButton();
     buttonCancel = new javax.swing.JButton();
     jLabel3 = new javax.swing.JLabel();
-    textSqlScript = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    textSqlScript = new OrbadaSyntaxTextArea();
 
     cmOk.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, 0));
     cmOk.setText(stringManager.getString("ok-action")); // NOI18N
@@ -199,7 +201,7 @@ private void cmOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:ev
   private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel3;
   private pl.mpak.sky.gui.swing.comp.TextField textName;
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea textSqlScript;
+  private OrbadaSyntaxTextArea textSqlScript;
   // End of variables declaration//GEN-END:variables
   
 }

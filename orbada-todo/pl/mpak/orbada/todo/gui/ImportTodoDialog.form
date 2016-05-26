@@ -128,7 +128,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="pl.mpak.orbada.gui.comps.table.Table" name="tableTodos">
+        <Component class="Table" name="tableTodos">
           <Properties>
             <Property name="autoResizeMode" type="int" value="0"/>
           </Properties>

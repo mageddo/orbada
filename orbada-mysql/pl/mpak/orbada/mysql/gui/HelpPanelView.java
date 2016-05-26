@@ -10,8 +10,10 @@ import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.gui.IRootTabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.mysql.OrbadaMySQLPlugin;
 import pl.mpak.orbada.mysql.Sql;
 import pl.mpak.orbada.plugins.ISettings;
@@ -204,7 +206,7 @@ public class HelpPanelView extends javax.swing.JPanel implements IRootTabObjectI
     jPanel4 = new javax.swing.JPanel();
     jPanel1 = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    table = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    table = new ViewTable();
     statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel2 = new javax.swing.JPanel();
     toolBar = new javax.swing.JToolBar();
@@ -368,7 +370,7 @@ private void cmSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
   private javax.swing.JPopupMenu menuActions;
   private javax.swing.JSplitPane split;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBar;
-  private pl.mpak.orbada.gui.comps.table.ViewTable table;
+  private ViewTable table;
   private pl.mpak.sky.gui.swing.comp.HtmlEditorPane textHelp;
   private pl.mpak.sky.gui.swing.comp.ComboBox textSearch;
   private javax.swing.JToolBar toolBar;

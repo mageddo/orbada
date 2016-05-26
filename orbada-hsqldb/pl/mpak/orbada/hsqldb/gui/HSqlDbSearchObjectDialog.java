@@ -7,6 +7,8 @@
 package pl.mpak.orbada.hsqldb.gui;
 
 import javax.swing.JComponent;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.hsqldb.OrbadaHSqlDbPlugin;
 import pl.mpak.orbada.hsqldb.Sql;
 import pl.mpak.orbada.hsqldb.gui.aliases.AliasesPanelView;
@@ -104,7 +106,7 @@ public class HSqlDbSearchObjectDialog extends javax.swing.JDialog {
     textSearch = new pl.mpak.sky.gui.swing.comp.TextField();
     jButton1 = new javax.swing.JButton();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableObjects = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableObjects = new ViewTable();
     buttonOk = new javax.swing.JButton();
     buttonCancel = new javax.swing.JButton();
 
@@ -329,7 +331,7 @@ private void cmCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
   private javax.swing.JButton jButton1;
   private javax.swing.JLabel jLabel1;
   private javax.swing.JScrollPane jScrollPane1;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableObjects;
+  private ViewTable tableObjects;
   private pl.mpak.sky.gui.swing.comp.TextField textSearch;
   // End of variables declaration//GEN-END:variables
   

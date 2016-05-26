@@ -3,8 +3,10 @@ package pl.mpak.orbada.hsqldb.gui.views;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.hsqldb.OrbadaHSqlDbPlugin;
 import pl.mpak.orbada.hsqldb.Sql;
 import pl.mpak.orbada.hsqldb.services.HSqlDbInfoProvider;
@@ -149,7 +151,7 @@ public class ViewColumnUsagePanel extends javax.swing.JPanel implements ITabObje
     cmFilter = new pl.mpak.sky.gui.swing.Action();
     menuActions = new javax.swing.JPopupMenu();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableColumns = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableColumns = new ViewTable();
     statusBarColumns = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel1 = new javax.swing.JPanel();
     toolBarColumns = new javax.swing.JToolBar();
@@ -239,7 +241,7 @@ private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:
   private javax.swing.JToolBar.Separator jSeparator1;
   private javax.swing.JPopupMenu menuActions;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarColumns;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableColumns;
+  private ViewTable tableColumns;
   private javax.swing.JToolBar toolBarColumns;
   // End of variables declaration//GEN-END:variables
   

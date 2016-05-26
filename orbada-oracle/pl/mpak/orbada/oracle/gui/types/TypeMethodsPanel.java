@@ -3,10 +3,12 @@ package pl.mpak.orbada.oracle.gui.types;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.gui.types.cm.PageDownAction;
 import pl.mpak.orbada.oracle.gui.types.cm.PageUpAction;
@@ -201,9 +203,9 @@ public class TypeMethodsPanel extends javax.swing.JPanel implements ITabObjectIn
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
     jSplitPane1 = new javax.swing.JSplitPane();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableMethods = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableMethods = new ViewTable();
     jScrollPane2 = new javax.swing.JScrollPane();
-    tableArguments = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableArguments = new ViewTable();
 
     cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
@@ -331,8 +333,8 @@ private void cmCallTypeMethodActionPerformed(java.awt.event.ActionEvent evt) {//
   private javax.swing.JSplitPane jSplitPane1;
   private javax.swing.JPopupMenu menuActions;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBar;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableArguments;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableMethods;
+  private ViewTable tableArguments;
+  private ViewTable tableMethods;
   private javax.swing.JToolBar toolBarColumns;
   private pl.mpak.sky.gui.swing.comp.ToolButton toolButton1;
   // End of variables declaration//GEN-END:variables

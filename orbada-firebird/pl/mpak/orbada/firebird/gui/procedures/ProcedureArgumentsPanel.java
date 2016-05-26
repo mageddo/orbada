@@ -1,12 +1,14 @@
 package pl.mpak.orbada.firebird.gui.procedures;
 
 import java.io.IOException;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.firebird.OrbadaFirebirdPlugin;
 import pl.mpak.orbada.firebird.Sql;
 import pl.mpak.orbada.firebird.gui.wizards.CommentWizard;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDefComponent;
@@ -144,7 +146,7 @@ public class ProcedureArgumentsPanel extends javax.swing.JPanel implements ITabO
         menuComment = new javax.swing.JMenuItem();
         cmComment = new pl.mpak.sky.gui.swing.Action();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tableArguments = new pl.mpak.orbada.gui.comps.table.ViewTable();
+        tableArguments = new ViewTable();
         statusBarColumns = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
         jPanel1 = new javax.swing.JPanel();
         toolBarColumns = new javax.swing.JToolBar();
@@ -268,7 +270,7 @@ private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:
     private javax.swing.JPopupMenu menuActions;
     private javax.swing.JMenuItem menuComment;
     private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarColumns;
-    private pl.mpak.orbada.gui.comps.table.ViewTable tableArguments;
+    private ViewTable tableArguments;
     private javax.swing.JToolBar toolBarColumns;
     // End of variables declaration//GEN-END:variables
   

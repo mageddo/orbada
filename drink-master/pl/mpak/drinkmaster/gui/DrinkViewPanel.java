@@ -6,11 +6,13 @@ import java.io.Closeable;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.drinkmaster.DrinkMasterPlugin;
 import pl.mpak.drinkmaster.Sql;
 import pl.mpak.drinkmaster.db.DrinkRecord;
 import pl.mpak.drinkmaster.gui.cm.DrinkLetterAction;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;
@@ -283,7 +285,7 @@ public class DrinkViewPanel extends javax.swing.JPanel implements Closeable {
     jSplitPane1 = new javax.swing.JSplitPane();
     jPanel1 = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableDrinks = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableDrinks = new ViewTable();
     statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jScrollPane3 = new javax.swing.JScrollPane();
     textDetails = new pl.mpak.sky.gui.swing.comp.HtmlEditorPane();
@@ -554,7 +556,7 @@ private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:
   private javax.swing.JPopupMenu menuActions;
   private javax.swing.JPanel panelLetters;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBar;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableDrinks;
+  private ViewTable tableDrinks;
   private pl.mpak.sky.gui.swing.comp.HtmlEditorPane textDetails;
   private pl.mpak.sky.gui.swing.comp.TextField textFind;
   private javax.swing.JToolBar toolBar;

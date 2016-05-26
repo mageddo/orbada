@@ -435,7 +435,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="syntaxSource">
+    <Component class="OrbadaSyntaxTextArea" name="syntaxSource">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
       </Properties>

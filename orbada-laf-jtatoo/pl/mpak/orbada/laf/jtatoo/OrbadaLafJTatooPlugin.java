@@ -11,7 +11,7 @@ package pl.mpak.orbada.laf.jtatoo;
 
 import java.util.ArrayList;
 import java.util.List;
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.laf.jtatoo.services.JTatooAcrylLookAndFeelService;
 import pl.mpak.orbada.laf.jtatoo.services.JTatooAeroLookAndFeelService;
 import pl.mpak.orbada.laf.jtatoo.services.JTatooAluminiumLookAndFeelService;

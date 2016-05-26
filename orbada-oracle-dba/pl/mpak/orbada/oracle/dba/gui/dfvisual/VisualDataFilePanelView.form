@@ -82,7 +82,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="pl.mpak.orbada.gui.comps.table.Table" name="tableDataFiles">
+                <Component class="Table" name="tableDataFiles">
                   <Properties>
                     <Property name="autoResizeMode" type="int" value="0"/>
                   </Properties>
@@ -193,7 +193,7 @@
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                       <SubComponents>
-                        <Component class="pl.mpak.orbada.gui.comps.table.Table" name="tableLegend">
+                        <Component class="Table" name="tableLegend">
                           <Properties>
                             <Property name="autoResizeMode" type="int" value="0"/>
                           </Properties>

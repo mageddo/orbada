@@ -3,7 +3,7 @@ package pl.mpak.orbada.firebird.services;
 import javax.swing.JComponent;
 import javax.swing.JRootPane;
 import pl.mpak.orbada.firebird.OrbadaFirebirdPlugin;
-import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.providers.GlobalFocusProvider;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.sky.gui.swing.syntax.SyntaxEditor;

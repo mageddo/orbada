@@ -137,7 +137,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="pl.mpak.orbada.gui.comps.table.ViewTable" name="tableDirs">
+            <Component class="ViewTable" name="tableDirs">
             </Component>
           </SubComponents>
         </Container>

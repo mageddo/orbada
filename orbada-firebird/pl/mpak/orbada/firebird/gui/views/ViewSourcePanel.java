@@ -1,11 +1,13 @@
 package pl.mpak.orbada.firebird.gui.views;
 
 import java.io.IOException;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.firebird.OrbadaFirebirdPlugin;
 import pl.mpak.orbada.firebird.util.SourceCreator;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;
 import pl.mpak.sky.gui.swing.SwingUtil;
@@ -122,7 +124,7 @@ public class ViewSourcePanel extends javax.swing.JPanel implements ITabObjectInf
     jSeparator1 = new javax.swing.JToolBar.Separator();
     buttonStore = new pl.mpak.sky.gui.swing.comp.ToolButton();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
-    syntaxSource = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    syntaxSource = new OrbadaSyntaxTextArea();
 
     cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
@@ -205,7 +207,7 @@ private void cmStoreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
   private javax.swing.JPanel jPanel1;
   private javax.swing.JToolBar.Separator jSeparator1;
   private javax.swing.JPopupMenu menuActions;
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea syntaxSource;
+  private OrbadaSyntaxTextArea syntaxSource;
   private javax.swing.JToolBar toolBarContent;
   // End of variables declaration//GEN-END:variables
   

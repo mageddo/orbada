@@ -3,10 +3,12 @@ package pl.mpak.orbada.oracle.gui.javas;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
@@ -215,12 +217,12 @@ public class JavaMethodsPanel extends javax.swing.JPanel implements ITabObjectIn
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
     splitMethods = new javax.swing.JSplitPane();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableMethods = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableMethods = new ViewTable();
     splitArguments = new javax.swing.JSplitPane();
     jScrollPane2 = new javax.swing.JScrollPane();
-    tableArguments = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableArguments = new ViewTable();
     jScrollPane3 = new javax.swing.JScrollPane();
-    tableThrows = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableThrows = new ViewTable();
 
     cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
@@ -332,9 +334,9 @@ private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:
   private javax.swing.JSplitPane splitArguments;
   private javax.swing.JSplitPane splitMethods;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBar;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableArguments;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableMethods;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableThrows;
+  private ViewTable tableArguments;
+  private ViewTable tableMethods;
+  private ViewTable tableThrows;
   private javax.swing.JToolBar toolBarColumns;
   // End of variables declaration//GEN-END:variables
   

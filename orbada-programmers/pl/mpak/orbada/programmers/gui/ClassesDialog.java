@@ -13,7 +13,7 @@ import java.beans.VetoableChangeListener;
 import javax.swing.FocusManager;
 import javax.swing.JComponent;
 import pl.mpak.orbada.programmers.OrbadaProgrammersPlugin;
-import pl.mpak.orbada.util.Utils;
+import orbada.util.Utils;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.util.StringManager;
 import pl.mpak.util.StringManagerFactory;

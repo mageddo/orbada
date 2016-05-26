@@ -109,7 +109,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="pl.mpak.orbada.gui.comps.table.ViewTable" name="tablealiasses">
+            <Component class="ViewTable" name="tablealiasses">
             </Component>
           </SubComponents>
         </Container>

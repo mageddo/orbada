@@ -6,11 +6,11 @@
 package pl.mpak.orbada.oracle.gui.tables;
 
 import java.awt.Component;
-import pl.mpak.orbada.gui.OrbadaTabbedPane;
+import orbada.gui.OrbadaTabbedPane;
 import pl.mpak.orbada.oracle.gui.ObjectUsedByPanel;
 import pl.mpak.orbada.oracle.gui.ObjectUsingPanel;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ContentPanel;
+import orbada.gui.ContentPanel;
 
 /**
  *

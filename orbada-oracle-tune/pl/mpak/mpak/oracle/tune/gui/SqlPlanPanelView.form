@@ -175,7 +175,7 @@
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                       <SubComponents>
-                        <Component class="pl.mpak.orbada.gui.comps.table.ViewTable" name="tableSql">
+                        <Component class="ViewTable" name="tableSql">
                         </Component>
                       </SubComponents>
                     </Container>
@@ -369,7 +369,7 @@
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                       <SubComponents>
-                        <Component class="pl.mpak.orbada.gui.comps.table.ViewTable" name="tableObjects">
+                        <Component class="ViewTable" name="tableObjects">
                           <Events>
                             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tableObjectsMouseClicked"/>
                           </Events>
@@ -422,7 +422,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout"/>
               <SubComponents>
-                <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="syntaxSql">
+                <Component class="OrbadaSyntaxTextArea" name="syntaxSql">
                   <Properties>
                     <Property name="editable" type="boolean" value="false"/>
                   </Properties>

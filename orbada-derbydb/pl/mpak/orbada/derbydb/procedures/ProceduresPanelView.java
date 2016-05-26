@@ -9,12 +9,14 @@ import java.util.Vector;
 import javax.swing.JPanel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.derbydb.DerbyDbSql;
 import pl.mpak.orbada.derbydb.OrbadaDerbyDbPlugin;
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
-import pl.mpak.orbada.gui.util.SimpleSelectDialog;
+import orbada.gui.IRootTabObjectInfo;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;
@@ -199,7 +201,7 @@ public class ProceduresPanelView extends javax.swing.JPanel implements IRootTabO
     jSeparator1 = new javax.swing.JToolBar.Separator();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableProcs = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableProcs = new ViewTable();
     statusBarViews = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     tabbedViewInfo = new javax.swing.JTabbedPane();
 
@@ -340,7 +342,7 @@ private void cmRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
   private javax.swing.JSplitPane splinPane;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarViews;
   private javax.swing.JTabbedPane tabbedViewInfo;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableProcs;
+  private ViewTable tableProcs;
   private javax.swing.JToolBar toolBarViews;
   // End of variables declaration//GEN-END:variables
 

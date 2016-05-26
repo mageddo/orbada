@@ -2,8 +2,8 @@ package pl.mpak.orbada.todo;
 
 import java.io.File;
 import java.util.List;
-import pl.mpak.orbada.Consts;
-import pl.mpak.orbada.db.InternalDatabase;
+import orbada.Consts;
+import orbada.db.InternalDatabase;
 import pl.mpak.orbada.plugins.OrbadaPlugin;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
 import pl.mpak.orbada.todo.services.TodoPerspectiveProvider;

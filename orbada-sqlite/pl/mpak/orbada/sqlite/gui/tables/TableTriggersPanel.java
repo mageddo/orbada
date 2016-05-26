@@ -1,7 +1,7 @@
 package pl.mpak.orbada.sqlite.gui.tables;
 
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.sqlite.OrbadaSQLitePlugin;
 import pl.mpak.orbada.sqlite.Sql;
 import pl.mpak.orbada.sqlite.util.SourceCreator;

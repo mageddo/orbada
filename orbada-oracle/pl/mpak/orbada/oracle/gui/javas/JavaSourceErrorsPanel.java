@@ -3,10 +3,12 @@ package pl.mpak.orbada.oracle.gui.javas;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
 import javax.swing.JTabbedPane;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;
@@ -136,7 +138,7 @@ public class JavaSourceErrorsPanel extends javax.swing.JPanel implements ITabObj
     menuGotoSource = new pl.mpak.sky.gui.swing.comp.ToolButton();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableErrors = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableErrors = new ViewTable();
 
     cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
@@ -258,7 +260,7 @@ private void tableErrorsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST
   private javax.swing.JPopupMenu menuActions;
   private pl.mpak.sky.gui.swing.comp.ToolButton menuGotoSource;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarIndexes;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableErrors;
+  private ViewTable tableErrors;
   private javax.swing.JToolBar toolBarIndexes;
   // End of variables declaration//GEN-END:variables
   

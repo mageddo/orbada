@@ -6,7 +6,7 @@
 package pl.mpak.orbada.jsondataview.services;
 
 import java.awt.Component;
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.plugins.providers.ViewValueProvider;
 import pl.mpak.orbada.jsondataview.OrbadaJsonDataViewPlugin;
 import pl.mpak.orbada.jsondataview.gui.ViewJsonDataPanel;

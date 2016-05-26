@@ -3,7 +3,7 @@ package pl.mpak.orbada.oracle.gui.types;
 import java.awt.Component;
 import javax.swing.JTabbedPane;
 import javax.swing.UIManager;
-import pl.mpak.orbada.gui.OrbadaTabbedPane;
+import orbada.gui.OrbadaTabbedPane;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.sky.gui.swing.vtab.VTextIcon;

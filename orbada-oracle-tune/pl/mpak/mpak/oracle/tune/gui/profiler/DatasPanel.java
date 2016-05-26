@@ -14,9 +14,11 @@ import java.io.Closeable;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.mpak.oracle.tune.OrbadaOracleTunePlugin;
 import pl.mpak.mpak.oracle.tune.Sql;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
@@ -28,7 +30,6 @@ import pl.mpak.usedb.gui.swing.QueryTableColumn;
 import pl.mpak.util.ExceptionUtil;
 import pl.mpak.util.StringManager;
 import pl.mpak.util.StringManagerFactory;
-import pl.mpak.util.StringUtil;
 import pl.mpak.util.timer.Timer;
 import pl.mpak.util.variant.Variant;
 
@@ -201,7 +202,7 @@ public class DatasPanel extends javax.swing.JPanel implements Closeable {
     split = new javax.swing.JSplitPane();
     jPanel2 = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableDatas = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableDatas = new ViewTable();
     queryTableStatusBar1 = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
 
     cmRefresh.setActionCommandKey("cmRefresh");
@@ -293,6 +294,6 @@ public class DatasPanel extends javax.swing.JPanel implements Closeable {
   private javax.swing.JPopupMenu menuActions;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar queryTableStatusBar1;
   private javax.swing.JSplitPane split;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableDatas;
+  private ViewTable tableDatas;
   // End of variables declaration//GEN-END:variables
 }

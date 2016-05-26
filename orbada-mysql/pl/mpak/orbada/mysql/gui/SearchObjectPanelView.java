@@ -1,6 +1,6 @@
 package pl.mpak.orbada.mysql.gui;
 
-import pl.mpak.orbada.gui.OrbadaTabbedPane;
+import orbada.gui.OrbadaTabbedPane;
 import pl.mpak.orbada.mysql.OrbadaMySQLPlugin;
 import pl.mpak.orbada.mysql.Sql;
 import pl.mpak.orbada.mysql.services.MySQLDbInfoProvider;

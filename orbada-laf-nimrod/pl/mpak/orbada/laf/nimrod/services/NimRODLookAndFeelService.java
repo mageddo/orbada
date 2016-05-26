@@ -5,7 +5,7 @@
 
 package pl.mpak.orbada.laf.nimrod.services;
 
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.laf.nimrod.OrbadaLafNimRODPlugin;
 import pl.mpak.orbada.laf.nimrod.starters.NimRODLookAndFeelStarter;
 import pl.mpak.orbada.plugins.providers.ILookAndFeelStarter;

@@ -2,7 +2,7 @@ package pl.mpak.orbada.mysql.services;
 
 import javax.swing.JMenu;
 import javax.swing.JToolBar;
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.mysql.OrbadaMySQLPlugin;
 import pl.mpak.orbada.mysql.gui.freezing.FreezeFactory;
 import pl.mpak.orbada.mysql.gui.freezing.FreezeViewService;

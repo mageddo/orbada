@@ -117,7 +117,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="pl.mpak.orbada.gui.comps.table.Table" name="tableQueryInfo">
+        <Component class="Table" name="tableQueryInfo">
           <Properties>
             <Property name="autoResizeMode" type="int" value="0"/>
             <Property name="rowHeight" type="int" value="18"/>

@@ -165,7 +165,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="textSqlCode">
+            <Component class="OrbadaSyntaxTextArea" name="textSqlCode">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>

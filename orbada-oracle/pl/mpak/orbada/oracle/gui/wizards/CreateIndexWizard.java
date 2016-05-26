@@ -1,5 +1,6 @@
 package pl.mpak.orbada.oracle.gui.wizards;
 
+import orbada.gui.comps.table.Table;
 import pl.mpak.orbada.universal.gui.wizards.SqlCodeWizardPanel;
 import javax.swing.DefaultCellEditor;
 import javax.swing.DefaultComboBoxModel;
@@ -182,7 +183,7 @@ public class CreateIndexWizard extends SqlCodeWizardPanel {
     textDegree = new pl.mpak.sky.gui.swing.comp.TextField();
     jLabel3 = new javax.swing.JLabel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableColumns = new pl.mpak.orbada.gui.comps.table.Table();
+    tableColumns = new Table();
     radioColumns = new javax.swing.JRadioButton();
     buttonAddRow = new javax.swing.JButton();
     radioExpression = new javax.swing.JRadioButton();
@@ -378,7 +379,7 @@ private void cmAddRowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
   private javax.swing.JRadioButton radioColumns;
   private javax.swing.JRadioButton radioExpression;
   private javax.swing.JTabbedPane tab;
-  private pl.mpak.orbada.gui.comps.table.Table tableColumns;
+  private Table tableColumns;
   private pl.mpak.sky.gui.swing.comp.TextField textDegree;
   private pl.mpak.sky.gui.swing.comp.TextField textExpression;
   private pl.mpak.sky.gui.swing.comp.TextField textName;

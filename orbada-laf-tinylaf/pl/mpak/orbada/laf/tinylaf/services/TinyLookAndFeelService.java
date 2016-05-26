@@ -5,7 +5,7 @@
 
 package pl.mpak.orbada.laf.tinylaf.services;
 
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.laf.tinylaf.OrbadaLafTinyLaFPlugin;
 import pl.mpak.orbada.laf.tinylaf.starters.TinyLookAndFeelStarter;
 import pl.mpak.orbada.plugins.providers.ILookAndFeelStarter;

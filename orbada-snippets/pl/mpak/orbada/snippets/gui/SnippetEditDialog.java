@@ -2,6 +2,8 @@ package pl.mpak.orbada.snippets.gui;
 
 import java.beans.IntrospectionException;
 import javax.swing.JComponent;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.snippets.OrbadaSnippetsPlugin;
 import pl.mpak.orbada.snippets.db.SnippetRecord;
@@ -111,7 +113,7 @@ public class SnippetEditDialog extends javax.swing.JDialog {
         editName = new pl.mpak.sky.gui.swing.comp.TextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        editCode = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+        editCode = new OrbadaSyntaxTextArea();
         checkAllUsers = new javax.swing.JCheckBox();
         jLabel7 = new javax.swing.JLabel();
         comboDriverType = new pl.mpak.usedb.gui.swing.QueryComboBox();
@@ -285,7 +287,7 @@ private void cmCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     private pl.mpak.sky.gui.swing.Action cmOk;
     private pl.mpak.usedb.gui.swing.QueryComboBox comboDriverType;
     private pl.mpak.sky.gui.swing.comp.ComboBox comboEditor;
-    private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea editCode;
+    private OrbadaSyntaxTextArea editCode;
     private pl.mpak.sky.gui.swing.comp.TextField editName;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

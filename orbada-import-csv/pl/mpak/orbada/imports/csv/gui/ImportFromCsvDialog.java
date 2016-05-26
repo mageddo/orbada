@@ -16,6 +16,8 @@ import java.nio.charset.Charset;
 import java.util.Arrays;
 import javax.swing.JButton;
 import javax.swing.JComponent;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.imports.csv.OrbadaImportCsvPlugin;
 import pl.mpak.orbada.imports.csv.engine.CsvImport;
 import pl.mpak.orbada.imports.csv.engine.CsvImportColumn;
@@ -318,7 +320,7 @@ public class ImportFromCsvDialog extends javax.swing.JDialog {
         checkAddPrimaryKey = new javax.swing.JCheckBox();
         checkAddNullCheck = new javax.swing.JCheckBox();
         jLabel1 = new javax.swing.JLabel();
-        textTableCreatCode = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+        textTableCreatCode = new OrbadaSyntaxTextArea();
         buttonReset = new javax.swing.JButton();
         buttonAnalyze = new javax.swing.JButton();
 
@@ -794,7 +796,7 @@ public class ImportFromCsvDialog extends javax.swing.JDialog {
     private pl.mpak.sky.gui.swing.comp.TextField textFileName;
     private javax.swing.JSpinner textPrecisionRound;
     private pl.mpak.sky.gui.swing.comp.TextField textPrimaryKeyColumns;
-    private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea textTableCreatCode;
+    private OrbadaSyntaxTextArea textTableCreatCode;
     private pl.mpak.sky.gui.swing.comp.ToolButton toolButton1;
     // End of variables declaration//GEN-END:variables
 }

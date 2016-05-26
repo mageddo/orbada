@@ -3,6 +3,8 @@ package pl.mpak.orbada.reports.gui;
 import java.util.ArrayList;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.AbstractTableModel;
+
+import orbada.gui.comps.table.Table;
 import pl.mpak.orbada.reports.db.ReportUsersUpdater;
 import pl.mpak.orbada.reports.util.Applyable;
 import pl.mpak.sky.gui.mr.ModalResult;
@@ -127,7 +129,7 @@ public class ReportUserListPanel extends javax.swing.JPanel implements Applyable
   private void initComponents() {
 
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableUsers = new pl.mpak.orbada.gui.comps.table.Table();
+    tableUsers = new Table();
 
     tableUsers.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
     jScrollPane1.setViewportView(tableUsers);
@@ -153,7 +155,7 @@ public class ReportUserListPanel extends javax.swing.JPanel implements Applyable
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JScrollPane jScrollPane1;
-  private pl.mpak.orbada.gui.comps.table.Table tableUsers;
+  private Table tableUsers;
   // End of variables declaration//GEN-END:variables
 
 }

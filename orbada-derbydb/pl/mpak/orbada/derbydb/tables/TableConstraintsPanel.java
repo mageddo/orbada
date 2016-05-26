@@ -7,10 +7,12 @@ import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.derbydb.DerbyDbSql;
 import pl.mpak.orbada.derbydb.OrbadaDerbyDbPlugin;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;
@@ -187,7 +189,7 @@ public class TableConstraintsPanel extends javax.swing.JPanel implements ITabObj
     cmCreateConstraintPrimaryKey = new pl.mpak.sky.gui.swing.Action();
     menuActions = new javax.swing.JPopupMenu();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableConstraints = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableConstraints = new ViewTable();
     statusBarConstraints = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel1 = new javax.swing.JPanel();
     toolBarConstraints = new javax.swing.JToolBar();
@@ -453,7 +455,7 @@ private void cmRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
   private javax.swing.JToolBar.Separator jSeparator4;
   private javax.swing.JPopupMenu menuActions;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarConstraints;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableConstraints;
+  private ViewTable tableConstraints;
   private javax.swing.JToolBar toolBarConstraints;
   // End of variables declaration//GEN-END:variables
   

@@ -8,9 +8,11 @@ import java.io.IOException;
 import java.util.Vector;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
-import pl.mpak.orbada.gui.util.SimpleSelectDialog;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.gui.IRootTabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.hsqldb.OrbadaHSqlDbPlugin;
 import pl.mpak.orbada.hsqldb.Sql;
 import pl.mpak.orbada.hsqldb.cm.CreateAliasWizardAction;
@@ -197,7 +199,7 @@ public class AliasesPanelView extends javax.swing.JPanel implements IRootTabObje
     menuActions = new javax.swing.JPopupMenu();
     jPanel1 = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tablealiasses = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tablealiasses = new ViewTable();
     statusBarTriggers = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel2 = new javax.swing.JPanel();
     toolBar = new javax.swing.JToolBar();
@@ -370,7 +372,7 @@ private void cmSelectSchemaActionPerformed(java.awt.event.ActionEvent evt) {//GE
   private javax.swing.JPopupMenu menuActions;
   private javax.swing.JToolBar.Separator separator;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarTriggers;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tablealiasses;
+  private ViewTable tablealiasses;
   private javax.swing.JToolBar toolBar;
   // End of variables declaration//GEN-END:variables
 

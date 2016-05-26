@@ -8,6 +8,8 @@ package pl.mpak.orbada.postgresql.gui;
 
 import java.io.Closeable;
 import java.io.IOException;
+
+import orbada.gui.comps.table.DataTable;
 import pl.mpak.orbada.postgresql.OrbadaPostgreSQLPlugin;
 import pl.mpak.orbada.universal.gui.CommandParametersDialog;
 import pl.mpak.sky.gui.mr.ModalResult;
@@ -15,7 +17,6 @@ import pl.mpak.sky.gui.swing.MessageBox;
 import pl.mpak.usedb.UseDBException;
 import pl.mpak.usedb.core.Command;
 import pl.mpak.usedb.core.Database;
-import pl.mpak.usedb.core.Query;
 import pl.mpak.util.StringManager;
 import pl.mpak.util.StringManagerFactory;
 
@@ -89,7 +90,7 @@ public class ExplainPlanPanel extends javax.swing.JPanel implements Closeable {
         jPanel1 = new javax.swing.JPanel();
         statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
         jScrollPane1 = new javax.swing.JScrollPane();
-        data = new pl.mpak.orbada.gui.comps.table.DataTable();
+        data = new DataTable();
 
         setLayout(new java.awt.BorderLayout());
 
@@ -110,7 +111,7 @@ public class ExplainPlanPanel extends javax.swing.JPanel implements Closeable {
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private pl.mpak.orbada.gui.comps.table.DataTable data;
+    private DataTable data;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;

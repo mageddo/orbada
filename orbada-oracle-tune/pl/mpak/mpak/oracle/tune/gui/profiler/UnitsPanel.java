@@ -10,9 +10,11 @@ import java.io.Closeable;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.mpak.oracle.tune.OrbadaOracleTunePlugin;
 import pl.mpak.mpak.oracle.tune.Sql;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.gui.freezing.FreezeFactory;
 import pl.mpak.orbada.oracle.gui.freezing.FreezeViewService;
@@ -230,7 +232,7 @@ public class UnitsPanel extends javax.swing.JPanel implements Closeable {
     split = new javax.swing.JSplitPane();
     jPanel2 = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableUnits = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableUnits = new ViewTable();
     queryTableStatusBar1 = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
 
     cmRefresh.setActionCommandKey("cmRefresh");
@@ -391,7 +393,7 @@ public class UnitsPanel extends javax.swing.JPanel implements Closeable {
   private javax.swing.JPopupMenu menuActions;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar queryTableStatusBar1;
   private javax.swing.JSplitPane split;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableUnits;
+  private ViewTable tableUnits;
   private pl.mpak.sky.gui.swing.comp.TextField textFind;
   private pl.mpak.sky.gui.swing.comp.ToolButton toolButton1;
   // End of variables declaration//GEN-END:variables

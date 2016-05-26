@@ -457,7 +457,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="pl.mpak.orbada.gui.comps.table.ViewTable" name="tableConstraints">
+                <Component class="ViewTable" name="tableConstraints">
                 </Component>
               </SubComponents>
             </Container>
@@ -596,7 +596,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="pl.mpak.orbada.gui.comps.table.DataTable" name="tableExceptions">
+                <Component class="DataTable" name="tableExceptions">
                 </Component>
               </SubComponents>
             </Container>

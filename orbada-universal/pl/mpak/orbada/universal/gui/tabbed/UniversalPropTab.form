@@ -63,7 +63,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="pl.mpak.orbada.gui.comps.table.ViewTable" name="tableProps">
+        <Component class="ViewTable" name="tableProps">
         </Component>
       </SubComponents>
     </Container>

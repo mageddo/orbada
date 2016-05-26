@@ -9,8 +9,10 @@ package pl.mpak.orbada.universal.gui.tables;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
+import orbada.gui.ITabObjectInfo;
 import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
 import pl.mpak.sky.gui.swing.SwingUtil;
 import pl.mpak.usedb.UseDBException;
@@ -142,7 +144,7 @@ public class TableColumnsPanel extends javax.swing.JPanel implements ITabObjectI
 
     cmRefresh = new pl.mpak.sky.gui.swing.Action();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableColumns = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableColumns = new ViewTable();
     statusBarColumns = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     toolBarColumns = new javax.swing.JToolBar();
     buttonRefresh = new pl.mpak.sky.gui.swing.comp.ToolButton();
@@ -199,7 +201,7 @@ private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:
   private pl.mpak.sky.gui.swing.Action cmRefresh;
   private javax.swing.JScrollPane jScrollPane1;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarColumns;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableColumns;
+  private ViewTable tableColumns;
   private javax.swing.JToolBar toolBarColumns;
   // End of variables declaration//GEN-END:variables
 

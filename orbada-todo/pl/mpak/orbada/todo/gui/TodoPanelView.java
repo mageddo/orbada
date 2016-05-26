@@ -17,7 +17,9 @@ import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.db.InternalDatabase;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.db.InternalDatabase;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.todo.OrbadaTodoPlugin;
 import pl.mpak.orbada.todo.db.Todo;
@@ -239,7 +241,7 @@ public class TodoPanelView extends javax.swing.JPanel implements Closeable {
     jSeparator1 = new javax.swing.JSeparator();
     buttonDelete = new pl.mpak.sky.gui.swing.comp.ToolButton();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableTodos = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableTodos = new ViewTable();
     queryTableStatusBar1 = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
 
     cmNewTask.setActionCommandKey("cmNewTask");
@@ -589,7 +591,7 @@ private void cmImportTodoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
   private javax.swing.JMenuItem menuSwitchEnable;
   private javax.swing.JMenu menuTodo;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar queryTableStatusBar1;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableTodos;
+  private ViewTable tableTodos;
   // End of variables declaration//GEN-END:variables
   
 }

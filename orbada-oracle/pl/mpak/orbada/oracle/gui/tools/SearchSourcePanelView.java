@@ -14,8 +14,11 @@ import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
-import pl.mpak.orbada.gui.util.SimpleSelectDialog;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
+import orbada.gui.comps.table.ViewTable;
+import orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.oracle.gui.freezing.FreezeFactory;
@@ -339,9 +342,9 @@ public class SearchSourcePanelView extends javax.swing.JPanel implements Closeab
         split = new javax.swing.JSplitPane();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tableObjects = new pl.mpak.orbada.gui.comps.table.ViewTable();
+        tableObjects = new ViewTable();
         statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
-        syntaxSource = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+        syntaxSource = new OrbadaSyntaxTextArea();
 
         cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
         cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
@@ -609,8 +612,8 @@ private void cmCompileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     private javax.swing.JPanel panelSearch;
     private javax.swing.JSplitPane split;
     private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBar;
-    private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea syntaxSource;
-    private pl.mpak.orbada.gui.comps.table.ViewTable tableObjects;
+    private OrbadaSyntaxTextArea syntaxSource;
+    private ViewTable tableObjects;
     private pl.mpak.sky.gui.swing.comp.TextField textSearch;
     private javax.swing.JToolBar toolBar;
     // End of variables declaration//GEN-END:variables

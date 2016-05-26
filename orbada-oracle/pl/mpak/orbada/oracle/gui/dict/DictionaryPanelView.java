@@ -4,13 +4,15 @@ import java.awt.Component;
 import java.io.IOException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.gui.ContentPanel;
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.gui.ContentPanel;
+import orbada.gui.IRootTabObjectInfo;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.OrbadaTabbedPane;
+import orbada.gui.OrbadaTabbedPane;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDefComponent;
@@ -183,7 +185,7 @@ public class DictionaryPanelView extends javax.swing.JPanel implements IRootTabO
     splitTables = new javax.swing.JSplitPane();
     panelTables = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableTables = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableTables = new ViewTable();
     statusBarTables = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel1 = new javax.swing.JPanel();
     toolBarTables = new javax.swing.JToolBar();
@@ -284,7 +286,7 @@ private void cmRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
   private javax.swing.JPanel panelTables;
   private javax.swing.JSplitPane splitTables;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarTables;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableTables;
+  private ViewTable tableTables;
   private javax.swing.JToolBar toolBarTables;
   // End of variables declaration//GEN-END:variables
   

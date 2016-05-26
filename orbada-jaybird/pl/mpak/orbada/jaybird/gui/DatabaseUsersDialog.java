@@ -19,9 +19,11 @@ import javax.swing.AbstractButton;
 import javax.swing.JComponent;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableModel;
+
+import orbada.gui.comps.table.Table;
 import org.firebirdsql.management.FBUserManager;
 import org.firebirdsql.management.User;
-import pl.mpak.orbada.core.Application;
+import orbada.core.Application;
 import pl.mpak.orbada.jaybird.OrbadaJaybirdPlugin;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.sky.gui.mr.ModalResult;
@@ -380,7 +382,7 @@ public class DatabaseUsersDialog extends javax.swing.JDialog {
     textPort = new pl.mpak.sky.gui.swing.comp.TextField();
     panelUsers = new javax.swing.JPanel();
     jScrollPane2 = new javax.swing.JScrollPane();
-    tableUsers = new pl.mpak.orbada.gui.comps.table.Table();
+    tableUsers = new Table();
     buttonNew = new javax.swing.JButton();
     buttonEdit = new javax.swing.JButton();
     buttonDelete = new javax.swing.JButton();
@@ -664,7 +666,7 @@ public class DatabaseUsersDialog extends javax.swing.JDialog {
   private javax.swing.JPanel panelLog;
   private javax.swing.JPanel panelUsers;
   private javax.swing.JTabbedPane tabbed;
-  private pl.mpak.orbada.gui.comps.table.Table tableUsers;
+  private Table tableUsers;
   private pl.mpak.sky.gui.swing.comp.TextField textHost;
   private pl.mpak.sky.gui.swing.comp.TextArea textLog;
   private javax.swing.JPasswordField textPassword;

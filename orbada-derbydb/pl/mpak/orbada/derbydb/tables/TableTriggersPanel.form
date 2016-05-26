@@ -110,7 +110,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="pl.mpak.orbada.gui.comps.table.ViewTable" name="tableTriggers">
+            <Component class="ViewTable" name="tableTriggers">
             </Component>
           </SubComponents>
         </Container>
@@ -130,7 +130,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="syntaxTrigger">
+    <Component class="OrbadaSyntaxTextArea" name="syntaxTrigger">
       <Properties>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[81, 150]"/>

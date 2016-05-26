@@ -5,6 +5,8 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JComboBox;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
+
+import orbada.gui.comps.table.Table;
 import pl.mpak.orbada.mysql.OrbadaMySQLPlugin;
 import pl.mpak.orbada.mysql.gui.util.TableColumnComboBoxModel;
 import pl.mpak.orbada.universal.gui.wizards.SqlCodeWizardPanel;
@@ -125,7 +127,7 @@ public class OrderByTableWizardPanel extends SqlCodeWizardPanel {
     jLabel2 = new javax.swing.JLabel();
     jLabel1 = new javax.swing.JLabel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableColumns = new pl.mpak.orbada.gui.comps.table.Table();
+    tableColumns = new Table();
     buttonAddRow = new javax.swing.JButton();
     buttonRemoveRow = new javax.swing.JButton();
     textTableName = new pl.mpak.sky.gui.swing.comp.TextField();
@@ -227,7 +229,7 @@ private void cmAddRowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
   private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel2;
   private javax.swing.JScrollPane jScrollPane1;
-  private pl.mpak.orbada.gui.comps.table.Table tableColumns;
+  private Table tableColumns;
   private pl.mpak.sky.gui.swing.comp.TextField textTableName;
   // End of variables declaration//GEN-END:variables
   

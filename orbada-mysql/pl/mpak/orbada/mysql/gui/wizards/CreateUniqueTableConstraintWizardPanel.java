@@ -5,6 +5,8 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JComboBox;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
+
+import orbada.gui.comps.table.Table;
 import pl.mpak.orbada.mysql.OrbadaMySQLPlugin;
 import pl.mpak.orbada.mysql.gui.util.TableColumnComboBoxModel;
 import pl.mpak.orbada.universal.gui.wizards.SqlCodeWizardPanel;
@@ -132,7 +134,7 @@ public class CreateUniqueTableConstraintWizardPanel extends SqlCodeWizardPanel {
     textName = new pl.mpak.sky.gui.swing.comp.TextField();
     jLabel1 = new javax.swing.JLabel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableColumns = new pl.mpak.orbada.gui.comps.table.Table();
+    tableColumns = new Table();
     buttonAddRow = new javax.swing.JButton();
     buttonRemoveRow = new javax.swing.JButton();
     textTableName = new pl.mpak.sky.gui.swing.comp.TextField();
@@ -273,7 +275,7 @@ private void cmAddRowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
   private javax.swing.JLabel jLabel4;
   private javax.swing.JLabel jLabel5;
   private javax.swing.JScrollPane jScrollPane1;
-  private pl.mpak.orbada.gui.comps.table.Table tableColumns;
+  private Table tableColumns;
   private pl.mpak.sky.gui.swing.comp.TextField textBlockSize;
   private pl.mpak.sky.gui.swing.comp.TextField textName;
   private pl.mpak.sky.gui.swing.comp.TextField textTableName;

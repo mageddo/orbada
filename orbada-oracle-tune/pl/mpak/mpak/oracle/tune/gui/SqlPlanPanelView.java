@@ -14,10 +14,13 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreeNode;
 import javax.swing.tree.TreePath;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.mpak.oracle.tune.OrbadaOracleTunePlugin;
 import pl.mpak.mpak.oracle.tune.Sql;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
-import pl.mpak.orbada.gui.util.SimpleSelectDialog;
+import orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.gui.freezing.FreezeFactory;
 import pl.mpak.orbada.oracle.gui.freezing.FreezeViewService;
@@ -404,7 +407,7 @@ public class SqlPlanPanelView extends javax.swing.JPanel implements Closeable {
     jPanel3 = new javax.swing.JPanel();
     jPanel1 = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableSql = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableSql = new ViewTable();
     statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel2 = new javax.swing.JPanel();
     toolBar = new javax.swing.JToolBar();
@@ -426,11 +429,11 @@ public class SqlPlanPanelView extends javax.swing.JPanel implements Closeable {
     buttonFreeze = new pl.mpak.sky.gui.swing.comp.ToolButton();
     jPanel6 = new javax.swing.JPanel();
     jScrollPane2 = new javax.swing.JScrollPane();
-    tableObjects = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableObjects = new ViewTable();
     statusBarObjects = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel7 = new javax.swing.JPanel();
     splitSql = new javax.swing.JSplitPane();
-    syntaxSql = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    syntaxSql = new OrbadaSyntaxTextArea();
     jScrollPane3 = new javax.swing.JScrollPane();
     treePlan = new javax.swing.JTree();
 
@@ -727,9 +730,9 @@ private void tableObjectsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRS
   private javax.swing.JSplitPane splitSql;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBar;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarObjects;
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea syntaxSql;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableObjects;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableSql;
+  private OrbadaSyntaxTextArea syntaxSql;
+  private ViewTable tableObjects;
+  private ViewTable tableSql;
   private pl.mpak.sky.gui.swing.comp.TextField textSearch;
   private javax.swing.JToolBar toolBar;
   private javax.swing.JTree treePlan;

@@ -13,6 +13,8 @@ import java.util.Iterator;
 import java.util.Map;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.AbstractTableModel;
+
+import orbada.gui.comps.table.Table;
 import pl.mpak.mpak.oracle.tune.OrbadaOracleTunePlugin;
 import pl.mpak.mpak.oracle.tune.Sql;
 import pl.mpak.usedb.core.Database;
@@ -159,9 +161,9 @@ public class AutotracePanel extends javax.swing.JPanel implements Closeable {
 
     jTabbedPane1 = new javax.swing.JTabbedPane();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableLastSql = new pl.mpak.orbada.gui.comps.table.Table();
+    tableLastSql = new Table();
     jScrollPane2 = new javax.swing.JScrollPane();
-    tableSession = new pl.mpak.orbada.gui.comps.table.Table();
+    tableSession = new Table();
 
     setLayout(new java.awt.BorderLayout());
 
@@ -215,7 +217,7 @@ public class AutotracePanel extends javax.swing.JPanel implements Closeable {
   private javax.swing.JScrollPane jScrollPane1;
   private javax.swing.JScrollPane jScrollPane2;
   private javax.swing.JTabbedPane jTabbedPane1;
-  private pl.mpak.orbada.gui.comps.table.Table tableLastSql;
-  private pl.mpak.orbada.gui.comps.table.Table tableSession;
+  private Table tableLastSql;
+  private Table tableSession;
   // End of variables declaration//GEN-END:variables
 }

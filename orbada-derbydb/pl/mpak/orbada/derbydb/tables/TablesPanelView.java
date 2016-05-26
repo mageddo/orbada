@@ -9,13 +9,15 @@ import java.util.Vector;
 import javax.swing.JPanel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.derbydb.DerbyDbSql;
 import pl.mpak.orbada.derbydb.OrbadaDerbyDbPlugin;
-import pl.mpak.orbada.gui.ContentPanel;
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
-import pl.mpak.orbada.gui.util.SimpleSelectDialog;
+import orbada.gui.ContentPanel;
+import orbada.gui.IRootTabObjectInfo;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.universal.gui.filter.SqlFilter;
 import pl.mpak.orbada.universal.gui.filter.SqlFilterDef;
@@ -200,7 +202,7 @@ public class TablesPanelView extends javax.swing.JPanel implements IRootTabObjec
     splinPane = new javax.swing.JSplitPane();
     panelTables = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableTables = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableTables = new ViewTable();
     statusBarTables = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel1 = new javax.swing.JPanel();
     toolBarTables = new javax.swing.JToolBar();
@@ -394,7 +396,7 @@ private void cmRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
   private javax.swing.JSplitPane splinPane;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBarTables;
   private javax.swing.JTabbedPane tabbedTableInfo;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableTables;
+  private ViewTable tableTables;
   private javax.swing.JToolBar toolBarTables;
   // End of variables declaration//GEN-END:variables
 

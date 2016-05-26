@@ -7,7 +7,7 @@
 package pl.mpak.orbada.system.gui;
 
 import pl.mpak.sky.gui.swing.SwingUtil;
-import pl.mpak.orbada.core.Application;
+import orbada.core.Application;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.system.OrbadaSystemPlugin;
 import pl.mpak.util.StringManager;

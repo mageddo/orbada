@@ -2,8 +2,8 @@ package pl.mpak.orbada.oracle.services;
 
 import javax.swing.JComponent;
 import javax.swing.JRootPane;
-import pl.mpak.orbada.gui.comps.OrbadaJavaSyntaxTextArea;
-import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
+import orbada.gui.comps.OrbadaJavaSyntaxTextArea;
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.plugins.providers.GlobalFocusProvider;
 import pl.mpak.sky.gui.swing.SwingUtil;

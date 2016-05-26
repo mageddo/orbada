@@ -6,6 +6,8 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.DefaultListCellRenderer;
 import javax.swing.JList;
 import javax.swing.JTextField;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.universal.gui.wizards.SqlCodeWizardPanel;
 import pl.mpak.sky.gui.mr.ModalResult;
@@ -206,7 +208,7 @@ public class JobEditWizard extends SqlCodeWizardPanel {
     buttonInterval = new pl.mpak.sky.gui.swing.comp.ToolButton();
     jLabel3 = new javax.swing.JLabel();
     checkCommit = new javax.swing.JCheckBox();
-    textWhat = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    textWhat = new OrbadaSyntaxTextArea();
     jLabel4 = new javax.swing.JLabel();
     textInstance = new pl.mpak.sky.gui.swing.comp.TextField();
     checkForce = new javax.swing.JCheckBox();
@@ -315,7 +317,7 @@ public class JobEditWizard extends SqlCodeWizardPanel {
   private javax.swing.JLabel jLabel3;
   private javax.swing.JLabel jLabel4;
   private pl.mpak.sky.gui.swing.comp.TextField textInstance;
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea textWhat;
+  private OrbadaSyntaxTextArea textWhat;
   // End of variables declaration//GEN-END:variables
 
 }

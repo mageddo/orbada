@@ -2,7 +2,7 @@ package pl.mpak.orbada.oracle.services;
 
 import javax.swing.JMenu;
 import javax.swing.JToolBar;
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.cm.CompileAllObjectsAction;
 import pl.mpak.orbada.oracle.cm.CopyTableAction;

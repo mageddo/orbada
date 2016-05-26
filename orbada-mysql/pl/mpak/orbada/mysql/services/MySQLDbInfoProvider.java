@@ -5,7 +5,7 @@ import java.util.EventObject;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import pl.mpak.orbada.gui.comps.table.QueryTablePanel;
+import orbada.gui.comps.table.QueryTablePanel;
 import pl.mpak.orbada.mysql.OrbadaMySQLPlugin;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.plugins.dbinfo.DbDatabaseInfo;

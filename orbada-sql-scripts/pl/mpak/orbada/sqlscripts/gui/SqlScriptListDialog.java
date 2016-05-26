@@ -4,8 +4,10 @@ import java.util.EventObject;
 import javax.swing.JComponent;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import pl.mpak.orbada.core.Application;
-import pl.mpak.orbada.db.InternalDatabase;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.core.Application;
+import orbada.db.InternalDatabase;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.sqlscripts.OrbadaSqlScriptsPlugin;
 import pl.mpak.orbada.sqlscripts.db.SqlScriptRecord;
@@ -162,7 +164,7 @@ public class SqlScriptListDialog extends javax.swing.JDialog {
     buttonEdit = new javax.swing.JButton();
     buttonDelete = new javax.swing.JButton();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableSqlScripts = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableSqlScripts = new ViewTable();
 
     cmClose.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0));
     cmClose.setText(stringManager.getString("close-action")); // NOI18N
@@ -311,7 +313,7 @@ private void cmCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
   private pl.mpak.sky.gui.swing.Action cmEdit;
   private pl.mpak.sky.gui.swing.Action cmNew;
   private javax.swing.JScrollPane jScrollPane1;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableSqlScripts;
+  private ViewTable tableSqlScripts;
   // End of variables declaration//GEN-END:variables
   
 }

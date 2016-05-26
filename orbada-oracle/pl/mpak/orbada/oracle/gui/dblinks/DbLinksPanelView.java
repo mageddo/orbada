@@ -4,9 +4,11 @@ import java.awt.Point;
 import java.awt.Window;
 import java.io.IOException;
 import java.util.Vector;
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
-import pl.mpak.orbada.gui.util.SimpleSelectDialog;
+
+import orbada.gui.comps.table.ViewTable;
+import orbada.gui.IRootTabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.util.SimpleSelectDialog;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.oracle.gui.wizards.CreateDbLinkWizard;
@@ -164,7 +166,7 @@ public class DbLinksPanelView extends javax.swing.JPanel implements IRootTabObje
     cmCreateDbLink = new pl.mpak.sky.gui.swing.Action();
     jPanel1 = new javax.swing.JPanel();
     jScrollPane1 = new javax.swing.JScrollPane();
-    tableSynonyms = new pl.mpak.orbada.gui.comps.table.ViewTable();
+    tableSynonyms = new ViewTable();
     statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jPanel2 = new javax.swing.JPanel();
     toolBar = new javax.swing.JToolBar();
@@ -348,7 +350,7 @@ private void cmCreateDbLinkActionPerformed(java.awt.event.ActionEvent evt) {//GE
   private javax.swing.JMenuItem menuCreateDbLink;
   private javax.swing.JMenuItem menuDropDbLink;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBar;
-  private pl.mpak.orbada.gui.comps.table.ViewTable tableSynonyms;
+  private ViewTable tableSynonyms;
   private javax.swing.JToolBar toolBar;
   // End of variables declaration//GEN-END:variables
 

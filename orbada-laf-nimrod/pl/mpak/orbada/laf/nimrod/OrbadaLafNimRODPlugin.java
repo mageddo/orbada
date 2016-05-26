@@ -11,7 +11,7 @@ package pl.mpak.orbada.laf.nimrod;
 
 import java.util.ArrayList;
 import java.util.List;
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.laf.nimrod.services.NimRODGlobalOptionsSettingsService;
 import pl.mpak.orbada.laf.nimrod.services.NimRODLookAndFeelService;
 import pl.mpak.orbada.plugins.OrbadaPlugin;

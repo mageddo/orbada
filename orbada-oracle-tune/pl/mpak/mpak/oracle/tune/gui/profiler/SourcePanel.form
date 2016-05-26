@@ -16,7 +16,7 @@
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
   <SubComponents>
-    <Component class="pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea" name="source">
+    <Component class="OrbadaSyntaxTextArea" name="source">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
       </Properties>

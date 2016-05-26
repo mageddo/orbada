@@ -3,10 +3,12 @@ package pl.mpak.orbada.oracle.gui.functions;
 import java.io.IOException;
 import javax.swing.ImageIcon;
 import javax.swing.JTabbedPane;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.oracle.util.SourceCreator;
 import pl.mpak.orbada.plugins.IViewAccesibilities;
-import pl.mpak.orbada.gui.ITabObjectInfo;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
+import orbada.gui.ITabObjectInfo;
+import orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.gui.wizards.CallObjectWizard;
 import pl.mpak.orbada.oracle.services.OracleCompileErrorSettingsProvider;
@@ -140,7 +142,7 @@ public class FunctionSourcePanel extends javax.swing.JPanel implements ITabObjec
     buttonStore = new pl.mpak.sky.gui.swing.comp.ToolButton();
     toolButton1 = new pl.mpak.sky.gui.swing.comp.ToolButton();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
-    syntaxSource = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+    syntaxSource = new OrbadaSyntaxTextArea();
 
     cmRefreshSource.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
     cmRefreshSource.setText(stringManager.getString("cmRefreshSource-text")); // NOI18N
@@ -275,7 +277,7 @@ private void cmCallFunctionActionPerformed(java.awt.event.ActionEvent evt) {//GE
   private javax.swing.JPanel jPanel1;
   private javax.swing.JToolBar.Separator jSeparator1;
   private javax.swing.JPopupMenu menuActions;
-  private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea syntaxSource;
+  private OrbadaSyntaxTextArea syntaxSource;
   private javax.swing.JToolBar toolBarContent;
   private pl.mpak.sky.gui.swing.comp.ToolButton toolButton1;
   // End of variables declaration//GEN-END:variables

@@ -9,13 +9,14 @@ package pl.mpak.orbada.programmers.gui;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 import javax.swing.AbstractButton;
 import javax.swing.JComponent;
 import javax.swing.JOptionPane;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+
+import orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.IApplication;
 import pl.mpak.orbada.plugins.ISettings;
 import pl.mpak.orbada.programmers.OrbadaProgrammersPlugin;
@@ -258,7 +259,7 @@ public class CopyCodeDialog extends javax.swing.JDialog {
         textBeforeChars = new pl.mpak.sky.gui.swing.comp.TextField();
         jLabel6 = new javax.swing.JLabel();
         textChars = new pl.mpak.sky.gui.swing.comp.TextField();
-        syntaxSource = new pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea();
+        syntaxSource = new OrbadaSyntaxTextArea();
         jScrollPane1 = new javax.swing.JScrollPane();
         textResult = new javax.swing.JTextArea();
         jLabel7 = new javax.swing.JLabel();
@@ -686,7 +687,7 @@ private void checkKeepFormattingItemStateChanged(java.awt.event.ItemEvent evt) {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea syntaxSource;
+    private OrbadaSyntaxTextArea syntaxSource;
     private pl.mpak.sky.gui.swing.comp.TextField textAddAfter;
     private pl.mpak.sky.gui.swing.comp.TextField textAddBefore;
     private pl.mpak.sky.gui.swing.comp.TextField textAfterAll;

@@ -8,6 +8,8 @@ package pl.mpak.orbada.hsqldb.gui;
 
 import java.io.Closeable;
 import java.io.IOException;
+
+import orbada.gui.comps.table.DataTable;
 import pl.mpak.orbada.hsqldb.OrbadaHSqlDbPlugin;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;
@@ -67,7 +69,7 @@ public class ExplainPlanPanel extends javax.swing.JPanel implements Closeable {
 
     statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     jScrollPane1 = new javax.swing.JScrollPane();
-    data = new pl.mpak.orbada.gui.comps.table.DataTable();
+    data = new DataTable();
 
     setLayout(new java.awt.BorderLayout());
 
@@ -80,7 +82,7 @@ public class ExplainPlanPanel extends javax.swing.JPanel implements Closeable {
   }// </editor-fold>//GEN-END:initComponents
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
-  private pl.mpak.orbada.gui.comps.table.DataTable data;
+  private DataTable data;
   private javax.swing.JScrollPane jScrollPane1;
   private pl.mpak.usedb.gui.swing.QueryTableStatusBar statusBar;
   // End of variables declaration//GEN-END:variables

@@ -5,8 +5,8 @@
 
 package pl.mpak.orbada.postgresql.cm;
 
-import pl.mpak.orbada.gui.IRootTabObjectInfo;
-import pl.mpak.orbada.gui.comps.table.ViewTable;
+import orbada.gui.IRootTabObjectInfo;
+import orbada.gui.comps.table.ViewTable;
 import pl.mpak.orbada.postgresql.OrbadaPostgreSQLPlugin;
 import pl.mpak.orbada.postgresql.gui.wizards.CommentUniversalWizard;
 import pl.mpak.orbada.universal.cm.UniversalViewTableAction;

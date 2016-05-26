@@ -2,13 +2,13 @@ package pl.mpak.orbada.snippets;
 
 import java.util.ArrayList;
 import java.util.List;
-import pl.mpak.orbada.Consts;
+import orbada.Consts;
 import pl.mpak.orbada.plugins.OrbadaPlugin;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
 import pl.mpak.orbada.snippets.db.SnippetRecord;
 import pl.mpak.orbada.snippets.services.OrbadaSnippetsSyntaxService;
 import pl.mpak.orbada.snippets.services.SnippetsSettingsProvider;
-import pl.mpak.orbada.util.ScriptUtil;
+import orbada.util.ScriptUtil;
 import pl.mpak.plugins.spi.IPlugin;
 import pl.mpak.plugins.spi.IPluginProvider;
 import pl.mpak.util.ExceptionUtil;
