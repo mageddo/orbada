@@ -3,7 +3,7 @@
 BASE=$PWD;
 RESOURCES_FOLDER=src/main/resources
 JAVA_FOLDER=src/main/java
-for i in `ls`; do
+for i in `ls -d */`; do
 	
 	# entrando na pasta do modulo
 	cd $BASE/$i
