@@ -2,6 +2,7 @@
 *.class
 **/target
 *.log
+*.swp
 **/.idea
 .gradle/
 build
