@@ -202,7 +202,7 @@ public class MViewTriggersPanel extends javax.swing.JPanel implements ITabObject
     statusBarTriggers = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     textTrigger = new OrbadaSyntaxTextArea();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -220,7 +220,7 @@ public class MViewTriggersPanel extends javax.swing.JPanel implements ITabObject
     });
 
     cmDropTrigger.setActionCommandKey("cmDropTrigger");
-    cmDropTrigger.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDropTrigger.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDropTrigger.setText(stringManager.getString("cmDropTrigger-text")); // NOI18N
     cmDropTrigger.setTooltip(stringManager.getString("cmDropTrigger-hint")); // NOI18N
     cmDropTrigger.addActionListener(new java.awt.event.ActionListener() {
@@ -241,7 +241,7 @@ public class MViewTriggersPanel extends javax.swing.JPanel implements ITabObject
     menuActions.add(menuDropTrigger);
 
     cmEnableTrigger.setActionCommandKey("cmEnableTrigger");
-    cmEnableTrigger.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/enabled.gif")); // NOI18N
+    cmEnableTrigger.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/enabled.gif")); // NOI18N
     cmEnableTrigger.setText(stringManager.getString("cmEnableTrigger-text")); // NOI18N
     cmEnableTrigger.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -281,7 +281,7 @@ public class ProceduresPanelView extends javax.swing.JPanel implements Closeable
     statusBarTables = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     tabbedTableInfo = new javax.swing.JTabbedPane();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -290,7 +290,7 @@ public class ProceduresPanelView extends javax.swing.JPanel implements Closeable
       }
     });
 
-    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/users16.gif")); // NOI18N
+    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/users16.gif")); // NOI18N
     cmSelectSchema.setText(stringManager.getString("cmSelectSchema-text")); // NOI18N
     cmSelectSchema.setTooltip(stringManager.getString("cmSelectSchema-hint")); // NOI18N
     cmSelectSchema.addActionListener(new java.awt.event.ActionListener() {

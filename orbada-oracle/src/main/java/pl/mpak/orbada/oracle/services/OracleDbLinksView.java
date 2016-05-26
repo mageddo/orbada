@@ -40,7 +40,7 @@ public class OracleDbLinksView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_link.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_link.gif");
   }
 
   public boolean isForDatabase(Database database) {

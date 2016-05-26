@@ -59,7 +59,7 @@ public class OracleSqlProfilerView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/profiler.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/profiler.gif");
   }
 
   public boolean isForDatabase(Database database) {

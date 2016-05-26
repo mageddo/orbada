@@ -34,7 +34,7 @@ public class CreateUserWizardAction extends Action {
     setText(stringManager.getString("CreateUserWizardAction-text"));
     this.database = database;
     setActionCommandKey("CreateUserWizardAction");
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/new_user.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/new_user.gif"));
     addActionListener(createActionListener());
   }
 

@@ -944,7 +944,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
 
         cmExecute.setActionCommandKey("cmExecute");
         cmExecute.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.CTRL_MASK));
-        cmExecute.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_sql_execute16.gif")); // NOI18N
+        cmExecute.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_sql_execute16.gif")); // NOI18N
         cmExecute.setText(stringManager.getString("cmExecute-text")); // NOI18N
         cmExecute.setTooltip(stringManager.getString("cmExecute-hint")); // NOI18N
         cmExecute.addActionListener(new java.awt.event.ActionListener() {
@@ -955,7 +955,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
 
         cmExecuteAsScript.setActionCommandKey("cmExecuteAsScript");
         cmExecuteAsScript.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F9, java.awt.event.InputEvent.CTRL_MASK));
-        cmExecuteAsScript.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_script_execute.gif")); // NOI18N
+        cmExecuteAsScript.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_script_execute.gif")); // NOI18N
         cmExecuteAsScript.setText(stringManager.getString("cmExecuteAsScript-text")); // NOI18N
         cmExecuteAsScript.setTooltip(stringManager.getString("cmExecuteAsScript-hint")); // NOI18N
         cmExecuteAsScript.addActionListener(new java.awt.event.ActionListener() {
@@ -965,7 +965,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
         });
 
         cmShowHideError.setActionCommandKey("cmShowHideError");
-        cmShowHideError.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/delete_square16.gif")); // NOI18N
+        cmShowHideError.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/delete_square16.gif")); // NOI18N
         cmShowHideError.setTooltip(stringManager.getString("cmShowHideError-hint")); // NOI18N
         cmShowHideError.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -975,7 +975,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
 
         cmExecutedSql.setActionCommandKey("cmExecutedSql");
         cmExecutedSql.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F8, java.awt.event.InputEvent.CTRL_MASK));
-        cmExecutedSql.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/executed_sql16.gif")); // NOI18N
+        cmExecutedSql.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/executed_sql16.gif")); // NOI18N
         cmExecutedSql.setText(stringManager.getString("cmExecutedSql-text")); // NOI18N
         cmExecutedSql.setTooltip(stringManager.getString("cmExecutedSql-hint")); // NOI18N
         cmExecutedSql.addActionListener(new java.awt.event.ActionListener() {
@@ -986,7 +986,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
 
         cmSaveFile.setActionCommandKey("cmSaveFile");
         cmSaveFile.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
-        cmSaveFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/save16.gif")); // NOI18N
+        cmSaveFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/save16.gif")); // NOI18N
         cmSaveFile.setText(stringManager.getString("cmSaveFile-text")); // NOI18N
         cmSaveFile.setTooltip(stringManager.getString("cmSaveFile-hint")); // NOI18N
         cmSaveFile.addActionListener(new java.awt.event.ActionListener() {
@@ -996,7 +996,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
         });
 
         cmSaveFileAs.setActionCommandKey("cmSaveFileAs");
-        cmSaveFileAs.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/save_as16.gif")); // NOI18N
+        cmSaveFileAs.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/save_as16.gif")); // NOI18N
         cmSaveFileAs.setText(stringManager.getString("cmSaveFileAs-text")); // NOI18N
         cmSaveFileAs.setTooltip(stringManager.getString("cmSaveFileAs-hint")); // NOI18N
         cmSaveFileAs.addActionListener(new java.awt.event.ActionListener() {
@@ -1006,7 +1006,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
         });
 
         cmOpenFile.setActionCommandKey("cmOpenFile");
-        cmOpenFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/open_document16.gif")); // NOI18N
+        cmOpenFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/open_document16.gif")); // NOI18N
         cmOpenFile.setText(stringManager.getString("cmOpenFile-text")); // NOI18N
         cmOpenFile.setTooltip(stringManager.getString("cmOpenFile-hint")); // NOI18N
         cmOpenFile.addActionListener(new java.awt.event.ActionListener() {
@@ -1017,7 +1017,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
 
         cmPrevEditor.setActionCommandKey("cmPrevEditor");
         cmPrevEditor.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_UP, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.SHIFT_MASK));
-        cmPrevEditor.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/arrowup.gif")); // NOI18N
+        cmPrevEditor.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/arrowup.gif")); // NOI18N
         cmPrevEditor.setText(stringManager.getString("cmPrevEditor-text")); // NOI18N
         cmPrevEditor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1027,7 +1027,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
 
         cmNextEditor.setActionCommandKey("cmNextEditor");
         cmNextEditor.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_DOWN, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.SHIFT_MASK));
-        cmNextEditor.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/arrowdown.gif")); // NOI18N
+        cmNextEditor.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/arrowdown.gif")); // NOI18N
         cmNextEditor.setText(stringManager.getString("cmNextEditor-text")); // NOI18N
         cmNextEditor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1036,7 +1036,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
         });
 
         cmNewEditor.setActionCommandKey("cmNewEditor");
-        cmNewEditor.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/new_document16.gif")); // NOI18N
+        cmNewEditor.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/new_document16.gif")); // NOI18N
         cmNewEditor.setText(stringManager.getString("cmNewEditor-text")); // NOI18N
         cmNewEditor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1045,7 +1045,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
         });
 
         cmDeleteEditor.setActionCommandKey("cmDeleteEditor");
-        cmDeleteEditor.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/minus16.gif")); // NOI18N
+        cmDeleteEditor.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/minus16.gif")); // NOI18N
         cmDeleteEditor.setText(stringManager.getString("cmDeleteEditor-text")); // NOI18N
         cmDeleteEditor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1114,7 +1114,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
         menuRollback.setAction(cmDbRollback);
         menuView.add(menuRollback);
 
-        cmSelectDatabase.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/select16.gif")); // NOI18N
+        cmSelectDatabase.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/select16.gif")); // NOI18N
         cmSelectDatabase.setText(stringManager.getString("cmSelectDatabase-text")); // NOI18N
         cmSelectDatabase.setTooltip(stringManager.getString("cmSelectDatabase-hint")); // NOI18N
         cmSelectDatabase.addActionListener(new java.awt.event.ActionListener() {
@@ -1125,7 +1125,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
 
         cmStore.setActionCommandKey("cmStore");
         cmStore.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F9, 0));
-        cmStore.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_sql_store.gif")); // NOI18N
+        cmStore.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_sql_store.gif")); // NOI18N
         cmStore.setText(stringManager.getString("cmStore-text")); // NOI18N
         cmStore.setTooltip(stringManager.getString("cmStore-hint")); // NOI18N
         cmStore.addActionListener(new java.awt.event.ActionListener() {
@@ -1135,7 +1135,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
         });
 
         cmCloneDatabase.setActionCommandKey("cmCloneDatabase");
-        cmCloneDatabase.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/clone_database.gif")); // NOI18N
+        cmCloneDatabase.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/clone_database.gif")); // NOI18N
         cmCloneDatabase.setText(stringManager.getString("cmCloneDatabase-text")); // NOI18N
         cmCloneDatabase.setTooltip(stringManager.getString("cmCloneDatabase-hint")); // NOI18N
         cmCloneDatabase.addActionListener(new java.awt.event.ActionListener() {
@@ -1164,7 +1164,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
         });
 
         cmPopupRecentFiles.setActionCommandKey("cmPopupRecentFiles");
-        cmPopupRecentFiles.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/down10.gif")); // NOI18N
+        cmPopupRecentFiles.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/down10.gif")); // NOI18N
         cmPopupRecentFiles.setText(stringManager.getString("cmPopupRecentFiles-text")); // NOI18N
         cmPopupRecentFiles.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1172,7 +1172,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
             }
         });
 
-        cmDbCommit.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/commit.gif")); // NOI18N
+        cmDbCommit.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/commit.gif")); // NOI18N
         cmDbCommit.setText(stringManager.getString("cmDbCommit-text")); // NOI18N
         cmDbCommit.setTooltip(stringManager.getString("cmDbCommit-hint")); // NOI18N
         cmDbCommit.addActionListener(new java.awt.event.ActionListener() {
@@ -1181,7 +1181,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
             }
         });
 
-        cmDbRollback.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/rollback.gif")); // NOI18N
+        cmDbRollback.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/rollback.gif")); // NOI18N
         cmDbRollback.setText(stringManager.getString("cmDbRollback-text")); // NOI18N
         cmDbRollback.setTooltip(stringManager.getString("cmDbRollback-hint")); // NOI18N
         cmDbRollback.addActionListener(new java.awt.event.ActionListener() {
@@ -1195,7 +1195,7 @@ public class SqlQueryPanelView extends javax.swing.JPanel implements Closeable, 
 
         cmDBStartTransaction.setActionCommandKey("cmDBStartTransaction");
         cmDBStartTransaction.setEnabled(false);
-        cmDBStartTransaction.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/start_transaction.gif")); // NOI18N
+        cmDBStartTransaction.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/start_transaction.gif")); // NOI18N
         cmDBStartTransaction.setText(stringManager.getString("cmDBStartTransaction-text")); // NOI18N
         cmDBStartTransaction.setTooltip(stringManager.getString("cmDBStartTransaction-hint")); // NOI18N
         cmDBStartTransaction.addActionListener(new java.awt.event.ActionListener() {
@@ -1849,7 +1849,7 @@ private void cmDbRollbackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
   class TabAddResultAction extends Action {
     public TabAddResultAction() {
       super();
-      setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/add12.gif"));
+      setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/add12.gif"));
     }
     @Override
     public void actionPerformed(ActionEvent e) {

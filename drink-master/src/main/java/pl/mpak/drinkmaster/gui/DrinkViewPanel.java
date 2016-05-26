@@ -316,7 +316,7 @@ public class DrinkViewPanel extends javax.swing.JPanel implements Closeable {
     });
 
     cmRefresh.setActionCommandKey("cmRefresh");
-    cmRefresh.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/refresh16.gif"))); // NOI18N
+    cmRefresh.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/refresh16.gif"))); // NOI18N
     cmRefresh.setText(stringManager.getString("refresh-amp")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("refresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -326,7 +326,7 @@ public class DrinkViewPanel extends javax.swing.JPanel implements Closeable {
     });
 
     cmAdd.setActionCommandKey("cmAdd");
-    cmAdd.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/new16.gif"))); // NOI18N
+    cmAdd.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/new16.gif"))); // NOI18N
     cmAdd.setText(stringManager.getString("new-drink")); // NOI18N
     cmAdd.setTooltip(stringManager.getString("new-drink-hint")); // NOI18N
     cmAdd.addActionListener(new java.awt.event.ActionListener() {
@@ -336,7 +336,7 @@ public class DrinkViewPanel extends javax.swing.JPanel implements Closeable {
     });
 
     cmEdit.setActionCommandKey("cmEdit");
-    cmEdit.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/edit16.gif"))); // NOI18N
+    cmEdit.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/edit16.gif"))); // NOI18N
     cmEdit.setText(stringManager.getString("edit-drink")); // NOI18N
     cmEdit.setTooltip(stringManager.getString("edit-drink-hint")); // NOI18N
     cmEdit.addActionListener(new java.awt.event.ActionListener() {
@@ -346,7 +346,7 @@ public class DrinkViewPanel extends javax.swing.JPanel implements Closeable {
     });
 
     cmDelete.setActionCommandKey("cmDelete");
-    cmDelete.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/trash.gif"))); // NOI18N
+    cmDelete.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/trash.gif"))); // NOI18N
     cmDelete.setText(stringManager.getString("delete-drink")); // NOI18N
     cmDelete.setTooltip(stringManager.getString("delete-drink-hint")); // NOI18N
     cmDelete.addActionListener(new java.awt.event.ActionListener() {
@@ -357,7 +357,7 @@ public class DrinkViewPanel extends javax.swing.JPanel implements Closeable {
 
     cmFind.setActionCommandKey("cmFind");
     cmFind.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, 0));
-    cmFind.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/find_source.gif"))); // NOI18N
+    cmFind.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/find_source.gif"))); // NOI18N
     cmFind.setText(stringManager.getString("find")); // NOI18N
     cmFind.setTooltip(stringManager.getString("find-drink-hint")); // NOI18N
     cmFind.addActionListener(new java.awt.event.ActionListener() {

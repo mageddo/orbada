@@ -32,7 +32,7 @@ public class CreateFunctionAction extends ComponentAction {
     super();
     setText(stringManager.getString("CreateFunctionAction-text"));
     setTooltip(stringManager.getString("CreateFunctionAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/function.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/function.gif"));
     setActionCommandKey("CreateFunctionAction");
     addActionListener(createActionListener());
   }

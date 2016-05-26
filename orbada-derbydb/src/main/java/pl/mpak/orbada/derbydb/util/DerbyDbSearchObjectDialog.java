@@ -108,7 +108,7 @@ public class DerbyDbSearchObjectDialog extends javax.swing.JDialog {
 
     cmSearch.setActionCommandKey("cmSearch");
     cmSearch.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.CTRL_MASK));
-    cmSearch.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/orbada/derbydb/res/icons/go16.gif")); // NOI18N
+    cmSearch.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/go16.gif")); // NOI18N
     cmSearch.setTooltip(stringManager.getString("DerbyDbSearchObjectDialog-cmSearch-hint")); // NOI18N
     cmSearch.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

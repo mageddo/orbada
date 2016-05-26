@@ -183,7 +183,7 @@ public class DatabasesPanelView extends javax.swing.JPanel implements IRootTabOb
     jSeparator1 = new javax.swing.JToolBar.Separator();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
 
-    cmRefresh.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/refresh16.gif"))); // NOI18N
+    cmRefresh.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/refresh16.gif"))); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {

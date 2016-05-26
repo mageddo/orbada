@@ -464,7 +464,7 @@ public class MoveDataDialog extends javax.swing.JDialog {
     });
 
     cmCreateInsertCommand.setActionCommandKey("cmCreateInsertCommand");
-    cmCreateInsertCommand.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/add_table16.gif")); // NOI18N
+    cmCreateInsertCommand.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/add_table16.gif")); // NOI18N
     cmCreateInsertCommand.setText(stringManager.getString("mdd-cmcreateinsert-text")); // NOI18N
     cmCreateInsertCommand.setTooltip(stringManager.getString("mdd-cmcreateinsert-hint")); // NOI18N
     cmCreateInsertCommand.addActionListener(new java.awt.event.ActionListener() {
@@ -474,7 +474,7 @@ public class MoveDataDialog extends javax.swing.JDialog {
     });
 
     cmCreateUpdateCommand.setActionCommandKey("cmCreateUpdateCommand");
-    cmCreateUpdateCommand.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/add_table16.gif")); // NOI18N
+    cmCreateUpdateCommand.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/add_table16.gif")); // NOI18N
     cmCreateUpdateCommand.setText(stringManager.getString("mdd-cmcreateupdate-text")); // NOI18N
     cmCreateUpdateCommand.setTooltip(stringManager.getString("mdd-cmcreateupdate-hint")); // NOI18N
     cmCreateUpdateCommand.addActionListener(new java.awt.event.ActionListener() {
@@ -493,7 +493,7 @@ public class MoveDataDialog extends javax.swing.JDialog {
     });
 
     cmCreateSelectCommand.setActionCommandKey("cmCreateSelectCommand");
-    cmCreateSelectCommand.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/add_table16.gif")); // NOI18N
+    cmCreateSelectCommand.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/add_table16.gif")); // NOI18N
     cmCreateSelectCommand.setText(stringManager.getString("mdd-cmcreateselect-text")); // NOI18N
     cmCreateSelectCommand.setTooltip(stringManager.getString("mdd-cmcreateselect-hint")); // NOI18N
     cmCreateSelectCommand.addActionListener(new java.awt.event.ActionListener() {

@@ -5,7 +5,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmRefresh">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/refresh16.gif"/>
+          <Image iconType="/res/icons/refresh16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/hsqldb/i18n.properties" key="cmRefresh-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -33,7 +33,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmColumnNotNull"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/lock16.gif"/>
+          <Image iconType="/res/icons/lock16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/hsqldb/i18n.properties" key="cmColumnNotNull-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -50,7 +50,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmCreateConstraintCheck"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/verify_document_16.gif"/>
+          <Image iconType="/res/icons/verify_document_16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/hsqldb/i18n.properties" key="cmCreateConstraintCheck-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -67,7 +67,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmDropColumn"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/trash.gif"/>
+          <Image iconType="/res/icons/trash.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/hsqldb/i18n.properties" key="cmDropColumn-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -137,7 +137,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmRenameColumn">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/rename.gif"/>
+          <Image iconType="/res/icons/rename.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/hsqldb/i18n.properties" key="cmRenameColumn-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -151,7 +151,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmCreateConstraintFK"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/foreign_key16.gif"/>
+          <Image iconType="/res/icons/foreign_key16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/hsqldb/i18n.properties" key="cmCreateConstraintFK-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -168,7 +168,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmCreateConstraintPK"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/primary_key16.gif"/>
+          <Image iconType="/res/icons/primary_key16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/hsqldb/i18n.properties" key="cmCreateConstraintPK-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

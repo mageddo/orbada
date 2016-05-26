@@ -35,7 +35,7 @@ public class SetSchemaWizardAction extends Action {
     setText(stringManager.getString("SetSchemaWizardAction-text"));
     this.database = database;
     setActionCommandKey("SetSchemaWizardAction");
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/users16.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/users16.gif"));
     addActionListener(createActionListener());
   }
 

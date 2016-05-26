@@ -45,7 +45,7 @@ public class OracleCreateSchemaTriggerAction extends ComponentActionProvider {
     }
     
     setText(getDescription());
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trigger.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trigger.gif"));
     setTooltip(stringManager.getString("OracleCreateSchemaTriggerAction-hint"));
     setActionCommandKey("OracleCreateSchemaTriggerAction");
     addActionListener(createActionListener());

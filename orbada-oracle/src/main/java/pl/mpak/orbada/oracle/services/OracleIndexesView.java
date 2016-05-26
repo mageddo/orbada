@@ -40,7 +40,7 @@ public class OracleIndexesView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/index.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/index.gif");
   }
 
   public boolean isForDatabase(Database database) {

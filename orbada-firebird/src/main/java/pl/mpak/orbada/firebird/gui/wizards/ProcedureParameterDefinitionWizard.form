@@ -6,7 +6,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmAddRow" noResource="true"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/add8.gif"/>
+          <Image iconType="/res/icons/add8.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/firebird/i18n.properties" key="ProcedureParameterDefinitionWizard-cmAddRow-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -20,7 +20,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmRemoveRow" noResource="true"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/remove8.gif"/>
+          <Image iconType="/res/icons/remove8.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/firebird/i18n.properties" key="ProcedureParameterDefinitionWizard-cmRemoveRow-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -34,7 +34,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmMoveDown" noResource="true"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/down10.gif"/>
+          <Image iconType="/res/icons/down10.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/firebird/i18n.properties" key="ProcedureParameterDefinitionWizard-cmMoveDown-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -48,7 +48,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmMoveUp" noResource="true"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/up10.gif"/>
+          <Image iconType="/res/icons/up10.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/firebird/i18n.properties" key="ProcedureParameterDefinitionWizard-cmMoveUp-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

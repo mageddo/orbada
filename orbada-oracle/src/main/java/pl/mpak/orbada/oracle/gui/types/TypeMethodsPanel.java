@@ -207,7 +207,7 @@ public class TypeMethodsPanel extends javax.swing.JPanel implements ITabObjectIn
     jScrollPane2 = new javax.swing.JScrollPane();
     tableArguments = new ViewTable();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -228,7 +228,7 @@ public class TypeMethodsPanel extends javax.swing.JPanel implements ITabObjectIn
     menuActions.add(jMenuItem1);
 
     cmCallTypeMethod.setActionCommandKey("cmCallTypeMethod");
-    cmCallTypeMethod.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/call.gif")); // NOI18N
+    cmCallTypeMethod.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/call.gif")); // NOI18N
     cmCallTypeMethod.setText(stringManager.getString("cmCallTypeMethod-text")); // NOI18N
     cmCallTypeMethod.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -340,7 +340,7 @@ public class ImportFromCsvDialog extends javax.swing.JDialog {
             }
         });
 
-        cmSelectFile.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/open16.gif"))); // NOI18N
+        cmSelectFile.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/open16.gif"))); // NOI18N
         cmSelectFile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmSelectFileActionPerformed(evt);

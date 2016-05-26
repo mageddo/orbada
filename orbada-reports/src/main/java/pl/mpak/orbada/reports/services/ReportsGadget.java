@@ -36,7 +36,7 @@ public class ReportsGadget extends PerpectiveGadgetProvider {
 
   @Override
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/reports.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/reports.gif");
   }
 
   public String getDescription() {

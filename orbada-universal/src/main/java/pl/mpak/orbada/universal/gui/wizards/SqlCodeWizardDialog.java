@@ -154,7 +154,7 @@ public class SqlCodeWizardDialog extends javax.swing.JDialog {
       }
     });
 
-    cmScriptInfo.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/help.gif")); // NOI18N
+    cmScriptInfo.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/help.gif")); // NOI18N
     cmScriptInfo.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         cmScriptInfoActionPerformed(evt);

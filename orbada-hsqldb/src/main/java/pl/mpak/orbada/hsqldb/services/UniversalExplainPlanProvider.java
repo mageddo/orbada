@@ -32,7 +32,7 @@ public class UniversalExplainPlanProvider extends UniversalActionProvider {
     super();
     setShortCut(KeyEvent.VK_E, KeyEvent.CTRL_MASK);
     setText(stringManager.getString("UniversalExplainPlanProvider-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/explain_plan.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/explain_plan.gif"));
     setActionCommandKey("UniversalExplainPlanProvider");
     addActionListener(createActionListener());
   }

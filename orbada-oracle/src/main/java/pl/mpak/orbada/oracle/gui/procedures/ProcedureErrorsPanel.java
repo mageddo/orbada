@@ -137,7 +137,7 @@ public class ProcedureErrorsPanel extends javax.swing.JPanel implements ITabObje
     jScrollPane1 = new javax.swing.JScrollPane();
     tableErrors = new ViewTable();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -148,7 +148,7 @@ public class ProcedureErrorsPanel extends javax.swing.JPanel implements ITabObje
 
     cmGotoSource.setActionCommandKey("cmGotoSource");
     cmGotoSource.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.CTRL_MASK));
-    cmGotoSource.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/descending.gif")); // NOI18N
+    cmGotoSource.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/descending.gif")); // NOI18N
     cmGotoSource.setText(stringManager.getString("cmGotoSource-text")); // NOI18N
     cmGotoSource.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

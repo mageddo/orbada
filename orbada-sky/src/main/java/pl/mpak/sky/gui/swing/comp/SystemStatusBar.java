@@ -82,7 +82,7 @@ public class SystemStatusBar extends StatusBar {
     });
     memoryPanel = getPanel("memory-panel"); //$NON-NLS-1$
     memoryPanel.setToolTipText(Messages.getString("SystemStatusBar.memoryPanel-hint")); //$NON-NLS-1$
-    memoryPanel.setIcon(new ImageIcon(getClass().getResource("/pl/mpak/sky/res/memory.gif"))); //$NON-NLS-1$
+    memoryPanel.setIcon(new ImageIcon(getClass().getResource("/res/memory.gif"))); //$NON-NLS-1$
     memoryPanel.setDisplayActivation(true);
 //    memoryPanel.setPreferredSize(new Dimension(120, STATUS_PANEL_HEIGHT));
     timer.schedule(new TimerTask() {
@@ -129,7 +129,7 @@ public class SystemStatusBar extends StatusBar {
   private void initStatusBarRunTime() {
     addPanel("runtime-panel"); //$NON-NLS-1$
     runTimePanel = getPanel("runtime-panel"); //$NON-NLS-1$
-    runTimePanel.setIcon(new ImageIcon(getClass().getResource("/pl/mpak/sky/res/run.gif"))); //$NON-NLS-1$
+    runTimePanel.setIcon(new ImageIcon(getClass().getResource("/res/run.gif"))); //$NON-NLS-1$
     runTimePanel.setHorizontalAlignment(JLabel.CENTER);
     timer.schedule(new TimerTask() {
       public void run() {

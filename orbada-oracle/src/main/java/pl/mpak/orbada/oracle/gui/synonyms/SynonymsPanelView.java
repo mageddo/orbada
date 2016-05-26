@@ -178,7 +178,7 @@ public class SynonymsPanelView extends javax.swing.JPanel implements IRootTabObj
     jSeparator1 = new javax.swing.JToolBar.Separator();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -195,7 +195,7 @@ public class SynonymsPanelView extends javax.swing.JPanel implements IRootTabObj
       }
     });
 
-    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/users16.gif")); // NOI18N
+    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/users16.gif")); // NOI18N
     cmSelectSchema.setText(stringManager.getString("cmSelectSchema-text")); // NOI18N
     cmSelectSchema.setTooltip(stringManager.getString("cmSelectSchema-hint")); // NOI18N
     cmSelectSchema.addActionListener(new java.awt.event.ActionListener() {
@@ -215,7 +215,7 @@ public class SynonymsPanelView extends javax.swing.JPanel implements IRootTabObj
     menuActions.add(menuDropSynonym);
 
     cmDropSynonym.setActionCommandKey("cmDropSynonym");
-    cmDropSynonym.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDropSynonym.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDropSynonym.setText(stringManager.getString("cmDropSynonym-text")); // NOI18N
     cmDropSynonym.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -224,7 +224,7 @@ public class SynonymsPanelView extends javax.swing.JPanel implements IRootTabObj
     });
 
     cmCreateSynonym.setActionCommandKey("cmCreateSynonym");
-    cmCreateSynonym.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/synonym.gif")); // NOI18N
+    cmCreateSynonym.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/synonym.gif")); // NOI18N
     cmCreateSynonym.setText(stringManager.getString("cmCreateSynonym-text")); // NOI18N
     cmCreateSynonym.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

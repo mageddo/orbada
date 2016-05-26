@@ -148,7 +148,7 @@ public class CreateConstraintPrimaryKeyWizardPanel extends SqlCodeWizardPanel {
     buttonRemoveRow = new javax.swing.JButton();
 
     cmAddRow.setActionCommandKey("cmAddRow");
-    cmAddRow.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/add8.gif")); // NOI18N
+    cmAddRow.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/add8.gif")); // NOI18N
     cmAddRow.setText(stringManager.getString("cmAddRow-text")); // NOI18N
     cmAddRow.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -157,7 +157,7 @@ public class CreateConstraintPrimaryKeyWizardPanel extends SqlCodeWizardPanel {
     });
 
     cmRemoveRow.setActionCommandKey("cmRemoveRow");
-    cmRemoveRow.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/remove8.gif")); // NOI18N
+    cmRemoveRow.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/remove8.gif")); // NOI18N
     cmRemoveRow.setText(stringManager.getString("cmRemoveRow-text")); // NOI18N
     cmRemoveRow.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -76,7 +76,7 @@ public class ReportsPanelView extends javax.swing.JPanel implements Closeable {
     tabbedReports = new javax.swing.JTabbedPane();
 
     cmRun.setActionCommandKey("cmRun");
-    cmRun.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_sql_execute16.gif")); // NOI18N
+    cmRun.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_sql_execute16.gif")); // NOI18N
     java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pl/mpak/orbada/orbada-reports"); // NOI18N
     cmRun.setText(bundle.getString("run_report")); // NOI18N
     cmRun.setTooltip(bundle.getString("run_report_tooltip")); // NOI18N

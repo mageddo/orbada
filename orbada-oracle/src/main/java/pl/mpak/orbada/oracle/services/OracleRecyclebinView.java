@@ -31,7 +31,7 @@ public class OracleRecyclebinView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif");
   }
 
   public boolean isForDatabase(Database database) {

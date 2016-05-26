@@ -17,7 +17,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmRefresh"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/refresh16.gif"/>
+          <Image iconType="/res/icons/refresh16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/drinkmaster/i18n.properties" key="refresh-amp" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -40,7 +40,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmAdd"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/new16.gif"/>
+          <Image iconType="/res/icons/new16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/drinkmaster/i18n.properties" key="new-drink" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -57,7 +57,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmEdit"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/edit16.gif"/>
+          <Image iconType="/res/icons/edit16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/drinkmaster/i18n.properties" key="edit-drink" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -74,7 +74,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmDelete"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/trash.gif"/>
+          <Image iconType="/res/icons/trash.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/drinkmaster/i18n.properties" key="delete-drink" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -94,7 +94,7 @@
           <KeyStroke key="ENTER"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/find_source.gif"/>
+          <Image iconType="/res/icons/find_source.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/drinkmaster/i18n.properties" key="find" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

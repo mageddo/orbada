@@ -23,7 +23,7 @@ public class CmUndoEdit extends Action {
     this.undoManager = undoManager;
     setText(Messages.getString("CmUndoEdit.text")); //$NON-NLS-1$
     if (icon == null) {
-      icon = pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/sky/res/undo.gif"); //$NON-NLS-1$
+      icon = pl.mpak.sky.gui.swing.ImageManager.getImage("/res/undo.gif"); //$NON-NLS-1$
     }
     setSmallIcon(icon);
     setShortCut(KeyEvent.VK_Z, KeyEvent.CTRL_MASK);

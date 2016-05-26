@@ -192,7 +192,7 @@ public class DictionaryPanelView extends javax.swing.JPanel implements IRootTabO
     buttonRefresh = new pl.mpak.sky.gui.swing.comp.ToolButton();
     buttonFilter = new pl.mpak.sky.gui.swing.comp.ToolButton();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -202,7 +202,7 @@ public class DictionaryPanelView extends javax.swing.JPanel implements IRootTabO
     });
 
     cmFilter.setActionCommandKey("cmFilter");
-    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/filter16.gif")); // NOI18N
+    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/filter16.gif")); // NOI18N
     cmFilter.setText(stringManager.getString("cmFilter-text")); // NOI18N
     cmFilter.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

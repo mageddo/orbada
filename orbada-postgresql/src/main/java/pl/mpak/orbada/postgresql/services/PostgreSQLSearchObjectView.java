@@ -40,7 +40,7 @@ public class PostgreSQLSearchObjectView extends ViewProvider {
   
   @Override
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/find_object16.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/find_object16.gif");
   }
 
   @Override

@@ -162,7 +162,7 @@ public class RecyclebinPanelView extends javax.swing.JPanel implements IRootTabO
     jSeparator1 = new javax.swing.JToolBar.Separator();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -190,7 +190,7 @@ public class RecyclebinPanelView extends javax.swing.JPanel implements IRootTabO
     menuActions.add(menuPurgeRecyclebin);
 
     cmFlashbackObject.setActionCommandKey("cmFlashbackObject");
-    cmFlashbackObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/undo.gif")); // NOI18N
+    cmFlashbackObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/undo.gif")); // NOI18N
     cmFlashbackObject.setText(stringManager.getString("cmFlashbackObject-text")); // NOI18N
     cmFlashbackObject.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -199,7 +199,7 @@ public class RecyclebinPanelView extends javax.swing.JPanel implements IRootTabO
     });
 
     cmPurgeObject.setActionCommandKey("cmPurgeObject");
-    cmPurgeObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmPurgeObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmPurgeObject.setText(stringManager.getString("cmPurgeObject-text")); // NOI18N
     cmPurgeObject.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -208,7 +208,7 @@ public class RecyclebinPanelView extends javax.swing.JPanel implements IRootTabO
     });
 
     cmPurgeRecyclebin.setActionCommandKey("cmPurgeRecyclebin");
-    cmPurgeRecyclebin.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmPurgeRecyclebin.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmPurgeRecyclebin.setText(stringManager.getString("cmPurgeRecyclebin-text")); // NOI18N
     cmPurgeRecyclebin.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

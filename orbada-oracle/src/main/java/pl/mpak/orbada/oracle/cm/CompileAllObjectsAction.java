@@ -29,7 +29,7 @@ public class CompileAllObjectsAction extends Action {
   public CompileAllObjectsAction(Database database) {
     super();
     setText(stringManager.getString("CompileAllObjectsAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_sql_execute_all.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_sql_execute_all.gif"));
     setTooltip(stringManager.getString("CompileAllObjectsAction-hint"));
     setActionCommandKey("CompileAllObjectsAction");
     addActionListener(createActionListener());

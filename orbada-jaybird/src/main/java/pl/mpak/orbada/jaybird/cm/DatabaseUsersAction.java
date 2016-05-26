@@ -24,7 +24,7 @@ public class DatabaseUsersAction extends Action {
   public DatabaseUsersAction() {
     setText(stringManager.getString("DatabaseUsersAction.text"));
     setTooltip(stringManager.getString("DatabaseUsersAction.tooltip"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/users16.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/users16.gif"));
     setActionCommandKey("DatabaseUsersAction");
     addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {

@@ -40,7 +40,7 @@ public class OracleSynonymsView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/synonym.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/synonym.gif");
   }
 
   public boolean isForDatabase(Database database) {

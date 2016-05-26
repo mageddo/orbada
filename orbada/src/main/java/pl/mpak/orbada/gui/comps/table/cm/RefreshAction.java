@@ -35,7 +35,7 @@ public class RefreshAction extends Action {
     this.table = table;
     setText(stringManager.getString("Refresh-text"));
     setShortCut(KeyEvent.VK_F5, 0);
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif"));
     setActionCommandKey("cmRefresh");
     addActionListener(createActionListener());
   }

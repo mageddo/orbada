@@ -5,7 +5,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmRefresh">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/refresh16.gif"/>
+          <Image iconType="/res/icons/refresh16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmRefresh-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -48,7 +48,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmCallTypeMethod"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/call.gif"/>
+          <Image iconType="/res/icons/call.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmCallTypeMethod-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

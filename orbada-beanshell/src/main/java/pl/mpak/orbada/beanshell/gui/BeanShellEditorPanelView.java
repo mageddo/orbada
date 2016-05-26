@@ -304,7 +304,7 @@ public class BeanShellEditorPanelView extends javax.swing.JPanel implements Clos
     toolButton1 = new pl.mpak.sky.gui.swing.comp.ToolButton();
 
     cmRun.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.CTRL_MASK));
-    cmRun.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/run.gif")); // NOI18N
+    cmRun.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/run.gif")); // NOI18N
     cmRun.setText(stringManager.getString("cmRun-text")); // NOI18N
     cmRun.setTooltip(stringManager.getString("cmRun-hint")); // NOI18N
     cmRun.addActionListener(new java.awt.event.ActionListener() {
@@ -315,7 +315,7 @@ public class BeanShellEditorPanelView extends javax.swing.JPanel implements Clos
 
     cmSaveFile.setActionCommandKey("cmSaveFile");
     cmSaveFile.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
-    cmSaveFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/save16.gif")); // NOI18N
+    cmSaveFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/save16.gif")); // NOI18N
     cmSaveFile.setText(stringManager.getString("cmSaveFile-text")); // NOI18N
     cmSaveFile.setTooltip(stringManager.getString("cmSaveFile-hint")); // NOI18N
     cmSaveFile.addActionListener(new java.awt.event.ActionListener() {
@@ -325,7 +325,7 @@ public class BeanShellEditorPanelView extends javax.swing.JPanel implements Clos
     });
 
     cmSaveFileAs.setActionCommandKey("cmSaveFileAs");
-    cmSaveFileAs.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/save_as16.gif")); // NOI18N
+    cmSaveFileAs.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/save_as16.gif")); // NOI18N
     cmSaveFileAs.setText(stringManager.getString("cmSaveFileAs-text")); // NOI18N
     cmSaveFileAs.setTooltip(stringManager.getString("cmSaveFileAs-hint")); // NOI18N
     cmSaveFileAs.addActionListener(new java.awt.event.ActionListener() {
@@ -335,7 +335,7 @@ public class BeanShellEditorPanelView extends javax.swing.JPanel implements Clos
     });
 
     cmOpenFile.setActionCommandKey("cmOpenFile");
-    cmOpenFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/open_document16.gif")); // NOI18N
+    cmOpenFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/open_document16.gif")); // NOI18N
     cmOpenFile.setText(stringManager.getString("cmOpenFile-text")); // NOI18N
     cmOpenFile.setTooltip(stringManager.getString("cmOpenFile-hint")); // NOI18N
     cmOpenFile.addActionListener(new java.awt.event.ActionListener() {
@@ -345,7 +345,7 @@ public class BeanShellEditorPanelView extends javax.swing.JPanel implements Clos
     });
 
     cmPrevEditor.setActionCommandKey("cmPrevEditor");
-    cmPrevEditor.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/arrowup.gif")); // NOI18N
+    cmPrevEditor.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/arrowup.gif")); // NOI18N
     cmPrevEditor.setText(stringManager.getString("cmPrevEditor-text")); // NOI18N
     cmPrevEditor.setTooltip(stringManager.getString("cmPrevEditor-hint")); // NOI18N
     cmPrevEditor.addActionListener(new java.awt.event.ActionListener() {
@@ -355,7 +355,7 @@ public class BeanShellEditorPanelView extends javax.swing.JPanel implements Clos
     });
 
     cmNextEditor.setActionCommandKey("cmNextEditor");
-    cmNextEditor.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/arrowdown.gif")); // NOI18N
+    cmNextEditor.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/arrowdown.gif")); // NOI18N
     cmNextEditor.setText(stringManager.getString("cmNextEditor-text")); // NOI18N
     cmNextEditor.setTooltip(stringManager.getString("cmNextEditor-hint")); // NOI18N
     cmNextEditor.addActionListener(new java.awt.event.ActionListener() {
@@ -365,7 +365,7 @@ public class BeanShellEditorPanelView extends javax.swing.JPanel implements Clos
     });
 
     cmNewEditor.setActionCommandKey("cmNewEditor");
-    cmNewEditor.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/new_document16.gif")); // NOI18N
+    cmNewEditor.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/new_document16.gif")); // NOI18N
     cmNewEditor.setText(stringManager.getString("cmNewEditor-text")); // NOI18N
     cmNewEditor.setTooltip(stringManager.getString("cmNewEditor-hint")); // NOI18N
     cmNewEditor.addActionListener(new java.awt.event.ActionListener() {
@@ -375,7 +375,7 @@ public class BeanShellEditorPanelView extends javax.swing.JPanel implements Clos
     });
 
     cmDeleteEditor.setActionCommandKey("cmDeleteEditor");
-    cmDeleteEditor.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/minus16.gif")); // NOI18N
+    cmDeleteEditor.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/minus16.gif")); // NOI18N
     cmDeleteEditor.setText(stringManager.getString("cmDeleteEditor-text")); // NOI18N
     cmDeleteEditor.setTooltip(stringManager.getString("cmDeleteEditor-hint")); // NOI18N
     cmDeleteEditor.addActionListener(new java.awt.event.ActionListener() {

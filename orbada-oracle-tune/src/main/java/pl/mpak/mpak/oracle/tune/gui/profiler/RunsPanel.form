@@ -6,7 +6,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmRefresh"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/refresh16.gif"/>
+          <Image iconType="/res/icons/refresh16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/mpak/oracle/tune/i18n.properties" key="cmRefresh-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -23,7 +23,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmFilter"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/filter16.gif"/>
+          <Image iconType="/res/icons/filter16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/mpak/oracle/tune/i18n.properties" key="cmFilter-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -46,7 +46,7 @@
           <KeyStroke key="ENTER"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/find_source.gif"/>
+          <Image iconType="/res/icons/find_source.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/mpak/oracle/tune/i18n.properties" key="cmFind-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -63,7 +63,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmAllRuns"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/group.gif"/>
+          <Image iconType="/res/icons/group.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/mpak/oracle/tune/i18n.properties" key="cmAllRuns-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -83,7 +83,7 @@
           <KeyStroke key="Ctrl+F8"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/trash.gif"/>
+          <Image iconType="/res/icons/trash.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/mpak/oracle/tune/i18n.properties" key="cmDeleteRun-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -103,7 +103,7 @@
           <KeyStroke key="Ctrl+F5"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/db_sql_execute16.gif"/>
+          <Image iconType="/res/icons/db_sql_execute16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/mpak/oracle/tune/i18n.properties" key="cmStartProfile-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -123,7 +123,7 @@
           <KeyStroke key="Ctrl+F2"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/stop16.gif"/>
+          <Image iconType="/res/icons/stop16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/mpak/oracle/tune/i18n.properties" key="cmStopProfile-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -140,7 +140,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmPauseProfile"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/debug_pause.gif"/>
+          <Image iconType="/res/icons/debug_pause.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/mpak/oracle/tune/i18n.properties" key="cmPauseProfile-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -157,7 +157,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmResumeProfile"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/debug_resume.gif"/>
+          <Image iconType="/res/icons/debug_resume.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/mpak/oracle/tune/i18n.properties" key="cmResumeProfile-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -240,7 +240,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmMilisecondUnit"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/ms.gif"/>
+          <Image iconType="/res/icons/ms.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/mpak/oracle/tune/i18n.properties" key="cmMilisecondUnit-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

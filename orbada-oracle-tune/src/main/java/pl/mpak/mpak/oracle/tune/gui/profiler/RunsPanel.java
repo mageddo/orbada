@@ -272,7 +272,7 @@ public class RunsPanel extends javax.swing.JPanel implements Closeable {
     queryTableStatusBar1 = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
 
     cmRefresh.setActionCommandKey("cmRefresh");
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -282,7 +282,7 @@ public class RunsPanel extends javax.swing.JPanel implements Closeable {
     });
 
     cmFilter.setActionCommandKey("cmFilter");
-    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/filter16.gif")); // NOI18N
+    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/filter16.gif")); // NOI18N
     cmFilter.setText(stringManager.getString("cmFilter-text")); // NOI18N
     cmFilter.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -292,7 +292,7 @@ public class RunsPanel extends javax.swing.JPanel implements Closeable {
 
     cmFind.setActionCommandKey("cmFind");
     cmFind.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, 0));
-    cmFind.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/find_source.gif")); // NOI18N
+    cmFind.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/find_source.gif")); // NOI18N
     cmFind.setText(stringManager.getString("cmFind-text")); // NOI18N
     cmFind.setTooltip(stringManager.getString("cmFind-hint")); // NOI18N
     cmFind.addActionListener(new java.awt.event.ActionListener() {
@@ -302,7 +302,7 @@ public class RunsPanel extends javax.swing.JPanel implements Closeable {
     });
 
     cmAllRuns.setActionCommandKey("cmAllRuns");
-    cmAllRuns.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/group.gif")); // NOI18N
+    cmAllRuns.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/group.gif")); // NOI18N
     cmAllRuns.setText(stringManager.getString("cmAllRuns-text")); // NOI18N
     cmAllRuns.setTooltip(stringManager.getString("cmAllRuns-hint")); // NOI18N
     cmAllRuns.addActionListener(new java.awt.event.ActionListener() {
@@ -313,7 +313,7 @@ public class RunsPanel extends javax.swing.JPanel implements Closeable {
 
     cmDeleteRun.setActionCommandKey("cmDeleteRun");
     cmDeleteRun.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F8, java.awt.event.InputEvent.CTRL_MASK));
-    cmDeleteRun.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDeleteRun.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDeleteRun.setText(stringManager.getString("cmDeleteRun-text")); // NOI18N
     cmDeleteRun.setTooltip(stringManager.getString("cmDeleteRun-hint")); // NOI18N
     cmDeleteRun.addActionListener(new java.awt.event.ActionListener() {
@@ -324,7 +324,7 @@ public class RunsPanel extends javax.swing.JPanel implements Closeable {
 
     cmStartProfile.setActionCommandKey("cmStartProfile");
     cmStartProfile.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F5, java.awt.event.InputEvent.CTRL_MASK));
-    cmStartProfile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_sql_execute16.gif")); // NOI18N
+    cmStartProfile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_sql_execute16.gif")); // NOI18N
     cmStartProfile.setText(stringManager.getString("cmStartProfile-text")); // NOI18N
     cmStartProfile.setTooltip(stringManager.getString("cmStartProfile-hint")); // NOI18N
     cmStartProfile.addActionListener(new java.awt.event.ActionListener() {
@@ -335,7 +335,7 @@ public class RunsPanel extends javax.swing.JPanel implements Closeable {
 
     cmStopProfile.setActionCommandKey("cmStopProfile");
     cmStopProfile.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F2, java.awt.event.InputEvent.CTRL_MASK));
-    cmStopProfile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/stop16.gif")); // NOI18N
+    cmStopProfile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/stop16.gif")); // NOI18N
     cmStopProfile.setText(stringManager.getString("cmStopProfile-text")); // NOI18N
     cmStopProfile.setTooltip(stringManager.getString("cmStopProfile-hint")); // NOI18N
     cmStopProfile.addActionListener(new java.awt.event.ActionListener() {
@@ -345,7 +345,7 @@ public class RunsPanel extends javax.swing.JPanel implements Closeable {
     });
 
     cmPauseProfile.setActionCommandKey("cmPauseProfile");
-    cmPauseProfile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/debug_pause.gif")); // NOI18N
+    cmPauseProfile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/debug_pause.gif")); // NOI18N
     cmPauseProfile.setText(stringManager.getString("cmPauseProfile-text")); // NOI18N
     cmPauseProfile.setTooltip(stringManager.getString("cmPauseProfile-hint")); // NOI18N
     cmPauseProfile.addActionListener(new java.awt.event.ActionListener() {
@@ -355,7 +355,7 @@ public class RunsPanel extends javax.swing.JPanel implements Closeable {
     });
 
     cmResumeProfile.setActionCommandKey("cmResumeProfile");
-    cmResumeProfile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/debug_resume.gif")); // NOI18N
+    cmResumeProfile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/debug_resume.gif")); // NOI18N
     cmResumeProfile.setText(stringManager.getString("cmResumeProfile-text")); // NOI18N
     cmResumeProfile.setTooltip(stringManager.getString("cmResumeProfile-hint")); // NOI18N
     cmResumeProfile.addActionListener(new java.awt.event.ActionListener() {
@@ -390,7 +390,7 @@ public class RunsPanel extends javax.swing.JPanel implements Closeable {
     menuProfiler.add(jMenuItem6);
 
     cmMilisecondUnit.setActionCommandKey("cmMilisecondUnit");
-    cmMilisecondUnit.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/ms.gif")); // NOI18N
+    cmMilisecondUnit.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/ms.gif")); // NOI18N
     cmMilisecondUnit.setText(stringManager.getString("cmMilisecondUnit-text")); // NOI18N
     cmMilisecondUnit.setTooltip(stringManager.getString("cmMilisecondUnit-hint")); // NOI18N
     cmMilisecondUnit.addActionListener(new java.awt.event.ActionListener() {

@@ -30,7 +30,7 @@ public class DropProcedureAction extends ComponentAction {
     super();
     setText(stringManager.getString("DropProcedureAction-description"));
     setTooltip(stringManager.getString("DropProcedureAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif"));
     setActionCommandKey("DropProcedureAction");
     addActionListener(createActionListener());
   }

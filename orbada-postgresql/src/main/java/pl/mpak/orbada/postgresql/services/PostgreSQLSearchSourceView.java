@@ -40,7 +40,7 @@ public class PostgreSQLSearchSourceView extends ViewProvider {
   
   @Override
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/find_source.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/find_source.gif");
   }
 
   @Override

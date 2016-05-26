@@ -31,7 +31,7 @@ public class OracleDirectoriesView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/directory.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/directory.gif");
   }
 
   public boolean isForDatabase(Database database) {

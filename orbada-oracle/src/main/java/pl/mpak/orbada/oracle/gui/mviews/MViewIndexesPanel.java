@@ -208,7 +208,7 @@ public class MViewIndexesPanel extends javax.swing.JPanel implements ITabObjectI
     jScrollPane1 = new javax.swing.JScrollPane();
     tableIndexes = new ViewTable();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -226,7 +226,7 @@ public class MViewIndexesPanel extends javax.swing.JPanel implements ITabObjectI
     });
 
     cmDropIndex.setActionCommandKey("cmDropIndex");
-    cmDropIndex.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDropIndex.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDropIndex.setText(stringManager.getString("cmDropIndex-text")); // NOI18N
     cmDropIndex.setTooltip(stringManager.getString("cmDropIndex-hint")); // NOI18N
     cmDropIndex.addActionListener(new java.awt.event.ActionListener() {
@@ -249,7 +249,7 @@ public class MViewIndexesPanel extends javax.swing.JPanel implements ITabObjectI
     menuActions.add(menuDropIndex);
 
     cmExpressionColumn.setActionCommandKey("cmExpressionColumn");
-    cmExpressionColumn.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/expression.gif")); // NOI18N
+    cmExpressionColumn.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/expression.gif")); // NOI18N
     cmExpressionColumn.setText(stringManager.getString("cmExpressionColumn-text")); // NOI18N
     cmExpressionColumn.setTooltip(stringManager.getString("cmExpressionColumn-hint")); // NOI18N
     cmExpressionColumn.addActionListener(new java.awt.event.ActionListener() {
@@ -259,7 +259,7 @@ public class MViewIndexesPanel extends javax.swing.JPanel implements ITabObjectI
     });
 
     cmCreateIndex.setActionCommandKey("cmCreateIndex");
-    cmCreateIndex.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/create_index16.gif")); // NOI18N
+    cmCreateIndex.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/create_index16.gif")); // NOI18N
     cmCreateIndex.setText(stringManager.getString("cmCreateIndex-text")); // NOI18N
     cmCreateIndex.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

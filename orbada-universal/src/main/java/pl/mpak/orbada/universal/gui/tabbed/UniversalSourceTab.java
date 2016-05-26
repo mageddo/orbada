@@ -64,7 +64,7 @@ public abstract class UniversalSourceTab extends javax.swing.JPanel implements I
       toolBarPanel.setVisible(false);
     }
     textProp.setEditable(isStorable());
-    lineMark = new LineMark(-1, Color.getColor("activeCaption", new Color(204, 204, 255)), pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/line_point.gif"));
+    lineMark = new LineMark(-1, Color.getColor("/res/icons/line_point.gif"));
   }
   
   /**
@@ -193,7 +193,7 @@ public abstract class UniversalSourceTab extends javax.swing.JPanel implements I
         buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
         textProp = new OrbadaSyntaxTextArea();
 
-        cmRefreshSource.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+        cmRefreshSource.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
         cmRefreshSource.setText(stringManager.getString("cmRefreshSource-text")); // NOI18N
         cmRefreshSource.setTooltip(stringManager.getString("cmRefreshSource-hint")); // NOI18N
         cmRefreshSource.addActionListener(new java.awt.event.ActionListener() {
@@ -204,7 +204,7 @@ public abstract class UniversalSourceTab extends javax.swing.JPanel implements I
 
         cmStore.setActionCommandKey("cmStore");
         cmStore.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.CTRL_MASK));
-        cmStore.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/store_db.gif")); // NOI18N
+        cmStore.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/store_db.gif")); // NOI18N
         cmStore.setText(stringManager.getString("cmStore-text")); // NOI18N
         cmStore.setTooltip(stringManager.getString("cmStore-hint")); // NOI18N
         cmStore.addActionListener(new java.awt.event.ActionListener() {

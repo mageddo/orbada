@@ -35,7 +35,7 @@
           <KeyStroke key="Ctrl+ENTER"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/find_object16.gif"/>
+          <Image iconType="/res/icons/find_object16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmSearch-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

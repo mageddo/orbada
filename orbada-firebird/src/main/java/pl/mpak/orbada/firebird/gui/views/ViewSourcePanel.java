@@ -126,7 +126,7 @@ public class ViewSourcePanel extends javax.swing.JPanel implements ITabObjectInf
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
     syntaxSource = new OrbadaSyntaxTextArea();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("ViewSourcePanel-cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -137,7 +137,7 @@ public class ViewSourcePanel extends javax.swing.JPanel implements ITabObjectInf
 
     cmStore.setActionCommandKey("cmStore");
     cmStore.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.CTRL_MASK));
-    cmStore.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/store_db.gif")); // NOI18N
+    cmStore.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/store_db.gif")); // NOI18N
     cmStore.setText(stringManager.getString("ViewSourcePanel-cmStore-text")); // NOI18N
     cmStore.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

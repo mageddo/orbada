@@ -43,7 +43,7 @@ public class PasteCodeAction extends Action {
     super();
     setText(stringManager.getString("PasteCodeAction-text"));
     this.application = application;
-    setSmallIcon(new ImageIcon(getClass().getResource("/pl/mpak/res/icons/paste-code16.gif")));
+    setSmallIcon(new ImageIcon(getClass().getResource("/res/icons/paste-code16.gif")));
     setShortCut(KeyEvent.VK_V, KeyEvent.CTRL_MASK | KeyEvent.SHIFT_MASK);
     setTooltip(stringManager.getString("PasteCodeAction-hint"));
     setActionCommandKey("PasteCodeAction");

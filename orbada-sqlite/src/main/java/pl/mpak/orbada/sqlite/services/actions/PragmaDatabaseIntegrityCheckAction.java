@@ -68,7 +68,7 @@ public class PragmaDatabaseIntegrityCheckAction extends ComponentActionProvider 
   private void setProperties() {
     setText(getDescription());
     setActionCommandKey("PragmaDatabaseIntegrityCheckAction");
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/check.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/check.gif"));
     addActionListener(createActionListener());
   }
 

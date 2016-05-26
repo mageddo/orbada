@@ -28,7 +28,7 @@ public class MySQLAutotraceProvider extends UniversalActionProvider {
     if (OrbadaMySQLPlugin.driverType.equals(database.getDriverType())) {
       setShortCut(KeyEvent.VK_T, KeyEvent.CTRL_MASK);
       setText("Statustyki po³aczenia");
-      setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/autotrace.gif"));
+      setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/autotrace.gif"));
       setActionCommandKey("MySQLAutotraceProvider");
       addActionListener(createActionListener());
       return true;

@@ -30,7 +30,7 @@ public class JaybirdExplainPlanService extends UniversalActionProvider {
         OrbadaJaybirdPlugin.jaybirdDriverClass.equals(database.getDriverClassName())) {
       setShortCut(KeyEvent.VK_E, KeyEvent.CTRL_MASK);
       setText(stringManager.getString("explain_plan"));
-      setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/explain_plan.gif"));
+      setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/explain_plan.gif"));
       setActionCommandKey("JaybirdExplainPlanProvider");
       addActionListener(createActionListener());
       settings = application.getSettings(JaybirdGeneralSettingsService.settingsName);

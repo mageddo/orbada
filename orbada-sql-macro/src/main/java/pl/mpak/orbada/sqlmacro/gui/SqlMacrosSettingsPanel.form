@@ -5,7 +5,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmNew">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/new16.gif"/>
+          <Image iconType="/res/icons/new16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/sqlmacro/i18n.properties" key="cmNew-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -18,7 +18,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmEdit">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/edit16.gif"/>
+          <Image iconType="/res/icons/edit16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/sqlmacro/i18n.properties" key="cmEdit-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -31,7 +31,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmDelete">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/trash.gif"/>
+          <Image iconType="/res/icons/trash.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/sqlmacro/i18n.properties" key="cmDelete-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

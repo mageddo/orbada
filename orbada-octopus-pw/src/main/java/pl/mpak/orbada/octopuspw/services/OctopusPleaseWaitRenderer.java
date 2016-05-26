@@ -32,7 +32,7 @@ public class OctopusPleaseWaitRenderer extends PleaseWaitRendererProvider {
   private Image waitImage;
 
   public OctopusPleaseWaitRenderer() {
-    waitImage = new ImageIcon(getClass().getResource("/pl/mpak/orbada/octopuspw/res/octopus.gif")).getImage();
+    waitImage = new ImageIcon(getClass().getResource("/res/octopus.gif")).getImage();
   }
 
   @Override

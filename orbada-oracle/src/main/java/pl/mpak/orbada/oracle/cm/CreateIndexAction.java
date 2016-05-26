@@ -29,7 +29,7 @@ public class CreateIndexAction extends Action {
   public CreateIndexAction(Database database) {
     super();
     setText(stringManager.getString("CreateIndexAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/index.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/index.gif"));
     setTooltip(stringManager.getString("CreateIndexAction-hint"));
     setActionCommandKey("CreateIndexAction");
     addActionListener(createActionListener());

@@ -175,7 +175,7 @@ public class ExceptionsPanelView extends javax.swing.JPanel implements IRootTabO
     toolButton3 = new pl.mpak.sky.gui.swing.comp.ToolButton();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -192,7 +192,7 @@ public class ExceptionsPanelView extends javax.swing.JPanel implements IRootTabO
       }
     });
 
-    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/users16.gif")); // NOI18N
+    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/users16.gif")); // NOI18N
     cmSelectSchema.setText(stringManager.getString("cmSelectSchema-text")); // NOI18N
     cmSelectSchema.setTooltip(stringManager.getString("cmSelectSchema-hint")); // NOI18N
     cmSelectSchema.addActionListener(new java.awt.event.ActionListener() {
@@ -212,7 +212,7 @@ public class ExceptionsPanelView extends javax.swing.JPanel implements IRootTabO
     menuActions.add(menuDropSequence);
 
     cmDropException.setActionCommandKey("cmDropException");
-    cmDropException.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDropException.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDropException.setText(stringManager.getString("ExceptionsPanelView-cmDropException-text")); // NOI18N
     cmDropException.setTooltip(stringManager.getString("ExceptionsPanelView-cmDropException-hint")); // NOI18N
     cmDropException.addActionListener(new java.awt.event.ActionListener() {
@@ -222,7 +222,7 @@ public class ExceptionsPanelView extends javax.swing.JPanel implements IRootTabO
     });
 
     cmComment.setActionCommandKey("cmComment");
-    cmComment.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/comment_edit.gif")); // NOI18N
+    cmComment.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/comment_edit.gif")); // NOI18N
     cmComment.setText(stringManager.getString("cmComment-text")); // NOI18N
     cmComment.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -231,7 +231,7 @@ public class ExceptionsPanelView extends javax.swing.JPanel implements IRootTabO
     });
 
     cmCreateException.setActionCommandKey("cmCreateException");
-    cmCreateException.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/exception.gif")); // NOI18N
+    cmCreateException.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/exception.gif")); // NOI18N
     cmCreateException.setText(stringManager.getString("ExceptionsPanelView-cmCreateException-text")); // NOI18N
     cmCreateException.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

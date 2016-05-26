@@ -5,7 +5,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmRefresh">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/refresh16.gif"/>
+          <Image iconType="/res/icons/refresh16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmRefresh-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -32,7 +32,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmSelectSchema">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/users16.gif"/>
+          <Image iconType="/res/icons/users16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmSelectSchema-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -80,7 +80,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmDropSynonym"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/trash.gif"/>
+          <Image iconType="/res/icons/trash.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmDropSynonym-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -94,7 +94,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmCreateSynonym"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/synonym.gif"/>
+          <Image iconType="/res/icons/synonym.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmCreateSynonym-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

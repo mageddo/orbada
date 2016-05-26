@@ -231,7 +231,7 @@ public class TemplateListDialog extends javax.swing.JDialog {
     });
 
     cmNew.setEnabled(false);
-    cmNew.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/new16.gif")); // NOI18N
+    cmNew.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/new16.gif")); // NOI18N
     cmNew.setText(stringManager.getString("cmNew-text")); // NOI18N
     cmNew.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -240,7 +240,7 @@ public class TemplateListDialog extends javax.swing.JDialog {
     });
 
     cmEdit.setEnabled(false);
-    cmEdit.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/edit16.gif")); // NOI18N
+    cmEdit.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/edit16.gif")); // NOI18N
     cmEdit.setText(stringManager.getString("cmEdit-text")); // NOI18N
     cmEdit.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -249,7 +249,7 @@ public class TemplateListDialog extends javax.swing.JDialog {
     });
 
     cmDelete.setEnabled(false);
-    cmDelete.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDelete.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDelete.setText(stringManager.getString("cmDelete-text")); // NOI18N
     cmDelete.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

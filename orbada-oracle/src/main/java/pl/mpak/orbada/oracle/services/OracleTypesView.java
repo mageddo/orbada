@@ -31,7 +31,7 @@ public class OracleTypesView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/type.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/type.gif");
   }
 
   public boolean isForDatabase(Database database) {

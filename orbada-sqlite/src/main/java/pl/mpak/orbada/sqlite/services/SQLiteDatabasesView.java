@@ -36,7 +36,7 @@ public class SQLiteDatabasesView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/databases.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/databases.gif");
   }
 
   public boolean isForDatabase(Database database) {

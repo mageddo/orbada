@@ -39,61 +39,61 @@ public class OracleUtil {
   
   public static Icon getObjectIcon(String objectType) {
     if ("TRIGGER".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trigger.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trigger.gif");
     }
     else if ("FUNCTION".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/function.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/function.gif");
     }
     else if ("JAVA CLASS".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/java_class.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/java_class.gif");
     }
     else if ("JAVA SOURCE".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/java_source.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/java_source.gif");
     }
     else if ("MATERIALIZED VIEW".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/mview.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/mview.gif");
     }
     else if ("PACKAGE".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/package.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/package.gif");
     }
     else if ("PACKAGE BODY".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/package.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/package.gif");
     }
     else if ("PROCEDURE".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/procedure.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/procedure.gif");
     }
     else if ("TABLE".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/table.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/table.gif");
     }
     else if ("TYPE".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/type.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/type.gif");
     }
     else if ("VIEW".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/view.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/view.gif");
     }
     else if ("DATABASE LINK".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_link.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_link.gif");
     }
     else if ("SYNONYM".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/synonym.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/synonym.gif");
     }
     else if ("DIRECTORY".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/directory.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/directory.gif");
     }
     else if ("SEQUENCE".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/sequence.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/sequence.gif");
     }
     else if ("INDEX".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/index.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/index.gif");
     }
     else if ("COLUMN".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/column.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/column.gif");
     }
     else if ("ATTRIBUTE".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/member.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/member.gif");
     }
     else if ("MEMBER".equalsIgnoreCase(objectType)) {
-      return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/member.gif");
+      return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/member.gif");
     }
     else {
       return null;

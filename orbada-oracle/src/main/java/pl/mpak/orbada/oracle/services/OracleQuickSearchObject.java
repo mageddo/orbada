@@ -43,7 +43,7 @@ public class OracleQuickSearchObject extends PerpectiveGadgetProvider {
 
   @Override
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/find_object16.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/find_object16.gif");
   }
 
   public String getDescription() {

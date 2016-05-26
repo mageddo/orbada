@@ -29,7 +29,7 @@ public class CreateTriggerPKColumnAction extends Action {
   public CreateTriggerPKColumnAction(Database database) {
     super();
     setText(stringManager.getString("CreateTriggerPKColumnAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trigger.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trigger.gif"));
     setTooltip(stringManager.getString("CreateTriggerPKColumnAction-hint"));
     setActionCommandKey("CreateTriggerPKColumnAction");
     addActionListener(createActionListener());

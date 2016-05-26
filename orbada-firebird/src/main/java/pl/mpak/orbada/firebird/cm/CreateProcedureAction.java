@@ -28,7 +28,7 @@ public class CreateProcedureAction extends Action {
   public CreateProcedureAction(Database database) {
     super();
     setText(stringManager.getString("CreateProcedureAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/procedure.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/procedure.gif"));
     setTooltip(stringManager.getString("CreateProcedureAction-hint"));
     setActionCommandKey("CreateProcedureAction");
     addActionListener(createActionListener());

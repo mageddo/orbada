@@ -6,7 +6,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmAddRow"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/add8.gif"/>
+          <Image iconType="/res/icons/add8.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/mysql/i18n.properties" key="cmAddRow-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -20,7 +20,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmRemoveRow"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/remove8.gif"/>
+          <Image iconType="/res/icons/remove8.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/mysql/i18n.properties" key="cmRemoveRow-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

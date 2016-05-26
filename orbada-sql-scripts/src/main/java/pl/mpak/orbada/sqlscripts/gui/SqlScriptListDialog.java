@@ -175,7 +175,7 @@ public class SqlScriptListDialog extends javax.swing.JDialog {
     });
 
     cmNew.setEnabled(false);
-    cmNew.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/new16.gif"))); // NOI18N
+    cmNew.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/new16.gif"))); // NOI18N
     cmNew.setText(stringManager.getString("new-action")); // NOI18N
     cmNew.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -184,7 +184,7 @@ public class SqlScriptListDialog extends javax.swing.JDialog {
     });
 
     cmEdit.setEnabled(false);
-    cmEdit.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/edit16.gif"))); // NOI18N
+    cmEdit.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/edit16.gif"))); // NOI18N
     cmEdit.setText(stringManager.getString("edit-action")); // NOI18N
     cmEdit.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -193,7 +193,7 @@ public class SqlScriptListDialog extends javax.swing.JDialog {
     });
 
     cmDelete.setEnabled(false);
-    cmDelete.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/trash.gif"))); // NOI18N
+    cmDelete.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/trash.gif"))); // NOI18N
     cmDelete.setText(stringManager.getString("delete-action")); // NOI18N
     cmDelete.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

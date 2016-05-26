@@ -35,7 +35,7 @@ public class CreateConstraintPrimaryKeyAction extends Action {
     setText(stringManager.getString("CreateConstraintPrimaryKeyAction-text"));
     this.database = database;
     setActionCommandKey("CreateConstraintPrimaryKeyAction");
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/primary_key16.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/primary_key16.gif"));
     addActionListener(createActionListener());
   }
 

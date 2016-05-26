@@ -35,7 +35,7 @@ public class PostgreSQLAggregateListView extends ViewProvider {
   
   @Override
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/aggregate-function.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/aggregate-function.gif");
   }
 
   @Override

@@ -30,7 +30,7 @@ public class RenameTableColumnAction extends ComponentAction {
   public RenameTableColumnAction() {
     super();
     setText(stringManager.getString("RenameTableColumnAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/rename.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/rename.gif"));
     setActionCommandKey("RenameTableColumnAction");
     addActionListener(createActionListener());
   }

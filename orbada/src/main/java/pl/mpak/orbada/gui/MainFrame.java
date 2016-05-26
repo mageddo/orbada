@@ -1084,7 +1084,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
 
         cmNewConnection.setActionCommandKey("cmNewConnection");
         cmNewConnection.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.SHIFT_MASK));
-        cmNewConnection.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/connection.gif")); // NOI18N
+        cmNewConnection.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/connection.gif")); // NOI18N
         cmNewConnection.setText(stringManager.getString("mf-cmNewConnection-text")); // NOI18N
         cmNewConnection.setTooltip(stringManager.getString("mf-cmNewConnection-hint")); // NOI18N
         cmNewConnection.addActionListener(new java.awt.event.ActionListener() {
@@ -1094,7 +1094,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
         });
 
         cmDrivers.setActionCommandKey("cmDrivers");
-        cmDrivers.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/driverproperties.gif")); // NOI18N
+        cmDrivers.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/driverproperties.gif")); // NOI18N
         cmDrivers.setText(stringManager.getString("mf-cmDrivers-text")); // NOI18N
         cmDrivers.setTooltip(stringManager.getString("mf-cmDrivers-hint")); // NOI18N
         cmDrivers.addActionListener(new java.awt.event.ActionListener() {
@@ -1104,7 +1104,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
         });
 
         cmNewPerspective.setActionCommandKey("cmNewPerspective");
-        cmNewPerspective.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/new_window_perspective16.gif")); // NOI18N
+        cmNewPerspective.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/new_window_perspective16.gif")); // NOI18N
         cmNewPerspective.setText(stringManager.getString("mf-cmNewPerspective-text")); // NOI18N
         cmNewPerspective.setTooltip(stringManager.getString("mf-cmNewPerspective-hint")); // NOI18N
         cmNewPerspective.addActionListener(new java.awt.event.ActionListener() {
@@ -1139,7 +1139,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
 
         cmClosePerspective.setActionCommandKey("cmClosePerspective");
         cmClosePerspective.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-        cmClosePerspective.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/stop10.gif")); // NOI18N
+        cmClosePerspective.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/stop10.gif")); // NOI18N
         cmClosePerspective.setText(stringManager.getString("mf-cmClosePerspective-text")); // NOI18N
         cmClosePerspective.setTooltip(stringManager.getString("mf-cmClosePerspective-hint")); // NOI18N
         cmClosePerspective.addActionListener(new java.awt.event.ActionListener() {
@@ -1150,7 +1150,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
 
         cmDbCommit.setActionCommandKey("cmDbCommit");
         cmDbCommit.setEnabled(false);
-        cmDbCommit.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/commit.gif")); // NOI18N
+        cmDbCommit.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/commit.gif")); // NOI18N
         cmDbCommit.setText(stringManager.getString("mf-cmDbCommit-text")); // NOI18N
         cmDbCommit.setTooltip(stringManager.getString("mf-cmDbCommit-hint")); // NOI18N
         cmDbCommit.addActionListener(new java.awt.event.ActionListener() {
@@ -1161,7 +1161,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
 
         cmDbRollback.setActionCommandKey("cmDbRollback");
         cmDbRollback.setEnabled(false);
-        cmDbRollback.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/rollback.gif")); // NOI18N
+        cmDbRollback.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/rollback.gif")); // NOI18N
         cmDbRollback.setText(stringManager.getString("mf-cmDbRollback-text")); // NOI18N
         cmDbRollback.setTooltip(stringManager.getString("mf-cmDbRollback-hint")); // NOI18N
         cmDbRollback.addActionListener(new java.awt.event.ActionListener() {
@@ -1171,7 +1171,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
         });
 
         cmDbReconnect.setActionCommandKey("cmDbReconnect");
-        cmDbReconnect.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/connect16.gif")); // NOI18N
+        cmDbReconnect.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/connect16.gif")); // NOI18N
         cmDbReconnect.setText(stringManager.getString("mf-cmDbReconnect-text")); // NOI18N
         cmDbReconnect.setTooltip(stringManager.getString("mf-cmDbReconnect-hint")); // NOI18N
         cmDbReconnect.addActionListener(new java.awt.event.ActionListener() {
@@ -1200,7 +1200,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
         });
 
         cmSpecialPerspective.setActionCommandKey("cmSpecialPerspective"); // NOI18N
-        cmSpecialPerspective.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/new_tools_perspective16.gif")); // NOI18N
+        cmSpecialPerspective.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/new_tools_perspective16.gif")); // NOI18N
         cmSpecialPerspective.setText(stringManager.getString("mf-cmSpecialPerspective-text")); // NOI18N
         cmSpecialPerspective.setTooltip(stringManager.getString("mf-cmSpecialPerspective-hint")); // NOI18N
         cmSpecialPerspective.addActionListener(new java.awt.event.ActionListener() {
@@ -1210,7 +1210,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
         });
 
         cmMoveViewRight.setActionCommandKey("cmMoveViewRight");
-        cmMoveViewRight.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/right10.gif")); // NOI18N
+        cmMoveViewRight.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/right10.gif")); // NOI18N
         cmMoveViewRight.setText(stringManager.getString("mf-cmMoveViewRight-text")); // NOI18N
         cmMoveViewRight.setTooltip(stringManager.getString("mf-cmMoveViewRight-hint")); // NOI18N
         cmMoveViewRight.addActionListener(new java.awt.event.ActionListener() {
@@ -1220,7 +1220,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
         });
 
         cmMoveViewLeft.setActionCommandKey("cmMoveViewLeft");
-        cmMoveViewLeft.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/left10.gif")); // NOI18N
+        cmMoveViewLeft.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/left10.gif")); // NOI18N
         cmMoveViewLeft.setText(stringManager.getString("mf-cmMoveViewLeft-text")); // NOI18N
         cmMoveViewLeft.setTooltip(stringManager.getString("mf-cmMoveViewLeft-hint")); // NOI18N
         cmMoveViewLeft.addActionListener(new java.awt.event.ActionListener() {
@@ -1247,7 +1247,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
         });
 
         cmDatabaseInfo.setActionCommandKey("cmDatabaseInfo"); // NOI18N
-        cmDatabaseInfo.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_info16.gif")); // NOI18N
+        cmDatabaseInfo.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_info16.gif")); // NOI18N
         cmDatabaseInfo.setText(stringManager.getString("mf-cmDatabaseInfo-text")); // NOI18N
         cmDatabaseInfo.setTooltip(stringManager.getString("mf-cmDatabaseInfo-hint")); // NOI18N
         cmDatabaseInfo.addActionListener(new java.awt.event.ActionListener() {
@@ -1265,7 +1265,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
         });
 
         cmOrbadaConfigFile.setActionCommandKey("cmOrbadaConfigFile"); // NOI18N
-        cmOrbadaConfigFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/save16.gif")); // NOI18N
+        cmOrbadaConfigFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/save16.gif")); // NOI18N
         cmOrbadaConfigFile.setText(stringManager.getString("mf-cmOrbadaConfigFile-text")); // NOI18N
         cmOrbadaConfigFile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1308,7 +1308,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
         });
 
         cmOrbadaLogFile.setActionCommandKey("cmOrbadaLogFile"); // NOI18N
-        cmOrbadaLogFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/save16.gif")); // NOI18N
+        cmOrbadaLogFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/save16.gif")); // NOI18N
         cmOrbadaLogFile.setText(stringManager.getString("mf-cmOrbadaLogFile-text")); // NOI18N
         cmOrbadaLogFile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1317,7 +1317,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
         });
 
         cmOrbadaLogErrorFile.setActionCommandKey("cmOrbadaLogErrorFile"); // NOI18N
-        cmOrbadaLogErrorFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/save16.gif")); // NOI18N
+        cmOrbadaLogErrorFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/save16.gif")); // NOI18N
         cmOrbadaLogErrorFile.setText(stringManager.getString("mf-cmOrbadaLogErrorFile-text")); // NOI18N
         cmOrbadaLogErrorFile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1340,7 +1340,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
         menuPerspectives.add(sepMenuPerspective);
 
         cmSelectNewPerspective.setActionCommandKey("cmSelectNewPerspective"); // NOI18N
-        cmSelectNewPerspective.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/new_window_perspective16.gif")); // NOI18N
+        cmSelectNewPerspective.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/new_window_perspective16.gif")); // NOI18N
         cmSelectNewPerspective.setText(stringManager.getString("mf-cmSelectNewPerspective-text")); // NOI18N
         cmSelectNewPerspective.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1349,7 +1349,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
         });
 
         cmDeletePerspective.setActionCommandKey("cmDeletePerspective"); // NOI18N
-        cmDeletePerspective.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+        cmDeletePerspective.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
         cmDeletePerspective.setText(stringManager.getString("mf-cmDeletePerspective-text")); // NOI18N
         cmDeletePerspective.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1397,7 +1397,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
 
         cmCloseView.setActionCommandKey("cmCloseView");
         cmCloseView.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.CTRL_MASK));
-        cmCloseView.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/close10.gif")); // NOI18N
+        cmCloseView.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/close10.gif")); // NOI18N
         cmCloseView.setText(stringManager.getString("mf-cmCloseView-text")); // NOI18N
         cmCloseView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1489,7 +1489,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
         });
 
         cmOrbadaLog4jFile.setActionCommandKey("cmOrbadaLog4jFile"); // NOI18N
-        cmOrbadaLog4jFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/save16.gif")); // NOI18N
+        cmOrbadaLog4jFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/save16.gif")); // NOI18N
         cmOrbadaLog4jFile.setText(stringManager.getString("mf-cmOrbadaLog4jFile-text")); // NOI18N
         cmOrbadaLog4jFile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1540,7 +1540,7 @@ public class MainFrame extends javax.swing.JFrame implements IProcessMessagable 
 
         cmDBStartTransaction.setActionCommandKey("cmDBStartTransaction");
         cmDBStartTransaction.setEnabled(false);
-        cmDBStartTransaction.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/start_transaction.gif")); // NOI18N
+        cmDBStartTransaction.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/start_transaction.gif")); // NOI18N
         cmDBStartTransaction.setText(stringManager.getString("cmDBStartTransaction-text")); // NOI18N
         cmDBStartTransaction.setTooltip(stringManager.getString("cmDBStartTransaction-hint")); // NOI18N
         cmDBStartTransaction.addActionListener(new java.awt.event.ActionListener() {

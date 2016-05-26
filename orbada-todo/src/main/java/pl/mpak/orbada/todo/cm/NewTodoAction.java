@@ -33,7 +33,7 @@ public class NewTodoAction extends Action {
     super();
     setText(stringManager.getString("NewTodoAction-text"));
     setTooltip(stringManager.getString("NewTodoAction-hint"));
-    setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/tasks16.gif")));
+    setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/tasks16.gif")));
     setActionCommandKey("NewTodoAction");
     addActionListener(createActionListener());
     if (database != null) {

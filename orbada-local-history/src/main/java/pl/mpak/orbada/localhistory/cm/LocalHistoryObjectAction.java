@@ -31,7 +31,7 @@ public class LocalHistoryObjectAction extends Action {
   public LocalHistoryObjectAction(AbsOrbadaSyntaxTextArea syntaxTextArea) {
     super();
     setText(stringManager.getString("LocalHistoryObjectAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/diff.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/diff.gif"));
     setActionCommandKey("LocalHistoryObjectAction");
     addActionListener(createActionListener());
     this.syntaxTextArea = syntaxTextArea;

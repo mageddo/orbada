@@ -33,7 +33,7 @@ public class ReportViewService extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/reports.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/reports.gif");
   }
 
   public boolean isForDatabase(Database database) {

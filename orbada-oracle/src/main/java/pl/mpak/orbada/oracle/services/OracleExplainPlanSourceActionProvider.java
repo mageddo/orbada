@@ -60,7 +60,7 @@ public class OracleExplainPlanSourceActionProvider extends ComponentActionProvid
     }
 
     setShortCut(KeyEvent.VK_E, KeyEvent.CTRL_MASK);
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/explain_plan.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/explain_plan.gif"));
     setText(getDescription());
     setTooltip(stringManager.getString("OracleExplainPlanSourceActionProvider-hint"));
     setActionCommandKey("OracleExplainPlanSourceActionProvider");

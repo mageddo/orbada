@@ -24,7 +24,7 @@ public class BackupDatabaseAction extends Action {
   public BackupDatabaseAction() {
     setText(stringManager.getString("BackupDatabaseAction.text"));
     setTooltip(stringManager.getString("BackupDatabaseAction.tooltip"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/orbada/jaybird/res/backup_database.gif", this.getClass()));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/backup_database.gif", this.getClass()));
     setActionCommandKey("BackupDatabaseAction");
     addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {

@@ -107,7 +107,7 @@ public class IndexSourcePanel extends javax.swing.JPanel implements ITabObjectIn
     buttonRefresh = new pl.mpak.sky.gui.swing.comp.ToolButton();
     syntaxSource = new OrbadaSyntaxTextArea();
 
-    cmRefreshSource.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefreshSource.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefreshSource.setText(stringManager.getString("cmRefreshSource-text")); // NOI18N
     cmRefreshSource.setTooltip(stringManager.getString("cmRefreshSource-hint")); // NOI18N
     cmRefreshSource.addActionListener(new java.awt.event.ActionListener() {

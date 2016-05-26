@@ -232,7 +232,7 @@ public class TableTriggersPanel extends javax.swing.JPanel implements ITabObject
     jSeparator3 = new javax.swing.JToolBar.Separator();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -242,7 +242,7 @@ public class TableTriggersPanel extends javax.swing.JPanel implements ITabObject
     });
 
     cmFilter.setActionCommandKey("cmFilter");
-    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/orbada/derbydb/res/icons/filter16.gif")); // NOI18N
+    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/filter16.gif")); // NOI18N
     cmFilter.setText(stringManager.getString("cmFilter-text")); // NOI18N
     cmFilter.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -251,7 +251,7 @@ public class TableTriggersPanel extends javax.swing.JPanel implements ITabObject
     });
 
     cmDropTrigger.setActionCommandKey("cmDropTrigger");
-    cmDropTrigger.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDropTrigger.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDropTrigger.setText(stringManager.getString("TableTriggersPanel-cmDropTrigger-text")); // NOI18N
     cmDropTrigger.setTooltip(stringManager.getString("TableTriggersPanel-cmDropTrigger-hint")); // NOI18N
     cmDropTrigger.addActionListener(new java.awt.event.ActionListener() {
@@ -262,7 +262,7 @@ public class TableTriggersPanel extends javax.swing.JPanel implements ITabObject
 
     cmSwitchEnabled.setActionCommandKey("cmSwitchEnabled");
     cmSwitchEnabled.setEnabled(false);
-    cmSwitchEnabled.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/enabled.gif")); // NOI18N
+    cmSwitchEnabled.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/enabled.gif")); // NOI18N
     cmSwitchEnabled.setText(stringManager.getString("TableTriggersPanel-cmSwitchEnabled-text")); // NOI18N
     cmSwitchEnabled.setTooltip(stringManager.getString("TableTriggersPanel-cmSwitchEnabled-hint")); // NOI18N
 

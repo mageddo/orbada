@@ -254,7 +254,7 @@ public class ViewTriggersPanel extends javax.swing.JPanel implements ITabObjectI
     statusBarTriggers = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     textTrigger = new OrbadaSyntaxTextArea();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -272,7 +272,7 @@ public class ViewTriggersPanel extends javax.swing.JPanel implements ITabObjectI
     });
 
     cmDropTrigger.setActionCommandKey("cmDropTrigger");
-    cmDropTrigger.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDropTrigger.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDropTrigger.setText(stringManager.getString("cmDropTrigger-text")); // NOI18N
     cmDropTrigger.setTooltip(stringManager.getString("cmDropTrigger-hint")); // NOI18N
     cmDropTrigger.addActionListener(new java.awt.event.ActionListener() {
@@ -293,7 +293,7 @@ public class ViewTriggersPanel extends javax.swing.JPanel implements ITabObjectI
     menuActions.add(menuDropTrigger);
 
     cmEnableTrigger.setActionCommandKey("cmEnableTrigger");
-    cmEnableTrigger.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/enabled.gif")); // NOI18N
+    cmEnableTrigger.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/enabled.gif")); // NOI18N
     cmEnableTrigger.setText(stringManager.getString("cmEnableTrigger-text")); // NOI18N
     cmEnableTrigger.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -302,7 +302,7 @@ public class ViewTriggersPanel extends javax.swing.JPanel implements ITabObjectI
     });
 
     cmCreateTrigger.setActionCommandKey("cmCreateTrigger");
-    cmCreateTrigger.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trigger.gif")); // NOI18N
+    cmCreateTrigger.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trigger.gif")); // NOI18N
     cmCreateTrigger.setText(stringManager.getString("cmCreateTrigger-text")); // NOI18N
     cmCreateTrigger.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -312,7 +312,7 @@ public class ViewTriggersPanel extends javax.swing.JPanel implements ITabObjectI
 
     cmCompile.setActionCommandKey("cmCompile");
     cmCompile.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.CTRL_MASK));
-    cmCompile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_sql_execute16.gif")); // NOI18N
+    cmCompile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_sql_execute16.gif")); // NOI18N
     cmCompile.setText(stringManager.getString("cmCompile-text")); // NOI18N
     cmCompile.setTooltip(stringManager.getString("cmCompile-hint")); // NOI18N
     cmCompile.addActionListener(new java.awt.event.ActionListener() {
@@ -323,7 +323,7 @@ public class ViewTriggersPanel extends javax.swing.JPanel implements ITabObjectI
 
     cmFreezeObject.setActionCommandKey("cmFreezeObject");
     cmFreezeObject.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F3, 0));
-    cmFreezeObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/freeze.gif")); // NOI18N
+    cmFreezeObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/freeze.gif")); // NOI18N
     cmFreezeObject.setText(stringManager.getString("cmFreezeObject-text")); // NOI18N
     cmFreezeObject.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

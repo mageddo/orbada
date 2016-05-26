@@ -35,7 +35,7 @@ public class PostgreSQLFunctionListView extends ViewProvider {
   
   @Override
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/function.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/function.gif");
   }
 
   @Override

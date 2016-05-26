@@ -5,7 +5,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmRefresh">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/refresh16.gif"/>
+          <Image iconType="/res/icons/refresh16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/firebird/i18n.properties" key="cmRefresh-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -31,7 +31,7 @@
           <KeyStroke key="Ctrl+ENTER"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/store_db.gif"/>
+          <Image iconType="/res/icons/store_db.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/firebird/i18n.properties" key="ProcedureSourcePanel-cmStore-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

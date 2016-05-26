@@ -29,7 +29,7 @@ public class CreateNormalTableAction extends Action {
   public CreateNormalTableAction(Database database) {
     super();
     setText(stringManager.getString("CreateNormalTableAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/table.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/table.gif"));
     setTooltip(stringManager.getString("CreateNormalTableAction-hint"));
     setActionCommandKey("CreateNormalTableAction");
     addActionListener(createActionListener());

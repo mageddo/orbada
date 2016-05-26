@@ -301,7 +301,7 @@ public abstract class UniversalPropSourceTab extends javax.swing.JPanel implemen
         statusBarProps = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
         textProp = new OrbadaSyntaxTextArea();
 
-        cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+        cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
         cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
         cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
         cmRefresh.addActionListener(new java.awt.event.ActionListener() {

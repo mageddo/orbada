@@ -29,7 +29,7 @@ public class CreateFunctionAction extends Action {
   public CreateFunctionAction(Database database) {
     super();
     setText(stringManager.getString("CreateFunctionAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/function.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/function.gif"));
     setTooltip(stringManager.getString("CreateFunctionAction-hint"));
     setActionCommandKey("CreateFunctionAction");
     addActionListener(createActionListener());

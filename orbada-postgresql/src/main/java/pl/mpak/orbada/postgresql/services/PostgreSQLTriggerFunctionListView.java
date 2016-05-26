@@ -35,7 +35,7 @@ public class PostgreSQLTriggerFunctionListView extends ViewProvider {
   
   @Override
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trigger-function.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trigger-function.gif");
   }
 
   @Override

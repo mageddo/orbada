@@ -90,7 +90,7 @@ public class OracleKillSessionAction extends ComponentActionProvider {
     
     setText(getDescription());
     setTooltip(stringManager.getString("OracleKillSessionAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/stop16.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/stop16.gif"));
     setActionCommandKey("OracleKillSessionAction");
     addActionListener(createActionListener());
     

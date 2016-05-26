@@ -35,7 +35,7 @@ public class HSqlDbSearchObjectAction extends Action {
     setText(stringManager.getString("HSqlDbSearchObjectAction-text"));
     setShortCut(KeyEvent.VK_F7, KeyEvent.CTRL_MASK);
     setTooltip(stringManager.getString("HSqlDbSearchObjectAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/find_object16.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/find_object16.gif"));
     setActionCommandKey("HSqlDbSearchObjectAction");
     addActionListener(createActionListener());
   }

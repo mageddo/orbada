@@ -31,7 +31,7 @@ public class MySQLFunctionsView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/function.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/function.gif");
   }
 
   public boolean isForDatabase(Database database) {

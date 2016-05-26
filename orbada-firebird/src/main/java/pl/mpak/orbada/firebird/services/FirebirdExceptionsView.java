@@ -36,7 +36,7 @@ public class FirebirdExceptionsView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/exception.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/exception.gif");
   }
 
   public boolean isForDatabase(Database database) {

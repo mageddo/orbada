@@ -29,7 +29,7 @@ public class CreatePackageAction extends Action {
   public CreatePackageAction(Database database) {
     super();
     setText(stringManager.getString("CreatePackageAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/package.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/package.gif"));
     setTooltip(stringManager.getString("CreatePackageAction-hint"));
     setActionCommandKey("CreatePackageAction");
     addActionListener(createActionListener());

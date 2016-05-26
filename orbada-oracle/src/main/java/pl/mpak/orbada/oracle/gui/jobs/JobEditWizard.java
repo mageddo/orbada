@@ -215,7 +215,7 @@ public class JobEditWizard extends SqlCodeWizardPanel {
 
     cmSheduler.setActionCommandKey("cmSheduler");
     cmSheduler.setEnabled(false);
-    cmSheduler.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/shedule.gif")); // NOI18N
+    cmSheduler.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/shedule.gif")); // NOI18N
     cmSheduler.setText(stringManager.getString("cmSheduler-text")); // NOI18N
 
     setPreferredSize(new java.awt.Dimension(400, 300));

@@ -28,7 +28,7 @@ public class CreateTriggerAction extends Action {
   public CreateTriggerAction(Database database) {
     super();
     setText(stringManager.getString("CreateTriggerAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trigger.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trigger.gif"));
     setTooltip(stringManager.getString("CreateTriggerAction-hint"));
     setActionCommandKey("CreateTriggerAction");
     addActionListener(createActionListener());

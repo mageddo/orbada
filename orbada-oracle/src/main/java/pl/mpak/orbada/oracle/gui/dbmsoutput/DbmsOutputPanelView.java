@@ -47,8 +47,8 @@ public class DbmsOutputPanelView extends javax.swing.JPanel implements Closeable
    */
   public DbmsOutputPanelView(IViewAccesibilities accesibilities) {
     this.accesibilities = accesibilities;
-    iconEnabled = pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/service_start.gif");
-    iconDisabled = pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/service_stop.gif");
+    iconEnabled = pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/service_start.gif");
+    iconDisabled = pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/service_stop.gif");
     initComponents();
     init();
   }
@@ -174,7 +174,7 @@ public class DbmsOutputPanelView extends javax.swing.JPanel implements Closeable
     jLabel2 = new javax.swing.JLabel();
     labelRefresh = new javax.swing.JLabel();
 
-    cmRefreshDbmsOutput.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefreshDbmsOutput.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefreshDbmsOutput.setText(stringManager.getString("cmRefreshDbmsOutput-text")); // NOI18N
     cmRefreshDbmsOutput.setTooltip(stringManager.getString("cmRefreshDbmsOutput-hint")); // NOI18N
     cmRefreshDbmsOutput.addActionListener(new java.awt.event.ActionListener() {
@@ -184,7 +184,7 @@ public class DbmsOutputPanelView extends javax.swing.JPanel implements Closeable
     });
 
     cmSwitchEnableDbmsOutput.setActionCommandKey("cmSwitchEnableDbmsOutput");
-    cmSwitchEnableDbmsOutput.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/service_start.gif")); // NOI18N
+    cmSwitchEnableDbmsOutput.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/service_start.gif")); // NOI18N
     cmSwitchEnableDbmsOutput.setText(stringManager.getString("cmSwitchEnableDbmsOutput-text")); // NOI18N
     cmSwitchEnableDbmsOutput.setTooltip(stringManager.getString("cmSwitchEnableDbmsOutput-hint")); // NOI18N
     cmSwitchEnableDbmsOutput.addActionListener(new java.awt.event.ActionListener() {
@@ -194,7 +194,7 @@ public class DbmsOutputPanelView extends javax.swing.JPanel implements Closeable
     });
 
     cmClearDbmsOutput.setActionCommandKey("cmClearDbmsOutput");
-    cmClearDbmsOutput.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/new16.gif")); // NOI18N
+    cmClearDbmsOutput.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/new16.gif")); // NOI18N
     cmClearDbmsOutput.setText(stringManager.getString("cmClearDbmsOutput-text")); // NOI18N
     cmClearDbmsOutput.setTooltip(stringManager.getString("cmClearDbmsOutput-hint")); // NOI18N
     cmClearDbmsOutput.addActionListener(new java.awt.event.ActionListener() {
@@ -204,7 +204,7 @@ public class DbmsOutputPanelView extends javax.swing.JPanel implements Closeable
     });
 
     cmSaveToFile.setActionCommandKey("cmSaveToFile");
-    cmSaveToFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/save16.gif")); // NOI18N
+    cmSaveToFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/save16.gif")); // NOI18N
     cmSaveToFile.setText(stringManager.getString("cmSaveToFile-text")); // NOI18N
     cmSaveToFile.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -276,7 +276,7 @@ public class DbmsOutputPanelView extends javax.swing.JPanel implements Closeable
     jLabel2.setText(" s ");
     toolBarTriggers.add(jLabel2);
 
-    labelRefresh.setIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/orange_bdot.gif")); // NOI18N
+    labelRefresh.setIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/orange_bdot.gif")); // NOI18N
     labelRefresh.setEnabled(false);
     toolBarTriggers.add(labelRefresh);
 

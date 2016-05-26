@@ -496,7 +496,7 @@ public abstract class UniversalViewTabs extends javax.swing.JPanel implements IR
         statusBarObjects = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
         temp = new javax.swing.JPanel();
 
-        cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+        cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
         cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
         cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
         cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -506,7 +506,7 @@ public abstract class UniversalViewTabs extends javax.swing.JPanel implements IR
         });
 
         cmSelectSchema.setActionCommandKey("cmSelectDatabase");
-        cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/request.gif")); // NOI18N
+        cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/request.gif")); // NOI18N
         cmSelectSchema.setText(stringManager.getString("cmSelectSchema-text")); // NOI18N
         cmSelectSchema.setTooltip(stringManager.getString("cmSelectSchema-hint")); // NOI18N
         cmSelectSchema.addActionListener(new java.awt.event.ActionListener() {
@@ -516,7 +516,7 @@ public abstract class UniversalViewTabs extends javax.swing.JPanel implements IR
         });
 
         cmFilter.setActionCommandKey("cmFilter");
-        cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/filter16.gif")); // NOI18N
+        cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/filter16.gif")); // NOI18N
         cmFilter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmFilterActionPerformed(evt);

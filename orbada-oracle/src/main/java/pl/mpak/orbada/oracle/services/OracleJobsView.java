@@ -31,7 +31,7 @@ public class OracleJobsView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/job.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/job.gif");
   }
 
   public boolean isForDatabase(Database database) {

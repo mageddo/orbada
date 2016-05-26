@@ -68,7 +68,7 @@ public class ComponentActionsAction extends Action {
     addActionListener(createActionListener());
     setActionCommandKey("cmActions");
     setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.ALT_MASK));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/down10.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/down10.gif"));
     setText(stringManager.getString("ComponentActionsAction-text"));
     this.buttonActions.addMouseListener(new MouseListener() {
       private String lastTooltip;

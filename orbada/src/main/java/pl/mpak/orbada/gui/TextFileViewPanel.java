@@ -68,7 +68,7 @@ public class TextFileViewPanel extends javax.swing.JPanel {
     textContent = new pl.mpak.sky.gui.swing.syntax.SyntaxTextArea();
 
     cmSave.setActionCommandKey("cmSave");
-    cmSave.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/save16.gif")); // NOI18N
+    cmSave.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/save16.gif")); // NOI18N
     cmSave.setText(stringManager.getString("cmSave-text")); // NOI18N
     cmSave.setTooltip(stringManager.getString("TextFileViewPanel-cmSave-hint")); // NOI18N
     cmSave.addActionListener(new java.awt.event.ActionListener() {

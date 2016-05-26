@@ -79,7 +79,7 @@ public class PostgreSQLTerminateSessionAction extends ComponentActionProvider {
     
     setText(getDescription());
     setTooltip(stringManager.getString("PostgreSQLTerminateSessionAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/stop16.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/stop16.gif"));
     setActionCommandKey("PostgreSQLTerminateSessionAction");
     addActionListener(createActionListener());
     

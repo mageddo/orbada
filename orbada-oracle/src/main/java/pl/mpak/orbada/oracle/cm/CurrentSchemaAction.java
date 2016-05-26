@@ -28,7 +28,7 @@ public class CurrentSchemaAction extends Action {
   public CurrentSchemaAction(Database database) {
     super();
     setText(stringManager.getString("CurrentSchemaAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/users16.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/users16.gif"));
     setTooltip(stringManager.getString("CurrentSchemaAction-hint"));
     setActionCommandKey("CurrentSchemaAction");
     addActionListener(createActionListener());

@@ -84,7 +84,7 @@ public class SearchSourcePanelView extends javax.swing.JPanel implements Closeab
   
   private void init() {
     syntaxSource.setDatabase(getDatabase());
-    lineMark = new LineMark(-1, Color.getColor("activeCaption", new Color(204, 204, 255)), pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/line_point.gif"));
+    lineMark = new LineMark(-1, Color.getColor("/res/icons/line_point.gif"));
 
     settings = accesibilities.getApplication().getSettings(getDatabase().getUserProperties().getProperty("schemaId"), "oracle-search-source-panel");
     split.setDividerLocation(settings.getValue("split-location", (long)split.getDividerLocation()).intValue());
@@ -346,7 +346,7 @@ public class SearchSourcePanelView extends javax.swing.JPanel implements Closeab
         statusBar = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
         syntaxSource = new OrbadaSyntaxTextArea();
 
-        cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+        cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
         cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
         cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
         cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -363,7 +363,7 @@ public class SearchSourcePanelView extends javax.swing.JPanel implements Closeab
             }
         });
 
-        cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/users16.gif")); // NOI18N
+        cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/users16.gif")); // NOI18N
         cmSelectSchema.setText(stringManager.getString("cmSelectSchema-text")); // NOI18N
         cmSelectSchema.setTooltip(stringManager.getString("cmSelectSchema-hint")); // NOI18N
         cmSelectSchema.addActionListener(new java.awt.event.ActionListener() {
@@ -374,7 +374,7 @@ public class SearchSourcePanelView extends javax.swing.JPanel implements Closeab
 
         cmSearchObject.setActionCommandKey("cmSearchObject");
         cmSearchObject.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, 0));
-        cmSearchObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/find_source.gif")); // NOI18N
+        cmSearchObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/find_source.gif")); // NOI18N
         cmSearchObject.setText(stringManager.getString("cmSearchObject-text")); // NOI18N
         cmSearchObject.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -384,7 +384,7 @@ public class SearchSourcePanelView extends javax.swing.JPanel implements Closeab
 
         cmFreezeObject.setActionCommandKey("cmFreezeObject");
         cmFreezeObject.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F3, 0));
-        cmFreezeObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/freeze.gif")); // NOI18N
+        cmFreezeObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/freeze.gif")); // NOI18N
         cmFreezeObject.setText(stringManager.getString("cmFreezeObject-text")); // NOI18N
         cmFreezeObject.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -394,7 +394,7 @@ public class SearchSourcePanelView extends javax.swing.JPanel implements Closeab
 
         cmCompile.setActionCommandKey("cmCompile");
         cmCompile.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.CTRL_MASK));
-        cmCompile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_sql_execute16.gif")); // NOI18N
+        cmCompile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_sql_execute16.gif")); // NOI18N
         cmCompile.setText(stringManager.getString("cmCompile-text")); // NOI18N
         cmCompile.setTooltip(stringManager.getString("cmCompile-hint")); // NOI18N
         cmCompile.addActionListener(new java.awt.event.ActionListener() {

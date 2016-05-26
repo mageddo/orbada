@@ -24,7 +24,7 @@ public class CreateDatabaseAction extends Action {
   public CreateDatabaseAction() {
     setText(stringManager.getString("CreateDatabaseAction.text"));
     setTooltip(stringManager.getString("CreateDatabaseAction.tooltip"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/orbada/jaybird/res/new_database.gif", this.getClass()));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/new_database.gif", this.getClass()));
     setActionCommandKey("CreateDatabaseAction");
     addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {

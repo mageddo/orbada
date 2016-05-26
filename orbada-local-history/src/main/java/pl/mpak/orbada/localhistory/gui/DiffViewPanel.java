@@ -209,7 +209,7 @@ public class DiffViewPanel extends javax.swing.JPanel implements Closeable {
     tableHistory = new ViewTable();
 
     cmRefresh.setActionCommandKey("cmRefresh");
-    cmRefresh.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/refresh16.gif"))); // NOI18N
+    cmRefresh.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/refresh16.gif"))); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -219,7 +219,7 @@ public class DiffViewPanel extends javax.swing.JPanel implements Closeable {
     });
 
     cmCommentChange.setActionCommandKey("cmCommentChange");
-    cmCommentChange.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/comment_edit.gif"))); // NOI18N
+    cmCommentChange.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/comment_edit.gif"))); // NOI18N
     cmCommentChange.setText(stringManager.getString("cmCommentChange-text")); // NOI18N
     cmCommentChange.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

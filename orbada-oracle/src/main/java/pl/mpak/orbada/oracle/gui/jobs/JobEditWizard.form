@@ -7,7 +7,7 @@
         <Property name="actionCommandKey" type="java.lang.String" value="cmSheduler"/>
         <Property name="enabled" type="boolean" value="false"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/shedule.gif"/>
+          <Image iconType="/res/icons/shedule.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmSheduler-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

@@ -5,7 +5,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmRefresh">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/refresh16.gif"/>
+          <Image iconType="/res/icons/refresh16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmRefresh-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -32,7 +32,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmSelectSchema">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/users16.gif"/>
+          <Image iconType="/res/icons/users16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmSelectSchema-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -73,7 +73,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmDropDbLink"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/trash.gif"/>
+          <Image iconType="/res/icons/trash.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmDropDbLink-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -87,7 +87,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmCreateDbLink"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/db_link.gif"/>
+          <Image iconType="/res/icons/db_link.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmCreateDbLink-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

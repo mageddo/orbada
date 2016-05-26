@@ -73,7 +73,7 @@ public class AttachDatabaseWizard extends SqlCodeWizardPanel {
     jLabel1 = new javax.swing.JLabel();
 
     cmSelectFileName.setActionCommandKey("cmSelectFileName");
-    cmSelectFileName.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/open_document16.gif"))); // NOI18N
+    cmSelectFileName.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/open_document16.gif"))); // NOI18N
     cmSelectFileName.setText(stringManager.getString("cmSelectFileName-text")); // NOI18N
     cmSelectFileName.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

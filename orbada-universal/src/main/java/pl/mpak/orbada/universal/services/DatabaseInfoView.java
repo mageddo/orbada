@@ -40,7 +40,7 @@ public class DatabaseInfoView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_info16.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_info16.gif");
   }
 
   public boolean isForDatabase(Database database) {

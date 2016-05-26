@@ -54,7 +54,7 @@
       <Properties>
         <Property name="enabled" type="boolean" value="false"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/cancel.gif"/>
+          <Image iconType="/res/icons/cancel.gif"/>
         </Property>
         <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmStopExecuting-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -67,7 +67,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmNewResultPanel">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/add_table16.gif"/>
+          <Image iconType="/res/icons/add_table16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmNewResultPanel-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -85,7 +85,7 @@
         <Property name="actionCommandKey" type="java.lang.String" value="cmEditData"/>
         <Property name="enabled" type="boolean" value="false"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/edit_table.gif"/>
+          <Image iconType="/res/icons/edit_table.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmEditData-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -106,7 +106,7 @@
           <KeyStroke key="Ctrl+DELETE"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/minus9.gif"/>
+          <Image iconType="/res/icons/minus9.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmDeleteRecord-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -127,7 +127,7 @@
           <KeyStroke key="INSERT"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/add8.gif"/>
+          <Image iconType="/res/icons/add8.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmInsertRecord-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -145,7 +145,7 @@
         <Property name="actionCommandKey" type="java.lang.String" value="cmApplyRecord"/>
         <Property name="enabled" type="boolean" value="false"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/commit10.gif"/>
+          <Image iconType="/res/icons/commit10.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmApplyRecord-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -163,7 +163,7 @@
         <Property name="actionCommandKey" type="java.lang.String" value="cmRollbackRecord"/>
         <Property name="enabled" type="boolean" value="false"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/rollback10.gif"/>
+          <Image iconType="/res/icons/rollback10.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmRollbackRecord-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -181,7 +181,7 @@
         <Property name="actionCommandKey" type="java.lang.String" value="cmRecordCount"/>
         <Property name="enabled" type="boolean" value="false"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/counts.gif"/>
+          <Image iconType="/res/icons/counts.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmRecordCount-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

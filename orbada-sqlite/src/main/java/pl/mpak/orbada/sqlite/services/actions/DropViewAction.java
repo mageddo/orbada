@@ -63,7 +63,7 @@ public class DropViewAction extends ComponentActionProvider {
     
     setText(getDescription());
     setTooltip(stringManager.getString("DropViewAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif"));
     setActionCommandKey("DropViewAction");
     addActionListener(createActionListener());
     

@@ -33,7 +33,7 @@ public class CreateIndexWizardAction extends Action {
     super(stringManager.getString("CreateIndexWizardAction-text"));
     this.database = database;
     setActionCommandKey("cmCreateIndexWizard");
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/create_index16.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/create_index16.gif"));
     addActionListener(createActionListener());
   }
 

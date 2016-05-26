@@ -9,7 +9,7 @@
           <KeyStroke key="Ctrl+ENTER"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/db_sql_execute16.gif"/>
+          <Image iconType="/res/icons/db_sql_execute16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmExecute-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -29,7 +29,7 @@
           <KeyStroke key="Ctrl+F9"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/db_script_execute.gif"/>
+          <Image iconType="/res/icons/db_script_execute.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmExecuteAsScript-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -46,7 +46,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmShowHideError"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/delete_square16.gif"/>
+          <Image iconType="/res/icons/delete_square16.gif"/>
         </Property>
         <Property name="tooltip" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmShowHideError-hint" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -63,7 +63,7 @@
           <KeyStroke key="Ctrl+F8"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/executed_sql16.gif"/>
+          <Image iconType="/res/icons/executed_sql16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmExecutedSql-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -83,7 +83,7 @@
           <KeyStroke key="Ctrl+S"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/save16.gif"/>
+          <Image iconType="/res/icons/save16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmSaveFile-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -100,7 +100,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmSaveFileAs"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/save_as16.gif"/>
+          <Image iconType="/res/icons/save_as16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmSaveFileAs-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -117,7 +117,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmOpenFile"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/open_document16.gif"/>
+          <Image iconType="/res/icons/open_document16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmOpenFile-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -137,7 +137,7 @@
           <KeyStroke key="Shift+Alt+UP"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/arrowup.gif"/>
+          <Image iconType="/res/icons/arrowup.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmPrevEditor-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -154,7 +154,7 @@
           <KeyStroke key="Shift+Alt+DOWN"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/arrowdown.gif"/>
+          <Image iconType="/res/icons/arrowdown.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmNextEditor-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -168,7 +168,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmNewEditor"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/new_document16.gif"/>
+          <Image iconType="/res/icons/new_document16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmNewEditor-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -182,7 +182,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmDeleteEditor"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/minus16.gif"/>
+          <Image iconType="/res/icons/minus16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmDeleteEditor-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -324,7 +324,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmSelectDatabase">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/select16.gif"/>
+          <Image iconType="/res/icons/select16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmSelectDatabase-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -344,7 +344,7 @@
           <KeyStroke key="F9"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/db_sql_store.gif"/>
+          <Image iconType="/res/icons/db_sql_store.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmStore-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -361,7 +361,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmCloneDatabase"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/clone_database.gif"/>
+          <Image iconType="/res/icons/clone_database.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmCloneDatabase-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -407,7 +407,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmPopupRecentFiles"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/down10.gif"/>
+          <Image iconType="/res/icons/down10.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmPopupRecentFiles-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -420,7 +420,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmDbCommit">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/commit.gif"/>
+          <Image iconType="/res/icons/commit.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmDbCommit-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -436,7 +436,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmDbRollback">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/rollback.gif"/>
+          <Image iconType="/res/icons/rollback.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmDbRollback-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -462,7 +462,7 @@
         <Property name="actionCommandKey" type="java.lang.String" value="cmDBStartTransaction"/>
         <Property name="enabled" type="boolean" value="false"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/start_transaction.gif"/>
+          <Image iconType="/res/icons/start_transaction.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n_pl_PL.properties" key="cmDBStartTransaction-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

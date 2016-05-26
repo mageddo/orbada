@@ -28,7 +28,7 @@ public class CreateDomainAction extends Action {
   public CreateDomainAction(Database database) {
     super();
     setText(stringManager.getString("CreateDomainAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/domain.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/domain.gif"));
     setTooltip(stringManager.getString("CreateDomainAction-hint"));
     setActionCommandKey("CreateDomainAction");
     addActionListener(createActionListener());

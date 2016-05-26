@@ -31,7 +31,7 @@ public class CopyTableColumnsAction extends ComponentAction {
     super();
     setText(stringManager.getString("CopyTableColumnsAction-text"));
     setTooltip(stringManager.getString("CopyTableColumnsAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/copy.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/copy.gif"));
     setActionCommandKey("CopyTableColumnsAction");
     addActionListener(createActionListener());
   }

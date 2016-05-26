@@ -33,7 +33,7 @@ public class OracleParametersView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/parameter.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/parameter.gif");
   }
 
   public boolean isForDatabase(Database database) {

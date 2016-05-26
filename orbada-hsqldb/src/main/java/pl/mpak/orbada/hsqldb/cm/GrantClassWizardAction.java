@@ -35,7 +35,7 @@ public class GrantClassWizardAction extends Action {
     setText(stringManager.getString("GrantClassWizardAction-text"));
     this.database = database;
     setActionCommandKey("GrantClassWizardAction");
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/grant_class.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/grant_class.gif"));
     addActionListener(createActionListener());
   }
 

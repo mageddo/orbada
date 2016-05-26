@@ -29,7 +29,7 @@ public class CreateExternalTableAction extends Action {
   public CreateExternalTableAction(Database database) {
     super();
     setText(stringManager.getString("CreateExternalTableAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/table.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/table.gif"));
     setTooltip(stringManager.getString("CreateExternalTableAction-hint"));
     setActionCommandKey("CreateExternalTableAction");
     addActionListener(createActionListener());

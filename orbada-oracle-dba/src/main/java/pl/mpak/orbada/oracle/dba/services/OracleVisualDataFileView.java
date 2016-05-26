@@ -33,7 +33,7 @@ public class OracleVisualDataFileView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/visual_props.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/visual_props.gif");
   }
 
   public boolean isForDatabase(Database database) {

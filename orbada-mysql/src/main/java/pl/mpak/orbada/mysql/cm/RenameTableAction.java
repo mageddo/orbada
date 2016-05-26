@@ -31,7 +31,7 @@ public class RenameTableAction extends ComponentAction {
     super();
     setText(stringManager.getString("RenameTableAction-text"));
     setTooltip(stringManager.getString("RenameTableAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/rename.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/rename.gif"));
     setActionCommandKey("RenameTableAction");
     addActionListener(createActionListener());
   }

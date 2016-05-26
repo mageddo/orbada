@@ -190,7 +190,7 @@ public class DirectoriesPanelView extends javax.swing.JPanel implements IRootTab
     jSeparator1 = new javax.swing.JToolBar.Separator();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -207,7 +207,7 @@ public class DirectoriesPanelView extends javax.swing.JPanel implements IRootTab
       }
     });
 
-    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/users16.gif")); // NOI18N
+    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/users16.gif")); // NOI18N
     cmSelectSchema.setText(stringManager.getString("cmSelectSchema-text")); // NOI18N
     cmSelectSchema.setTooltip(stringManager.getString("cmSelectSchema-hint")); // NOI18N
     cmSelectSchema.addActionListener(new java.awt.event.ActionListener() {
@@ -224,7 +224,7 @@ public class DirectoriesPanelView extends javax.swing.JPanel implements IRootTab
     menuActions.add(menuDropDirectory);
 
     cmCreateDirectory.setActionCommandKey("cmCreateDirectory");
-    cmCreateDirectory.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/directory.gif")); // NOI18N
+    cmCreateDirectory.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/directory.gif")); // NOI18N
     cmCreateDirectory.setText(stringManager.getString("cmCreateDirectory-text")); // NOI18N
     cmCreateDirectory.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -233,7 +233,7 @@ public class DirectoriesPanelView extends javax.swing.JPanel implements IRootTab
     });
 
     cmDropDirectory.setActionCommandKey("cmDropDirectory");
-    cmDropDirectory.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDropDirectory.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDropDirectory.setText(stringManager.getString("cmDropDirectory-text")); // NOI18N
     cmDropDirectory.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

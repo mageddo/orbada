@@ -32,7 +32,7 @@ public class CreateProcedureAction extends ComponentAction {
     super();
     setText(stringManager.getString("CreateProcedureAction-text"));
     setTooltip(stringManager.getString("CreateProcedureAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/procedure.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/procedure.gif"));
     setActionCommandKey("CreateProcedureAction");
     addActionListener(createActionListener());
   }

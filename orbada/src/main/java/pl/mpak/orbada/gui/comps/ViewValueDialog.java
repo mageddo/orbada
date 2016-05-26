@@ -161,7 +161,7 @@ public class ViewValueDialog extends javax.swing.JDialog {
         menuViewHtml = new javax.swing.JRadioButtonMenuItem();
 
         cmSaveAs.setActionCommandKey("cmSaveAs");
-        cmSaveAs.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/save_as16.gif")); // NOI18N
+        cmSaveAs.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/save_as16.gif")); // NOI18N
         cmSaveAs.setText(stringManager.getString("cmSaveAs-text")); // NOI18N
         cmSaveAs.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

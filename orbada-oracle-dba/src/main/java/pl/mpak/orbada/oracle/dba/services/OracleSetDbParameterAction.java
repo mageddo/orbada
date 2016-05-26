@@ -64,7 +64,7 @@ public class OracleSetDbParameterAction extends ComponentActionProvider {
 
     setText(getDescription());
     setTooltip(stringManager.getString("OracleSetDbParameterAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/edit16.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/edit16.gif"));
     setActionCommandKey("OracleSetDbParameterAction");
     addActionListener(createActionListener());
     

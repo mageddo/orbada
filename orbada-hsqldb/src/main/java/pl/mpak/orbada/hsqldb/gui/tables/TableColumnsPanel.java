@@ -209,7 +209,7 @@ public class TableColumnsPanel extends javax.swing.JPanel implements ITabObjectI
     jSeparator3 = new javax.swing.JToolBar.Separator();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -227,7 +227,7 @@ public class TableColumnsPanel extends javax.swing.JPanel implements ITabObjectI
     });
 
     cmColumnNotNull.setActionCommandKey("cmColumnNotNull");
-    cmColumnNotNull.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/lock16.gif")); // NOI18N
+    cmColumnNotNull.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/lock16.gif")); // NOI18N
     cmColumnNotNull.setText(stringManager.getString("cmColumnNotNull-text")); // NOI18N
     cmColumnNotNull.setTooltip(stringManager.getString("cmColumnNotNull-hint")); // NOI18N
     cmColumnNotNull.addActionListener(new java.awt.event.ActionListener() {
@@ -237,7 +237,7 @@ public class TableColumnsPanel extends javax.swing.JPanel implements ITabObjectI
     });
 
     cmCreateConstraintCheck.setActionCommandKey("cmCreateConstraintCheck");
-    cmCreateConstraintCheck.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/verify_document_16.gif")); // NOI18N
+    cmCreateConstraintCheck.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/verify_document_16.gif")); // NOI18N
     cmCreateConstraintCheck.setText(stringManager.getString("cmCreateConstraintCheck-text")); // NOI18N
     cmCreateConstraintCheck.setTooltip(stringManager.getString("cmCreateConstraintCheck-hint")); // NOI18N
     cmCreateConstraintCheck.addActionListener(new java.awt.event.ActionListener() {
@@ -247,7 +247,7 @@ public class TableColumnsPanel extends javax.swing.JPanel implements ITabObjectI
     });
 
     cmDropColumn.setActionCommandKey("cmDropColumn");
-    cmDropColumn.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDropColumn.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDropColumn.setText(stringManager.getString("cmDropColumn-text")); // NOI18N
     cmDropColumn.setTooltip(stringManager.getString("cmDropColumn-hint")); // NOI18N
     cmDropColumn.addActionListener(new java.awt.event.ActionListener() {
@@ -276,7 +276,7 @@ public class TableColumnsPanel extends javax.swing.JPanel implements ITabObjectI
     menuDropColumn.setAction(cmRenameColumn);
     menuActions.add(menuDropColumn);
 
-    cmRenameColumn.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/rename.gif")); // NOI18N
+    cmRenameColumn.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/rename.gif")); // NOI18N
     cmRenameColumn.setText(stringManager.getString("cmRenameColumn-text")); // NOI18N
     cmRenameColumn.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -285,7 +285,7 @@ public class TableColumnsPanel extends javax.swing.JPanel implements ITabObjectI
     });
 
     cmCreateConstraintFK.setActionCommandKey("cmCreateConstraintFK");
-    cmCreateConstraintFK.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/foreign_key16.gif")); // NOI18N
+    cmCreateConstraintFK.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/foreign_key16.gif")); // NOI18N
     cmCreateConstraintFK.setText(stringManager.getString("cmCreateConstraintFK-text")); // NOI18N
     cmCreateConstraintFK.setTooltip(stringManager.getString("cmCreateConstraintFK-hint")); // NOI18N
     cmCreateConstraintFK.addActionListener(new java.awt.event.ActionListener() {
@@ -295,7 +295,7 @@ public class TableColumnsPanel extends javax.swing.JPanel implements ITabObjectI
     });
 
     cmCreateConstraintPK.setActionCommandKey("cmCreateConstraintPK");
-    cmCreateConstraintPK.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/primary_key16.gif")); // NOI18N
+    cmCreateConstraintPK.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/primary_key16.gif")); // NOI18N
     cmCreateConstraintPK.setText(stringManager.getString("cmCreateConstraintPK-text")); // NOI18N
     cmCreateConstraintPK.setTooltip(stringManager.getString("cmCreateConstraintPK-hint")); // NOI18N
     cmCreateConstraintPK.addActionListener(new java.awt.event.ActionListener() {

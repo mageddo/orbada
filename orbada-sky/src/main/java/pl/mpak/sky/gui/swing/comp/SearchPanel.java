@@ -45,7 +45,7 @@ public class SearchPanel extends JPanel {
         fireSearch();
       }
     });
-    cmSearch.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/find_source.gif")); // NOI18N
+    cmSearch.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/find_source.gif")); // NOI18N
     cmSearch.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, 0));
     cmSearch.setText(Messages.getString("search-cmSearch-text")); // NOI18N
     

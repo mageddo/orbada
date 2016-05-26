@@ -305,7 +305,7 @@ public class ReportEditDialog extends javax.swing.JDialog {
     });
 
     cmNewDetail.setActionCommandKey("cmNewDetail");
-    cmNewDetail.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/new_report.gif")); // NOI18N
+    cmNewDetail.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/new_report.gif")); // NOI18N
     cmNewDetail.setText(bundle.getString("add")); // NOI18N
     cmNewDetail.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -314,7 +314,7 @@ public class ReportEditDialog extends javax.swing.JDialog {
     });
 
     cmEditDetail.setActionCommandKey("cmEditDetail");
-    cmEditDetail.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/edit16.gif")); // NOI18N
+    cmEditDetail.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/edit16.gif")); // NOI18N
     cmEditDetail.setText(bundle.getString("edit")); // NOI18N
     cmEditDetail.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -323,7 +323,7 @@ public class ReportEditDialog extends javax.swing.JDialog {
     });
 
     cmDeleteDetail.setActionCommandKey("cmDeleteDetail");
-    cmDeleteDetail.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDeleteDetail.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDeleteDetail.setText(bundle.getString("delete")); // NOI18N
     cmDeleteDetail.setTooltip(bundle.getString("deleting_detail_report")); // NOI18N
     cmDeleteDetail.addActionListener(new java.awt.event.ActionListener() {

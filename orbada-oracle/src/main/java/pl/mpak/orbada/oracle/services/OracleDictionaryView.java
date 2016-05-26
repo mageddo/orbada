@@ -31,7 +31,7 @@ public class OracleDictionaryView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/dictionary.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/dictionary.gif");
   }
 
   public boolean isForDatabase(Database database) {

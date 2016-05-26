@@ -29,7 +29,7 @@ public class CreateTemporaryTableAction extends Action {
   public CreateTemporaryTableAction(Database database) {
     super();
     setText(stringManager.getString("CreateTemporaryTableAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/table.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/table.gif"));
     setTooltip(stringManager.getString("CreateTemporaryTableAction-hint"));
     setActionCommandKey("CreateTemporaryTableAction");
     addActionListener(createActionListener());

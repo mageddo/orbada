@@ -28,7 +28,7 @@ public class IsolationLevelAction extends Action {
   public IsolationLevelAction(Database database) {
     super();
     setText(stringManager.getString("IsolationLevelAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/isolation_level.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/isolation_level.gif"));
     setTooltip(stringManager.getString("IsolationLevelAction-hint"));
     setActionCommandKey("IsolationLevelAction");
     addActionListener(createActionListener());

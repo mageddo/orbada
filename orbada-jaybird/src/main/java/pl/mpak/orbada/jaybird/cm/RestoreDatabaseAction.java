@@ -24,7 +24,7 @@ public class RestoreDatabaseAction extends Action {
   public RestoreDatabaseAction() {
     setText(stringManager.getString("RestoreDatabaseAction.text"));
     setTooltip(stringManager.getString("RestoreDatabaseAction.tooltip"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/orbada/jaybird/res/restore_database.gif", this.getClass()));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/restore_database.gif", this.getClass()));
     setActionCommandKey("RestoreDatabaseAction");
     addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {

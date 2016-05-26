@@ -30,7 +30,7 @@ public class DatabaseVacuumAction extends Action {
     this.database = database;
     setText(stringManager.getString("DatabaseVacuumAction-text"));
     setTooltip(stringManager.getString("DatabaseVacuumAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/cleaning.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/cleaning.gif"));
     setActionCommandKey("VacuumAction");
     addActionListener(createActionListener());
   }

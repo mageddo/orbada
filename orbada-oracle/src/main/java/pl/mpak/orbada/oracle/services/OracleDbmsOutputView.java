@@ -40,7 +40,7 @@ public class OracleDbmsOutputView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/output.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/output.gif");
   }
 
   public boolean isForDatabase(Database database) {

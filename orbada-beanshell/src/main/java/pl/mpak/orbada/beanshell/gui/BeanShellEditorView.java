@@ -39,7 +39,7 @@ public class BeanShellEditorView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/orbada/beanshell/res/icons/icon.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/icon.gif");
   }
 
   public boolean isForDatabase(Database database) {

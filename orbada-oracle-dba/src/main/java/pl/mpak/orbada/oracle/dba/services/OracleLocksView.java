@@ -33,7 +33,7 @@ public class OracleLocksView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/lock.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/lock.gif");
   }
 
   public boolean isForDatabase(Database database) {

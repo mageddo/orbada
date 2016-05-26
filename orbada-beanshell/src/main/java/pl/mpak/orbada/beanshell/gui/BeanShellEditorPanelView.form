@@ -8,7 +8,7 @@
           <KeyStroke key="Ctrl+ENTER"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/run.gif"/>
+          <Image iconType="/res/icons/run.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/beanshell/i18n.properties" key="cmRun-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -28,7 +28,7 @@
           <KeyStroke key="Ctrl+S"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/save16.gif"/>
+          <Image iconType="/res/icons/save16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/beanshell/i18n.properties" key="cmSaveFile-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -45,7 +45,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmSaveFileAs"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/save_as16.gif"/>
+          <Image iconType="/res/icons/save_as16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/beanshell/i18n.properties" key="cmSaveFileAs-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -62,7 +62,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmOpenFile"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/open_document16.gif"/>
+          <Image iconType="/res/icons/open_document16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/beanshell/i18n.properties" key="cmOpenFile-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -79,7 +79,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmPrevEditor"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/arrowup.gif"/>
+          <Image iconType="/res/icons/arrowup.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/beanshell/i18n.properties" key="cmPrevEditor-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -96,7 +96,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmNextEditor"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/arrowdown.gif"/>
+          <Image iconType="/res/icons/arrowdown.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/beanshell/i18n.properties" key="cmNextEditor-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -113,7 +113,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmNewEditor"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/new_document16.gif"/>
+          <Image iconType="/res/icons/new_document16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/beanshell/i18n.properties" key="cmNewEditor-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -130,7 +130,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmDeleteEditor"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/minus16.gif"/>
+          <Image iconType="/res/icons/minus16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/beanshell/i18n.properties" key="cmDeleteEditor-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

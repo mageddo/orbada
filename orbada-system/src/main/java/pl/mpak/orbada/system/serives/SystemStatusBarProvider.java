@@ -177,7 +177,7 @@ public class SystemStatusBarProvider extends StatusBarProvider {
     });
     panelTask = systemStatusBar.addPanel("task-panel");
     panelTask.setToolTipText(stringManager.getString("background-tasks"));
-    panelTask.setIcon(new ImageIcon(getClass().getResource("/pl/mpak/res/icons/runing-tasks18.gif")));
+    panelTask.setIcon(new ImageIcon(getClass().getResource("/res/icons/runing-tasks18.gif")));
     panelTask.setDisplayActivation(true);
     panelTask.addMouseListener(new MouseListener() {
       public void mouseClicked(MouseEvent e) {
@@ -313,7 +313,7 @@ public class SystemStatusBarProvider extends StatusBarProvider {
 
     panelQuery = systemStatusBar.addPanel("query-panel");
     panelQuery.setToolTipText(stringManager.getString("usedb-lib-status"));
-    panelQuery.setIcon(new ImageIcon(getClass().getResource("/pl/mpak/res/icons/runing-queries18.gif")));
+    panelQuery.setIcon(new ImageIcon(getClass().getResource("/res/icons/runing-queries18.gif")));
     panelQuery.setDisplayActivation(true);
     panelQuery.addMouseListener(new MouseListener() {
       public void mouseClicked(MouseEvent e) {
@@ -382,7 +382,7 @@ public class SystemStatusBarProvider extends StatusBarProvider {
   public void initStatusTextPanel() {
     systemStatusBar.addPanel("status-text");
     systemStatusBar.getPanel("status-text").setText(" ");
-    systemStatusBar.getPanel("status-text").setIcon(new ImageIcon(getClass().getResource("/pl/mpak/res/icons/status_text.gif")));
+    systemStatusBar.getPanel("/res/icons/status_text.gif")));
     systemStatusBar.getTimer().schedule(new TimerTask() {
       public void run() {
         if (statusTextEnabled == 0) {
@@ -410,7 +410,7 @@ public class SystemStatusBarProvider extends StatusBarProvider {
       //panelmPakLogo = new PanelmPakLogo();
 
       systemStatusBar = new SystemStatusBar();
-      buttonError = new JButton(new ImageIcon(getClass().getResource("/pl/mpak/res/icons/error_square16.gif")));
+      buttonError = new JButton(new ImageIcon(getClass().getResource("/res/icons/error_square16.gif")));
       buttonError.setMargin(new Insets(1, 1, 1, 1));
       buttonError.setPreferredSize(new Dimension(20, 20));
       buttonError.setEnabled(false);

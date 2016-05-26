@@ -5,7 +5,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmRefresh">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/refresh16.gif"/>
+          <Image iconType="/res/icons/refresh16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/firebird/i18n.properties" key="cmRefresh-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -64,7 +64,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmFreezeObject"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/freeze.gif"/>
+          <Image iconType="/res/icons/freeze.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/firebird/i18n.properties" key="cmFreezeObject-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -78,7 +78,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmCreateTrigger"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/trigger.gif"/>
+          <Image iconType="/res/icons/trigger.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/firebird/i18n.properties" key="TableTriggersPanel-cmCreateTrigger-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -92,7 +92,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmDropTrigger"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/trash.gif"/>
+          <Image iconType="/res/icons/trash.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/firebird/i18n.properties" key="TableTriggersPanel-cmDropTrigger-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -109,7 +109,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmActiveTrigger"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/enabled.gif"/>
+          <Image iconType="/res/icons/enabled.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/firebird/i18n.properties" key="TableTriggersPanel-cmActiveTrigger-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

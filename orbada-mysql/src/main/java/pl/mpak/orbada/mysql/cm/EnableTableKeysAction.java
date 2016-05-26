@@ -31,7 +31,7 @@ public class EnableTableKeysAction extends ComponentAction {
     super();
     setText(stringManager.getString("EnableTableKeysAction-text"));
     setTooltip(stringManager.getString("EnableTableKeysAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/enable_all.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/enable_all.gif"));
     setActionCommandKey("EnableTableKeysAction");
     addActionListener(createActionListener());
   }

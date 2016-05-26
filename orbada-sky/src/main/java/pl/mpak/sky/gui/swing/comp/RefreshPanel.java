@@ -50,7 +50,7 @@ public class RefreshPanel extends JPanel {
     
     cmQuickStop = new Action();
     comboRefresh = new ComboBox();
-    labelRefresh = new JLabel(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/orange_bdot.gif")); // NOI18N
+    labelRefresh = new JLabel(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/orange_bdot.gif")); // NOI18N
     
     cmQuickStop.setActionCommandKey("cmQuickStop"); // NOI18N
     cmQuickStop.addActionListener(new ActionListener() {
@@ -59,7 +59,7 @@ public class RefreshPanel extends JPanel {
         comboRefresh.setSelectedIndex(0);
       }
     });
-    cmQuickStop.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/red_bdot.gif")); // NOI18N
+    cmQuickStop.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/red_bdot.gif")); // NOI18N
     cmQuickStop.setText(Messages.getString("refresh-cmQuickStop-text")); // NOI18N
     cmQuickStop.setEnabled(false);
     

@@ -276,7 +276,7 @@ public class FunctionsPanelView extends javax.swing.JPanel implements IRootTabOb
     jPanel2 = new javax.swing.JPanel();
     statusBarTables = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -285,7 +285,7 @@ public class FunctionsPanelView extends javax.swing.JPanel implements IRootTabOb
       }
     });
 
-    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/users16.gif")); // NOI18N
+    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/users16.gif")); // NOI18N
     cmSelectSchema.setText(stringManager.getString("cmSelectSchema-text")); // NOI18N
     cmSelectSchema.setTooltip(stringManager.getString("cmSelectSchema-hint")); // NOI18N
     cmSelectSchema.addActionListener(new java.awt.event.ActionListener() {
@@ -295,7 +295,7 @@ public class FunctionsPanelView extends javax.swing.JPanel implements IRootTabOb
     });
 
     cmFilter.setActionCommandKey("cmFilter");
-    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/filter16.gif")); // NOI18N
+    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/filter16.gif")); // NOI18N
     cmFilter.setText(stringManager.getString("cmFilter-text")); // NOI18N
     cmFilter.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -322,7 +322,7 @@ public class FunctionsPanelView extends javax.swing.JPanel implements IRootTabOb
 
     cmCompile.setActionCommandKey("cmCompile");
     cmCompile.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.CTRL_MASK));
-    cmCompile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_sql_execute16.gif")); // NOI18N
+    cmCompile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_sql_execute16.gif")); // NOI18N
     cmCompile.setText(stringManager.getString("cmCompile-text")); // NOI18N
     cmCompile.setTooltip(stringManager.getString("cmCompile-hint")); // NOI18N
     cmCompile.addActionListener(new java.awt.event.ActionListener() {
@@ -333,7 +333,7 @@ public class FunctionsPanelView extends javax.swing.JPanel implements IRootTabOb
 
     cmFreezeObject.setActionCommandKey("cmFreezeObject");
     cmFreezeObject.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F3, 0));
-    cmFreezeObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/freeze.gif")); // NOI18N
+    cmFreezeObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/freeze.gif")); // NOI18N
     cmFreezeObject.setText(stringManager.getString("cmFreezeObject-text")); // NOI18N
     cmFreezeObject.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -342,7 +342,7 @@ public class FunctionsPanelView extends javax.swing.JPanel implements IRootTabOb
     });
 
     cmDropFunction.setActionCommandKey("cmDropFunction");
-    cmDropFunction.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDropFunction.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDropFunction.setText(stringManager.getString("cmDropFunction-text")); // NOI18N
     cmDropFunction.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -351,7 +351,7 @@ public class FunctionsPanelView extends javax.swing.JPanel implements IRootTabOb
     });
 
     cmCreateFunction.setActionCommandKey("cmCreateFunction");
-    cmCreateFunction.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/function.gif")); // NOI18N
+    cmCreateFunction.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/function.gif")); // NOI18N
     cmCreateFunction.setText(stringManager.getString("cmCreateFunction-text")); // NOI18N
     cmCreateFunction.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -360,7 +360,7 @@ public class FunctionsPanelView extends javax.swing.JPanel implements IRootTabOb
     });
 
     cmCompileAll.setActionCommandKey("cmCompileAll");
-    cmCompileAll.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_sql_execute_all.gif")); // NOI18N
+    cmCompileAll.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_sql_execute_all.gif")); // NOI18N
     cmCompileAll.setText(stringManager.getString("cmCompileAll-text")); // NOI18N
     cmCompileAll.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -369,7 +369,7 @@ public class FunctionsPanelView extends javax.swing.JPanel implements IRootTabOb
     });
 
     cmCompileAllInvalid.setActionCommandKey("cmCompileAllInvalid");
-    cmCompileAllInvalid.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_sql_execute_all_invalid.gif")); // NOI18N
+    cmCompileAllInvalid.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_sql_execute_all_invalid.gif")); // NOI18N
     cmCompileAllInvalid.setText(stringManager.getString("cmCompileAllInvalid-text")); // NOI18N
     cmCompileAllInvalid.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -379,7 +379,7 @@ public class FunctionsPanelView extends javax.swing.JPanel implements IRootTabOb
 
     cmCallFunction.setActionCommandKey("cmCallFunction");
     cmCallFunction.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F9, 0));
-    cmCallFunction.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/call.gif")); // NOI18N
+    cmCallFunction.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/call.gif")); // NOI18N
     cmCallFunction.setText(stringManager.getString("cmCallFunction-text")); // NOI18N
     cmCallFunction.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

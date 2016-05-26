@@ -185,7 +185,7 @@ public class SequencesPanelView extends javax.swing.JPanel implements IRootTabOb
     toolButton1 = new pl.mpak.sky.gui.swing.comp.ToolButton();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -202,7 +202,7 @@ public class SequencesPanelView extends javax.swing.JPanel implements IRootTabOb
       }
     });
 
-    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/users16.gif")); // NOI18N
+    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/users16.gif")); // NOI18N
     cmSelectSchema.setText(stringManager.getString("cmSelectSchema-text")); // NOI18N
     cmSelectSchema.setTooltip(stringManager.getString("cmSelectSchema-hint")); // NOI18N
     cmSelectSchema.addActionListener(new java.awt.event.ActionListener() {
@@ -230,7 +230,7 @@ public class SequencesPanelView extends javax.swing.JPanel implements IRootTabOb
     menuActions.add(menuDropSequence);
 
     cmCreateSequence.setActionCommandKey("cmCreateSequence");
-    cmCreateSequence.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/sequence.gif")); // NOI18N
+    cmCreateSequence.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/sequence.gif")); // NOI18N
     cmCreateSequence.setText(stringManager.getString("cmCreateSequence-text")); // NOI18N
     cmCreateSequence.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -250,7 +250,7 @@ public class SequencesPanelView extends javax.swing.JPanel implements IRootTabOb
     cmRecreateSequence.setText(stringManager.getString("cmRecreateSequence-text")); // NOI18N
 
     cmDropSequence.setActionCommandKey("cmDropSequence");
-    cmDropSequence.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDropSequence.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDropSequence.setText(stringManager.getString("cmDropSequence-text")); // NOI18N
     cmDropSequence.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

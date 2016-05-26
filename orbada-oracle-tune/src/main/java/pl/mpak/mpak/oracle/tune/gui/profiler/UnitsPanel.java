@@ -236,7 +236,7 @@ public class UnitsPanel extends javax.swing.JPanel implements Closeable {
     queryTableStatusBar1 = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
 
     cmRefresh.setActionCommandKey("cmRefresh");
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -246,7 +246,7 @@ public class UnitsPanel extends javax.swing.JPanel implements Closeable {
     });
 
     cmFilter.setActionCommandKey("cmFilter");
-    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/filter16.gif")); // NOI18N
+    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/filter16.gif")); // NOI18N
     cmFilter.setText(stringManager.getString("cmFilter-text")); // NOI18N
     cmFilter.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -256,7 +256,7 @@ public class UnitsPanel extends javax.swing.JPanel implements Closeable {
 
     cmFind.setActionCommandKey("cmFind");
     cmFind.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, 0));
-    cmFind.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/find_source.gif")); // NOI18N
+    cmFind.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/find_source.gif")); // NOI18N
     cmFind.setText(stringManager.getString("cmFind-text")); // NOI18N
     cmFind.setTooltip(stringManager.getString("cmFind-hint")); // NOI18N
     cmFind.addActionListener(new java.awt.event.ActionListener() {
@@ -267,7 +267,7 @@ public class UnitsPanel extends javax.swing.JPanel implements Closeable {
 
     cmFreezeObject.setActionCommandKey("cmFreezeObject");
     cmFreezeObject.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F3, 0));
-    cmFreezeObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/freeze.gif")); // NOI18N
+    cmFreezeObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/freeze.gif")); // NOI18N
     cmFreezeObject.setText(stringManager.getString("cmFreezeObject-text")); // NOI18N
     cmFreezeObject.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

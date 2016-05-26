@@ -62,7 +62,7 @@ public class DetachDatabaseAction extends ComponentActionProvider {
 
     setText(getDescription());
     setTooltip(stringManager.getString("DetachDatabaseAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_detach.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_detach.gif"));
     setActionCommandKey("DetachDatabaseAction");
     addActionListener(createActionListener());
 

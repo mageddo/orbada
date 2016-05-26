@@ -5,7 +5,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmRefresh">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/refresh16.gif"/>
+          <Image iconType="/res/icons/refresh16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmRefresh-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -21,7 +21,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmSelectSchema">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/users16.gif"/>
+          <Image iconType="/res/icons/users16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmSelectSchema-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -38,7 +38,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmFilter"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/filter16.gif"/>
+          <Image iconType="/res/icons/filter16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmFilter-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -102,7 +102,7 @@
           <KeyStroke key="Ctrl+ENTER"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/db_sql_execute16.gif"/>
+          <Image iconType="/res/icons/db_sql_execute16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmCompile-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -122,7 +122,7 @@
           <KeyStroke key="F3"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/freeze.gif"/>
+          <Image iconType="/res/icons/freeze.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmFreezeObject-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -136,7 +136,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmDropProcedure"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/trash.gif"/>
+          <Image iconType="/res/icons/trash.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmDropProcedure-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -150,7 +150,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmCreateProcedure"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/procedure.gif"/>
+          <Image iconType="/res/icons/procedure.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmCreateProcedure-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -164,7 +164,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmCompileAll"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/db_sql_execute_all.gif"/>
+          <Image iconType="/res/icons/db_sql_execute_all.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmCompileAll-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -178,7 +178,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmCompileAllInvalid"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/db_sql_execute_all_invalid.gif"/>
+          <Image iconType="/res/icons/db_sql_execute_all_invalid.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmCompileAllInvalid-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -195,7 +195,7 @@
           <KeyStroke key="F9"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/call.gif"/>
+          <Image iconType="/res/icons/call.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmCallProcedure-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

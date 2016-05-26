@@ -356,7 +356,7 @@ public class ScriptResultPanel extends javax.swing.JPanel implements Closeable {
         textResult = new pl.mpak.sky.gui.swing.comp.EditorPane();
 
         cmClearContent.setActionCommandKey("cmClearContent");
-        cmClearContent.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/clear.gif")); // NOI18N
+        cmClearContent.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/clear.gif")); // NOI18N
         cmClearContent.setText(stringManager.getString("cmClearContent-text")); // NOI18N
         cmClearContent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -365,7 +365,7 @@ public class ScriptResultPanel extends javax.swing.JPanel implements Closeable {
         });
 
         cmSaveToFile.setActionCommandKey("cmSaveToFile");
-        cmSaveToFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/save16.gif")); // NOI18N
+        cmSaveToFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/save16.gif")); // NOI18N
         cmSaveToFile.setText(stringManager.getString("cmSaveToFile-text")); // NOI18N
         cmSaveToFile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -375,7 +375,7 @@ public class ScriptResultPanel extends javax.swing.JPanel implements Closeable {
 
         cmCancelScript.setActionCommandKey("cmCancelScript");
         cmCancelScript.setEnabled(false);
-        cmCancelScript.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/cancel.gif")); // NOI18N
+        cmCancelScript.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/cancel.gif")); // NOI18N
         cmCancelScript.setText(stringManager.getString("cmCancelScript-text")); // NOI18N
         cmCancelScript.setTooltip(stringManager.getString("cmCancelScript-hint")); // NOI18N
         cmCancelScript.addActionListener(new java.awt.event.ActionListener() {
@@ -385,7 +385,7 @@ public class ScriptResultPanel extends javax.swing.JPanel implements Closeable {
         });
 
         cmGotoNextError.setActionCommandKey("cmGotoNextError");
-        cmGotoNextError.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/next_error.gif")); // NOI18N
+        cmGotoNextError.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/next_error.gif")); // NOI18N
         cmGotoNextError.setText(stringManager.getString("cmGotoNextError-text")); // NOI18N
         cmGotoNextError.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -394,7 +394,7 @@ public class ScriptResultPanel extends javax.swing.JPanel implements Closeable {
         });
 
         cmGotoPrevError.setActionCommandKey("cmGotoPrevError");
-        cmGotoPrevError.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/prev_error.gif")); // NOI18N
+        cmGotoPrevError.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/prev_error.gif")); // NOI18N
         cmGotoPrevError.setText(stringManager.getString("cmGotoPrevError-text")); // NOI18N
         cmGotoPrevError.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -402,7 +402,7 @@ public class ScriptResultPanel extends javax.swing.JPanel implements Closeable {
             }
         });
 
-        cmCopyErrorToClipboard.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/copy-error.gif")); // NOI18N
+        cmCopyErrorToClipboard.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/copy-error.gif")); // NOI18N
         cmCopyErrorToClipboard.setText(stringManager.getString("cmCopyErrorToClipboard-text")); // NOI18N
         cmCopyErrorToClipboard.setTooltip(stringManager.getString("cmCopyErrorToClipboard-hint")); // NOI18N
         cmCopyErrorToClipboard.addActionListener(new java.awt.event.ActionListener() {

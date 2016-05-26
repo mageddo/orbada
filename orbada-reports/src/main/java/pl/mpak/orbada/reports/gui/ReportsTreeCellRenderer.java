@@ -20,9 +20,9 @@ import pl.mpak.orbada.reports.gui.nodes.ReportTreeNodeInfo;
  */
 public class ReportsTreeCellRenderer extends DefaultTreeCellRenderer {
 
-  private Icon rootIcon = pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/root_folder.gif");
-  private Icon goupIcon = pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/report_folder.gif");
-  private Icon reportIcon = pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/reports.gif");
+  private Icon rootIcon = pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/root_folder.gif");
+  private Icon goupIcon = pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/report_folder.gif");
+  private Icon reportIcon = pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/reports.gif");
   
   @Override
   public Component getTreeCellRendererComponent(JTree tree, Object value, boolean sel, boolean expanded, boolean leaf, int row, boolean hasFocus) {

@@ -29,7 +29,7 @@ public class CreateTableTypeAction extends Action {
   public CreateTableTypeAction(Database database) {
     super();
     setText(stringManager.getString("CreateTableTypeAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/type.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/type.gif"));
     setTooltip(stringManager.getString("CreateTableTypeAction-hint"));
     setActionCommandKey("CreateTableTypeAction");
     addActionListener(createActionListener());

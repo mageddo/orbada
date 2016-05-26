@@ -23,7 +23,7 @@ public class CmRedoEdit extends Action {
     this.undoManager = undoManager;
     setText(Messages.getString("CmRedoEdit.text")); //$NON-NLS-1$
     if (icon == null) {
-      icon = pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/sky/res/redo.gif"); //$NON-NLS-1$
+      icon = pl.mpak.sky.gui.swing.ImageManager.getImage("/res/redo.gif"); //$NON-NLS-1$
     }
     setSmallIcon(icon);
     setShortCut(KeyEvent.VK_BACK_SPACE, KeyEvent.CTRL_MASK | KeyEvent.SHIFT_MASK);

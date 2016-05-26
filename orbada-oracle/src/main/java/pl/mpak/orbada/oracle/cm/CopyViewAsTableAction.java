@@ -29,7 +29,7 @@ public class CopyViewAsTableAction extends Action {
   public CopyViewAsTableAction(Database database) {
     super();
     setText(stringManager.getString("CopyViewAsTableAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/copy_table.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/copy_table.gif"));
     setTooltip(stringManager.getString("CopyViewAsTableAction-hint"));
     setActionCommandKey("CopyViewAsTableAction");
     addActionListener(createActionListener());

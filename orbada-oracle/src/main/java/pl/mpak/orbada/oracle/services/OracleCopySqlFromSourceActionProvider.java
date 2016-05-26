@@ -57,7 +57,7 @@ public class OracleCopySqlFromSourceActionProvider extends ComponentActionProvid
       return false;
     }
 
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/sky/res/copy.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/copy.gif"));
     setText(getDescription());
     setTooltip(stringManager.getString("OracleCopySqlFromSourceActionProvider-hint"));
     setActionCommandKey("OracleCopySqlFromSourceActionProvider");

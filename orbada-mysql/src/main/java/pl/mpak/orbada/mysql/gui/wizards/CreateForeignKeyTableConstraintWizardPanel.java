@@ -172,7 +172,7 @@ public class CreateForeignKeyTableConstraintWizardPanel extends SqlCodeWizardPan
     textTableName = new pl.mpak.sky.gui.swing.comp.TextField();
 
     cmAddRow.setActionCommandKey("cmAddRow");
-    cmAddRow.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/add8.gif"))); // NOI18N
+    cmAddRow.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/add8.gif"))); // NOI18N
     cmAddRow.setText(stringManager.getString("cmAddRow-text")); // NOI18N
     cmAddRow.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -181,7 +181,7 @@ public class CreateForeignKeyTableConstraintWizardPanel extends SqlCodeWizardPan
     });
 
     cmRemoveRow.setActionCommandKey("cmRemoveRow");
-    cmRemoveRow.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/remove8.gif"))); // NOI18N
+    cmRemoveRow.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/remove8.gif"))); // NOI18N
     cmRemoveRow.setText(stringManager.getString("cmRemoveRow-text")); // NOI18N
     cmRemoveRow.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

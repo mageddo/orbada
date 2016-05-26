@@ -68,7 +68,7 @@ public class OracleGotoSessionSIDAction extends ComponentActionProvider {
     
     setText(getDescription());
     setTooltip(stringManager.getString("OracleGotoSessionSIDAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/sessions.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/sessions.gif"));
     setActionCommandKey("OracleGotoSessionSIDAction");
     addActionListener(createActionListener());
     

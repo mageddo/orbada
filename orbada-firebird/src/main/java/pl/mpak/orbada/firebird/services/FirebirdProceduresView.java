@@ -36,7 +36,7 @@ public class FirebirdProceduresView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/procedure.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/procedure.gif");
   }
 
   public boolean isForDatabase(Database database) {

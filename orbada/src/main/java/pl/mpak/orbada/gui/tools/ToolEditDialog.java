@@ -174,7 +174,7 @@ public class ToolEditDialog extends javax.swing.JDialog {
     });
 
     cmSelectFile.setActionCommandKey("cmSelectFile");
-    cmSelectFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/open_document16.gif")); // NOI18N
+    cmSelectFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/open_document16.gif")); // NOI18N
     cmSelectFile.setText(stringManager.getString("ToolEditDialog-cmSelectFile-text")); // NOI18N
     cmSelectFile.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

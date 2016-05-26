@@ -31,7 +31,7 @@ public class CreatePrimaryKeyColumnConstraintAction extends ComponentAction {
     super();
     setText(stringManager.getString("CreatePrimaryKeyTableConstraintAction-text"));
     setTooltip(stringManager.getString("CreatePrimaryKeyTableConstraintAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/primary_key16.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/primary_key16.gif"));
     setActionCommandKey("CreatePrimaryKeyColumnConstraintAction");
     addActionListener(createActionListener());
   }

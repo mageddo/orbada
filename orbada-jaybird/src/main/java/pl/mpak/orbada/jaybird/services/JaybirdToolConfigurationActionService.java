@@ -27,7 +27,7 @@ public class JaybirdToolConfigurationActionService extends ToolConfigurationActi
   public JaybirdToolConfigurationActionService() {
     setText(stringManager.getString("JaybirdToolConfigurationActionService.text"));
     setTooltip(stringManager.getString("JaybirdToolConfigurationActionService.tooltip"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/orbada/jaybird/res/jaybird.gif", this.getClass()));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/jaybird.gif", this.getClass()));
     setActionCommandKey("JaybirdToolConfigurationActionService");
     addActionListener(createActionListener());
   }

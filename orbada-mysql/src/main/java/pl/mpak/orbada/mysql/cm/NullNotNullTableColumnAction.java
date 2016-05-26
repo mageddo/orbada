@@ -31,7 +31,7 @@ public class NullNotNullTableColumnAction extends ComponentAction {
     super();
     setText(stringManager.getString("NullNotNullTableColumnAction-text"));
     setTooltip(stringManager.getString("NullNotNullTableColumnAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/lock.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/lock.gif"));
     setActionCommandKey("NullNotNullTableColumnAction");
     addActionListener(createActionListener());
   }

@@ -31,7 +31,7 @@ public class OracleMViewsView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/mview.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/mview.gif");
   }
 
   public boolean isForDatabase(Database database) {

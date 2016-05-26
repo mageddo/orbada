@@ -108,7 +108,7 @@ public class PasswordDialog extends javax.swing.JDialog {
         setModal(true);
         setResizable(false);
 
-        iconPanel1.setIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/login.gif")); // NOI18N
+        iconPanel1.setIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/login.gif")); // NOI18N
 
         javax.swing.GroupLayout iconPanel1Layout = new javax.swing.GroupLayout(iconPanel1);
         iconPanel1.setLayout(iconPanel1Layout);

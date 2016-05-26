@@ -29,7 +29,7 @@ public class LeftContentAction extends Action {
   public LeftContentAction(SyntaxTextArea syntaxTextArea) {
     super();
     setText(stringManager.getString("LeftContentAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/diff.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/diff.gif"));
     setActionCommandKey("LeftContentAction");
     addActionListener(createActionListener());
     this.syntaxTextArea = syntaxTextArea;

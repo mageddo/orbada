@@ -25,7 +25,7 @@ public class MovePerspectiveRightAction extends Action {
     super();
     setText(stringManager.getString("MovePerspectiveRightAction-text"));
     setActionCommandKey("MovePerspectiveRightAction");
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/right10.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/right10.gif"));
     addActionListener(createActionListener());
   }
 

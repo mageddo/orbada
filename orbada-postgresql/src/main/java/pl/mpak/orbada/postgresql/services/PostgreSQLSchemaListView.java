@@ -40,7 +40,7 @@ public class PostgreSQLSchemaListView extends ViewProvider {
   
   @Override
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/request.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/request.gif");
   }
 
   @Override

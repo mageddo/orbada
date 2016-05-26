@@ -39,7 +39,7 @@ public class CopyCodeAction extends Action {
     super();
     setText(stringManager.getString("CopyCodeAction-text"));
     this.application = application;
-    setSmallIcon(new ImageIcon(getClass().getResource("/pl/mpak/res/icons/copy-code16.gif")));
+    setSmallIcon(new ImageIcon(getClass().getResource("/res/icons/copy-code16.gif")));
     setShortCut(KeyEvent.VK_C, KeyEvent.CTRL_MASK | KeyEvent.SHIFT_MASK);
     setTooltip(stringManager.getString("CopyCodeAction-hint"));
     setActionCommandKey("CopyCodeAction");

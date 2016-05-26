@@ -28,7 +28,7 @@ public class CheckTableAction extends ComponentAction {
   public CheckTableAction() {
     super();
     setActionCommandKey("CheckTableAction");
-    setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/check.gif"))); // NOI18N
+    setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/check.gif"))); // NOI18N
     setText(stringManager.getString("cmCheckTable-text")); // NOI18N
     addActionListener(createActionListener());
   }

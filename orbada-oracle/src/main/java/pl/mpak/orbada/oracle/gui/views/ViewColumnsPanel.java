@@ -200,7 +200,7 @@ public class ViewColumnsPanel extends javax.swing.JPanel implements ITabObjectIn
     jSeparator2 = new javax.swing.JToolBar.Separator();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -224,7 +224,7 @@ public class ViewColumnsPanel extends javax.swing.JPanel implements ITabObjectIn
     menuActions.add(jMenuItem1);
 
     cmComment.setActionCommandKey("cmComment");
-    cmComment.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/comment_edit.gif")); // NOI18N
+    cmComment.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/comment_edit.gif")); // NOI18N
     cmComment.setText(stringManager.getString("cmComment-text")); // NOI18N
     cmComment.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -233,7 +233,7 @@ public class ViewColumnsPanel extends javax.swing.JPanel implements ITabObjectIn
     });
 
     cmColumnListCopy.setActionCommandKey("cmColumnListCopy");
-    cmColumnListCopy.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/copy.gif")); // NOI18N
+    cmColumnListCopy.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/copy.gif")); // NOI18N
     cmColumnListCopy.setText(stringManager.getString("cmColumnListCopy-text")); // NOI18N
     cmColumnListCopy.setTooltip(stringManager.getString("cmColumnListCopy-hint")); // NOI18N
     cmColumnListCopy.addActionListener(new java.awt.event.ActionListener() {

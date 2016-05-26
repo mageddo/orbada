@@ -6,7 +6,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmSettingsApperance"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/visual_props.gif"/>
+          <Image iconType="/res/icons/visual_props.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/welcome/i18n.properties" key="settings-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -20,7 +20,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmSettingsDataSettings"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/visual_props.gif"/>
+          <Image iconType="/res/icons/visual_props.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/welcome/i18n.properties" key="settings-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -34,7 +34,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmDrivers"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/driverproperties.gif"/>
+          <Image iconType="/res/icons/driverproperties.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/welcome/i18n.properties" key="cmDrivers-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -48,7 +48,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmNewConnection"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/connection.gif"/>
+          <Image iconType="/res/icons/connection.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/welcome/i18n.properties" key="cmNewConnection-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -73,7 +73,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmSettingsProxy"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/visual_props.gif"/>
+          <Image iconType="/res/icons/visual_props.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/welcome/i18n.properties" key="settings-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -328,7 +328,7 @@
                               <Connection component="cmSettingsDataSettings" type="bean"/>
                             </Property>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/pl/mpak/res/icons/visual_props.gif"/>
+                              <Image iconType="/res/icons/visual_props.gif"/>
                             </Property>
                             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                               <Dimension value="[110, 34]"/>
@@ -388,7 +388,7 @@
                               <Connection component="cmSettingsProxy" type="bean"/>
                             </Property>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/pl/mpak/res/icons/visual_props.gif"/>
+                              <Image iconType="/res/icons/visual_props.gif"/>
                             </Property>
                             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                               <Dimension value="[110, 34]"/>
@@ -505,7 +505,7 @@
                               <Connection component="cmNewConnection" type="bean"/>
                             </Property>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/pl/mpak/res/icons/visual_props.gif"/>
+                              <Image iconType="/res/icons/visual_props.gif"/>
                             </Property>
                             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                               <Dimension value="[110, 34]"/>

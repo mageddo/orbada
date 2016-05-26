@@ -263,21 +263,21 @@ public class DriverEditDialog extends javax.swing.JDialog {
       }
     });
 
-    cmOpenSource.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/open16.gif")); // NOI18N
+    cmOpenSource.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/open16.gif")); // NOI18N
     cmOpenSource.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         cmOpenSourceActionPerformed(evt);
       }
     });
 
-    cmRefreshDrivers.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefreshDrivers.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefreshDrivers.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         cmRefreshDriversActionPerformed(evt);
       }
     });
 
-    cmResolveUrl.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmResolveUrl.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmResolveUrl.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         cmResolveUrlActionPerformed(evt);

@@ -228,7 +228,7 @@ public class TableTriggersPanel extends javax.swing.JPanel implements ITabObject
     statusBarTriggers = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
     textTrigger = new OrbadaSyntaxTextArea();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -256,7 +256,7 @@ public class TableTriggersPanel extends javax.swing.JPanel implements ITabObject
     menuActions.add(jMenuItem2);
 
     cmFreezeObject.setActionCommandKey("cmFreezeObject");
-    cmFreezeObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/freeze.gif")); // NOI18N
+    cmFreezeObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/freeze.gif")); // NOI18N
     cmFreezeObject.setText(stringManager.getString("cmFreezeObject-text")); // NOI18N
     cmFreezeObject.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -265,7 +265,7 @@ public class TableTriggersPanel extends javax.swing.JPanel implements ITabObject
     });
 
     cmCreateTrigger.setActionCommandKey("cmCreateTrigger");
-    cmCreateTrigger.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trigger.gif")); // NOI18N
+    cmCreateTrigger.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trigger.gif")); // NOI18N
     cmCreateTrigger.setText(stringManager.getString("TableTriggersPanel-cmCreateTrigger-text")); // NOI18N
     cmCreateTrigger.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -274,7 +274,7 @@ public class TableTriggersPanel extends javax.swing.JPanel implements ITabObject
     });
 
     cmDropTrigger.setActionCommandKey("cmDropTrigger");
-    cmDropTrigger.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDropTrigger.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDropTrigger.setText(stringManager.getString("TableTriggersPanel-cmDropTrigger-text")); // NOI18N
     cmDropTrigger.setTooltip(stringManager.getString("TableTriggersPanel-cmDropTrigger-hint")); // NOI18N
     cmDropTrigger.addActionListener(new java.awt.event.ActionListener() {
@@ -284,7 +284,7 @@ public class TableTriggersPanel extends javax.swing.JPanel implements ITabObject
     });
 
     cmActiveTrigger.setActionCommandKey("cmActiveTrigger");
-    cmActiveTrigger.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/enabled.gif")); // NOI18N
+    cmActiveTrigger.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/enabled.gif")); // NOI18N
     cmActiveTrigger.setText(stringManager.getString("TableTriggersPanel-cmActiveTrigger-text")); // NOI18N
     cmActiveTrigger.setTooltip(stringManager.getString("TableTriggersPanel-cmActiveTrigger-hint")); // NOI18N
     cmActiveTrigger.addActionListener(new java.awt.event.ActionListener() {

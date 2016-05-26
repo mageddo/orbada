@@ -31,7 +31,7 @@ public class CreateForeignKeyColumnConstraintAction extends ComponentAction {
     super();
     setText(stringManager.getString("CreateForeignKeyTableConstraintAction-text"));
     setTooltip(stringManager.getString("CreateForeignKeyTableConstraintAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/foreign_key16.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/foreign_key16.gif"));
     setActionCommandKey("CreateForeignKeyColumnConstraintAction");
     addActionListener(createActionListener());
   }

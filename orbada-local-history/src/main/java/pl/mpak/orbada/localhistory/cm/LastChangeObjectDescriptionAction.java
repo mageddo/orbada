@@ -33,7 +33,7 @@ public class LastChangeObjectDescriptionAction extends Action {
   public LastChangeObjectDescriptionAction(AbsOrbadaSyntaxTextArea syntaxTextArea) {
     super();
     setText(stringManager.getString("LastChangeObjectDescriptionAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/comment_edit.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/comment_edit.gif"));
     setActionCommandKey("LastChangeObjectDescriptionAction");
     addActionListener(createActionListener());
     this.syntaxTextArea = syntaxTextArea;

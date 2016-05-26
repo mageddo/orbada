@@ -22,7 +22,7 @@ public class FilterTurnOffAction extends Action {
     this.sqlFilter = sqlFilter;
     setText(stringManager.getString("FilterTurnOffAction-text"));
     setTooltip(stringManager.getString("FilterTurnOffAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/filter_off16.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/filter_off16.gif"));
   }
   
   @Override

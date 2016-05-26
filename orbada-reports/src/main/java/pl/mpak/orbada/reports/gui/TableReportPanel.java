@@ -264,7 +264,7 @@ public class TableReportPanel extends javax.swing.JPanel implements Titleable, C
         tabbedDetails = new javax.swing.JTabbedPane();
 
         cmRefresh.setActionCommandKey("cmRefresh");
-        cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+        cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pl/mpak/orbada/orbada-reports"); // NOI18N
         cmRefresh.setText(bundle.getString("refresh")); // NOI18N
         cmRefresh.setTooltip(bundle.getString("refresh_tooltip")); // NOI18N
@@ -275,7 +275,7 @@ public class TableReportPanel extends javax.swing.JPanel implements Titleable, C
         });
 
         cmRun.setActionCommandKey("cmRun");
-        cmRun.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_sql_execute16.gif")); // NOI18N
+        cmRun.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_sql_execute16.gif")); // NOI18N
         cmRun.setText(bundle.getString("run_report")); // NOI18N
         cmRun.setTooltip(bundle.getString("run_report_tooltip")); // NOI18N
         cmRun.addActionListener(new java.awt.event.ActionListener() {
@@ -286,7 +286,7 @@ public class TableReportPanel extends javax.swing.JPanel implements Titleable, C
 
         cmCancelReport.setActionCommandKey("cmCancelReport");
         cmCancelReport.setEnabled(false);
-        cmCancelReport.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/cancel.gif")); // NOI18N
+        cmCancelReport.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/cancel.gif")); // NOI18N
         cmCancelReport.setText("Anulowanie wykonania");
         cmCancelReport.setTooltip("Pozwala anulowaæ wykonywanie raportu");
         cmCancelReport.addActionListener(new java.awt.event.ActionListener() {

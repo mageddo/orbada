@@ -25,7 +25,7 @@ public class CmCutEdit extends Action {
     this.textComponent = textComponent;
     setText(Messages.getString("CmCutEdit.text")); //$NON-NLS-1$
     if (icon == null) {
-      icon = pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/sky/res/cut.gif"); //$NON-NLS-1$
+      icon = pl.mpak.sky.gui.swing.ImageManager.getImage("/res/cut.gif"); //$NON-NLS-1$
     }
     setSmallIcon(icon);
     setShortCut(KeyEvent.VK_X, KeyEvent.CTRL_MASK);

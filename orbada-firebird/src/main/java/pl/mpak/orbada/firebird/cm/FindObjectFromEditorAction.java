@@ -38,7 +38,7 @@ public class FindObjectFromEditorAction extends Action {
   public FindObjectFromEditorAction() {
     super();
     setText(stringManager.getString("FindObjectFromEditorAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/find_editor.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/find_editor.gif"));
     setTooltip(stringManager.getString("FindObjectFromEditorAction-hint"));
     setShortCut(KeyEvent.VK_F7, KeyEvent.CTRL_MASK | KeyEvent.SHIFT_MASK);
     setActionCommandKey("FindObjectFromEditorAction");

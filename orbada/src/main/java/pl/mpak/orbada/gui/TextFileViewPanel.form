@@ -6,7 +6,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmSave"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/save16.gif"/>
+          <Image iconType="/res/icons/save16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="cmSave-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

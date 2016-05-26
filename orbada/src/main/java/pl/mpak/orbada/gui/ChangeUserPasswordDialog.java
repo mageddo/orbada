@@ -123,7 +123,7 @@ public class ChangeUserPasswordDialog extends javax.swing.JDialog {
     buttonCancel.setMargin(new java.awt.Insets(2, 2, 2, 2));
     buttonCancel.setPreferredSize(new java.awt.Dimension(85, 25));
 
-    iconPanel1.setIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/login.gif")); // NOI18N
+    iconPanel1.setIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/login.gif")); // NOI18N
 
     javax.swing.GroupLayout iconPanel1Layout = new javax.swing.GroupLayout(iconPanel1);
     iconPanel1.setLayout(iconPanel1Layout);

@@ -25,7 +25,7 @@ public class CmPasteEdit extends Action {
     this.textComponent = textComponent;
     setText(Messages.getString("CmPasteEdit.text")); //$NON-NLS-1$
     if (icon == null) {
-      icon = pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/sky/res/paste.gif"); //$NON-NLS-1$
+      icon = pl.mpak.sky.gui.swing.ImageManager.getImage("/res/paste.gif"); //$NON-NLS-1$
     }
     setSmallIcon(icon);
     setShortCut(KeyEvent.VK_V, KeyEvent.CTRL_MASK);

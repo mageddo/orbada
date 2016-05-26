@@ -135,8 +135,8 @@ public class SqlFilter {
   
   private void updateAction() {
     if (filterOnIcon == null || filterOffIcon == null) {
-      filterOnIcon = pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/filter16.gif");
-      filterOffIcon = pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/filter_off16.gif");
+      filterOnIcon = pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/filter16.gif");
+      filterOffIcon = pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/filter_off16.gif");
     }
     if (action != null) {
       java.awt.EventQueue.invokeLater(new Runnable() {

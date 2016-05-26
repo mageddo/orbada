@@ -279,7 +279,7 @@ public class CommandParametersPanel extends javax.swing.JPanel implements Closea
         textParamValue = new pl.mpak.sky.gui.swing.comp.TextField();
         buttonOpenFile = new javax.swing.JButton();
 
-        cmOpenFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/open16.gif")); // NOI18N
+        cmOpenFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/open16.gif")); // NOI18N
         cmOpenFile.setText(stringManager.getString("cmOpenFile-text")); // NOI18N
         cmOpenFile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

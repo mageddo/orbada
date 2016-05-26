@@ -5,7 +5,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmRefreshDbmsOutput">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/refresh16.gif"/>
+          <Image iconType="/res/icons/refresh16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmRefreshDbmsOutput-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -22,7 +22,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmSwitchEnableDbmsOutput"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/service_start.gif"/>
+          <Image iconType="/res/icons/service_start.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmSwitchEnableDbmsOutput-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -39,7 +39,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmClearDbmsOutput"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/new16.gif"/>
+          <Image iconType="/res/icons/new16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmClearDbmsOutput-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -56,7 +56,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmSaveToFile"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/save16.gif"/>
+          <Image iconType="/res/icons/save16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/oracle/i18n.properties" key="cmSaveToFile-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -219,7 +219,7 @@
             <Component class="javax.swing.JLabel" name="labelRefresh">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/pl/mpak/res/icons/orange_bdot.gif"/>
+                  <Image iconType="/res/icons/orange_bdot.gif"/>
                 </Property>
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>

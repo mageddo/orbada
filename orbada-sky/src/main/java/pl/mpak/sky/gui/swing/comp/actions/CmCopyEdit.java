@@ -38,7 +38,7 @@ public class CmCopyEdit extends Action {
     this.textComponent = textComponent;
     setText(Messages.getString("CmCopyEdit.text")); //$NON-NLS-1$
     if (icon == null) {
-      icon = pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/sky/res/copy.gif"); //$NON-NLS-1$
+      icon = pl.mpak.sky.gui.swing.ImageManager.getImage("/res/copy.gif"); //$NON-NLS-1$
     }
     setSmallIcon(icon);
     setShortCut(KeyEvent.VK_C, KeyEvent.CTRL_MASK);

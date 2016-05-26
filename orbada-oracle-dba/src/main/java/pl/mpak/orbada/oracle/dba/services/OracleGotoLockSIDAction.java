@@ -71,7 +71,7 @@ public class OracleGotoLockSIDAction extends ComponentActionProvider {
     
     setText(getDescription());
     setTooltip(stringManager.getString("OracleGotoLockSIDAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/lock.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/lock.gif"));
     setActionCommandKey("OracleGotoLockSIDAction");
     addActionListener(createActionListener());
     

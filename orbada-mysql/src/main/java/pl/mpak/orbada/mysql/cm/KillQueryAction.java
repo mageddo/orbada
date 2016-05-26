@@ -27,7 +27,7 @@ public class KillQueryAction extends ComponentAction {
   public KillQueryAction() {
     super();
     setActionCommandKey("KillQueryAction");
-    setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/stop-query.gif"))); // NOI18N
+    setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/stop-query.gif"))); // NOI18N
     setText(stringManager.getString("cmKillQuery-text")); // NOI18N
     setTooltip(stringManager.getString("cmKillQuery-hint")); // NOI18N
     addActionListener(createActionListener());

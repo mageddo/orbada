@@ -207,7 +207,7 @@ public class TableConstraintsPanel extends javax.swing.JPanel implements ITabObj
     jSeparator4 = new javax.swing.JToolBar.Separator();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -217,7 +217,7 @@ public class TableConstraintsPanel extends javax.swing.JPanel implements ITabObj
     });
 
     cmFilter.setActionCommandKey("cmFilter");
-    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/orbada/derbydb/res/icons/filter16.gif")); // NOI18N
+    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/filter16.gif")); // NOI18N
     cmFilter.setText(stringManager.getString("cmFilter-text")); // NOI18N
     cmFilter.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -226,7 +226,7 @@ public class TableConstraintsPanel extends javax.swing.JPanel implements ITabObj
     });
 
     cmDropConstraint.setActionCommandKey("cmDropConstraint");
-    cmDropConstraint.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDropConstraint.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDropConstraint.setText(stringManager.getString("TableConstraintsPanel-cmDropConstraint-text")); // NOI18N
     cmDropConstraint.setTooltip(stringManager.getString("TableConstraintsPanel-cmDropConstraint-hint")); // NOI18N
     cmDropConstraint.addActionListener(new java.awt.event.ActionListener() {
@@ -237,12 +237,12 @@ public class TableConstraintsPanel extends javax.swing.JPanel implements ITabObj
 
     cmSwitchEnabled.setActionCommandKey("cmSwitchEnabled");
     cmSwitchEnabled.setEnabled(false);
-    cmSwitchEnabled.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/enabled.gif")); // NOI18N
+    cmSwitchEnabled.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/enabled.gif")); // NOI18N
     cmSwitchEnabled.setText(stringManager.getString("TableConstraintsPanel-cmSwitchEnabled-text")); // NOI18N
     cmSwitchEnabled.setTooltip(stringManager.getString("TableConstraintsPanel-cmSwitchEnabled-hint")); // NOI18N
 
     cmColumnNotNull.setActionCommandKey("cmColumnNotNull");
-    cmColumnNotNull.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/lock16.gif")); // NOI18N
+    cmColumnNotNull.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/lock16.gif")); // NOI18N
     cmColumnNotNull.setText(stringManager.getString("TableConstraintsPanel-cmColumnNotNull-text")); // NOI18N
     cmColumnNotNull.setTooltip(stringManager.getString("TableConstraintsPanel-cmColumnNotNull-hint")); // NOI18N
     cmColumnNotNull.addActionListener(new java.awt.event.ActionListener() {
@@ -252,7 +252,7 @@ public class TableConstraintsPanel extends javax.swing.JPanel implements ITabObj
     });
 
     cmCreateConstraintCheck.setActionCommandKey("cmCreateConstraintCheck");
-    cmCreateConstraintCheck.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/verify_document_16.gif")); // NOI18N
+    cmCreateConstraintCheck.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/verify_document_16.gif")); // NOI18N
     cmCreateConstraintCheck.setText(stringManager.getString("TableConstraintsPanel-cmCreateConstraintCheck-text")); // NOI18N
     cmCreateConstraintCheck.setTooltip(stringManager.getString("TableConstraintsPanel-cmCreateConstraintCheck-hint")); // NOI18N
     cmCreateConstraintCheck.addActionListener(new java.awt.event.ActionListener() {
@@ -262,7 +262,7 @@ public class TableConstraintsPanel extends javax.swing.JPanel implements ITabObj
     });
 
     cmCreateConstraintFK.setActionCommandKey("cmCreateConstraintFK");
-    cmCreateConstraintFK.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/foreign_key16.gif")); // NOI18N
+    cmCreateConstraintFK.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/foreign_key16.gif")); // NOI18N
     cmCreateConstraintFK.setText(stringManager.getString("TableConstraintsPanel-cmCreateConstraintFK-text")); // NOI18N
     cmCreateConstraintFK.setTooltip(stringManager.getString("TableConstraintsPanel-cmCreateConstraintFK-hint")); // NOI18N
     cmCreateConstraintFK.addActionListener(new java.awt.event.ActionListener() {
@@ -272,7 +272,7 @@ public class TableConstraintsPanel extends javax.swing.JPanel implements ITabObj
     });
 
     cmCreateConstraintPrimaryKey.setActionCommandKey("cmCreateConstraintPrimaryKey");
-    cmCreateConstraintPrimaryKey.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/primary_key16.gif")); // NOI18N
+    cmCreateConstraintPrimaryKey.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/primary_key16.gif")); // NOI18N
     cmCreateConstraintPrimaryKey.setText(stringManager.getString("TableConstraintsPanel-cmCreateConstraintPrimaryKey-text")); // NOI18N
     cmCreateConstraintPrimaryKey.setTooltip(stringManager.getString("TableConstraintsPanel-cmCreateConstraintPrimaryKey-hint")); // NOI18N
     cmCreateConstraintPrimaryKey.addActionListener(new java.awt.event.ActionListener() {

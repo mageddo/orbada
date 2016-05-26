@@ -33,7 +33,7 @@ public class DancerPleaseWaitRenderer extends PleaseWaitRendererProvider {
   private Point lastMousePoint;
 
   public DancerPleaseWaitRenderer() {
-    waitImage = new ImageIcon(getClass().getResource("/pl/mpak/orbada/dancerpw/res/dancer.gif")).getImage();
+    waitImage = new ImageIcon(getClass().getResource("/res/dancer.gif")).getImage();
   }
 
   @Override

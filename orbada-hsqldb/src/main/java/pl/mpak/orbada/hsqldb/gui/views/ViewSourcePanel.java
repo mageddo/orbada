@@ -145,7 +145,7 @@ public class ViewSourcePanel extends javax.swing.JPanel implements ITabObjectInf
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
     syntaxViewSource = new OrbadaSyntaxTextArea();
 
-    cmRefreshSource.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefreshSource.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefreshSource.setText(stringManager.getString("cmRefreshSource-text")); // NOI18N
     cmRefreshSource.setTooltip(stringManager.getString("cmRefreshSource-hint")); // NOI18N
     cmRefreshSource.addActionListener(new java.awt.event.ActionListener() {
@@ -155,7 +155,7 @@ public class ViewSourcePanel extends javax.swing.JPanel implements ITabObjectInf
     });
 
     cmCompileView.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.CTRL_MASK));
-    cmCompileView.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/execute_script16.gif")); // NOI18N
+    cmCompileView.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/execute_script16.gif")); // NOI18N
     cmCompileView.setText(stringManager.getString("cmCompileView-text")); // NOI18N
     cmCompileView.setTooltip(stringManager.getString("cmCompileView-hint")); // NOI18N
     cmCompileView.addActionListener(new java.awt.event.ActionListener() {

@@ -28,7 +28,7 @@ public class AnalyzeTableAction extends ComponentAction {
   public AnalyzeTableAction() {
     super();
     setActionCommandKey("AnalyzeTableAction");
-    setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/analyze.gif"))); // NOI18N
+    setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/analyze.gif"))); // NOI18N
     setText(stringManager.getString("cmAnalyzeTable-text")); // NOI18N
     addActionListener(createActionListener());
   }

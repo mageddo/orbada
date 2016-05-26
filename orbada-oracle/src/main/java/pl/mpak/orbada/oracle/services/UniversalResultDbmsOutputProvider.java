@@ -24,7 +24,7 @@ public class UniversalResultDbmsOutputProvider extends UniversalActionProvider {
     }
     if (OrbadaOraclePlugin.oracleDriverType.equals(database.getDriverType())) {
       setText(stringManager.getString("UniversalResultDbmsOutputProvider-text"));
-      setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/output.gif"));
+      setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/output.gif"));
       setActionCommandKey("UniversalResultDbmsOutputProvider");
       addActionListener(createActionListener());
       return true;

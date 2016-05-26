@@ -203,7 +203,7 @@ public class LastChangesDialog extends javax.swing.JDialog {
 
     cmSearch.setActionCommandKey("cmSearch");
     cmSearch.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.CTRL_MASK));
-    cmSearch.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/find_object16.gif"))); // NOI18N
+    cmSearch.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/find_object16.gif"))); // NOI18N
     cmSearch.setText(stringManager.getString("cmSearch-text")); // NOI18N
     cmSearch.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

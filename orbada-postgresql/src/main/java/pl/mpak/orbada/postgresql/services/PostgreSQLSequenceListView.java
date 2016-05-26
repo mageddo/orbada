@@ -35,7 +35,7 @@ public class PostgreSQLSequenceListView extends ViewProvider {
   
   @Override
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/sequence.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/sequence.gif");
   }
 
   @Override

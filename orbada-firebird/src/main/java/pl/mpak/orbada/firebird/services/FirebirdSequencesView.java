@@ -36,7 +36,7 @@ public class FirebirdSequencesView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/sequence.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/sequence.gif");
   }
 
   public boolean isForDatabase(Database database) {

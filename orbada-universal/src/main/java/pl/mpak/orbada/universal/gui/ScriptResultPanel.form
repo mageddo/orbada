@@ -6,7 +6,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmClearContent"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/clear.gif"/>
+          <Image iconType="/res/icons/clear.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmClearContent-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -20,7 +20,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmSaveToFile"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/save16.gif"/>
+          <Image iconType="/res/icons/save16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmSaveToFile-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -35,7 +35,7 @@
         <Property name="actionCommandKey" type="java.lang.String" value="cmCancelScript"/>
         <Property name="enabled" type="boolean" value="false"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/cancel.gif"/>
+          <Image iconType="/res/icons/cancel.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmCancelScript-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -52,7 +52,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmGotoNextError"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/next_error.gif"/>
+          <Image iconType="/res/icons/next_error.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmGotoNextError-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -66,7 +66,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmGotoPrevError"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/prev_error.gif"/>
+          <Image iconType="/res/icons/prev_error.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmGotoPrevError-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -79,7 +79,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmCopyErrorToClipboard">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/copy-error.gif"/>
+          <Image iconType="/res/icons/copy-error.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/universal/i18n.properties" key="cmCopyErrorToClipboard-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

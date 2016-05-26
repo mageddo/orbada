@@ -1,14 +1,13 @@
 package pl.mpak.sky.gui.swing;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.Insets;
-
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.Icon;
 import javax.swing.JLabel;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.Insets;
 
 import pl.mpak.sky.gui.swing.comp.ToolButton;
 
@@ -85,7 +84,7 @@ public class TabCloseComponent extends Box {
       buttonBox.setVisible(false);
     }
     if (button.getIcon() == null) {
-      button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/sky/res/close10.gif")));
+      button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/res/close10.gif")));
     }
   }
 

@@ -155,7 +155,7 @@ public abstract class UniversalPropDetailsTab extends javax.swing.JPanel impleme
         panel = new javax.swing.JPanel();
         statusStatus = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
 
-        cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+        cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
         cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
         cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
         cmRefresh.addActionListener(new java.awt.event.ActionListener() {

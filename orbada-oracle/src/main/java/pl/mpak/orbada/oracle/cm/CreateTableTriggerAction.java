@@ -29,7 +29,7 @@ public class CreateTableTriggerAction extends Action {
   public CreateTableTriggerAction(Database database) {
     super();
     setText(stringManager.getString("CreateTableTriggerAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trigger.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trigger.gif"));
     setTooltip(stringManager.getString("CreateTableTriggerAction-hint"));
     setActionCommandKey("CreateTableTriggerAction");
     addActionListener(createActionListener());

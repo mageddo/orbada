@@ -29,7 +29,7 @@ public class CreateJavaSourceAction extends Action {
   public CreateJavaSourceAction(Database database) {
     super();
     setText(stringManager.getString("CreateJavaSourceAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/java_source.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/java_source.gif"));
     setTooltip(stringManager.getString("CreateJavaSourceAction-hint"));
     setActionCommandKey("CreateJavaSourceAction");
     addActionListener(createActionListener());

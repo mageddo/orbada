@@ -35,7 +35,7 @@ public class AlterUserSchemaWizardAction extends Action {
     setText(stringManager.getString("AlterUserSchemaWizardAction-text"));
     this.database = database;
     setActionCommandKey("AlterUserSchemaWizardAction");
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/edit_user.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/edit_user.gif"));
     addActionListener(createActionListener());
   }
 

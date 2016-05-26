@@ -36,7 +36,7 @@ public class OracleTablesView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/table.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/table.gif");
   }
 
   public boolean isForDatabase(Database database) {

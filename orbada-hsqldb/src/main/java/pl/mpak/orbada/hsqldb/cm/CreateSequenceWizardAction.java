@@ -35,7 +35,7 @@ public class CreateSequenceWizardAction extends Action {
     setText(stringManager.getString("CreateSequenceWizardAction-text"));
     this.database = database;
     setActionCommandKey("CreateSequenceWizardAction");
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/sequence.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/sequence.gif"));
     addActionListener(createActionListener());
   }
 

@@ -176,7 +176,7 @@ public class DomainsPanelView extends javax.swing.JPanel implements IRootTabObje
     toolButton3 = new pl.mpak.sky.gui.swing.comp.ToolButton();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -193,7 +193,7 @@ public class DomainsPanelView extends javax.swing.JPanel implements IRootTabObje
       }
     });
 
-    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/users16.gif")); // NOI18N
+    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/users16.gif")); // NOI18N
     cmSelectSchema.setText(stringManager.getString("cmSelectSchema-text")); // NOI18N
     cmSelectSchema.setTooltip(stringManager.getString("cmSelectSchema-hint")); // NOI18N
     cmSelectSchema.addActionListener(new java.awt.event.ActionListener() {
@@ -210,7 +210,7 @@ public class DomainsPanelView extends javax.swing.JPanel implements IRootTabObje
     menuActions.add(menuDropSequence);
 
     cmDropDomain.setActionCommandKey("cmDropDomain");
-    cmDropDomain.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDropDomain.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDropDomain.setText(stringManager.getString("DomainsPanelView-cmDropDomain-text")); // NOI18N
     cmDropDomain.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -219,7 +219,7 @@ public class DomainsPanelView extends javax.swing.JPanel implements IRootTabObje
     });
 
     cmComment.setActionCommandKey("cmComment");
-    cmComment.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/comment_edit.gif")); // NOI18N
+    cmComment.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/comment_edit.gif")); // NOI18N
     cmComment.setText(stringManager.getString("cmComment-text")); // NOI18N
     cmComment.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -228,7 +228,7 @@ public class DomainsPanelView extends javax.swing.JPanel implements IRootTabObje
     });
 
     cmCreateDomain.setActionCommandKey("cmCreateDomain");
-    cmCreateDomain.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/domain.gif")); // NOI18N
+    cmCreateDomain.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/domain.gif")); // NOI18N
     cmCreateDomain.setText(stringManager.getString("DomainsPanelView-cmCreateDomain-text")); // NOI18N
     cmCreateDomain.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

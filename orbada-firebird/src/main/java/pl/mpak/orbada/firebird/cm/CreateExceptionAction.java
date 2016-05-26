@@ -28,7 +28,7 @@ public class CreateExceptionAction extends Action {
   public CreateExceptionAction(Database database) {
     super();
     setText(stringManager.getString("CreateExceptionAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/exception.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/exception.gif"));
     setTooltip(stringManager.getString("CreateExceptionAction-hint"));
     setActionCommandKey("CreateExceptionAction");
     addActionListener(createActionListener());

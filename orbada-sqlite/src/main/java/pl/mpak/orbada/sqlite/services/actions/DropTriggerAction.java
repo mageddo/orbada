@@ -74,7 +74,7 @@ public class DropTriggerAction extends ComponentActionProvider {
     
     setText(getDescription());
     setTooltip(stringManager.getString("DropTriggerAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif"));
     setActionCommandKey("DropTriggerAction");
     addActionListener(createActionListener());
     

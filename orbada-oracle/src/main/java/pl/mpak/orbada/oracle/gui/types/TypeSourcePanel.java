@@ -65,7 +65,7 @@ public class TypeSourcePanel extends javax.swing.JPanel implements ITabObjectInf
     syntaxSource.setDatabase(getDatabase());
     syntaxSource.setStructureParser(new OraclePlSqlStructureParser());
     SwingUtil.addAction(syntaxSource.getEditorArea(), cmStore);
-    errIcon = pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/stop10.gif");
+    errIcon = pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/stop10.gif");
     errorSettings = accesibilities.getApplication().getSettings(OracleCompileErrorSettingsProvider.settingsName);
     new ComponentActionsAction(getDatabase(), syntaxSource.getEditorArea(), buttonActions, menuActions, "oracle-type-source-actions");
     SwingUtil.addAction(syntaxSource.getEditorArea(), new PageUpAction(this));
@@ -151,7 +151,7 @@ public class TypeSourcePanel extends javax.swing.JPanel implements ITabObjectInf
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
     syntaxSource = new OrbadaSyntaxTextArea();
 
-    cmRefreshSource.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefreshSource.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefreshSource.setText(stringManager.getString("cmRefreshSource-text")); // NOI18N
     cmRefreshSource.setTooltip(stringManager.getString("cmRefreshSource-hint")); // NOI18N
     cmRefreshSource.addActionListener(new java.awt.event.ActionListener() {
@@ -162,7 +162,7 @@ public class TypeSourcePanel extends javax.swing.JPanel implements ITabObjectInf
 
     cmStore.setActionCommandKey("cmStore");
     cmStore.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.CTRL_MASK));
-    cmStore.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/store_db.gif")); // NOI18N
+    cmStore.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/store_db.gif")); // NOI18N
     cmStore.setText(stringManager.getString("cmStore-text")); // NOI18N
     cmStore.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

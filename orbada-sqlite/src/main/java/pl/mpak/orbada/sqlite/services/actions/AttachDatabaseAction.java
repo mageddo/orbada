@@ -61,7 +61,7 @@ public class AttachDatabaseAction extends ComponentActionProvider {
   private void setProperties() {
     setText(getDescription());
     setTooltip(stringManager.getString("AttachDatabaseAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_attach.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_attach.gif"));
     setActionCommandKey("AttachDatabaseAction");
     addActionListener(createActionListener());
   }

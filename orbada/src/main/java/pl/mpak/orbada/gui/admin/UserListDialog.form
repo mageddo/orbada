@@ -19,7 +19,7 @@
       <Properties>
         <Property name="enabled" type="boolean" value="false"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/new16.gif"/>
+          <Image iconType="/res/icons/new16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="cmNew-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -33,7 +33,7 @@
       <Properties>
         <Property name="enabled" type="boolean" value="false"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/edit16.gif"/>
+          <Image iconType="/res/icons/edit16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="cmEdit-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -47,7 +47,7 @@
       <Properties>
         <Property name="enabled" type="boolean" value="false"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/trash.gif"/>
+          <Image iconType="/res/icons/trash.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="cmDelete-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -94,7 +94,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmExport"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/export.gif"/>
+          <Image iconType="/res/icons/export.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="UserListDialog-cmExport-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -112,7 +112,7 @@
         <Property name="actionCommandKey" type="java.lang.String" value="cmImport"/>
         <Property name="enabled" type="boolean" value="false"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/import.gif"/>
+          <Image iconType="/res/icons/import.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="UserListDialog-cmImport-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

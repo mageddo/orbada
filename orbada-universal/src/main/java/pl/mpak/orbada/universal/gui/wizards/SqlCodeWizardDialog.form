@@ -30,7 +30,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmScriptInfo">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/help.gif"/>
+          <Image iconType="/res/icons/help.gif"/>
         </Property>
       </Properties>
       <Events>

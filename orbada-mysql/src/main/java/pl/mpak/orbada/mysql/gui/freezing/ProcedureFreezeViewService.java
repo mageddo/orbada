@@ -29,7 +29,7 @@ public class ProcedureFreezeViewService extends FreezeViewService {
 
   @Override
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/procedure.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/procedure.gif");
   }
 
   public String getDescription() {

@@ -104,7 +104,7 @@ public class WelcomeViewPanel extends javax.swing.JPanel {
     jLabel7 = new javax.swing.JLabel();
 
     cmSettingsApperance.setActionCommandKey("cmSettingsApperance");
-    cmSettingsApperance.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/visual_props.gif")); // NOI18N
+    cmSettingsApperance.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/visual_props.gif")); // NOI18N
     cmSettingsApperance.setText(stringManager.getString("settings-text")); // NOI18N
     cmSettingsApperance.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,7 +113,7 @@ public class WelcomeViewPanel extends javax.swing.JPanel {
     });
 
     cmSettingsDataSettings.setActionCommandKey("cmSettingsDataSettings");
-    cmSettingsDataSettings.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/visual_props.gif")); // NOI18N
+    cmSettingsDataSettings.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/visual_props.gif")); // NOI18N
     cmSettingsDataSettings.setText(stringManager.getString("settings-text")); // NOI18N
     cmSettingsDataSettings.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -122,7 +122,7 @@ public class WelcomeViewPanel extends javax.swing.JPanel {
     });
 
     cmDrivers.setActionCommandKey("cmDrivers");
-    cmDrivers.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/driverproperties.gif")); // NOI18N
+    cmDrivers.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/driverproperties.gif")); // NOI18N
     cmDrivers.setText(stringManager.getString("cmDrivers-text")); // NOI18N
     cmDrivers.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -131,7 +131,7 @@ public class WelcomeViewPanel extends javax.swing.JPanel {
     });
 
     cmNewConnection.setActionCommandKey("cmNewConnection");
-    cmNewConnection.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/connection.gif")); // NOI18N
+    cmNewConnection.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/connection.gif")); // NOI18N
     cmNewConnection.setText(stringManager.getString("cmNewConnection-text")); // NOI18N
     cmNewConnection.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -148,7 +148,7 @@ public class WelcomeViewPanel extends javax.swing.JPanel {
     });
 
     cmSettingsProxy.setActionCommandKey("cmSettingsProxy");
-    cmSettingsProxy.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/visual_props.gif")); // NOI18N
+    cmSettingsProxy.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/visual_props.gif")); // NOI18N
     cmSettingsProxy.setText(stringManager.getString("settings-text")); // NOI18N
     cmSettingsProxy.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -223,7 +223,7 @@ public class WelcomeViewPanel extends javax.swing.JPanel {
     jPanel3.setOpaque(false);
 
     buttonSettingsDataFormat.setAction(cmSettingsDataSettings);
-    buttonSettingsDataFormat.setIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/visual_props.gif")); // NOI18N
+    buttonSettingsDataFormat.setIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/visual_props.gif")); // NOI18N
     buttonSettingsDataFormat.setPreferredSize(new java.awt.Dimension(110, 34));
 
     jLabel3.setText(stringManager.getString("WelcomeViewPanel-settings-datatype-label")); // NOI18N
@@ -255,7 +255,7 @@ public class WelcomeViewPanel extends javax.swing.JPanel {
     jPanel8.setOpaque(false);
 
     buttonSettingsDataFormat2.setAction(cmSettingsProxy);
-    buttonSettingsDataFormat2.setIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/visual_props.gif")); // NOI18N
+    buttonSettingsDataFormat2.setIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/visual_props.gif")); // NOI18N
     buttonSettingsDataFormat2.setPreferredSize(new java.awt.Dimension(110, 34));
 
     jLabel8.setText(stringManager.getString("WelcomeViewPanel-settings-proxy-label")); // NOI18N
@@ -318,7 +318,7 @@ public class WelcomeViewPanel extends javax.swing.JPanel {
     jPanel5.setOpaque(false);
 
     buttonSettingsDataFormat1.setAction(cmNewConnection);
-    buttonSettingsDataFormat1.setIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/visual_props.gif")); // NOI18N
+    buttonSettingsDataFormat1.setIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/visual_props.gif")); // NOI18N
     buttonSettingsDataFormat1.setPreferredSize(new java.awt.Dimension(110, 34));
 
     jLabel5.setText(stringManager.getString("WelcomeViewPanel-connection-schema-label")); // NOI18N

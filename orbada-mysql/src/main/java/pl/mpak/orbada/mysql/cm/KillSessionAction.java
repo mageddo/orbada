@@ -27,7 +27,7 @@ public class KillSessionAction extends ComponentAction {
   public KillSessionAction() {
     super();
     setActionCommandKey("KillSessionAction");
-    setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/stop16.gif"))); // NOI18N
+    setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/stop16.gif"))); // NOI18N
     setText(stringManager.getString("cmKillSession-text")); // NOI18N
     addActionListener(createActionListener());
   }

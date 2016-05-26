@@ -26,7 +26,7 @@ public class DerbyDbStatisticsService extends UniversalActionProvider {
     setShortCut(KeyEvent.VK_T, KeyEvent.CTRL_MASK);
     setText(stringManager.getString("DerbyDbStatisticsService-text"));
     setTooltip("<html>" +getText() +"<br>\n" +stringManager.getString("DerbyDbStatisticsService-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/autotrace.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/autotrace.gif"));
     setActionCommandKey("cmDerbyDbStatisticsService");
     addActionListener(createActionListener());
   }

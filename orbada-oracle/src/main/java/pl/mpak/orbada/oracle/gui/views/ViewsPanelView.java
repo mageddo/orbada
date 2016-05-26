@@ -287,7 +287,7 @@ public class ViewsPanelView extends javax.swing.JPanel implements IRootTabObject
     jScrollPane2 = new javax.swing.JScrollPane();
     textRemarks = new pl.mpak.sky.gui.swing.comp.TextArea();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -296,7 +296,7 @@ public class ViewsPanelView extends javax.swing.JPanel implements IRootTabObject
       }
     });
 
-    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/users16.gif")); // NOI18N
+    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/users16.gif")); // NOI18N
     cmSelectSchema.setText(stringManager.getString("cmSelectSchema-text")); // NOI18N
     cmSelectSchema.setTooltip(stringManager.getString("cmSelectSchema-hint")); // NOI18N
     cmSelectSchema.addActionListener(new java.awt.event.ActionListener() {
@@ -306,7 +306,7 @@ public class ViewsPanelView extends javax.swing.JPanel implements IRootTabObject
     });
 
     cmFilter.setActionCommandKey("cmFilter");
-    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/filter16.gif")); // NOI18N
+    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/filter16.gif")); // NOI18N
     cmFilter.setText(stringManager.getString("cmFilter-text")); // NOI18N
     cmFilter.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -315,7 +315,7 @@ public class ViewsPanelView extends javax.swing.JPanel implements IRootTabObject
     });
 
     cmDropView.setActionCommandKey("cmDropView");
-    cmDropView.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDropView.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDropView.setText(stringManager.getString("cmDropView-text")); // NOI18N
     cmDropView.setTooltip(stringManager.getString("cmDropView-hint")); // NOI18N
     cmDropView.addActionListener(new java.awt.event.ActionListener() {
@@ -342,7 +342,7 @@ public class ViewsPanelView extends javax.swing.JPanel implements IRootTabObject
     menuActions.add(menuDropView);
 
     cmComment.setActionCommandKey("cmComment");
-    cmComment.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/comment_edit.gif")); // NOI18N
+    cmComment.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/comment_edit.gif")); // NOI18N
     cmComment.setText(stringManager.getString("cmComment-text")); // NOI18N
     cmComment.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -351,7 +351,7 @@ public class ViewsPanelView extends javax.swing.JPanel implements IRootTabObject
     });
 
     cmRecordCount.setActionCommandKey("cmRecordCount");
-    cmRecordCount.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/counts.gif")); // NOI18N
+    cmRecordCount.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/counts.gif")); // NOI18N
     cmRecordCount.setText(stringManager.getString("cmRecordCount-text")); // NOI18N
     cmRecordCount.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -377,7 +377,7 @@ public class ViewsPanelView extends javax.swing.JPanel implements IRootTabObject
 
     cmFreezeObject.setActionCommandKey("cmFreezeObject");
     cmFreezeObject.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F3, 0));
-    cmFreezeObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/freeze.gif")); // NOI18N
+    cmFreezeObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/freeze.gif")); // NOI18N
     cmFreezeObject.setText(stringManager.getString("cmFreezeObject-text")); // NOI18N
     cmFreezeObject.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -387,7 +387,7 @@ public class ViewsPanelView extends javax.swing.JPanel implements IRootTabObject
 
     cmCompile.setActionCommandKey("cmCompile");
     cmCompile.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.CTRL_MASK));
-    cmCompile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_sql_execute16.gif")); // NOI18N
+    cmCompile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_sql_execute16.gif")); // NOI18N
     cmCompile.setText(stringManager.getString("cmCompile-text")); // NOI18N
     cmCompile.setTooltip(stringManager.getString("cmCompile-hint")); // NOI18N
     cmCompile.addActionListener(new java.awt.event.ActionListener() {

@@ -79,7 +79,7 @@ public class FreezeAction extends ComponentActionProvider {
 
     setText(getDescription());
     setTooltip(stringManager.getString("FreezeAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/freeze.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/freeze.gif"));
     setShortCut(KeyEvent.VK_F3, 0);
     setActionCommandKey("FreezeAction");
     addActionListener(createActionListener());

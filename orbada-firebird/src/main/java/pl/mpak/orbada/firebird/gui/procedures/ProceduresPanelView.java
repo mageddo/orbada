@@ -237,7 +237,7 @@ public class ProceduresPanelView extends javax.swing.JPanel implements IRootTabO
     jPanel2 = new javax.swing.JPanel();
     statusBarTables = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -246,7 +246,7 @@ public class ProceduresPanelView extends javax.swing.JPanel implements IRootTabO
       }
     });
 
-    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/users16.gif")); // NOI18N
+    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/users16.gif")); // NOI18N
     cmSelectSchema.setText(stringManager.getString("cmSelectSchema-text")); // NOI18N
     cmSelectSchema.setTooltip(stringManager.getString("cmSelectSchema-hint")); // NOI18N
     cmSelectSchema.addActionListener(new java.awt.event.ActionListener() {
@@ -256,7 +256,7 @@ public class ProceduresPanelView extends javax.swing.JPanel implements IRootTabO
     });
 
     cmFilter.setActionCommandKey("cmFilter");
-    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/filter16.gif")); // NOI18N
+    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/filter16.gif")); // NOI18N
     cmFilter.setText(stringManager.getString("cmFilter-text")); // NOI18N
     cmFilter.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -275,7 +275,7 @@ public class ProceduresPanelView extends javax.swing.JPanel implements IRootTabO
     menuActions.add(menuDropTrigger);
 
     cmDropProcedure.setActionCommandKey("cmDropProcedure");
-    cmDropProcedure.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDropProcedure.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDropProcedure.setText(stringManager.getString("ProceduresPanelView-cmDropProcedure-text")); // NOI18N
     cmDropProcedure.setTooltip(stringManager.getString("ProceduresPanelView-cmDropProcedure-hint")); // NOI18N
     cmDropProcedure.addActionListener(new java.awt.event.ActionListener() {
@@ -285,7 +285,7 @@ public class ProceduresPanelView extends javax.swing.JPanel implements IRootTabO
     });
 
     cmFreezeObject.setActionCommandKey("cmFreezeObject");
-    cmFreezeObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/freeze.gif")); // NOI18N
+    cmFreezeObject.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/freeze.gif")); // NOI18N
     cmFreezeObject.setText(stringManager.getString("cmFreezeObject-text")); // NOI18N
     cmFreezeObject.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -294,7 +294,7 @@ public class ProceduresPanelView extends javax.swing.JPanel implements IRootTabO
     });
 
     cmComment.setActionCommandKey("cmComment");
-    cmComment.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/comment_edit.gif")); // NOI18N
+    cmComment.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/comment_edit.gif")); // NOI18N
     cmComment.setText(stringManager.getString("cmComment-text")); // NOI18N
     cmComment.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -303,7 +303,7 @@ public class ProceduresPanelView extends javax.swing.JPanel implements IRootTabO
     });
 
     cmCreateProcedure.setActionCommandKey("cmCreateProcedure");
-    cmCreateProcedure.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/procedure.gif")); // NOI18N
+    cmCreateProcedure.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/procedure.gif")); // NOI18N
     cmCreateProcedure.setText(stringManager.getString("ProceduresPanelView-cmCreateProcedure-text")); // NOI18N
     cmCreateProcedure.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

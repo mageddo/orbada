@@ -31,7 +31,7 @@ public class OracleAutotraceProvider extends UniversalActionProvider {
       setShortCut(KeyEvent.VK_T, KeyEvent.CTRL_MASK);
       setText(stringManager.getString("OracleAutotraceProvider-text"));
       setTooltip("<html>" +getText() +"<br>\n" +stringManager.getString("OracleAutotraceProvider-hint"));
-      setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/autotrace.gif"));
+      setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/autotrace.gif"));
       setActionCommandKey("OracleAutotraceProvider");
       addActionListener(createActionListener());
       if (!StringUtil.toBoolean(database.getUserProperties().getProperty("autotrace", "false"))) {

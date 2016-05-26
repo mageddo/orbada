@@ -40,7 +40,7 @@ public class TodoView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/tasks16.gif"));
+    return new javax.swing.ImageIcon(getClass().getResource("/res/icons/tasks16.gif"));
   }
 
   public boolean isForDatabase(Database database) {

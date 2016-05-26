@@ -45,7 +45,7 @@ public class OracleCreateDatabaseTriggerAction extends ComponentActionProvider {
     }
 
     setText(getDescription());
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trigger.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trigger.gif"));
     setTooltip(stringManager.getString("OracleCreateDatabaseTriggerAction-hint"));
     setActionCommandKey("OracleCreateDatabaseTriggerAction");
     addActionListener(createActionListener());

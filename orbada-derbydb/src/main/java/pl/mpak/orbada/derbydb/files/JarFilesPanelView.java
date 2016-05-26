@@ -189,7 +189,7 @@ public class JarFilesPanelView extends javax.swing.JPanel implements IRootTabObj
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
 
     cmRefreshFiles.setActionCommandKey("cmRefreshFiles");
-    cmRefreshFiles.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefreshFiles.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefreshFiles.setText(stringManager.getString("JarFilesPanelView-cmRefreshFiles-text")); // NOI18N
     cmRefreshFiles.setTooltip(stringManager.getString("JarFilesPanelView-cmRefreshFiles-hint")); // NOI18N
     cmRefreshFiles.addActionListener(new java.awt.event.ActionListener() {
@@ -198,7 +198,7 @@ public class JarFilesPanelView extends javax.swing.JPanel implements IRootTabObj
       }
     });
 
-    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/users16.gif")); // NOI18N
+    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/users16.gif")); // NOI18N
     cmSelectSchema.setText(stringManager.getString("cmSelectSchema-text")); // NOI18N
     cmSelectSchema.setTooltip(stringManager.getString("cmSelectSchema-hint")); // NOI18N
     cmSelectSchema.addActionListener(new java.awt.event.ActionListener() {
@@ -208,7 +208,7 @@ public class JarFilesPanelView extends javax.swing.JPanel implements IRootTabObj
     });
 
     cmFilter.setActionCommandKey("cmFilter");
-    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/filter16.gif")); // NOI18N
+    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/filter16.gif")); // NOI18N
     cmFilter.setText(stringManager.getString("cmFilter-text")); // NOI18N
     cmFilter.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -217,7 +217,7 @@ public class JarFilesPanelView extends javax.swing.JPanel implements IRootTabObj
     });
 
     cmRemoveFile.setActionCommandKey("cmRemoveFile");
-    cmRemoveFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmRemoveFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmRemoveFile.setText(stringManager.getString("JarFilesPanelView-cmRemoveFile-text")); // NOI18N
     cmRemoveFile.setTooltip(stringManager.getString("JarFilesPanelView-cmRemoveFile-hint")); // NOI18N
     cmRemoveFile.addActionListener(new java.awt.event.ActionListener() {
@@ -227,7 +227,7 @@ public class JarFilesPanelView extends javax.swing.JPanel implements IRootTabObj
     });
 
     cmAddFile.setActionCommandKey("cmAddFile");
-    cmAddFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/new_package.gif")); // NOI18N
+    cmAddFile.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/new_package.gif")); // NOI18N
     cmAddFile.setText(stringManager.getString("JarFilesPanelView-cmAddFile-text")); // NOI18N
     cmAddFile.setTooltip(stringManager.getString("JarFilesPanelView-cmAddFile-hint")); // NOI18N
     cmAddFile.addActionListener(new java.awt.event.ActionListener() {

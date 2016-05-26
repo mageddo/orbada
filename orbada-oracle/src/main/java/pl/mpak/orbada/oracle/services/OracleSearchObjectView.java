@@ -36,7 +36,7 @@ public class OracleSearchObjectView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/find_object16.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/find_object16.gif");
   }
 
   public boolean isForDatabase(Database database) {

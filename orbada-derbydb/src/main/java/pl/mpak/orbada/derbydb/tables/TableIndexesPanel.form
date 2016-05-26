@@ -5,7 +5,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmRefresh">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/refresh16.gif"/>
+          <Image iconType="/res/icons/refresh16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/derbydb/i18n.properties" key="cmRefresh-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -22,7 +22,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmFilter"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/orbada/derbydb/res/icons/filter16.gif"/>
+          <Image iconType="/res/icons/filter16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/derbydb/i18n.properties" key="cmFilter-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -36,7 +36,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmDropIndex"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/trash.gif"/>
+          <Image iconType="/res/icons/trash.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/derbydb/i18n.properties" key="TableIndexesPanel-cmDropIndex-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -53,7 +53,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmCreateIndex"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/create_index16.gif"/>
+          <Image iconType="/res/icons/create_index16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/derbydb/i18n.properties" key="TableIndexesPanel-cmCreateIndex-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

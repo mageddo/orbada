@@ -30,7 +30,7 @@ public class DropTableAction extends ComponentAction {
     super();
     setText(stringManager.getString("DropTableAction-description"));
     setTooltip(stringManager.getString("DropTableAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif"));
     setActionCommandKey("DropTableAction");
     addActionListener(createActionListener());
   }

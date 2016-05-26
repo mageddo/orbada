@@ -38,7 +38,7 @@ public class OracleTuneSqlPlanView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/explain_plan.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/explain_plan.gif");
   }
 
   public boolean isForDatabase(Database database) {

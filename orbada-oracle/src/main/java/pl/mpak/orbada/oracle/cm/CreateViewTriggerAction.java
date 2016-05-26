@@ -29,7 +29,7 @@ public class CreateViewTriggerAction extends Action {
   public CreateViewTriggerAction(Database database) {
     super();
     setText(stringManager.getString("CreateViewTriggerAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trigger.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trigger.gif"));
     setTooltip(stringManager.getString("CreateViewTriggerAction-hint"));
     setActionCommandKey("CreateViewTriggerAction");
     addActionListener(createActionListener());

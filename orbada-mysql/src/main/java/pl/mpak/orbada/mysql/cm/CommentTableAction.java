@@ -31,7 +31,7 @@ public class CommentTableAction extends ComponentAction {
     super();
     setText(stringManager.getString("CommentTableAction-text"));
     setTooltip(stringManager.getString("CommentTableAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/comment_edit.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/comment_edit.gif"));
     setActionCommandKey("CommentTableAction");
     addActionListener(createActionListener());
   }

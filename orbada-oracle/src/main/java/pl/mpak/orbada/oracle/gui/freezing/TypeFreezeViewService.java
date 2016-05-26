@@ -34,7 +34,7 @@ public class TypeFreezeViewService extends FreezeViewService {
 
   @Override
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/type.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/type.gif");
   }
 
 }

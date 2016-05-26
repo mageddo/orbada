@@ -29,7 +29,7 @@ public class CreateDbLinkAction extends Action {
   public CreateDbLinkAction(Database database) {
     super();
     setText(stringManager.getString("CreateDbLinkAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_link.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_link.gif"));
     setTooltip(stringManager.getString("CreateDbLinkAction-hint"));
     setActionCommandKey("CreateDbLinkAction");
     addActionListener(createActionListener());

@@ -245,7 +245,7 @@ public class TodoPanelView extends javax.swing.JPanel implements Closeable {
     queryTableStatusBar1 = new pl.mpak.usedb.gui.swing.QueryTableStatusBar();
 
     cmNewTask.setActionCommandKey("cmNewTask");
-    cmNewTask.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/new16.gif"))); // NOI18N
+    cmNewTask.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/new16.gif"))); // NOI18N
     cmNewTask.setText(stringManager.getString("cmNewTask-text")); // NOI18N
     cmNewTask.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -254,7 +254,7 @@ public class TodoPanelView extends javax.swing.JPanel implements Closeable {
     });
 
     cmEditTask.setActionCommandKey("cmEditTask");
-    cmEditTask.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/edit16.gif"))); // NOI18N
+    cmEditTask.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/edit16.gif"))); // NOI18N
     cmEditTask.setText(stringManager.getString("cmEditTask-text")); // NOI18N
     cmEditTask.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -263,7 +263,7 @@ public class TodoPanelView extends javax.swing.JPanel implements Closeable {
     });
 
     cmDeleteTask.setActionCommandKey("cmDeleteTask");
-    cmDeleteTask.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/trash.gif"))); // NOI18N
+    cmDeleteTask.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/trash.gif"))); // NOI18N
     cmDeleteTask.setText(stringManager.getString("cmDeleteTask-text")); // NOI18N
     cmDeleteTask.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -272,7 +272,7 @@ public class TodoPanelView extends javax.swing.JPanel implements Closeable {
     });
 
     cmSwitchEnableTask.setActionCommandKey("cmSwitchEnable");
-    cmSwitchEnableTask.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/enabled.gif"))); // NOI18N
+    cmSwitchEnableTask.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/enabled.gif"))); // NOI18N
     cmSwitchEnableTask.setText(stringManager.getString("cmSwitchEnableTask-text")); // NOI18N
     cmSwitchEnableTask.setTooltip(stringManager.getString("cmSwitchEnableTask-hint")); // NOI18N
     cmSwitchEnableTask.addActionListener(new java.awt.event.ActionListener() {
@@ -282,7 +282,7 @@ public class TodoPanelView extends javax.swing.JPanel implements Closeable {
     });
 
     cmRefresh.setActionCommandKey("cmRefresh");
-    cmRefresh.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/refresh16.gif"))); // NOI18N
+    cmRefresh.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/refresh16.gif"))); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -316,7 +316,7 @@ public class TodoPanelView extends javax.swing.JPanel implements Closeable {
     menuTodo.add(menuDelete);
 
     cmIncPriority.setActionCommandKey("cmIncPriority");
-    cmIncPriority.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/arrowup.gif"))); // NOI18N
+    cmIncPriority.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/arrowup.gif"))); // NOI18N
     cmIncPriority.setText(stringManager.getString("cmIncPriority-text")); // NOI18N
     cmIncPriority.setTooltip(stringManager.getString("cmIncPriority-hint")); // NOI18N
     cmIncPriority.addActionListener(new java.awt.event.ActionListener() {
@@ -326,7 +326,7 @@ public class TodoPanelView extends javax.swing.JPanel implements Closeable {
     });
 
     cmDecPriority.setActionCommandKey("cmDecPriority");
-    cmDecPriority.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/arrowdown.gif"))); // NOI18N
+    cmDecPriority.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/arrowdown.gif"))); // NOI18N
     cmDecPriority.setText(stringManager.getString("cmDecPriority-text")); // NOI18N
     cmDecPriority.setTooltip(stringManager.getString("cmDecPriority-hint")); // NOI18N
     cmDecPriority.addActionListener(new java.awt.event.ActionListener() {
@@ -335,7 +335,7 @@ public class TodoPanelView extends javax.swing.JPanel implements Closeable {
       }
     });
 
-    cmExportTodo.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/export_table16.gif"))); // NOI18N
+    cmExportTodo.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/export_table16.gif"))); // NOI18N
     cmExportTodo.setText(stringManager.getString("cmExportTodo-text")); // NOI18N
     cmExportTodo.setTooltip(stringManager.getString("cmExportTodo-hint")); // NOI18N
     cmExportTodo.addActionListener(new java.awt.event.ActionListener() {
@@ -344,7 +344,7 @@ public class TodoPanelView extends javax.swing.JPanel implements Closeable {
       }
     });
 
-    cmImportTodo.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/import_table16.gif"))); // NOI18N
+    cmImportTodo.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/import_table16.gif"))); // NOI18N
     cmImportTodo.setText(stringManager.getString("cmImportTodo-text")); // NOI18N
     cmImportTodo.setTooltip(stringManager.getString("cmImportTodo-hint")); // NOI18N
     cmImportTodo.addActionListener(new java.awt.event.ActionListener() {

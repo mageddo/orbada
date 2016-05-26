@@ -35,7 +35,7 @@ public class CreateConstraintCheckWizardAction extends Action {
     setText(stringManager.getString("CreateConstraintCheckWizardAction-text"));
     this.database = database;
     setActionCommandKey("CreateConstraintCheckWizardAction");
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/verify_document_16.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/verify_document_16.gif"));
     addActionListener(createActionListener());
   }
 

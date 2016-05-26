@@ -28,7 +28,7 @@ public class OptimizeTableAction extends ComponentAction {
   public OptimizeTableAction() {
     super();
     setActionCommandKey("OptimizeTableAction");
-    setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/optimize.gif"))); // NOI18N
+    setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/optimize.gif"))); // NOI18N
     setText(stringManager.getString("cmOptimizeTable-text")); // NOI18N
     addActionListener(createActionListener());
   }

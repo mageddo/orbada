@@ -29,7 +29,7 @@ public class CopyTableAction extends Action {
   public CopyTableAction(Database database) {
     super();
     setText(stringManager.getString("CopyTableAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/copy_table.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/copy_table.gif"));
     setTooltip(stringManager.getString("CopyTableAction-hint"));
     setActionCommandKey("CopyTableAction");
     addActionListener(createActionListener());

@@ -9,7 +9,7 @@
           <KeyStroke key="Ctrl+F4"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/stop10.gif"/>
+          <Image iconType="/res/icons/stop10.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="cmClose-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -27,7 +27,7 @@
           <KeyStroke key="Shift+Ctrl+M"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/minimize10.gif"/>
+          <Image iconType="/res/icons/minimize10.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="cmMinimize-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -44,7 +44,7 @@
           <KeyStroke key="Shift+Ctrl+C"/>
         </Property>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/config10.gif"/>
+          <Image iconType="/res/icons/config10.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/i18n.properties" key="GadgetPanel-cmConfig-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

@@ -63,7 +63,7 @@ public class FunctionSourcePanel extends javax.swing.JPanel implements ITabObjec
     syntaxSource.setStructureParser(new OraclePlSqlStructureParser());
     SwingUtil.addAction(syntaxSource.getEditorArea(), cmStore);
     SwingUtil.addAction(syntaxSource.getEditorArea(), cmCallFunction);
-    errIcon = pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/stop10.gif");
+    errIcon = pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/stop10.gif");
     errorSettings = accesibilities.getApplication().getSettings(OracleCompileErrorSettingsProvider.settingsName);
     new ComponentActionsAction(getDatabase(), syntaxSource.getEditorArea(), buttonActions, menuActions, "oracle-function-source-actions");
   }
@@ -144,7 +144,7 @@ public class FunctionSourcePanel extends javax.swing.JPanel implements ITabObjec
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
     syntaxSource = new OrbadaSyntaxTextArea();
 
-    cmRefreshSource.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefreshSource.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefreshSource.setText(stringManager.getString("cmRefreshSource-text")); // NOI18N
     cmRefreshSource.setTooltip(stringManager.getString("cmRefreshSource-hint")); // NOI18N
     cmRefreshSource.addActionListener(new java.awt.event.ActionListener() {
@@ -155,7 +155,7 @@ public class FunctionSourcePanel extends javax.swing.JPanel implements ITabObjec
 
     cmStore.setActionCommandKey("cmStore");
     cmStore.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.CTRL_MASK));
-    cmStore.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/store_db.gif")); // NOI18N
+    cmStore.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/store_db.gif")); // NOI18N
     cmStore.setText(stringManager.getString("cmStore-text")); // NOI18N
     cmStore.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -165,7 +165,7 @@ public class FunctionSourcePanel extends javax.swing.JPanel implements ITabObjec
 
     cmCallFunction.setActionCommandKey("cmCallFunction");
     cmCallFunction.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F9, 0));
-    cmCallFunction.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/call.gif")); // NOI18N
+    cmCallFunction.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/call.gif")); // NOI18N
     cmCallFunction.setText(stringManager.getString("cmCallFunction-text")); // NOI18N
     cmCallFunction.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

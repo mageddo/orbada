@@ -227,7 +227,7 @@ public class HelpPanelView extends javax.swing.JPanel implements IRootTabObjectI
       }
     };
 
-    cmRefresh.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/refresh16.gif"))); // NOI18N
+    cmRefresh.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/refresh16.gif"))); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -238,7 +238,7 @@ public class HelpPanelView extends javax.swing.JPanel implements IRootTabObjectI
 
     cmSearch.setActionCommandKey("cmSearch");
     cmSearch.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, 0));
-    cmSearch.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/find_source.gif"))); // NOI18N
+    cmSearch.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/find_source.gif"))); // NOI18N
     cmSearch.setText(stringManager.getString("cmSearch-text")); // NOI18N
     cmSearch.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

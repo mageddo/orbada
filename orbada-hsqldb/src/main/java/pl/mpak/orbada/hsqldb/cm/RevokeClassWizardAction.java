@@ -35,7 +35,7 @@ public class RevokeClassWizardAction extends Action {
     setText(stringManager.getString("RevokeClassWizardAction-text"));
     this.database = database;
     setActionCommandKey("RevokeClassWizardAction");
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/revoke_class.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/revoke_class.gif"));
     addActionListener(createActionListener());
   }
 

@@ -34,7 +34,7 @@ public class JavaClassFreezeViewService extends FreezeViewService {
 
   @Override
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/java_class.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/java_class.gif");
   }
 
 }

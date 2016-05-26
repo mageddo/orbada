@@ -251,7 +251,7 @@ public class JobsPanelView extends javax.swing.JPanel implements IRootTabObjectI
     labelRefresh = new javax.swing.JLabel();
     labelSysdate = new javax.swing.JLabel();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -269,7 +269,7 @@ public class JobsPanelView extends javax.swing.JPanel implements IRootTabObjectI
     });
 
     cmSubmitJob.setActionCommandKey("cmSubmitJob");
-    cmSubmitJob.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/new16.gif")); // NOI18N
+    cmSubmitJob.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/new16.gif")); // NOI18N
     cmSubmitJob.setText(stringManager.getString("cmSubmitJob-text")); // NOI18N
     cmSubmitJob.setTooltip(stringManager.getString("cmSubmitJob-hint")); // NOI18N
     cmSubmitJob.addActionListener(new java.awt.event.ActionListener() {
@@ -279,7 +279,7 @@ public class JobsPanelView extends javax.swing.JPanel implements IRootTabObjectI
     });
 
     cmEditJob.setActionCommandKey("cmEditJob");
-    cmEditJob.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/edit16.gif")); // NOI18N
+    cmEditJob.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/edit16.gif")); // NOI18N
     cmEditJob.setText(stringManager.getString("cmEditJob-text")); // NOI18N
     cmEditJob.setTooltip(stringManager.getString("cmEditJob-hint")); // NOI18N
     cmEditJob.addActionListener(new java.awt.event.ActionListener() {
@@ -289,7 +289,7 @@ public class JobsPanelView extends javax.swing.JPanel implements IRootTabObjectI
     });
 
     cmRemoveJob.setActionCommandKey("cmRemoveJob");
-    cmRemoveJob.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmRemoveJob.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmRemoveJob.setText(stringManager.getString("cmRemoveJob-text")); // NOI18N
     cmRemoveJob.setTooltip(stringManager.getString("cmRemoveJob-hint")); // NOI18N
     cmRemoveJob.addActionListener(new java.awt.event.ActionListener() {
@@ -299,7 +299,7 @@ public class JobsPanelView extends javax.swing.JPanel implements IRootTabObjectI
     });
 
     cmRunJob.setActionCommandKey("cmRunJob");
-    cmRunJob.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/db_sql_execute16.gif")); // NOI18N
+    cmRunJob.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/db_sql_execute16.gif")); // NOI18N
     cmRunJob.setText(stringManager.getString("cmRunJob-text")); // NOI18N
     cmRunJob.setTooltip(stringManager.getString("cmRunJob-hint")); // NOI18N
     cmRunJob.addActionListener(new java.awt.event.ActionListener() {
@@ -309,7 +309,7 @@ public class JobsPanelView extends javax.swing.JPanel implements IRootTabObjectI
     });
 
     cmBrokenJob.setActionCommandKey("cmBrokenJob");
-    cmBrokenJob.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/green_bdot.gif")); // NOI18N
+    cmBrokenJob.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/green_bdot.gif")); // NOI18N
     cmBrokenJob.setText(stringManager.getString("cmBrokenJob-text")); // NOI18N
     cmBrokenJob.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -397,7 +397,7 @@ public class JobsPanelView extends javax.swing.JPanel implements IRootTabObjectI
     jLabel2.setText(" s ");
     toolBar.add(jLabel2);
 
-    labelRefresh.setIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/orange_bdot.gif")); // NOI18N
+    labelRefresh.setIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/orange_bdot.gif")); // NOI18N
     toolBar.add(labelRefresh);
 
     labelSysdate.setText("SYSDATE");

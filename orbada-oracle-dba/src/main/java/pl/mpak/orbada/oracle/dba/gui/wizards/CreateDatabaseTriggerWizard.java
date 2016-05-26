@@ -160,7 +160,7 @@ public class CreateDatabaseTriggerWizard extends SqlCodeWizardPanel {
     labelSelectedColumns = new javax.swing.JLabel();
 
     cmMoveRight.setActionCommandKey("cmMoveRight");
-    cmMoveRight.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/move_right.gif")); // NOI18N
+    cmMoveRight.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/move_right.gif")); // NOI18N
     cmMoveRight.setText(stringManager.getString("cmMoveRight-text")); // NOI18N
     cmMoveRight.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -169,7 +169,7 @@ public class CreateDatabaseTriggerWizard extends SqlCodeWizardPanel {
     });
 
     cmMoveAllRight.setActionCommandKey("cmMoveAllRight");
-    cmMoveAllRight.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/move_all_right.gif")); // NOI18N
+    cmMoveAllRight.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/move_all_right.gif")); // NOI18N
     cmMoveAllRight.setText(stringManager.getString("cmMoveAllRight-text")); // NOI18N
     cmMoveAllRight.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,7 +178,7 @@ public class CreateDatabaseTriggerWizard extends SqlCodeWizardPanel {
     });
 
     cmMoveLeft.setActionCommandKey("cmMoveLeft");
-    cmMoveLeft.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/move_left.gif")); // NOI18N
+    cmMoveLeft.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/move_left.gif")); // NOI18N
     cmMoveLeft.setText(stringManager.getString("cmMoveLeft-text")); // NOI18N
     cmMoveLeft.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -187,7 +187,7 @@ public class CreateDatabaseTriggerWizard extends SqlCodeWizardPanel {
     });
 
     cmMoveAllLeft.setActionCommandKey("cmMoveAllLeft");
-    cmMoveAllLeft.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/move_all_left.gif")); // NOI18N
+    cmMoveAllLeft.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/move_all_left.gif")); // NOI18N
     cmMoveAllLeft.setText(stringManager.getString("cmMoveAllLeft-text")); // NOI18N
     cmMoveAllLeft.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

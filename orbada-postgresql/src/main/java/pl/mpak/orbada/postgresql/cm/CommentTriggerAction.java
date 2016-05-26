@@ -25,7 +25,7 @@ public class CommentTriggerAction extends UniversalViewTableAction {
   public CommentTriggerAction() {
     super();
     setText(stringManager.getString("comment-edit"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/comment_edit.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/comment_edit.gif"));
     setActionCommandKey("CommentTriggerAction");
   }
 

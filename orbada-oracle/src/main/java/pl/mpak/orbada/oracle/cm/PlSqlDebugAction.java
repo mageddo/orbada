@@ -28,7 +28,7 @@ public class PlSqlDebugAction extends Action {
   public PlSqlDebugAction(Database database) {
     super();
     setText(stringManager.getString("PlSqlDebugAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/debug.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/debug.gif"));
     setActionCommandKey("PlSqlDebugAction");
     addActionListener(createActionListener());
     this.database = database;

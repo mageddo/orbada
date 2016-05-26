@@ -28,7 +28,7 @@ public class RepairTableAction extends ComponentAction {
   public RepairTableAction() {
     super();
     setActionCommandKey("RepairTableAction"); // NOI18N
-    setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/repair.gif"))); // NOI18N
+    setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/repair.gif"))); // NOI18N
     setText(stringManager.getString("cmRepairTable-text")); // NOI18N
     addActionListener(createActionListener());
   }

@@ -37,7 +37,7 @@ public class CallObjectFromEditorAction extends Action {
   public CallObjectFromEditorAction() {
     super();
     setText(stringManager.getString("CallObjectFromEditorAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/call_editor.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/call_editor.gif"));
     setTooltip(stringManager.getString("CallObjectFromEditorAction-hint"));
     setShortCut(KeyEvent.VK_F8, KeyEvent.CTRL_MASK | KeyEvent.SHIFT_MASK);
     setActionCommandKey("CallObjectFromEditorAction");

@@ -155,7 +155,7 @@ public class AdderSelectorDialog extends javax.swing.JDialog {
     jScrollPane1 = new javax.swing.JScrollPane();
     listSelect = new javax.swing.JList();
 
-    cmSum.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/sum.gif"))); // NOI18N
+    cmSum.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/sum.gif"))); // NOI18N
     cmSum.setText(stringManager.getString("cmSum-text")); // NOI18N
     cmSum.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

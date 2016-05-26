@@ -182,7 +182,7 @@ public class TableConstraintsPanel extends javax.swing.JPanel implements ITabObj
     jSeparator3 = new javax.swing.JToolBar.Separator();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -200,7 +200,7 @@ public class TableConstraintsPanel extends javax.swing.JPanel implements ITabObj
     });
 
     cmDropConstraint.setActionCommandKey("cmDropConstraint");
-    cmDropConstraint.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDropConstraint.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDropConstraint.setText(stringManager.getString("cmDropConstraint-text")); // NOI18N
     cmDropConstraint.setTooltip(stringManager.getString("cmDropConstraint-hint")); // NOI18N
     cmDropConstraint.addActionListener(new java.awt.event.ActionListener() {
@@ -210,7 +210,7 @@ public class TableConstraintsPanel extends javax.swing.JPanel implements ITabObj
     });
 
     cmColumnNotNull.setActionCommandKey("cmColumnNotNull");
-    cmColumnNotNull.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/lock16.gif")); // NOI18N
+    cmColumnNotNull.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/lock16.gif")); // NOI18N
     cmColumnNotNull.setText(stringManager.getString("cmColumnNotNull-text")); // NOI18N
     cmColumnNotNull.setTooltip(stringManager.getString("cmColumnNotNull-hint")); // NOI18N
     cmColumnNotNull.addActionListener(new java.awt.event.ActionListener() {
@@ -220,7 +220,7 @@ public class TableConstraintsPanel extends javax.swing.JPanel implements ITabObj
     });
 
     cmCreateConstraintCheck.setActionCommandKey("cmCreateConstraintCheck");
-    cmCreateConstraintCheck.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/verify_document_16.gif")); // NOI18N
+    cmCreateConstraintCheck.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/verify_document_16.gif")); // NOI18N
     cmCreateConstraintCheck.setText(stringManager.getString("cmCreateConstraintCheck-text")); // NOI18N
     cmCreateConstraintCheck.setTooltip(stringManager.getString("cmCreateConstraintCheck-hint")); // NOI18N
     cmCreateConstraintCheck.addActionListener(new java.awt.event.ActionListener() {
@@ -230,7 +230,7 @@ public class TableConstraintsPanel extends javax.swing.JPanel implements ITabObj
     });
 
     cmCreateConstraintFK.setActionCommandKey("cmCreateConstraintFK");
-    cmCreateConstraintFK.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/foreign_key16.gif")); // NOI18N
+    cmCreateConstraintFK.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/foreign_key16.gif")); // NOI18N
     cmCreateConstraintFK.setText(stringManager.getString("cmCreateConstraintFK-text")); // NOI18N
     cmCreateConstraintFK.setTooltip(stringManager.getString("cmCreateConstraintFK-hint")); // NOI18N
     cmCreateConstraintFK.addActionListener(new java.awt.event.ActionListener() {
@@ -240,7 +240,7 @@ public class TableConstraintsPanel extends javax.swing.JPanel implements ITabObj
     });
 
     cmCreateConstraintPK.setActionCommandKey("cmCreateConstraintPK");
-    cmCreateConstraintPK.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/primary_key16.gif")); // NOI18N
+    cmCreateConstraintPK.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/primary_key16.gif")); // NOI18N
     cmCreateConstraintPK.setText(stringManager.getString("cmCreateConstraintPK-text")); // NOI18N
     cmCreateConstraintPK.setTooltip(stringManager.getString("cmCreateConstraintPK-hint")); // NOI18N
     cmCreateConstraintPK.addActionListener(new java.awt.event.ActionListener() {

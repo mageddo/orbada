@@ -205,7 +205,7 @@ public class TableColumnDefinitionWizard extends SqlCodeWizardPanel {
     buttonMoveDown = new javax.swing.JButton();
 
     cmAddRow.setActionCommandKey("cmAddRow"); // NOI18N
-    cmAddRow.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/add8.gif")); // NOI18N
+    cmAddRow.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/add8.gif")); // NOI18N
     cmAddRow.setText(stringManager.getString("cmAdd-text")); // NOI18N
     cmAddRow.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -214,7 +214,7 @@ public class TableColumnDefinitionWizard extends SqlCodeWizardPanel {
     });
 
     cmRemoveRow.setActionCommandKey("cmRemoveRow"); // NOI18N
-    cmRemoveRow.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/remove8.gif")); // NOI18N
+    cmRemoveRow.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/remove8.gif")); // NOI18N
     cmRemoveRow.setText(stringManager.getString("cmRemove-text")); // NOI18N
     cmRemoveRow.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -223,7 +223,7 @@ public class TableColumnDefinitionWizard extends SqlCodeWizardPanel {
     });
 
     cmMoveDown.setActionCommandKey("cmMoveDown"); // NOI18N
-    cmMoveDown.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/down10.gif")); // NOI18N
+    cmMoveDown.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/down10.gif")); // NOI18N
     cmMoveDown.setText(stringManager.getString("cmDown-text")); // NOI18N
     cmMoveDown.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -232,7 +232,7 @@ public class TableColumnDefinitionWizard extends SqlCodeWizardPanel {
     });
 
     cmMoveUp.setActionCommandKey("cmMoveUp"); // NOI18N
-    cmMoveUp.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/up10.gif")); // NOI18N
+    cmMoveUp.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/up10.gif")); // NOI18N
     cmMoveUp.setText(stringManager.getString("cmUp-text")); // NOI18N
     cmMoveUp.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

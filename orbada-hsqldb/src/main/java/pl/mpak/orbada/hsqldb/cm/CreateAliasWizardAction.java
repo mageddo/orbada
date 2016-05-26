@@ -34,7 +34,7 @@ public class CreateAliasWizardAction extends Action {
     setText(stringManager.getString("CreateAliasWizardAction-text"));
     this.database = database;
     setActionCommandKey("CreateAliasWizardAction");
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/alias.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/alias.gif"));
     addActionListener(createActionListener());
   }
 

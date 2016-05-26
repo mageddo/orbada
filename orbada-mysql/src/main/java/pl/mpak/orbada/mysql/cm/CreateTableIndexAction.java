@@ -33,7 +33,7 @@ public class CreateTableIndexAction extends ComponentAction {
     super();
     setText(stringManager.getString("CreateTableIndexAction-text"));
     setTooltip(stringManager.getString("CreateTableIndexAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/index.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/index.gif"));
     setActionCommandKey("CreateUniqueTableConstraintAction");
     addActionListener(createActionListener());
   }

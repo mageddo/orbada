@@ -28,7 +28,7 @@ public class SubmitJobAction extends Action {
   public SubmitJobAction(Database database) {
     super();
     setText(stringManager.getString("SubmitJobAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/job.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/job.gif"));
     setActionCommandKey("SubmitJobAction");
     addActionListener(createActionListener());
     this.database = database;

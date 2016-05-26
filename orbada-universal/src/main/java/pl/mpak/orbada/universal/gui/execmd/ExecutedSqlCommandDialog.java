@@ -217,7 +217,7 @@ public class ExecutedSqlCommandDialog extends javax.swing.JDialog {
 
     cmSearch.setActionCommandKey("cmSearch");
     cmSearch.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, java.awt.event.InputEvent.CTRL_MASK));
-    cmSearch.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/find_object16.gif")); // NOI18N
+    cmSearch.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/find_object16.gif")); // NOI18N
     cmSearch.setText(stringManager.getString("cmSearch-text")); // NOI18N
     cmSearch.setTooltip(stringManager.getString("cmSearch-hint")); // NOI18N
     cmSearch.addActionListener(new java.awt.event.ActionListener() {

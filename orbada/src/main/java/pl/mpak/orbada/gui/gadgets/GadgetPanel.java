@@ -139,7 +139,7 @@ public class GadgetPanel extends javax.swing.JPanel implements Closeable {
 
     cmClose.setActionCommandKey("cmClose");
     cmClose.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.CTRL_MASK));
-    cmClose.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/stop10.gif")); // NOI18N
+    cmClose.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/stop10.gif")); // NOI18N
     cmClose.setText(stringManager.getString("cmClose-text")); // NOI18N
     cmClose.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,7 +150,7 @@ public class GadgetPanel extends javax.swing.JPanel implements Closeable {
     cmMinimize.setActionCommandKey("cmMinimize");
     cmMinimize.setEnabled(false);
     cmMinimize.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-    cmMinimize.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/minimize10.gif")); // NOI18N
+    cmMinimize.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/minimize10.gif")); // NOI18N
     cmMinimize.setText(stringManager.getString("cmMinimize-text")); // NOI18N
     cmMinimize.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,7 +160,7 @@ public class GadgetPanel extends javax.swing.JPanel implements Closeable {
 
     cmConfig.setActionCommandKey("cmConfig");
     cmConfig.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
-    cmConfig.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/config10.gif")); // NOI18N
+    cmConfig.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/config10.gif")); // NOI18N
     cmConfig.setText(stringManager.getString("GadgetPanel-cmConfig-text")); // NOI18N
     cmConfig.setTooltip(stringManager.getString("GadgetPanel-cmConfig-hint")); // NOI18N
     cmConfig.addActionListener(new java.awt.event.ActionListener() {

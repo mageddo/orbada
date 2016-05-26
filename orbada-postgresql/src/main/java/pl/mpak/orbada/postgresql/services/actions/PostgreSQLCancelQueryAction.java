@@ -73,7 +73,7 @@ public class PostgreSQLCancelQueryAction extends ComponentActionProvider {
     
     setText(getDescription());
     setTooltip(stringManager.getString("PostgreSQLCancelQueryAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/stop-query.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/stop-query.gif"));
     setActionCommandKey("PostgreSQLCancelQueryAction");
     addActionListener(createActionListener());
     

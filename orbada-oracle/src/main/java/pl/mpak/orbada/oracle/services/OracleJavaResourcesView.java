@@ -31,7 +31,7 @@ public class OracleJavaResourcesView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/java_resource.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/java_resource.gif");
   }
 
   public boolean isForDatabase(Database database) {

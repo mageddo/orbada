@@ -31,7 +31,7 @@ public class DropTableConstraintAction extends ComponentAction {
     super();
     setText(stringManager.getString("DropTableConstraintAction-text"));
     setTooltip(stringManager.getString("DropTableConstraintAction-hint"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif"));
     setActionCommandKey("DropTableConstraintAction");
     addActionListener(createActionListener());
   }

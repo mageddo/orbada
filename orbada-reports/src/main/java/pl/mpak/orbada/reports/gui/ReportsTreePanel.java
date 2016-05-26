@@ -273,7 +273,7 @@ public class ReportsTreePanel extends javax.swing.JPanel implements Closeable {
     treeReports = new javax.swing.JTree();
 
     cmRefresh.setActionCommandKey("cmRefresh");
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pl/mpak/orbada/orbada-reports"); // NOI18N
     cmRefresh.setText(bundle.getString("refresh")); // NOI18N
     cmRefresh.setTooltip(bundle.getString("refresh_tooltip")); // NOI18N
@@ -284,7 +284,7 @@ public class ReportsTreePanel extends javax.swing.JPanel implements Closeable {
     });
 
     cmDelete.setActionCommandKey("cmDelete");
-    cmDelete.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDelete.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDelete.setText(bundle.getString("delete_report_grup")); // NOI18N
     cmDelete.setTooltip(bundle.getString("delete_report_group_tooltip")); // NOI18N
     cmDelete.addActionListener(new java.awt.event.ActionListener() {
@@ -294,7 +294,7 @@ public class ReportsTreePanel extends javax.swing.JPanel implements Closeable {
     });
 
     cmEdit.setActionCommandKey("cmEdit");
-    cmEdit.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/edit16.gif")); // NOI18N
+    cmEdit.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/edit16.gif")); // NOI18N
     cmEdit.setText(bundle.getString("edit_report_group")); // NOI18N
     cmEdit.setTooltip(bundle.getString("edit_report_group_tooltip")); // NOI18N
     cmEdit.addActionListener(new java.awt.event.ActionListener() {
@@ -304,7 +304,7 @@ public class ReportsTreePanel extends javax.swing.JPanel implements Closeable {
     });
 
     cmNewGroup.setActionCommandKey("cmNewGroup");
-    cmNewGroup.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/new_group.gif")); // NOI18N
+    cmNewGroup.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/new_group.gif")); // NOI18N
     cmNewGroup.setText(bundle.getString("add_group")); // NOI18N
     cmNewGroup.setTooltip(bundle.getString("add_group_tooltip")); // NOI18N
     cmNewGroup.addActionListener(new java.awt.event.ActionListener() {
@@ -314,7 +314,7 @@ public class ReportsTreePanel extends javax.swing.JPanel implements Closeable {
     });
 
     cmNewReport.setActionCommandKey("cmNewReport");
-    cmNewReport.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/new_report.gif")); // NOI18N
+    cmNewReport.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/new_report.gif")); // NOI18N
     cmNewReport.setText(bundle.getString("add_report")); // NOI18N
     cmNewReport.setTooltip(bundle.getString("add_report_tooltip")); // NOI18N
     cmNewReport.addActionListener(new java.awt.event.ActionListener() {
@@ -341,7 +341,7 @@ public class ReportsTreePanel extends javax.swing.JPanel implements Closeable {
     menuSelectedNode.add(menuDelete);
 
     cmFreezeReport.setActionCommandKey("cmFreezeReport");
-    cmFreezeReport.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/freeze.gif")); // NOI18N
+    cmFreezeReport.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/freeze.gif")); // NOI18N
     cmFreezeReport.setText(bundle.getString("run_and_freeze")); // NOI18N
     cmFreezeReport.setTooltip(bundle.getString("run_and_freeze_tooltip")); // NOI18N
     cmFreezeReport.addActionListener(new java.awt.event.ActionListener() {
@@ -352,7 +352,7 @@ public class ReportsTreePanel extends javax.swing.JPanel implements Closeable {
 
     cmCopy.setActionCommandKey("cmCopy");
     cmCopy.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
-    cmCopy.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/copy.gif")); // NOI18N
+    cmCopy.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/copy.gif")); // NOI18N
     cmCopy.setText(bundle.getString("copy")); // NOI18N
     cmCopy.setTooltip(bundle.getString("copy_sql_command_tooltip")); // NOI18N
     cmCopy.addActionListener(new java.awt.event.ActionListener() {

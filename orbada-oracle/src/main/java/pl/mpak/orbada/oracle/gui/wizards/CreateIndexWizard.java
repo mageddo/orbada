@@ -197,7 +197,7 @@ public class CreateIndexWizard extends SqlCodeWizardPanel {
     comboIndextype = new pl.mpak.sky.gui.swing.comp.ComboBox();
 
     cmAddRow.setActionCommandKey("cmAddRow");
-    cmAddRow.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/add8.gif")); // NOI18N
+    cmAddRow.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/add8.gif")); // NOI18N
     cmAddRow.setText(stringManager.getString("cmAdd-text")); // NOI18N
     cmAddRow.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -206,7 +206,7 @@ public class CreateIndexWizard extends SqlCodeWizardPanel {
     });
 
     cmRemoveRow.setActionCommandKey("cmRemoveRow");
-    cmRemoveRow.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/remove8.gif")); // NOI18N
+    cmRemoveRow.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/remove8.gif")); // NOI18N
     cmRemoveRow.setText(stringManager.getString("cmRemove-text")); // NOI18N
     cmRemoveRow.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -29,7 +29,7 @@ public class CreateVarrayTypeAction extends Action {
   public CreateVarrayTypeAction(Database database) {
     super();
     setText(stringManager.getString("CreateVarrayTypeAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/type.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/type.gif"));
     setTooltip(stringManager.getString("CreateVarrayTypeAction-hint"));
     setActionCommandKey("CreateVarrayTypeAction");
     addActionListener(createActionListener());

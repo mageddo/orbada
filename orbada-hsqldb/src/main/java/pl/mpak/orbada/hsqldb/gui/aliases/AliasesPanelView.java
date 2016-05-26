@@ -211,7 +211,7 @@ public class AliasesPanelView extends javax.swing.JPanel implements IRootTabObje
     separator = new javax.swing.JToolBar.Separator();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -230,7 +230,7 @@ public class AliasesPanelView extends javax.swing.JPanel implements IRootTabObje
 
     cmDropAlias.setActionCommandKey("cmDropTrigger");
     cmDropAlias.setEnabled(false);
-    cmDropAlias.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDropAlias.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDropAlias.setText(stringManager.getString("cmDropAlias-text")); // NOI18N
     cmDropAlias.setTooltip(stringManager.getString("cmDropAlias-hint")); // NOI18N
     cmDropAlias.addActionListener(new java.awt.event.ActionListener() {
@@ -239,7 +239,7 @@ public class AliasesPanelView extends javax.swing.JPanel implements IRootTabObje
       }
     });
 
-    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/users16.gif")); // NOI18N
+    cmSelectSchema.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/users16.gif")); // NOI18N
     cmSelectSchema.setText(stringManager.getString("cmSelectSchema-text")); // NOI18N
     cmSelectSchema.setTooltip(stringManager.getString("cmSelectSchema-hint")); // NOI18N
     cmSelectSchema.addActionListener(new java.awt.event.ActionListener() {

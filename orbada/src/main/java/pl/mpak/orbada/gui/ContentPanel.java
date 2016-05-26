@@ -195,7 +195,7 @@ public class ContentPanel extends javax.swing.JPanel implements ITabObjectInfo {
     buttonSearch = new pl.mpak.sky.gui.swing.comp.ToolButton();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -211,7 +211,7 @@ public class ContentPanel extends javax.swing.JPanel implements ITabObjectInfo {
     menuActions.add(menuDeleteRecords);
 
     cmRecordCount.setActionCommandKey("cmRecordCount");
-    cmRecordCount.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/counts.gif")); // NOI18N
+    cmRecordCount.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/counts.gif")); // NOI18N
     cmRecordCount.setText(stringManager.getString("ContentPanel-cmRecordCount-text")); // NOI18N
     cmRecordCount.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -220,7 +220,7 @@ public class ContentPanel extends javax.swing.JPanel implements ITabObjectInfo {
     });
 
     cmDeleteRecords.setActionCommandKey("cmDeleteRecords");
-    cmDeleteRecords.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/trash.gif")); // NOI18N
+    cmDeleteRecords.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/trash.gif")); // NOI18N
     cmDeleteRecords.setText(stringManager.getString("ContentPanel-cmDeleteRecords")); // NOI18N
     cmDeleteRecords.setTooltip(stringManager.getString("ContentPanel-cmDeleteRecords-hint")); // NOI18N
     cmDeleteRecords.addActionListener(new java.awt.event.ActionListener() {
@@ -231,7 +231,7 @@ public class ContentPanel extends javax.swing.JPanel implements ITabObjectInfo {
 
     cmSearch.setActionCommandKey("cmSearch");
     cmSearch.setShortCut(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ENTER, 0));
-    cmSearch.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/find_source.gif")); // NOI18N
+    cmSearch.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/find_source.gif")); // NOI18N
     cmSearch.setText(stringManager.getString("cmSearch-text")); // NOI18N
     cmSearch.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

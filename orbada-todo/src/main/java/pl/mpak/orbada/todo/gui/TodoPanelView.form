@@ -6,7 +6,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmNewTask"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/new16.gif"/>
+          <Image iconType="/res/icons/new16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/todo/i18n.properties" key="cmNewTask-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -20,7 +20,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmEditTask"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/edit16.gif"/>
+          <Image iconType="/res/icons/edit16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/todo/i18n.properties" key="cmEditTask-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -34,7 +34,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmDeleteTask"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/trash.gif"/>
+          <Image iconType="/res/icons/trash.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/todo/i18n.properties" key="cmDeleteTask-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -48,7 +48,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmSwitchEnable"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/enabled.gif"/>
+          <Image iconType="/res/icons/enabled.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/todo/i18n.properties" key="cmSwitchEnableTask-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -65,7 +65,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmRefresh"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/refresh16.gif"/>
+          <Image iconType="/res/icons/refresh16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/todo/i18n.properties" key="cmRefresh-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -144,7 +144,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmIncPriority"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/arrowup.gif"/>
+          <Image iconType="/res/icons/arrowup.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/todo/i18n.properties" key="cmIncPriority-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -161,7 +161,7 @@
       <Properties>
         <Property name="actionCommandKey" type="java.lang.String" value="cmDecPriority"/>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/arrowdown.gif"/>
+          <Image iconType="/res/icons/arrowdown.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/todo/i18n.properties" key="cmDecPriority-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -177,7 +177,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmExportTodo">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/export_table16.gif"/>
+          <Image iconType="/res/icons/export_table16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/todo/i18n.properties" key="cmExportTodo-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>
@@ -193,7 +193,7 @@
     <Component class="pl.mpak.sky.gui.swing.Action" name="cmImportTodo">
       <Properties>
         <Property name="smallIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/pl/mpak/res/icons/import_table16.gif"/>
+          <Image iconType="/res/icons/import_table16.gif"/>
         </Property>
         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
           <ResourceString bundle="pl/mpak/orbada/todo/i18n.properties" key="cmImportTodo-text" replaceFormat="stringManager.getString(&quot;{key}&quot;)"/>

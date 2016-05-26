@@ -197,7 +197,7 @@ public class TableColumnsPanel extends javax.swing.JPanel implements ITabObjectI
     jSeparator2 = new javax.swing.JToolBar.Separator();
     buttonActions = new pl.mpak.sky.gui.swing.comp.ToolButton();
 
-    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefresh.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefresh.setText(stringManager.getString("cmRefresh-text")); // NOI18N
     cmRefresh.setTooltip(stringManager.getString("cmRefresh-hint")); // NOI18N
     cmRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -207,7 +207,7 @@ public class TableColumnsPanel extends javax.swing.JPanel implements ITabObjectI
     });
 
     cmFilter.setActionCommandKey("cmFilter");
-    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/orbada/derbydb/res/icons/filter16.gif")); // NOI18N
+    cmFilter.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/filter16.gif")); // NOI18N
     cmFilter.setText(stringManager.getString("cmFilter-text")); // NOI18N
     cmFilter.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -216,7 +216,7 @@ public class TableColumnsPanel extends javax.swing.JPanel implements ITabObjectI
     });
 
     cmColumnNotNull.setActionCommandKey("cmColumnNotNull");
-    cmColumnNotNull.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/lock16.gif")); // NOI18N
+    cmColumnNotNull.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/lock16.gif")); // NOI18N
     cmColumnNotNull.setText(stringManager.getString("TableColumnsPanel-cmColumnNotNull-text")); // NOI18N
     cmColumnNotNull.setTooltip(stringManager.getString("TableColumnsPanel-cmColumnNotNull-hint")); // NOI18N
     cmColumnNotNull.addActionListener(new java.awt.event.ActionListener() {
@@ -226,7 +226,7 @@ public class TableColumnsPanel extends javax.swing.JPanel implements ITabObjectI
     });
 
     cmCreateConstraintCheck.setActionCommandKey("cmCreateConstraintCheck");
-    cmCreateConstraintCheck.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/verify_document_16.gif")); // NOI18N
+    cmCreateConstraintCheck.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/verify_document_16.gif")); // NOI18N
     cmCreateConstraintCheck.setText(stringManager.getString("TableColumnsPanel-cmCreateConstraintCheck-text")); // NOI18N
     cmCreateConstraintCheck.setTooltip(stringManager.getString("TableColumnsPanel-cmCreateConstraintCheck-hint")); // NOI18N
     cmCreateConstraintCheck.addActionListener(new java.awt.event.ActionListener() {

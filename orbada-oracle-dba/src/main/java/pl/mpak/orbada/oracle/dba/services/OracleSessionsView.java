@@ -33,7 +33,7 @@ public class OracleSessionsView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/sessions.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/sessions.gif");
   }
 
   public boolean isForDatabase(Database database) {

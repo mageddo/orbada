@@ -29,7 +29,7 @@ public class CreateSynonymAction extends Action {
   public CreateSynonymAction(Database database) {
     super();
     setText(stringManager.getString("CreateSynonymAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/synonym.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/synonym.gif"));
     setTooltip(stringManager.getString("CreateSynonymAction-hint"));
     setActionCommandKey("CreateSynonymAction");
     addActionListener(createActionListener());

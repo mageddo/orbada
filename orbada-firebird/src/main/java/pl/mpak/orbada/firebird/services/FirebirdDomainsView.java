@@ -36,7 +36,7 @@ public class FirebirdDomainsView extends ViewProvider {
   }
   
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/domain.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/domain.gif");
   }
 
   public boolean isForDatabase(Database database) {

@@ -40,7 +40,7 @@ public class PostgreSQLTableSizeView extends ViewProvider {
   
   @Override
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/table-sum.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/table-sum.gif");
   }
 
   @Override

@@ -35,7 +35,7 @@ public class PostgreSQLTableListView extends ViewProvider {
   
   @Override
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/table.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/table.gif");
   }
 
   @Override

@@ -28,7 +28,7 @@ public class CreateSequenceAction extends Action {
   public CreateSequenceAction(Database database) {
     super();
     setText(stringManager.getString("CreateSequenceAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/sequence.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/sequence.gif"));
     setTooltip(stringManager.getString("CreateSequenceAction-hint"));
     setActionCommandKey("CreateSequenceAction");
     addActionListener(createActionListener());

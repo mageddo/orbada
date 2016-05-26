@@ -123,7 +123,7 @@ public class ParameterDefinitionWizard extends SqlCodeWizardPanel {
     buttonMoveDown = new javax.swing.JButton();
 
     cmAddRow.setActionCommandKey("cmAddRow"); // NOI18N
-    cmAddRow.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/add8.gif"))); // NOI18N
+    cmAddRow.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/add8.gif"))); // NOI18N
     cmAddRow.setText(stringManager.getString("cmAddRow-text")); // NOI18N
     cmAddRow.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -132,7 +132,7 @@ public class ParameterDefinitionWizard extends SqlCodeWizardPanel {
     });
 
     cmRemoveRow.setActionCommandKey("cmRemoveRow"); // NOI18N
-    cmRemoveRow.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/remove8.gif"))); // NOI18N
+    cmRemoveRow.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/remove8.gif"))); // NOI18N
     cmRemoveRow.setText(stringManager.getString("cmRemoveRow-text")); // NOI18N
     cmRemoveRow.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,7 +141,7 @@ public class ParameterDefinitionWizard extends SqlCodeWizardPanel {
     });
 
     cmMoveDown.setActionCommandKey("cmMoveDown"); // NOI18N
-    cmMoveDown.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/down10.gif"))); // NOI18N
+    cmMoveDown.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/down10.gif"))); // NOI18N
     cmMoveDown.setText(stringManager.getString("cmMoveDown-text")); // NOI18N
     cmMoveDown.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,7 +150,7 @@ public class ParameterDefinitionWizard extends SqlCodeWizardPanel {
     });
 
     cmMoveUp.setActionCommandKey("cmMoveUp"); // NOI18N
-    cmMoveUp.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/up10.gif"))); // NOI18N
+    cmMoveUp.setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/up10.gif"))); // NOI18N
     cmMoveUp.setText(stringManager.getString("cmMoveUp-text")); // NOI18N
     cmMoveUp.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

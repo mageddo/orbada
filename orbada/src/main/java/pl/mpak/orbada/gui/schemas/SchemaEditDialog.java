@@ -339,7 +339,7 @@ public class SchemaEditDialog extends javax.swing.JDialog {
       }
     });
 
-    cmRefreshUrl.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/refresh16.gif")); // NOI18N
+    cmRefreshUrl.setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/refresh16.gif")); // NOI18N
     cmRefreshUrl.setTooltip(stringManager.getString("SchemaEditDialog-cmRefreshUrl-hint")); // NOI18N
     cmRefreshUrl.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {

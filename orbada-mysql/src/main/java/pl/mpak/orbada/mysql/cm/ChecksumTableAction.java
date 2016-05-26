@@ -28,7 +28,7 @@ public class ChecksumTableAction extends ComponentAction {
   public ChecksumTableAction() {
     super();
     setActionCommandKey("ChecksumTableAction");
-    setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/pl/mpak/res/icons/sum.gif"))); // NOI18N
+    setSmallIcon(new javax.swing.ImageIcon(getClass().getResource("/res/icons/sum.gif"))); // NOI18N
     setText(stringManager.getString("cmChecksumTable-text")); // NOI18N
     addActionListener(createActionListener());
   }

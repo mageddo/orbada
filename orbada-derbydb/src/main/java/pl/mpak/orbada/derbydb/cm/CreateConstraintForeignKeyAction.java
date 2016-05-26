@@ -33,7 +33,7 @@ public class CreateConstraintForeignKeyAction extends Action {
     super(stringManager.getString("CreateConstraintForeignKeyAction-text"));
     this.database = database;
     setActionCommandKey("cmCreateConstraintForeignKey");
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/foreign_key16.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/foreign_key16.gif"));
     addActionListener(createActionListener());
   }
 

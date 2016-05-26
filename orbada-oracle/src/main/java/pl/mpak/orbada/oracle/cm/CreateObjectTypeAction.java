@@ -29,7 +29,7 @@ public class CreateObjectTypeAction extends Action {
   public CreateObjectTypeAction(Database database) {
     super();
     setText(stringManager.getString("CreateObjectTypeAction-text"));
-    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/type.gif"));
+    setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/type.gif"));
     setTooltip(stringManager.getString("CreateObjectTypeAction-hint"));
     setActionCommandKey("CreateObjectTypeAction");
     addActionListener(createActionListener());

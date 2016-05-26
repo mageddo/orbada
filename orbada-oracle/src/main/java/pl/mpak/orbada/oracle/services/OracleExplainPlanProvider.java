@@ -30,7 +30,7 @@ public class OracleExplainPlanProvider extends UniversalActionProvider {
     if (OrbadaOraclePlugin.oracleDriverType.equals(database.getDriverType())) {
       setShortCut(KeyEvent.VK_E, KeyEvent.CTRL_MASK);
       setText(stringManager.getString("OracleExplainPlanProvider-text"));
-      setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/explain_plan.gif"));
+      setSmallIcon(pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/explain_plan.gif"));
       setActionCommandKey("OracleExplainPlanProvider");
       addActionListener(createActionListener());
       settings = application.getSettings(OracleSettingsProvider.settingsName);

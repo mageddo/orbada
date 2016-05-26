@@ -40,7 +40,7 @@ public class PostgreSQLTablespaceListView extends ViewProvider {
   
   @Override
   public Icon getIcon() {
-    return pl.mpak.sky.gui.swing.ImageManager.getImage("/pl/mpak/res/icons/tablespace.gif");
+    return pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/tablespace.gif");
   }
 
   @Override
