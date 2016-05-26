@@ -31,7 +31,7 @@ import pl.mpak.util.task.Task;
  */
 public class TableColumnGrantsPanel extends javax.swing.JPanel implements ITabObjectInfo {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   private IViewAccesibilities accesibilities;
   private String currentSchemaName = "";

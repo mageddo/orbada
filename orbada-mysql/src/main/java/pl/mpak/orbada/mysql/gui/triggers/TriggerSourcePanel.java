@@ -14,7 +14,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TriggerSourcePanel extends UniversalSourceTab {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public TriggerSourcePanel(IViewAccesibilities accesibilities) {
     super(accesibilities);

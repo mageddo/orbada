@@ -31,7 +31,7 @@ import pl.mpak.util.StringUtil;
  */
 public class FindObjectFromEditorAction extends Action {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   private Database database;
   private SyntaxEditor syntaxEditor;

@@ -34,7 +34,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class TriggerListView extends UniversalViewTabs {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   public TriggerListView(IViewAccesibilities accesibilities) {
     super(accesibilities);

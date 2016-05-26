@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TemplatesSettingsPanel extends javax.swing.JPanel implements ISettingsComponent {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   private IApplication application;
   private ISettings settings;

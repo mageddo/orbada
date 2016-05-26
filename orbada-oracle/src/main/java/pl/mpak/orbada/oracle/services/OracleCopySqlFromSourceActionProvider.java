@@ -25,7 +25,7 @@ import pl.mpak.util.TextTransfer;
  */
 public class OracleCopySqlFromSourceActionProvider extends ComponentActionProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   private ActionListener createActionListener() {
     return new ActionListener() {

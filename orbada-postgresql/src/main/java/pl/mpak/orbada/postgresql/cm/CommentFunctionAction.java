@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class CommentFunctionAction extends UniversalViewTableAction {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   public CommentFunctionAction() {
     super();

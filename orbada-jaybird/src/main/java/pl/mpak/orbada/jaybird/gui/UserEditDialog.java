@@ -31,7 +31,7 @@ public class UserEditDialog extends javax.swing.JDialog {
 
   private User user;
   private int modalResult = ModalResult.NONE;
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaJaybirdPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("jaybird");
 
   /** Creates new form UserEditDialog */
   public UserEditDialog(User user) {

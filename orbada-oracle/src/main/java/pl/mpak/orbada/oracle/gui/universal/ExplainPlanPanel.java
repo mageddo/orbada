@@ -31,7 +31,7 @@ import pl.mpak.util.patt.Resolvers;
  */
 public class ExplainPlanPanel extends javax.swing.JPanel {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   private Database database;
 

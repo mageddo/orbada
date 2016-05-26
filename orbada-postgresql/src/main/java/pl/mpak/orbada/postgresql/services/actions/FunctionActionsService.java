@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class FunctionActionsService extends ComponentActionsProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   @Override
   public ComponentAction[] getForComponent(Database database, String actionType) {

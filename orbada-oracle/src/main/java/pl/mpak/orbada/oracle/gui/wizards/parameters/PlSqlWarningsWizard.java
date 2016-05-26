@@ -19,7 +19,7 @@ import pl.mpak.util.StringUtil;
  */
 public class PlSqlWarningsWizard extends SqlCodeWizardPanel {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   private Database database;
   

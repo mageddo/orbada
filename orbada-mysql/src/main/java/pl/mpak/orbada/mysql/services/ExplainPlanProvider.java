@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ExplainPlanProvider extends UniversalActionProvider {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public ExplainPlanProvider() {
     super();

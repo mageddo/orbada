@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class SubstanceSaharaLookAndFeelService extends LookAndFeelProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLafSubstancePlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("laf-substance");
 
   public final static String lookAndFeelId = "substance-sahara-look-and-feel-service";
 

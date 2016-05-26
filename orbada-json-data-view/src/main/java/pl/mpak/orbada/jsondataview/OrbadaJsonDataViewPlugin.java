@@ -17,7 +17,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OrbadaJsonDataViewPlugin extends OrbadaPlugin {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaJsonDataViewPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("json-data-view");
 
   public final static String pluginGroupName = "Orbada Tools";
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();

@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class JaybirdGeneralSettingsService extends SettingsProvider {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaJaybirdPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("jaybird");
   public final static String settingsName = "orbada-firebird-settings";
   public final static String SET_MultiExplainPlan = "multi-explain-plan";
 

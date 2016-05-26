@@ -39,7 +39,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaLafJTatooPlugin extends OrbadaPlugin {
   
-  private StringManager i18n = StringManagerFactory.getStringManager(OrbadaLafJTatooPlugin.class);
+  private StringManager i18n = StringManagerFactory.getStringManager("laf-jtatoo");
 
   public final static String pluginName = "JTatoo";
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();

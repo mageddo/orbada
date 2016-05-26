@@ -24,7 +24,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class SearchSourceSourcePanel extends UniversalSourceTab implements ITabObjectUserData {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
   
   private HashMap<String, String> sourceMap;
   protected String lastSchemaName = "";

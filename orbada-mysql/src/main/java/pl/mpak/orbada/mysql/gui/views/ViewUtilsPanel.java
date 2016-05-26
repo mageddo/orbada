@@ -18,7 +18,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ViewUtilsPanel extends UniversalPropOnDemandTab {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public ViewUtilsPanel(IViewAccesibilities accesibilities) {
     super(accesibilities);

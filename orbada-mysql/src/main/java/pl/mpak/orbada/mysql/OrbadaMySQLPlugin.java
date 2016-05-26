@@ -54,7 +54,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaMySQLPlugin extends OrbadaPlugin {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public final static String driverType = "MySQL";
   public final static String adminGroup = stringManager.getString("OrbadaMySQLPlugin-admin-group");

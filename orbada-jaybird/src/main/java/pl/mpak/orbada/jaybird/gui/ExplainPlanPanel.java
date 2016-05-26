@@ -23,7 +23,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ExplainPlanPanel extends javax.swing.JPanel implements Closeable {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaJaybirdPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("jaybird");
   private Database database;
   
   /** Creates new form ExplainPlanPanel */

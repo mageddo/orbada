@@ -24,7 +24,7 @@ import pl.mpak.util.patt.Resolvers;
  */
 public class ResolversDialog extends javax.swing.JDialog {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaProgrammersPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("programmers");
 
   /** Creates new form ResolversDialog */
   public ResolversDialog() {

@@ -26,7 +26,7 @@ import pl.mpak.util.StringUtil;
  */
 public class LocalHistorySyntaxService extends OrbadaSyntaxTextAreaProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLocalHistoryPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("local-history");
 
   private JMenu menu;
   

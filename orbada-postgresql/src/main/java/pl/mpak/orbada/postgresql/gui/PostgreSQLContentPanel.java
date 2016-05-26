@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class PostgreSQLContentPanel extends ContentPanel {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   private String lastSchemaName;
   private String lastTableName;

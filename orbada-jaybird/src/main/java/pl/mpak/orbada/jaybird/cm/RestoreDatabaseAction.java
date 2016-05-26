@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class RestoreDatabaseAction extends Action {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaJaybirdPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("jaybird");
 
   public RestoreDatabaseAction() {
     setText(stringManager.getString("RestoreDatabaseAction.text"));

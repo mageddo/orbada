@@ -23,7 +23,7 @@ import pl.mpak.util.StringUtil;
  */
 public class MySQLPerspectiveProvider extends PerspectiveProvider {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public boolean isForDatabase(Database database) {
     if (database == null) {

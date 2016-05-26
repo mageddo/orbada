@@ -24,7 +24,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ClassesDialog extends javax.swing.JDialog {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaProgrammersPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("programmers");
 
   private VetoableChangeListener focusListener;
   

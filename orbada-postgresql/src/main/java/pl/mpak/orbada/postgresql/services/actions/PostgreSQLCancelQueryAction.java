@@ -24,7 +24,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class PostgreSQLCancelQueryAction extends ComponentActionProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   private ActionListener createActionListener() {
     return new ActionListener() {

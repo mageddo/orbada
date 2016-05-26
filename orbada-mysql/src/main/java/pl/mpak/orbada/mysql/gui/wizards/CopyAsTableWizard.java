@@ -18,7 +18,7 @@ import pl.mpak.util.StringUtil;
  */
 public class CopyAsTableWizard extends SqlCodeWizardPanel {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   private Database database;
   private String databaseName;

@@ -21,7 +21,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ToolsToolBarProvider extends GlobalToolBarProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaProgrammersPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("programmers");
 
   public void initialize() {
     getToolBar().add(new ToolButton(OrbadaProgrammersPlugin.cmCopyCode));

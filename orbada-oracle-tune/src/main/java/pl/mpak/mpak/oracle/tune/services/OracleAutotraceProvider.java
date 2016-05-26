@@ -21,7 +21,7 @@ import pl.mpak.util.StringUtil;
  */
 public class OracleAutotraceProvider extends UniversalActionProvider {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleTunePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle-tune");
 
   public boolean isForDatabase(Database database) {
     if (database == null) {

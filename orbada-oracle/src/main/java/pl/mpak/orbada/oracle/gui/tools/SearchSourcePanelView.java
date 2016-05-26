@@ -56,7 +56,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class SearchSourcePanelView extends javax.swing.JPanel implements Closeable {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   private IViewAccesibilities accesibilities;
   private String currentSchemaName;

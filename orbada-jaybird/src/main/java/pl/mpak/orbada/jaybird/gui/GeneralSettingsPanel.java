@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class GeneralSettingsPanel extends javax.swing.JPanel implements ISettingsComponent {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaJaybirdPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("jaybird");
   private IApplication application;
   private ISettings settings;
   

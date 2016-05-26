@@ -43,7 +43,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class DiffViewPanel extends javax.swing.JPanel implements Closeable {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLocalHistoryPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("local-history");
 
   private OlhObjectRecord olho;
   private SyntaxTextArea syntaxTextArea;

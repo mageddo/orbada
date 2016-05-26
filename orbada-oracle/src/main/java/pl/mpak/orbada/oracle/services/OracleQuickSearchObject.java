@@ -21,7 +21,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OracleQuickSearchObject extends PerpectiveGadgetProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   @Override
   public boolean isForDatabase(Database database) {

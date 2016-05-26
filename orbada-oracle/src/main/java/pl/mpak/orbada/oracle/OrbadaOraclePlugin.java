@@ -67,7 +67,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaOraclePlugin extends OrbadaPlugin {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   public final static String versionId = new VersionID(1, 0, 1, 60).toString();
 

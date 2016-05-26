@@ -28,7 +28,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class OrbadaLocalHistoryPlugin extends OrbadaPlugin {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLocalHistoryPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("local-history");
 
   public final static String pluginGroupName = stringManager.getString("OrbadaLocalHistoryPlugin-group-name");
   private static pl.mpak.util.timer.TimerQueue refreshQueue;

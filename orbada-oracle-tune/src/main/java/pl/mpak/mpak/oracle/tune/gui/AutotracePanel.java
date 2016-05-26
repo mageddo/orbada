@@ -29,7 +29,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class AutotracePanel extends javax.swing.JPanel implements Closeable {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleTunePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle-tune");
 
   private Database database;
   private HashMap<String, String> fullMap;

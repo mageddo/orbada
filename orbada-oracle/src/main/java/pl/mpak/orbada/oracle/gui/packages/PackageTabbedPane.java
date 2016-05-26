@@ -22,7 +22,7 @@ import pl.mpak.util.Titleable;
  */
 public class PackageTabbedPane extends OrbadaTabbedPane {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   public PackageTabbedPane(IViewAccesibilities accesibilities) {
     super("PACKAGE",

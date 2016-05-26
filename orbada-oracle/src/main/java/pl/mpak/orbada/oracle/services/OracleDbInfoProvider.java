@@ -36,7 +36,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OracleDbInfoProvider extends DatabaseInfoProvider {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   public static OracleDbInfoProvider instance;
   

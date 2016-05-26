@@ -27,7 +27,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ProcedureFreezeAction extends ComponentAction {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public ProcedureFreezeAction() {
     super();

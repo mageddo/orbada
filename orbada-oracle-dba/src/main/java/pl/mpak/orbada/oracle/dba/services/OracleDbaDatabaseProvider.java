@@ -17,7 +17,7 @@ import pl.mpak.util.StringUtil;
  */
 public class OracleDbaDatabaseProvider extends DatabaseProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleDbaPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle-dba");
 
   @Override
   public boolean isForDatabase(Database database) {

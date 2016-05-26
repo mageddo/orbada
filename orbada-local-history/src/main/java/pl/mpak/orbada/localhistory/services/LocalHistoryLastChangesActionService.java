@@ -21,7 +21,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class LocalHistoryLastChangesActionService extends ToolConfigurationActionProvider {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLocalHistoryPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("local-history");
 
   public LocalHistoryLastChangesActionService() {
     setText(getDescription());

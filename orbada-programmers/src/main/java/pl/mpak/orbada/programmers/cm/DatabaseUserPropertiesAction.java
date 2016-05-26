@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class DatabaseUserPropertiesAction extends Action {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaProgrammersPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("programmers");
 
   public DatabaseUserPropertiesAction() {
     super();

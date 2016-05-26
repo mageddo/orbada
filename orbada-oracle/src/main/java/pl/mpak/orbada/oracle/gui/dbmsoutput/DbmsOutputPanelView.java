@@ -32,7 +32,7 @@ import pl.mpak.util.timer.Timer;
  */
 public class DbmsOutputPanelView extends javax.swing.JPanel implements Closeable {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   private IViewAccesibilities accesibilities;
   private boolean viewClosing = false;

@@ -15,7 +15,7 @@ import pl.mpak.util.StringUtil;
  */
 public class CommentUniversalWizard extends SqlCodeWizardPanel {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   private Database database;
   private String objectType;

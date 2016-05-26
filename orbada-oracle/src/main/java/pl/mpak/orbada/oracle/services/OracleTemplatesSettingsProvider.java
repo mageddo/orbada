@@ -14,7 +14,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OracleTemplatesSettingsProvider extends SettingsProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   public static String settingsName = "oracle-templates";
   public static String setTrigger = "trigger";

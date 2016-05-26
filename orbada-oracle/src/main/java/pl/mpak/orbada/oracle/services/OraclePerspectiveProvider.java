@@ -58,7 +58,7 @@ import pl.mpak.util.StringUtil;
  */
 public class OraclePerspectiveProvider extends PerspectiveProvider {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   public boolean isForDatabase(Database database) {
     if (database == null) {

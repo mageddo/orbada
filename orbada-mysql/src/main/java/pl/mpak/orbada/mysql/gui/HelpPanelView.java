@@ -36,7 +36,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class HelpPanelView extends javax.swing.JPanel implements IRootTabObjectInfo {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   private IViewAccesibilities accesibilities;
   private ISettings settings;

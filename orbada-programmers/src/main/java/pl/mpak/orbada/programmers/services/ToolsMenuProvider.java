@@ -24,7 +24,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ToolsMenuProvider extends GlobalMenuProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaProgrammersPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("programmers");
 
   public void initialize() {
     getMenu().setText(SwingUtil.setButtonText(getMenu(), stringManager.getString("ToolsMenuProvider-menu-text")));

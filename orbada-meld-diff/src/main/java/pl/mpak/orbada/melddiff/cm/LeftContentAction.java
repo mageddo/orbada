@@ -22,7 +22,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class LeftContentAction extends Action {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMeldDiffPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("meld-diff");
 
   private SyntaxTextArea syntaxTextArea;
   

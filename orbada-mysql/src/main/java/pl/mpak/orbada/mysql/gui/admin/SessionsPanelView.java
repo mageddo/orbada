@@ -28,7 +28,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class SessionsPanelView extends UniversalViewTabs {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   private VersionID mySQLver;
   private boolean ge517;

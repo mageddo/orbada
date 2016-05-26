@@ -53,7 +53,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaLafSubstancePlugin extends OrbadaPlugin {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLafSubstancePlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("laf-substance");
 
   public final static String pluginName = "Substance";
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();

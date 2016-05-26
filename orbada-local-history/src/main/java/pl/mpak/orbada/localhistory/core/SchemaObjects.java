@@ -28,7 +28,7 @@ import pl.mpak.util.timer.Timer;
  */
 public class SchemaObjects {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLocalHistoryPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("local-history");
 
   private IApplication application;
   private volatile Database database;

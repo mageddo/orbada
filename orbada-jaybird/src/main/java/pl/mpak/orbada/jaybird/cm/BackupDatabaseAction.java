@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class BackupDatabaseAction extends Action {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaJaybirdPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("jaybird");
 
   public BackupDatabaseAction() {
     setText(stringManager.getString("BackupDatabaseAction.text"));

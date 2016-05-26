@@ -28,7 +28,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaLafTinyLaFPlugin extends OrbadaPlugin {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLafTinyLaFPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("laf-tinylaf");
 
   public final static String tinyLaFName = "TinyLaF";
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();

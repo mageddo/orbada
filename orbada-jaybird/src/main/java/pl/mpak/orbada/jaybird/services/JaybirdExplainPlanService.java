@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class JaybirdExplainPlanService extends UniversalActionProvider {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaJaybirdPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("jaybird");
   private ISettings settings;
 
   public boolean isForDatabase(Database database) {

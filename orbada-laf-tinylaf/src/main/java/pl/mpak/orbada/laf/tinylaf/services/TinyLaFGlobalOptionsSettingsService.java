@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TinyLaFGlobalOptionsSettingsService extends SettingsProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLafTinyLaFPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("laf-tinylaf");
 
   @Override
   public Component getSettingsComponent() {

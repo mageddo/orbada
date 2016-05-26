@@ -28,7 +28,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class UniversalColumnProvider extends UniversalActionProvider {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   public boolean isForDatabase(Database database) {
     if (database == null) {

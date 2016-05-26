@@ -21,7 +21,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ViewsPanelView extends UniversalViewTabs {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public ViewsPanelView(IViewAccesibilities accesibilities) {
     super(accesibilities);

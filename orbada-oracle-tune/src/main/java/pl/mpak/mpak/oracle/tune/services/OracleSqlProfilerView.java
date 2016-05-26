@@ -30,7 +30,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OracleSqlProfilerView extends ViewProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleTunePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle-tune");
 
   public Component createView(IViewAccesibilities accesibilities) {
     Query query = accesibilities.getDatabase().createQuery();

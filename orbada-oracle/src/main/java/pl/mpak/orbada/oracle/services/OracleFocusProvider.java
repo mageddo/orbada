@@ -17,7 +17,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OracleFocusProvider extends GlobalFocusProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   public void focusGained(JComponent comp) {
     if (comp instanceof SyntaxEditor) {

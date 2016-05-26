@@ -17,7 +17,7 @@ import pl.mpak.util.Titleable;
  */
 public class TypeTabbedPane extends OrbadaTabbedPane {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   public TypeTabbedPane(IViewAccesibilities accesibilities) {
     super("TYPE",

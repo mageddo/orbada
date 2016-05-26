@@ -16,7 +16,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class MySQLSessionsView extends ViewProvider {
  
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public Component createView(IViewAccesibilities accesibilities) {
     return new SessionsPanelView(accesibilities);

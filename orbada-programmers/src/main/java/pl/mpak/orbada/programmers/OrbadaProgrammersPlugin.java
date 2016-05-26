@@ -30,7 +30,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaProgrammersPlugin extends OrbadaPlugin {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaProgrammersPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("programmers");
 
   public final static String programmersGroupName = stringManager.getString("developer-tools");
   

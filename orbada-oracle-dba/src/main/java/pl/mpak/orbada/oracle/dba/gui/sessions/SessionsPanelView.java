@@ -27,7 +27,7 @@ import pl.mpak.util.StringUtil;
  */
 public class SessionsPanelView extends UniversalViewTabs {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleDbaPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle-dba");
 
   private boolean clusters;
   private boolean dbaRole;

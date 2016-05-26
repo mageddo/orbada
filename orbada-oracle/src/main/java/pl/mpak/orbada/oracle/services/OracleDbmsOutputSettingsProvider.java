@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OracleDbmsOutputSettingsProvider extends SettingsProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   public static String settingsName = "oracle-dbms-output";
   public static String setRefreshInterval = "refresh-interval";

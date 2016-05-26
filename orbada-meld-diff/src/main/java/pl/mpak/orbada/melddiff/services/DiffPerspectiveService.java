@@ -13,7 +13,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class DiffPerspectiveService extends PerspectiveProvider {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMeldDiffPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("meld-diff");
 
   public boolean isForDatabase(Database database) {
     return true;

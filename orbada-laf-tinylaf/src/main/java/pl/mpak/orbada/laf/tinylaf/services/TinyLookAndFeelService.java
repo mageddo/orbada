@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TinyLookAndFeelService extends LookAndFeelProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLafTinyLaFPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("laf-tinylaf");
 
   public final static String lookAndFeelId = "tiny-look-and-feel-service";
 

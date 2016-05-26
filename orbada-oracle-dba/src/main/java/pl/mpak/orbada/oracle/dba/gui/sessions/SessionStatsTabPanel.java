@@ -18,7 +18,7 @@ import pl.mpak.util.StringUtil;
  */
 public class SessionStatsTabPanel extends UniversalPropTab {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleDbaPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle-dba");
 
   private boolean clusters;
   

@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class JsonDataViewService extends ViewValueProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaJsonDataViewPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("json-data-view");
 
   @Override
   public Component createComponent(Object value) {

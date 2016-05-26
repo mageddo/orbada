@@ -16,7 +16,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class PostgreSQLPerspectiveProvider extends PerspectiveProvider {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   @Override
   public boolean isForDatabase(Database database) {

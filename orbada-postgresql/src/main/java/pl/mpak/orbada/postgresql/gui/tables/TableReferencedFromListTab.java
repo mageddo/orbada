@@ -21,7 +21,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TableReferencedFromListTab extends UniversalPropTab {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   public TableReferencedFromListTab(IViewAccesibilities accesibilities) {
     super(accesibilities);

@@ -22,7 +22,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class KillSessionAction extends ComponentAction {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public KillSessionAction() {
     super();

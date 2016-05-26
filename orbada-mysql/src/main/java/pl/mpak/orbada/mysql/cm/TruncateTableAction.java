@@ -24,7 +24,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TruncateTableAction extends ComponentAction {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public TruncateTableAction() {
     super();

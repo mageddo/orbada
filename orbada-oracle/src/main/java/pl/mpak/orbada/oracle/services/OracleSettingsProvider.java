@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OracleSettingsProvider extends SettingsProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   public static String settingsName = "oracle-settings";
   public static String setUseGlobalSettings = "global-settings";

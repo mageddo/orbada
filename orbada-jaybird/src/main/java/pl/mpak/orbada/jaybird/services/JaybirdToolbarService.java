@@ -21,7 +21,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class JaybirdToolbarService extends GlobalToolBarProvider {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaJaybirdPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("jaybird");
   private static JaybirdToolbarService instance;
   private boolean actionInited = false;
 

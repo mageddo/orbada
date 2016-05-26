@@ -32,7 +32,7 @@ import pl.mpak.util.StringUtil;
  */
 public class PostgreSQLDbInfoProvider extends DatabaseInfoProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   public static PostgreSQLDbInfoProvider instance;
 

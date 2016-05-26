@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class SubstanceMistSilverLookAndFeelService extends LookAndFeelProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLafSubstancePlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("laf-substance");
 
   public final static String lookAndFeelId = "substance-mist-silver-look-and-feel-service";
 

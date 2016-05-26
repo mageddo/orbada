@@ -14,7 +14,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class LocalHistoryDatabaseService extends DatabaseProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLocalHistoryPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("local-history");
 
   private static HashMap<String, SchemaObjects> databaseSchemaObjects = new HashMap<String, SchemaObjects>();
   

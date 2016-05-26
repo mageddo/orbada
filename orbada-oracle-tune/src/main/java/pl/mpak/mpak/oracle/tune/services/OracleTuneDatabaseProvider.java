@@ -22,7 +22,7 @@ import pl.mpak.util.StringUtil;
  */
 public class OracleTuneDatabaseProvider extends DatabaseProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleTunePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle-tune");
 
   @Override
   public boolean isForDatabase(Database database) {

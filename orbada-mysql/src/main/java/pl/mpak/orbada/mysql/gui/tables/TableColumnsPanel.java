@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TableColumnsPanel extends UniversalPropTab {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public TableColumnsPanel(IViewAccesibilities accesibilities) {
     super(accesibilities);

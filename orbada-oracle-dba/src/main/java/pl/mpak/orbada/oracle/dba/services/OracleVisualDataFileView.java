@@ -18,7 +18,7 @@ import pl.mpak.util.StringUtil;
  */
 public class OracleVisualDataFileView extends ViewProvider {
  
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleDbaPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle-dba");
 
   public Component createView(IViewAccesibilities accesibilities) {
     return new VisualDataFilePanelView(accesibilities);

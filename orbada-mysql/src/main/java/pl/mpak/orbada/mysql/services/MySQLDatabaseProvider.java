@@ -14,7 +14,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class MySQLDatabaseProvider extends DatabaseProvider {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   @Override
   public boolean isForDatabase(Database database) {

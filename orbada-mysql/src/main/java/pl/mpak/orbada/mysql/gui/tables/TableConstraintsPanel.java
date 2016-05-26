@@ -18,7 +18,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TableConstraintsPanel extends UniversalPropTab {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public TableConstraintsPanel(IViewAccesibilities accesibilities) {
     super(accesibilities);

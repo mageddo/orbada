@@ -28,7 +28,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ExplainPlanDialog extends javax.swing.JDialog {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   private Database database;
   private String sqlText;

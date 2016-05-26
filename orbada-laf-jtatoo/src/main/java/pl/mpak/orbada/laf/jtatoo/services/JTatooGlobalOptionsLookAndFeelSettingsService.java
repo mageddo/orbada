@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class JTatooGlobalOptionsLookAndFeelSettingsService extends SettingsProvider {
 
-  private StringManager i18n = StringManagerFactory.getStringManager(OrbadaLafJTatooPlugin.class);
+  private StringManager i18n = StringManagerFactory.getStringManager("laf-jtatoo");
 
   @Override
   public Component getSettingsComponent() {

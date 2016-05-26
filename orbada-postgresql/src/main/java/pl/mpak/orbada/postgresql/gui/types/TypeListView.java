@@ -24,7 +24,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TypeListView extends UniversalViewTabs {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   public TypeListView(IViewAccesibilities accesibilities) {
     super(accesibilities);

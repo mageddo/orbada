@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class SubstanceNebulaBrickWallLookAndFeelService extends LookAndFeelProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLafSubstancePlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("laf-substance");
 
   public final static String lookAndFeelId = "substance-nebula-brick-wall-look-and-feel-service";
 

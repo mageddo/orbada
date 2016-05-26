@@ -16,7 +16,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class DiffViewService extends ViewProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMeldDiffPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("meld-diff");
 
   private DiffViewPanel viewPanel;
   private String leftFileName;

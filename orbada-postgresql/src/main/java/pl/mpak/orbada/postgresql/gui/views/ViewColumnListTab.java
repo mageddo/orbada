@@ -24,7 +24,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ViewColumnListTab extends UniversalPropTab {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   public ViewColumnListTab(IViewAccesibilities accesibilities) {
     super(accesibilities);

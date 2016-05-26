@@ -48,7 +48,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaPostgreSQLPlugin extends OrbadaPlugin {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   public final static String driverType = "PostgreSQL";
   public final static VersionID version = new VersionID(1, 0, 2, 23);

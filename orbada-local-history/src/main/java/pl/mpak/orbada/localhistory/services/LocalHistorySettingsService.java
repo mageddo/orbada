@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class LocalHistorySettingsService extends SettingsProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLocalHistoryPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("local-history");
 
   public static String settingsName = "orbada-local-history";
   public static String setDeleteAfterDays = "delete-after-days";

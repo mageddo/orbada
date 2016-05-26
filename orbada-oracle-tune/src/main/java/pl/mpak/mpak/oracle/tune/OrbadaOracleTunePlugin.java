@@ -21,7 +21,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaOracleTunePlugin extends OrbadaPlugin {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleTunePlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("oracle-tune");
 
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();
   public final static String tuneGroup = stringManager.getString("tuning");

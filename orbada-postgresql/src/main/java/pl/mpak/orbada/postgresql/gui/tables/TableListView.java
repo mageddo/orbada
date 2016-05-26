@@ -30,7 +30,7 @@ import pl.mpak.util.StringUtil;
  */
 public class TableListView extends UniversalViewTabs {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   public TableListView(IViewAccesibilities accesibilities) {
     super(accesibilities);

@@ -17,7 +17,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class MySQLFocusProvider extends GlobalFocusProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public void focusGained(JComponent comp) {
     if (comp instanceof SyntaxEditor) {

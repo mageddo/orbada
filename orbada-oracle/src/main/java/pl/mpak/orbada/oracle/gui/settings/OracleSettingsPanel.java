@@ -14,7 +14,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OracleSettingsPanel extends javax.swing.JPanel implements ISettingsComponent {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   private IApplication application;
   private ISettings settings;

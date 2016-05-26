@@ -24,7 +24,7 @@ import pl.mpak.util.StringUtil;
  */
 public class MySQLAutoCompleteDatabaseService extends DatabaseProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLAutocompletePlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("mysql-autocomplete");
 
   public static MySQLAutoCompleteDatabaseService instance;
   private static HashMap<String, HashMap<String, ArrayList<AutoCompleteItem>>> databaseSyntaxList = new HashMap<String, HashMap<String, ArrayList<AutoCompleteItem>>>();

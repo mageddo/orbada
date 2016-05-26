@@ -22,7 +22,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class TriggerFunctionSourceTab extends UniversalSourceTab implements ITabObjectUserData {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   private HashMap<String, Variant> mapValues;
 

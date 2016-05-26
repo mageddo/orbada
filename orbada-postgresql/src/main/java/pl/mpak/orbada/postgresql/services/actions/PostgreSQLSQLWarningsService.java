@@ -25,7 +25,7 @@ import pl.mpak.util.TaskUtil;
  */
 public class PostgreSQLSQLWarningsService extends UniversalActionProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
   
   @Override
   public boolean isForDatabase(Database database) {

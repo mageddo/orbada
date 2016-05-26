@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OracleDbmsOutputView extends ViewProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   public Component createView(IViewAccesibilities accesibilities) {
     return new DbmsOutputPanelView(accesibilities);

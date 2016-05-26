@@ -26,7 +26,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class LastChangeObjectDescriptionAction extends Action {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLocalHistoryPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("local-history");
 
   private AbsOrbadaSyntaxTextArea syntaxTextArea;
   

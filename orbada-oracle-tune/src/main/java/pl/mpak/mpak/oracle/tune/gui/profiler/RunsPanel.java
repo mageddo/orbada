@@ -40,7 +40,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class RunsPanel extends javax.swing.JPanel implements Closeable {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleTunePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle-tune");
 
   private enum ProfileState {
     Started,

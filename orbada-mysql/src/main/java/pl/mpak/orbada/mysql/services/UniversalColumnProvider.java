@@ -24,7 +24,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class UniversalColumnProvider extends UniversalActionProvider {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public UniversalColumnProvider() {
     super();

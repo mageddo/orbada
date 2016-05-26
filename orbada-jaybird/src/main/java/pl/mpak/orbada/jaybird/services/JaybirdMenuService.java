@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class JaybirdMenuService extends GlobalMenuProvider {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaJaybirdPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("jaybird");
   private static JaybirdMenuService instance;
   private boolean actionInited = false;
 

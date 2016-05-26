@@ -14,7 +14,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class SourceCreatorSettingsPanel extends javax.swing.JPanel implements ISettingsComponent {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   public final static String settingsName = "oracle-source-creator-settings";
   

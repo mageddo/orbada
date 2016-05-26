@@ -26,7 +26,7 @@ import pl.mpak.util.StringUtil;
  */
 public class OracleExplainPlanSourceActionProvider extends ComponentActionProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   private ActionListener createActionListener() {
     return new ActionListener() {

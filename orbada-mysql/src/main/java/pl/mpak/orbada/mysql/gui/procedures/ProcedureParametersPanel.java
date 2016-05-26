@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ProcedureParametersPanel extends UniversalPropTab {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public ProcedureParametersPanel(IViewAccesibilities accesibilities) {
     super(accesibilities);

@@ -18,7 +18,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class DatabaseComboBoxModel extends DefaultComboBoxModel {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
   
   private Database database;
   

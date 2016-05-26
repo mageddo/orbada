@@ -28,7 +28,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class AutotracePanel extends javax.swing.JPanel implements Closeable {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   private Database database;
   private HashMap<String, String> sessionMap;

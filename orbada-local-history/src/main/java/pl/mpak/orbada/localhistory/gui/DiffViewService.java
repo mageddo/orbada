@@ -17,7 +17,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class DiffViewService extends ViewProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLocalHistoryPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("local-history");
 
   private OlhObjectRecord olho;
   private SyntaxTextArea syntaxTextArea;

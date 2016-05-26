@@ -22,7 +22,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaJaybirdPlugin extends OrbadaPlugin {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaJaybirdPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("jaybird");
   public final static String firebirdDriverType = "Firebird";
   public final static String jaybirdDriverClass = "org.firebirdsql.jdbc.FBDriver";
 

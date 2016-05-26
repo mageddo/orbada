@@ -31,7 +31,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ObjectFreezeAction extends ComponentAction {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
   
   private FreezeFactory freezeFactory;
   private IViewAccesibilities accesibilities;

@@ -40,7 +40,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class GlobalOptionsSettingsPanel extends javax.swing.JPanel implements ISettingsComponent {
 
-  private StringManager i18n = StringManagerFactory.getStringManager(OrbadaLafJTatooPlugin.class);
+  private StringManager i18n = StringManagerFactory.getStringManager("laf-jtatoo");
 
   private IApplication application;
   private File propFile;

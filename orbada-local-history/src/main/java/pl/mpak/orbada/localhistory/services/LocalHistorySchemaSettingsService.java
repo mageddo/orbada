@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class LocalHistorySchemaSettingsService extends PerspectiveSettingsProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLocalHistoryPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("local-history");
 
   @Override
   public boolean isForDatabase(Database database) {

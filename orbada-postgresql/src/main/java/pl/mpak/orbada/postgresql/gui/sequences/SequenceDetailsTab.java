@@ -21,7 +21,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class SequenceDetailsTab extends UniversalPropDetailsTab {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
   
   private String sequenceAccesible = "NO";
 

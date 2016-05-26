@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ObjectSearchActionsService extends ComponentActionsProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   @Override
   public ComponentAction[] getForComponent(Database database, String actionType) {

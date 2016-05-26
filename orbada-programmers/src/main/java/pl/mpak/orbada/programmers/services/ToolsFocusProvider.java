@@ -23,7 +23,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ToolsFocusProvider extends GlobalFocusProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaProgrammersPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("programmers");
 
   public void focusGained(JComponent comp) {
     if (comp instanceof SyntaxEditor) {

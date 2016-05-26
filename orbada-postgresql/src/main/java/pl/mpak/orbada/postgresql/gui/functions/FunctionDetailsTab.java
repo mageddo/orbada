@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class FunctionDetailsTab extends UniversalPropDetailsTab {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   public FunctionDetailsTab(IViewAccesibilities accesibilities) {
     super(accesibilities);

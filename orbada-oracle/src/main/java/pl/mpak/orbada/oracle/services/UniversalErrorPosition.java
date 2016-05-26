@@ -23,7 +23,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class UniversalErrorPosition extends UniversalActionProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
   private int beforeStartPosition = -1;
   private int beforeEndPosition = -1;
   private String sqlText;

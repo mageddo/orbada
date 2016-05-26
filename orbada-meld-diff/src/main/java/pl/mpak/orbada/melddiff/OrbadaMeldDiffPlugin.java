@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OrbadaMeldDiffPlugin extends OrbadaPlugin {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMeldDiffPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("meld-diff");
 
   public final static String pluginGroupName = "Orbada Tools";
   

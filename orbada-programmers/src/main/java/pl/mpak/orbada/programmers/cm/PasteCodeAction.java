@@ -34,7 +34,7 @@ import pl.mpak.util.array.StringList;
  */
 public class PasteCodeAction extends Action {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaProgrammersPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("programmers");
 
   private SyntaxEditor editor;
   private IApplication application;

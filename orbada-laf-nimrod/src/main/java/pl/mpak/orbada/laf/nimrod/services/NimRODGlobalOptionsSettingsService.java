@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class NimRODGlobalOptionsSettingsService extends SettingsProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLafNimRODPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("laf-nimrod");
 
   @Override
   public Component getSettingsComponent() {

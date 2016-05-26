@@ -30,7 +30,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class CreateDatabaseDialog extends javax.swing.JDialog {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaJaybirdPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("jaybird");
   private Thread worker;
   private ISettings settings;
 

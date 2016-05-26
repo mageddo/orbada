@@ -35,7 +35,7 @@ import pl.mpak.util.StringUtil;
  */
 public class GlobalOptionsSettingsPanel extends javax.swing.JPanel implements ISettingsComponent {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLafNimRODPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("laf-nimrod");
 
   private IApplication application;
   private File propFile;

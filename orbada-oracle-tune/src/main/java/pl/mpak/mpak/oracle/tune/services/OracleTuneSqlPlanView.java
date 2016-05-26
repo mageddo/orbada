@@ -19,7 +19,7 @@ import pl.mpak.util.StringUtil;
  */
 public class OracleTuneSqlPlanView extends ViewProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleTunePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle-tune");
 
   public Component createView(IViewAccesibilities accesibilities) {
     if (StringUtil.toBoolean(accesibilities.getDatabase().getUserProperties().getProperty("v$sql_plan"))) {

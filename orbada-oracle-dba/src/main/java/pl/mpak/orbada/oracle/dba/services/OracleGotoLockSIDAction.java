@@ -28,7 +28,7 @@ import pl.mpak.util.StringUtil;
  */
 public class OracleGotoLockSIDAction extends ComponentActionProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleDbaPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle-dba");
 
   private ActionListener createActionListener() {
     return new ActionListener() {

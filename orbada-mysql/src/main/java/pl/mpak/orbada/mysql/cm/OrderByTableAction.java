@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OrderByTableAction extends ComponentAction {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public OrderByTableAction() {
     super();

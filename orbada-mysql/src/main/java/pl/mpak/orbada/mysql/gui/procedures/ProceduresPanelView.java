@@ -22,7 +22,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ProceduresPanelView extends UniversalViewTabs {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public ProceduresPanelView(IViewAccesibilities accesibilities) {
     super(accesibilities);

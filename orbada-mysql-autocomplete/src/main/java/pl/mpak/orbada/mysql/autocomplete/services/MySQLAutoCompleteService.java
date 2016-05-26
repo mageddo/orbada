@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class MySQLAutoCompleteService extends SyntaxEditorAutoCompleteProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLAutocompletePlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("mysql-autocomplete");
 
   private OrbadaSyntaxTextArea syntaxTextArea;
 

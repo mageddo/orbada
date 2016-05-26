@@ -44,7 +44,7 @@ import pl.mpak.util.Titleable;
  */
 public class QuickSearchObject extends javax.swing.JPanel implements Titleable, Closeable, Configurable {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   private IGadgetAccesibilities accesibilities;
   

@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ExplainPlanService extends UniversalActionProvider {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   public ExplainPlanService() {
     super();

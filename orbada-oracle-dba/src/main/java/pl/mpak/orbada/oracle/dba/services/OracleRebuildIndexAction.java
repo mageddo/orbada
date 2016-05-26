@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OracleRebuildIndexAction extends ComponentActionProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleDbaPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle-dba");
 
   private ActionListener createActionListener() {
     return new ActionListener() {

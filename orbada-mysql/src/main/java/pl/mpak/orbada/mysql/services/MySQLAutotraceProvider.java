@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class MySQLAutotraceProvider extends UniversalActionProvider {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public boolean isForDatabase(Database database) {
     if (database == null) {

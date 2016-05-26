@@ -27,7 +27,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ViewJsonDataPanel extends javax.swing.JPanel implements Closeable {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaJsonDataViewPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("json-data-view");
 
   private Object value;
   

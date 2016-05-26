@@ -46,7 +46,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class LastChangesDialog extends javax.swing.JDialog {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLocalHistoryPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("local-history");
 
   private ISettings settings;
   private IPerspectiveAccesibilities perspective;

@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class CreateDatabaseTriggerWizard extends SqlCodeWizardPanel {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleDbaPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle-dba");
 
   private Database database;
   private String schemaName;

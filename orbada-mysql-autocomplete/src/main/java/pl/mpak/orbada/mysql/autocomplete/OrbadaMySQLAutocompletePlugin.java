@@ -22,7 +22,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaMySQLAutocompletePlugin extends OrbadaPlugin {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLAutocompletePlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("mysql-autocomplete");
 
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();
   

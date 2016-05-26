@@ -23,7 +23,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class CheckViewAction extends ComponentAction {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public CheckViewAction() {
     super();

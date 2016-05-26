@@ -26,7 +26,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class CreateProcedureAction extends ComponentAction {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public CreateProcedureAction() {
     super();

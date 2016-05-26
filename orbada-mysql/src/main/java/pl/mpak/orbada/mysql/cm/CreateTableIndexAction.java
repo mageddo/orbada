@@ -27,7 +27,7 @@ import pl.mpak.util.StringUtil;
  */
 public class CreateTableIndexAction extends ComponentAction {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public CreateTableIndexAction() {
     super();

@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ExplainPlanPanel extends javax.swing.JPanel implements Closeable {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   private Database database;
   

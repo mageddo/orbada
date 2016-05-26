@@ -32,7 +32,7 @@ import pl.mpak.util.StringUtil;
  */
 public class ParametersPanelView extends UniversalViewTabs {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleDbaPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle-dba");
   
   private SearchPanel searchPanel;
 

@@ -35,7 +35,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class GlobalOptionsSettingsPanel extends javax.swing.JPanel implements ISettingsComponent {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLafTinyLaFPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("laf-tinylaf");
 
   private IApplication application;
   private File propFile;

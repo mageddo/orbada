@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OracleConnectionSettingsProvider extends PerspectiveSettingsProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   @Override
   public String getSettingsPath() {

@@ -22,7 +22,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class DatabaseUserPropertiesDialog extends javax.swing.JDialog {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaProgrammersPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("programmers");
 
   /** Creates new form ResolversDialog */
   public DatabaseUserPropertiesDialog() {

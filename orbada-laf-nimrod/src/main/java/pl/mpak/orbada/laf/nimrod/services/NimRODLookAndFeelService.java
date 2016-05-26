@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class NimRODLookAndFeelService extends LookAndFeelProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLafNimRODPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("laf-nimrod");
 
   public final static String lookAndFeelId = "nimrod-look-and-feel-service";
 

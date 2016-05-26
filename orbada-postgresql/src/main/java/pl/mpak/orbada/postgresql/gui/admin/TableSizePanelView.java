@@ -27,7 +27,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TableSizePanelView extends UniversalViewTabs {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
   
   private SearchPanel searchPanel;
   private RefreshPanel refreshPanel;

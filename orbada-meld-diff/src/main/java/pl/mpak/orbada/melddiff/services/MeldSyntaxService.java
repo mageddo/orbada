@@ -25,7 +25,7 @@ import pl.mpak.util.patt.Resolvers;
  */
 public class MeldSyntaxService extends OrbadaSyntaxTextAreaProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMeldDiffPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("meld-diff");
 
   private JMenu menu;
   

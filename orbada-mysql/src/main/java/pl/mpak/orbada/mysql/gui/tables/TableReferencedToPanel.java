@@ -17,7 +17,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TableReferencedToPanel extends UniversalPropTab {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public TableReferencedToPanel(IViewAccesibilities accesibilities) {
     super(accesibilities);

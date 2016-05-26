@@ -39,7 +39,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class DatasPanel extends javax.swing.JPanel implements Closeable {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleTunePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle-tune");
 
   private IViewAccesibilities accesibilities;
   private Timer timer;

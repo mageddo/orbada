@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class MeldDiffAction extends Action {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMeldDiffPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("meld-diff");
 
   private IPerspectiveAccesibilities accesibilities;
   

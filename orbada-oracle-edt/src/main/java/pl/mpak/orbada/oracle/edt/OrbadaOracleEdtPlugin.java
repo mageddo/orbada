@@ -2,6 +2,7 @@ package pl.mpak.orbada.oracle.edt;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.oracle.edt.services.OracleDatabaseProvider;
 import pl.mpak.orbada.plugins.OrbadaPlugin;
@@ -18,7 +19,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaOracleEdtPlugin extends OrbadaPlugin {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleEdtPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle-edt");
 
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();
   

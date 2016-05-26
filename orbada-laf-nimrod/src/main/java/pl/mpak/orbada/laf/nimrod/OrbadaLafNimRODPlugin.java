@@ -28,7 +28,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaLafNimRODPlugin extends OrbadaPlugin {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaLafNimRODPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("laf-nimrod");
 
   public final static String nimRODName = "NimROD";
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();

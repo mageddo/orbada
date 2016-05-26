@@ -38,7 +38,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class CopyCodeDialog extends javax.swing.JDialog {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaProgrammersPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("programmers");
 
   private ISettings settings;
 

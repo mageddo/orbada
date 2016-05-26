@@ -21,7 +21,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class AggregateAttributeListTab extends UniversalPropTab {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   public AggregateAttributeListTab(IViewAccesibilities accesibilities) {
     super(accesibilities);

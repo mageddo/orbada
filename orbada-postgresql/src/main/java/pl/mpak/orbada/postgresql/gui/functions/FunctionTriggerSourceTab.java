@@ -31,7 +31,7 @@ import pl.mpak.util.StringUtil;
  */
 public class FunctionTriggerSourceTab extends UniversalPropSourceTab {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   public FunctionTriggerSourceTab(IViewAccesibilities accesibilities) {
     super(accesibilities);

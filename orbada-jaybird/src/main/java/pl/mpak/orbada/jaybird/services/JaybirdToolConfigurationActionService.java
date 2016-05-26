@@ -21,7 +21,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class JaybirdToolConfigurationActionService extends ToolConfigurationActionProvider {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaJaybirdPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("jaybird");
   private boolean visible = false;
 
   public JaybirdToolConfigurationActionService() {

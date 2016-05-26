@@ -20,7 +20,7 @@ import pl.mpak.util.StringUtil;
  */
 public class SourceCreator {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaPostgreSQLPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("postgresql");
 
   private Database database;
   private SyntaxTextArea textArea;

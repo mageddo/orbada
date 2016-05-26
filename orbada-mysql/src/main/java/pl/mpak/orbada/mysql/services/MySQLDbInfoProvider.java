@@ -30,7 +30,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class MySQLDbInfoProvider extends DatabaseInfoProvider {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager(OrbadaMySQLPlugin.class);
+  private final static StringManager stringManager = StringManagerFactory.getStringManager("mysql");
 
   public static MySQLDbInfoProvider instance;
 

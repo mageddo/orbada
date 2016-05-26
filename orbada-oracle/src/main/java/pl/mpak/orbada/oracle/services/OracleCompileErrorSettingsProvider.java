@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OracleCompileErrorSettingsProvider extends SettingsProvider {
 
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOraclePlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle");
 
   public static String settingsName = "oracle-compile-error";
   public static String setOnErrorGoToTab = "on-error-goto-tab";

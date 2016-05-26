@@ -29,7 +29,7 @@ import pl.mpak.util.StringUtil;
  */
 public class CopyCodeAction extends Action {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaProgrammersPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("programmers");
 
   private SyntaxEditor editor;
   private IApplication application;

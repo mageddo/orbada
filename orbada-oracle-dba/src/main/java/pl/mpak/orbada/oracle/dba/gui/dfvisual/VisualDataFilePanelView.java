@@ -58,7 +58,7 @@ import pl.mpak.util.timer.Timer;
  */
 public class VisualDataFilePanelView extends javax.swing.JPanel implements Closeable {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleDbaPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle-dba");
 
   private static Dimension[] displayBlockSizes = {
     new Dimension(3, 3),

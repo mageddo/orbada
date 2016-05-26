@@ -36,7 +36,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaOracleDbaPlugin extends OrbadaPlugin {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaOracleDbaPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("oracle-dba");
 
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();
   
