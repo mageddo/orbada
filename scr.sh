@@ -3,7 +3,7 @@
 BASE=$PWD;
 RESOURCES_FOLDER=src/main/resources
 JAVA_FOLDER=src/main/java
-for i in `ls`;
+for i in `ls`; do
 	
 	# entrando na pasta do modulo
 	cd $BASE/$i
@@ -14,8 +14,8 @@ for i in `ls`;
 	mkdir -p $JAVA_FOLDER
 
 	# movendo o resources 
-	cp -r `find -name "res"` $RESOUCES_FOLDER
-	cp -r `find -name "*.properties"` $RESOUCES_FOLDER
+	cp -r `find -name "res"` $RESOURCES_FOLDER
+	cp -r `find -name "*.properties"` $RESOURCES_FOLDER
 
 	# movendo o java
 	mv pl $JAVA_FOLDER
@@ -23,5 +23,5 @@ for i in `ls`;
 	echo "finished module"	
 
 
-;done
+done
 
