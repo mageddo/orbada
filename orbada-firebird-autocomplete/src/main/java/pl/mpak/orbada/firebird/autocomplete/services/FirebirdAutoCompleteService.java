@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class FirebirdAutoCompleteService extends SyntaxEditorAutoCompleteProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdAutocompletePlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird-autocomplete");
 
   private OrbadaSyntaxTextArea syntaxTextArea;
 

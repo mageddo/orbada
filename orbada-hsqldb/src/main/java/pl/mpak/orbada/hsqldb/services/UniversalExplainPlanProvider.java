@@ -26,7 +26,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class UniversalExplainPlanProvider extends UniversalActionProvider {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaHSqlDbPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("hsqldb");
 
   public UniversalExplainPlanProvider() {
     super();

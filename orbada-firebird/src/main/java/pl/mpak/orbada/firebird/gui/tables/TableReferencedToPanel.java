@@ -29,7 +29,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TableReferencedToPanel extends javax.swing.JPanel implements ITabObjectInfo {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   private IViewAccesibilities accesibilities;
   private String currentTableName = "";

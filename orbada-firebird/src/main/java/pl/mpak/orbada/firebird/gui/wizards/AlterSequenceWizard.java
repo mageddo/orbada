@@ -14,7 +14,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class AlterSequenceWizard extends SqlCodeWizardPanel {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   private Database database;
   private String objectName;

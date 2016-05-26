@@ -35,7 +35,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class HSqlDbPerspectiveProvider extends PerspectiveProvider {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaHSqlDbPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("hsqldb");
 
   public boolean isForDatabase(Database database) {
     if (database == null) {

@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class HSqlDbTriggersView extends ViewProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaHSqlDbPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("hsqldb");
 
   public Component createView(IViewAccesibilities accesibilities) {
     return new TriggersPanelView(accesibilities);

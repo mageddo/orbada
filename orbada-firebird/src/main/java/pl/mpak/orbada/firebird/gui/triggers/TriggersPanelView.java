@@ -44,7 +44,7 @@ import pl.mpak.util.variant.VariantException;
  */
 public class TriggersPanelView extends javax.swing.JPanel implements IRootTabObjectInfo {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   private IViewAccesibilities accesibilities;
   private String currentSchemaName;

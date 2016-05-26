@@ -15,7 +15,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class RenameTableColumnWizard extends SqlCodeWizardPanel {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaHSqlDbPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("hsqldb");
 
   private Database database;
   private String databaseName;

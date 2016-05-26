@@ -39,7 +39,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class ExportToPdf extends ExportTableActionProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaExportPdfPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("export-pdf");
 
   private String nullDataValue;
   private String fileName;

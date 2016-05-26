@@ -45,7 +45,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class SequencesPanelView extends javax.swing.JPanel implements IRootTabObjectInfo {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaHSqlDbPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("hsqldb");
 
   private IViewAccesibilities accesibilities;
   private String currentSchemaName;

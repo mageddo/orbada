@@ -27,7 +27,7 @@ import pl.mpak.util.StringUtil;
  */
 public class FirebirdPerspectiveProvider extends PerspectiveProvider {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   public boolean isForDatabase(Database database) {
     if (database == null) {

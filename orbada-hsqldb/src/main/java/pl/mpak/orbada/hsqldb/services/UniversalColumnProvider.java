@@ -31,7 +31,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class UniversalColumnProvider extends UniversalActionProvider {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaHSqlDbPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("hsqldb");
 
   public UniversalColumnProvider() {
     super();

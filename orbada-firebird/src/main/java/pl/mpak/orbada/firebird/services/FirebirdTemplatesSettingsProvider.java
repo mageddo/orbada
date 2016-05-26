@@ -14,7 +14,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class FirebirdTemplatesSettingsProvider extends SettingsProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   public static String settingsName = "firebird-templates";
   public static String setTrigger = "trigger";

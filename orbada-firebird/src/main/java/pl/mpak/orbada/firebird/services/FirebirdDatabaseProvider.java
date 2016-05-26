@@ -14,7 +14,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class FirebirdDatabaseProvider extends DatabaseProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   @Override
   public boolean isForDatabase(Database database) {

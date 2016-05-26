@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class FirebirdGeneralSettingsProvider extends SettingsProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   public final static String settingsName = "orbada-firebird-settings";
   public final static String SET_ConnectionTransaction = "connection-transaction";

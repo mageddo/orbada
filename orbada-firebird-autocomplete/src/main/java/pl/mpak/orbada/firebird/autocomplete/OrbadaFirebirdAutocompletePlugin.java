@@ -22,7 +22,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaFirebirdAutocompletePlugin extends OrbadaPlugin {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdAutocompletePlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird-autocomplete");
 
   public final static ArrayList<Class<? extends IPluginProvider>> classList = new ArrayList<Class<? extends IPluginProvider>>();
   

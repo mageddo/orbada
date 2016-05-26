@@ -41,7 +41,7 @@ import pl.mpak.util.files.FileExtensionFilter;
  */
 public class ImportFromCsvDialog extends javax.swing.JDialog {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaImportCsvPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("import-csv");
 
   private int modalResult = pl.mpak.sky.gui.mr.ModalResult.NONE;
   private CsvImportConfiguration config;

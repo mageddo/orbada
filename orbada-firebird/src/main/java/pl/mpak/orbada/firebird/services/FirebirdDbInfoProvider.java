@@ -27,7 +27,7 @@ import pl.mpak.util.StringUtil;
  */
 public class FirebirdDbInfoProvider extends DatabaseInfoProvider {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   public static FirebirdDbInfoProvider instance;
   

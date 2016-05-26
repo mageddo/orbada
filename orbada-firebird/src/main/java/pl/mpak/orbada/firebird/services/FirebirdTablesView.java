@@ -16,7 +16,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class FirebirdTablesView extends ViewProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   public Component createView(IViewAccesibilities accesibilities) {
     return new TablesPanelView(accesibilities);

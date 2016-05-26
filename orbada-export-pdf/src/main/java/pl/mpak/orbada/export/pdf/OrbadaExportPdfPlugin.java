@@ -16,7 +16,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaExportPdfPlugin extends OrbadaPlugin {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaExportPdfPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("export-pdf");
 
   public final static String exportGroupName = "Export tools";
   

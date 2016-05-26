@@ -22,7 +22,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaGadgetsPlugin extends OrbadaPlugin {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaGadgetsPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("gadgets");
 
   public final static String gadgetsGroupName = "Gadgets";
   public final static pl.mpak.util.timer.TimerQueue refreshQueue = pl.mpak.util.timer.TimerManager.getTimer("orbada-gadgets-refresh");

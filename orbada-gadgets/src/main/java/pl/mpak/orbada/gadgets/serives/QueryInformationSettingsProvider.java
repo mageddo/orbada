@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class QueryInformationSettingsProvider extends SettingsProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaGadgetsPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("gadgets");
 
   @Override
   public String getSettingsPath() {

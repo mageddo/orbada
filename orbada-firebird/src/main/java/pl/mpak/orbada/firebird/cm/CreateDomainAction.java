@@ -21,7 +21,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class CreateDomainAction extends Action {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   private Database database;
   

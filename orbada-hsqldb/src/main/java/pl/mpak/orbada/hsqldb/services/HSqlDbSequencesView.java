@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class HSqlDbSequencesView extends ViewProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaHSqlDbPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("hsqldb");
 
   public Component createView(IViewAccesibilities accesibilities) {
     return new SequencesPanelView(accesibilities);

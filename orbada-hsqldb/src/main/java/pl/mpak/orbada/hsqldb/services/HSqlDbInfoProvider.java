@@ -25,7 +25,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class HSqlDbInfoProvider extends DatabaseInfoProvider {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaHSqlDbPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("hsqldb");
 
   public static HSqlDbInfoProvider instance;
   

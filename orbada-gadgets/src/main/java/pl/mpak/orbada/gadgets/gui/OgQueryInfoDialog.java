@@ -29,7 +29,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OgQueryInfoDialog extends javax.swing.JDialog {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaGadgetsPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("gadgets");
 
   private IApplication application;
   private int modalResult = ModalResult.NONE;

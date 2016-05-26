@@ -33,7 +33,7 @@ import pl.mpak.util.id.UniqueID;
  */
 public class QueryInformationConfigDialog extends javax.swing.JDialog {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaGadgetsPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("gadgets");
 
   private IPerspectiveAccesibilities accesibilities;
   private DriverType driverType;

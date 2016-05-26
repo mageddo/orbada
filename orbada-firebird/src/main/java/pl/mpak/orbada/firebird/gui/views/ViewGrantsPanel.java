@@ -38,7 +38,7 @@ import pl.mpak.util.StringUtil;
  */
 public class ViewGrantsPanel extends javax.swing.JPanel implements ITabObjectInfo {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   private IViewAccesibilities accesibilities;
   private String currentTableName = "";

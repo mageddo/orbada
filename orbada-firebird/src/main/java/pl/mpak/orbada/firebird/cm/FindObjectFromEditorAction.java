@@ -30,7 +30,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class FindObjectFromEditorAction extends Action {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   private Database database;
   private SyntaxEditor syntaxEditor;

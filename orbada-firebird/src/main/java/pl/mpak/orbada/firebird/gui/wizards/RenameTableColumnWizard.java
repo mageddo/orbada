@@ -15,7 +15,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class RenameTableColumnWizard extends SqlCodeWizardPanel {
   
-  private final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private final StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   private Database database;
   private String tableName;

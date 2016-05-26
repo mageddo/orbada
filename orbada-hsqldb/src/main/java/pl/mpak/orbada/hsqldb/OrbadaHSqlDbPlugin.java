@@ -38,7 +38,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaHSqlDbPlugin extends OrbadaPlugin {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaHSqlDbPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("hsqldb");
 
   public final static String hsqlDbDriverType = "HSQLDB";
   private static pl.mpak.util.timer.TimerQueue refreshQueue;

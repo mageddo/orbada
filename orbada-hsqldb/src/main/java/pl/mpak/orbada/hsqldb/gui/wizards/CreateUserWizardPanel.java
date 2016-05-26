@@ -20,7 +20,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class CreateUserWizardPanel extends SqlCodeWizardPanel {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaHSqlDbPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("hsqldb");
 
   private Database database;
   

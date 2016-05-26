@@ -18,7 +18,7 @@ import pl.mpak.util.id.VersionID;
  */
 public class OrbadaImportCsvPlugin extends OrbadaPlugin {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaImportCsvPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("import-csv");
 
   public final static String pluginGroupName = "Import tools";
   public final static String version = new VersionID(1, 0, 0, 1).toString();

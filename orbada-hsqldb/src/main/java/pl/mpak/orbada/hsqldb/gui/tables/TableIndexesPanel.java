@@ -34,7 +34,7 @@ import pl.mpak.util.timer.Timer;
  */
 public class TableIndexesPanel extends javax.swing.JPanel implements ITabObjectInfo {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaHSqlDbPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("hsqldb");
 
   private IViewAccesibilities accesibilities;
   private String currentSchemaName = "";

@@ -21,7 +21,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class QueryInformationGadget extends PerpectiveGadgetProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaGadgetsPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("gadgets");
 
   @Override
   public boolean isForDatabase(Database database) {

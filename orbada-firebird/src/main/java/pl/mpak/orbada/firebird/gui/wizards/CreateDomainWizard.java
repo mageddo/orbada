@@ -16,7 +16,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class CreateDomainWizard extends SqlCodeWizardPanel {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   private Database database;
   

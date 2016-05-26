@@ -37,7 +37,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class QueryInformationSettingsPanel extends javax.swing.JPanel implements ISettingsComponent, Closeable {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaGadgetsPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("gadgets");
 
   private IApplication application;
   

@@ -33,7 +33,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class QueryInformationPanel extends javax.swing.JPanel implements Titleable, Closeable, Configurable, IProcessMessagable {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaGadgetsPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("gadgets");
 
   private IGadgetAccesibilities accesibilities;
   private ArrayList<QueryInformation> infoList;

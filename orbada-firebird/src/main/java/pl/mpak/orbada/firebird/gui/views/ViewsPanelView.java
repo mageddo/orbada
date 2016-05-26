@@ -40,7 +40,7 @@ import pl.mpak.util.variant.Variant;
  */
 public class ViewsPanelView extends javax.swing.JPanel implements IRootTabObjectInfo {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   private IViewAccesibilities accesibilities;
   private String currentSchemaName;

@@ -12,7 +12,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class HsqlDbDatabaseProvider extends DatabaseProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaHSqlDbPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("hsqldb");
 
   @Override
   public boolean isForDatabase(Database database) {

@@ -24,7 +24,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class UniversalColumnProvider extends UniversalActionProvider {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   public boolean isForDatabase(Database database) {
     if (database == null) {

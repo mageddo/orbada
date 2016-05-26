@@ -17,7 +17,7 @@ import pl.mpak.util.StringUtil;
  */
 public class HsqlDbSessionsView extends ViewProvider {
  
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaHSqlDbPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("hsqldb");
 
   public Component createView(IViewAccesibilities accesibilities) {
     return new SessionsPanelView(accesibilities);

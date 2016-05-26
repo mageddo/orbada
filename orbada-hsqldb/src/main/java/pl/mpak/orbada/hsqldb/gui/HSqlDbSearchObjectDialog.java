@@ -37,7 +37,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class HSqlDbSearchObjectDialog extends javax.swing.JDialog {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaHSqlDbPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("hsqldb");
 
   private IPerspectiveAccesibilities accesibilities;
   private int modalResult = ModalResult.OK;

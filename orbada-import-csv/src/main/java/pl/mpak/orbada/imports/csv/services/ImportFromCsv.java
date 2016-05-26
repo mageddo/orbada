@@ -25,7 +25,7 @@ import pl.mpak.util.task.Task;
  */
 public class ImportFromCsv extends ImportToolActionProvider {
 
-  private static final StringManager stringManager = StringManagerFactory.getStringManager(OrbadaImportCsvPlugin.class);
+  private static final StringManager stringManager = StringManagerFactory.getStringManager("import-csv");
   
   private CsvImportConfiguration config;
 

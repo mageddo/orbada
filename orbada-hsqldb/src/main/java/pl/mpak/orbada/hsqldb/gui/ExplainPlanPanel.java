@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class ExplainPlanPanel extends javax.swing.JPanel implements Closeable {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaHSqlDbPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("hsqldb");
 
   private Database database;
   

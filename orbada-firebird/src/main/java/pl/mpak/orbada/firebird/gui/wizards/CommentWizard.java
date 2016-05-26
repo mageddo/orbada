@@ -17,7 +17,7 @@ import pl.mpak.util.StringUtil;
  */
 public class CommentWizard extends SqlCodeWizardPanel {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   private Database database;
   private String objectName;

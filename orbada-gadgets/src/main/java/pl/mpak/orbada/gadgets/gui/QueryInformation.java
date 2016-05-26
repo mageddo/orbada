@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class QueryInformation implements Serializable, Cloneable {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaGadgetsPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("gadgets");
 
   private transient String info = "";
   private transient long lastTime;

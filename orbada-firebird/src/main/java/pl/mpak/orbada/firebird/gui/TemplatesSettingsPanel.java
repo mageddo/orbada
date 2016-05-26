@@ -19,7 +19,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class TemplatesSettingsPanel extends javax.swing.JPanel implements ISettingsComponent {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   private IApplication application;
   private ISettings settings;

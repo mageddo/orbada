@@ -25,7 +25,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class HSqlDbAliasesView extends ViewProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaHSqlDbPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("hsqldb");
 
   public Component createView(IViewAccesibilities accesibilities) {
     return new AliasesPanelView(accesibilities);

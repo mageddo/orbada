@@ -23,7 +23,7 @@ import pl.mpak.util.StringUtil;
  */
 public class FirebirdAutoCompleteDatabaseService extends DatabaseProvider {
 
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdAutocompletePlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird-autocomplete");
 
   public static FirebirdAutoCompleteDatabaseService instance;
   private static HashMap<String, HashMap<String, ArrayList<AutoCompleteItem>>> databaseSyntaxList = new HashMap<String, HashMap<String, ArrayList<AutoCompleteItem>>>();

@@ -40,7 +40,7 @@ import pl.mpak.util.patt.Resolvers;
  */
 public class OrbadaFirebirdPlugin extends OrbadaPlugin {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaFirebirdPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("firebird");
 
   public final static String firebirdDriverType = "Firebird";
   private static pl.mpak.util.timer.TimerQueue refreshQueue;

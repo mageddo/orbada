@@ -29,7 +29,7 @@ import pl.mpak.util.StringUtil;
  */
 public class SessionsPanelView extends UniversalViewTabs {
   
-  private StringManager stringManager = StringManagerFactory.getStringManager(OrbadaHSqlDbPlugin.class);
+  private StringManager stringManager = StringManagerFactory.getStringManager("hsqldb");
   
   private RefreshPanel refreshPanel;
 
