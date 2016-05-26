@@ -1,5 +1,9 @@
 package pl.mpak.orbada.oracle.gui.tools;
 
+import javax.swing.JLabel;
+import javax.swing.JTable;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Point;
@@ -10,16 +14,11 @@ import java.io.IOException;
 import java.util.EventObject;
 import java.util.HashMap;
 import java.util.Vector;
-import javax.swing.JLabel;
-import javax.swing.JTable;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
 
+import pl.mpak.orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.gui.comps.table.ViewTable;
-import pl.mpak.orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.gui.util.SimpleSelectDialog;
-import pl.mpak.orbada.oracle.OrbadaOraclePlugin;
 import pl.mpak.orbada.oracle.Sql;
 import pl.mpak.orbada.oracle.gui.freezing.FreezeFactory;
 import pl.mpak.orbada.oracle.gui.freezing.FreezeViewService;
@@ -84,7 +83,7 @@ public class SearchSourcePanelView extends javax.swing.JPanel implements Closeab
   
   private void init() {
     syntaxSource.setDatabase(getDatabase());
-    lineMark = new LineMark(-1, Color.getColor("/res/icons/line_point.gif"));
+    lineMark = new LineMark(-1, Color.getColor("activeCaption", new Color(204, 204, 255)), pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/line_point.gif"));
 
     settings = accesibilities.getApplication().getSettings(getDatabase().getUserProperties().getProperty("schemaId"), "oracle-search-source-panel");
     split.setDividerLocation(settings.getValue("split-location", (long)split.getDividerLocation()).intValue());

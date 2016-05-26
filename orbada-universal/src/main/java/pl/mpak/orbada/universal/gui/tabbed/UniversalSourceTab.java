@@ -1,16 +1,15 @@
 package pl.mpak.orbada.universal.gui.tabbed;
 
+import javax.swing.JToolBar;
 import java.awt.Color;
 import java.io.IOException;
-import javax.swing.JToolBar;
 
-import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
-import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.orbada.gui.ITabObjectInfo;
 import pl.mpak.orbada.gui.cm.ComponentActionsAction;
 import pl.mpak.orbada.gui.comps.AbsOrbadaSyntaxTextArea;
+import pl.mpak.orbada.gui.comps.OrbadaSyntaxTextArea;
 import pl.mpak.orbada.plugins.ISettings;
-import pl.mpak.orbada.universal.OrbadaUniversalPlugin;
+import pl.mpak.orbada.plugins.IViewAccesibilities;
 import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.MessageBox;
 import pl.mpak.sky.gui.swing.SwingUtil;
@@ -64,7 +63,7 @@ public abstract class UniversalSourceTab extends javax.swing.JPanel implements I
       toolBarPanel.setVisible(false);
     }
     textProp.setEditable(isStorable());
-    lineMark = new LineMark(-1, Color.getColor("/res/icons/line_point.gif"));
+    lineMark = new LineMark(-1, Color.getColor("activeCaption", new Color(204, 204, 255)), pl.mpak.sky.gui.swing.ImageManager.getImage("/res/icons/line_point.gif"));
   }
   
   /**

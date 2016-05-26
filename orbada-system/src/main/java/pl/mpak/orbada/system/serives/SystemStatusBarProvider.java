@@ -8,11 +8,9 @@
  */
 package pl.mpak.orbada.system.serives;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Cursor;
-import java.awt.Dimension;
-import java.awt.Insets;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -20,8 +18,7 @@ import java.awt.event.MouseListener;
 import java.util.ArrayList;
 import java.util.EventObject;
 import java.util.TimerTask;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
+
 import pl.mpak.orbada.OrbadaCancelCloseException;
 import pl.mpak.orbada.core.Application;
 import pl.mpak.orbada.plugins.ISettings;
@@ -33,26 +30,12 @@ import pl.mpak.orbada.universal.gui.ErrorBox;
 import pl.mpak.sky.gui.swing.CursorChanger;
 import pl.mpak.sky.gui.swing.comp.StatusPanel;
 import pl.mpak.sky.gui.swing.comp.SystemStatusBar;
-import pl.mpak.usedb.core.Command;
-import pl.mpak.usedb.core.CommandListener;
-import pl.mpak.usedb.core.Database;
-import pl.mpak.usedb.core.DatabaseManager;
-import pl.mpak.usedb.core.DatabaseManagerEvent;
-import pl.mpak.usedb.core.DatabaseManagerListener;
-import pl.mpak.usedb.core.DatabaseQueryEvent;
-import pl.mpak.usedb.core.DatabaseQueryListener;
-import pl.mpak.usedb.core.Query;
-import pl.mpak.usedb.core.QueryListener;
+import pl.mpak.usedb.core.*;
 import pl.mpak.util.ExceptionUtil;
 import pl.mpak.util.ProcessExceptionListener;
 import pl.mpak.util.StringManager;
 import pl.mpak.util.StringManagerFactory;
-import pl.mpak.util.task.Task;
-import pl.mpak.util.task.TaskPoolContainerEvent;
-import pl.mpak.util.task.TaskPoolContainerListener;
-import pl.mpak.util.task.TaskPoolEvent;
-import pl.mpak.util.task.TaskPoolListener;
-import pl.mpak.util.task.TaskPoolManager;
+import pl.mpak.util.task.*;
 
 /**
  *
@@ -382,7 +365,7 @@ public class SystemStatusBarProvider extends StatusBarProvider {
   public void initStatusTextPanel() {
     systemStatusBar.addPanel("status-text");
     systemStatusBar.getPanel("status-text").setText(" ");
-    systemStatusBar.getPanel("/res/icons/status_text.gif")));
+    systemStatusBar.getPanel("status-text").setIcon(new ImageIcon(getClass().getResource("/res/icons/status_text.gif")));
     systemStatusBar.getTimer().schedule(new TimerTask() {
       public void run() {
         if (statusTextEnabled == 0) {

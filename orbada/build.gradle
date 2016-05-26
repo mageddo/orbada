@@ -5,5 +5,5 @@ dependencies {
 	compile project(':orbada-waitdlg')
 	compile project(':json')
 	compile project(':orbada-g2')
-	compile project(':orbada-laf-jgoodies')
+//	compile project(':orbada-laf-jgoodies')
 }

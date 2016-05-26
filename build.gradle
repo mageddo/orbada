@@ -34,5 +34,11 @@ allprojects {
         compile group: 'com.jgoodies', name: 'looks', version: '2.1.4'
 
         compile fileTree("${rootProject.projectDir}/libs/bin/")
+
+
+        if(!project.name.equals("orbada-res")){
+            // adding res module to all modules but not for yourself
+//            compile project(':orbada-res')
+        }
     }
 }
