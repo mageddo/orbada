@@ -7,18 +7,18 @@ for i in `ls -d */`; do
 	
 	# entrando na pasta do modulo
 	cd $BASE/$i
-	echo "working on $PWD ..."
+	echo "working on '$PWD'"
 
 	# criando pastas base
 	mkdir -p $RESOURCES_FOLDER
 	mkdir -p $JAVA_FOLDER
 
 	# movendo o resources 
-	cp -r `find -name "res"` $RESOURCES_FOLDER
-	cp -r `find -name "*.properties"` $RESOURCES_FOLDER
+	mv -f `find -name "res"` $RESOURCES_FOLDER
+	mv -f `find -name "*.properties"` $RESOURCES_FOLDER
 
 	# movendo o java
-	mv pl $JAVA_FOLDER
+	mv -f pl $JAVA_FOLDER
 
 	echo "finished module"	
 
