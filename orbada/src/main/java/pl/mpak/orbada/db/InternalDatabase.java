@@ -459,7 +459,7 @@ public class InternalDatabase extends OrbadaDatabase {
         }
 
         if ((lastVersionID == null || lastVersionID.getBuild() < 4) && Application.get().isUserAdmin()) {
-          ScriptUtil.executeInternalScript(get().getClass().getResourceAsStream("/orbada/sql/sessions.sql"));
+          ScriptUtil.executeInternalScript(get().getClass().getResourceAsStream("/res/sql/sessions.sql"));
         }
         if ((lastVersionID == null || lastVersionID.getBuild() < 5) && Application.get().isUserAdmin()) {
           try {

@@ -262,7 +262,7 @@ public class Application implements IApplication, WindowListener {
     File file = new File(configFile);
     if (!file.exists()) {
       copyFile("/res/orbada.properties", file);
-      File filejgoodies = new File(getConfigPath() + "/res/laf-jgoodies.properties");
+      File filejgoodies = new File(getConfigPath() + "/laf-jgoodies.properties");
       if (!filejgoodies.exists()) {
         copyFile("/res/laf-jgoodies.properties", filejgoodies);
       }
