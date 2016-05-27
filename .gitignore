@@ -1,57 +1,6 @@
-# user folders
-files/
-desempenho/
-
-# project configurations
-node_modules/
-.sailsrc
-.editorconfig
-.nbinfo
-
-# eclipse
-.settings/
-.project
-.classpath
-nbactions*.xml
-dependency-reduced-pom.xml
-jetty-web.xml
-
-# netbeans
-nb-configuration.xml
-nbproject
-build
-target/
-
-# intellij
-*.iml
-.idea/
-
-# gradle
-.gradle/
 build/
-
-# log files
+.gradle
+.idea/
+*.tmp
 *.log
- 
-# binary files
-*.class
-
-# compacted files
-*.zip
-*.tar.gz
-*.tar.xz
-*.tar.bz2
-*.jar
-*.tgz
-*.7z
- 
-# images
-*.png
-*.PNG
-*.jpg
-*.JPG
-*.gif
-*.GIF
-*.jpeg
-*.JPEG
-*.ico
+*.iml
