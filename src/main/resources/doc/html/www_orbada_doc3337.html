@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101107164928-00000DE4202AD668-3B5BF261&translation=pl by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:55 GMT -->
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="Language" content="pl"><meta name="Author" content="Andrzej Kałuża, ORBADA"><meta http-equiv="Creation-Date" content="02-Kwi-2015 13:02:50 GMT;"><meta name="Description" content="Organizer Bazy Danych, Db Pages"><title>ORBADA - Dokumentacja</title><link rel="shortcut icon" href="docs/orbada32.html"><link rel="stylesheet" type="text/css" href="docs/styles/main.css"></head><body><div id="body_root">
+<div id="page_header"><div id="header_logos"><span class="right">2015-04-02 13:02&nbsp;</span>
+  <span style="vertical-align:baseline;">  <a href="http://sourceforge.net/projects/orbada"><img src="docs/orbada32.png" alt="orbada icon"><img src="docs/orbada_logo.png" alt="orbada logo"></a>  </span></div></div><div id="content">
+<div class="head_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doc8028.html?id=20101107153535-000009DC20B8FB18-6C3C6875">Dokumentacja po Polsku</a> &raquo; <a href="www_orbada_doc0fd9.html?id=20101107164059-00000D6DCC626FBA-91195613">Obsługa programu</a> &raquo; <a href="www_orbada_doca75f.html?id=20101107164147-00000D78DB244D98-09ABBCB0">Standardowe komponenty</a> &raquo; Listy danych</div>
+<a NAME="20101107165020-00000DF064185BDE-D1E01E8F"></a><div class="content_block">
+<h3>
+5.2.2.1.1. 
+Prosta lista danych
+</h3>
+<p>Lista danych nie związana bezpośrednio z bazą danych, wyświetlająca dane w sposób statyczny i z pamięci programu.<br>
+Funkcje te, to:</p>
+<table class="properties">
+<tr><th>Skrót</th><th>Pozycja menu</th><th>Opis</th></tr>
+<tr><td><b>Ctrl+I</b></td><td>Dopasuj szerokość do danych</td><td>Pozwala dopasować szerokość kolumn do danych oraz tytułów kolumn. Szerokość wyliczna jest na podstawie 50-ciu wierszy poniżej wyróżnionego wiersza.</td></tr>
+<tr><td><b>Shift+Right</b></td><td>Zwiększ szerokość</td><td>Zwiększa szerokość wybranej kolumny o 10 punktów ekranowych (pikseli), nie więcej niż 1000.</td></tr>
+<tr><td><b>Shift+Left</b></td><td>Zmniejsz szerokość</td><td>Zmniejsza szerokość wybranej kolumny o 10 punktów ekranowych (pikseli), nie mniej niż 30.</td></tr>
+<tr><td><b>Shift+Down</b></td><td>Zwiększ wysokość wiersza</td><td>Zwiększa wysokość wybranego wiersza o 10 punktów ekranowych, nie więcej niż 150.</td></tr>
+<tr><td><b>Shift+Up</b></td><td>Zmniejsz wysokość wiersza</td><td>Zmniejsza wysokość wybranego wiersza o 10 punktów ekranowych, nie mniej niż oryginalna jego wysokość.</td></tr>
+<tr><td><b>Alt+Right</b></td><td>Przenieś kolumnę na koniec</td><td>Pozwala przenieść aktualnie wybraną kolumnę na koniec listy.</td></tr>
+<tr><td><b>Alt+Left</b></td><td>Pzenieś ostatnią kolumnę w to miejsce</td><td>Pozwala przenieść ostatnią kolumnę na liście w miejsce aktualnie wybranej.</td></tr>
+<tr><td><b>Ctrl+C</b></td><td>Kopiuj wartość do schowka</td><td>Pozwala skopiować wartość aktualnie wybranego pola do schowka systemu operacyjnego.</td></tr>
+<tr><td><b></b></td><td>Eksportuj</td><td>Zestaw poleceń służących do eksportu danych z listy. Polecenia te zależne są od posiadanych wtyczek.</td></tr>
+<tr><td><b>Ctrl+E</b></td><td>Wybierz kolumnę</td><td>Po wybraniu tej opcji, pojawi się lista kolumn listy z której wybrać można kolumnę na którą zostanie przeniesiony wskażnik.</td></tr>
+<tr><td><b>Ctrl+End</b></td><td></td><td>Skocz na koniec listy lub na koniec częściowo odczytanych wierszy z bazy danych.</td></tr>
+<tr><td><b>Ctrl+Alt+End</b></td><td></td><td>Skocz na koniec listy danych, jeśli dane te pobierane są z bazy danych, wszystkie wiersze zostaną pobrane.</td></tr>
+<tr><td><b>Enter</b></td><td></td><td>W zależności od rodzaju listy, wciśnięcie Enter spowoduje przejście do następnej kolumny lub następnego wiersza.</td></tr>
+<tr><td><b>Left, Right</b></td><td></td><td>Przejście do lewej, prawej kolumny listy</td></tr>
+<tr><td><b>Up, Down</b></td><td></td><td>Przejście do wiersza powyżej, poniżej</td></tr>
+<tr><td><b>Alt+A</b></td><td></td><td>Jeśli lista związana jest z przyciskiem akcji, pozwla rozwinąć specjalne menu dodatkowych akcji. Akcje te związane są z dostępnymi w programie wtyczkami.</td></tr>
+<tr><td><b></b></td><td></td><td></td></tr>
+</table>
+
+</div>
+<a NAME="20101107165045-00000DF63C503AD9-160E23B3"></a><div class="content_block">
+<h3>
+5.2.2.1.2. 
+Główna lista danych
+</h3>
+<p>Wszystkie listy związane bezpośrednio z wynikami działania poleceń SQL w programie ORBADA posiadają te same lub podobne funkcje. Dzielą się na listy danych statyczne i dynamiczne, zależne od wykonywanych poleceń SQL.<br>
+Funkcje te, to:</p>
+<table class="properties">
+<tr><th>Skrót</th><th>Pozycja menu</th><th>Opis</th></tr>
+<tr><td><b>F5</b></td><td>Odśwież</td><td>Odświeża listę danych, polecenie SQL, które ją tworzy zostanie zamknięte i ponownie otwarte by pobrać najświeższe dane.</td></tr>
+<tr><td><b>Ctrl+I</b></td><td>Dopasuj szerokość do danych</td><td>Pozwala dopasować szerokość kolumn do danych oraz tytułów kolumn. Szerokość wyliczna jest na podstawie 50-ciu wierszy poniżej wyróżnionego wiersza.</td></tr>
+<tr><td><b>Shift+Right</b></td><td>Zwiększ szerokość</td><td>Zwiększa szerokość wybranej kolumny o 10 punktów ekranowych (pikseli), nie więcej niż 1000.</td></tr>
+<tr><td><b>Shift+Left</b></td><td>Zmniejsz szerokość</td><td>Zmniejsza szerokość wybranej kolumny o 10 punktów ekranowych (pikseli), nie mniej niż 30.</td></tr>
+<tr><td><b>Shift+Down</b></td><td>Zwiększ wysokość wiersza</td><td>Zwiększa wysokość wybranego wiersza o 10 punktów ekranowych, nie więcej niż 150.</td></tr>
+<tr><td><b>Shift+Up</b></td><td>Zmniejsz wysokość wiersza</td><td>Zmniejsza wysokość wybranego wiersza o 10 punktów ekranowych, nie mniej niż oryginalna jego wysokość.</td></tr>
+<tr><td><b>Alt+Right</b></td><td>Przenieś kolumnę na koniec</td><td>Pozwala przenieść aktualnie wybraną kolumnę na koniec listy.</td></tr>
+<tr><td><b>Alt+Left</b></td><td>Pzenieś ostatnią kolumnę w to miejsce</td><td>Pozwala przenieść ostatnią kolumnę na liście w miejsce aktualnie wybranej.</td></tr>
+<tr><td><b>Ctrl+C</b></td><td>Kopiuj wartość do schowka</td><td>Pozwala skopiować wartość aktualnie wybranego pola do schowka systemu operacyjnego.</td></tr>
+<tr><td><b>Alt+F3</b></td><td>Podgląd wartości...</td><td>Otwiera dodatkowe okno pozwalające przeglądać wartość wybranego pola w sposób szczegółowy, np. w postaci obrazka, wartości szesnastkowych, itp. Udostępniane formaty mogą być zależne od posiadanych wtyczek.</td></tr>
+<tr><td><b></b></td><td>Właściwości kolumny...</td><td>Otwiera dodatkowe okno (j.w.) z podglądem wartości pola w postaci różnych typów danych.</td></tr>
+<tr><td><b></b></td><td>Eksportuj</td><td>Zestaw poleceń służących do eksportu danych z listy. Polecenia te zależne są od posiadanych wtyczek.</td></tr>
+<tr><td><b>Ctrl+E</b></td><td>Wybierz kolumnę</td><td>Po wybraniu tej opcji, pojawi się lista kolumn listy z której wybrać można kolumnę na którą zostanie przeniesiony wskażnik.</td></tr>
+<tr><td><b>Ctrl+End</b></td><td></td><td>Skocz na koniec listy lub na koniec częściowo odczytanych wierszy z bazy danych.</td></tr>
+<tr><td><b>Ctrl+Alt+End</b></td><td></td><td>Skocz na koniec listy danych, jeśli dane te pobierane są z bazy danych, wszystkie wiersze zostaną pobrane.</td></tr>
+<tr><td><b>Enter</b></td><td></td><td>W zależności od rodzaju listy, wciśnięcie Enter spowoduje przejście do następnej kolumny lub następnego wiersza.</td></tr>
+<tr><td><b>Left, Right</b></td><td></td><td>Przejście do lewej, prawej kolumny listy</td></tr>
+<tr><td><b>Up, Down</b></td><td></td><td>Przejście do wiersza powyżej, poniżej</td></tr>
+<tr><td><b>Alt+A</b></td><td></td><td>Jeśli lista związana jest z przyciskiem akcji, pozwla rozwinąć specjalne menu dodatkowych akcji. Akcje te związane są z dostępnymi w programie wtyczkami.</td></tr>
+<tr><td><b></b></td><td></td><td></td></tr>
+</table>
+
+</div>
+<a NAME="20101107165102-00000DFA2D683BF6-B6CA078E"></a><div class="content_block">
+<h3>
+5.2.2.1.3. 
+Stała lista danych
+</h3>
+<p>Stała lista pozwala przeglądać dane. Lista ta posiada stałą listę kolumn zdefiniowaną na poziomie projektowania aplikacji. Stałe listy to listy które przedstawiają np tabele bazy danych oraz ich właściwości. Są to listy, które nie są otwierane na życzenie użytkownika, np. po wykonaniu polecenia sql.<br>
+Układ kolumn, szerokość i położenie jest zapamiętywane.<br>
+Funkcje rozszerzające funkcjonalność listy względem klasy wszystkich list to:</p>
+<table class="properties">
+<tr><th>Skrót</th><th>Pozycja menu</th><th>Opis</th></tr>
+<tr><td><b>Ctrl+Shift+R</b></td><td>Przywróć oryginalne właściwości kolumn</td><td>Pozwala przywrócić oryginalnie zaprojektowany układ kolumn</td></tr>
+<tr><td><b>Ctrl+V</b></td><td>Szukaj przez wklejenie ze schowka</td><td>Pozwala odszukać w wierszach listy, wybranej kolumny, ciąg znaków znajdujący się w schowku</td></tr>
+<tr><td><b></b></td><td></td><td></td></tr>
+</table>
+
+</div>
+<a NAME="20101107165119-00000DFDF5F03CDD-AF665B98"></a><div class="content_block">
+<h3>
+5.2.2.1.4. 
+Dynamiczna lista danych
+</h3>
+<p>Dynamiczna lista danych zależna jest od wyników wykonanego przez użytkownika (w sposób pośredni lub bezpośredni) polecenia SQL.<br>
+Lista danych zapamiętuje szerokości kolumn jedynie na czas działania programu.<br>
+Wielkość znaków i ich rodzina możliwa jest do określenia w ustawieniach programu.</p>
+</div>
+<div class="foot_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doc8028.html?id=20101107153535-000009DC20B8FB18-6C3C6875">Dokumentacja po Polsku</a> &raquo; <a href="www_orbada_doc0fd9.html?id=20101107164059-00000D6DCC626FBA-91195613">Obsługa programu</a> &raquo; <a href="www_orbada_doca75f.html?id=20101107164147-00000D78DB244D98-09ABBCB0">Standardowe komponenty</a> &raquo; Listy danych</div>
+</div>
+<div id="page_foot">
+&#8226; © 2007–2015 &#8226; <a href="http://sourceforge.net/users/akaluza">Andrzej Kałuża</a>
+&#8226; Powered By <a href="http://sourceforge.net/projects/dbpages">DBPAGES</a>
+&#8226; Hostet at <a href="http://sourceforge.net/projects/orbada"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=361699&amp;type=10" width="80" height="15" alt="Get Orbada at SourceForge.net. Fast, secure and Free Open Source software downloads" style="margin: 2px 2px;" /></a>
+&#8226;
+</div>
+</div>
+</body>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101107164928-00000DE4202AD668-3B5BF261&translation=pl by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:55 GMT -->
+</html>

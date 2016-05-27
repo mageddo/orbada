@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101111000122-00001961360B005B-734F1568&translation=pl by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:51 GMT -->
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="Language" content="pl"><meta name="Author" content="Andrzej Kałuża, ORBADA"><meta http-equiv="Creation-Date" content="02-Kwi-2015 13:02:44 GMT;"><meta name="Description" content="Organizer Bazy Danych, Db Pages"><title>ORBADA - Dokumentacja</title><link rel="shortcut icon" href="docs/orbada32.html"><link rel="stylesheet" type="text/css" href="docs/styles/main.css"></head><body><div id="body_root">
+<div id="page_header"><div id="header_logos"><span class="right">2015-04-02 13:02&nbsp;</span>
+  <span style="vertical-align:baseline;">  <a href="http://sourceforge.net/projects/orbada"><img src="docs/orbada32.png" alt="orbada icon"><img src="docs/orbada_logo.png" alt="orbada logo"></a>  </span></div></div><div id="content">
+<div class="head_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doc8028.html?id=20101107153535-000009DC20B8FB18-6C3C6875">Dokumentacja po Polsku</a> &raquo; <a href="www_orbada_docb930.html?id=20101111000018-0000195224E46A70-D728F713">Dokumentacja wtyczek</a> &raquo; BeanShell</div>
+<a NAME="20101111000138-00001964CC8D1002-642F9413"></a><div class="content_block">
+<h3>
+5.A.1.1. 
+Wstęp
+</h3>
+<p>Wtyczka BeanShell udostępnia język skryptowy zgodny z językiem Java.</p>
+<p>Dokładną specyfikację można znaleźć na stronie <a href="http://www.beanshell.org/">BeanShell</a></p>
+<p>Wtyczka podpina się w wielu miejscach programu ORBADA. Udostępnia język skryptowy by lepiej i łatwiej wykorzystać możliwości programu.<br>
+Poniżej miejsca w których można użyć języka skryptowego:</p>
+<ul>
+<li>Widok BeanShell dostępny z menu <i>Widok</i></li>
+<li>Skrypt wykonywany przy otwarciu i zamknięciu programu</li>
+<li>W widoku zapytań SQL poprzez użycie bloku <code>beanshell { ... }</code></li>
+<li>Skrypty akcji podpinane wszędzie tam gdzie użyty jest uniwersalny mechanizm akcji</li>
+</ul>
+
+</div>
+<a NAME="20101111000157-00001969537C82D6-2D57496D"></a><div class="content_block">
+<h3>
+5.A.1.2. 
+Widok BeanShell
+</h3>
+<p>Widok BeanShell dostępny jest poprzez wybranie pozycji z menu <i>Widok-&gt;Edytor BeanShell</i><br>
+Widok dostępny jest zarówno dla perspektyw z połączeniem do bazy danych jak i perspektywy narzędziowej.</p>
+<p>W edytorze BeanShell dostępne są wszelkie klasy Java oraz obiekty programu. Zdefiniowane są również stałe:</p>
+<table class="properties">
+<tr><th>Właściwość</th><th>Opis</th></tr>
+<tr><td><b>self</b></td><td>Stała oznaczająca obiekt klasy <code>Interpreter</code> biblioteki BeanShell</td></tr>
+<tr><td><b>database</b></td><td>Jeśli dostępne jest połączenie z bazą danych, w tej stałej znajduje się obiekt klasy <code>Database</code> biblioteki UseDB</td></tr>
+<tr><td><b>application</b></td><td>Pozwala uzyskać dostęp do właściwości aplikacji poprzez funkcje interfejsu <code>IApplication</code> programu ORBADA</td></tr>
+</table>
+
+</div>
+<a NAME="20101111000217-0000196DEA0FC0A1-F0836BC8"></a><div class="content_block">
+<h3>
+5.A.1.3. 
+Rozpoczęcie i zakończenie działania programu ORBADA
+</h3>
+<p>Konfiguracja skryptów rozpoczęcia i zakończenia dostępna jest w <i>Program-&gt;Ustawienia-&gt;Ustawienia wtyczek-&gt;BeanShell-&gt;Start i zakończenie"</i></p>
+<p>Skrypty będą wykonane odpowiednio zaraz po uruchomieniu programu oraz tuż przed jego zamknięciem.</p>
+<p>W skryptach BeanShell dostępne są wszelkie klasy Java oraz obiekty programu. Zdefiniowane są również stałe:
+</p>
+<table class="properties">
+<tr><th>Właściwość</th><th>Opis</th></tr>
+<tr><td><b>self</b></td><td>Stała oznaczająca obiekt klasy <code>Interpreter</code> biblioteki BeanShell</td></tr>
+<tr><td><b>application</b></td><td>Pozwala uzyskać dostęp do właściwości aplikacji poprzez funkcje interfejsu <code>IApplication</code> programu ORBADA</td></tr>
+</table>
+
+</div>
+<a NAME="20101111000242-00001973ACFC94AA-3C90A563"></a><div class="content_block">
+<h3>
+5.A.1.4. 
+Widok zapytań SQL
+</h3>
+<p>W widoku zapytań SQL można użyć skryptu BeanShell na dwa sposoby:</p>
+<ol>
+<li>Wpisując pomiędzy <code>beanshell {</code>, a <code>}</code> skrypt języka<br>
+np. <code>beanshell { 2 +2 *2; }</code><br>
+Po uruchomieniu na ekranie w okienku pojawi się wynik wykonania skryptu.</li>
+<li>W poleceniach SQL wpisując pomiędzy <code>beanshell {</code>, a <code>}</code> skrypt języka np.:<br>
+<ol style="list-style-type: lower-alpha;"><li><code>select beanshell { 2 +2 *2; } from dual</code><br>
+Po uruchomieniu zapytania na liście wyników pojawi się wiersz z wartością "6"</li>
+<li><code>select 'beanshell { new pl.mpak.util.id.VersionID(1, 0, 0, 150) }' value from dual</code><br>
+Po uruchomieniu zapytania na liście wyników pojawi się tekstowa reprezentacja wersji '1.0.0.150'</li>
+</ol>
+<b>Uwaga</b><br>
+W tym przypadku skrypt zostanie wykonany przed wykonaniem polecenia SQL, a jego wynik zostanie wtawiony w miejsce skryptu jako ciąg znaków</li>
+</ol>
+<p>W skrypcie BeanShell dostępne są wszelkie klasy Java oraz obiekty programu. Zdefiniowane są również stałe:
+</p>
+<table class="properties">
+<tr><th>Właściwość</th><th>Opis</th></tr>
+<tr><td><b>self</b></td><td>Stała oznaczająca obiekt klasy <code>Interpreter</code> biblioteki BeanShell</td></tr>
+<tr><td><b>application</b></td><td>Pozwala uzyskać dostęp do właściwości aplikacji poprzez funkcje interfejsu <code>IApplication</code> programu ORBADA</td></tr>
+</table>
+
+</div>
+<a NAME="20101111000300-0000197808CD0A61-7348F852"></a><div class="content_block">
+<h3>
+5.A.1.5. 
+<a href="www_orbada_doca4cc.html?id=20101111000300-0000197808CD0A61-7348F852&amp;translation=pl">Konfiguracja akcji</a></h3>
+<div class="sub_anchore">
+ &#8226; 
+<a href="www_orbada_doca4cc.html?id=20101111000300-0000197808CD0A61-7348F852&amp;translation=pl#20101111000407-000019878A6DA0EC-4B1908A0">Uzyskanie informacji o "kluczu" i "komponencie" akcji</a> &#8226; 
+<a href="www_orbada_doca4cc.html?id=20101111000300-0000197808CD0A61-7348F852&amp;translation=pl#20101111000424-0000198B83FD7879-4AFDFF88">Konfiguracja</a> &#8226; 
+<a href="www_orbada_doca4cc.html?id=20101111000300-0000197808CD0A61-7348F852&amp;translation=pl#20101111000446-00001990B0C910E9-828F6A3F">Dostępność elementów programu w skrypcie BeanShell</a> &#8226; 
+<a href="www_orbada_doca4cc.html?id=20101111000300-0000197808CD0A61-7348F852&amp;translation=pl#20101111000459-00001993A7DCBD32-A989EAF5">Sprawdzenie działania akcji</a> &#8226;
+</div>
+<p>Opis czynności jakie należy wykonać by podpiąć kod BeanShell do akcji programu.</p>
+</div>
+<a NAME="20101111000320-0000197CBA6CDF23-F7C5E2FB"></a><div class="content_block">
+<h3>
+5.A.1.6. 
+Predefiniowane funkcje BeanShell
+</h3>
+<p>Biblioteka BeanShell udostępnia predefiniowane polecenia, które znajdują się w katalogu <code>bsh-2.0b4.jar\bsh\commands</code><br>
+Oprócz tego sama wtyczka udostępnia parę poleceń przydających się podczas tworzenia oprogramowania. Znajdują się one w katalogu <code>orbada-beanshell.jar\pl\mpak\orbada\beanshell\commands</code><br>
+</p>
+</div>
+<a NAME="20101111000342-00001981C150954F-99369110"></a><div class="content_block">
+<h3>
+5.A.1.7. 
+<a href="www_orbada_doc6e6b.html?id=20101111000342-00001981C150954F-99369110&amp;translation=pl">Przykłady</a></h3>
+<div class="sub_anchore">
+ &#8226; 
+<a href="www_orbada_doc6e6b.html?id=20101111000342-00001981C150954F-99369110&amp;translation=pl#20101111000518-0000199810E2406D-FA7BF8DF">Widok BeanShell dla perspektyw z połączeniem do bazy danych</a> &#8226; 
+<a href="www_orbada_doc6e6b.html?id=20101111000342-00001981C150954F-99369110&amp;translation=pl#20101111000543-0000199DD584F071-0FBE6EB2">Widok BeanShell</a> &#8226; 
+<a href="www_orbada_doc6e6b.html?id=20101111000342-00001981C150954F-99369110&amp;translation=pl#20101111000605-000019A2FFF6AD8F-5FBB6912">Uruchomienie programu</a> &#8226; 
+<a href="www_orbada_doc6e6b.html?id=20101111000342-00001981C150954F-99369110&amp;translation=pl#20101111000652-000019ADF40DC804-4F0BD1C0">Akcje BeanShell</a> &#8226; 
+<a href="www_orbada_doc6e6b.html?id=20101111000342-00001981C150954F-99369110&amp;translation=pl#20101111000715-000019B341722E91-F63C9543">Zakładka zapytań SQL</a> &#8226;
+</div>
+<p>Kilka przykładów pokazujących w jaki sposób można pisać skrypty BeanShell i gdzie można je wykorzystać.</p>
+</div>
+<div class="foot_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doc8028.html?id=20101107153535-000009DC20B8FB18-6C3C6875">Dokumentacja po Polsku</a> &raquo; <a href="www_orbada_docb930.html?id=20101111000018-0000195224E46A70-D728F713">Dokumentacja wtyczek</a> &raquo; BeanShell</div>
+</div>
+<div id="page_foot">
+&#8226; © 2007–2015 &#8226; <a href="http://sourceforge.net/users/akaluza">Andrzej Kałuża</a>
+&#8226; Powered By <a href="http://sourceforge.net/projects/dbpages">DBPAGES</a>
+&#8226; Hostet at <a href="http://sourceforge.net/projects/orbada"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=361699&amp;type=10" width="80" height="15" alt="Get Orbada at SourceForge.net. Fast, secure and Free Open Source software downloads" style="margin: 2px 2px;" /></a>
+&#8226;
+</div>
+</div>
+</body>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101111000122-00001961360B005B-734F1568&translation=pl by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:51 GMT -->
+</html>

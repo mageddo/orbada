@@ -1,0 +1,30 @@
+/*  -- GALLERY -- */
+#gallery {
+	width: 99%;
+}
+#content #gallery .gallery_line {
+/*  height: 160px; */
+}
+#content #gallery LI {
+  float: left;
+  padding: 0;
+  margin: 2px 2px 2px 2px;
+}
+#content #gallery A {
+  padding: 4px 4px 4px 4px;
+  margin: 0;
+  display: block;
+  width: 170px;
+  height: 165px;
+  font-size: 90%;
+  text-align: center;
+}
+#content #gallery A:hover {
+  background-color: #E0E0FF;
+}
+#content #gallery IMG {
+  margin: 8px 0px 8px 0px;
+}
+#content #gallery SPAN {
+  display: block;
+}

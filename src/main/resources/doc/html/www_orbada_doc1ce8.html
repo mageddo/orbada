@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101111182957-000016B75D679673-91D4C1E5&translation=en by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:56 GMT -->
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="Language" content="en"><meta name="Author" content="Andrzej Kałuża, ORBADA"><meta http-equiv="Creation-Date" content="02-Kwi-2015 13:02:54 GMT;"><meta name="Description" content="Organizer Bazy Danych, Db Pages"><title>ORBADA - Dokumentacja</title><link rel="shortcut icon" href="docs/orbada32.html"><link rel="stylesheet" type="text/css" href="docs/styles/main.css"></head><body><div id="body_root">
+<div id="page_header"><div id="header_logos"><span class="right">2015-04-02 13:02&nbsp;</span>
+  <span style="vertical-align:baseline;">  <a href="http://sourceforge.net/projects/orbada"><img src="docs/orbada32.png" alt="orbada icon"><img src="docs/orbada_logo.png" alt="orbada logo"></a>  </span></div></div><div id="content">
+<div class="head_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doca858.html?id=20101107153548-000009DF17BED34C-1D5B2C96">Documentation in English</a> &raquo; <a href="www_orbada_doc23a0.html?id=20101111151127-00000BE25598CE42-DD4776D5">Plug-in documentation</a> &raquo; <a href="www_orbada_docad58.html?id=20101111175423-000014C68D710D5C-676DA1EB">Oracle Tune</a> &raquo; <a href="www_orbada_doc244d.html?id=20101111175444-000014CB6E47B44E-3BEC7756">SQL Profiler view</a> &raquo; Integration with external programs</div>
+<a NAME="20101111183115-000016C974FF0B17-CC766769"></a><div class="content_block">
+<h3>
+4.A.2.1.4.1. 
+Start
+</h3>
+<pre class="block">
+DECLARE
+  l_result  PLS_INTEGER;
+BEGIN
+  l_result := DBMS_PROFILER.start_profiler(SYSDATE, 
+    'SESSIONID:'||userenv('SESSIONID')||' TERMINA:'||userenv('TERMINAL')||' USER:'||USER, :runid);
+END;
+</pre>
+<p>After this, parameter :RUNID must be taken, you will need later.</p>
+</div>
+<a NAME="20101111183231-000016DB4D9B9DAC-9F33C55A"></a><div class="content_block">
+<h3>
+4.A.2.1.4.2. 
+Stopping
+</h3>
+<pre class="block">
+DECLARE
+  l_result  PLS_INTEGER;
+BEGIN
+  l_result := DBMS_PROFILER.stop_profiler;
+  dbms_profiler.rollup_run(:runid);
+END;
+</pre>
+<p>Parameter :RUNID is required, taken after the start code</p>
+</div>
+<a NAME="20101111183325-000016E7E21A4145-0245E6B5"></a><div class="content_block">
+<h3>
+4.A.2.1.4.3. 
+Pause
+</h3>
+<pre class="block">
+DECLARE
+  l_result PLS_INTEGER;
+BEGIN
+  l_result := dbms_profiler.flush_data;
+  l_result := dbms_profiler.pause_profiler;
+  dbms_profiler.rollup_run(:runid);
+END;
+</pre>
+<p>Parameter :RUNID is required, taken after the start code.</p>
+</div>
+<a NAME="20101111183409-000016F22AC88179-89AC8085"></a><div class="content_block">
+<h3>
+4.A.2.1.4.4. 
+Resume
+</h3>
+<pre class="block">
+DECLARE
+  l_result PLS_INTEGER;
+BEGIN
+  l_result := dbms_profiler.resume_profiler;
+END;
+</pre>
+</div>
+<a NAME="20101111183456-000016FD0A7B413E-82F125CD"></a><div class="content_block">
+<h3>
+4.A.2.1.4.5. 
+Adjusting the results to display sources
+</h3>
+<p>Run this code, just after the execution "stop" block of SQL Profiler</p>
+<pre class="block">
+DECLARE
+  offset NUMBER;
+  CURSOR c1_triggers IS
+    SELECT unit_owner, unit_name, unit_type, unit_number
+      FROM plsql_profiler_units
+     WHERE runid = :runid
+       AND unit_type = 'TRIGGER';
+BEGIN
+  FOR c1 IN c1_triggers LOOP
+    SELECT NVL(MIN(line) - 1, -1)
+      INTO offset
+      FROM all_source
+     WHERE owner = c1.unit_owner
+       AND name  = c1.unit_name
+       AND type  = c1.unit_type
+       AND (UPPER(text) LIKE '%BEGIN%' OR UPPER(text) LIKE '%DECLARE%');
+    IF offset > 0 THEN
+      UPDATE plsql_profiler_data
+         SET line# = line# + offset
+       WHERE runid = :runid
+         AND unit_number = c1.unit_number;
+    END IF;
+  END LOOP;
+  COMMIT;
+END;
+</pre>
+<p>Parameter :RUNID is required, taken after the start code.</p>
+</div>
+<div class="foot_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doca858.html?id=20101107153548-000009DF17BED34C-1D5B2C96">Documentation in English</a> &raquo; <a href="www_orbada_doc23a0.html?id=20101111151127-00000BE25598CE42-DD4776D5">Plug-in documentation</a> &raquo; <a href="www_orbada_docad58.html?id=20101111175423-000014C68D710D5C-676DA1EB">Oracle Tune</a> &raquo; <a href="www_orbada_doc244d.html?id=20101111175444-000014CB6E47B44E-3BEC7756">SQL Profiler view</a> &raquo; Integration with external programs</div>
+</div>
+<div id="page_foot">
+&#8226; © 2007–2015 &#8226; <a href="http://sourceforge.net/users/akaluza">Andrzej Kałuża</a>
+&#8226; Powered By <a href="http://sourceforge.net/projects/dbpages">DBPAGES</a>
+&#8226; Hostet at <a href="http://sourceforge.net/projects/orbada"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=361699&amp;type=10" width="80" height="15" alt="Get Orbada at SourceForge.net. Fast, secure and Free Open Source software downloads" style="margin: 2px 2px;" /></a>
+&#8226;
+</div>
+</div>
+</body>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101111182957-000016B75D679673-91D4C1E5&translation=en by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:56 GMT -->
+</html>

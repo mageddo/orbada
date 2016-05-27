@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101111151146-00000BE6E778DBA4-1A167883&translation=en by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:48 GMT -->
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="Language" content="en"><meta name="Author" content="Andrzej Kałuża, ORBADA"><meta http-equiv="Creation-Date" content="02-Kwi-2015 13:02:40 GMT;"><meta name="Description" content="Organizer Bazy Danych, Db Pages"><title>ORBADA - Dokumentacja</title><link rel="shortcut icon" href="docs/orbada32.html"><link rel="stylesheet" type="text/css" href="docs/styles/main.css"></head><body><div id="body_root">
+<div id="page_header"><div id="header_logos"><span class="right">2015-04-02 13:02&nbsp;</span>
+  <span style="vertical-align:baseline;">  <a href="http://sourceforge.net/projects/orbada"><img src="docs/orbada32.png" alt="orbada icon"><img src="docs/orbada_logo.png" alt="orbada logo"></a>  </span></div></div><div id="content">
+<div class="head_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doca858.html?id=20101107153548-000009DF17BED34C-1D5B2C96">Documentation in English</a> &raquo; <a href="www_orbada_doc23a0.html?id=20101111151127-00000BE25598CE42-DD4776D5">Plug-in documentation</a> &raquo; BeanShell</div>
+<a NAME="20101111151235-00000BF240D3829E-DA11F900"></a><div class="content_block">
+<h3>
+4.A.1.1. 
+Introduction
+</h3>
+<p>BeanShell plugin, provides a scripting language compatible with Java.</p>
+<p>The exact specification can be found at <a href="http://www.beanshell.org/">BeanShell</a></p>
+<p>The plug-in attaches to the program ORBADA in many places. Provides a scripting language to better and more easily take advantage of the program.<br>
+Listed below are places where you can use a scripting language:</p>
+<ul>
+<li>BeanShell view is available from the menu <i>View</i></li>
+<li>Script executed at the opening and closing of the program</li>
+<li>In the view of SQL queries by using block <code>beanshell { ... }</code></li>
+<li>Action scripts anchoring wherever, where is used a universal mechanism of action</li>
+</ul>
+
+</div>
+<a NAME="20101111151726-00000C35F10CD5B6-2FDE60AC"></a><div class="content_block">
+<h3>
+4.A.1.2. 
+BeanShell view
+</h3>
+<p>BeanShell view, is available by selecting from a menu <i>View-&gt;BeanShell editor</i><br>
+View is available for both the perspective connection to the database and tool perspective.</p>
+<p>In the BeanShell editor is available all Java classes and objects of the program. Are also defined permanent:</p>
+<table class="properties">
+<tr><th>Property</th><th>Description</th></tr>
+<tr><td><b>self</b></td><td>Constant indicating the class object <code>Interpreter</code> BeanShell library</td></tr>
+<tr><td><b>database</b></td><td>If you have a connection to the database, this constant is an object of class <code>Database</code> UseDB library</td></tr>
+<tr><td><b>application</b></td><td>Allows you to access the properties through the application's interface features <code>IApplication</code> of ORBADA program</td></tr>
+</table>
+
+</div>
+<a NAME="20101111152251-00000C81A04C345D-3AC133AC"></a><div class="content_block">
+<h3>
+4.A.1.3. 
+Startup and shutdown the ORBADA program
+</h3>
+<p>Configuration scripts start and finish is available in <i>Program-&gt;Settings-&gt;Plug-in settings-&gt;BeanShell-&gt;Start and shutdown</i></p>
+<p>The scripts will be executed immediately after starting the program and just before its closure.</p>
+<p>In the BeanShell editor is available all Java classes and objects of the program. Are also defined permanent:
+</p>
+<table class="properties">
+<tr><th>Property</th><th>Description</th></tr>
+<tr><td><b>self</b></td><td>Constant indicating the class object <code>Interpreter</code> BeanShell library</td></tr>
+<tr><td><b>application</b></td><td>Allows you to access the properties through the application's interface features <code>IApplication</code> of ORBADA program</td></tr>
+</table>
+
+</div>
+<a NAME="20101111152709-00000CBDA8867C3D-CD44BD30"></a><div class="content_block">
+<h3>
+4.A.1.4. 
+SQL queries view
+</h3>
+<p>In SQL queries view, you can use BeanShell script in two ways:</p>
+<ol>
+<li>Typing between <code>beanshell {</code>, a <code>}</code> script<br>
+np. <code>beanshell { 2 +2 *2; }</code><br>
+Once launched, the screen in the window, will be the result of executing the script.</li>
+<li>The SQL commands by typing between <code>beanshell {</code>, a <code>}</code> script eg.:<br>
+<ol style="list-style-type: lower-alpha;"><li><code>select beanshell { 2 +2 *2; } from dual</code><br>
+When you run the query, on results list, you will see a row with the value "6"</li>
+<li><code>select 'beanshell { new pl.mpak.util.id.VersionID(1, 0, 0, 150) }' value from dual</code><br>
+When you run the query on results list, you will see a text representation of the version '1.0.0.150'</li>
+</ol>
+<b>Note</b><br>
+In this case, the script will be executed before executing the SQL command, and the result will be inserted in place of the script as a string</li>
+</ol>
+<p>In the BeanShell editor is available all Java classes and objects of the program. Are also defined permanent:
+</p>
+<table class="properties">
+<tr><th>Property</th><th>Description</th></tr>
+<tr><td><b>self</b></td><td>Constant indicating the class object <code>Interpreter</code> BeanShell library</td></tr>
+<tr><td><b>application</b></td><td>Allows you to access the properties through the application's interface features <code>IApplication</code> of ORBADA program</td></tr>
+</table>
+
+</div>
+<a NAME="20101111153322-00000D1473F7CE2D-8FD3795E"></a><div class="content_block">
+<h3>
+4.A.1.5. 
+<a href="www_orbada_docfcae.html?id=20101111153322-00000D1473F7CE2D-8FD3795E&amp;translation=en">Action configuration</a></h3>
+<div class="sub_anchore">
+ &#8226; 
+<a href="www_orbada_docfcae.html?id=20101111153322-00000D1473F7CE2D-8FD3795E&amp;translation=en#20101111153532-00000D32DD44F187-04CA5760">Obtaining information about the "key" and "component" actions</a> &#8226; 
+<a href="www_orbada_docfcae.html?id=20101111153322-00000D1473F7CE2D-8FD3795E&amp;translation=en#20101111160016-00000E8C67C78BB1-CAA653A4">Configuration</a> &#8226; 
+<a href="www_orbada_docfcae.html?id=20101111153322-00000D1473F7CE2D-8FD3795E&amp;translation=en#20101111161226-00000F363ACC224A-CE8FE38A">Availability of program elements in the script BeanShell</a> &#8226; 
+<a href="www_orbada_docfcae.html?id=20101111153322-00000D1473F7CE2D-8FD3795E&amp;translation=en#20101111161508-00000F5C1DE6D412-9FDE89D7">Checking the action</a> &#8226;
+</div>
+<p>Description of the steps that must be done to hook the BeanShell actions in program.</p>
+</div>
+<a NAME="20101111161956-00000F9F0441F126-EA26EC3D"></a><div class="content_block">
+<h3>
+4.A.1.6. 
+Predefined functions BeanShell
+</h3>
+<p>BeanShell provides a collection of predefined commands that are in the directory <code>bsh-2.0b4.jar\bsh\commands</code><br>
+In addition, the plugin provides a few commands useful during software development. They are located in the directory <code>orbada-beanshell.jar\pl\mpak\orbada\beanshell\commands</code><br>
+</p>
+</div>
+<a NAME="20101111162223-00000FC15D4F03C1-233C398A"></a><div class="content_block">
+<h3>
+4.A.1.7. 
+<a href="www_orbada_docd1b4.html?id=20101111162223-00000FC15D4F03C1-233C398A&amp;translation=en">Examples</a></h3>
+<div class="sub_anchore">
+ &#8226; 
+<a href="www_orbada_docd1b4.html?id=20101111162223-00000FC15D4F03C1-233C398A&amp;translation=en#20101111164617-0000110F26009002-6FC5B98D">BeanShell view for perspectives with a database connection</a> &#8226; 
+<a href="www_orbada_docd1b4.html?id=20101111162223-00000FC15D4F03C1-233C398A&amp;translation=en#20101111165638-0000119FB8DCDBD4-CB42AAEA">BeanShell view</a> &#8226; 
+<a href="www_orbada_docd1b4.html?id=20101111162223-00000FC15D4F03C1-233C398A&amp;translation=en#20101111165825-000011B8C051C8FF-9DE06680">On running the application</a> &#8226; 
+<a href="www_orbada_docd1b4.html?id=20101111162223-00000FC15D4F03C1-233C398A&amp;translation=en#20101111165928-000011C761CA2215-5E4D36EF">BeanShell action</a> &#8226; 
+<a href="www_orbada_docd1b4.html?id=20101111162223-00000FC15D4F03C1-233C398A&amp;translation=en#20101111170241-000011F4604B621F-F36F42CB">SQL queries tab</a> &#8226;
+</div>
+<p>A few examples showing how to write BeanShell scripts and where to use them</p>
+
+</div>
+<div class="foot_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doca858.html?id=20101107153548-000009DF17BED34C-1D5B2C96">Documentation in English</a> &raquo; <a href="www_orbada_doc23a0.html?id=20101111151127-00000BE25598CE42-DD4776D5">Plug-in documentation</a> &raquo; BeanShell</div>
+</div>
+<div id="page_foot">
+&#8226; © 2007–2015 &#8226; <a href="http://sourceforge.net/users/akaluza">Andrzej Kałuża</a>
+&#8226; Powered By <a href="http://sourceforge.net/projects/dbpages">DBPAGES</a>
+&#8226; Hostet at <a href="http://sourceforge.net/projects/orbada"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=361699&amp;type=10" width="80" height="15" alt="Get Orbada at SourceForge.net. Fast, secure and Free Open Source software downloads" style="margin: 2px 2px;" /></a>
+&#8226;
+</div>
+</div>
+</body>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101111151146-00000BE6E778DBA4-1A167883&translation=en by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:48 GMT -->
+</html>

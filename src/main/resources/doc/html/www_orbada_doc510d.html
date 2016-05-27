@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101111000652-000019ADF40DC804-4F0BD1C0 by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:46 GMT -->
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="Language" content="pl"><meta name="Author" content="Andrzej Kałuża, ORBADA"><meta http-equiv="Creation-Date" content="02-Kwi-2015 13:02:38 GMT;"><meta name="Description" content="Organizer Bazy Danych, Db Pages"><title>ORBADA - Dokumentacja</title><link rel="shortcut icon" href="docs/orbada32.html"><link rel="stylesheet" type="text/css" href="docs/styles/main.css"></head><body><div id="body_root">
+<div id="page_header"><div id="header_logos"><span class="right">2015-04-02 13:02&nbsp;</span>
+  <span style="vertical-align:baseline;">  <a href="http://sourceforge.net/projects/orbada"><img src="docs/orbada32.png" alt="orbada icon"><img src="docs/orbada_logo.png" alt="orbada logo"></a>  </span></div></div><div id="content">
+<div class="head_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doc8028.html?id=20101107153535-000009DC20B8FB18-6C3C6875">Dokumentacja po Polsku</a> &raquo; <a href="www_orbada_docb930.html?id=20101111000018-0000195224E46A70-D728F713">Dokumentacja wtyczek</a> &raquo; <a href="www_orbada_doc3ddd.html?id=20101111000122-00001961360B005B-734F1568">BeanShell</a> &raquo; <a href="www_orbada_doc8eef.html?id=20101111000342-00001981C150954F-99369110">Przykłady</a> &raquo; Akcje BeanShell</div>
+<a NAME="20110531184521-000002866A0C22B1-D0229627"></a><div class="content_block">
+<h3>
+5.A.1.7.4.1. 
+Schemat i nazwa tabeli Oracle
+</h3>
+<p>Poniższy kod można umieścić w konfiguracji skyptów akcji by podpiąć go do listy tabel wtyczki obsługi bazy danych Oracle.<br>
+Przykład oprócz sposobu użycia samego BeanShell pokazuje w jaki sposób dostać się do danych zawartych na liście wyników.</p>
+<p>Tytuł akcji: <b>Jaka to tabela (przykład BeanShell)</b><br>
+Klucz akcji: <b>oracle-tables-actions</b></p>
+<pre class="block">
+import pl.mpak.orbada.gui.comps.table.ViewTable;
+import pl.mpak.sky.gui.mr.ModalResult;
+import pl.mpak.sky.gui.swing.MessageBox;
+import pl.mpak.usedb.util.SQLUtil;
+
+if (component instanceof ViewTable) {
+  ViewTable vt = (ViewTable)component;
+  if (vt.getSelectedRow() >= 0) {
+    try {
+      vt.getQuery().getRecord(vt.getSelectedRow());
+      String schemaName = vt.getQuery().fieldByName("schema_name").getString();
+      String tableName = vt.getQuery().fieldByName("table_name").getString();
+      MessageBox.show(SQLUtil.createSqlName(schemaName, tableName));
+    } catch (Exception ex) {
+      MessageBox.show("Błąd", ex.getMessage(), ModalResult.OK);
+    }
+  }
+}
+</pre>
+
+</div>
+<a NAME="20110531185657-000003286A28A529-2ADE88B0"></a><div class="content_block">
+<h3>
+5.A.1.7.4.2. 
+Szybkie kopiowanie DLL tabeli
+</h3>
+<p>Poniższy kod można umieścić w konfiguracji skyptów akcji by podpiąć go do listy tabel wtyczki obsługi bazy danych Oracle.<br>
+Przykład pokazuje w jaki sposób można użyć obiektu <code>SourceCreator</code> z wtyczki Oracle oraz skopiować wynik do schowka systemu operacyjnego.
+</p>
+<p>Action title: <b>Szybkie kopiowanie DDL (przykład BeanShell)</b><br>
+Action key: <b>oracle-tables-actions</b></p>
+<pre class="block">
+import pl.mpak.orbada.gui.comps.table.ViewTable;
+import pl.mpak.sky.gui.mr.ModalResult;
+import pl.mpak.sky.gui.swing.MessageBox;
+import pl.mpak.orbada.oracle.util.SourceCreator;
+import pl.mpak.util.TextTransfer;
+
+if (component instanceof ViewTable) {
+  ViewTable vt = (ViewTable)component;
+  if (vt.getSelectedRow() >= 0) {
+    try {
+      vt.getQuery().getRecord(vt.getSelectedRow());
+      new TextTransfer().setClipboardContents(
+        new SourceCreator(database, null).getSource(
+          vt.getQuery().fieldByName("schema_name").getString(), 
+          "TABLE", 
+          vt.getQuery().fieldByName("table_name").getString()));
+    } catch (Exception ex) {
+      MessageBox.show("Problem", ex.getMessage(), ModalResult.OK);
+    }
+  }
+}
+</pre>
+
+</div>
+<a NAME="20131119142241-0000668F56497CCF-84EFB203"></a><div class="content_block">
+<h3>
+5.A.1.7.4.3. 
+Zabijanie sesji Oracle bez prawa DBA
+</h3>
+<p>Poniższy kod można umieścić w konfiguracji skyptów akcji by podpiąć go do listy sesji bazy danych Oracle.</p>
+<p>Przykład pokazuje jak wywołać procedurę PL/SQL aby umożliwić użytkownikom bazy danych Oracle zabijać swoje sesje bez uprawnień DBA.</p>
+<p>Action title: <b>Zabicie sesji RAC</b><br>
+Action key: <b>oracle-sessions-actions</b></p>
+<pre class="block">import pl.mpak.orbada.gui.comps.table.ViewTable;
+import pl.mpak.sky.gui.mr.ModalResult;
+import pl.mpak.sky.gui.swing.MessageBox;
+import pl.mpak.usedb.util.SQLUtil;
+
+if (component instanceof ViewTable) {
+  ViewTable vt = (ViewTable)component;
+  if (vt.getSelectedRow() >= 0) {
+    try {
+      vt.getQuery().getRecord(vt.getSelectedRow());
+      String sid = vt.getQuery().fieldByName("sid").getString();
+      String serial = vt.getQuery().fieldByName("serial#").getString();
+      String inst = vt.getQuery().fieldByName("inst_id").getString();
+      database.createCommand("begin kskill.kill_session("+sid+","+serial +","+inst+"); end;", true);
+    } catch (Exception ex) {
+      MessageBox.show("Błąd", ex.getMessage(), ModalResult.OK);
+    }
+  }
+}</pre>
+</div>
+<div class="foot_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doc8028.html?id=20101107153535-000009DC20B8FB18-6C3C6875">Dokumentacja po Polsku</a> &raquo; <a href="www_orbada_docb930.html?id=20101111000018-0000195224E46A70-D728F713">Dokumentacja wtyczek</a> &raquo; <a href="www_orbada_doc3ddd.html?id=20101111000122-00001961360B005B-734F1568">BeanShell</a> &raquo; <a href="www_orbada_doc8eef.html?id=20101111000342-00001981C150954F-99369110">Przykłady</a> &raquo; Akcje BeanShell</div>
+</div>
+<div id="page_foot">
+&#8226; © 2007–2015 &#8226; <a href="http://sourceforge.net/users/akaluza">Andrzej Kałuża</a>
+&#8226; Powered By <a href="http://sourceforge.net/projects/dbpages">DBPAGES</a>
+&#8226; Hostet at <a href="http://sourceforge.net/projects/orbada"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=361699&amp;type=10" width="80" height="15" alt="Get Orbada at SourceForge.net. Fast, secure and Free Open Source software downloads" style="margin: 2px 2px;" /></a>
+&#8226;
+</div>
+</div>
+</body>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101111000652-000019ADF40DC804-4F0BD1C0 by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:46 GMT -->
+</html>

@@ -1,0 +1,16 @@
+ Date and time          Size JDBC JAR file                         Description
+---------------- ----------- ------------------------------------- -------------------------------
+2009-02-22 15:51     470 438 derbyclient.jar                       DerbyDb
+2009-01-13 12:01   1 128 641 h2.jar                                H2
+2008-07-19 19:00     681 941 jaybird-full-2.1.6.jar                JayBird for Firebird
+2008-10-21 04:02     709 922 mysql-connector-java-5.1.7-bin.jar    MySQL
+2007-07-25 10:48   1 977 444 ojdbc6.jar                            Oracle (Java 1.6) - recomended
+2007-09-05 18:12   1 654 920 orai18n.jar                           Oracle NLS (Java 1.6) - " -
+2005-08-16 15:38   1 536 554 ojdbc14.jar                           Oracle (Java 1.4)
+2005-08-30 12:17   1 642 006 nls_charset12.jar                     Oracle NLS
+2007-08-21 16:54     139 148 xdb.jar                               Oracle XML Type
+2006-09-10 19:24   1 420 339 xmlparserv2.jar                       Oracle XML Parser
+2010-11-03 07:59   2 684 154 sqlitejdbc.jar                        SQLite with binaries
+2007-10-11 11:10     583 286 sqljdbc.jar                           MS SQL Server
+2007-11-01 20:47     699 936 hsqldb-1.8/hsqldb.jar                 HSQLDB 1.8
+2011-03-14 00:04     699 936 hsqldb-2.1/hsqldb.jar                 HSQLDB 2.1

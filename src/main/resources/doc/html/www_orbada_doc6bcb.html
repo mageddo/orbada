@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101111162223-00000FC15D4F03C1-233C398A by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:49 GMT -->
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="Language" content="pl"><meta name="Author" content="Andrzej Kałuża, ORBADA"><meta http-equiv="Creation-Date" content="02-Kwi-2015 13:02:43 GMT;"><meta name="Description" content="Organizer Bazy Danych, Db Pages"><title>ORBADA - Dokumentacja</title><link rel="shortcut icon" href="docs/orbada32.html"><link rel="stylesheet" type="text/css" href="docs/styles/main.css"></head><body><div id="body_root">
+<div id="page_header"><div id="header_logos"><span class="right">2015-04-02 13:02&nbsp;</span>
+  <span style="vertical-align:baseline;">  <a href="http://sourceforge.net/projects/orbada"><img src="docs/orbada32.png" alt="orbada icon"><img src="docs/orbada_logo.png" alt="orbada logo"></a>  </span></div></div><div id="content">
+<div class="head_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doca858.html?id=20101107153548-000009DF17BED34C-1D5B2C96">Documentation in English</a> &raquo; <a href="www_orbada_doc23a0.html?id=20101111151127-00000BE25598CE42-DD4776D5">Plug-in documentation</a> &raquo; <a href="www_orbada_doc915a.html?id=20101111151146-00000BE6E778DBA4-1A167883">BeanShell</a> &raquo; Examples</div>
+<a NAME="20101111164617-0000110F26009002-6FC5B98D"></a><div class="content_block">
+<h3>
+4.A.1.7.1. 
+BeanShell view for perspectives with a database connection
+</h3>
+<p>The following command uses the class generator sources Orbada Oracle Plugin to generate the source system view USER_TABLES.</p>
+<pre class="block">
+import pl.mpak.orbada.oracle.util.SourceCreator;
+return (new SourceCreator(database, null)).getSource("SYS", "VIEW", "USER_TABLES");
+</pre>
+<p>This command displays on the screen using the predefined function <code>showResultSet</code> all the parameters of procedures for obtaining them from the metadata JDBC driver.</p>
+<pre class="block">
+showResultSet(database.getMetaData().getProcedureColumns(null, null, null, null));
+</pre>
+</div>
+<a NAME="20101111165638-0000119FB8DCDBD4-CB42AAEA"></a><div class="content_block">
+<h3>
+4.A.1.7.2. 
+BeanShell view
+</h3>
+<p>displays on the result tab string "ABC".</p>
+<pre class="block">
+self.println("ABC");
+</pre>
+<p>Command changes on apllication run time, the background color of selected tab.</p>
+<pre class="block">
+javax.swing.UIManager.put("Table.selectionBackground", new Color(160, 160, 200));
+</pre>
+</div>
+<a NAME="20101111165825-000011B8C051C8FF-9DE06680"></a><div class="content_block">
+<h3>
+4.A.1.7.3. 
+On running the application
+</h3>
+<p>The following script, you can put in the settings BeanShell plugin to extend the look JGOODIES.</p>
+<pre class="block">
+javax.swing.UIManager.put("TabbedPane.background", new Color(220, 220, 220));
+Color selectionBackground = new Color(160, 160, 200);
+javax.swing.UIManager.put("List.selectionBackground", selectionBackground);
+javax.swing.UIManager.put("Table.selectionBackground", selectionBackground);
+</pre>
+</div>
+<a NAME="20101111165928-000011C761CA2215-5E4D36EF"></a><div class="content_block">
+<h3>
+4.A.1.7.4. 
+<a href="www_orbada_doc4ad0.html?id=20101111165928-000011C761CA2215-5E4D36EF&amp;translation=en">BeanShell action</a></h3>
+<div class="sub_anchore">
+ &#8226; 
+<a href="www_orbada_doc4ad0.html?id=20101111165928-000011C761CA2215-5E4D36EF&amp;translation=en#20110531184638-000002985EBE2B64-6E196294">Oracle schema and table name</a> &#8226; 
+<a href="www_orbada_doc4ad0.html?id=20101111165928-000011C761CA2215-5E4D36EF&amp;translation=en#20110531185026-000002CD6EF4FA81-9A59499A">Oracle quick copy a table DDL to clipboard</a> &#8226; 
+<a href="www_orbada_doc4ad0.html?id=20101111165928-000011C761CA2215-5E4D36EF&amp;translation=en#20131119143644-00006753A07748FC-F9005F31">Kill Oracle session without DBA role</a> &#8226;
+</div>
+</div>
+<a NAME="20101111170241-000011F4604B621F-F36F42CB"></a><div class="content_block">
+<h3>
+4.A.1.7.5. 
+SQL queries tab
+</h3>
+<p>When you run the query in the results list appears in a text representation of the version '1.0.0.150' </p>
+<pre class="block">
+select 'beanshell { new pl.mpak.util.id.VersionID(1, 0, 0, 150) }' value from dual
+</pre>
+</div>
+<div class="foot_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doca858.html?id=20101107153548-000009DF17BED34C-1D5B2C96">Documentation in English</a> &raquo; <a href="www_orbada_doc23a0.html?id=20101111151127-00000BE25598CE42-DD4776D5">Plug-in documentation</a> &raquo; <a href="www_orbada_doc915a.html?id=20101111151146-00000BE6E778DBA4-1A167883">BeanShell</a> &raquo; Examples</div>
+</div>
+<div id="page_foot">
+&#8226; © 2007–2015 &#8226; <a href="http://sourceforge.net/users/akaluza">Andrzej Kałuża</a>
+&#8226; Powered By <a href="http://sourceforge.net/projects/dbpages">DBPAGES</a>
+&#8226; Hostet at <a href="http://sourceforge.net/projects/orbada"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=361699&amp;type=10" width="80" height="15" alt="Get Orbada at SourceForge.net. Fast, secure and Free Open Source software downloads" style="margin: 2px 2px;" /></a>
+&#8226;
+</div>
+</div>
+</body>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101111162223-00000FC15D4F03C1-233C398A by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:50 GMT -->
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101107164501-00000DA604F58D13-BDC8366D&translation=pl by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:54 GMT -->
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="Language" content="pl"><meta name="Author" content="Andrzej Kałuża, ORBADA"><meta http-equiv="Creation-Date" content="02-Kwi-2015 13:02:50 GMT;"><meta name="Description" content="Organizer Bazy Danych, Db Pages"><title>ORBADA - Dokumentacja</title><link rel="shortcut icon" href="docs/orbada32.html"><link rel="stylesheet" type="text/css" href="docs/styles/main.css"></head><body><div id="body_root">
+<div id="page_header"><div id="header_logos"><span class="right">2015-04-02 13:02&nbsp;</span>
+  <span style="vertical-align:baseline;">  <a href="http://sourceforge.net/projects/orbada"><img src="docs/orbada32.png" alt="orbada icon"><img src="docs/orbada_logo.png" alt="orbada logo"></a>  </span></div></div><div id="content">
+<div class="head_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doc8028.html?id=20101107153535-000009DC20B8FB18-6C3C6875">Dokumentacja po Polsku</a> &raquo; <a href="www_orbada_doc0fd9.html?id=20101107164059-00000D6DCC626FBA-91195613">Obsługa programu</a> &raquo; <a href="www_orbada_docba44.html?id=20101107164121-00000D72ECE6A20B-C901DD18">Schematy połączeń</a> &raquo; Edycja schematu</div>
+<a NAME="20101107164707-00000DC363C35BDE-A51E19C8"></a><div class="content_block">
+<h3>
+5.2.1.6.1. 
+Ogólne
+</h3>
+<p>Zakładka ustawień ogólnych pozwala określić parametry połączenia z bazą danych.</p>
+<ul><caption>Parametry te, to:</caption>
+  <li><b>Nazwa schematu</b> - publiczna nazwa schematu połaczenia widoczna w wielu miejscach programu.<br>Dopuszczalne jest w tym miejscu stosowanie tag-ów języka html.</li>
+  <li><b>Sterownik</b> - określa sterownik połączenia dla tego schematu</li>
+  <li><b>Serwer (host)</b> - nazwa lub adres IP komputera na którym znajduje się serwer bazy danych</li>
+  <li><b>Użytkownik</b> - nazwa użytkownika bazy danych</li>
+  <li><b>Hasło</b> - hasło dostępu do bazy danych, jeśli hasło nie zostanie określone wtedy użytkownik może je podać z poziomu listy schematów połaczenia</li>
+  <li><b>Baza danych</b> - baza danych, instancja bazy danych</li>
+  <li><b>Port</b> - port IP na którym serwer bazy danych nasłuchuje połączeń</li>
+  <li><b>Ciąg połączenia (url)</b> - ciąg dla sterownika JDBC określający parametry główne połączenia. W przypadku gdy prawidłowo określony jest szablon ciągu połaczenia w sterowniku, pole to może pozostać puste, ciąg będzie tworzone dynamicznie na podstawie parametrów podczas nawiązywania połączenia z bazą danych.</li>
+  <li><b>Automatyczny COMMIT</b> - po nawiązaniu połączenia, w sterowniku JDBC zostanie włączone automatyczne zatwierdzanie zmian w bazie danych</li>
+  <li><b>Schemat widoczny przez wszystkich użytkowników</b> - (tylko admin) pozwala ustawić znacznik widoczności tego schematu przez wszystkich użytkowników ORBADA</li>
+</ul>
+</div>
+<a NAME="20101107164743-00000DCBD7697482-A1133D44"></a><div class="content_block">
+<h3>
+5.2.1.6.2. 
+Parametry sterownika JDBC
+</h3>
+<p>Zakładka parametrów sterownika JDBC pozwala określić specyficzne ustawienia dla nawiązanego połaczenia. Dodatkowe parametry należy podawać w postaci: &lt;nazwa&gt;=&lt;wartość&gt; Każdy parametr w osobnym wierszu. Przycisk <b>[Dodaj]</b> pozwala dodać parametr z listy udostępnionych przez sterownik JDBC parametrów.
+</p>
+</div>
+<a NAME="20101107164810-00000DD20C0DE127-175F8BD5"></a><div class="content_block">
+<h3>
+5.2.1.6.3. 
+Pozostałe parametry, parametry wtyczek
+</h3>
+<p>Zakładka pozostałych parametrów pozwala określić ustawienia dla wtyczek i pozostałych bibliotek używających wybranego połączenia z bazą danych.<br>
+Można tutaj podać parametry biblioteki UseDB oraz inne, np wtyczek. Dodatkowe parametry należy podawać w postaci: &lt;nazwa&gt;=&lt;wartość&gt; Każdy parametr w osobnym wierszu.
+</p>
+
+</div>
+<a NAME="20101107164837-00000DD85455B53C-C9DB58A3"></a><div class="content_block">
+<h3>
+5.2.1.6.4. 
+Funkcje przycisków
+</h3>
+<p>Z tego okna można, przy pomocy przycisków, przejść do następujących funkcji</p>
+<ul>
+  <li><b>[Test]</b> - pozwala nawiązać tymczasowe, testowe połączenie z bazą danych na podstawie określonych parametrów</li>
+  <li><b>[Ikona]</b> - ustawia ikonę schematu połaczenia widoczną na dole okna głównego</li>
+  <li><b>[Ok]</b> - zatwierdza zmiany w parametrach schematu połączenia</li>
+  <li><b>[Anuluj]</b> - wycofuje wprowadzone zmiany</li>
+</ul>
+
+</div>
+<div class="foot_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doc8028.html?id=20101107153535-000009DC20B8FB18-6C3C6875">Dokumentacja po Polsku</a> &raquo; <a href="www_orbada_doc0fd9.html?id=20101107164059-00000D6DCC626FBA-91195613">Obsługa programu</a> &raquo; <a href="www_orbada_docba44.html?id=20101107164121-00000D72ECE6A20B-C901DD18">Schematy połączeń</a> &raquo; Edycja schematu</div>
+</div>
+<div id="page_foot">
+&#8226; © 2007–2015 &#8226; <a href="http://sourceforge.net/users/akaluza">Andrzej Kałuża</a>
+&#8226; Powered By <a href="http://sourceforge.net/projects/dbpages">DBPAGES</a>
+&#8226; Hostet at <a href="http://sourceforge.net/projects/orbada"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=361699&amp;type=10" width="80" height="15" alt="Get Orbada at SourceForge.net. Fast, secure and Free Open Source software downloads" style="margin: 2px 2px;" /></a>
+&#8226;
+</div>
+</div>
+</body>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101107164501-00000DA604F58D13-BDC8366D&translation=pl by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:55 GMT -->
+</html>

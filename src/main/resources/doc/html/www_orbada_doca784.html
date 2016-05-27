@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101110232726-0000178703E8D0B6-A55217C0&translation=pl by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:55 GMT -->
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="Language" content="pl"><meta name="Author" content="Andrzej Kałuża, ORBADA"><meta http-equiv="Creation-Date" content="02-Kwi-2015 13:02:52 GMT;"><meta name="Description" content="Organizer Bazy Danych, Db Pages"><title>ORBADA - Dokumentacja</title><link rel="shortcut icon" href="docs/orbada32.html"><link rel="stylesheet" type="text/css" href="docs/styles/main.css"></head><body><div id="body_root">
+<div id="page_header"><div id="header_logos"><span class="right">2015-04-02 13:02&nbsp;</span>
+  <span style="vertical-align:baseline;">  <a href="http://sourceforge.net/projects/orbada"><img src="docs/orbada32.png" alt="orbada icon"><img src="docs/orbada_logo.png" alt="orbada logo"></a>  </span></div></div><div id="content">
+<div class="head_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doc8028.html?id=20101107153535-000009DC20B8FB18-6C3C6875">Dokumentacja po Polsku</a> &raquo; <a href="www_orbada_docfb28.html?id=20101110232629-00001779B9E8445F-368D8C59">Dokumentacja użytkowa bibliotek</a> &raquo; <a href="www_orbada_doce67e.html?id=20101110232648-0000177E2B334FF7-BFE1D1E3">Biblioteka UseDB</a> &raquo; Parametry wewnętrzne biblioteki UseDB</div>
+<a NAME="20101110232751-0000178CF9091BAB-CB1624C0"></a><div class="content_block">
+<h3>
+5.B.1.1.1. 
+usedb.fetch-record-count
+</h3>
+<p>Określa liczbę rekordów pobranych w jednym ciągu z bazy danych. Domyślnie doczytywane jest 50 rekordów.
+</div>
+<a NAME="20101110232806-0000179060617185-F41D1FF0"></a><div class="content_block">
+<h3>
+5.B.1.1.2. 
+usedb.cache-record-count
+</h3>
+<p>Parametr określa liczbę rekordów buforowaną przez obiekt Query. Domyślnie 200.<br>
+Wszystkie rekordy odczytywane z bazy danych zapisywane są w specjalnych plikach na dysku w katalogu tymczasowym użytkownika. Są one automatycznie kasowane jeśli nie są potrzebne. Liczba określona przy pomocy tego parametru pozwla zredukować odczyty z dysku w przypadku przeszukiwania, sortowania i przechodzenia między rekordami w programach.
+</p>
+</div>
+<a NAME="20101110232822-000017942432B843-BDE41AE2"></a><div class="content_block">
+<h3>
+5.B.1.1.3. 
+usedb.statement-fetch-size
+</h3>
+<p>Parametr pozwala określić liczbę buforowaną liczbę rekordów przez sterownik JDBC. Funkcja która jest wywoływana do <code>Statement.setFetchSize()</code> i zgodnie z dokumentacją JDBC jest tylko podpowiedzią dla sterownika.<br>
+W niektórych przypadkach (JDBC Oracle) ustawienie tej opcji może spowodować problemy z wydajnością pobierania danych z serwera oraz problemy ze stabilnością sterownika.<br>
+Dla sterownika JDBC MySQL, ustawienie wartości -1, zgodnie z dokumentacją może ograniczyć pamięciożerność sterownika.
+</p>
+</div>
+<a NAME="20101110232836-00001797661F2887-02922A8B"></a><div class="content_block">
+<h3>
+5.B.1.1.4. 
+usedb.statement-max-rows
+</h3>
+<p>Parametr pozwala określić maksymalną liczbę rekordów jakie zostaną pobrana przes terownik JDBC po wykonaniu polecenia SQL.<br>
+Niektóre sterowniki JDBC (np. Jaybird, MySQL) po wykonaniu polecenia SQL buforują wszystkie rekordy w pamięci. Parametr ten pozwala ograniczyć listę rekordów w pamięci.
+</p>
+</div>
+<a NAME="20101110232852-0000179B1D7ADFC9-553C5BBE"></a><div class="content_block">
+<h3>
+5.B.1.1.5. 
+usedb.call-prepare-statement
+</h3>
+<p>Parametr pozwala przygotować, a potem wykonać polecenia INSERT, UPDATE i DELETE z parametrami przy pomocy funkcji JDBC <code>prepareStatement</code>.<br>
+Ustawienie na <code>true</code> spowoduje wykonywanie w/w poleceń w sposób niezgodny ze specyfikacją JDBC, lecz rozwiązuje specyficzny problem sterownika Jaybird dla bazy danych Firebird.
+</p>
+
+</div>
+<a NAME="20101110232905-0000179E38D99191-A263EDE8"></a><div class="content_block">
+<h3>
+5.B.1.1.6. 
+usedb.auto-command-quoted-name
+</h3>
+<p>Parametr (domyślnie true) określa sposób tworzenia nazw kolumn w poleceniach generowanych automatycznie. Polecenia generowane automatycznie tworzone są przez mechanizm <code>BufferedRecord</code>.<br>
+Ustawienie tego parametru na "false", rozwiązuje problem niezgodności z SQL ANSI niektórych sterowników JDBC np. Jaybird dla bazy danych Firebird.
+</p>
+</div>
+<a NAME="20110429184913-000002991491CBC7-8211334F"></a><div class="content_block">
+<h3>
+5.B.1.1.7. 
+usedb.escape-processing
+</h3>
+<p>Pozwala dla poleceń bez parametrów (nazwanych lub ?) ustawić właściwość ExcapeProcessing</p>
+</div>
+<div class="foot_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doc8028.html?id=20101107153535-000009DC20B8FB18-6C3C6875">Dokumentacja po Polsku</a> &raquo; <a href="www_orbada_docfb28.html?id=20101110232629-00001779B9E8445F-368D8C59">Dokumentacja użytkowa bibliotek</a> &raquo; <a href="www_orbada_doce67e.html?id=20101110232648-0000177E2B334FF7-BFE1D1E3">Biblioteka UseDB</a> &raquo; Parametry wewnętrzne biblioteki UseDB</div>
+</div>
+<div id="page_foot">
+&#8226; © 2007–2015 &#8226; <a href="http://sourceforge.net/users/akaluza">Andrzej Kałuża</a>
+&#8226; Powered By <a href="http://sourceforge.net/projects/dbpages">DBPAGES</a>
+&#8226; Hostet at <a href="http://sourceforge.net/projects/orbada"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=361699&amp;type=10" width="80" height="15" alt="Get Orbada at SourceForge.net. Fast, secure and Free Open Source software downloads" style="margin: 2px 2px;" /></a>
+&#8226;
+</div>
+</div>
+</body>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101110232726-0000178703E8D0B6-A55217C0&translation=pl by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:56 GMT -->
+</html>

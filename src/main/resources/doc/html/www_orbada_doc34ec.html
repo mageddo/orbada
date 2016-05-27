@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20110522141538-0000091A1E016377-F25DC53B&translation=en by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:47 GMT -->
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="Language" content="en"><meta name="Author" content="Andrzej Kałuża, ORBADA"><meta http-equiv="Creation-Date" content="02-Kwi-2015 13:02:39 GMT;"><meta name="Description" content="Organizer Bazy Danych, Db Pages"><title>ORBADA - Dokumentacja</title><link rel="shortcut icon" href="docs/orbada32.html"><link rel="stylesheet" type="text/css" href="docs/styles/main.css"></head><body><div id="body_root">
+<div id="page_header"><div id="header_logos"><span class="right">2015-04-02 13:02&nbsp;</span>
+  <span style="vertical-align:baseline;">  <a href="http://sourceforge.net/projects/orbada"><img src="docs/orbada32.png" alt="orbada icon"><img src="docs/orbada_logo.png" alt="orbada logo"></a>  </span></div></div><div id="content">
+<div class="head_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doca858.html?id=20101107153548-000009DF17BED34C-1D5B2C96">Documentation in English</a> &raquo; <a href="www_orbada_doc04fe.html?id=20101107154558-00000A6D2C7B8900-03597687">Running the application</a> &raquo; Database serwer</div>
+<a NAME="20110522154803-00000E24FC1CB363-6B47B1E7"></a><div class="content_block">
+<h3>
+4.1.4.1. 
+Embeded mode
+</h3>
+<p>Orbada program uses by default HSQLDB database in Embedded mode.
+The database stores the definitions of the drivers, connection schemas, and other settings.
+Embedded mode applications can not run several times at the same time.
+However, nothing prevents to configure the program to connect to a HSQLDB database server, or even Oracle.
+</p>
+<p>In directory <code>%USER_HOME%/.orbada/config</code> you find file <code>orbada.properties</code>.
+In this file located a configuration database connection HSQLDB in Embedded mode.
+Content below:
+<pre class="block">#EMBEDED HSQLDB
+internal.db.driver=HSQLDB
+internal.db.class=org.hsqldb.jdbcDriver
+internal.db.url=jdbc:hsqldb:file:$(orbada.home)/data/hsqldb/orbada
+internal.db.user=sa
+internal.db.password=
+internal.db.source=$(user.dir)/jdbc/hsqldb-internal/hsqldb.jar
+data.type.blob=BINARY
+data.type.clob=VARCHAR</pre>
+</p>
+</div>
+<a NAME="20110522155227-00000E62A00CB47B-685D16EA"></a><div class="content_block">
+<h3>
+4.1.4.2. 
+HSQLDB Server
+</h3>
+<p>To configure the program so as to connect to the HSQLDB database in server mode, you must in file orbada.properties comment out these lines with a # char and uncomment the following.
+<pre class="block">#SERVER HSQLDB
+internal.db.driver=HSQLDB
+internal.db.class=org.hsqldb.jdbcDriver
+internal.db.url=jdbc:hsqldb:hsql://localhost/orbada
+internal.db.user=sa
+internal.db.password=
+internal.db.source=$(user.dir)/jdbc/hsqldb-internal/hsqldb.jar
+data.type.blob=BINARY
+data.type.clob=VARCHAR</pre>
+</p>
+<p>The Orbada program uses HSQLDB version 1.8, which is located in <code>jdbc/hsqldb-internal</code> and must remain in this version..
+</p>
+<p>To start the HSQLDB server can use the following command (Windows):<br>
+<code>@java -classpath "./jdbc/hsqldb-internal/hsqldb.jar" org.hsqldb.Server -database.0 "file:%USERPROFILE%/.orbada/data/hsqldb/orbada" -dbname.0 orbada</code>
+</p>
+</div>
+<a NAME="20110522155551-00000E920A50DDC4-DE4A3BF1"></a><div class="content_block">
+<h3>
+4.1.4.3. 
+Oracle Server
+</h3>
+<p>To configure the program so as to connect to the Oracle database in server mode, you must in file orbada.properties comment out these lines with a # char and uncomment the following.
+</p>
+<p>In the case of Oracle database is required that prior to starting the program the first time, create a user for example ORBADA.
+
+<pre class="block">#SERVER Oracle
+internal.db.driver=Oracle
+internal.db.class=oracle.jdbc.OracleDriver
+internal.db.url=jdbc:oracle:thin:@localhost:1521:orcl
+internal.db.user=orbada
+internal.db.password=orbada
+internal.db.source=./jdbc/ojdbc6.jar
+internal.db.extra.library=./jdbc/orai18n.jar
+data.type.blob=BLOB
+data.type.clob=CLOB</pre>
+</p>
+<p>After starting the first time of Orbada program, all database objects are created automatically.</p>
+
+</div>
+<a NAME="20130628215725-000023FFD1BD062F-9A50D4C8"></a><div class="content_block">
+<h3>
+4.1.4.4. 
+PostgreSQL server
+</h3>
+<p>To configure the program so as to connect to the PostgreSQL database in server mode, you must in file orbada.properties comment out these lines with a # char and uncomment the following.
+</p>
+<p>In the case of PostgreSQL database is recomended that prior to starting the program the first time, create a schema and user for example ORBADA.
+
+<pre class="block">#SERVER POSTGRESQL
+internal.db.driver=PostgreSQL
+internal.db.class=org.postgresql.Driver
+internal.db.url=jdbc:postgresql://localhost:5432/postgres
+internal.db.user=orbada
+internal.db.password=orbada
+internal.db.source=./jdbc/postgresql-9.2-1002.jdbc4.jar
+data.type.blob=bytea
+data.type.clob=varchar
+usedb.auto-command-quoted-name=false</pre>
+</p>
+<p>After starting the first time of Orbada program, all database objects are created automatically.</p>
+
+</div>
+<div class="foot_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doca858.html?id=20101107153548-000009DF17BED34C-1D5B2C96">Documentation in English</a> &raquo; <a href="www_orbada_doc04fe.html?id=20101107154558-00000A6D2C7B8900-03597687">Running the application</a> &raquo; Database serwer</div>
+</div>
+<div id="page_foot">
+&#8226; © 2007–2015 &#8226; <a href="http://sourceforge.net/users/akaluza">Andrzej Kałuża</a>
+&#8226; Powered By <a href="http://sourceforge.net/projects/dbpages">DBPAGES</a>
+&#8226; Hostet at <a href="http://sourceforge.net/projects/orbada"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=361699&amp;type=10" width="80" height="15" alt="Get Orbada at SourceForge.net. Fast, secure and Free Open Source software downloads" style="margin: 2px 2px;" /></a>
+&#8226;
+</div>
+</div>
+</body>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20110522141538-0000091A1E016377-F25DC53B&translation=en by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:47 GMT -->
+</html>

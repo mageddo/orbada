@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101111153322-00000D1473F7CE2D-8FD3795E&translation=en by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:53 GMT -->
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="Language" content="en"><meta name="Author" content="Andrzej Kałuża, ORBADA"><meta http-equiv="Creation-Date" content="02-Kwi-2015 13:02:48 GMT;"><meta name="Description" content="Organizer Bazy Danych, Db Pages"><title>ORBADA - Dokumentacja</title><link rel="shortcut icon" href="docs/orbada32.html"><link rel="stylesheet" type="text/css" href="docs/styles/main.css"></head><body><div id="body_root">
+<div id="page_header"><div id="header_logos"><span class="right">2015-04-02 13:02&nbsp;</span>
+  <span style="vertical-align:baseline;">  <a href="http://sourceforge.net/projects/orbada"><img src="docs/orbada32.png" alt="orbada icon"><img src="docs/orbada_logo.png" alt="orbada logo"></a>  </span></div></div><div id="content">
+<div class="head_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doca858.html?id=20101107153548-000009DF17BED34C-1D5B2C96">Documentation in English</a> &raquo; <a href="www_orbada_doc23a0.html?id=20101111151127-00000BE25598CE42-DD4776D5">Plug-in documentation</a> &raquo; <a href="www_orbada_doc915a.html?id=20101111151146-00000BE6E778DBA4-1A167883">BeanShell</a> &raquo; Action configuration</div>
+<a NAME="20101111153532-00000D32DD44F187-04CA5760"></a><div class="content_block">
+<h3>
+4.A.1.5.1. 
+Obtaining information about the "key" and "component" actions
+</h3>
+<p>Multiple data lists, tables, views, procedures and editing windows, has implemented a universal mechanism of action. Just activate a tab or a view and see if there is a button <b>[Actions]</b>.<br>
+Any place where there is a button <b>[Actions]</b> is identified by a special key is a unique string, eg "oracle-tables-actions". Another key feature is to assign it to a specific component, such as lists or editor.</p>
+<p>To find out what is the key component and is associated with an action button, simply hold the [Ctrl] key and move the mouse over the button. You will get the hint, in which the properties are described.</p>
+
+</div>
+<a NAME="20101111160016-00000E8C67C78BB1-CAA653A4"></a><div class="content_block">
+<h3>
+4.A.1.5.2. 
+Configuration
+</h3>
+<p>Setting up actions is available <i>Program-&gt;Settings-&gt;Plug-in settings-&gt;BeanShell-&gt;Action scripts"</i></p>
+<table class="properties"><caption>Description of the list of action scripts</caption>
+<tr><th>Column</th><th>Description</th></tr>
+<tr><td><b>Scope</b></td><td>Visibility scope of action, "Global" - for all users, or "User" - visible only by the logged in user.</td></tr>
+<tr><td><b>Title</b></td><td>Title of action displayed on the menu when you select the [Actions]</td></tr>
+<tr><td><b>Key</b></td><td>A string specifying the location (type of action) in which the action will be plugged</td></tr>
+<tr><td><b>Driver</b></td><td>The driver, allows you to specify which databases, acion will be visible</td></tr>
+<tr><td><b>Export</b></td><td>Allows you to save action in the form of an XML file</td></tr>
+<tr><td><b>Import</b></td><td>Reads the action from the disk and put it on the list</td></tr>
+<tr><td><b>New</b></td><td>Allows you to create a new action script</td></tr>
+<tr><td><b>Edit</b></td><td>Allows you to change the properties of an existing action script</td></tr>
+<tr><td><b>Delete</b></td><td>Allows you to remove the action from the list</td></tr>
+</table>
+<br>
+<p>After selecting the button <b>[New]</b> or <b>[Edit]</b> available window in which you define, the nature of the action script.<br>
+<table class="properties"><caption>Description edit the action script</caption>
+<tr><th>Property</th><th>Description</th></tr>
+<tr><td><b>Action title</b></td><td>An action title, which appears in the menu when you select the [Actions]</td></tr>
+<tr><td><b>Action key</b></td><td>A string specifying the location (type of action) in which the action will be plugged</td></tr>
+<tr><td><b>Tooltip</b></td><td>A string that displays as a tooltip for the action</td></tr>
+<tr><td><b>For driver</b></td><td>The driver, allows you to specify which databases, acion will be visible</td></tr>
+<tr><td><b>Shortcut key</b></td><td>You can define a shortcut key to access to action of the component associated with the type of action</td></tr>
+<tr><td><b>BeanShell script</b></td><td>BeanShell script executable. This script will be executed when you select a share on the menu.</td></tr>
+<tr><td><b>For all users</b></td><td>ORBADA administrator can determine the extent of visibility of the action. The action can be seen by all users or only the current working</td></tr>
+</table>
+
+</div>
+<a NAME="20101111161226-00000F363ACC224A-CE8FE38A"></a><div class="content_block">
+<h3>
+4.A.1.5.3. 
+Availability of program elements in the script BeanShell
+</h3>
+<p>In the script BeanShell is available all Java classes and objects of the program. Are also defined permanent:</p>
+<table class="properties">
+<tr><th>Property</th><th>Description</th></tr>
+<tr><td><b>self</b></td><td>Constant indicating the class object <code>Interpreter</code> BeanShell library</td></tr>
+<tr><td><b>database</b></td><td>If you have a connection to the database, this constant is an object of class <code>Database</code> UseDB library</td></tr>
+<tr><td><b>application</b></td><td>Allows you to access the properties through the application's interface features <code>IApplication</code> of ORBADA program</td></tr>
+<tr><td><b>component</b></td><td>Constant associated with the component that provides the action</td></tr>
+</table>
+
+</div>
+<a NAME="20101111161508-00000F5C1DE6D412-9FDE89D7"></a><div class="content_block">
+<h3>
+4.A.1.5.4. 
+Checking the action
+</h3>
+<p>To see how to share work, you must re-create the view in which the action is hooked up. To invoke the script, you should choose <b>[Actions]</b> menu and select the action. If you have set a keyboard shortcut, you can choose select the shortcut from a component.</p>
+
+</div>
+<div class="foot_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doca858.html?id=20101107153548-000009DF17BED34C-1D5B2C96">Documentation in English</a> &raquo; <a href="www_orbada_doc23a0.html?id=20101111151127-00000BE25598CE42-DD4776D5">Plug-in documentation</a> &raquo; <a href="www_orbada_doc915a.html?id=20101111151146-00000BE6E778DBA4-1A167883">BeanShell</a> &raquo; Action configuration</div>
+</div>
+<div id="page_foot">
+&#8226; © 2007–2015 &#8226; <a href="http://sourceforge.net/users/akaluza">Andrzej Kałuża</a>
+&#8226; Powered By <a href="http://sourceforge.net/projects/dbpages">DBPAGES</a>
+&#8226; Hostet at <a href="http://sourceforge.net/projects/orbada"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=361699&amp;type=10" width="80" height="15" alt="Get Orbada at SourceForge.net. Fast, secure and Free Open Source software downloads" style="margin: 2px 2px;" /></a>
+&#8226;
+</div>
+</div>
+</body>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101111153322-00000D1473F7CE2D-8FD3795E&translation=en by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:53 GMT -->
+</html>

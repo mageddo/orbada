@@ -1,0 +1,10 @@
+poj: http://poi.apache.org/
+JMeld: http://sourceforge.net/projects/jmeld/
+jText: http://itextpdf.com
+hsqldb: http://hsqldb.org/
+javacsv: http://sourceforge.net/projects/javacsv/
+javadbf: http://sarovar.org/projects/javadbf/
+log4j: http://logging.apache.org/log4j/
+swing-layout: https://swing-layout.dev.java.net/
+xdb, xmlparserv2: http://www.oracle.com
+bsh: http://www.beanshell.org/

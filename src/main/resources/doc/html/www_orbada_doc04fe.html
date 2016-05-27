@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101107154558-00000A6D2C7B8900-03597687 by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:53 GMT -->
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="Language" content="pl"><meta name="Author" content="Andrzej Kałuża, ORBADA"><meta http-equiv="Creation-Date" content="02-Kwi-2015 13:02:47 GMT;"><meta name="Description" content="Organizer Bazy Danych, Db Pages"><title>ORBADA - Dokumentacja</title><link rel="shortcut icon" href="docs/orbada32.html"><link rel="stylesheet" type="text/css" href="docs/styles/main.css"></head><body><div id="body_root">
+<div id="page_header"><div id="header_logos"><span class="right">2015-04-02 13:02&nbsp;</span>
+  <span style="vertical-align:baseline;">  <a href="http://sourceforge.net/projects/orbada"><img src="docs/orbada32.png" alt="orbada icon"><img src="docs/orbada_logo.png" alt="orbada logo"></a>  </span></div></div><div id="content">
+<div class="head_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doca858.html?id=20101107153548-000009DF17BED34C-1D5B2C96">Documentation in English</a> &raquo; Running the application</div>
+<a NAME="20101107154702-00000A7C1B1E7740-3C3CC845"></a><div class="content_block">
+<h3>
+4.1.1. 
+Running the application
+</h3>
+<p>To run the program requires Java (JRE) is at least version 1.6. You can download them <a href="http://java.sun.com/javase/downloads/">here</a>.</p>
+<p><span class="u">Windows</span><br>
+To run the ORBADA on Windows operating system, should be used runtime script <code>orbada.bat</code> located in the root directory of the program. Its contents should look like this:<br>
+<code> start javaw -Xmx200M -Djava.system.class.loader=pl.mpak.startup.StartupClassLoader -jar startup.jar %1 %2 %3 %4</code><br>
+Startup parameters:<br>
+<code><b>javaw</b></code> – executable Java. The <code>PATH</code> environment variable should contain the path to the Java environment is at least version 1.6. Here you can specify a full path to the program javaw. The program will run in this environment, regardless of the environment variable <code>PATH</code><br>
+<code><b>-Xmx200M</b></code> - parameter specifies the maximum amount of memory that can be reserved by the program. More environment parameters of Java can be found at the manufacturer's Java - SUN.<br>
+<code><b>%1 %2 %3 %4</b></code> - to the program ORBADA may be transferred four parameters.</p>
+<p><span class="u">Linux/Unix</span><br>
+To run ORBADA on Linux/Unix, should be used runtime script <code>orbada.sh</code> located in the root directory of the program. Its contents should look like:<br>
+<code>/usr/java/jdk1.6/jre/bin/java -Xmx200M -Djava.system.class.loader=pl.mpak.startup.StartupClassLoader -jar startup.jar</code><br>
+Startup parameters:<br>
+<code><b>/usr/java/jdk1.6/jre/bin/java</b></code> - Java runtime program. If Java is installed in a different path than specified, this parameter needs to be changed.<br>
+<code><b>-Xmx200M</b></code> - parameter specifies the maximum amount of memory that can be reserved by the program. More environment parameters of Java can be found at the manufacturer's Java - SUN.
+</p>
+
+</div>
+<a NAME="20101107155919-00000B2795934542-B933F802"></a><div class="content_block">
+<h3>
+4.1.2. 
+Program call parameters
+</h3>
+<p><code><b>-config:&lt;file name&gt;</b></code><br>
+This parameter allows you to run the program with an alternative main configuration.
+The name should indicate the file in the directory of the "user home/.orbada/config" without the extension.
+This configuration file extension is .properties.
+</p>
+<p><code><b>-log4j:&lt;file name xml&gt;</b></code><br>
+This parameter allows you to specify an alternate configuration of the logger program. The name should indicate the file in the directory of the "user home/.orbada/config".
+</p>
+
+</div>
+<a NAME="20101107161240-00000BE21F8E06A3-12EE6185"></a><div class="content_block">
+<h3>
+4.1.3. 
+Configuration to run from a USB Drive
+</h3>
+<p>ORBADA program and Java environment can configured that the entire program, all its settings, were on a USB Drive.<br>
+The required minimum on portable disk space is 150MB.<p>
+<p>For this purpose, is required to edit the boot BAT or SH, and putting all the required files in one main directory.<p>
+<p>An example directory layout:</p>
+<ul>
+<li><b>orbada</b> – root directory of the program</li>
+  <ul>
+    <li><b>app</b> - directory to which you should upload all the files and libraries of the ORBADA program</li>
+    <li><b>jre6</b> - directory where you should upload a Java environment from Sun.</li>
+    <li><b>usr</b> - directory where application put all the settings and temporary files</Li>
+    <ul>
+      <li><b>temp</b> - temporary files directory</li>
+      <li><b>home</b> - home directory settings for the files and local database</li>
+    </ul>
+  </ul>
+</ul>
+<p>The contents of the startup file <code>orbada.bat</code> should look like:</p>
+<pre class="block">
+start <b>../jre6/bin/</b>javaw -Xmx200M <b>-Duser.home=../usr/home -Djava.io.tmpdir=../usr/temp</b> 
+  -Djava.system.class.loader=pl.mpak.startup.StartupClassLoader -jar startup.jar %1 %2 %3 %4
+</pre>
+<p>The contents of the startup file <code>orbada.sh</code> should look like:</p>
+<pre class="block">
+<b>../jre6/bin/</b>java -Xmx200M <b>-Duser.home=../usr/home -Djava.io.tmpdir=../usr/temp</b> 
+  -Djava.system.class.loader=pl.mpak.startup.StartupClassLoader -jar startup.jar
+</pre>
+<p>It is important that the locations of folders in bold were the same as folders on a USB Drive</p>
+</div>
+<a NAME="20110522141538-0000091A1E016377-F25DC53B"></a><div class="content_block">
+<h3>
+4.1.4. 
+<a href="www_orbada_doc34ec.html?id=20110522141538-0000091A1E016377-F25DC53B&amp;translation=en">Database serwer</a></h3>
+<div class="sub_anchore">
+ &#8226; 
+<a href="www_orbada_doc34ec.html?id=20110522141538-0000091A1E016377-F25DC53B&amp;translation=en#20110522154803-00000E24FC1CB363-6B47B1E7">Embeded mode</a> &#8226; 
+<a href="www_orbada_doc34ec.html?id=20110522141538-0000091A1E016377-F25DC53B&amp;translation=en#20110522155227-00000E62A00CB47B-685D16EA">HSQLDB Server</a> &#8226; 
+<a href="www_orbada_doc34ec.html?id=20110522141538-0000091A1E016377-F25DC53B&amp;translation=en#20110522155551-00000E920A50DDC4-DE4A3BF1">Oracle Server</a> &#8226; 
+<a href="www_orbada_doc34ec.html?id=20110522141538-0000091A1E016377-F25DC53B&amp;translation=en#20130628215725-000023FFD1BD062F-9A50D4C8">PostgreSQL server</a> &#8226;
+</div>
+</div>
+<div class="foot_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doca858.html?id=20101107153548-000009DF17BED34C-1D5B2C96">Documentation in English</a> &raquo; Running the application</div>
+</div>
+<div id="page_foot">
+&#8226; © 2007–2015 &#8226; <a href="http://sourceforge.net/users/akaluza">Andrzej Kałuża</a>
+&#8226; Powered By <a href="http://sourceforge.net/projects/dbpages">DBPAGES</a>
+&#8226; Hostet at <a href="http://sourceforge.net/projects/orbada"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=361699&amp;type=10" width="80" height="15" alt="Get Orbada at SourceForge.net. Fast, secure and Free Open Source software downloads" style="margin: 2px 2px;" /></a>
+&#8226;
+</div>
+</div>
+</body>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101107154558-00000A6D2C7B8900-03597687 by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:53 GMT -->
+</html>

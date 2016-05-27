@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20110112202046-0000111CC07BB54D-56E1ADC0&translation=en by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:49 GMT -->
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="Language" content="en"><meta name="Author" content="Andrzej Kałuża, ORBADA"><meta http-equiv="Creation-Date" content="02-Kwi-2015 13:02:42 GMT;"><meta name="Description" content="Organizer Bazy Danych, Db Pages"><title>ORBADA - Dokumentacja</title><link rel="shortcut icon" href="docs/orbada32.html"><link rel="stylesheet" type="text/css" href="docs/styles/main.css"></head><body><div id="body_root">
+<div id="page_header"><div id="header_logos"><span class="right">2015-04-02 13:02&nbsp;</span>
+  <span style="vertical-align:baseline;">  <a href="http://sourceforge.net/projects/orbada"><img src="docs/orbada32.png" alt="orbada icon"><img src="docs/orbada_logo.png" alt="orbada logo"></a>  </span></div></div><div id="content">
+<div class="head_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doca858.html?id=20101107153548-000009DF17BED34C-1D5B2C96">Documentation in English</a> &raquo; <a href="www_orbada_docf71e.html?id=20110112200241-0000102038A89388-7A1C2AAD">Tips and tricks</a> &raquo; Oracle</div>
+<a NAME="20110112202054-0000111EB4A19D11-6EA15978"></a><div class="content_block">
+<h3>
+4.C.2.1. 
+Quick COUNT
+</h3>
+<p>Anyone who uses SQL knows that to get the number of rows in the table, you must execute the command:
+<pre class="block">SELECT COUNT (*) FROM "TAB"</pre>
+</p>
+<p>Not everyone knows that to command it was very quick, you have to mobilize the database would not have reached to a data table, but only to the index of table, such as primary key. To do this you must use a "hint". Execute the following command, and you'll see what the difference of speed:
+<pre class="block">SELECT /*+ INDEX_FFS(TAB) */ COUNT(0) FROM TAB</pre>
+</p>
+<br>
+<p>Addition to not write such a long command, you can use a macro Orbada. In the plug-ins settings, locate "SQL Macros". There, create a macro whose definition is as follows:<br>
+<br>
+<b>Macro Name:</b> <code>COUNT &lt;table&gt; [WHERE ...]</code><br>
+<b>Regular expression:</b> <code>^*COUNT\s+([a-zA-Z_0-9$#]+|".+")?(\s+WHERE\s+(.*))?</code><br>
+<b>Transformated SQL macro:</b> <code>select /*+ INDEX_FFS( $1 )*/ count( 0 ) from $1$2</code><br>
+</p>
+<br>
+<p>On tab SQL queries, do:
+<pre class="block">COUNT "TAB"</pre>
+</p>
+<p>Thats all!</p>
+
+</div>
+<a NAME="20110112205121-000012C8295DA273-6C59834E"></a><div class="content_block">
+<h3>
+4.C.2.2. 
+Primary key trigger
+</h3>
+<p>Call sequences for primary key according to the template TABLE_SEQ. Then you can quickly create a trigger, which gives the value of the primary key column by selecting an option from the trigger tab "Primary key trigger"</p>
+</div>
+<a NAME="20110303180008-000006B42CC452AB-500C5335"></a><div class="content_block">
+<h3>
+4.C.2.3. 
+Database sessions
+</h3>
+<p>If the scheme/user to which you have connected, has the rights to the system view <code>V$SESSION</code>, <code>V$PROCESS</code>, <code>V$SESS_IO</code>, <code>V$INSTANCE</code>, then you can browse the sessions of the database with a special view Orbada.</p>
+</div>
+<div class="foot_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doca858.html?id=20101107153548-000009DF17BED34C-1D5B2C96">Documentation in English</a> &raquo; <a href="www_orbada_docf71e.html?id=20110112200241-0000102038A89388-7A1C2AAD">Tips and tricks</a> &raquo; Oracle</div>
+</div>
+<div id="page_foot">
+&#8226; © 2007–2015 &#8226; <a href="http://sourceforge.net/users/akaluza">Andrzej Kałuża</a>
+&#8226; Powered By <a href="http://sourceforge.net/projects/dbpages">DBPAGES</a>
+&#8226; Hostet at <a href="http://sourceforge.net/projects/orbada"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=361699&amp;type=10" width="80" height="15" alt="Get Orbada at SourceForge.net. Fast, secure and Free Open Source software downloads" style="margin: 2px 2px;" /></a>
+&#8226;
+</div>
+</div>
+</body>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20110112202046-0000111CC07BB54D-56E1ADC0&translation=en by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:49 GMT -->
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.version_history?page=5 by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:46 GMT -->
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="Language" content="pl"><meta name="Author" content="Andrzej Kałuża, ORBADA"><meta http-equiv="Creation-Date" content="02-Kwi-2015 13:02:38 GMT;"><meta name="Description" content="Organizer Bazy Danych, Db Pages"><title>ORBADA - Dokumentacja</title><link rel="shortcut icon" href="docs/orbada32.html"><link rel="stylesheet" type="text/css" href="docs/styles/main.css"></head><body><div id="body_root">
+<div id="page_header"><div id="header_logos"><span class="right">2015-04-02 13:02&nbsp;</span>
+  <span style="vertical-align:baseline;">  <a href="http://sourceforge.net/projects/orbada"><img src="docs/orbada32.png" alt="orbada icon"><img src="docs/orbada_logo.png" alt="orbada logo"></a>  </span></div></div><div id="content">
+<div class="head_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; ORBADA history</div>
+<h3>ORBADA history</h3>
+<div class="nav top"><span class="notes_info"><strong>27</strong> items</span><span class="pages_info">Page: <strong>5 </strong>of<strong> 6</strong>, <strong>5</strong> on page</span><div><a class="page" href="www_orbada_doc2679.html?page=1">First</a><a class="page" href="www_orbada_docfdb0.html?page=4">&laquo; Previous</a><a class="page" href="www_orbada_doc4658.html?page=2">2</a><a class="page" href="www_orbada_doc9ba9.html?page=3">3</a><a class="page" href="www_orbada_docfdb0.html?page=4">4</a><span class="page">5</span><a class="page" href="www_orbada_docc575.html?page=6">6</a><a class="page" href="www_orbada_docc575.html?page=6">Next &raquo;</a><a class="page" href="www_orbada_docc575.html?page=6">Last</a></div></div>
+<div class="list">
+<div class="header"><h4><span class="blue">1.0.3.77</span>, release: <span class="date">2010-12-14</span>, <span>Production/Stable</span></h4></div>
+<ul>
+<li class="no_border">
+<div class="line info"><h6><img src="docs/font_ascii_char43_16.gif" alt="&#43;"> Added</h6></div>
+</li>
+<li>
+<div class="line title">#3134959 - Upgrades information into log file</div>
+</li>
+<li>
+<div class="line title">#3134555 - The idea is that the schema name can be given in the form of ${user}@${database}</div>
+<div class="line content">Now, "Public name" on schema connection work like url pattern from orbada driver.<br>
+Work following the template name: user or username, host, port, database or sid or db, drivertype and drivername.<br>
+All names must be found between $ {}, {} or <>. [] will be removed.</div>
+</li>
+<li>
+<div class="line title">#3132109 - If there is no Orbada driver for MySQL, then add it to list</div>
+</li>
+<li>
+<div class="line title">#3132620 - Url pattern &lt;db&gt; not recognized by schema</div>
+</li>
+<li>
+<div class="line title">#3131490 - On universal content tab, add search button</div>
+</li>
+<li>
+<div class="line title">#3097702 - MySQL plug-in</div>
+<div class="line content">New views:
+<ul>
+<li>&#8226; Procedures view with:
+  <ul>
+    <li>&#8226; source edition</li>
+    <li>&#8226; Parameters</li>
+    <li>&#8226; Privileges</li>
+  </ul>
+</li>
+<li>&#8226; Functions view with:
+  <ul>
+    <li>&#8226; source edition</li>
+    <li>&#8226; Parameters</li>
+    <li>&#8226; Privileges</li>
+  </ul>
+</li>
+</ul></div>
+</li>
+<li class="no_border">
+<div class="line info"><h6><img src="docs/font_ascii_char149_16.gif" alt="&#8226;"> Fixed</h6></div>
+</li>
+<li>
+<div class="line title">#3134973 - AWT dispatch problem on refresh tables/view/procs/funs</div>
+</li>
+</ul>
+</div>
+<div class="list">
+<div class="header"><h4><span class="blue">1.0.3.72</span>, release: <span class="date">2010-12-07</span>, <span>Production/Stable</span></h4></div>
+<ul>
+<li class="no_border">
+<div class="line info"><h6><img src="docs/font_ascii_char43_16.gif" alt="&#43;"> Added</h6></div>
+</li>
+<li>
+<div class="line title">#3097702 -  MySQL plug-in</div>
+<div class="line content">Plug-in for MySQL Database was made for using and testing.<br>
+For now it contains:
+<ul style="list-style-type: disc;">
+<li>&#8226; Database objects info collecting for sql editor</li>
+<li>&#8226; Explain plan tab in sql queries (Ctrl+E)</li>
+<li>&#8226; View with MySQL build-in help</li>
+<li>&#8226; Extended tab for "Connection info" view</li>
+<li>&#8226; Tables view with:
+  <ul>
+    <li>&#8226; column list</li>
+    <li>&#8226; indexes</li>
+    <li>&#8226; constraints</li>
+    <li>&#8226; triggers</li>
+    <li>&#8226; privileges</li>
+    <li>&#8226; column privileges</li>
+    <li>&#8226; referenced to</li>
+    <li>&#8226; referenced from</li>
+    <li>&#8226; table details</li>
+    <li>&#8226; content</li>
+    <li>&#8226; table creation script</li>
+  </ul>
+</li>
+<li>&#8226; Views view with:
+  <ul>
+    <li>&#8226; column list</li>
+    <li>&#8226; content</li>
+    <li>&#8226; view creation script, editing enabled</li>
+  </ul>
+</li>
+</ul></div>
+</li>
+<li>
+<div class="line title">#3127531 - Read only indicator on editor when is not editable</div>
+</li>
+<li>
+<div class="line title">#3127515 - Cursor on editor when is read only</div>
+</li>
+<li class="no_border">
+<div class="line info"><h6><img src="docs/font_ascii_char149_16.gif" alt="&#8226;"> Fixed</h6></div>
+</li>
+<li>
+<div class="line title">#3128194 - Universal tab with data table, table name for MySQL</div>
+</li>
+<li>
+<div class="line title">#3127980 - UpperCase and LowerCase in editor names of the mysql</div>
+</li>
+<li class="no_border">
+<div class="line info"><h6><img src="docs/symbol_ascii_char177_16.gif" alt="&#177;"> Modified</h6></div>
+</li>
+<li>
+<div class="line title">#3106851 - documentation</div>
+<div class="line content">Added section with helpful shortcut keys</div>
+</li>
+<li>
+<div class="line title">#3124817 - default content editor (tab SQL Queries) memorizing for schema</div>
+</li>
+</ul>
+</div>
+<div class="list">
+<div class="header"><h4><span class="blue">1.0.3.67</span>, release: <span class="date">2010-11-30</span>, <span>Production/Stable</span></h4></div>
+<ul>
+<li class="no_border">
+<div class="line info"><h6><img src="docs/font_ascii_char43_16.gif" alt="&#43;"> Added</h6></div>
+</li>
+<li>
+<div class="line title">#3120869 - properly display :: operator (like postgres cast) in editor</div>
+</li>
+<li>
+<div class="line title">#3104318 - Add showing explain plan getted from system view v$sql_plan </div>
+<div class="line content">View "SQL Plans" was made in Oracle Tune plug-in.<br>
+To start the functionality, the schema for which you are connected, must have privileges to objects: "V$SQL", "V_$SQL", "V$SQL_PLAN" and "V_$SQL_PLAN".<br>
+You can just connect as SYSTEM or SYS user.
+</div>
+</li>
+<li>
+<div class="line title">#3117845 - Plug-in depends</div>
+</li>
+<li class="no_border">
+<div class="line info"><h6><img src="docs/font_ascii_char149_16.gif" alt="&#8226;"> Fixed</h6></div>
+</li>
+<li>
+<div class="line title">#3118279 - Proper cleaning "Display time as Please Wait"</div>
+</li>
+<li>
+<div class="line title">#3116437 - NOT NULL CONSTRAINT CHANGE</div>
+</li>
+<li class="no_border">
+<div class="line info"><h6><img src="docs/symbol_ascii_char177_16.gif" alt="&#177;"> Modified</h6></div>
+</li>
+<li>
+<div class="line title">some improvements</div>
+<div class="line content">- pl.mpak.util: Variant (big decimal)<br>
+- pl.mpak.usedb: column sorting<br></div>
+</li>
+<li>
+<div class="line title">#3120809 - Edit the comment columns of the table does not include the newly added column</div>
+</li>
+<li>
+<div class="line title">#3106851 - Documentation updated</div>
+</li>
+</ul>
+</div>
+<div class="list">
+<div class="header"><h4><span class="blue">1.0.3.64</span>, release: <span class="date">2010-11-22</span>, <span>Production/Stable</span></h4></div>
+<ul>
+<li class="no_border">
+<div class="line info"><h6><img src="docs/font_ascii_char43_16.gif" alt="&#43;"> Added</h6></div>
+</li>
+<li>
+<div class="line title">#3114452 - Display time as PleaseWait</div>
+</li>
+<li>
+<div class="line title">#3113736 - Octopus animation as PleasWait display</div>
+</li>
+<li>
+<div class="line title">#3111062 - Plug-in for visited and edited objects</div>
+<div class="line content">Added a window showing the last modified database objects. The window is
+available from the "Tools" menu or the shortcut Ctrl+Alt+F8.
+Plugins: orbada-oracle and orbada-firebird that support freezing
+facilities, respecting the appropriate messages and let you see objects.</div>
+</li>
+<li>
+<div class="line title">#3111644 - integration with sf.net tracker system</div>
+<div class="line content">From the menu "Program", you can now go directly to the sourceforge.net and report a future request, problem with application and from the window of exception - error.</div>
+</li>
+<li class="no_border">
+<div class="line info"><h6><img src="docs/font_ascii_char149_16.gif" alt="&#8226;"> Fixed</h6></div>
+</li>
+<li>
+<div class="line title">#3114600 - Java objects not stored in local history</div>
+</li>
+<li>
+<div class="line title">#3111435 - Problem during editing action script</div>
+</li>
+<li>
+<div class="line title">#3111431 - Can't find resource for bundle java.util.PropertyResourceBundle, key ComponentActionsAction-implemented</div>
+</li>
+<li>
+<div class="line title">#3110217 - Refresh object problem on Oracle plug-in</div>
+</li>
+<li class="no_border">
+<div class="line info"><h6><img src="docs/symbol_ascii_char177_16.gif" alt="&#177;"> Modified</h6></div>
+</li>
+<li>
+<div class="line title">#3110309 - Default laf JGoodies and Metal tab style</div>
+</li>
+</ul>
+</div>
+<div class="list">
+<div class="header"><h4><span class="blue">1.0.2.58</span>, release: <span class="date">2010-11-16</span>, <span>Production/Stable</span></h4></div>
+<ul>
+<li class="no_border">
+<div class="line info"><h6><img src="docs/font_ascii_char43_16.gif" alt="&#43;"> Added</h6></div>
+</li>
+<li>
+<div class="line title">#3106851 - gallery added</div>
+</li>
+<li>
+<div class="line title">#3106851 - In the "Help" menu, a new item "Documentation" was added</div>
+</li>
+<li>
+<div class="line title">#3108106 - Searching in the source -> source context</div>
+</li>
+<li>
+<div class="line title">#3104310 - Searching in the source -> move the cursor to a found piece</div>
+</li>
+<li>
+<div class="line title">#3106851 - FAQ secion added</div>
+</li>
+<li class="no_border">
+<div class="line info"><h6><img src="docs/font_ascii_char149_16.gif" alt="&#8226;"> Fixed</h6></div>
+</li>
+<li>
+<div class="line title">#3108509 - Settings -> separator for decimal number not storing</div>
+</li>
+<li class="no_border">
+<div class="line info"><h6><img src="docs/symbol_ascii_char177_16.gif" alt="&#177;"> Modified</h6></div>
+</li>
+<li>
+<div class="line title">#3104313 - Determination of errors that occur during script execution</div>
+<div class="line content">On the result tab (SQL queries) of executing the script, the error is now highlighted in red.<br>
+In addition, the buttons have been added allowing to jump between errors.</div>
+</li>
+<li>
+<div class="line title">#3106851 - Documentation update</div>
+</li>
+</ul>
+</div>
+<div class="nav bottom"><span class="notes_info"><strong>27</strong> items</span><span class="pages_info">Page: <strong>5 </strong>of<strong> 6</strong>, <strong>5</strong> on page</span><div><a class="page" href="www_orbada_doc2679.html?page=1">First</a><a class="page" href="www_orbada_docfdb0.html?page=4">&laquo; Previous</a><a class="page" href="www_orbada_doc4658.html?page=2">2</a><a class="page" href="www_orbada_doc9ba9.html?page=3">3</a><a class="page" href="www_orbada_docfdb0.html?page=4">4</a><span class="page">5</span><a class="page" href="www_orbada_docc575.html?page=6">6</a><a class="page" href="www_orbada_docc575.html?page=6">Next &raquo;</a><a class="page" href="www_orbada_docc575.html?page=6">Last</a></div></div>
+<div class="foot_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; ORBADA history</div>
+</div>
+<div id="page_foot">
+&#8226; © 2007–2015 &#8226; <a href="http://sourceforge.net/users/akaluza">Andrzej Kałuża</a>
+&#8226; Powered By <a href="http://sourceforge.net/projects/dbpages">DBPAGES</a>
+&#8226; Hostet at <a href="http://sourceforge.net/projects/orbada"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=361699&amp;type=10" width="80" height="15" alt="Get Orbada at SourceForge.net. Fast, secure and Free Open Source software downloads" style="margin: 2px 2px;" /></a>
+&#8226;
+</div>
+</div>
+</body>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.version_history?page=5 by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:46 GMT -->
+</html>

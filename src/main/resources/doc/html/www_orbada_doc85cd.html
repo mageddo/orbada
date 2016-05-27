@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101111173926-000013F5A9AFEC66-856ADC70 by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:56 GMT -->
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="Language" content="pl"><meta name="Author" content="Andrzej Kałuża, ORBADA"><meta http-equiv="Creation-Date" content="02-Kwi-2015 13:02:56 GMT;"><meta name="Description" content="Organizer Bazy Danych, Db Pages"><title>ORBADA - Dokumentacja</title><link rel="shortcut icon" href="docs/orbada32.html"><link rel="stylesheet" type="text/css" href="docs/styles/main.css"></head><body><div id="body_root">
+<div id="page_header"><div id="header_logos"><span class="right">2015-04-02 13:02&nbsp;</span>
+  <span style="vertical-align:baseline;">  <a href="http://sourceforge.net/projects/orbada"><img src="docs/orbada32.png" alt="orbada icon"><img src="docs/orbada_logo.png" alt="orbada logo"></a>  </span></div></div><div id="content">
+<div class="head_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doc8028.html?id=20101107153535-000009DC20B8FB18-6C3C6875">Dokumentacja po Polsku</a> &raquo; <a href="www_orbada_docb930.html?id=20101111000018-0000195224E46A70-D728F713">Dokumentacja wtyczek</a> &raquo; <a href="www_orbada_doc169e.html?id=20101111173858-000013EF15C21D82-9D373461">Oracle Tune</a> &raquo; Widok SQL Profiler</div>
+<a NAME="20101111173949-000013FAEBB86120-03561FD6"></a><div class="content_block">
+<h3>
+5.A.2.1.1. 
+Wstęp
+</h3>
+<p>Widok umożliwiający uruchamianie i analizowanie wyników działania mechanizmu Oracle SQL Profiler.
+</p>
+<p>
+Do poprawnego działania widoku wymagane jest by na schemacie wspólnym lub bierzącym istniały odpowiednie obiekty bazy danych.
+Wymagane obiekty tworzone są przez skrypt PROFTAB.SQL znajdujący się w katalogu $(ORACLE_HOME)/RDBMS/ADMIN.
+</p>
+</div>
+<a NAME="20101111174010-000013FFE9912868-37F9409E"></a><div class="content_block">
+<h3>
+5.A.2.1.2. 
+Uruchamianie i zatrzymywanie SQL Profiler
+</h3>
+<p>Aby uzyskać wyniki SQL Profiler należy postępować zgodnie z poniższymi punktami</p>
+<ol>
+<li><b>Uruchom</b> - do uruchomienia mechanizmu służy przycisk startu dostępne poprzez przycisk znajdujący się na panelu narzędzi widoku po lewej stronie lub menu SQL Profiler. <br>
+Po uruchomieniu na liście poniżej przycisku powinien pojawić się wpis „uruchomienia”.</li>
+<li><b>Wykonanie kodu PL/SQL</b> – uruchomić anonimowy blok PL/SQL lub funkcję/procedurę.</li>
+<li><b>Wstrzymaj</b> – wykonanie opcji wstrzymania jest opcjonalne, można nią wstrzymać zbieranie informacji o wykonywaniu kodu PL/SQL przez SQL Profiler.<br>
+Wstrzymanie wiąże się z przeliczeniem informacji i wyświetleniem ich na liście obiektów PL/SQL po prawej stronie widoku.</li>
+<li><b>Wznów</b> – opcja służy do wznowienia zbierania informacji przez SQL Profiler.</li>
+<li><b>Zatrzymaj</b> – zatrzymanie zbierania informacji spowoduje przeliczenie wszystkich dostępnych informacji i dostosowanie ich do wyświetlania dostępnych źródeł PL/SQL.</li>
+</ol>
+<p>Punkty od 2 do 4 można wykonywać wielokrotnie.</p>
+
+</div>
+<a NAME="20101111174025-00001403740A0A1E-0C8E41A1"></a><div class="content_block">
+<h3>
+5.A.2.1.3. 
+Przeglądanie wyników
+</h3>
+<p>Aby przeglądać wyniki wykonania SQL Profiler należy się posłużyć dostępnymi listami danych.</p>
+<ul>
+<li><b>Lista uruchomień</b> – znajduje się po lewej stronie widoku. Udostępnia ona uruchomienia dla bieżącej sesji lub wszystkie po wybraniu przycisku [Wszystkie].</li>
+<li><b>Lista uruchomionych obiektów</b> – znajduje się po prawej stronie widoku na samej górze. Wyświetla wykonane obiekty bazy danych, takie jak funkcji/procedur/wyzwalaczy. Obok nazw i lokalizacji wyświetlana jest również informacja o czasie wykonania poszczególnych obiektów jak i procentowy udział obiektu w całym uruchomieniu.</li>
+<li><b>Lista wierszy obiektu</b> - znajduje się po środku widoku i udostępnia czasy wykonania poszczególnych, wykonanych przez bazę danych wierszy kodu źródłowego.</li>
+<li><b>Źródło</b> - po każdorazowym wybraniu wiersza obiektu z listy wierszy, w oknie źródła znajdującym się na samym dole widoku zostanie wyróżniona wykonana linia kodu.</li>
+</ul>
+<p>Informacje o czasach wykonań wyświetlana jest w nano sekundach. Aby wyświetlić dane w mili sekundach należy wybrać przycisk [ms] znajdujący się powyżej listy uruchomień.</p>
+
+</div>
+<a NAME="20101111174048-00001408B71B7947-C76754C9"></a><div class="content_block">
+<h3>
+5.A.2.1.4. 
+<a href="www_orbada_doc418d.html?id=20101111174048-00001408B71B7947-C76754C9&amp;translation=pl">Integracja z programami zewnętrznymi</a></h3>
+<div class="sub_anchore">
+ &#8226; 
+<a href="www_orbada_doc418d.html?id=20101111174048-00001408B71B7947-C76754C9&amp;translation=pl#20101111174115-0000140EFA388448-B9EF7D6C">Uruchomienie</a> &#8226; 
+<a href="www_orbada_doc418d.html?id=20101111174048-00001408B71B7947-C76754C9&amp;translation=pl#20101111174128-000014122291F417-071B11E1">Zatrzymanie</a> &#8226; 
+<a href="www_orbada_doc418d.html?id=20101111174048-00001408B71B7947-C76754C9&amp;translation=pl#20101111174141-00001415109AC97E-1C6763EE">Wstrzymanie</a> &#8226; 
+<a href="www_orbada_doc418d.html?id=20101111174048-00001408B71B7947-C76754C9&amp;translation=pl#20101111174154-00001418395D3DD4-EBAA7CE4">Wznowienie</a> &#8226; 
+<a href="www_orbada_doc418d.html?id=20101111174048-00001408B71B7947-C76754C9&amp;translation=pl#20101111174206-0000141B039A0F09-2A4D2D67">Dostosowanie wyników do wyświetlenia źródeł wykonanych obiektów</a> &#8226;
+</div>
+<p>Zestaw kodów pozwlających uruchomić SQL Profiler w programach i systemach zewnętrznych aby umożliwić przeglądanie wyników w programie ORBADA.</p>
+</div>
+<div class="foot_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doc8028.html?id=20101107153535-000009DC20B8FB18-6C3C6875">Dokumentacja po Polsku</a> &raquo; <a href="www_orbada_docb930.html?id=20101111000018-0000195224E46A70-D728F713">Dokumentacja wtyczek</a> &raquo; <a href="www_orbada_doc169e.html?id=20101111173858-000013EF15C21D82-9D373461">Oracle Tune</a> &raquo; Widok SQL Profiler</div>
+</div>
+<div id="page_foot">
+&#8226; © 2007–2015 &#8226; <a href="http://sourceforge.net/users/akaluza">Andrzej Kałuża</a>
+&#8226; Powered By <a href="http://sourceforge.net/projects/dbpages">DBPAGES</a>
+&#8226; Hostet at <a href="http://sourceforge.net/projects/orbada"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=361699&amp;type=10" width="80" height="15" alt="Get Orbada at SourceForge.net. Fast, secure and Free Open Source software downloads" style="margin: 2px 2px;" /></a>
+&#8226;
+</div>
+</div>
+</body>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101111173926-000013F5A9AFEC66-856ADC70 by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:56 GMT -->
+</html>

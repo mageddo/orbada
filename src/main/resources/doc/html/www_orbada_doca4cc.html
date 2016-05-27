@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101111000300-0000197808CD0A61-7348F852&translation=pl by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:55 GMT -->
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="Language" content="pl"><meta name="Author" content="Andrzej Kałuża, ORBADA"><meta http-equiv="Creation-Date" content="02-Kwi-2015 13:02:51 GMT;"><meta name="Description" content="Organizer Bazy Danych, Db Pages"><title>ORBADA - Dokumentacja</title><link rel="shortcut icon" href="docs/orbada32.html"><link rel="stylesheet" type="text/css" href="docs/styles/main.css"></head><body><div id="body_root">
+<div id="page_header"><div id="header_logos"><span class="right">2015-04-02 13:02&nbsp;</span>
+  <span style="vertical-align:baseline;">  <a href="http://sourceforge.net/projects/orbada"><img src="docs/orbada32.png" alt="orbada icon"><img src="docs/orbada_logo.png" alt="orbada logo"></a>  </span></div></div><div id="content">
+<div class="head_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doc8028.html?id=20101107153535-000009DC20B8FB18-6C3C6875">Dokumentacja po Polsku</a> &raquo; <a href="www_orbada_docb930.html?id=20101111000018-0000195224E46A70-D728F713">Dokumentacja wtyczek</a> &raquo; <a href="www_orbada_doc3ddd.html?id=20101111000122-00001961360B005B-734F1568">BeanShell</a> &raquo; Konfiguracja akcji</div>
+<a NAME="20101111000407-000019878A6DA0EC-4B1908A0"></a><div class="content_block">
+<h3>
+5.A.1.5.1. 
+Uzyskanie informacji o "kluczu" i "komponencie" akcji
+</h3>
+<p>Wiele list danych, tabel, widoków, procedur oraz okien edycyjnych posiada zaimplementowany uniwersalny mechanizm akcji. Wystarczy aktywować jakąś zakładkę lub widok i sprawdzić czy widoczny jest przycisk <b>[Akcje]</b>.<br>
+Każde miejsce gdzie znajduje się przycisk <b>[Akcje]</b> identyfikowany jest przez specjalny klucz będący unikalnym ciągiem znaków, np. "oracle-tables-actions". Drugą właściwością przycisku jest przyporządkowanie go do konkretnego komponentu, np. listy, edytora.</p>
+<p>Aby dowiedzieć się jaki jest klucz i komponent skojarzony z przyciskiem akcji wystarczy trzymając klawisz [Ctrl] najechać myszką na przycisk. Pojawi się wtedy podpowiedź, w której opisane są właściwości.</p>
+
+</div>
+<a NAME="20101111000424-0000198B83FD7879-4AFDFF88"></a><div class="content_block">
+<h3>
+5.A.1.5.2. 
+Konfiguracja
+</h3>
+<p>Konfiguracja akcji dostępna jest w <i>Program-&gt;Ustawienia-&gt;Ustawienia wtyczek-&gt;BeanShell-&gt;Skrypty akcji"</i></p>
+<table class="properties"><caption>Opis listy skryptów akcji</caption>
+<tr><th>Właściwość</th><th>Opis</th></tr>
+<tr><td><b>Zakres</b></td><td>Zakres widoczności akcji, "Globalny" - dla wszystkich użytkowników lub "Użytkownika" - widoczny tylko przez zalogowanego użytkownika.</td></tr>
+<tr><td><b>Tytuł</b></td><td>Tytuł akcji wyświetlany w menu po wybraniu przycisku [Akcje]</td></tr>
+<tr><td><b>Klucz</b></td><td>Ciąg znaków określający miejsce (typ akcji) w którym akcja będzie podpięta</td></tr>
+<tr><td><b>Sterownik</b></td><td>Sterownik pozwala określić dla których baz danych akcja będzię widoczna</td></tr>
+<tr><td><b>Eksport</b></td><td>Pozwala zapisać akcje na dysku w postaci pliku XML</td></tr>
+<tr><td><b>Import</b></td><td>Pozwala odczytać akcję z dysku i umieścić ją na liście akcji</td></tr>
+<tr><td><b>Nowy</b></td><td>Pozwala utworzyć nowy skrypt akcji</td></tr>
+<tr><td><b>Edytuj</b></td><td>Pozwala zmienić właściwości istniejącego skryptu akcji</td></tr>
+<tr><td><b>Usuń</b></td><td>Pozwala usunąć akcję z listy</td></tr>
+</table>
+<br>
+<p>Po wybraniu przycisku <b>[Nowy]</b> lub <b>[Edytuj]</b> dostępne jest okienko w którym zdefiniowac można właściwości skryptu akcji.<br>
+<table class="properties"><caption>Opis edycji skryptu akcji</caption>
+<tr><th>Właściwość</th><th>Opis</th></tr>
+<tr><td><b>Tytuł akcji</b></td><td>Tytuł akcji wyświetlany w menu po wybraniu przycisku [Akcje]</td></tr>
+<tr><td><b>Klucz akcji</b></td><td>Ciąg znaków określający miejsce (typ akcji) w którym akcja będzie podpięta</td></tr>
+<tr><td><b>Podpowiedź</b></td><td>Ciąg znaków wyświetlający się jako podpowiedź do akcji w menu</td></tr>
+<tr><td><b>Dla sterownika</b></td><td>Sterownik pozwala określić dla których baz danych akcja będzię widoczna</td></tr>
+<tr><td><b>Skrót klawiszowy</b></td><td>Pozwala zdefiniować skrót klawiszowy dostępu do akcji z komponentu związanego z typem akcji</td></tr>
+<tr><td><b>Skrypt BeanShell</b></td><td>Wykonywalny skrypt BeanShell. Skrypt ten będzie wykonany po wybraniu akcji w menu.</td></tr>
+<tr><td><b>Dla wszystkich użytkowników</b></td><td>Administrator ORBADA może określić zakres widoczności akcji. Akcja może być widoczna przez wszystkich użytkowników lub tylko bierzącego</td></tr>
+</table>
+
+</div>
+<a NAME="20101111000446-00001990B0C910E9-828F6A3F"></a><div class="content_block">
+<h3>
+5.A.1.5.3. 
+Dostępność elementów programu w skrypcie BeanShell
+</h3>
+<p>W skrypcie BeanShell dostępne są wszelkie klasy Java oraz obiekty programu. Zdefiniowane są również stałe:
+</p>
+<table class="properties">
+<tr><th>Właściwość</th><th>Opis</th></tr>
+<tr><td><b>self</b></td><td>Stała oznaczająca obiekt klasy <code>Interpreter</code> biblioteki BeanShell</td></tr>
+<tr><td><b>database</b></td><td>Jeśli dostępne jest połączenie z bazą danych, w tej stałej znajduje się obiekt klasy <code>Database</code> biblioteki UseDB</td></tr>
+<tr><td><b>application</b></td><td>Pozwala uzyskać dostęp do właściwości aplikacji poprzez funkcje interfejsu <code>IApplication</code> programu ORBADA</td></tr>
+<tr><td><b>component</b></td><td>Stała udostępniająca komponent związany z akcją</td></tr>
+</table>
+
+</div>
+<a NAME="20101111000459-00001993A7DCBD32-A989EAF5"></a><div class="content_block">
+<h3>
+5.A.1.5.4. 
+Sprawdzenie działania akcji
+</h3>
+<p>Aby sprawdzić jak akcja działa trzeba ponownie wywołać widok w którym akcja jest podpięta. Aby wywołać skrypt należy wybrać przycisk <b>[Akcje]</b> i z menu wybrać pozycję akcji. Jeśli został określony skrót klawiszowy, można z przyporządkowanego komponentu wybrać ten skrót.</p>
+</div>
+<div class="foot_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doc8028.html?id=20101107153535-000009DC20B8FB18-6C3C6875">Dokumentacja po Polsku</a> &raquo; <a href="www_orbada_docb930.html?id=20101111000018-0000195224E46A70-D728F713">Dokumentacja wtyczek</a> &raquo; <a href="www_orbada_doc3ddd.html?id=20101111000122-00001961360B005B-734F1568">BeanShell</a> &raquo; Konfiguracja akcji</div>
+</div>
+<div id="page_foot">
+&#8226; © 2007–2015 &#8226; <a href="http://sourceforge.net/users/akaluza">Andrzej Kałuża</a>
+&#8226; Powered By <a href="http://sourceforge.net/projects/dbpages">DBPAGES</a>
+&#8226; Hostet at <a href="http://sourceforge.net/projects/orbada"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=361699&amp;type=10" width="80" height="15" alt="Get Orbada at SourceForge.net. Fast, secure and Free Open Source software downloads" style="margin: 2px 2px;" /></a>
+&#8226;
+</div>
+</div>
+</body>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101111000300-0000197808CD0A61-7348F852&translation=pl by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:55 GMT -->
+</html>

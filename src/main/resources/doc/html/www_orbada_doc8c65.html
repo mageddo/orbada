@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101107184950-000014757D1C60AB-A75E1DD3 by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:56 GMT -->
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="Language" content="pl"><meta name="Author" content="Andrzej Kałuża, ORBADA"><meta http-equiv="Creation-Date" content="02-Kwi-2015 13:02:53 GMT;"><meta name="Description" content="Organizer Bazy Danych, Db Pages"><title>ORBADA - Dokumentacja</title><link rel="shortcut icon" href="docs/orbada32.html"><link rel="stylesheet" type="text/css" href="docs/styles/main.css"></head><body><div id="body_root">
+<div id="page_header"><div id="header_logos"><span class="right">2015-04-02 13:02&nbsp;</span>
+  <span style="vertical-align:baseline;">  <a href="http://sourceforge.net/projects/orbada"><img src="docs/orbada32.png" alt="orbada icon"><img src="docs/orbada_logo.png" alt="orbada logo"></a>  </span></div></div><div id="content">
+<div class="head_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doca858.html?id=20101107153548-000009DF17BED34C-1D5B2C96">Documentation in English</a> &raquo; <a href="www_orbada_doc150f.html?id=20101107184920-0000146E886CDD1F-1ECA39B9">Program guide</a> &raquo; Connection schemas</div>
+<a NAME="20101107185136-0000148E13BB0ADA-1AD9266D"></a><div class="content_block">
+<h3>
+4.2.1.1. 
+Schemas connection with the database
+</h3>
+<p>With this window you can define and then select the schema for the database connection.</p>
+
+</div>
+<a NAME="20101107185244-0000149DE3B8458F-72C4605E"></a><div class="content_block">
+<h3>
+4.2.1.2. 
+Connection list
+</h3>
+<p>Schemas of database connections are on the list, whose properties are described below.</p>
+<table class="properties"><caption>The list of defined connections</caption>
+<tr><th>Property</th><th>Description</th></tr>
+<tr><td><b>Schema name</b></td><td>Public name of connection schema</td></tr>
+<tr><td><b>User name</b></td><td>The name of the user who has access to the database</td></tr>
+<tr><td><b>Selected</b></td><td>Time and date when you last selected connection schema</td></tr>
+<tr><td><b>Driver</b></td><td>Database driver name</td></tr>
+<tr><td><b>Version</b></td><td>ersion of the database that were established last connection</td></tr>
+<tr><td><b>Connection url</b></td><td>String (URL) to establish a database connection</td></tr>
+</table>
+
+</div>
+<a NAME="20101107185601-000014CBB83A6872-4BCF503A"></a><div class="content_block">
+<h3>
+4.2.1.3. 
+Filtering
+</h3>
+<p>To better manage the list of schemes, it is possible to filter:</p>
+<ul>
+  <li><b>Driver</b> - limit the schema list to the selected driver</li>
+  <li><b>Server (host)</b> - allows you to limit the list to the server (host)</li>
+  <li><b>User name</b> - allows you to limit the list to users of the database</li>
+</ul>
+
+</div>
+<a NAME="20101107185840-000014F0C80C8825-B8832617"></a><div class="content_block">
+<h3>
+4.2.1.4. 
+Window functions
+</h3>
+<p>From this window you can, using the buttons, go to the following functions</p>
+<ul>
+  <li><b>[New]</b> - create new connection schema</li>
+  <li><b>[Edit]</b> - edit connection schema</li>
+  <li><b>[Delete]</b> - deletes the selected connection schema, and with it the set of perspectives and views and plug-in settings for this connection</li>
+  <li><b>[Functions] | Copy</b> - Choosing this option opens a dialog to create a new connection schema on the selected list</li>
+  <li><b>[Functions] | Schema export</b> - allows you to save on disk in a special XML file, the definition of the connection schema</li>
+  <li><b>[Functions] | Schema import</b> - allows you to open XML file with definition of the connection schema and import it</li>
+  <li><b>[Drivers]</b> - lets go into the selection and editing of JDBC drivers.</li>
+  <hr>
+  <li><b>[Connect]</b> - will establish a connection to the database defined in the selected schema from the list of connections</li>
+  <li><b>[Close]</b> - close the window</li>
+</ul>
+
+</div>
+<a NAME="20101107190533-00001550F35D7444-68E6BFB8"></a><div class="content_block">
+<h3>
+4.2.1.5. 
+Username and password
+</h3>
+<p>Enter your user name, password and connection string</p>
+<p>On the right side of the window, it is possible to enter a user name, password and connection string for the selected scheme. The introduction of these data is temporary - these data are not stored in the definition of the connection.</p>
+
+</div>
+<a NAME="20101107190728-0000156BC9825AC3-4A37A2DE"></a><div class="content_block">
+<h3>
+4.2.1.6. 
+<a NAME="pl.mpak.orbada.gui.schemas.SchemaEditDialog" href="www_orbada_doca585.html?id=20101107190728-0000156BC9825AC3-4A37A2DE&amp;translation=en">Schema editioning</a></h3>
+<div class="sub_anchore">
+ &#8226; 
+<a href="www_orbada_doca585.html?id=20101107190728-0000156BC9825AC3-4A37A2DE&amp;translation=en#20101107191024-000015949BA9595D-51CAA82C">General</a> &#8226; 
+<a href="www_orbada_doca585.html?id=20101107190728-0000156BC9825AC3-4A37A2DE&amp;translation=en#20101107191814-00001602200AEA77-47321454">Parameters for JDBC driver</a> &#8226; 
+<a href="www_orbada_doca585.html?id=20101107190728-0000156BC9825AC3-4A37A2DE&amp;translation=en#20101107192146-000016339305887D-9E889577">Other parameters</a> &#8226; 
+<a href="www_orbada_doca585.html?id=20101107190728-0000156BC9825AC3-4A37A2DE&amp;translation=en#20101107192416-000016566D6A74E8-61FE60F0">Button functions</a> &#8226;
+</div>
+</div>
+<div class="foot_path"><a href="www_orbada_doc.html">ORBADA</a> &raquo; <a href="www_orbada_doca858.html?id=20101107153548-000009DF17BED34C-1D5B2C96">Documentation in English</a> &raquo; <a href="www_orbada_doc150f.html?id=20101107184920-0000146E886CDD1F-1ECA39B9">Program guide</a> &raquo; Connection schemas</div>
+</div>
+<div id="page_foot">
+&#8226; © 2007–2015 &#8226; <a href="http://sourceforge.net/users/akaluza">Andrzej Kałuża</a>
+&#8226; Powered By <a href="http://sourceforge.net/projects/dbpages">DBPAGES</a>
+&#8226; Hostet at <a href="http://sourceforge.net/projects/orbada"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=361699&amp;type=10" width="80" height="15" alt="Get Orbada at SourceForge.net. Fast, secure and Free Open Source software downloads" style="margin: 2px 2px;" /></a>
+&#8226;
+</div>
+</div>
+</body>
+<!-- Mirrored from localhost:8080/orbada/www_orbada_doc.document_group_only?id=20101107184950-000014757D1C60AB-A75E1DD3 by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Apr 2015 11:02:56 GMT -->
+</html>
