@@ -51,7 +51,9 @@ task tmp(type: Copy){
 }
 
 build.doLast{
-	sourceSets.main.output.resourcesDir
+
+	println("the jar is ${ar.archivePath}")
+	
 	configurations.compile.collect {
 			it.isDirectory() ? it : fileTree(it)
 	}
