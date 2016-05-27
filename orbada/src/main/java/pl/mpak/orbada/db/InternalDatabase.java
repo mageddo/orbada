@@ -41,7 +41,11 @@ public class InternalDatabase extends OrbadaDatabase {
     String driver = Application.get().getProperty("internal.db.driver");
     String user = Resolvers.expand(Application.get().getProperty("internal.db.user"));
     String password = Application.get().getProperty("internal.db.password");
-    String jdbcSource = Resolvers.expand(Application.get().getProperty("internal.db.source"));
+    String jdbcSource = Application.get().getProperty("internal.db.source");
+    final String prefix = "$(user.dir)/";
+    if(jdbcSource.startsWith(prefix)){
+      jdbcSource = jdbcSource.substring(prefix.length());
+    }
     String jdbcExtraLibrary = Resolvers.expand(Application.get().getProperty("internal.db.extra.library"));
     if (StringUtil.equals("", jdbcSource) && StringUtil.equals("HSQLDB", driver)) {
       jdbcSource = Resolvers.expand("$(user.dir)/jdbc/hsqldb-internal/hsqldb.jar");
