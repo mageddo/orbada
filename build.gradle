@@ -50,37 +50,39 @@ task tmp(type: Copy){
 	}
 }
 
-build.doLast{
+/**
+ * generate the binary distribution file
+ */
+build.doLast {
 
-	println("the jar is ${ar.archivePath}")
-	
-	configurations.compile.collect {
-			it.isDirectory() ? it : fileTree(it)
-	}
-
+	/**
+	 * generate jar with only compiled sources
+	 * (the default comes with resources)
+	 */
 	ant.jar(
-			destfile: "updated-classes.jar",
-			"keepcompression": "true"
+		destfile: jar.archivePath,
+		"keepcompression": "true"
 	) {
 		zipfileset("dir": sourceSets.main.output.classesDir)
 	}
 
-	ant.zip(destfile: "tmp.zip"){
-		fileset("file": "updated-classes.jar")
+	/**
+	 * the distribution zip file
+	 */
+	ant.zip(destfile: "${jar.archivePath}".replace(".jar", ".zip")){
+
+		// get the generated jar above and put inside
+		fileset("file": jar.archivePath)
+
+		// adding resouces
 		zipfileset("dir": sourceSets.main.output.resourcesDir)
+
+		// adding dependencies
 		configurations.compile.collect {
 			zipfileset("file": it.absolutePath, fullpath: "lib/${it.name}")
 		}
-
 	}
 }
-
-//jar  {
-//	into "tmp-lib"
-//	from configurations.compile
-//	with jar
-//
-//}
 
 //    repositories {
 //        mavenCentral()
