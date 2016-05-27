@@ -1,33 +1,15 @@
 package pl.mpak.usedb.core;
 
-import java.io.Closeable;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.RandomAccessFile;
-import java.io.Reader;
+import javax.swing.event.EventListenerList;
+import java.io.*;
 import java.lang.reflect.Method;
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Struct;
-import java.sql.Time;
-import java.sql.Timestamp;
-import java.sql.Types;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.sql.*;
+import java.util.*;
 import java.util.Date;
-import java.util.EventObject;
-import java.util.HashMap;
 
-import javax.swing.event.EventListenerList;
-
+import org.apache.log4j.Logger;
 import pl.mpak.sky.SkyException;
 import pl.mpak.usedb.UseDBException;
 import pl.mpak.usedb.gui.swing.types.FirebirdDBKeyType;
@@ -67,6 +49,7 @@ import pl.mpak.util.variant.VariantException;
 public class Query extends ParametrizedCommand implements Closeable, Cloneable {
   private static final long serialVersionUID = 6003429921261803478L;
 
+  private static final Logger LOGGER = Logger.getLogger(Query.class);
   private static Languages language = new Languages(Query.class);
   public final String uniqueID = (new UniqueID()).toString();
 
@@ -367,6 +350,7 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
           parameterList.bindParameters((PreparedStatement)statement);
         } else {
           if (database.getMetaData().supportsTransactions()) {
+            LOGGER.info("M=open, message=calling connection statement with transactions");
             statement = database.getConnection().createStatement(resultSetType, resultSetConcurrency);
           }
           else {

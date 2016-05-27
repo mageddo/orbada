@@ -9,7 +9,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.EventObject;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
 import pl.mpak.usedb.UseDBException;
 import pl.mpak.usedb.UseDBObject;
 import pl.mpak.usedb.UseDBProperties;
@@ -33,7 +33,7 @@ import pl.mpak.util.task.TaskPool;
  */
 public class Database extends UseDBObject implements Closeable {
   private static final long serialVersionUID = 3148856365067175991L;
-  private static final Logger LOGGER = Logger.getLogger(Database.class);
+  private static final Logger LOGGER = org.slf4j.LoggerFactory.getLogger(Database.class);
   private static Languages language = new Languages(Database.class);
 
   public final static String sqlNameCharacters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz$#_";
@@ -618,7 +618,25 @@ public class Database extends UseDBObject implements Closeable {
 
   public boolean isConnected() {
     try {
-      return connection != null && !connection.isClosed();
+
+      if(connection == null){
+        return false;
+      }
+      Statement statement = null;
+      try{
+         statement = this.connection.createStatement();
+        statement.execute("SELECT 1");
+      }catch(SQLTransientConnectionException e){
+        LOGGER.warn("M=isConnected, msg=connection is invalid");
+        return false;
+      }catch(Exception e){
+        LOGGER.debug("test querie failed: {}", e.getMessage());
+      }finally {
+        if(statement != null) {
+          statement.close();
+        }
+      }
+      return !connection.isClosed();
     } catch(SQLException e) {
       LOGGER.debug("M=isConnected, CALLING=#isClosed()", e);
       return false;
@@ -652,8 +670,14 @@ public class Database extends UseDBObject implements Closeable {
    * @throws SQLException
    */
   public Connection getConnection() throws SQLException {
-    if (isAutoConnect() && !isConnected()) {
+
+    final boolean isDisconnected = !isConnected();
+    LOGGER.info("M=getConnection, isAutoConnect={}, isDisconnected={}", autoConnect, isDisconnected);
+    if (isAutoConnect() && isDisconnected) {
+        LOGGER.info("M=getConnection, message=no available connection opening a new");
       connect();
+    }else{
+      LOGGER.info("M=getConnection, message=using existent connection");
     }
     return connection;
   }

@@ -1,6 +1,7 @@
 package pl.mpak.orbada.db;
 
 import org.apache.log4j.Logger;
+import org.slf4j.LoggerFactory;
 import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.ErrorMessages;
 import pl.mpak.orbada.OrbadaException;
@@ -28,6 +29,7 @@ import pl.mpak.util.patt.Resolvers;
 public class InternalDatabase extends OrbadaDatabase {
 
   private static final StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
+  private static final org.slf4j.Logger LOGGER = LoggerFactory.getLogger(InternalDatabase.class);
 
   private static InternalDatabase orbadaDatabase;
 
@@ -68,6 +70,7 @@ public class InternalDatabase extends OrbadaDatabase {
       try {
         orbadaDatabase = DatabaseManager.createDatabase(InternalDatabase.class, DriverClassLoaderManager.getDriver(jdbcSource, jdbcExtraLibrary, className), url, user, password);
       } catch (Exception ex) {
+        LOGGER.error("M=init, message=connection driver failure", ex);
         throw new OrbadaException(ErrorMessages.ORBADA_01001_NO_DRIVER_FOUND, ex);
       }
       orbadaDatabase.setDriverType(driver);
