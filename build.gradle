@@ -70,7 +70,8 @@ gradle.buildFinished {
 
 
     ant.copy(
-        todir: sourceSets.main.output.resourcesDir
+        todir: sourceSets.main.output.resourcesDir,
+        failonerror: false
     ){
         fileset(dir: project(":orbada-res").sourceSets.main.output.resourcesDir){
             exclude("name": "**/res/**")
@@ -80,9 +81,17 @@ gradle.buildFinished {
     /**
      * the distribution zip file
      */
-    ant.zip(destfile: "${jar.archivePath}".replace(".jar", ".zip")){
+    def starterJar = project(":startup").jar;
 
-        def starterJar = project(":startup").jar;
+    /**
+     * creating paths that not exists (fix to intellij)
+     */
+    ant.mkdir(dir: "${starterJar.archivePath}/..")
+    ant.mkdir(dir: sourceSets.main.output.resourcesDir)
+    ant.mkdir(dir: "${jar.archivePath}/..")
+
+
+    ant.zip(destfile: "${jar.archivePath}".replace(".jar", ".zip")){
 
         // the starter jar
         zipfileset("file": starterJar.archivePath, fullpath: "${starterJar.baseName}.jar")
