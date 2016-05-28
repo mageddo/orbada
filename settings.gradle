@@ -1,4 +1,4 @@
 rootProject.name = "orbada"
-include ':core'
+//include ':core'
 include ':starter'
 

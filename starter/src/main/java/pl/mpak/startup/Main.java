@@ -112,8 +112,8 @@ public class Main {
 			for(URL url:urls){
 				System.out.println(url.getFile());
 			}
-			System.exit(-1);
 			localException.printStackTrace();
+			System.exit(-1);
 		}
 	}
 }
