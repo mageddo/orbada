@@ -191,16 +191,24 @@ public class PluginManager {
    * <p>Wyszukuje wtyczki w podanym katalogu.
    * @param pluginPath
    */
-  public void findPlugins(String pluginPath) {
+  public void findPlugins(final String pluginPath) {
     Assert.notEmpty(pluginPath);
+    File pluginPathFile = new File(pluginPath);
+    if(!pluginPathFile.exists() || (pluginPathFile.list() != null && pluginPathFile.list().length == 0)){
+      final File resourcesPlugin = new File(ClassLoader.getSystemClassLoader()
+          .getResource(pluginPath).getFile());
+      if(resourcesPlugin.exists() && resourcesPlugin.isDirectory()) {
+        pluginPathFile = resourcesPlugin;
+      }
+    }
 
     foundList.clear();
     firePluginManagerListener(PluginManagerEvent.BEGIN_PROCESS, PluginManagerListener.ManageProcess.FOUND, -1, null);
     try {
       if (logger != null) {
-        logger.debug("PluginPath:" +new File(pluginPath).getAbsolutePath()); //$NON-NLS-1$
+        logger.debug("PluginPath:" + pluginPathFile); //$NON-NLS-1$
       }
-      searchPlugins(new File(pluginPath).getAbsolutePath());
+      searchPlugins(pluginPathFile.getAbsolutePath());
     }
     finally {
       firePluginManagerListener(PluginManagerEvent.END_PROCESS, PluginManagerListener.ManageProcess.FOUND, -1, null);

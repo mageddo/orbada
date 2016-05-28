@@ -3,6 +3,7 @@ apply plugin: "maven"
 group = "orbada"
 version = "1.2.4"
 
+
 allprojects {
     apply plugin: 'java'
     compileJava.options.encoding = 'ISO-8859-1'
@@ -43,19 +44,30 @@ allprojects {
     }
 }
 
-gradle.afterProject {
-    println("fim projet")
-}
-gradle.buildFinished { build
-    if(build.getFailure() == null){
-        println("fim build com sucesso")
+gradle.buildFinished {
+    print('>>>> end')
+
+
+
+    /**
+     * the distribution zip file
+     */
+    ant.zip(destfile: "${jar.archivePath}".replace(".jar", ".zip")){
+
+
+//        def starterJar = project(":starter").jar;
+
+        // the starter jar
+//        zipfileset("file": starterJar.archivePath, fullpath: "startup.jar")
+
+        // adding resources
+        zipfileset("dir": sourceSets.main.output.resourcesDir)
+
+        // adding dependencies
+        configurations.compile.collect {
+            zipfileset("file": it.absolutePath, fullpath: "lib/${it.name}")
+        }
     }
-}
 
-gradle.projectsEvaluated{
-    println("projects evaluated")
-}
 
-build.doLast{
-    println("fim<<<<<<<<<")
 }
