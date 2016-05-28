@@ -1,11 +1,12 @@
 /*
  * Application.java
  *
- * Created on 18 styczeÒ 2007, 19:29
+ * Created on 18 styczeÔøΩ 2007, 19:29
  *
  * To change this template, choose Tools | Template Manager
  * and open the template in the editor.
  */
+
 
 package pl.mpak.orbada.core;
 
@@ -21,8 +22,6 @@ import java.awt.event.WindowListener;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.math.BigInteger;
-import java.net.URL;
-import java.net.URLClassLoader;
 import java.sql.Timestamp;
 import java.util.*;
 
@@ -71,11 +70,11 @@ import pl.mpak.util.variant.Variant;
  * @author akaluza
  */
 public class Application implements IApplication, WindowListener {
-  
+
   private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
 
   private static Application application;
-  
+
   private String[] ordabaArguments;
   private MainFrame mainFrame;
   private OrbadaPluginManager pluginManager;
@@ -84,7 +83,7 @@ public class Application implements IApplication, WindowListener {
   private ToolList toolList;
   public  Properties localProperties;
   private File localPropertiesFile;
-  
+
   private boolean safeMode = false;
   private boolean multiUser;
   private VersionID lastVersion;
@@ -96,7 +95,7 @@ public class Application implements IApplication, WindowListener {
   private User user;
   private OrbadaSession orbadaSession;
   private WebAppAccessibilities webAppAccessibilities;
-  
+
   private static SplashScreen splash = SplashScreen.getSplashScreen();
   private static Graphics2D splashGraphics = null;
   private static int splashSize = 10;
@@ -104,7 +103,7 @@ public class Application implements IApplication, WindowListener {
   private boolean firstRun;
 
   private static Image orbadaSplashLogo;
-  private static final String fontChars = "A•BC∆DE FGHIJKL£MN—O”PQRSåTUVWXYZØè0123456789!@#$%^&*()-=_+[]{};':\",./<>?|\\";
+	private static final String fontChars = "A?BC?DE?FGHIJKL?MN?O”PQRS?TUVWXYZ??0123456789!@#$%^&*()-=_+[]{};':\",./<>?|\\";
   private static BufferedImage fontsImage;
   private static RasterFont fonts;
   private static BufferedImage fontsSmallImage;
@@ -119,7 +118,7 @@ public class Application implements IApplication, WindowListener {
     DEICONIFIED
   }
   private final EventListenerList applicationListenerList = new EventListenerList();
-  
+
   /**
    * @param args the command line arguments
    */
@@ -127,7 +126,7 @@ public class Application implements IApplication, WindowListener {
     application = new Application(args);
     application.init();
   }
-  
+
   private void init() {
     //ToolButton.SIZE = 32;
     initGraphics();
@@ -144,7 +143,7 @@ public class Application implements IApplication, WindowListener {
     webAppAccessibilities = new WebAppAccessibilities();
     initExceptionUtil();
     InternalDatabase.init();
-    java.awt.EventQueue.invokeLater(new Runnable() {
+    EventQueue.invokeLater(new Runnable() {
       @Override
       public void run() {
         InternalDatabase.beforeLogin();
@@ -153,12 +152,12 @@ public class Application implements IApplication, WindowListener {
         toolList = new ToolList();
         initSession();
         renderSplashText(stringManager.getString("Application-init-tools-3dot"));
-        java.awt.EventQueue.invokeLater(new Runnable() {
+        EventQueue.invokeLater(new Runnable() {
           @Override
           public void run() {
             initPluginManager();
             renderSplashText(stringManager.getString("Application-prepare-service-3dot"));
-            java.awt.EventQueue.invokeLater(new Runnable() {
+            EventQueue.invokeLater(new Runnable() {
               @Override
               public void run() {
                 mainFrame = new MainFrame();
@@ -201,12 +200,12 @@ public class Application implements IApplication, WindowListener {
       HelpAction cmHelp = new HelpAction();
       @Override
       public void eventDispatched(AWTEvent event) {
-        if (event.getID() == java.awt.event.WindowEvent.WINDOW_OPENED) {
+        if (event.getID() == WindowEvent.WINDOW_OPENED) {
           if (event.getSource() instanceof JDialog) {
             SwingUtil.addAction((JDialog)event.getSource(), cmHelp.getActionCommandKey(), cmHelp);
           }
         }
-        else if (event.getID() == java.awt.event.WindowEvent.WINDOW_CLOSED) {
+        else if (event.getID() == WindowEvent.WINDOW_CLOSED) {
         }
       }
     }, AWTEvent.WINDOW_EVENT_MASK);
@@ -233,7 +232,7 @@ public class Application implements IApplication, WindowListener {
       System.exit(Consts.exitCode_Terminate);
     }
   }
-  
+
   public String getConfigFile() {
     String configFile = "orbada";
     for (String arg : ordabaArguments) {
@@ -244,7 +243,7 @@ public class Application implements IApplication, WindowListener {
     }
     return getConfigPath() +"/" +configFile +".properties";
   }
-  
+
   private void initLocalProperties() {
     localPropertiesFile = new File(getConfigPath() + "/local-settings.properties");
     localProperties = new Properties();
@@ -256,13 +255,13 @@ public class Application implements IApplication, WindowListener {
       }
     }
   }
-  
+
   private void initProperties() {
     String configFile = getConfigFile();
     File file = new File(configFile);
     if (!file.exists()) {
       copyFile("/res/orbada.properties", file);
-      File filejgoodies = new File(getConfigPath() + "/laf-jgoodies.properties");
+      File filejgoodies = new File(getConfigPath() +"/laf-jgoodies.properties");
       if (!filejgoodies.exists()) {
         copyFile("/res/laf-jgoodies.properties", filejgoodies);
       }
@@ -279,17 +278,17 @@ public class Application implements IApplication, WindowListener {
       Resolvers.register(new SHA1_Password_AESResolver());
     }
   }
-  
+
   @Override
   public void updateLAF() {
-    java.awt.EventQueue.invokeLater(new Runnable() {
+    EventQueue.invokeLater(new Runnable() {
       @Override
       public void run() {
         initLAF();
         try {
           SwingUtilities.updateComponentTreeUI(getMainFrame());
           Component comp = FocusManager.getCurrentManager().getFocusOwner();
-          Window current = (Window)SwingUtil.getOwnerComponent(Window.class, comp);
+          Window current = (Window) SwingUtil.getOwnerComponent(Window.class, comp);
           if (getMainFrame() != current && current != null) {
             SwingUtilities.updateComponentTreeUI(current);
           }
@@ -308,7 +307,7 @@ public class Application implements IApplication, WindowListener {
       }
       String orbadaLafClassName = localProperties.getProperty(Consts.lookAndFeelLocalClass, getProperty(Consts.lookAndFeelLocalClass));
       if (!StringUtil.isEmpty(orbadaLafClassName)) {
-        Logger.getLogger("orbada").info("Orbada LAF from \"" +Consts.lookAndFeelLocalClass +"\" property: " +orbadaLafClassName);
+        Logger.getLogger("orbada").info("Orbada LAF from \"" + Consts.lookAndFeelLocalClass +"\" property: " +orbadaLafClassName);
         Class lafClass = Class.forName(orbadaLafClassName);
         Object lafObject = lafClass.newInstance();
         if (lafObject instanceof ILookAndFeelStarter) {
@@ -316,7 +315,7 @@ public class Application implements IApplication, WindowListener {
           ((ILookAndFeelStarter)lafObject).start();
         }
         else {
-          Logger.getLogger("orbada").error("Orbada LAF from \"" +Consts.lookAndFeelLocalClass +"\" is not implementation of ILookAndFeelStarter");
+          Logger.getLogger("orbada").error("Orbada LAF from \"" + Consts.lookAndFeelLocalClass +"\" is not implementation of ILookAndFeelStarter");
           UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         }
       }
@@ -353,7 +352,7 @@ public class Application implements IApplication, WindowListener {
       }
     });
   }
-  
+
   private void initResolvers() {
     Resolvers.register(new CurrDateResolver());
     Resolvers.register(new CurrTimeResolver());
@@ -362,7 +361,7 @@ public class Application implements IApplication, WindowListener {
     Resolvers.register(new OrbadaConfigPath());
     Resolvers.register(new JvmPIDResolver());
   }
-  
+
   public String getLogFile() {
     String log4jFile = "log4j.xml";
     for (String arg : ordabaArguments) {
@@ -385,7 +384,7 @@ public class Application implements IApplication, WindowListener {
     DOMConfigurator.configure(log4jFile);
     logger.debug("Orbada starting...");
   }
-  
+
   private void initPluginManager() {
     renderSplashText(stringManager.getString("Application-init-plugins-3dot"));
     pluginManager = new OrbadaPluginManager(logger);
@@ -394,7 +393,7 @@ public class Application implements IApplication, WindowListener {
     //splashSize = Math.min(splashSize, pluginManager.getFoundList().size() *2 +10);
     pluginManager.loadPlugins();
   }
-  
+
   private void initExceptionUtil() {
     Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
       @Override
@@ -413,7 +412,7 @@ public class Application implements IApplication, WindowListener {
       }
     });
   }
-  
+
   private void loginUser() {
     Logger.getLogger("orbada").info("Login Orbada user...");
     renderSplashText(stringManager.getString("Application-login-user-3dot"));
@@ -536,7 +535,7 @@ public class Application implements IApplication, WindowListener {
       }
     }
   }
-  
+
   private void doneSession() {
     orbadaSession.setEndTime(new Date().getTime());
     try {
@@ -565,12 +564,12 @@ public class Application implements IApplication, WindowListener {
     y += (fontsSmall.getHeight() *2);
     fontsSmall.draw(18, y, g2, Consts.orbadaAutor.toUpperCase());
     y += fontsSmall.getHeight();
-    fontsSmall.draw(18, y, g2, "(C) " +Consts.orbadaYears.toUpperCase());
+    fontsSmall.draw(18, y, g2, "(C) " + Consts.orbadaYears.toUpperCase());
   }
-  
+
   public static void renderSplashText(final String text) {
     splashCounter++;
-    java.awt.EventQueue.invokeLater(new Runnable() {
+    EventQueue.invokeLater(new Runnable() {
       @Override
       public void run() {
         if (splash != null && splash.isVisible()) {
@@ -579,16 +578,16 @@ public class Application implements IApplication, WindowListener {
           }
           splashGraphics.setComposite(AlphaComposite.Clear);
           Rectangle b = splash.getBounds();
-          splashGraphics.fillRect(Consts.splashscreenVerticalShift, b.height -Consts.splashscreenBottomShift -18, b.width -Consts.splashscreenVerticalShift *2, 20);
+          splashGraphics.fillRect(Consts.splashscreenVerticalShift, b.height - Consts.splashscreenBottomShift -18, b.width - Consts.splashscreenVerticalShift *2, 20);
           splashGraphics.setPaintMode();
           splashGraphics.setColor(Color.BLACK);
           if (Application.get().isFirstRun()) {
-            splashGraphics.drawString(Consts.orbadaFirstRun, Consts.splashscreenVerticalShift +2, b.height -Consts.splashscreenBottomShift -27);
+            splashGraphics.drawString(Consts.orbadaFirstRun, Consts.splashscreenVerticalShift +2, b.height - Consts.splashscreenBottomShift -27);
           }
-          splashGraphics.drawString(text, Consts.splashscreenVerticalShift +2, b.height -Consts.splashscreenBottomShift -7);
+          splashGraphics.drawString(text, Consts.splashscreenVerticalShift +2, b.height - Consts.splashscreenBottomShift -7);
           splashGraphics.setColor(new Color(20, 53, 70));
-          splashGraphics.drawRect(Consts.splashscreenVerticalShift -1, b.height -Consts.splashscreenBottomShift-2, b.width -Consts.splashscreenVerticalShift *2 +2, 6);
-          splashGraphics.fillRect(Consts.splashscreenVerticalShift +1, b.height -Consts.splashscreenBottomShift -0, (int)((double)(b.width -(Consts.splashscreenVerticalShift +1) *2) *((double)splashCounter /(double)splashSize)), 3);
+          splashGraphics.drawRect(Consts.splashscreenVerticalShift -1, b.height - Consts.splashscreenBottomShift-2, b.width - Consts.splashscreenVerticalShift *2 +2, 6);
+          splashGraphics.fillRect(Consts.splashscreenVerticalShift +1, b.height - Consts.splashscreenBottomShift -0, (int)((double)(b.width -(Consts.splashscreenVerticalShift +1) *2) *((double)splashCounter /(double)splashSize)), 3);
 
           final Composite oc = splashGraphics.getComposite();
           splashGraphics.setComposite(AlphaComposite.Src);
@@ -599,21 +598,21 @@ public class Application implements IApplication, WindowListener {
       }
     });
   }
-  
+
   @Override
   public void addApplicationListener(ApplicationListener listener) {
     synchronized (applicationListenerList) {
       applicationListenerList.add(ApplicationListener.class, listener);
     }
   }
-  
+
   @Override
   public void removeApplicationListener(ApplicationListener listener) {
     synchronized (applicationListenerList) {
       applicationListenerList.remove(ApplicationListener.class, listener);
     }
   }
-  
+
   public void fireApplicationListener(ApplicationEvent event) {
     synchronized (applicationListenerList) {
       ApplicationListener[] listeners = applicationListenerList.getListeners(ApplicationListener.class);
@@ -638,40 +637,40 @@ public class Application implements IApplication, WindowListener {
       }
     }
   }
-  
+
   public static Application get() {
     return application;
   }
-  
+
   @Override
   public String[] getArguments() {
     return ordabaArguments;
   }
-  
+
   public Properties getProperties() {
     return properties;
   }
-  
+
   public ISettings getSettings() {
     if (applicationSettings == null) {
       applicationSettings = getSettings(Consts.orbadaSettings);
     }
     return applicationSettings;
   }
-  
+
   @Override
   public void registerDriverType(String driverType) {
     InternalDatabase.registerDriverType(driverType);
   }
-  
+
   public void addStatusBar(Component component) {
     mainFrame.addStatusBar(component);
   }
-  
+
   public void removeStatusBar(Component component) {
     mainFrame.removeStatusBar(component);
   }
-  
+
   @Override
   public void windowActivated(WindowEvent e) {
     fireApplicationListener(ApplicationEvent.ACTIVATED);
@@ -704,22 +703,22 @@ public class Application implements IApplication, WindowListener {
   @Override
   public void windowOpened(WindowEvent e) {
   }
-  
+
   public String getSettingsPath() {
     File file = new File(Resolvers.expand("$(orbada.home)"));
     file.mkdirs();
     return file.getAbsolutePath();
   }
-  
+
   @Override
   public String getConfigPath() {
     File file = new File(Resolvers.expand("$(orbada.config)"));
     file.mkdirs();
     return file.getAbsolutePath();
   }
-  
+
   /**
-   * <p>Tworzy grupÍ ustawieÒ uøytkownika.
+   * <p>Tworzy grupÔøΩ ustawieÔøΩ uÔøΩytkownika.
    * @param groupName
    * @return
    */
@@ -732,7 +731,7 @@ public class Application implements IApplication, WindowListener {
     }
     return result;
   }
-  
+
   @Override
   public ISettings getSettings(String schemaId, String groupName) {
     ISettings result = settingsList.get(schemaId +":" +groupName.toUpperCase());
@@ -742,25 +741,25 @@ public class Application implements IApplication, WindowListener {
     }
     return result;
   }
-  
+
   @Override
   public void addAction(Action action) {
     mainFrame.addAction(action);
   }
-  
+
   @Override
   public void removeAction(Action action) {
     mainFrame.removeAction(action);
   }
-  
+
   public MainFrame getMainFrame() {
     return mainFrame;
   }
-  
+
   public OrbadaPluginManager getPluginManager() {
     return pluginManager;
   }
-  
+
   @Override
   public <T extends IPluginProvider> T[] getServiceArray(Class<T> t) {
     return getPluginManager().getServiceArray(t);
@@ -790,7 +789,7 @@ public class Application implements IApplication, WindowListener {
       messagerList.remove(processMessagable);
     }
   }
-  
+
   @Override
   public String getProperty(String name) {
     return getProperty(name, null);
@@ -806,7 +805,7 @@ public class Application implements IApplication, WindowListener {
     }
     return properties.getProperty(name, defaultValue);
   }
-  
+
   @Override
   public String getOrbadaString(String name) {
     return getOrbadaString(name, null);
@@ -824,7 +823,7 @@ public class Application implements IApplication, WindowListener {
       return defaultValue;
     }
   }
-  
+
   public void setOrbadaString(String name, String value) {
     try {
       Orbada orbada = new Orbada(getOrbadaDatabase(), Application.get().getUserId(), name);
@@ -843,7 +842,7 @@ public class Application implements IApplication, WindowListener {
       ExceptionUtil.processException(ex);
     }
   }
-  
+
   public void shutDown() {
     Logger.getLogger("orbada").info("Orbada shutdown in progress...");
     getSettings().store();
@@ -855,40 +854,40 @@ public class Application implements IApplication, WindowListener {
     }
     Logger.getLogger("orbada").info("Orbada shutdown Ok");
   }
-  
+
   @Override
   public void execTool(String command, Object[] args) {
     toolList.exec(command, args);
   }
-  
+
   public ToolList getToolList() {
     return toolList;
   }
-  
+
   @Override
   public String getUserId() {
     return user.getUserId();
   }
-  
+
   @Override
   public String getUserName() {
     return user.getUserName();
   }
-  
+
   @Override
   public boolean isUserAdmin() {
     return user.isUserAdmin();
   }
-  
+
   @Override
   public boolean isMultiUserApp() {
     return multiUser;
   }
-  
+
   public User getUser() {
     return user;
   }
-  
+
   public boolean isSafeMode() {
     return safeMode;
   }
@@ -916,7 +915,7 @@ public class Application implements IApplication, WindowListener {
   public Database getOrbadaDatabase() {
     return InternalDatabase.get();
   }
-  
+
   @Override
   public IPerspectiveAccesibilities getActivePerspective() {
     PerspectivePanel panel = getMainFrame().getActivePerspective();
@@ -976,31 +975,9 @@ public class Application implements IApplication, WindowListener {
   public VersionID getLastVersion() {
     return lastVersion;
   }
-  
+
   public void setLastVersion(VersionID lastVersion) {
     this.lastVersion = lastVersion;
-  }
-
-  public static String listClasspathClasses(){
-    return listClasspathClasses(ClassLoader.getSystemClassLoader());
-  }
-
-  private static String listClasspathClasses(ClassLoader cl) {
-    StringBuilder str = new StringBuilder();
-    URL[] urls = ((URLClassLoader) cl).getURLs();
-    for (URL url: urls) {
-      System.out.println(url.getFile());
-      str.append(url.getFile());
-      str.append('\n');
-    }
-    return str.toString();
-  }
-
-  public static String listClasspathClasses(Object o){
-    return listClasspathClasses(o.getClass().getClassLoader());
-  }
-  public static String listClasspathClasses(Class app){
-    return listClasspathClasses(app.getClassLoader());
   }
 
 }
