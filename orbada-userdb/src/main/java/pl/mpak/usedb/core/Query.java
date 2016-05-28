@@ -1,33 +1,15 @@
 package pl.mpak.usedb.core;
 
-import java.io.Closeable;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.RandomAccessFile;
-import java.io.Reader;
+import javax.swing.event.EventListenerList;
+import java.io.*;
 import java.lang.reflect.Method;
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Struct;
-import java.sql.Time;
-import java.sql.Timestamp;
-import java.sql.Types;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.sql.*;
+import java.util.*;
 import java.util.Date;
-import java.util.EventObject;
-import java.util.HashMap;
 
-import javax.swing.event.EventListenerList;
-
+import org.apache.log4j.Logger;
 import pl.mpak.sky.SkyException;
 import pl.mpak.usedb.UseDBException;
 import pl.mpak.usedb.gui.swing.types.FirebirdDBKeyType;
@@ -67,6 +49,7 @@ import pl.mpak.util.variant.VariantException;
 public class Query extends ParametrizedCommand implements Closeable, Cloneable {
   private static final long serialVersionUID = 6003429921261803478L;
 
+  private static final Logger LOGGER = Logger.getLogger(Query.class);
   private static Languages language = new Languages(Query.class);
   public final String uniqueID = (new UniqueID()).toString();
 
@@ -367,6 +350,7 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
           parameterList.bindParameters((PreparedStatement)statement);
         } else {
           if (database.getMetaData().supportsTransactions()) {
+            LOGGER.info("M=open, message=calling connection statement with transactions");
             statement = database.getConnection().createStatement(resultSetType, resultSetConcurrency);
           }
           else {
@@ -989,11 +973,11 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
       return Object.class;
     } catch (UseDBException e) {
       return Object.class;
-    } catch (java.lang.IllegalStateException e) {
+    } catch (IllegalStateException e) {
       return classByFieldInternal(getField(index).getDataType());
     }
   }
-  
+
   public void variantByType(int type, int index, Variant value) throws UseDBException, SQLException, IOException {
     Object ro = null;
     switch (type) {
@@ -1069,7 +1053,7 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
         } else if (ro instanceof Long) {
           value.setLong((Long)ro);
         } else if (ro instanceof Number) {
-          value.setBigInteger(((Number)ro).longValue()); 
+          value.setBigInteger(((Number)ro).longValue());
         } else {
           value.setBigInteger(resultSet.getLong(index));
         }
@@ -1081,7 +1065,7 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
         } else if (ro instanceof BigDecimal) {
           value.setBigDecimal((BigDecimal)ro);
         } else if (ro instanceof Number) {
-          value.setBigDecimal(new BigDecimal(((Number)ro).doubleValue())); 
+          value.setBigDecimal(new BigDecimal(((Number)ro).doubleValue()));
         } else {
           value.setBigDecimal(resultSet.getBigDecimal(index));
         }
@@ -1175,7 +1159,7 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
         } else if (ro instanceof Double) {
           value.setDouble((Double)ro);
         } else if (ro instanceof Number) {
-          value.setDouble(((Number)ro).doubleValue()); 
+          value.setDouble(((Number)ro).doubleValue());
         } else {
           value.setDouble(resultSet.getDouble(index));
         }
@@ -1187,7 +1171,7 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
         } else if (ro instanceof Float) {
           value.setFloat((Float)ro);
         } else if (ro instanceof Number) {
-          value.setFloat(((Number)ro).floatValue()); 
+          value.setFloat(((Number)ro).floatValue());
         } else {
           value.setFloat(resultSet.getFloat(index));
         }
@@ -1198,7 +1182,7 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
         } else if (ro instanceof Integer) {
           value.setInteger((Integer)ro);
         } else if (ro instanceof Number) {
-          value.setInteger(((Number)ro).intValue()); 
+          value.setInteger(((Number)ro).intValue());
         } else {
           value.setInteger(resultSet.getInt(index));
         }
@@ -1209,7 +1193,7 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
         } else if (ro instanceof Short) {
           value.setShort((Short)ro);
         } else if (ro instanceof Number) {
-          value.setShort(((Number)ro).shortValue()); 
+          value.setShort(((Number)ro).shortValue());
         } else {
           value.setShort(resultSet.getShort(index));
         }
@@ -1220,7 +1204,7 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
         } else if (ro instanceof Byte) {
           value.setByte((Byte)ro);
         } else if (ro instanceof Number) {
-          value.setByte(((Number)ro).byteValue()); 
+          value.setByte(((Number)ro).byteValue());
         } else {
           value.setByte(resultSet.getByte(index));
         }
@@ -1310,7 +1294,7 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
   /**
    * Jeœli nie ma ¿adnego rekordu ta funkcja nie mo¿e byæ wywo³ana Przed
    * wywo³aniem tej funkcji musi byæ wywo³ana funkcja first()
-   * 
+   *
    * @throws IOException
    * @throws SQLException
    * @throws VariantException
@@ -1361,7 +1345,7 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
   /**
    * <p>Pozwala pobraæ rekord o numerze index. Jeœli nie ma go w buforze to bufor
    * zostanie uzupe³niony. Funkcji nie nale¿y wywo³ywaæ dla query które nie s¹ buforowane.
-   * 
+   *
    * @param index
    * @return rekord lub null jeœli nie ma rekordu o podanym indeksie lub jeœli Query zosta³o wczeœniej zamkniête
    * @throws IOException
@@ -1422,7 +1406,7 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
 
   /**
    * Pozwala pobraæ aktualny rekord
-   * 
+   *
    * @return
    * @throws IOException
    * @throws SQLException
@@ -1482,7 +1466,7 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
   /**
    * Pozwala wype³niæ bufor wszystkimi rekordami zapytania Aby wype³nianie
    * zadzia³a³o musi byæ okreœlony FlushMode
-   * 
+   *
    * @throws SQLException
    * @throws IOException
    * @throws VariantException
@@ -1533,7 +1517,7 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
   }
 
   public final boolean isActive() {
-    return state == State.OPENED; 
+    return state == State.OPENED;
   }
 
   public final boolean isClosed() {
@@ -1545,7 +1529,7 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
       } catch (SQLException e) {
         ExceptionUtil.processException(e);
       }
-      catch (java.lang.AbstractMethodError e) {
+      catch (AbstractMethodError e) {
         isClosedExists = false;
       }
     }
@@ -1781,7 +1765,7 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
               orygPreparedSqlTextOrderByAction = preparedSqlText;
             }
             preparedSqlText = preparedSqlText.substring(0, lastOrderByPos +8);
-            preparedSqlText = preparedSqlText +" " +SQLUtil.createSqlName(field.getFieldName(), database);
+            preparedSqlText = preparedSqlText +" " + SQLUtil.createSqlName(field.getFieldName(), database);
             if (order == Order.DESCENDING) {
               preparedSqlText = preparedSqlText +" DESC";
             }
@@ -1792,7 +1776,7 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
           if (orygPreparedSqlTextOrderByAction == null) {
             orygPreparedSqlTextOrderByAction = preparedSqlText;
           }
-          preparedSqlText = preparedSqlText +"\n ORDER BY " +SQLUtil.createSqlName(field.getFieldName(), database);
+          preparedSqlText = preparedSqlText +"\n ORDER BY " + SQLUtil.createSqlName(field.getFieldName(), database);
           if (order == Order.DESCENDING) {
             preparedSqlText = preparedSqlText +" DESC";
           }
@@ -1941,7 +1925,7 @@ public class Query extends ParametrizedCommand implements Closeable, Cloneable {
    * <p>Przydatne przy ustawieniach bazy danych CLOSE_CURSOR_ON_COMMIT.
    * <p>Ustawienie na true automatycznie przestawia cacheData na true oraz flushMode na fmSynch
    * @param closeResultAfterOpen
-   * @throws UseDBException 
+   * @throws UseDBException
    */
   public void setCloseResultAfterOpen(boolean closeResultAfterOpen) throws UseDBException {
     this.closeResultAfterOpen = closeResultAfterOpen;

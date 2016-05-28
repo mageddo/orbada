@@ -1,11 +1,11 @@
 package pl.mpak.usedb.core;
 
+import javax.swing.event.EventListenerList;
 import java.sql.Driver;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.event.EventListenerList;
-
+import org.slf4j.LoggerFactory;
 import pl.mpak.usedb.UseDBException;
 import pl.mpak.usedb.UseDBObject;
 import pl.mpak.util.StringUtil;
@@ -21,12 +21,13 @@ import pl.mpak.util.StringUtil;
  */
 public class DatabaseManager extends UseDBObject {
   private static final long serialVersionUID = 3812230028151762948L;
-  
+  private static final org.slf4j.Logger LOGGER = LoggerFactory.getLogger(DatabaseManager.class);
+
   public final static String LK_DRIVER_CLASS_NAME = "DriverClassName";
   public final static String LK_DRIVER_TYPE       = "DriverType";
   public final static String LK_DATABASE_LOCKED   = "DatabaseLocked";
   public final static String LK_PUBLIC_NAME       = "PublicName";
-  
+
   private static DatabaseManager databaseManager = new DatabaseManager();
   private ArrayList<Database> databaseList;
 
@@ -89,8 +90,10 @@ public class DatabaseManager extends UseDBObject {
     try {
       return clazz.newInstance();
     } catch (InstantiationException e) {
+      LOGGER.warn("M=createDatabase", e);
       return null;
     } catch (IllegalAccessException e) {
+      LOGGER.warn("M=createDatabase", e);
       return null;
     }
   }
@@ -140,13 +143,14 @@ public class DatabaseManager extends UseDBObject {
 
   public static <T extends Database> T createDatabase(Class<T> clazz, Driver driver, String url, String userName, String password) throws UseDBException {
     T database = createDatabase(clazz);
-    
+    LOGGER.info("M=createDatabase, database={}, databaseClass={}", database, database.getClass());
     try {
       database.setDriver(driver);
       database.setUserName(userName);
       database.setPassword(password);
       database.setUrl(url);
-      
+
+      LOGGER.info("M=createDatabase, action=connecting");
       database.connect();
     } catch (Exception e) {
       throw new UseDBException(e);
@@ -205,8 +209,8 @@ public class DatabaseManager extends UseDBObject {
   }
   
   /**
-   * <p>Pozwala utworzyæ listê dostêpnych po³¹czeñ zgodnie z kluczem i wartoœci.
-   * @param key zgodnie ze sta³ymi LK_... lub null
+   * <p>Pozwala utworzy? list? dost?pnych po??cze? zgodnie z kluczem i warto?ci.
+   * @param key zgodnie ze sta?ymi LK_... lub null
    * @param value
    * @return
    */
