@@ -1,7 +1,7 @@
 /*
  * Application.java
  *
- * Created on 18 styczeÒ 2007, 19:29
+ * Created on 18 styczeÔøΩ 2007, 19:29
  *
  * To change this template, choose Tools | Template Manager
  * and open the template in the editor.
@@ -10,39 +10,24 @@
 
 package pl.mpak.orbada.core;
 
-import java.awt.AWTEvent;
-import java.awt.AlphaComposite;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Composite;
-import java.awt.Graphics2D;
-import java.awt.Image;
-import java.awt.Rectangle;
-import java.awt.SplashScreen;
-import java.awt.Toolkit;
-import java.awt.Window;
-import java.awt.event.AWTEventListener;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.math.BigInteger;
-import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.EventObject;
-import java.util.HashMap;
-import java.util.Properties;
 import javax.swing.FocusManager;
 import javax.swing.JDialog;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.event.EventListenerList;
+import java.awt.*;
+import java.awt.event.AWTEventListener;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
+import java.awt.image.BufferedImage;
+import java.io.*;
+import java.math.BigInteger;
+import java.sql.Timestamp;
+import java.util.*;
+
+import pl.mpak.orbada.db.InternalDatabase;
+import pl.mpak.usedb.core.Database;
+import pl.mpak.usedb.core.Query;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import pl.mpak.g2.G2Util;
@@ -51,7 +36,6 @@ import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.ErrorMessages;
 import pl.mpak.orbada.OrbadaCancelCloseException;
 import pl.mpak.orbada.OrbadaException;
-import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.db.Orbada;
 import pl.mpak.orbada.db.OrbadaSession;
 import pl.mpak.orbada.db.User;
@@ -60,48 +44,21 @@ import pl.mpak.orbada.gui.LoginInfo;
 import pl.mpak.orbada.gui.MainFrame;
 import pl.mpak.orbada.gui.PerspectivePanel;
 import pl.mpak.orbada.gui.cm.HelpAction;
-import pl.mpak.orbada.plugins.ApplicationListener;
+import pl.mpak.orbada.plugins.*;
 import pl.mpak.orbada.plugins.GeneratorException;
-import pl.mpak.orbada.plugins.IPerspectiveAccesibilities;
-import pl.mpak.orbada.plugins.IProcessMessagable;
-import pl.mpak.sky.gui.swing.Action;
-import pl.mpak.util.ExceptionUtil;
-import pl.mpak.orbada.plugins.IApplication;
-import pl.mpak.orbada.plugins.IGenerator;
-import pl.mpak.orbada.plugins.ISettings;
-import pl.mpak.orbada.util.Generator;
-import pl.mpak.orbada.util.patt.CurrDateResolver;
-import pl.mpak.orbada.util.patt.CurrTimeResolver;
-import pl.mpak.orbada.util.patt.OrbadaConfigPath;
-import pl.mpak.orbada.util.patt.OrbadaHomePath;
-import pl.mpak.orbada.util.patt.OrbadaUserNameResolver;
-import pl.mpak.orbada.util.patt.UniqueIdResolver;
-import pl.mpak.orbada.plugins.IWebAppAccessibilities;
-import pl.mpak.orbada.plugins.PleaseWait;
 import pl.mpak.orbada.plugins.providers.ILookAndFeelStarter;
 import pl.mpak.orbada.plugins.queue.PluginMessage;
-import pl.mpak.orbada.util.patt.JvmPIDResolver;
-import pl.mpak.orbada.util.patt.OrbadaUserIdResolver;
-import pl.mpak.orbada.util.patt.SHA1_Password_AESResolver;
+import pl.mpak.orbada.util.Generator;
+import pl.mpak.orbada.util.patt.*;
 import pl.mpak.orbada.util.settings.SettingsFactory;
 import pl.mpak.orbada.util.tools.ToolList;
 import pl.mpak.orbada.webapp.WebAppAccessibilities;
 import pl.mpak.plugins.spi.IPluginProvider;
 import pl.mpak.sky.gui.mr.ModalResult;
-import pl.mpak.sky.gui.swing.ActionGlobalEvent;
-import pl.mpak.sky.gui.swing.ActionGlobalListener;
-import pl.mpak.sky.gui.swing.ImageManager;
-import pl.mpak.sky.gui.swing.MessageBox;
-import pl.mpak.sky.gui.swing.SwingUtil;
+import pl.mpak.sky.gui.swing.*;
 import pl.mpak.usedb.UseDBException;
 import pl.mpak.usedb.core.Command;
-import pl.mpak.usedb.core.Database;
-import pl.mpak.usedb.core.Query;
-import pl.mpak.util.ProcessExceptionListener;
-import pl.mpak.util.StringManager;
-import pl.mpak.util.StringManagerFactory;
-import pl.mpak.util.StringUtil;
-import pl.mpak.util.SystemUtil;
+import pl.mpak.util.*;
 import pl.mpak.util.id.UniqueID;
 import pl.mpak.util.id.VersionID;
 import pl.mpak.util.patt.ResolvableModel;
@@ -146,7 +103,7 @@ public class Application implements IApplication, WindowListener {
   private boolean firstRun;
 
   private static Image orbadaSplashLogo;
-  private static final String fontChars = "A•BC∆DE FGHIJKL£MN—O”PQRSåTUVWXYZØè0123456789!@#$%^&*()-=_+[]{};':\",./<>?|\\";
+  private static final String fontChars = "AÔøΩBCÔøΩDEÔøΩFGHIJKLÔøΩMNÔøΩOÔøΩPQRSÔøΩTUVWXYZÔøΩÔøΩ0123456789!@#$%^&*()-=_+[]{};':\",./<>?|\\";
   private static BufferedImage fontsImage;
   private static RasterFont fonts;
   private static BufferedImage fontsSmallImage;
@@ -761,7 +718,7 @@ public class Application implements IApplication, WindowListener {
   }
   
   /**
-   * <p>Tworzy grupÍ ustawieÒ uøytkownika.
+   * <p>Tworzy grupÔøΩ ustawieÔøΩ uÔøΩytkownika.
    * @param groupName
    * @return
    */

@@ -240,13 +240,13 @@ public class Database extends UseDBObject implements Closeable {
       EventObject eo = new EventObject(command);
       for (int i=0; i<listeners.length; i++) {
         switch (event) {
-          case BEFORE_EXECUTE: 
+          case BEFORE_EXECUTE:
             listeners[i].beforeExecute(eo);
             break;
-          case AFTER_EXECUTE: 
+          case AFTER_EXECUTE:
             listeners[i].afterExecute(eo);
             break;
-          case ERROR: 
+          case ERROR:
             listeners[i].errorPerformed(eo);
             break;
         }

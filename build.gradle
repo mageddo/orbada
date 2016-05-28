@@ -1,13 +1,31 @@
-apply plugin: 'java'
-apply plugin: "maven"
+//apply plugin: "maven"
 
-compileJava.options.encoding = 'ISO-8859-1'
-sourceCompatibility = 1.6
-targetCompatibility = 1.6
+allprojects {
 
+	apply plugin: 'java'
+	group = "orbada"
+	version = "1.2.4"
 
-group = "orbada"
-version = "1.2.4"
+	compileJava.options.encoding = 'ISO-8859-1'
+	sourceCompatibility = 1.6
+
+	sourceSets {
+		main {
+			resources {
+				srcDir("${rootProject.projectDir}/src/main/resources")
+			}
+		}
+	}
+
+	dependencies {
+
+		compile fileTree("${rootProject.projectDir}/lib/")
+		compile fileTree("${rootProject.projectDir}/tools/")
+		compile fileTree("${rootProject.projectDir}/plugins/")
+	}
+
+}
+
 
 //jar {
 //	manifest {
@@ -53,18 +71,19 @@ task tmp(type: Copy){
 /**
  * generate the binary distribution file
  */
-build.doLast {
+gradle.buildFinished {
 
 	/**
 	 * generate jar with only compiled sources
 	 * (the default comes with resources)
 	 */
-	ant.jar(
-		destfile: jar.archivePath,
-		"keepcompression": "true"
-	) {
-		zipfileset("dir": sourceSets.main.output.classesDir)
-	}
+//	ant.jar(
+//		destfile: jar.archivePath,
+//		"keepcompression": "true"
+//	) {
+//
+//		zipfileset("dir": project(":core").sourceSets.main.output.classesDir)
+//	}
 
 	/**
 	 * the distribution zip file
@@ -72,9 +91,15 @@ build.doLast {
 	ant.zip(destfile: "${jar.archivePath}".replace(".jar", ".zip")){
 
 		// get the generated jar above and put inside
-		fileset("file": jar.archivePath)
+		zipfileset("file": project(":core").jar.archivePath,
+				fullpath: "lib/${project(":core").jar.baseName}.jar")
 
-		// adding resouces
+		def starterJar = project(":starter").jar;
+
+		// the starter jar
+		zipfileset("file": starterJar.archivePath, fullpath: "startup.jar")
+
+		// adding resources
 		zipfileset("dir": sourceSets.main.output.resourcesDir)
 
 		// adding dependencies
@@ -93,8 +118,3 @@ build.doLast {
 //
 //    }
 
-dependencies {
-	compile fileTree("${rootProject.projectDir}/lib/")
-	compile fileTree("${rootProject.projectDir}/tools/")
-	compile fileTree("${rootProject.projectDir}/plugins/")
-}

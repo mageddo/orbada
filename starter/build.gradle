@@ -1,0 +1,9 @@
+jar {
+	manifest {
+		attributes 'Main-Class': 'pl.mpak.startup.Main'
+		attributes 'SplashScreen-Image': 'res/splashscreen.jpg'
+		attributes 'X-COMMENT': 'Main-Class will be added automatically by build'
+	}
+}
+
+
