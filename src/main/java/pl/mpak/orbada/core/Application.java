@@ -25,9 +25,6 @@ import java.math.BigInteger;
 import java.sql.Timestamp;
 import java.util.*;
 
-import pl.mpak.orbada.db.InternalDatabase;
-import pl.mpak.usedb.core.Database;
-import pl.mpak.usedb.core.Query;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import pl.mpak.g2.G2Util;
@@ -36,6 +33,7 @@ import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.ErrorMessages;
 import pl.mpak.orbada.OrbadaCancelCloseException;
 import pl.mpak.orbada.OrbadaException;
+import pl.mpak.orbada.db.InternalDatabase;
 import pl.mpak.orbada.db.Orbada;
 import pl.mpak.orbada.db.OrbadaSession;
 import pl.mpak.orbada.db.User;
@@ -58,6 +56,8 @@ import pl.mpak.sky.gui.mr.ModalResult;
 import pl.mpak.sky.gui.swing.*;
 import pl.mpak.usedb.UseDBException;
 import pl.mpak.usedb.core.Command;
+import pl.mpak.usedb.core.Database;
+import pl.mpak.usedb.core.Query;
 import pl.mpak.util.*;
 import pl.mpak.util.id.UniqueID;
 import pl.mpak.util.id.VersionID;
@@ -70,11 +70,11 @@ import pl.mpak.util.variant.Variant;
  * @author akaluza
  */
 public class Application implements IApplication, WindowListener {
-  
+
   private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
 
   private static Application application;
-  
+
   private String[] ordabaArguments;
   private MainFrame mainFrame;
   private OrbadaPluginManager pluginManager;
@@ -83,7 +83,7 @@ public class Application implements IApplication, WindowListener {
   private ToolList toolList;
   public  Properties localProperties;
   private File localPropertiesFile;
-  
+
   private boolean safeMode = false;
   private boolean multiUser;
   private VersionID lastVersion;
@@ -95,7 +95,7 @@ public class Application implements IApplication, WindowListener {
   private User user;
   private OrbadaSession orbadaSession;
   private WebAppAccessibilities webAppAccessibilities;
-  
+
   private static SplashScreen splash = SplashScreen.getSplashScreen();
   private static Graphics2D splashGraphics = null;
   private static int splashSize = 10;
@@ -103,7 +103,7 @@ public class Application implements IApplication, WindowListener {
   private boolean firstRun;
 
   private static Image orbadaSplashLogo;
-  private static final String fontChars = "Aï¿½BCï¿½DEï¿½FGHIJKLï¿½MNï¿½Oï¿½PQRSï¿½TUVWXYZï¿½ï¿½0123456789!@#$%^&*()-=_+[]{};':\",./<>?|\\";
+	private static final String fontChars = "A?BC?DE?FGHIJKL?MN?OÓPQRS?TUVWXYZ??0123456789!@#$%^&*()-=_+[]{};':\",./<>?|\\";
   private static BufferedImage fontsImage;
   private static RasterFont fonts;
   private static BufferedImage fontsSmallImage;
@@ -118,7 +118,7 @@ public class Application implements IApplication, WindowListener {
     DEICONIFIED
   }
   private final EventListenerList applicationListenerList = new EventListenerList();
-  
+
   /**
    * @param args the command line arguments
    */
@@ -126,7 +126,7 @@ public class Application implements IApplication, WindowListener {
     application = new Application(args);
     application.init();
   }
-  
+
   private void init() {
     //ToolButton.SIZE = 32;
     initGraphics();
@@ -232,7 +232,7 @@ public class Application implements IApplication, WindowListener {
       System.exit(Consts.exitCode_Terminate);
     }
   }
-  
+
   public String getConfigFile() {
     String configFile = "orbada";
     for (String arg : ordabaArguments) {
@@ -243,7 +243,7 @@ public class Application implements IApplication, WindowListener {
     }
     return getConfigPath() +"/" +configFile +".properties";
   }
-  
+
   private void initLocalProperties() {
     localPropertiesFile = new File(getConfigPath() + "/local-settings.properties");
     localProperties = new Properties();
@@ -255,7 +255,7 @@ public class Application implements IApplication, WindowListener {
       }
     }
   }
-  
+
   private void initProperties() {
     String configFile = getConfigFile();
     File file = new File(configFile);
@@ -278,7 +278,7 @@ public class Application implements IApplication, WindowListener {
       Resolvers.register(new SHA1_Password_AESResolver());
     }
   }
-  
+
   @Override
   public void updateLAF() {
     java.awt.EventQueue.invokeLater(new Runnable() {
@@ -352,7 +352,7 @@ public class Application implements IApplication, WindowListener {
       }
     });
   }
-  
+
   private void initResolvers() {
     Resolvers.register(new CurrDateResolver());
     Resolvers.register(new CurrTimeResolver());
@@ -361,7 +361,7 @@ public class Application implements IApplication, WindowListener {
     Resolvers.register(new OrbadaConfigPath());
     Resolvers.register(new JvmPIDResolver());
   }
-  
+
   public String getLogFile() {
     String log4jFile = "log4j.xml";
     for (String arg : ordabaArguments) {
@@ -384,7 +384,7 @@ public class Application implements IApplication, WindowListener {
     DOMConfigurator.configure(log4jFile);
     logger.debug("Orbada starting...");
   }
-  
+
   private void initPluginManager() {
     renderSplashText(stringManager.getString("Application-init-plugins-3dot"));
     pluginManager = new OrbadaPluginManager(logger);
@@ -393,7 +393,7 @@ public class Application implements IApplication, WindowListener {
     //splashSize = Math.min(splashSize, pluginManager.getFoundList().size() *2 +10);
     pluginManager.loadPlugins();
   }
-  
+
   private void initExceptionUtil() {
     Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
       @Override
@@ -412,7 +412,7 @@ public class Application implements IApplication, WindowListener {
       }
     });
   }
-  
+
   private void loginUser() {
     Logger.getLogger("orbada").info("Login Orbada user...");
     renderSplashText(stringManager.getString("Application-login-user-3dot"));
@@ -535,7 +535,7 @@ public class Application implements IApplication, WindowListener {
       }
     }
   }
-  
+
   private void doneSession() {
     orbadaSession.setEndTime(new Date().getTime());
     try {
@@ -566,7 +566,7 @@ public class Application implements IApplication, WindowListener {
     y += fontsSmall.getHeight();
     fontsSmall.draw(18, y, g2, "(C) " +Consts.orbadaYears.toUpperCase());
   }
-  
+
   public static void renderSplashText(final String text) {
     splashCounter++;
     java.awt.EventQueue.invokeLater(new Runnable() {
@@ -598,21 +598,21 @@ public class Application implements IApplication, WindowListener {
       }
     });
   }
-  
+
   @Override
   public void addApplicationListener(ApplicationListener listener) {
     synchronized (applicationListenerList) {
       applicationListenerList.add(ApplicationListener.class, listener);
     }
   }
-  
+
   @Override
   public void removeApplicationListener(ApplicationListener listener) {
     synchronized (applicationListenerList) {
       applicationListenerList.remove(ApplicationListener.class, listener);
     }
   }
-  
+
   public void fireApplicationListener(ApplicationEvent event) {
     synchronized (applicationListenerList) {
       ApplicationListener[] listeners = applicationListenerList.getListeners(ApplicationListener.class);
@@ -637,40 +637,40 @@ public class Application implements IApplication, WindowListener {
       }
     }
   }
-  
+
   public static Application get() {
     return application;
   }
-  
+
   @Override
   public String[] getArguments() {
     return ordabaArguments;
   }
-  
+
   public Properties getProperties() {
     return properties;
   }
-  
+
   public ISettings getSettings() {
     if (applicationSettings == null) {
       applicationSettings = getSettings(Consts.orbadaSettings);
     }
     return applicationSettings;
   }
-  
+
   @Override
   public void registerDriverType(String driverType) {
     InternalDatabase.registerDriverType(driverType);
   }
-  
+
   public void addStatusBar(Component component) {
     mainFrame.addStatusBar(component);
   }
-  
+
   public void removeStatusBar(Component component) {
     mainFrame.removeStatusBar(component);
   }
-  
+
   @Override
   public void windowActivated(WindowEvent e) {
     fireApplicationListener(ApplicationEvent.ACTIVATED);
@@ -703,20 +703,20 @@ public class Application implements IApplication, WindowListener {
   @Override
   public void windowOpened(WindowEvent e) {
   }
-  
+
   public String getSettingsPath() {
     File file = new File(Resolvers.expand("$(orbada.home)"));
     file.mkdirs();
     return file.getAbsolutePath();
   }
-  
+
   @Override
   public String getConfigPath() {
     File file = new File(Resolvers.expand("$(orbada.config)"));
     file.mkdirs();
     return file.getAbsolutePath();
   }
-  
+
   /**
    * <p>Tworzy grupï¿½ ustawieï¿½ uï¿½ytkownika.
    * @param groupName
@@ -731,7 +731,7 @@ public class Application implements IApplication, WindowListener {
     }
     return result;
   }
-  
+
   @Override
   public ISettings getSettings(String schemaId, String groupName) {
     ISettings result = settingsList.get(schemaId +":" +groupName.toUpperCase());
@@ -741,25 +741,25 @@ public class Application implements IApplication, WindowListener {
     }
     return result;
   }
-  
+
   @Override
   public void addAction(Action action) {
     mainFrame.addAction(action);
   }
-  
+
   @Override
   public void removeAction(Action action) {
     mainFrame.removeAction(action);
   }
-  
+
   public MainFrame getMainFrame() {
     return mainFrame;
   }
-  
+
   public OrbadaPluginManager getPluginManager() {
     return pluginManager;
   }
-  
+
   @Override
   public <T extends IPluginProvider> T[] getServiceArray(Class<T> t) {
     return getPluginManager().getServiceArray(t);
@@ -789,7 +789,7 @@ public class Application implements IApplication, WindowListener {
       messagerList.remove(processMessagable);
     }
   }
-  
+
   @Override
   public String getProperty(String name) {
     return getProperty(name, null);
@@ -805,7 +805,7 @@ public class Application implements IApplication, WindowListener {
     }
     return properties.getProperty(name, defaultValue);
   }
-  
+
   @Override
   public String getOrbadaString(String name) {
     return getOrbadaString(name, null);
@@ -823,7 +823,7 @@ public class Application implements IApplication, WindowListener {
       return defaultValue;
     }
   }
-  
+
   public void setOrbadaString(String name, String value) {
     try {
       Orbada orbada = new Orbada(getOrbadaDatabase(), Application.get().getUserId(), name);
@@ -842,7 +842,7 @@ public class Application implements IApplication, WindowListener {
       ExceptionUtil.processException(ex);
     }
   }
-  
+
   public void shutDown() {
     Logger.getLogger("orbada").info("Orbada shutdown in progress...");
     getSettings().store();
@@ -854,40 +854,40 @@ public class Application implements IApplication, WindowListener {
     }
     Logger.getLogger("orbada").info("Orbada shutdown Ok");
   }
-  
+
   @Override
   public void execTool(String command, Object[] args) {
     toolList.exec(command, args);
   }
-  
+
   public ToolList getToolList() {
     return toolList;
   }
-  
+
   @Override
   public String getUserId() {
     return user.getUserId();
   }
-  
+
   @Override
   public String getUserName() {
     return user.getUserName();
   }
-  
+
   @Override
   public boolean isUserAdmin() {
     return user.isUserAdmin();
   }
-  
+
   @Override
   public boolean isMultiUserApp() {
     return multiUser;
   }
-  
+
   public User getUser() {
     return user;
   }
-  
+
   public boolean isSafeMode() {
     return safeMode;
   }
@@ -915,7 +915,7 @@ public class Application implements IApplication, WindowListener {
   public Database getOrbadaDatabase() {
     return InternalDatabase.get();
   }
-  
+
   @Override
   public IPerspectiveAccesibilities getActivePerspective() {
     PerspectivePanel panel = getMainFrame().getActivePerspective();
@@ -975,7 +975,7 @@ public class Application implements IApplication, WindowListener {
   public VersionID getLastVersion() {
     return lastVersion;
   }
-  
+
   public void setLastVersion(VersionID lastVersion) {
     this.lastVersion = lastVersion;
   }
