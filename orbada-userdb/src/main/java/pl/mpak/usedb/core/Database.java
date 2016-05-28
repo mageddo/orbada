@@ -1,18 +1,15 @@
 package pl.mpak.usedb.core;
 
+import static pl.mpak.usedb.core.DatabaseManager.getManager;
+
+import javax.swing.event.EventListenerList;
 import java.io.Closeable;
 import java.io.File;
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.Driver;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.EventObject;
 
-import javax.swing.event.EventListenerList;
-
+import org.slf4j.Logger;
 import pl.mpak.usedb.UseDBException;
 import pl.mpak.usedb.UseDBObject;
 import pl.mpak.usedb.UseDBProperties;
@@ -36,6 +33,7 @@ import pl.mpak.util.task.TaskPool;
  */
 public class Database extends UseDBObject implements Closeable {
   private static final long serialVersionUID = 3148856365067175991L;
+  private static final Logger LOGGER = org.slf4j.LoggerFactory.getLogger(Database.class);
   private static Languages language = new Languages(Database.class);
 
   public final static String sqlNameCharacters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz$#_";
@@ -77,7 +75,7 @@ public class Database extends UseDBObject implements Closeable {
   private java.util.Properties userProperties;
   private long connectedTime = 0;
   private boolean autoCommit = true;
-  private boolean autoConnect = false;
+  private boolean autoConnect = true;
   private boolean autoDisconnect = false;
   private boolean transactionStarted = false;
   private String quoter;
@@ -242,13 +240,13 @@ public class Database extends UseDBObject implements Closeable {
       EventObject eo = new EventObject(command);
       for (int i=0; i<listeners.length; i++) {
         switch (event) {
-          case BEFORE_EXECUTE: 
+          case BEFORE_EXECUTE:
             listeners[i].beforeExecute(eo);
             break;
-          case AFTER_EXECUTE: 
+          case AFTER_EXECUTE:
             listeners[i].afterExecute(eo);
             break;
-          case ERROR: 
+          case ERROR:
             listeners[i].errorPerformed(eo);
             break;
         }
@@ -297,7 +295,7 @@ public class Database extends UseDBObject implements Closeable {
    * @throws IllegalAccessException 
    * @throws InstantiationException 
    * @throws ClassNotFoundException 
-   * @see getDriver
+   * @see #getDriver
    */
   public void setDriverClassName(String driverClassName) 
       throws InstantiationException, IllegalAccessException, ClassNotFoundException {
@@ -530,14 +528,14 @@ public class Database extends UseDBObject implements Closeable {
           connection.setHoldability(connection.getMetaData().getResultSetHoldability());
         }
       }
-      catch (java.lang.AbstractMethodError e) {
+      catch (AbstractMethodError e) {
         ;
       }
-      catch (java.lang.UnsupportedOperationException e) {
+      catch (UnsupportedOperationException e) {
         ;
       }
       updateConnectionInfo();
-      DatabaseManager.getManager().addDatabase(this);
+      getManager().addDatabase(this);
       try {
         String frc = getUserProperties().getProperty(useDbParamFetchRecordCount);
         if (frc != null) {
@@ -571,7 +569,7 @@ public class Database extends UseDBObject implements Closeable {
       }
     }
   }
-  
+
   /**
    * Zamyka wszystkie otwarte Query i
    * rozlacza z baza danych
@@ -584,14 +582,14 @@ public class Database extends UseDBObject implements Closeable {
       try {
         connection.close();
       }
-      catch (java.sql.SQLRecoverableException e) {
+      catch (SQLRecoverableException e) {
         // does not matter for what reason have failed to close
         ;
       }
       connection = null;
       updateConnectionInfo();
       fireDatabaseListener(Event.AFTER_DISCONNECT);
-      DatabaseManager.getManager().removeDatabase(this);
+      getManager().removeDatabase(this);
     }
   }
   
@@ -619,7 +617,30 @@ public class Database extends UseDBObject implements Closeable {
   }
 
   public boolean isConnected() {
-    return connection != null;
+    try {
+
+      if(connection == null){
+        return false;
+      }
+      Statement statement = null;
+      try{
+         statement = this.connection.createStatement();
+        statement.execute("SELECT 1");
+      }catch(SQLTransientConnectionException e){
+        LOGGER.warn("M=isConnected, msg=connection is invalid");
+        return false;
+      }catch(Exception e){
+        LOGGER.debug("test querie failed: {}", e.getMessage());
+      }finally {
+        if(statement != null) {
+          statement.close();
+        }
+      }
+      return !connection.isClosed();
+    } catch(SQLException e) {
+      LOGGER.debug("M=isConnected, CALLING=#isClosed()", e);
+      return false;
+    }
   }
 
   /**
@@ -649,8 +670,14 @@ public class Database extends UseDBObject implements Closeable {
    * @throws SQLException
    */
   public Connection getConnection() throws SQLException {
-    if (isAutoConnect() && !isConnected()) {
+
+    final boolean isDisconnected = !isConnected();
+    LOGGER.info("M=getConnection, isAutoConnect={}, isDisconnected={}", autoConnect, isDisconnected);
+    if (isAutoConnect() && isDisconnected) {
+        LOGGER.info("M=getConnection, message=no available connection opening a new");
       connect();
+    }else{
+      LOGGER.info("M=getConnection, message=using existent connection");
     }
     return connection;
   }
@@ -904,7 +931,7 @@ public class Database extends UseDBObject implements Closeable {
    * <p>Pozwala okreœliæ typ sterownika, np. Oracle, HSQLDB, DerbyDB, jest to opis
    * organizacyjny.
    * @param driverType
-   * @see DatabaseManager.
+   * @see DatabaseManager
    */
   public void setDriverType(String driverType) {
     this.driverType = driverType;
