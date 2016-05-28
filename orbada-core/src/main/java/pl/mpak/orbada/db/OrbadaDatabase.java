@@ -27,7 +27,7 @@ import pl.mpak.util.StringManagerFactory;
  */
 public class OrbadaDatabase extends Database {
   
-  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
+  private final static StringManager stringManager = StringManagerFactory.getStringManager(Consts.class);
 
   private SchemaSession schemaSession;
   

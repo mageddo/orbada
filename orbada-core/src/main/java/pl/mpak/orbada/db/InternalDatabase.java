@@ -1,6 +1,7 @@
 package pl.mpak.orbada.db;
 
 import org.apache.log4j.Logger;
+import org.slf4j.LoggerFactory;
 import pl.mpak.orbada.Consts;
 import pl.mpak.orbada.ErrorMessages;
 import pl.mpak.orbada.OrbadaException;
@@ -27,10 +28,11 @@ import pl.mpak.util.patt.Resolvers;
  */
 public class InternalDatabase extends OrbadaDatabase {
 
-  private final static StringManager stringManager = StringManagerFactory.getStringManager("orbada");
+  private static final StringManager stringManager = StringManagerFactory.getStringManager("orbada");
+  private static final org.slf4j.Logger LOGGER = LoggerFactory.getLogger(InternalDatabase.class);
 
   private static InternalDatabase orbadaDatabase;
-  
+
   public static Database get() {
     return orbadaDatabase;
   }
@@ -68,6 +70,7 @@ public class InternalDatabase extends OrbadaDatabase {
       try {
         orbadaDatabase = DatabaseManager.createDatabase(InternalDatabase.class, DriverClassLoaderManager.getDriver(jdbcSource, jdbcExtraLibrary, className), url, user, password);
       } catch (Exception ex) {
+        LOGGER.error("M=init, message=connection driver failure", ex);
         throw new OrbadaException(ErrorMessages.ORBADA_01001_NO_DRIVER_FOUND, ex);
       }
       orbadaDatabase.setDriverType(driver);
@@ -99,7 +102,7 @@ public class InternalDatabase extends OrbadaDatabase {
       //System.exit(-1);
     }
   }
-  
+
   public static void done() {
     if (InternalDatabase.get() == null) {
       return;
@@ -114,7 +117,7 @@ public class InternalDatabase extends OrbadaDatabase {
       ex.printStackTrace();
     }
   }
-  
+
   public static void beforeLogin() {
     Query query;
     try {
@@ -144,7 +147,7 @@ public class InternalDatabase extends OrbadaDatabase {
             ")");
           orbadaDatabase.executeCommandNoException("alter table users add constraint users_pk primary key (usr_id)");
           orbadaDatabase.executeCommand("create unique index user_name_ui on users (usr_name)");
-          
+
           orbadaDatabase.executeCommand(
             "create table tools (\n" +
             "  to_id varchar(40) not null primary key,\n" +
@@ -158,7 +161,7 @@ public class InternalDatabase extends OrbadaDatabase {
             "  to_bsh_before_exec varchar(4000),\n" +
             "  to_bsh_after_exec varchar(4000),\n" +
             "  to_toolbutton varchar(1),\n" +
-            "  to_icon " +Application.get().getProperty("data.type.blob", "BLOB") +"\n" +
+            "  to_icon " + Application.get().getProperty("data.type.blob", "BLOB") +"\n" +
             ")");
           orbadaDatabase.executeCommand("CREATE UNIQUE INDEX TOOLS_COMMAND_UI ON TOOLS(TO_USR_ID, TO_COMMAND)");
           orbadaDatabase.executeCommandNoException("alter table tools add constraint tool_user_fk foreign key (to_usr_id) references users (usr_id) on delete cascade");
@@ -192,7 +195,7 @@ public class InternalDatabase extends OrbadaDatabase {
               try {
                 query.open("select name from orbada");
                 while (!query.eof()) {
-                  orbadaDatabase.executeCommand("update orbada set id = '" +(new UniqueID()).toString() +"', user_id = '" +Application.get().getUserId() +"' where name = '" +query.fieldByName("name").getString() +"'");
+                  orbadaDatabase.executeCommand("update orbada set id = '" +(new UniqueID()).toString() +"', user_id = '" + Application.get().getUserId() +"' where name = '" +query.fieldByName("name").getString() +"'");
                   query.next();
                 }
               }
@@ -202,9 +205,9 @@ public class InternalDatabase extends OrbadaDatabase {
               orbadaDatabase.executeCommandNoException("ALTER TABLE orbada ADD CONSTRAINT orbada_user_fk FOREIGN KEY (user_id) references users(usr_id) on delete cascade");
               try {orbadaDatabase.executeCommand("CREATE INDEX orbada_name_i on orbada(user_id, name)");} catch (Exception ex) {}
             }
-            orbadaDatabase.executeCommand("update orbada a set value = (select value from orbada b where name = 'version' and a.user_id = b.user_id) where name = 'last-version' and user_id = '" +Application.get().getUserId() +"'");
-            orbadaDatabase.executeCommand("update orbada a set value = '" +Consts.orbadaVersion +"' where name = 'version' and user_id = '" +Application.get().getUserId() +"'");
-            query.open("select value from orbada where name = 'last-version' and user_id = '" +Application.get().getUserId() +"'");
+            orbadaDatabase.executeCommand("update orbada a set value = (select value from orbada b where name = 'version' and a.user_id = b.user_id) where name = 'last-version' and user_id = '" + Application.get().getUserId() +"'");
+            orbadaDatabase.executeCommand("update orbada a set value = '" + Consts.orbadaVersion +"' where name = 'version' and user_id = '" + Application.get().getUserId() +"'");
+            query.open("select value from orbada where name = 'last-version' and user_id = '" + Application.get().getUserId() +"'");
             lastVersionID = new VersionID(query.fieldByName("value").getValue().toString());
             Application.get().setLastVersion(lastVersionID);
           } catch (Exception e) {
@@ -221,13 +224,13 @@ public class InternalDatabase extends OrbadaDatabase {
             lastVersionID = null;
           }
         }
-        
+
         if (lastVersionID == null) {
-          orbadaDatabase.executeCommand("insert into orbada (id, user_id, name, value) values ('" +(new UniqueID()).toString() +"', '" +Application.get().getUserId() +"', 'last-version', '" +Consts.orbadaVersion +"')");
-          orbadaDatabase.executeCommand("insert into orbada (id, user_id, name, value) values ('" +(new UniqueID()).toString() +"', '" +Application.get().getUserId() +"', 'version', '" +Consts.orbadaVersion +"')");
-          orbadaDatabase.executeCommand("insert into orbada (id, user_id, name, value) values ('" +(new UniqueID()).toString() +"', '" +Application.get().getUserId() +"', 'application-name', 'Organizer Bazy Danych')");
-          orbadaDatabase.executeCommand("insert into orbada (id, user_id, name, value) values ('" +(new UniqueID()).toString() +"', '" +Application.get().getUserId() +"', 'short-name', 'ORBADA')");
-          orbadaDatabase.executeCommand("insert into orbada (id, user_id, name, value) values ('" +(new UniqueID()).toString() +"', '" +Application.get().getUserId() +"', 'copyright', '" +Consts.orbadaCopyrights +"')");
+          orbadaDatabase.executeCommand("insert into orbada (id, user_id, name, value) values ('" +(new UniqueID()).toString() +"', '" + Application.get().getUserId() +"', 'last-version', '" + Consts.orbadaVersion +"')");
+          orbadaDatabase.executeCommand("insert into orbada (id, user_id, name, value) values ('" +(new UniqueID()).toString() +"', '" + Application.get().getUserId() +"', 'version', '" + Consts.orbadaVersion +"')");
+          orbadaDatabase.executeCommand("insert into orbada (id, user_id, name, value) values ('" +(new UniqueID()).toString() +"', '" + Application.get().getUserId() +"', 'application-name', 'Organizer Bazy Danych')");
+          orbadaDatabase.executeCommand("insert into orbada (id, user_id, name, value) values ('" +(new UniqueID()).toString() +"', '" + Application.get().getUserId() +"', 'short-name', 'ORBADA')");
+          orbadaDatabase.executeCommand("insert into orbada (id, user_id, name, value) values ('" +(new UniqueID()).toString() +"', '" + Application.get().getUserId() +"', 'copyright', '" + Consts.orbadaCopyrights +"')");
         }
 
         if (lastVersionID == null && Application.get().isUserAdmin()) {
@@ -280,7 +283,7 @@ public class InternalDatabase extends OrbadaDatabase {
             "  sch_auto_commit varchar(1),\n" +
             "  sch_db_version varchar(100),\n" +
             "  sch_selected timestamp,\n" +
-            "  sch_icon " +Application.get().getProperty("data.type.blob", "BLOB") +"\n" +
+            "  sch_icon " + Application.get().getProperty("data.type.blob", "BLOB") +"\n" +
             ")");
           orbadaDatabase.executeCommandNoException("alter table schemas add constraint schemas_pk primary key (sch_id)");
           orbadaDatabase.executeCommand("create index schemas_selected_i on schemas (sch_selected)");
@@ -307,7 +310,7 @@ public class InternalDatabase extends OrbadaDatabase {
           orbadaDatabase.executeCommand("create index plugins_class_name_i on plugins(plg_class_name)");
           orbadaDatabase.executeCommandNoException("alter table plugins add constraint plugin_user_fk foreign key (plg_usr_id) references users (usr_id) on delete cascade");
 
-          orbadaDatabase.executeCommand(  
+          orbadaDatabase.executeCommand(
             "create table perspectives (\n" +
             "  pps_id varchar(40) not null,\n" +
             "  pps_usr_id varchar(40) not null,\n" +
@@ -322,7 +325,7 @@ public class InternalDatabase extends OrbadaDatabase {
           orbadaDatabase.executeCommandNoException("ALTER TABLE PERSPECTIVES ADD CONSTRAINT PERSPECTIVES_PK PRIMARY KEY (PPS_ID)");
           orbadaDatabase.executeCommandNoException("ALTER TABLE PERSPECTIVES ADD CONSTRAINT PERSPECTIVES_USER_FK FOREIGN KEY (PPS_USR_ID) REFERENCES USERS (USR_ID) ON DELETE CASCADE");
           orbadaDatabase.executeCommandNoException("ALTER TABLE PERSPECTIVES ADD CONSTRAINT PERSPECTIVES_SCHEMA_FK FOREIGN KEY (PPS_SCH_ID) REFERENCES SCHEMAS (SCH_ID) ON DELETE CASCADE");
-          orbadaDatabase.executeCommand(  
+          orbadaDatabase.executeCommand(
             "create table views (\n" +
             "  vws_id varchar(40) not null,\n" +
             "  vws_pps_id varchar(40) not null,\n" +
@@ -334,13 +337,13 @@ public class InternalDatabase extends OrbadaDatabase {
           orbadaDatabase.executeCommandNoException("ALTER TABLE VIEWS ADD CONSTRAINT VIEWS_PK PRIMARY KEY (VWS_ID)");
           orbadaDatabase.executeCommandNoException("ALTER TABLE VIEWS ADD CONSTRAINT VIEWS_PERSPECTIVES_FK FOREIGN KEY (VWS_PPS_ID) REFERENCES PERSPECTIVES (PPS_ID) ON DELETE CASCADE");
 
-          orbadaDatabase.executeCommand(  
+          orbadaDatabase.executeCommand(
             "create table templates (\n" +
             "  tpl_id varchar(40) not null,\n" +
             "  tpl_usr_id varchar(40),\n" +
             "  tpl_name varchar(100) not null,\n" +
             "  tpl_description varchar(1000),\n" +
-            "  tpl_body " +Application.get().getProperty("data.type.clob", "CLOB") +"\n" +
+            "  tpl_body " + Application.get().getProperty("data.type.clob", "CLOB") +"\n" +
             ")");
           orbadaDatabase.executeCommandNoException("ALTER TABLE TEMPLATES ADD CONSTRAINT TEMPLATES_PK PRIMARY KEY (TPL_ID)");
           orbadaDatabase.executeCommand("CREATE UNIQUE INDEX TEMPLATES_NAME_UI ON TEMPLATES(TPL_USR_ID, TPL_NAME)");
@@ -421,7 +424,7 @@ public class InternalDatabase extends OrbadaDatabase {
           orbadaDatabase.executeCommand("insert into driver_type_specs (dts_id, dts_dtp_id, dts_name, dts_class, dts_url_template) values ('20071001000000-0000000000000051-00000010', '20071001000000-0000000000000001-00000001', 'In-Memory', 'org.hsqldb.jdbcDriver', 'jdbc:hsqldb:.')");
           orbadaDatabase.executeCommand("insert into driver_type_specs (dts_id, dts_dtp_id, dts_name, dts_class, dts_url_template) values ('20071001000000-0000000000000052-00000010', '20071001000000-0000000000000001-00000001', 'Webserver', 'org.hsqldb.jdbcDriver', 'jdbc:hsqldb:http://<HOST>[:<PORT>]')");
 
-          orbadaDatabase.executeCommand(  
+          orbadaDatabase.executeCommand(
             "create table gadgets (\n" +
             "  gdg_id varchar(40) not null,\n" +
             "  gdg_order integer not null,\n" +
@@ -433,7 +436,7 @@ public class InternalDatabase extends OrbadaDatabase {
           orbadaDatabase.executeCommandNoException("alter table gadgets add constraint gadget_pk primary key (gdg_id)");
           orbadaDatabase.executeCommandNoException("alter table gadgets add constraint gadget_perspective_fk foreign key (gdg_pps_id) references perspectives (pps_id) on delete cascade");
 
-          orbadaDatabase.executeCommand(  
+          orbadaDatabase.executeCommand(
             "create table generators (\n" +
             "  gen_name varchar(100) not null,\n" +
             "  gen_value varchar(20) default '1' not null,\n" +
@@ -473,7 +476,7 @@ public class InternalDatabase extends OrbadaDatabase {
         }
         if (lastVersionID == null || lastVersionID.getBuild() < 7) {
           try {
-            orbadaDatabase.executeCommand("insert into orbada (id, user_id, name, value) values ('" +(new UniqueID()).toString() +"', '" +Application.get().getUserId() +"', 'unique-id', '" +(new UniqueID().toString()) +"')");
+            orbadaDatabase.executeCommand("insert into orbada (id, user_id, name, value) values ('" +(new UniqueID()).toString() +"', '" + Application.get().getUserId() +"', 'unique-id', '" +(new UniqueID().toString()) +"')");
           } catch (Exception e) {
           }
         }
@@ -646,5 +649,5 @@ public class InternalDatabase extends OrbadaDatabase {
       }
     }
   }
-  
+
 }
