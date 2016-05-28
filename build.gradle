@@ -56,7 +56,7 @@ dependencies {
     compile project(':orbada-plugins')
     compile project(':orbada-prop')
     compile project(':orbada-reports-db')
-    compile project(':orbada-res')
+//    compile project(':orbada-res')
     compile project(':orbada-sky')
     compile project(':orbada-task')
     compile project(':orbada-userdb')
@@ -75,14 +75,20 @@ gradle.buildFinished {
      */
     ant.zip(destfile: "${jar.archivePath}".replace(".jar", ".zip")){
 
-
-//        def starterJar = project(":starter").jar;
+        def starterJar = project(":startup").jar;
 
         // the starter jar
-//        zipfileset("file": starterJar.archivePath, fullpath: "startup.jar")
+        zipfileset("file": starterJar.archivePath, fullpath: "${starterJar.baseName}.jar")
 
-        // adding resources
         zipfileset("dir": sourceSets.main.output.resourcesDir)
+        zipfileset("dir": project(":orbada-res").sourceSets.main.output.resourcesDir)
+//        subprojects.forEach({ it
+//            // adding resources
+//            if(it.sourceSets.main.output.resourcesDir.exists() && !it.path.startsWith(":plugin")){
+//                println("processing ${it} resources")
+//                zipfileset("dir": it.sourceSets.main.output.resourcesDir)
+//            }
+//        })
 
         // adding dependencies
         configurations.compile.collect {
