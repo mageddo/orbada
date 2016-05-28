@@ -1,10 +1,9 @@
 package pl.mpak.orbada.dmlformat.services;
 
+import javax.swing.ImageIcon;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
-
-import javax.swing.ImageIcon;
 
 import pl.mpak.orbada.dmlformat.Messages;
 import pl.mpak.orbada.dmlformat.OrbadaDmlFormatPlugin;
@@ -24,7 +23,7 @@ public class UniversalDmlFormatProvider extends UniversalActionProvider {
     super();
     setShortCut(KeyEvent.VK_B, KeyEvent.CTRL_MASK);
     setText(Messages.getString("UniversalDmlFormatProvider.text")); //$NON-NLS-1$
-    setSmallIcon(new ImageIcon(getClass().getResource("/pl/mpak/orbada/dmlformat/dmlformat.gif"))); //$NON-NLS-1$
+    setSmallIcon(new ImageIcon(getClass().getResource("/dmlformat.gif"))); //$NON-NLS-1$
     setActionCommandKey("UniversalDmlFormatProvider"); //$NON-NLS-1$
     addActionListener(createActionListener());
   }

@@ -96,8 +96,10 @@ gradle.buildFinished {
 
         // adding dependencies
         configurations.compile.collect {
-            if(!it.name.equals("orbada-res")){
-                zipfileset("file": it.absolutePath, fullpath: "lib/${it.name}")
+            zipfileset("file": it.absolutePath, fullpath: "lib/${it.name}"){
+                patternset {
+                    exclude("name": "**/orbada-res*")
+                }
             }
         }
     }

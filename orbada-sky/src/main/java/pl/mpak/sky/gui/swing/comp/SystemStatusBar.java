@@ -1,19 +1,13 @@
 package pl.mpak.sky.gui.swing.comp;
 
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Stroke;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
-
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 
 import pl.mpak.sky.Messages;
 import pl.mpak.util.StringUtil;
@@ -110,7 +104,7 @@ public class SystemStatusBar extends StatusBar {
   private void initStatusBarTime() {
     addPanel("time-panel"); //$NON-NLS-1$
     timePanel = getPanel("time-panel"); //$NON-NLS-1$
-    timePanel.setIcon(new ImageIcon(getClass().getResource("/pl/mpak/sky/res/clock.png"))); //$NON-NLS-1$
+    timePanel.setIcon(new ImageIcon(getClass().getResource("/res/clock.png"))); //$NON-NLS-1$
     timePanel.setMinimumSize(new Dimension(STATUS_PANEL_HEIGHT, STATUS_PANEL_HEIGHT));
     timePanel.setHorizontalAlignment(JLabel.CENTER);
     timer.schedule(new TimerTask() {
