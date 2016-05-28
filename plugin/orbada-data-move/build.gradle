@@ -1,5 +1,5 @@
-dependencies{
-	compile project(':orbada-util')
+dependencies {
+	compile project(':orbada')
 	compile project(':orbada-sky')
 	compile project(':orbada-userdb')
 	compile project(':plugin:orbada-universal')

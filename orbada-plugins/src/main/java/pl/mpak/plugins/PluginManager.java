@@ -1,19 +1,12 @@
 package pl.mpak.plugins;
 
+import javax.swing.event.EventListenerList;
 import java.io.File;
 import java.lang.reflect.Array;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
-import javax.swing.event.EventListenerList;
-
+import org.apache.log4j.Logger;
 import pl.mpak.plugins.spi.IPlugin;
 import pl.mpak.plugins.spi.IPluginProvider;
 import pl.mpak.util.Assert;
@@ -32,7 +25,7 @@ public class PluginManager {
   private ArrayList<PluginFound> foundList = new ArrayList<PluginFound>();
   private LinkedList<Class<? extends IPluginProvider>> providerList = new LinkedList<Class<? extends IPluginProvider>>();
   private HashMap<Class<? extends IPluginProvider>, IPluginProvider> sharedProviderList = new HashMap<Class<? extends IPluginProvider>, IPluginProvider>();
-  private org.apache.log4j.Logger logger;
+  private Logger logger = Logger.getLogger(PluginManager.class);
   
   public enum PluginManagerEvent {
     BEGIN_PROCESS,
