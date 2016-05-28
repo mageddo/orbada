@@ -6,7 +6,7 @@ rootProject.name = "orbada"
 
 include ':drink-master'
 include ':json'
-include ':orbada'
+include ':orbada-core'
 include ':orbada-datatext'
 include ':orbada-db-objects'
 include ':orbada-derbydb'

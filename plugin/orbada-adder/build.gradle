@@ -3,5 +3,5 @@ dependencies {
 	compile project(':orbada-sky')
 	compile project(':orbada-userdb')
 	compile project(':orbada-plugins')
-	compile project(':orbada')
+	compile project(':orbada-core')
 }

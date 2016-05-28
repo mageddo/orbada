@@ -1,4 +1,4 @@
 dependencies {
 	compile project(':orbada-id')
-	compile project(':orbada')
+	compile project(':orbada-core')
 }

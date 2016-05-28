@@ -47,7 +47,7 @@ allprojects {
 dependencies {
     compile project(':drink-master')
     compile project(':json')
-    compile project(':orbada')
+    compile project(':orbada-core')
     compile project(':orbada-datatext')
     compile project(':orbada-db-objects')
     compile project(':orbada-g2')
@@ -62,13 +62,18 @@ dependencies {
     compile project(':orbada-userdb')
     compile project(':orbada-util')
     compile project(':orbada-waitdlg')
-    compile project(':startup')
+//    compile project(':startup')
 }
 
 gradle.buildFinished {
     print('>>>> end')
 
 
+    ant.copy(
+        todir: sourceSets.main.output.resourcesDir
+    ){
+        fileset(dir: project(":orbada-res").sourceSets.main.output.resourcesDir)
+    }
 
     /**
      * the distribution zip file
@@ -81,7 +86,6 @@ gradle.buildFinished {
         zipfileset("file": starterJar.archivePath, fullpath: "${starterJar.baseName}.jar")
 
         zipfileset("dir": sourceSets.main.output.resourcesDir)
-        zipfileset("dir": project(":orbada-res").sourceSets.main.output.resourcesDir)
 //        subprojects.forEach({ it
 //            // adding resources
 //            if(it.sourceSets.main.output.resourcesDir.exists() && !it.path.startsWith(":plugin")){
@@ -92,7 +96,9 @@ gradle.buildFinished {
 
         // adding dependencies
         configurations.compile.collect {
-            zipfileset("file": it.absolutePath, fullpath: "lib/${it.name}")
+            if(!it.name.equals("orbada-res")){
+                zipfileset("file": it.absolutePath, fullpath: "lib/${it.name}")
+            }
         }
     }
 
