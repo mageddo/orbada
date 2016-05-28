@@ -1,4 +1,4 @@
 jar {
-	exclude("*.*")
-	exclude("**/jdbc")
+	include("*.properties")
+	include("**/res/**")
 }
