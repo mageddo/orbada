@@ -72,7 +72,11 @@ gradle.buildFinished {
     ant.copy(
         todir: sourceSets.main.output.resourcesDir
     ){
-        fileset(dir: project(":orbada-res").sourceSets.main.output.resourcesDir)
+        fileset(dir: project(":orbada-res").sourceSets.main.output.resourcesDir){
+            patternset {
+                exclude("name": "res/*")
+            }
+        }
     }
 
     /**
@@ -97,9 +101,9 @@ gradle.buildFinished {
         // adding dependencies
         configurations.compile.collect {
             zipfileset("file": it.absolutePath, fullpath: "lib/${it.name}"){
-                patternset {
-                    exclude("name": "**/orbada-res*")
-                }
+//                patternset {
+//                    exclude("name": "**/orbada-res*")
+//                }
             }
         }
     }
