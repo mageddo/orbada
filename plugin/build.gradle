@@ -1,0 +1,17 @@
+subprojects {
+
+	project.build.doLast{
+
+		/**
+		 * copy plugins to root project resources
+		 */
+		println(": adding '${project}' to plugins")
+		ant.copy(
+			file: project.jar.archivePath,
+			todir: new File(rootProject.sourceSets.main.output.resourcesDir, "plugins")
+		)
+
+
+	}
+
+}

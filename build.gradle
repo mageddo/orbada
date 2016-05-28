@@ -42,3 +42,20 @@ allprojects {
         }
     }
 }
+
+gradle.afterProject {
+    println("fim projet")
+}
+gradle.buildFinished { build
+    if(build.getFailure() == null){
+        println("fim build com sucesso")
+    }
+}
+
+gradle.projectsEvaluated{
+    println("projects evaluated")
+}
+
+build.doLast{
+    println("fim<<<<<<<<<")
+}
