@@ -40,7 +40,7 @@ allprojects {
 
 
         if(!project.name.equals("orbada-res")){
-            // adding res module to all modules but not for yourself
+            // adding res module to all modules but not for itself
             compile project(':orbada-res')
         }
     }
